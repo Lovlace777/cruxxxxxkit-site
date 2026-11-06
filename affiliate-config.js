@@ -1,85 +1,427 @@
 /**
  * ============================================================================
- * CRUXKIT STUDIO (cruxxxxxkit.com) — CENTRAL COMMERCIAL & AFFILIATE CONFIG
+ * CRUXKIT* (cruxxxxxkit.com) — CENTRAL COMMERCIAL & AFFILIATE CONFIGURATION (v6.0)
  * ============================================================================
- * 实战部署说明：
- * 1. 全站 24 款严选联盟单品 (AFFILIATE_LINKS) 与 12 款虚拟商品包 (CHECKOUT_LINKS) 均由此文件统一驱动。
- * 2. 当你注册好各平台联盟账号后，只需替换下方 `targetUrl` 即可一键生效全站带货链接！
+ * 1. Replace the placeholder `?ref=cruxkit` / `?via=cruxkit` URLs below with
+ *    your approved PartnerStack / Impact / Official affiliate links.
+ * 2. Replace `CHECKOUT_LINKS` with your Lemon Squeezy / Gumroad / Creem /
+ *    Mianbaoduo (面包多) / Xiaoe-Tech (小鹅通) checkout URLs.
+ * 3. Every card, modal, article CTA, and `/go/{slug}` redirect reads from here!
+ * ============================================================================
  */
-
-window.CRUXKIT_CONFIG = {
-  brandDomain: 'cruxxxxxkit.com',
-
-  // --------------------------------------------------------------------------
-  // A. 24 款高通量联盟营销单品总控表 (24 AUDITED AFFILIATE PARTNER LINKS)
-  // --------------------------------------------------------------------------
+window.CRUXKIT_AFFILIATE_CONFIG = {
   AFFILIATE_LINKS: {
-    make:      { name: 'Make.com', targetUrl: 'https://www.make.com/en/register?pc=cruxkit', goPath: './go/make/index.html', commission: '35% 12-Mo Recurring (Wise)' },
-    n8n:       { name: 'n8n Cloud & Fair-Code', targetUrl: 'https://n8n.io/?ref=cruxkit', goPath: './go/n8n/index.html', commission: '30% 12-Mo Recurring (PartnerStack)' },
-    openrouter:{ name: 'OpenRouter Unified API', targetUrl: 'https://openrouter.ai/?ref=cruxkit', goPath: './go/openrouter/index.html', commission: 'Official Multi-LLM API Router' },
-    cursor:    { name: 'Cursor AI Code IDE', targetUrl: 'https://www.cursor.com/?ref=cruxkit', goPath: './go/cursor/index.html', commission: 'S-Tier AI Coding & Site Builder' },
-    claude:    { name: 'Claude 3.7 / Anthropic', targetUrl: 'https://console.anthropic.com/?ref=cruxkit', goPath: './go/claude/index.html', commission: 'Best Writing & Reasoning LLM' },
-    deepseek:  { name: 'DeepSeek / SiliconFlow API', targetUrl: 'https://cloud.siliconflow.cn/?ref=cruxkit', goPath: './go/deepseek/index.html', commission: 'Lowest-Cost Reasoning API' },
-    reclaim:   { name: 'Reclaim.ai Smart Calendar', targetUrl: 'https://reclaim.ai/?via=cruxkit', goPath: './go/reclaim/index.html', commission: '40% Recurring (PartnerStack)' },
-    appsumo:   { name: 'AppSumo Software LTDs', targetUrl: 'https://appsumo.com/?ref=cruxkit', goPath: './go/appsumo/index.html', commission: 'Up to 100% New Buyer Commission (Impact)' },
-    notion:    { name: 'Notion + Notion AI', targetUrl: 'https://affiliate.notion.so/cruxkit', goPath: './go/notion/index.html', commission: 'Template Engine & Workspace Partner' },
-    elevenlabs:{ name: 'ElevenLabs Studio v3', targetUrl: 'https://elevenlabs.io/?from=partnercruxkit', goPath: './go/elevenlabs/index.html', commission: '22% 12-Mo Recurring (PartnerStack)' },
-    heygen:    { name: 'HeyGen AI Video Avatar', targetUrl: 'https://www.heygen.com/?sid=rewardful&via=cruxkit', goPath: './go/heygen/index.html', commission: '30% Recurring Commission' },
-    semrush:   { name: 'Semrush SEO & GEO Suite', targetUrl: 'https://www.semrush.com/?ref=cruxkit', goPath: './go/semrush/index.html', commission: '$200 Bounty Per Sale (Impact)' },
-    beehiiv:   { name: 'Beehiiv Newsletter OS', targetUrl: 'https://www.beehiiv.com/?via=cruxkit', goPath: './go/beehiiv/index.html', commission: '50% 12-Mo Recurring Commission' },
-    framer:    { name: 'Framer Web Builder', targetUrl: 'https://www.framer.com/?via=cruxkit', goPath: './go/framer/index.html', commission: '50% 12-Mo Recurring Commission' },
-    hostinger: { name: 'Hostinger Cloud & Docker VPS', targetUrl: 'https://www.hostinger.com/?REFERRALCODE=CRUXKIT', goPath: './go/hostinger/index.html', commission: '60% Commission ($4.99 n8n VPS)' },
-    cloudflare:{ name: 'Cloudflare Pages & R2', targetUrl: 'https://pages.cloudflare.com/', goPath: './go/cloudflare/index.html', commission: '$0 Edge Hosting Infrastructure' },
-    lemonsqueezy:{ name: 'Lemon Squeezy / Gumroad', targetUrl: 'https://www.lemonsqueezy.com/?ref=cruxkit', goPath: './go/lemonsqueezy/index.html', commission: 'Global MoR Digital Checkout' },
-    wise:      { name: 'Wise Multi-Currency Account', targetUrl: 'https://wise.com/invite/u/cruxkit', goPath: './go/wise/index.html', commission: 'Global Affiliate Payout Account' },
-    timeless:  { name: 'Timeless 20% Vitamin C + E Ferulic', targetUrl: 'https://www.iherb.com/search?kw=Timeless+Skin+Care+Vitamin+C&rcode=CRUXKIT', goPath: './go/timeless/index.html', commission: '5%-20% iHerb Rewards (Alipay Payout)' },
-    cicaplast: { name: 'La Roche-Posay Cicaplast B5+', targetUrl: 'https://www.iherb.com/search?kw=La+Roche+Posay+Cicaplast+B5&rcode=CRUXKIT', goPath: './go/cicaplast/index.html', commission: '5%-20% iHerb / Dermstore Partner' },
-    bojsun:    { name: 'Beauty of Joseon Relief Sun SPF50+', targetUrl: 'https://www.iherb.com/search?kw=Beauty+of+Joseon+Relief+Sun&rcode=CRUXKIT', goPath: './go/boj-sun/index.html', commission: '5%-20% iHerb / YesStyle Bestseller' },
-    paulasbha: { name: 'Paula’s Choice 2% BHA Liquid', targetUrl: 'https://www.iherb.com/search?kw=Paulas+Choice+2%25+BHA&rcode=CRUXKIT', goPath: './go/paulas-bha/index.html', commission: '5%-20% iHerb Global Bestseller' },
-    cosrxsnail:{ name: 'COSRX Snail 96 Mucin Essence', targetUrl: 'https://www.iherb.com/search?kw=COSRX+Advanced+Snail+96&rcode=CRUXKIT', goPath: './go/cosrx-snail/index.html', commission: '5%-20% iHerb / YesStyle Cult Classic' },
-    differin:  { name: 'Differin Adapalene Gel 0.1%', targetUrl: 'https://www.iherb.com/search?kw=Differin+Adapalene+Gel&rcode=CRUXKIT', goPath: './go/differin/index.html', commission: '5%-20% iHerb OTC Retinoid Benchmark' }
+    // --- DESK 1: AI & AUTOMATION (9) ---
+    make: {
+      name: "Make.com Visual Automation",
+      url: "https://www.make.com/en/register?pc=cruxkit",
+      commission: "20%–35% Recurring (12–24 Mo)",
+      badgeEn: "10,000 Free Ops · Partner Link",
+      badgeZh: "首月赠 10,000 Ops · 官方合作通道"
+    },
+    n8n: {
+      name: "n8n Cloud & Fair-Code Workflow Engine",
+      url: "https://n8n.partnerlinks.io/cruxkit",
+      commission: "30% Recurring (12 Mo)",
+      badgeEn: "Fair-Code AI Agent Engine",
+      badgeZh: "开源可自建 AI 工作流引擎"
+    },
+    openrouter: {
+      name: "OpenRouter Unified LLM API",
+      url: "https://openrouter.ai/?ref=cruxkit",
+      commission: "Official API Credits Gateway",
+      badgeEn: "1 Key for Claude / GPT / DeepSeek",
+      badgeZh: "一个 Key 畅连 Claude / GPT / DeepSeek"
+    },
+    cursor: {
+      name: "Cursor AI-First Code Editor",
+      url: "https://www.cursor.com/?ref=cruxkit",
+      commission: "Pro IDE Referral",
+      badgeEn: "#1 AI Code & Agent IDE",
+      badgeZh: "全栈 AI 编程与 Agent 编辑器首选"
+    },
+    claude: {
+      name: "Claude 3.7 Sonnet & Claude Code",
+      url: "https://claude.ai/?ref=cruxkit",
+      commission: "Anthropic Official Workspace",
+      badgeEn: "Best Long-Context Writing & Coding",
+      badgeZh: "长文写作与架构推理天花板"
+    },
+    deepseek: {
+      name: "DeepSeek V3 / R1 Official API",
+      url: "https://platform.deepseek.com/?ref=cruxkit",
+      commission: "Direct Token API",
+      badgeEn: "$0.14/1M Tokens · Reasoning King",
+      badgeZh: "百万 Token 仅 ¥1 · 极致性价比推理"
+    },
+    reclaim: {
+      name: "Reclaim.ai Smart Calendar Defense",
+      url: "https://reclaim.ai/?via=cruxkit",
+      commission: "20% Recurring (12 Mo)",
+      badgeEn: "Auto-Defends Deep Work Blocks",
+      badgeZh: "自动锁定深度工作与专注时段"
+    },
+    appsumo: {
+      name: "AppSumo Lifetime SaaS Deals",
+      url: "https://appsumo.8odi.net/cruxkit",
+      commission: "Up to $50 CPA · 10% Off Plus",
+      badgeEn: "Pay Once, Use Forever SaaS LTDs",
+      badgeZh: "一次买断终身使用的海外 SaaS 宝库"
+    },
+    perplexity: {
+      name: "Perplexity Pro & Sonar Citation API",
+      url: "https://www.perplexity.ai/?ref=cruxkit",
+      commission: "$15 Partner Bounty / API Credits",
+      badgeEn: "Zero-Hallucination Citation Search",
+      badgeZh: "零幻觉学术与竞品信源溯源引擎"
+    },
+
+    // --- DESK 2: CREATOR & SEO (9) ---
+    notion: {
+      name: "Notion + Notion AI Workspace",
+      url: "https://affiliate.notion.so/cruxkit",
+      commission: "Up to 50% Recurring (12 Mo)",
+      badgeEn: "All-in-One Solo Operator OS",
+      badgeZh: "超级个体一站式知识库与业务中台"
+    },
+    elevenlabs: {
+      name: "ElevenLabs Voice AI Studio v3",
+      url: "https://try.elevenlabs.io/cruxkit",
+      commission: "22% Recurring (12 Mo)",
+      badgeEn: "32-Language Studio Voice Cloning",
+      badgeZh: "32 国语言广播级情感配音与克隆"
+    },
+    heygen: {
+      name: "HeyGen AI Digital Avatar Studio",
+      url: "https://www.heygen.com/?sid=rewardful&via=cruxkit",
+      commission: "20% Recurring (12 Mo)",
+      badgeEn: "4K Lip-Sync Video Avatar",
+      badgeZh: "4K 逼真数字人口播与多语种视频翻译"
+    },
+    semrush: {
+      name: "Semrush SEO & Keyword Intelligence",
+      url: "https://www.semrush.com/?ref=cruxkit",
+      commission: "$200 CPA per Sale / $10 Trial",
+      badgeEn: "14-Day Pro Trial · Keyword Audit",
+      badgeZh: "独立站高转化买词与外链反查神器"
+    },
+    beehiiv: {
+      name: "Beehiiv Newsletter & Ad Network",
+      url: "https://www.beehiiv.com/?via=cruxkit",
+      commission: "50% Recurring (12 Mo)",
+      badgeEn: "Built-In Sponsorship Ad Network",
+      badgeZh: "自带广告变现网络的邮件通讯平台"
+    },
+    framer: {
+      name: "Framer AI Web Design & Publishing",
+      url: "https://www.framer.com/?via=cruxkit",
+      commission: "50% Recurring (12 Mo)",
+      badgeEn: "Ship 98-Lighthouse Sites in Hours",
+      badgeZh: "零代码发布杂志级高转化独立站"
+    },
+    descript: {
+      name: "Descript AI Video & Podcast Editor",
+      url: "https://www.descript.com/?via=cruxkit",
+      commission: "25% Recurring (12 Mo)",
+      badgeEn: "Edit Video Like a Word Doc + Eye Contact",
+      badgeZh: "像改文档一样剪视频 + AI 眼神矫正"
+    },
+    opusclip: {
+      name: "OpusClip AI Viral Shorts Generator",
+      url: "https://www.opus.pro/?via=cruxkit",
+      commission: "25% Recurring (12 Mo)",
+      badgeEn: "1 Long Video -> 10 Viral Shorts",
+      badgeZh: "1 条长视频全自动切片 10 条爆款短视频"
+    },
+    convertkit: {
+      name: "Kit (ConvertKit) Creator Email & Commerce OS",
+      url: "https://kit.com/?lmref=cruxkit",
+      commission: "30% Recurring (24 Mo)",
+      badgeEn: "Visual Email Funnels + Digital Checkout",
+      badgeZh: "创作者自动化邮件漏斗与数字商品收银台"
+    },
+
+    // --- DESK 3: CLOUD & INDIE OPS (9) ---
+    hostinger: {
+      name: "Hostinger KVM2 NVMe VPS",
+      url: "https://www.hostinger.com/vps-hosting?REFERRALCODE=cruxkit",
+      commission: "Up to 60% CPA",
+      badgeEn: "1-Click Docker & n8n Template ($5.99/mo)",
+      badgeZh: "一键部署 n8n 与 LobeChat 的高性价比 VPS"
+    },
+    cloudflare: {
+      name: "Cloudflare Pages, Workers & R2",
+      url: "https://www.cloudflare.com/?ref=cruxkit",
+      commission: "Zero-Egress Edge Cloud",
+      badgeEn: "$0 Bandwidth Static Hosting & CDN",
+      badgeZh: "零流量费全球 CDN、边缘计算与 R2 存储"
+    },
+    lemonsqueezy: {
+      name: "Lemon Squeezy (Powered by Stripe)",
+      url: "https://www.lemonsqueezy.com/?ref=cruxkit",
+      commission: "Merchant of Record Checkout",
+      badgeEn: "Sell Digital Kits Globally (No LLC Needed)",
+      badgeZh: "个人无需注册海外公司即可合规收全球美金"
+    },
+    wise: {
+      name: "Wise Business Multi-Currency Account",
+      url: "https://wise.com/invite/cruxkit",
+      commission: "$15–$75 Referral Bonus",
+      badgeEn: "Receive Affiliate Payouts in USD/EUR/HKD",
+      badgeZh: "零汇损接收海外联盟美金/欧元佣金必备账户"
+    },
+    spaceship: {
+      name: "Spaceship Domain & Unbox DNS Infrastructure",
+      url: "https://www.spaceship.com/?ref=cruxkit",
+      commission: "Up to 35% CPA",
+      badgeEn: "$8.88 .com Domains + Instant Unbox DNS",
+      badgeZh: "极简低价域名注册与秒级 DNS 解析平台"
+    },
+    gumroad: {
+      name: "Gumroad Digital Product Storefront",
+      url: "https://gumroad.com/?ref=cruxkit",
+      commission: "Zero Monthly Fee · 10% Flat",
+      badgeEn: "Launch Digital Kits in 5 Minutes ($0/mo)",
+      badgeZh: "零月租 5 分钟上线虚拟商品与许可证发卡"
+    },
+    stripe: {
+      name: "Stripe Global Checkout & Atlas US LLC",
+      url: "https://stripe.com/?ref=cruxkit",
+      commission: "$100 Partner Atlas Credit",
+      badgeEn: "Accept Cards, Apple Pay, Alipay & WeChat",
+      badgeZh: "全球信用卡 + 支付宝/微信收单与美国公司注册"
+    },
+    vercel: {
+      name: "Vercel Pro Frontend Cloud",
+      url: "https://vercel.com/?ref=cruxkit",
+      commission: "Frontend Edge Cloud",
+      badgeEn: "Instant Git-Push Previews & Next.js Edge",
+      badgeZh: "Git 推送秒级全球构建与 Next.js 边缘网络"
+    },
+    supabase: {
+      name: "Supabase Open-Source Postgres & pgvector",
+      url: "https://supabase.com/?ref=cruxkit",
+      commission: "Open-Source Firebase Alternative",
+      badgeEn: "Postgres + Auth + pgvector RAG in 60s",
+      badgeZh: "60 秒开箱即用的 Postgres 与 AI 向量数据库"
+    },
+
+    // --- DESK 4: DERM & BEAUTY SCIENCE (9) ---
+    timeless: {
+      name: "Timeless 20% Vitamin C + E Ferulic Acid Serum",
+      url: "https://www.timelessha.com/?ref=cruxkit",
+      commission: "15%–20% Official Affiliate",
+      badgeEn: "pH 2.4 · Airless Pump · $26 Benchmark",
+      badgeZh: "pH 2.4 黄金渗透率 · 真空避光泵头 · 早 C 标杆"
+    },
+    cicaplast: {
+      name: "La Roche-Posay Cicaplast Baume B5+",
+      url: "https://www.laroche-posay.us/?ref=cruxkit",
+      commission: "8%–15% Dermstore / iHerb / Amazon",
+      badgeEn: "5% Panthenol + Madecassoside Barrier Rescue",
+      badgeZh: "5% 泛醇 + 羟基积雪草苷 · 刷酸翻车急救神霜"
+    },
+    bojsun: {
+      name: "Beauty of Joseon Relief Sun: Rice + Probiotics",
+      url: "https://global.oliveyoung.com/?ref=cruxkit",
+      commission: "10%–15% OliveYoung / YesStyle",
+      badgeEn: "SPF50+ PA++++ · Zero White Cast",
+      badgeZh: "Tinosorb M 新一代防晒剂 · 零泛白水润乳液感"
+    },
+    paulasbha: {
+      name: "Paula's Choice 2% BHA Liquid Exfoliant",
+      url: "https://www.paulaschoice.com/?ref=cruxkit",
+      commission: "10%–15% Official / Rakuten",
+      badgeEn: "pH 3.2–3.8 Lipid-Soluble Pore Clearing",
+      badgeZh: "脂溶性 2% 水杨酸 + 绿茶多酚 · 闭口黑头克星"
+    },
+    cosrxsnail: {
+      name: "COSRX Advanced Snail 96 Mucin Power Essence",
+      url: "https://www.yesstyle.com/?ref=cruxkit",
+      commission: "10%–15% YesStyle / iHerb / Amazon",
+      badgeEn: "96.3% Snail Secretion Filtrate Humectant",
+      badgeZh: "96.3% 高纯度蜗牛原液 · 极简无香精保湿修护基底"
+    },
+    differin: {
+      name: "Differin Adapalene Gel 0.1% Retinoid",
+      url: "https://www.iherb.com/?rcode=CRUXKIT",
+      commission: "5%–10% iHerb / Amazon",
+      badgeEn: "FDA OTC 3rd-Gen Retinoid · Receptor Selective",
+      badgeZh: "第三代受体选择性维A酸（阿达帕林）· 温和抗痘抗老"
+    },
+    skinceuticals: {
+      name: "SkinCeuticals C E Ferulic (15% L-Ascorbic Acid)",
+      url: "https://www.dermstore.com/?ref=cruxkit",
+      commission: "15% Dermstore / Lookfantastic CPA",
+      badgeEn: "Duke Patent Reference Standard (15% L-AA + 1% E + 0.5% FA)",
+      badgeZh: "杜克专利原研黄金标准（15% 精纯左旋维C + 1% 维E + 0.5% 阿魏酸）"
+    },
+    "anua-txa": {
+      name: "Anua Niacinamide 10% + TXA 4% Dark Spot Serum",
+      url: "https://global.oliveyoung.com/?ref=cruxkit",
+      commission: "12%–15% OliveYoung / YesStyle CPA",
+      badgeEn: "4% Tranexamic Acid + 10% Niacinamide + 2% Arbutin",
+      badgeZh: "4% 传明酸 + 10% 烟酰胺 + 2% 熊果苷 · 多通路阻断痘印色沉"
+    },
+    "cerave-pm": {
+      name: "CeraVe PM Facial Moisturizing Lotion",
+      url: "https://www.iherb.com/?rcode=CRUXKIT",
+      commission: "8%–12% iHerb / Amazon CPA",
+      badgeEn: "Ceramides 1, 3, 6-II + 4% Niacinamide MVE Delivery",
+      badgeZh: "三重神经酰胺 + 4% 烟酰胺 MVE 缓释乳 · 维A醇三明治打底首选"
+    }
   },
 
-  // --------------------------------------------------------------------------
-  // B. 12 款高利润虚拟商品自动发货总控表 (12 DIGITAL KITS CHECKOUT)
-  // --------------------------------------------------------------------------
   CHECKOUT_LINKS: {
-    automation:  { priceUSD: 24, priceCNY: 128, enUrl: 'https://cruxkit.gumroad.com/l/automation-kit', zhUrl: 'https://mbd.pub/o/cruxkit-automation', localSampleZip: './deliverables/01_CruxKit_Automation_Kit_v2026.zip' },
-    workstation: { priceUSD: 19, priceCNY: 98,  enUrl: 'https://cruxkit.gumroad.com/l/ai-workstation', zhUrl: 'https://mbd.pub/o/cruxkit-workstation', localSampleZip: './deliverables/02_CruxKit_Private_AI_Workstation_Pack_v2026.zip' },
-    mcppack:     { priceUSD: 29, priceCNY: 148, enUrl: 'https://cruxkit.gumroad.com/l/mcp-agent-pack', zhUrl: 'https://mbd.pub/o/cruxkit-mcp-pack', localSampleZip: './deliverables/03_CruxKit_MCP_Super_Agent_Pack_v2026.zip' },
-    n8nvps:      { priceUSD: 18, priceCNY: 88,  enUrl: 'https://cruxkit.gumroad.com/l/n8n-vps-docker', zhUrl: 'https://mbd.pub/o/cruxkit-n8n-vps', localSampleZip: './deliverables/04_CruxKit_n8n_Docker_VPS_Boilerplate_v2026.zip' },
-    solo:        { priceUSD: 19, priceCNY: 98,  enUrl: 'https://cruxkit.gumroad.com/l/solo-os', zhUrl: 'https://mbd.pub/o/cruxkit-solo-os', localSampleZip: './deliverables/05_CruxKit_Solo_OS_Notion_System_v2026.zip' },
-    content:     { priceUSD: 15, priceCNY: 78,  enUrl: 'https://cruxkit.gumroad.com/l/content-kit', zhUrl: 'https://mbd.pub/o/cruxkit-content-kit', localSampleZip: './deliverables/06_CruxKit_Content_and_GEO_Prompts_v2026.zip' },
-    videoengine: { priceUSD: 22, priceCNY: 118, enUrl: 'https://cruxkit.gumroad.com/l/faceless-video', zhUrl: 'https://mbd.pub/o/cruxkit-video-engine', localSampleZip: './deliverables/07_CruxKit_Faceless_Video_Engine_v2026.zip' },
-    hooksvault:  { priceUSD: 16, priceCNY: 88,  enUrl: 'https://cruxkit.gumroad.com/l/100-hooks-vault', zhUrl: 'https://mbd.pub/o/cruxkit-100-hooks', localSampleZip: './deliverables/08_CruxKit_X_and_Xiaohongshu_100_Hooks_v2026.zip' },
-    routine:     { priceUSD: 12, priceCNY: 58,  enUrl: 'https://cruxkit.gumroad.com/l/barrier-routine-kit', zhUrl: 'https://mbd.pub/o/cruxkit-barrier-kit', localSampleZip: './deliverables/09_CruxKit_Barrier_and_Skin_Cycling_Kit_v2026.zip' },
-    incidecoder: { priceUSD: 14, priceCNY: 68,  enUrl: 'https://cruxkit.gumroad.com/l/inci-decoder-sheet', zhUrl: 'https://mbd.pub/o/cruxkit-inci-decoder', localSampleZip: './deliverables/10_CruxKit_Cosmetic_INCI_Decoder_Sheet_v2026.zip' },
-    sunguide:    { priceUSD: 12, priceCNY: 58,  enUrl: 'https://cruxkit.gumroad.com/l/sunscreen-uv-guide', zhUrl: 'https://mbd.pub/o/cruxkit-sun-guide', localSampleZip: './deliverables/11_CruxKit_Sunscreen_UV_Filter_Guide_v2026.zip' },
-    allbundle:   { priceUSD: 69, priceCNY: 368, enUrl: 'https://cruxkit.gumroad.com/l/all-access-bundle', zhUrl: 'https://mbd.pub/o/cruxkit-all-bundle', localSampleZip: './deliverables/12_CruxKit_All_Access_11_in_1_Master_Bundle_v2026.zip' }
-  }
-};
-
-window.CruxKitAnalytics = {
-  track(eventType, itemKey, destination) {
-    try {
-      const key = 'cruxkit-click-telemetry';
-      const logs = JSON.parse(localStorage.getItem(key) || '[]');
-      logs.push({ ts: new Date().toISOString(), lang: document.documentElement.lang || 'en', eventType, itemKey, destination });
-      localStorage.setItem(key, JSON.stringify(logs.slice(-300)));
-    } catch {}
-  },
-  getReport() {
-    try {
-      const logs = JSON.parse(localStorage.getItem('cruxkit-click-telemetry') || '[]');
-      const summary = {};
-      for (const item of logs) {
-        const k = `${item.eventType}:${item.itemKey}`;
-        summary[k] = (summary[k] || 0) + 1;
-      }
-      console.table(summary);
-      return { totalClicks: logs.length, summary, recent: logs.slice(-10) };
-    } catch {
-      return { totalClicks: 0, summary: {}, recent: [] };
+    "automation-kit": {
+      priceEn: "$29",
+      priceZh: "¥199",
+      enUrl: "deliverables/01_CruxKit_Automation_Kit_v2026.zip",
+      zhUrl: "deliverables/01_CruxKit_Automation_Kit_v2026.zip",
+      localSampleZip: "deliverables/01_CruxKit_Automation_Kit_v2026.zip"
+    },
+    "private-ai-kit": {
+      priceEn: "$19",
+      priceZh: "¥129",
+      enUrl: "deliverables/02_CruxKit_Private_AI_Workstation_Pack_v2026.zip",
+      zhUrl: "deliverables/02_CruxKit_Private_AI_Workstation_Pack_v2026.zip",
+      localSampleZip: "deliverables/02_CruxKit_Private_AI_Workstation_Pack_v2026.zip"
+    },
+    "mcp-agent-kit": {
+      priceEn: "$29",
+      priceZh: "¥199",
+      enUrl: "deliverables/03_CruxKit_MCP_Super_Agent_Pack_v2026.zip",
+      zhUrl: "deliverables/03_CruxKit_MCP_Super_Agent_Pack_v2026.zip",
+      localSampleZip: "deliverables/03_CruxKit_MCP_Super_Agent_Pack_v2026.zip"
+    },
+    "n8n-vps-kit": {
+      priceEn: "$24",
+      priceZh: "¥169",
+      enUrl: "deliverables/04_CruxKit_n8n_Docker_VPS_Boilerplate_v2026.zip",
+      zhUrl: "deliverables/04_CruxKit_n8n_Docker_VPS_Boilerplate_v2026.zip",
+      localSampleZip: "deliverables/04_CruxKit_n8n_Docker_VPS_Boilerplate_v2026.zip"
+    },
+    "solo-os-kit": {
+      priceEn: "$39",
+      priceZh: "¥269",
+      enUrl: "deliverables/05_CruxKit_Solo_OS_Notion_System_v2026.zip",
+      zhUrl: "deliverables/05_CruxKit_Solo_OS_Notion_System_v2026.zip",
+      localSampleZip: "deliverables/05_CruxKit_Solo_OS_Notion_System_v2026.zip"
+    },
+    "prompt-kit": {
+      priceEn: "$24",
+      priceZh: "¥169",
+      enUrl: "deliverables/06_CruxKit_Content_and_GEO_Prompts_v2026.zip",
+      zhUrl: "deliverables/06_CruxKit_Content_and_GEO_Prompts_v2026.zip",
+      localSampleZip: "deliverables/06_CruxKit_Content_and_GEO_Prompts_v2026.zip"
+    },
+    "faceless-video-kit": {
+      priceEn: "$34",
+      priceZh: "¥239",
+      enUrl: "deliverables/07_CruxKit_Faceless_Video_Engine_v2026.zip",
+      zhUrl: "deliverables/07_CruxKit_Faceless_Video_Engine_v2026.zip",
+      localSampleZip: "deliverables/07_CruxKit_Faceless_Video_Engine_v2026.zip"
+    },
+    "viral-hooks-kit": {
+      priceEn: "$19",
+      priceZh: "¥129",
+      enUrl: "deliverables/08_CruxKit_X_and_Xiaohongshu_100_Hooks_v2026.zip",
+      zhUrl: "deliverables/08_CruxKit_X_and_Xiaohongshu_100_Hooks_v2026.zip",
+      localSampleZip: "deliverables/08_CruxKit_X_and_Xiaohongshu_100_Hooks_v2026.zip"
+    },
+    "barrier-kit": {
+      priceEn: "$19",
+      priceZh: "¥129",
+      enUrl: "deliverables/09_CruxKit_Barrier_and_Skin_Cycling_Kit_v2026.zip",
+      zhUrl: "deliverables/09_CruxKit_Barrier_and_Skin_Cycling_Kit_v2026.zip",
+      localSampleZip: "deliverables/09_CruxKit_Barrier_and_Skin_Cycling_Kit_v2026.zip"
+    },
+    "inci-decoder-kit": {
+      priceEn: "$15",
+      priceZh: "¥99",
+      enUrl: "deliverables/10_CruxKit_Cosmetic_INCI_Decoder_Sheet_v2026.zip",
+      zhUrl: "deliverables/10_CruxKit_Cosmetic_INCI_Decoder_Sheet_v2026.zip",
+      localSampleZip: "deliverables/10_CruxKit_Cosmetic_INCI_Decoder_Sheet_v2026.zip"
+    },
+    "sunscreen-uv-kit": {
+      priceEn: "$15",
+      priceZh: "¥99",
+      enUrl: "deliverables/11_CruxKit_Sunscreen_UV_Filter_Guide_v2026.zip",
+      zhUrl: "deliverables/11_CruxKit_Sunscreen_UV_Filter_Guide_v2026.zip",
+      localSampleZip: "deliverables/11_CruxKit_Sunscreen_UV_Filter_Guide_v2026.zip"
+    },
+    "all-access-bundle": {
+      priceEn: "$99",
+      priceZh: "¥699",
+      enUrl: "deliverables/12_CruxKit_All_Access_11_in_1_Master_Bundle_v2026.zip",
+      zhUrl: "deliverables/12_CruxKit_All_Access_11_in_1_Master_Bundle_v2026.zip",
+      localSampleZip: "deliverables/12_CruxKit_All_Access_11_in_1_Master_Bundle_v2026.zip"
+    },
+    "research-os-kit": {
+      priceEn: "$19",
+      priceZh: "¥129",
+      enUrl: "deliverables/13_CruxKit_NotebookLM_Perplexity_Research_OS_v2026.zip",
+      zhUrl: "deliverables/13_CruxKit_NotebookLM_Perplexity_Research_OS_v2026.zip",
+      localSampleZip: "deliverables/13_CruxKit_NotebookLM_Perplexity_Research_OS_v2026.zip"
+    },
+    "affiliate-matrix-kit": {
+      priceEn: "$29",
+      priceZh: "¥199",
+      enUrl: "deliverables/14_CruxKit_Affiliate_Comparison_Matrix_Kit_v2026.zip",
+      zhUrl: "deliverables/14_CruxKit_Affiliate_Comparison_Matrix_Kit_v2026.zip",
+      localSampleZip: "deliverables/14_CruxKit_Affiliate_Comparison_Matrix_Kit_v2026.zip"
+    },
+    "cloudflare-edge-kit": {
+      priceEn: "$24",
+      priceZh: "¥169",
+      enUrl: "deliverables/15_CruxKit_Cloudflare_Edge_Worker_Kit_v2026.zip",
+      zhUrl: "deliverables/15_CruxKit_Cloudflare_Edge_Worker_Kit_v2026.zip",
+      localSampleZip: "deliverables/15_CruxKit_Cloudflare_Edge_Worker_Kit_v2026.zip"
+    },
+    "retinoid-ramp-kit": {
+      priceEn: "$15",
+      priceZh: "¥99",
+      enUrl: "deliverables/16_CruxKit_Retinoid_Tolerance_Ramp_Protocol_v2026.zip",
+      zhUrl: "deliverables/16_CruxKit_Retinoid_Tolerance_Ramp_Protocol_v2026.zip",
+      localSampleZip: "deliverables/16_CruxKit_Retinoid_Tolerance_Ramp_Protocol_v2026.zip"
     }
   }
 };
+
+
+// Bridge for app.js compatibility (window.CRUXKIT_CONFIG + targetUrl + short kit keys)
+(function() {
+  var c = window.CRUXKIT_AFFILIATE_CONFIG;
+  if (!c) return;
+  Object.keys(c.AFFILIATE_LINKS).forEach(function(k) {
+    c.AFFILIATE_LINKS[k].targetUrl = c.AFFILIATE_LINKS[k].url;
+  });
+  c.AFFILIATE_LINKS.anuatxa = c.AFFILIATE_LINKS["anua-txa"];
+  c.AFFILIATE_LINKS.ceravepm = c.AFFILIATE_LINKS["cerave-pm"];
+  var map = {
+    automation: ["automation-kit", 168],
+    workstation: ["private-ai-kit", 129],
+    mcppack: ["mcp-agent-kit", 199],
+    n8nvps: ["n8n-vps-kit", 169],
+    solo: ["solo-os-kit", 269],
+    content: ["prompt-kit", 169],
+    videoengine: ["faceless-video-kit", 239],
+    hooksvault: ["viral-hooks-kit", 129],
+    routine: ["barrier-kit", 129],
+    incidecoder: ["inci-decoder-kit", 99],
+    sunguide: ["sunscreen-uv-kit", 99],
+    allbundle: ["all-access-bundle", 499],
+    researchos: ["research-os-kit", 129],
+    cloudflareedge: ["cloudflare-edge-kit", 169],
+    affiliatematrix: ["affiliate-matrix-kit", 199],
+    retinoidramp: ["retinoid-ramp-kit", 99]
+  };
+  Object.keys(map).forEach(function(shortKey) {
+    var longKey = map[shortKey][0];
+    var cny = map[shortKey][1];
+    if (c.CHECKOUT_LINKS[longKey]) {
+      c.CHECKOUT_LINKS[shortKey] = Object.assign({ priceCNY: cny }, c.CHECKOUT_LINKS[longKey]);
+    }
+  });
+  window.CRUXKIT_CONFIG = c;
+})();
