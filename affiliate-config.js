@@ -16,8 +16,8 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       name: "Make.com Visual Automation",
       url: "https://www.make.com/en/register?pc=cruxkit",
       commission: "20%–35% Recurring (12–24 Mo)",
-      badgeEn: "10,000 Free Ops · Partner Link",
-      badgeZh: "首月赠 10,000 Ops · 官方合作通道"
+      badgeEn: "1-Mo Free Core (10,000 Credits) · Maia AI Agents",
+      badgeZh: "专属赠送 1 个月 Core 专业版 (10,000 Credits) · Maia 智能体"
     },
     n8n: {
       name: "n8n Cloud & Fair-Code Workflow Engine",
@@ -41,17 +41,17 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       badgeZh: "全栈 AI 编程与 Agent 编辑器首选"
     },
     claude: {
-      name: "Claude 3.7 Sonnet & Claude Code",
+      name: "Claude Sonnet 4.5 / 5.5 & Claude Code",
       url: "https://claude.ai/?ref=cruxkit",
       commission: "Anthropic Official Workspace",
       badgeEn: "Best Long-Context Writing & Coding",
       badgeZh: "长文写作与架构推理天花板"
     },
     deepseek: {
-      name: "DeepSeek V3 / R1 Official API",
+      name: "DeepSeek V3.2 / V4 Flash & R1 Official API",
       url: "https://platform.deepseek.com/?ref=cruxkit",
       commission: "Direct Token API",
-      badgeEn: "$0.14/1M Tokens · Reasoning King",
+      badgeEn: "$0.07–$0.27/1M · 50% Off-Peak Reasoning King",
       badgeZh: "百万 Token 仅 ¥1 · 极致性价比推理"
     },
     reclaim: {
@@ -93,7 +93,7 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
     },
     heygen: {
       name: "HeyGen AI Digital Avatar Studio",
-      url: "https://www.heygen.com/?sid=rewardful&via=cruxkit",
+      url: "https://www.heygen.com/?sid=rewardful&utm_content=creator&utm_medium=affiliatebase&via=xing",
       commission: "20% Recurring (12 Mo)",
       badgeEn: "4K Lip-Sync Video Avatar",
       badgeZh: "4K 逼真数字人口播与多语种视频翻译"
@@ -136,7 +136,7 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
     convertkit: {
       name: "Kit (ConvertKit) Creator Email & Commerce OS",
       url: "https://kit.com/?lmref=cruxkit",
-      commission: "30% Recurring (24 Mo)",
+      commission: "50% Recurring (12 Mo)",
       badgeEn: "Visual Email Funnels + Digital Checkout",
       badgeZh: "创作者自动化邮件漏斗与数字商品收银台"
     },
@@ -179,7 +179,7 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
     },
     gumroad: {
       name: "Gumroad Digital Product Storefront",
-      url: "https://gumroad.com/?ref=cruxkit",
+      url: "https://gumroad.com/?a=735179107",
       commission: "Zero Monthly Fee · 10% Flat",
       badgeEn: "Launch Digital Kits in 5 Minutes ($0/mo)",
       badgeZh: "零月租 5 分钟上线虚拟商品与许可证发卡"
@@ -218,8 +218,8 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       name: "La Roche-Posay Cicaplast Baume B5+",
       url: "https://www.laroche-posay.us/?ref=cruxkit",
       commission: "8%–15% Dermstore / iHerb / Amazon",
-      badgeEn: "5% Panthenol + Madecassoside Barrier Rescue",
-      badgeZh: "5% 泛醇 + 羟基积雪草苷 · 刷酸翻车急救神霜"
+      badgeEn: "5% Panthenol + Madecassoside + Tribioma B5+",
+      badgeZh: "5% 泛醇 + 羟基积雪草苷 + Tribioma 益生元 · 急救神霜"
     },
     bojsun: {
       name: "Beauty of Joseon Relief Sun: Rice + Probiotics",

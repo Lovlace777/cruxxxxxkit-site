@@ -200,11 +200,11 @@ const productsData = {
       items: [
         'Pre-configured LobeChat / NextChat JSON with 50 specialized expert agents',
         '1-Click zero-cost deployment guide on Cloudflare Pages / Zeabur / Vercel',
-        'Official API routing rules (Claude 3.7 for coding/writing, DeepSeek R1 for reasoning)',
+        'Official API routing rules (Claude Sonnet 4.5 / 5.5 for coding/writing, DeepSeek R1 for reasoning)',
         'Rate-limit protection, token cost cap & privacy hardening checklist'
       ],
       companionTool: { name: 'OpenRouter Unified Official LLM API', url: 'https://openrouter.ai/?ref=cruxkit' },
-      sample: `// ROUTING RULEBOOK: PAY-AS-YOU-GO MULTI-MODEL HUB\n• Coding & Long-Form Editing -> anthropic/claude-3.7-sonnet\n• Bulk Data Extraction & Math -> deepseek/deepseek-r1 ($0.14 / 1M tokens)\n• Fast Multilingual Translation -> google/gemini-2.5-flash\n• Average Monthly API Bill for Solo Creator: $2.40 - $4.80/mo (Zero Ban Risk)`
+      sample: `// ROUTING RULEBOOK: PAY-AS-YOU-GO MULTI-MODEL HUB\n• Coding & Long-Form Editing -> anthropic/claude-sonnet-4-5\n• Bulk Data Extraction & Math -> deepseek/deepseek-r1 ($0.14 / 1M tokens)\n• Fast Multilingual Translation -> google/gemini-3.1-flash\n• Average Monthly API Bill for Solo Creator: $2.40 - $4.80/mo (Zero Ban Risk)`
     },
     mcppack: {
       num: '03', catKey: 'workflow', price: 29, tile: 'tile-folders',
@@ -264,7 +264,7 @@ const productsData = {
       items: [
         'One-page reusable content brief & reader intent canvas',
         '6 GEO-ready comparison & Tier List article wireframes (TL;DR Box + Schema tables)',
-        '50 modular editorial & script prompts for Claude 3.7, Gemini & DeepSeek',
+        '50 modular editorial & script prompts for Claude Sonnet 4.5 / 5.5, Gemini & DeepSeek',
         'Pre-publish clarity, FTC disclosure, and affiliate link-check checklist'
       ],
       companionTool: { name: 'Semrush SEO & GEO Intelligence Suite', url: 'https://www.semrush.com/?ref=cruxkit' },
@@ -390,15 +390,15 @@ const productsData = {
       category: 'AI 基建 · 告别共享号封号焦虑 + 50 专家智能体',
       badges: ['100% 零封号风险', '50 个预设智能体', 'OpenRouter / DeepSeek'],
       shortDesc: '彻底告别三天两头封号的共享成品号！用官方按量 API + LobeChat 零成本搭建专属多模型工作台（月均仅需 $3）。',
-      description: 'X 与小红书最受欢迎的合规替代方案：无需购买高风险合租号，直接通过 OpenRouter / DeepSeek / 硅基流动官方 API 配合一键部署的 LobeChat，同时调用 Claude 3.7、GPT-4o 与 DeepSeek R1。',
+      description: 'X 与小红书最受欢迎的合规替代方案：无需购买高风险合租号，直接通过 OpenRouter / DeepSeek / 硅基流动官方 API 配合一键部署的 LobeChat，同时调用 Claude Sonnet 4.5 / 5.5、GPT-5 / o3 与 DeepSeek R1。',
       items: [
         '预置 50 个垂直领域专家智能体（GEO 评测主笔、全栈代码审计、小红书爆款改写等）的 LobeChat 配置文件',
         'Cloudflare Pages / Zeabur / Vercel 零服务器费用 3 分钟一键部署图文手册',
-        '多模型省钱路由策略：写作写代码调 Claude 3.7，大批量推理清洗调 DeepSeek R1',
+        '多模型省钱路由策略：写作写代码调 Claude Sonnet 4.5 / 5.5，大批量推理清洗调 DeepSeek R1',
         'API 额度防刷上限设置与个人隐私防泄露加固清单'
       ],
       companionTool: { name: 'OpenRouter 官方多模型聚合 API 平台', url: 'https://openrouter.ai/?ref=cruxkit' },
-      sample: `// 多模型黄金省钱路由表\n• 深度长文与代码开发 -> anthropic/claude-3.7-sonnet\n• 批量数据清洗与逻辑推理 -> deepseek/deepseek-r1 (仅 $0.14 / 百万 Token)\n• 多语种极速互译 -> google/gemini-2.5-flash\n• 一人公司月均 API 账单：仅约 ¥18 - ¥35/月（官方通道，永不封号）`
+      sample: `// 多模型黄金省钱路由表\n• 深度长文与代码开发 -> anthropic/claude-sonnet-4-5\n• 批量数据清洗与逻辑推理 -> deepseek/deepseek-r1 (仅 $0.14 / 百万 Token)\n• 多语种极速互译 -> google/gemini-3.1-flash\n• 一人公司月均 API 账单：仅约 ¥18 - ¥35/月（官方通道，永不封号）`
     },
     mcppack: {
       num: '03', catKey: 'workflow', price: 29, tile: 'tile-folders',
@@ -458,7 +458,7 @@ const productsData = {
       items: [
         '一页纸高转化内容立项画布（动笔前先锁定读者痛点与带货钩子）',
         '6 套针对 AI 搜索引擎抓取偏好的 GEO 对比评测与 Tier List 网页骨架',
-        '50 组适配 Claude 3.7、Gemini 与 DeepSeek 的模块化审校与改写 Prompt',
+        '50 组适配 Claude Sonnet 4.5 / 5.5、Gemini 与 DeepSeek 的模块化审校与改写 Prompt',
         '发布前清晰度自检、合规披露与联盟死链排查清单'
       ],
       companionTool: { name: 'Semrush SEO 与 AI 搜索流量分析套件', url: 'https://www.semrush.com/?ref=cruxkit' },
@@ -607,7 +607,7 @@ const stackToolsData = {
     openrouter: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'workstation',
       tier: 'S-TIER · API ROUTER', name: 'OpenRouter AI', role: 'Unified Multi-LLM Official API Gateway',
-      verdictShort: 'Access Claude 3.7, GPT-4o, Gemini 2.5, and DeepSeek R1 through one single official API key with zero monthly subscription.',
+      verdictShort: 'Access Claude Sonnet 4.5 / 5.5, GPT-5 / o3, Gemini 3.1 Pro, and DeepSeek R1 through one single official API key with zero monthly subscription.',
       metricPill: '⚡ Pay-As-You-Go · 0%Ban Risk · 300+ Models',
       price: '$0 Monthly Fee · Pure Pay-As-You-Go Token Billing',
       summary: 'OpenRouter eliminates the need to pay $20/mo each for ChatGPT, Claude, and Gemini—or risk account bans from shared gray-market accounts. Pair one API key with LobeChat or Cursor.',
@@ -623,18 +623,18 @@ const stackToolsData = {
       metricPill: '⚡ Native MCP Support · Multi-File Composer',
       price: 'Free Hobby Tier · Pro $20/mo',
       summary: 'Cursor is the fastest way to build, edit, and maintain static sites, automation scripts, and digital tools. With Composer and MCP servers connected, it edits entire repositories autonomously.',
-      pros: ['Understands your entire project folder context automatically', 'One-click MCP server integration for browser testing & docs lookup', 'Supports Claude 3.7 Sonnet & DeepSeek models'],
+      pros: ['Understands your entire project folder context automatically', 'One-click MCP server integration for browser testing & docs lookup', 'Supports Claude Sonnet 4.5 / 5.5 & DeepSeek models'],
       cons: ['Fast premium requests cap at 500/mo on Pro before switching to unlimited slow pool'],
       verdict: 'Essential for indie makers building websites, scripts, and digital products.',
       url: 'https://www.cursor.com/?ref=cruxkit', cta: 'Download Cursor'
     },
     claude: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'content',
-      tier: 'S-TIER · #1 WRITING LLM', name: 'Claude 3.7 Sonnet', role: 'Nuanced Editorial Writing & Code Reasoning',
+      tier: 'S-TIER · #1 WRITING LLM', name: 'Claude Sonnet 4.5 / 5.5', role: 'Nuanced Editorial Writing & Code Reasoning',
       verdictShort: 'Produces the most natural, non-robotic bilingual prose and cleanest front-end HTML/CSS/JS of any frontier model in 2026.',
-      metricPill: '⚡ 200k Context Window · Artifacts UI',
+      metricPill: '⚡ 1M Context Window · Claude Code & Artifacts',
       price: 'Free Tier · Pro $20/mo · API Pay-As-You-Go',
-      summary: 'In our blind editorial tests across 50 product reviews, Claude 3.7 Sonnet consistently required 60% less human rewriting than competing models while following complex style constraints.',
+      summary: 'In our blind editorial tests across 50 product reviews, Claude Sonnet 4.5 / 5.5 consistently required 60% less human rewriting than competing models while following complex style constraints.',
       pros: ['Least robotic tone for English and Mandarin long-form essays', 'Interactive Artifacts preview for instant HTML/React widgets', 'Superior instruction-following on multi-constraint prompts'],
       cons: ['Strict message rate limits during peak hours on web Pro plan (use API via OpenRouter as backup)'],
       verdict: 'Our primary engine for drafting high-converting reviews and code.',
@@ -642,10 +642,10 @@ const stackToolsData = {
     },
     deepseek: {
       catKey: 'ai', badgeClass: 'tier-a', score: '9.6 / 10', relatedKit: 'workstation',
-      tier: 'S-TIER · VALUE LLM', name: 'DeepSeek V3 / R1 API', role: 'High-Volume Reasoning at 1/20th Cost',
+      tier: 'S-TIER · VALUE LLM', name: 'DeepSeek V3.2 / V4 Flash & R1 API', role: 'High-Volume Reasoning at 1/20th Cost',
       verdictShort: 'Frontier-level math, logic, and bilingual Chinese/English processing at $0.14 per million input tokens—ideal for bulk n8n loops.',
-      metricPill: '⚡ $0.14 / 1M Tokens · Open-Weights',
-      price: '$0.14 / 1M Input Tokens · $0.28 / 1M Output Tokens',
+      metricPill: '⚡ $0.07–$0.27 / 1M · 50% Off-Peak + Auto Cache',
+      price: '$0.07 (Cache Hit) – $0.27 / 1M Input · 50% Off-Peak Discount',
       summary: 'When running automated RSS summarization, translation, or data classification across thousands of rows in Make or n8n, DeepSeek slashes API bills by over 90%.',
       pros: ['Unbeatable cost-to-intelligence ratio for bulk automation nodes', 'Outstanding native Mandarin Chinese & English bilingual fluency', 'Full chain-of-thought reasoning visibility in R1'],
       cons: ['Official direct API can experience congestion—route via SiliconFlow or OpenRouter for high SLA'],
@@ -710,7 +710,7 @@ const stackToolsData = {
       pros: ['Best-in-class micro-expressions and natural hand gesture synthesis', 'One-click video localization into English, Mandarin, Spanish, and Japanese', '30% recurring affiliate commission for creator partners'],
       cons: ['Works best with clean, even lighting in your initial 2-minute training clip'],
       verdict: 'The highest-leverage multiplier for cross-border bilingual video creators.',
-      url: 'https://www.heygen.com/?sid=rewardful&via=cruxkit', cta: 'Try HeyGen Free'
+      url: 'https://www.heygen.com/?sid=rewardful&utm_content=creator&utm_medium=affiliatebase&via=xing', cta: 'Try HeyGen Free'
     },
     semrush: {
       catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'content',
@@ -897,7 +897,7 @@ const stackToolsData = {
     openrouter: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'workstation',
       tier: 'S 级首选 · 官方 API 聚合', name: 'OpenRouter AI', role: '一站式多模型官方 API 路由网关',
-      verdictShort: '用一个官方 API Key 同时调用 Claude 3.7、GPT-4o、Gemini 2.5 与 DeepSeek R1，按量计费零月租、100% 告别共享号封号焦虑。',
+      verdictShort: '用一个官方 API Key 同时调用 Claude Sonnet 4.5 / 5.5、GPT-5 / o3、Gemini 2.5 与 DeepSeek R1，按量计费零月租、100% 告别共享号封号焦虑。',
       metricPill: '⚡ 零月租按量计费 · 永不封号 · 300+ 模型',
       price: '$0 月租 · 纯按实际消耗 Token 计费（用多少付多少）',
       summary: '无需分别包月订阅三四个 $20/月的 AI 会员，更不必去买三天两头封号的灰产共享号。将 OpenRouter API 填入 LobeChat 或 Cursor，每月几美元即可畅用全球顶尖模型。',
@@ -913,18 +913,18 @@ const stackToolsData = {
       metricPill: '⚡ 原生支持 MCP · 多文件 Composer 协同',
       price: '免费体验版 · Pro 专业版 $20/月',
       summary: 'Cursor 是目前开发独立站、修改前端模版与编写自动化脚本最快的生产力工具。挂载 MCP 服务后，它甚至能自动替你检索文档并完成浏览器测试。',
-      pros: ['自动理解整个项目文件夹上下文，告别反复复制粘贴代码', '一键挂载 20+ MCP 服务扩展本地与联网能力', '无缝切换 Claude 3.7 Sonnet 与 DeepSeek 模型'],
+      pros: ['自动理解整个项目文件夹上下文，告别反复复制粘贴代码', '一键挂载 20+ MCP 服务扩展本地与联网能力', '无缝切换 Claude Sonnet 4.5 / 5.5 与 DeepSeek 模型'],
       cons: ['Pro 版每月含 500 次极速请求，超出后转入无限次慢速队列'],
       verdict: '独立开发者与一人公司构建数字资产的头号神器。',
       url: 'https://www.cursor.com/?ref=cruxkit', cta: '免费下载 Cursor'
     },
     claude: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'content',
-      tier: 'S 级首选 · 深度写作大模型', name: 'Claude 3.7 Sonnet', role: '最自然的双语评测长文撰稿与前端生成模型',
+      tier: 'S 级首选 · 深度写作大模型', name: 'Claude Sonnet 4.5 / 5.5', role: '最自然的双语评测长文撰稿与前端生成模型',
       verdictShort: '在 2026 年主流大模型盲测中，其生成的中英双语长文“AI 爹味/机翻感”最低，且前端 HTML/CSS 审美断层领先。',
       metricPill: '⚡ 200k 超长上下文 · 实时 Artifacts 预览',
       price: '免费版 · Pro $20/月 · 或通过 OpenRouter 按量调用',
-      summary: '在我们对 50 篇带货评测长文的盲测中，Claude 3.7 Sonnet 产出的初稿所需人工润色时间比同类模型少 60%，且能严格遵循复杂的 GEO 表格排版指令。',
+      summary: '在我们对 50 篇带货评测长文的盲测中，Claude Sonnet 4.5 / 5.5 产出的初稿所需人工润色时间比同类模型少 60%，且能严格遵循复杂的 GEO 表格排版指令。',
       pros: ['中英双语行文克制自然，极少出现空洞套话', 'Artifacts 窗口支持实时渲染交互式网页组件与图表', '对长提示词（System Prompts）的多重约束执行最精准'],
       cons: ['网页端高峰期有消息条数限制（建议搭配 OpenRouter API 混合使用）'],
       verdict: '撰写高信任度独立站评测长文与构建网页交互的首选大脑。',
@@ -938,7 +938,7 @@ const stackToolsData = {
       price: '注册即送免费 Token 额度 · 按量计费极低',
       summary: '当你在 n8n 或 Make 里配置每天自动运行的 RSS 监控、竞品价格提取或双语改写节点时，接入 DeepSeek V3/R1 可将 API 成本直接砍掉 90% 以上。',
       pros: ['批量自动化场景下无敌的智价比', '原生中文语境理解与逻辑推理能力稳居第一梯队', '通过硅基流动（SiliconFlow）或 OpenRouter 调用响应极快且稳定'],
-      cons: ['纯前端视觉设计感略逊于 Claude 3.7（建议日常采用 DeepSeek + Claude 双模型组合）'],
+      cons: ['纯前端视觉设计感略逊于 Claude Sonnet 4.5 / 5.5（建议日常采用 DeepSeek + Claude 双模型组合）'],
       verdict: '高频后台自动化工作流与国语区内容处理的绝对主力。',
       url: 'https://cloud.siliconflow.cn/?ref=cruxkit', cta: '免费领 API 额度'
     },
@@ -1000,7 +1000,7 @@ const stackToolsData = {
       pros: ['眼神、微表情与手势自然度稳居行业第一', '跨语种视频口型重绘（Lip-Sync）效果极其惊艳', '提供高达 30% 的持续联盟分佣'],
       cons: ['首次录制 2 分钟采样视频时建议保持光线均匀稳定'],
       verdict: '实现“一次拍摄、全球多语种矩阵变现”的最高杠杆工具。',
-      url: 'https://www.heygen.com/?sid=rewardful&via=cruxkit', cta: '免费体验 HeyGen'
+      url: 'https://www.heygen.com/?sid=rewardful&utm_content=creator&utm_medium=affiliatebase&via=xing', cta: '免费体验 HeyGen'
     },
     semrush: {
       catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'content',
@@ -1228,12 +1228,12 @@ const storiesData = {
       sections: [
         ['01 — The math of pay-as-you-go APIs vs. $60/mo subscriptions.', 'Most solo creators use fewer than 3 million tokens a month. Paying $20/mo each for ChatGPT Plus, Claude Pro, and Gemini Advanced costs $60/mo. Calling those exact models via OpenRouter or DeepSeek API costs $2.50 to $4.80/mo total.'],
         ['02 — Deploy LobeChat on Cloudflare Pages or Zeabur for $0.', 'Fork the open-source LobeChat repository, deploy it to Cloudflare Pages in 3 minutes, and paste your OpenRouter + DeepSeek API keys. You get a private, password-protected workspace with 50 custom agents.'],
-        ['03 — Route each task to the specialist model.', 'Use Claude 3.7 Sonnet for nuanced bilingual writing and UI code, DeepSeek R1 ($0.14/1M tokens) for bulk reasoning, and Gemini 2.5 Flash for long-context document parsing.']
+        ['03 — Route each task to the specialist model.', 'Use Claude Sonnet 4.5 / 5.5 for nuanced bilingual writing and UI code, DeepSeek R1 ($0.14/1M tokens) for bulk reasoning, and Gemini 2.5 Flash for long-context document parsing.']
       ],
       table: {
         headers: ['Setup Option', 'Monthly Cost', 'Account Ban Risk', 'Model Access'],
         rows: [
-          ['CruxKit API + LobeChat Hub', '~$3.50 / mo (Pay-as-you-go)', '0% (Official API Keys)', 'Claude 3.7 + GPT-4o + DeepSeek R1 + Gemini'],
+          ['CruxKit API + LobeChat Hub', '~$3.50 / mo (Pay-as-you-go)', '0% (Official API Keys)', 'Claude Sonnet 4.5 / 5.5 + GPT-5 / o3 + DeepSeek R1 + Gemini'],
           ['3 Separate Pro Subscriptions', '$60.00 / mo', 'Low (High Fixed Cost)', 'Locked in 3 separate browser tabs'],
           ['Gray-Market Shared Accounts', '$5–$15 / mo', '95% (Banned every 3–7 days)', 'Shared chat history & privacy leaks']
         ]
@@ -1531,12 +1531,12 @@ const storiesData = {
       sections: [
         ['01 — 按量 API vs. $60/月包月会员的真实账本。', '90% 的独立创作者每月实际消耗不到 300 万 Token。如果同时包月订阅 ChatGPT、Claude 与 Gemini 需花费 $60/月；而通过 OpenRouter 与硅基流动（DeepSeek）官方 API 按量调用，每月总账单通常只有 $2.50 到 $4.80（约 ¥18–¥35）。'],
         ['02 — 3 分钟在 Cloudflare Pages 零成本部署 LobeChat。', '一键 Fork 开源的 LobeChat 仓库并绑定到免费的 Cloudflare Pages，填入你的官方 API Key 并设置访问密码，即可拥有跨手机电脑同步的私人 AI 工作台。'],
-        ['03 — 把最擅长的任务分给最对的模型。', '深度双语长文与前端代码交给 Claude 3.7 Sonnet；大批量推理与数据清洗交给 DeepSeek R1（仅 $0.14/百万 Token）；超长文档速读交给 Gemini 2.5 Flash。']
+        ['03 — 把最擅长的任务分给最对的模型。', '深度双语长文与前端代码交给 Claude Sonnet 4.5 / 5.5；大批量推理与数据清洗交给 DeepSeek R1（仅 $0.14/百万 Token）；超长文档速读交给 Gemini 2.5 Flash。']
       ],
       table: {
         headers: ['方案对比', '月均真实成本', '封号与断联风险', '可用模型范围'],
         rows: [
-          ['CruxKit 官方 API + LobeChat 方案', '约 ¥22 / 月 (按量计费)', '0% (正规官方 API 通道)', '一站式调用 Claude 3.7 + GPT-4o + DeepSeek R1'],
+          ['CruxKit 官方 API + LobeChat 方案', '约 ¥22 / 月 (按量计费)', '0% (正规官方 API 通道)', '一站式调用 Claude Sonnet 4.5 / 5.5 + GPT-5 / o3 + DeepSeek R1'],
           ['单独开通 3 家官方 Pro 会员', '$60.00 / 月 (约 ¥430)', '低 (但固定月租极高)', '分散在 3 个不同网页标签页'],
           ['灰产合租号 / 廉价成品号', '¥35 – ¥90 / 月', '95% (高频封号、历史记录全丢)', '多人共用导致隐私与提示词完全裸奔']
         ]
@@ -2003,7 +2003,7 @@ try {
       metricPill: '⚡ 96.4% Citation Accuracy · Sonar API',
       price: 'Free Tier · Pro $20/mo · API Pay-As-You-Go',
       summary: 'In our 100-query accuracy audit across SaaS pricing and PubMed dermatology papers, Perplexity Pro achieved 96.4% primary-source accuracy with zero fabricated URLs.',
-      pros: ['Academic Focus mode searches PubMed, arXiv, and peer-reviewed journals directly', 'Switch seamlessly between Claude 3.7 Sonnet, GPT-4o, and DeepSeek R1', 'Sonar API integrates into n8n and Make for automated fact-checking'],
+      pros: ['Academic Focus mode searches PubMed, arXiv, and peer-reviewed journals directly', 'Switch seamlessly between Claude Sonnet 4.5 / 5.5, GPT-5 / o3, and DeepSeek R1', 'Sonar API integrates into n8n and Make for automated fact-checking'],
       cons: ['Not designed for long-form creative prose (pair with NotebookLM or Claude)'],
       verdict: 'The gold-standard research engine for zero-hallucination fact verification.',
       url: 'go/perplexity', cta: 'Try Perplexity Pro'
@@ -2150,7 +2150,7 @@ try {
       metricPill: '⚡ 96.4% 一手信源准确率 · Sonar API',
       price: '提供免费版 · Pro $20/月 · API 按量计费',
       summary: '在我们横跨 SaaS 最新定价与 PubMed 皮肤科文献的 100 次检索实测中，Perplexity Pro 取得了 96.4% 的一手信源准确率，且伪造链接率为 0.0%。',
-      pros: ['Academic 学术模式可直接穿透检索 PubMed、arXiv 与权威期刊论文', '支持在 Claude 3.7 Sonnet、GPT-4o 与 DeepSeek R1 推理模型间自由切换', 'Sonar API 可直接接入 n8n / Make 实现全自动事实核查'],
+      pros: ['Academic 学术模式可直接穿透检索 PubMed、arXiv 与权威期刊论文', '支持在 Claude Sonnet 4.5 / 5.5、GPT-5 / o3 与 DeepSeek R1 推理模型间自由切换', 'Sonar API 可直接接入 n8n / Make 实现全自动事实核查'],
       cons: ['不适合直接生成万字感性长文（建议搭配 NotebookLM 或 Claude 二次成文）'],
       verdict: '专业评测站长与科研创作者不可替代的零幻觉事实核查引擎。',
       url: 'go/perplexity', cta: '体验 Perplexity Pro'
@@ -2308,9 +2308,9 @@ try {
       table: {
         headers: ['Research Engine', 'Primary-Source / DOI Accuracy', 'Hallucinated URL Rate', 'Optimal Role in CruxKit Stack'],
         rows: [
-          ['Perplexity Pro (Sonar / Claude 3.7)', '96.4% Verified', '0.0% (Live Indexed URLs)', 'Stage 1: Live web, SaaS pricing & PubMed harvesting'],
+          ['Perplexity Pro (Sonar / Claude Sonnet 4.5 / 5.5)', '96.4% Verified', '0.0% (Live Indexed URLs)', 'Stage 1: Live web, SaaS pricing & PubMed harvesting'],
           ['Google NotebookLM Plus', '99.2% Source-Grounded', '0.0% (Closed Uploaded Corpus)', 'Stage 2: Synthesizing 50 PDFs with exact page quotes'],
-          ['ChatGPT Search (4o)', '88.5% Verified', '1.8% Broken/Redirected', 'Broad topic brainstorming & conversational outlines']
+          ['ChatGPT Search (GPT-5 / o3)', '88.5% Verified', '1.8% Broken/Redirected', 'Broad topic brainstorming & conversational outlines']
         ]
       },
       quote: 'Harvest verified primary sources in Perplexity; synthesize inside a locked NotebookLM corpus.',
@@ -2405,9 +2405,9 @@ try {
       table: {
         headers: ['调研引擎', '一手文献 / 官方定价准确率', '伪造死链率 (Hallucination)', '在 CruxKit 工作流中的最佳分工'],
         rows: [
-          ['Perplexity Pro (Sonar / Claude 3.7)', '96.4% 真实核验', '0.0%（全部为实时可点网页）', '第一阶段：全网实时定价核查与 PubMed 文献捕捞'],
+          ['Perplexity Pro (Sonar / Claude Sonnet 4.5 / 5.5)', '96.4% 真实核验', '0.0%（全部为实时可点网页）', '第一阶段：全网实时定价核查与 PubMed 文献捕捞'],
           ['Google NotebookLM Plus', '99.2% 严格忠于原文', '0.0%（闭卷锁定上传文档）', '第二阶段：吞吐 50 篇 PDF 并生成带页码引用的横评表'],
-          ['ChatGPT Search (4o)', '88.5% 真实核验', '1.8% 存在重定向或过期页', '前期发散式选题头脑风暴与通俗化比喻改写']
+          ['ChatGPT Search (GPT-5 / o3)', '88.5% 真实核验', '1.8% 存在重定向或过期页', '前期发散式选题头脑风暴与通俗化比喻改写']
         ]
       },
       quote: '用 Perplexity 在公网精准捕捞一手信源，用 NotebookLM 在闭卷环境提炼深度横评。',
