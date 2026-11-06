@@ -35,7 +35,7 @@ const uiStrings = {
     metric_3: '<strong>24 Deep-Dive Playbooks</strong><br>Full Bilingual Benchmark Guides',
     metric_4: '<strong>Avg. Yearly Saved</strong><br>By cutting bloated subscriptions',
     kits_heading: 'Choose your next move (20 Digital Kits).',
-    kits_note: '20 ready-to-adapt digital systems with real downloadable .ZIP source packages — click any kit to inspect contents, sample blueprints & instant download.',
+    kits_note: '20 ready-to-adapt digital systems with real downloadable <code>.ZIP</code> source packages — click any kit to inspect contents, sample blueprints & instant download.',
     kits_filter_all: 'All kits (20)',
     kits_filter_wf: 'AI, API & Edge Cloud (7)',
     kits_filter_os: 'Notion, Video & Growth (7)',
@@ -109,7 +109,7 @@ const uiStrings = {
     metric_3: '<strong>16 篇硬核评测专栏</strong><br>中英双语数据对比表与实操教程',
     metric_4: '<strong>平均每年立省 $2,800+</strong><br>砍掉溢价订阅与盲目跟风消费',
     kits_heading: '选择你的下一步行动（16 款数字套件）。',
-    kits_note: '16 套附带真实可下载 .ZIP 源文件的数字系统 —— 点击任意套件即可查看交付清单、蓝图代码预览与直接下载。',
+    kits_note: '16 套附带真实可下载 <code>.ZIP</code> 源文件的数字系统 —— 点击任意套件即可查看交付清单、蓝图代码预览与直接下载。',
     kits_filter_all: '全部套件 (20)',
     kits_filter_wf: 'AI、API 与云边缘 (6)',
     kits_filter_os: 'Notion、短视频与增长 (5)',
@@ -1854,7 +1854,7 @@ try {
         '45 zero-hallucination Perplexity Pro academic, patent & SaaS pricing audit prompts',
         'NotebookLM 50-PDF synthesis guide & audio briefing script generator',
         'Competitor affiliate link matrix extractor & high-intent keyword mapper',
-        'Full .ZIP package with JSON prompt library and Markdown SOPs'
+        'Full <code>.ZIP</code> package with JSON prompt library and Markdown SOPs'
       ],
       companionTool: { name: 'Perplexity Pro & Sonar Citation API', url: 'go/perplexity' },
       sample: `// TWO-STAGE ZERO-HALLUCINATION PROTOCOL\n1. DISCOVER (Perplexity Pro - Academic Focus): Extract 12 primary DOIs & official pricing tables.\n2. VERIFY: Reject any claim lacking a live URL or peer-reviewed citation.\n3. SYNTHESIZE (NotebookLM): Upload verified PDFs -> Generate comparison matrix with inline page quotes.`
@@ -1864,11 +1864,11 @@ try {
       name: 'Cloudflare Workers + R2 Zero-Egress Edge Kit',
       category: 'Cloud Infrastructure · /go/ Router & Signed Delivery',
       badges: ['Cloudflare Worker JS', 'R2 $0 Bandwidth', 'Spaceship DNS'],
-      shortDesc: 'Deploy edge /go/ affiliate link routing, UTM sub-ID tracking, and signed .ZIP file delivery from Cloudflare R2 with $0 bandwidth cost.',
+      shortDesc: 'Deploy edge /go/ affiliate link routing, UTM sub-ID tracking, and signed <code>.ZIP</code> file delivery from Cloudflare R2 with $0 bandwidth cost.',
       description: 'The exact edge infrastructure powering cruxxxxxkit.com: replace $49/mo link trackers and expensive file hosts with serverless Cloudflare Workers and R2 object storage.',
       items: [
         'worker-affiliate-router.js: 302 edge redirects for /go/:slug with UTM pass-through',
-        'worker-r2-signed-delivery.js: HMAC-signed expiring download links for .ZIP kits',
+        'worker-r2-signed-delivery.js: HMAC-signed expiring download links for <code>.ZIP</code> kits',
         'Spaceship Unbox DNS + Cloudflare SSL/TLS Full (Strict) setup playbook',
         '1-click GitHub Pages + custom domain CNAME automation script'
       ],
@@ -1921,7 +1921,7 @@ try {
         '45 组 Perplexity Pro 零幻觉学术文献、专利配比与 SaaS 隐藏价格审计提示词',
         'NotebookLM 50 篇 PDF 闭卷提炼指南与双语播客/通讯稿自动生成模版',
         '高转化独立站竞品联盟链接矩阵反查表与买词（Buyer Keywords）映射库',
-        '附带完整 JSON 提示词库与 Markdown 实操手册的 .ZIP 源文件包'
+        '附带完整 JSON 提示词库与 Markdown 实操手册的 <code>.ZIP</code> 源文件包'
       ],
       companionTool: { name: 'Perplexity Pro 与 Sonar 实时溯源引擎', url: 'go/perplexity' },
       sample: `// 双阶零幻觉调研协议 (DISCOVER -> LOCK)\n1. 外网捕捞 (Perplexity Pro - Academic/Web)：抓取 12 篇真实存在的一手 DOI 论文与官方实时定价页。\n2. 事实过滤：剔除任何没有可点击原始链接的二手传闻。\n3. 闭卷合成 (NotebookLM)：上传一手 PDF，生成带精确页码原句引用的横评对比表。`
@@ -1935,7 +1935,7 @@ try {
       description: '完整打包本站 cruxxxxxkit.com 正在使用的边缘计算基建源码：涵盖 /go/ 联盟推广链接集中路由、UTM 渠道追踪、R2 虚拟商品防盗链签名下载与 Spaceship DNS 极速配置。',
       items: [
         'worker-affiliate-router.js：毫秒级 /go/:slug 联盟 302 跳转与 UTM 参数自动透传脚本',
-        'worker-r2-signed-delivery.js：基于 Cloudflare R2 的零下行流量费 .ZIP 限时签名下载脚本',
+        'worker-r2-signed-delivery.js：基于 Cloudflare R2 的零下行流量费 <code>.ZIP</code> 限时签名下载脚本',
         'Spaceship Unbox DNS 30 秒极速解析 + Cloudflare 严格 SSL 安全加固图文手册',
         'GitHub Pages 自动构建与自定义域名一键绑定批处理脚本'
       ],
@@ -1984,7 +1984,7 @@ try {
 
   productsData.zh.allbundle.num = '16';
   productsData.zh.allbundle.name = '★ CruxKit 全站 15 合 1 终极全家桶';
-  productsData.zh.allbundle.badges = ['立省 78% (总价值 $355)', '含全部 15 套 .ZIP 源文件', '镇店之宝'];
+  productsData.zh.allbundle.badges = ['立省 78% (总价值 $355)', '含全部 15 套 <code>.ZIP</code> 源文件', '镇店之宝'];
   productsData.zh.allbundle.shortDesc = '一次性打包解锁 CruxKit 全站全部 15 款数字套件（AI 自动化、Cloudflare 边缘脚本、私人 AI 工作站、短视频引擎、联盟 SEO 模版与护肤实验室全收录）。';
 
   // 2. Expand stackOrder & stackToolsData from 24 to 36 (9 per Desk across all 4 Desks)
@@ -2059,13 +2059,13 @@ try {
     gumroad: {
       catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.5 / 10', relatedKit: 'affiliatematrix',
       tier: 'S-TIER · $0/MO CHECKOUT', name: 'Gumroad Storefront', role: 'Zero-Monthly-Fee Digital Kit Checkout',
-      verdictShort: 'Upload a .ZIP file, set a price, and start selling digital kits worldwide in 5 minutes with $0 monthly fixed cost and automatic VAT handling.',
+      verdictShort: 'Upload a <code>.ZIP</code> file, set a price, and start selling digital kits worldwide in 5 minutes with $0 monthly fixed cost and automatic VAT handling.',
       metricPill: '⚡ $0 Monthly Fee · Built-In Marketplace',
       price: '$0/mo Fixed · 10% Flat Fee Per Sale',
       summary: 'For creators launching their first 16 digital kits, Gumroad requires zero upfront commitment, handles EU/UK digital VAT as Merchant of Record, and brings organic buyers via Gumroad Discover.',
       pros: ['Zero monthly subscription—you only pay when you make a sale', 'Native license key generator, PDF stamping, and version update emails', 'Built-in affiliate system so customers can promote your kits for a %'],
       cons: ['10% flat fee is higher than Lemon Squeezy (5%) once you pass $2,000/mo in volume'],
-      verdict: 'The fastest zero-risk launchpad for selling digital .ZIP kits.',
+      verdict: 'The fastest zero-risk launchpad for selling digital <code>.ZIP</code> kits.',
       url: 'go/gumroad', cta: 'Open Gumroad Store'
     },
     stripe: {
@@ -2088,7 +2088,7 @@ try {
       price: '$0 Hobby Tier · $20/mo Pro',
       summary: 'Whenever you graduate from pure static HTML to Next.js or server-rendered AI apps, Vercel provides the smoothest developer experience and instant preview URLs for every commit.',
       pros: ['Zero-configuration deployments for 35+ frontend frameworks', 'Edge Middleware for instant geo-IP language routing and A/B testing', 'Seamless integration with Supabase and OpenRouter APIs'],
-      cons: ['Commercial stores with high bandwidth should pair with Cloudflare R2 for large .ZIP downloads'],
+      cons: ['Commercial stores with high bandwidth should pair with Cloudflare R2 for large <code>.ZIP</code> downloads'],
       verdict: 'Best-in-class deployment workflow for modern web applications.',
       url: 'go/vercel', cta: 'Deploy on Vercel'
     },
@@ -2205,12 +2205,12 @@ try {
     },
     gumroad: {
       catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.5 / 10', relatedKit: 'affiliatematrix',
-      tier: 'S 级严选 · 零月租数字收银', name: 'Gumroad 全球虚拟商品收银台', role: '0 月租 5 分钟上线 .ZIP 套件与许可证发卡',
-      verdictShort: '上传 .ZIP 压缩包、填好价格即可向全球售卖数字套件——0 固定月租，平台自动代缴欧美数字税，并自带 Gumroad Discover 公域推荐流量。',
+      tier: 'S 级严选 · 零月租数字收银', name: 'Gumroad 全球虚拟商品收银台', role: '0 月租 5 分钟上线 <code>.ZIP</code> 套件与许可证发卡',
+      verdictShort: '上传 <code>.ZIP</code> 压缩包、填好价格即可向全球售卖数字套件——0 固定月租，平台自动代缴欧美数字税，并自带 Gumroad Discover 公域推荐流量。',
       metricPill: '⚡ $0 固定月租 · 自带公域市场流量',
       price: '$0 月租固定成本 · 仅在成交时抽成 10%',
       summary: '对于刚起步售卖 16 款自营数字套件的独立创作者，Gumroad 是零风险的冷启动收银台：无需注册海外公司，不出单不花一分钱，且自带分销联盟系统。',
-      pros: ['零月租压力，支持一键上传 .ZIP 交付包、生成软件激活码与 PDF 防盗水印', '内置 Gumroad Discover 推荐引擎，能为优质模版带来高达 15% 的自然增量买家', '一键开启分销功能，让买过你套件的读者帮你带货分佣'],
+      pros: ['零月租压力，支持一键上传 <code>.ZIP</code> 交付包、生成软件激活码与 PDF 防盗水印', '内置 Gumroad Discover 推荐引擎，能为优质模版带来高达 15% 的自然增量买家', '一键开启分销功能，让买过你套件的读者帮你带货分佣'],
       cons: ['当月销超过 $2,000 后，10% 的抽成比例高于 Lemon Squeezy (5%) 或 Stripe'],
       verdict: '零固定成本验证数字商品变现闭环的最快收银台。',
       url: 'go/gumroad', cta: '免费开通 Gumroad'
@@ -2235,7 +2235,7 @@ try {
       price: 'Hobby 个人版免费 · Pro $20/月',
       summary: '当你从纯静态展示站进阶到需要服务端渲染（SSR）或接入实时 AI 接口的 Web 应用时，Vercel 提供了全球最丝滑的自动化构建与边缘网络。',
       pros: ['原生支持 Next.js / Astro 等 35+ 框架零配置秒级上线', 'Edge Middleware 可根据访客 IP 国家在边缘节点毫秒级切换中/英文视图', '与 Supabase 数据库和 OpenRouter API 无缝集成'],
-      cons: ['大体积 .ZIP 交付包建议分流存储在免费的 Cloudflare R2 以免消耗带宽额度'],
+      cons: ['大体积 <code>.ZIP</code> 交付包建议分流存储在免费的 Cloudflare R2 以免消耗带宽额度'],
       verdict: '现代前端与 AI 独立开发者体验最佳的云端部署平台。',
       url: 'go/vercel', cta: '免费部署 Vercel'
     },
@@ -2348,7 +2348,7 @@ try {
       lead: 'The #1 killer of new independent sites is fixed monthly SaaS overhead. By combining a $8.88/yr domain with edge static hosting and zero-monthly-fee checkouts, your break-even point drops to your very first sale.',
       sections: [
         ['01 — Sub-30-second DNS propagation with Spaceship.', 'We registered cruxxxxxkit.com on Spaceship for $8.88/yr with free WHOIS privacy. Adding 4 A-records and a CNAME in Spaceship’s Unbox DNS propagated globally across Google DNS in under 30 seconds.'],
-        ['02 — Zero-egress hosting and /go/ routing on Cloudflare.', 'Hosting static HTML/CSS/JS on GitHub Pages or Cloudflare Pages costs $0/mo and scores 99 on Lighthouse. Storing your .ZIP digital kits on Cloudflare R2 eliminates bandwidth egress fees completely.'],
+        ['02 — Zero-egress hosting and /go/ routing on Cloudflare.', 'Hosting static HTML/CSS/JS on GitHub Pages or Cloudflare Pages costs $0/mo and scores 99 on Lighthouse. Storing your <code>.ZIP</code> digital kits on Cloudflare R2 eliminates bandwidth egress fees completely.'],
         ['03 — Dual-market checkout: Gumroad / Lemon Squeezy + Stripe Alipay.', 'Start with Gumroad or Lemon Squeezy ($0/mo fixed, global VAT handled automatically) and pair with Stripe Payment Links to accept Apple Pay, Alipay, and WeChat Pay on the same page.']
       ],
       table: {
@@ -2445,7 +2445,7 @@ try {
       lead: '新手做独立站最常见的死因，就是在还没有跑通流量闭环前，背上了每月上百美金的建站月租与插件账单。将固定基建成本压到每年 $8.88，你卖出第一份套件即实现全站盈利。',
       sections: [
         ['01 — Spaceship 域名与 30 秒全球生效的 Unbox DNS。', '我们在 Spaceship 上以 $8.88/年（约 ¥62）注册了 cruxxxxxkit.com，默认免费赠送 WHOIS 隐私保护。在配置本站时，4 条 A 记录与 www CNAME 提交后不到 30 秒即完成全球 Google 公共 DNS 同步。'],
-        ['02 — GitHub Pages / Cloudflare Pages 零月租托管 + R2 免流量费存储。', '纯静态架构不仅天然防黑客、Lighthouse 性能稳居 99 分，而且网页托管与 Cloudflare R2 存储 16 个 .ZIP 真实交付包的下行带宽费用全部为 $0。'],
+        ['02 — GitHub Pages / Cloudflare Pages 零月租托管 + R2 免流量费存储。', '纯静态架构不仅天然防黑客、Lighthouse 性能稳居 99 分，而且网页托管与 Cloudflare R2 存储 16 个 <code>.ZIP</code> 真实交付包的下行带宽费用全部为 $0。'],
         ['03 — 全球双语收款组合拳：Gumroad / Lemon Squeezy + Stripe 支付宝/微信。', '前期直接用零月租的 Gumroad 或 Lemon Squeezy 实现免海外公司全球收美金，同时搭配支持支付宝（Alipay）与微信支付（WeChat Pay）的收款链接服务国语区买家。']
       ],
       table: {
@@ -2513,7 +2513,7 @@ try {
         'Production LiteLLM & OpenRouter routing JSON for DeepSeek V4.1-Flash-1017, GPT-6.1 Terra/Sol Pro, Gemini 4 Argon & Claude 5.5',
         'Automatic fallback rules when rate limits hit + 1M context caching optimization',
         'Benchmark cost calculator comparing GPT-6 Luna ($0.10/M) vs Claude Haiku 5.5 ($0.10/M) vs DeepSeek V4.1-Flash ($0.04/M)',
-        'Full .ZIP deliverable with ready-to-import JSON and Python/Node SDK snippets'
+        'Full <code>.ZIP</code> deliverable with ready-to-import JSON and Python/Node SDK snippets'
       ],
       companionTool: { name: 'OpenRouter Unified 1M-Context API Gateway', url: 'go/openrouter' },
       sample: `// NOV 2026 SMART ROUTER MATRIX\n• High-Speed Bulk Extraction -> deepseek/deepseek-v4.1-flash-1017 ($0.15/M in, 1M ctx)\n• Ultra-Low-Cost Classification -> openai/gpt-6-luna ($0.10/M in, 1.05M ctx) or anthropic/claude-haiku-5.5\n• Complex Architecture & Code -> anthropic/claude-sonnet-5.5 ($2.00/M in) or openai/gpt-6.1-sol-pro\n• 1M Multimodal Video/Audio -> google/gemini-4-argon ($2.00/M in) & google/gemini-omni-1.2-flash`
@@ -2580,7 +2580,7 @@ try {
         '涵盖 DeepSeek V4.1-Flash-1017、GPT-6.1 Terra/Sol Pro、Gemini 4 Argon 与 Claude Sonnet 5.5 的生产级路由 JSON',
         '百万上下文（1M Context）自动缓存命中优化与并发限流零中断主备切换规则',
         '2026年11月最新模型成本测算表：对比 GPT-6 Luna ($0.10/M)、Claude Haiku 5.5 ($0.10/M) 与 DeepSeek V4.1-Flash ($0.04/M)',
-        '完整 .ZIP 源文件包（含 LiteLLM 配置、LobeChat 预设与 Python/Node 调用脚本）'
+        '完整 <code>.ZIP</code> 源文件包（含 LiteLLM 配置、LobeChat 预设与 Python/Node 调用脚本）'
       ],
       companionTool: { name: 'OpenRouter 全球百万上下文聚合网关', url: 'go/openrouter' },
       sample: `// 2026年11月 多模型黄金路由表\n• 高频数据清洗与极速 Agent -> deepseek/deepseek-v4.1-flash-1017 ($0.15/M 输入, 1M 上下文)\n• 超低成本批量分类 -> openai/gpt-6-luna ($0.10/M 输入, 1.05M 上下文) 或 anthropic/claude-haiku-5.5\n• 核心代码架构与长文精修 -> anthropic/claude-sonnet-5.5 ($2.00/M) 或 openai/gpt-6.1-sol-pro\n• 百万上下文多模态音视频理解 -> google/gemini-4-argon ($2.00/M) & google/gemini-omni-1.2-flash`
@@ -3286,7 +3286,7 @@ function applyLanguage(lang, persist = false) {
 }
 
 /* -----------------------------------------------------------
-   6. DIALOG CONTROLLERS (BILINGUAL + REAL .ZIP DOWNLOADS)
+   6. DIALOG CONTROLLERS (BILINGUAL + REAL <code>.ZIP</code> DOWNLOADS)
 ----------------------------------------------------------- */
 function openDialog(html, state) {
   if (!dialog.open) lastFocus = document.activeElement;
@@ -3353,7 +3353,7 @@ function showProduct(id) {
           <button class="button button-ghost" data-sample="${id}">
             ${isZh ? '预览内部蓝图代码' : 'Inspect sample blueprint'}
           </button>
-          ${sampleZipUrl ? `<a class="button button-lime" href="${sampleZipUrl}" download data-track-zip="${id}">${isZh ? '⬇ 下载实操源文件包 (.ZIP)' : '⬇ Download Starter Pack (.ZIP)'}</a>` : ''}
+          ${sampleZipUrl ? `<a class="button button-lime" href="${sampleZipUrl}" download data-track-zip="${id}">${isZh ? '⬇ 下载实操源文件包 (<code>.ZIP</code>)' : '⬇ Download Starter Pack (<code>.ZIP</code>)'}</a>` : ''}
         </div>
         <div class="dialog-status">
           <strong>${isZh ? '推荐搭配工具（官方合作通道）：' : 'Recommended Companion Tool:'}</strong>
@@ -3391,7 +3391,7 @@ function showSample(id) {
         <a class="button" href="${primaryCheckout}" target="_blank" rel="noopener" data-track-checkout="${id}">
           ${isZh ? `解锁完整版 ${prod.name} ($${prod.price})` : `Unlock Full ${prod.name} ($${prod.price})`} ${arrow}
         </a>
-        ${sampleZipUrl ? `<a class="button button-lime" href="${sampleZipUrl}" download data-track-zip="${id}">${isZh ? '⬇ 直接下载本地源文件包 (.ZIP)' : '⬇ Download Source Pack (.ZIP)'}</a>` : ''}
+        ${sampleZipUrl ? `<a class="button button-lime" href="${sampleZipUrl}" download data-track-zip="${id}">${isZh ? '⬇ 直接下载本地源文件包 (<code>.ZIP</code>)' : '⬇ Download Source Pack (<code>.ZIP</code>)'}</a>` : ''}
         <button class="button button-ghost" data-product="${id}">
           ${isZh ? '← 返回套件详情' : '← Back to Kit Overview'}
         </button>
@@ -4687,7 +4687,7 @@ function recalculateSavings() {
         <table class="bench-table">
           <thead><tr><th>金融/收款平台</th><th>在业务中的核心角色</th><th>费率优势</th><th>官方开户通道</th></tr></thead>
           <tbody>
-            <tr><td><strong>Gumroad</strong></td><td>5分钟上架虚拟商品 `.ZIP` 交付 + 平台自然搜索流量推荐</td><td>0月费（阶梯抽成）</td><td><a href="/go/gumroad/">查看 Gumroad 店铺与分销 (?a=735179107) →</a></td></tr>
+            <tr><td><strong>Gumroad</strong></td><td>5分钟上架虚拟商品 <code>.ZIP</code> 交付 + 平台自然搜索流量推荐</td><td>0月费（阶梯抽成）</td><td><a href="/go/gumroad/">查看 Gumroad 店铺与分销 (?a=735179107) →</a></td></tr>
             <tr><td><strong>Lemon Squeezy</strong></td><td>SaaS 订阅制收款、软件激活码分发与全球增值税（VAT）自动代缴</td><td>5% + $0.50/笔</td><td><a href="/go/lemonsqueezy/">开通 Lemon Squeezy →</a></td></tr>
             <tr><td><strong>Wise</strong></td><td>个人与自由职业者秒开美国 ACH / 欧洲 IBAN 本地收款账号，直接收联盟佣金</td><td>中间市场实时汇率</td><td><a href="/go/wise/">免费注册 Wise 多币种账户 →</a></td></tr>
             <tr><td><strong>Airwallex 空中云汇</strong></td><td>企业级多币种收款 + 无限免费开 0% 跨境手续费虚拟 Visa 卡</td><td>$0月费 + 0% 刷卡汇损</td><td><a href="/go/airwallex/">免费开通空中云汇企业账户 →</a></td></tr>
@@ -4707,7 +4707,7 @@ function recalculateSavings() {
           <tbody>
             <tr><td><strong>Spaceship.com</strong></td><td>.com 首年特惠 + 全球 20 秒 DNS 极速生效</td><td>Unbox™ 现代化控制面板，30秒搞定 Google Search Console TXT 验证</td><td><a href="/go/spaceship/">去 Spaceship 注册域名 →</a></td></tr>
             <tr><td><strong>Cloudflare</strong></td><td>批发成本价续费 + 免费全球 CDN 与防攻击护盾</td><td>零溢价续费 + Edge Workers 边缘重定向规则</td><td><a href="/go/cloudflare/">接入 Cloudflare 网络 →</a></td></tr>
-            <tr><td><strong>Namecheap</strong></td><td>常年 $0.98 域名闪促 + $1.24/月独立企业邮箱</td><td>用 `partner@你的域名` 申请海外大牌联盟，过审率提升一倍</td><td><a href="/go/namecheap/">查看 Namecheap 邮箱与域名优惠 →</a></td></tr>
+            <tr><td><strong>Namecheap</strong></td><td>常年 $0.98 域名闪促 + $1.24/月独立企业邮箱</td><td>用 <code>partner@你的域名</code> 申请海外大牌联盟，过审率提升一倍</td><td><a href="/go/namecheap/">查看 Namecheap 邮箱与域名优惠 →</a></td></tr>
           </tbody>
         </table>
       `
