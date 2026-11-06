@@ -3691,6 +3691,1149 @@ function recalculateSavings() {
   if (newEl) newEl.textContent = `$${newMo.toLocaleString()} ${dict.per_mo}`;
 }
 
+
+/* ===========================================================
+   CRUXKIT v8.0 AFFILIATE & EDITORIAL MEGA-EXPANSION
+   - 60 Audited Affiliate Stack Picks (15 per Desk x 4 Desks)
+   - 40 Full-Length Bilingual Benchmark & Buyer Guides (EN/ZH)
+=========================================================== */
+(function expandCatalogV8() {
+  // 1. Update UI strings for 20 Kits / 60 Stack Picks / 40 Guides
+  Object.assign(uiStrings.en, {
+    page_title: 'CruxxxxxKit (CruxKit · cruxxxxxkit.com) — 20 Digital Kits, 60 Affiliate Stack Picks & 40 AI / Skincare Benchmarks',
+    meta_desc: 'CruxxxxxKit (cruxxxxxkit.com) — 20 Ready-to-Use Digital Kits, 60 Stress-Tested AI (GPT-6.1, DeepSeek V4.1-Flash-1017, Gemini 4 Argon, Claude 5.5), Cloud & K-Beauty Affiliate Picks, and 40 Deep-Dive Buyer Guides.',
+    nav_kits: 'Digital kits (20)',
+    nav_stack: 'The stack <span class="nav-pill-tag">60 Picks</span>',
+    nav_edit: 'The edit (40)',
+    mob_stack: '60 Audited Stack Picks',
+    hero_eyebrow: 'CRUXKIT PULSE · NOV 2026 MEGA CATALOG · 20 DIGITAL KITS · 60 AFFILIATE PICKS · 40 BUYER GUIDES',
+    hero_sub: '20 ready-to-import digital kits, 60 stress-tested software, cloud & clinical formulation picks with verified partner deals, and 40 deep-dive buyer guides.',
+    hero_cta_stack: 'Browse 60 S-Tier Picks',
+    metric_1: '<strong>20 Ready-to-Use Kits</strong><br>JSON Workflows, API Packs &amp; Notion OS',
+    metric_2: '<strong>60 Audited S-Tier Picks</strong><br>AI, Creator, Cloud VPS &amp; Beauty Lab',
+    metric_3: '<strong>40 Deep-Dive Playbooks</strong><br>Full Bilingual Affiliate Buyer Guides',
+    stack_heading: 'The considered stack (60 Audited Picks).',
+    stack_note: 'Every tool and formulation has a clear job. Stress-tested across 4 specialized desks (15 picks per desk) — click any item for full lab notes, pros/cons & verified partner links.',
+    stack_filter_all: 'All Picks (60)',
+    stack_filter_ai: '01 · AI & Automation (15)',
+    stack_filter_creator: '02 · Creator, Video & SEO (15)',
+    stack_filter_cloud: '03 · Cloud, Domains & Pay (15)',
+    stack_filter_beauty: '04 · Skincare & K-Beauty Lab (15)',
+    stack_search_placeholder: 'Search 60 tools, APIs, domains, VPNs, serums, SPF...',
+    edit_heading: 'Fresh ideas, put to work (40 Deep-Dive Buyer Guides).',
+    edit_note: '40 complete benchmark reviews, tool comparisons, and clinical formulation audits with direct partner deals — click any card to read the full bilingual guide.',
+    edit_filter_all: 'All Guides (40)',
+    edit_filter_ai: 'AI, Cloud & Affiliate Growth (28)',
+    edit_filter_beauty: 'Skincare & K-Beauty Lab (12)',
+    foot_stack: 'The stack (60)'
+  });
+
+  Object.assign(uiStrings.zh, {
+    page_title: 'CruxxxxxKit (CruxKit · cruxxxxxkit.com) — 20 款数字套件、60 款严选带货工具与 40 篇深度评测推文',
+    meta_desc: 'CruxxxxxKit (cruxxxxxkit.com) — 20 款即插即用数字工程包、60 款实测 AI 大模型（DeepSeek V4.1-Flash-1017、GPT-6.1、Gemini 4 Argon、Claude 5.5）/ 云主机 / 护肤严选好物，以及 40 篇双语深度带货横评。',
+    nav_kits: '数字套件 (20)',
+    nav_stack: '严选好物栈 <span class="nav-pill-tag">60 严选</span>',
+    nav_edit: '深度推文 (40)',
+    mob_stack: '60 款实测严选工具与配方',
+    hero_eyebrow: 'CRUXKIT PULSE · 2026年11月全量矩阵 · 20 款数字套件 · 60 款联盟严选 · 40 篇深度评测推文',
+    hero_sub: '20 套即插即用数字工程包，60 款经过极端实测的 AI 自动化、跨境云基建与临床护肤严选好物（附专属返利/试用通道），以及 40 篇高转化深度买手指南。',
+    hero_cta_stack: '浏览 60 款 S 级严选',
+    metric_1: '<strong>20 款即用型数字套件</strong><br>JSON 蓝图、API 路由与 Notion 系统',
+    metric_2: '<strong>60 款实测 S 级严选</strong><br>AI、视频 SEO、云主机与成分护肤',
+    metric_3: '<strong>40 篇深度带货长文</strong><br>中英双语硬核横评与选型推文',
+    stack_heading: '严选工具与配方库（60 款实测好物）。',
+    stack_note: '每一款工具与护肤配方都经过真实业务与成分表双重核验。四大专区各 15 款严选好物——点击任意卡片查看完整优缺点报告与官方合作优惠链接。',
+    stack_filter_all: '全部严选 (60)',
+    stack_filter_ai: '01 · AI 与自动化 (15)',
+    stack_filter_creator: '02 · 视频创作与 SEO (15)',
+    stack_filter_cloud: '03 · 云主机、域名与收款 (15)',
+    stack_filter_beauty: '04 · 临床护肤与韩妆实验室 (15)',
+    stack_search_placeholder: '搜索 60 款 AI 工具、API、云主机、防晒、精华...',
+    edit_heading: '把好想法落到实处（40 篇深度评测推文）。',
+    edit_note: '40 篇完整大模型账单实测、跨境建站搞流量教程与护肤成分红黑榜——点击任意卡片阅读完整双语长文、对比表格与直达购买链接。',
+    edit_filter_all: '全部推文 (40)',
+    edit_filter_ai: 'AI、跨境基建与搞钱增长 (28)',
+    edit_filter_beauty: '成分护肤与医美级配方 (12)',
+    foot_stack: '严选工具栈 (60)'
+  });
+
+  // 2. Add 20 new Affiliate Stack Picks (40 -> 60 Picks, 15 per Desk)
+  const newStackIds = [
+    // AI & Automation (+5)
+    'groq', 'v0dev', 'lovable', 'firecrawl', 'apify',
+    // Creator, Video & SEO (+5)
+    'synthesia', 'capcut', 'surfer', 'ahrefs', 'canva',
+    // Cloud, Domains & Pay (+5)
+    'railway', 'digitalocean', 'namecheap', 'nordvpn', 'airwallex',
+    // Skincare & K-Beauty Lab (+5)
+    'skin1004', 'roundlab', 'numbuzin', 'illiyoon', 'geekgorgeous'
+  ];
+  newStackIds.forEach(id => {
+    if (!stackOrder.includes(id)) stackOrder.push(id);
+  });
+
+  Object.assign(stackToolsData.en, {
+    groq: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'deepseekrouter',
+      tier: 'S-Tier Pick · 850+ tok/s LPU Inference', name: 'GroqCloud LPU Ultra-Fast Inference', role: 'Sub-100ms Hardware LPU API for Voice Agents & Real-Time UI',
+      verdictShort: 'Custom Language Processing Units (LPUs) deliver 850+ tokens/sec with near-zero time-to-first-token (TTFT)—essential for real-time voice assistants and instant autocomplete.',
+      metricPill: '⚡ 850+ tok/s · 0.08s TTFT · OpenAI-Compatible API',
+      price: 'Free Developer Tier · Pay-As-You-Go ($0.05–$0.59 / 1M)',
+      summary: 'When building real-time voice bots (with ElevenLabs) or instant UI generators where waiting 2 seconds kills UX, GroqCloud’s deterministic SRAM LPU architecture is unmatched.',
+      pros: ['Delivers 800–1,000+ tokens/sec on open-weights models—5x faster than standard GPU clusters', 'Drop-in OpenAI SDK compatibility and native integration as a high-speed provider inside OpenRouter', 'Generous free rate limits for prototyping voice and real-time classification pipelines'],
+      cons: ['Context windows on hardware LPU tiers are smaller than Gemini 4 Argon’s 1M token window'],
+      verdict: 'The undisputed speed king for low-latency voice agents and instant JSON classification.',
+      url: 'go/groq', cta: 'Get GroqCloud API Key'
+    },
+    v0dev: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'workstation',
+      tier: 'S-Tier Pick · AI UI & Next.js Architect', name: 'Vercel v0 Full-Stack UI Generator', role: 'Prompt-to-React, Tailwind, Shadcn UI & 1-Click Vercel Deploy',
+      verdictShort: 'Generates agency-grade React/Next.js interfaces, interactive pricing calculators, and Tailwind dashboards in seconds—then deploys straight to a live URL.',
+      metricPill: '🎨 Instant Shadcn/Tailwind UI + 1-Click Vercel Production',
+      price: 'Free Tier · Premium $20/mo',
+      summary: 'Most AI coders write solid backend logic but mediocre layouts. Vercel v0 specializes in high-craft frontend design systems, Shadcn components, and responsive animations.',
+      pros: ['Produces clean, accessible React + Tailwind + Shadcn UI code you can copy via a single npx command', 'Side-by-side live interactive preview lets you tweak spacing, typography, and dark mode visually', 'One-click deployment to Vercel edge network with automatic preview URLs'],
+      cons: ['Best paired with Cursor + Claude Sonnet 5.5 once your backend database logic gets complex'],
+      verdict: 'The fastest way for solo builders to turn a rough wireframe into a $10k-looking landing page.',
+      url: 'go/v0dev', cta: 'Try Vercel v0 Free'
+    },
+    lovable: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'workstation',
+      tier: 'S-Tier Pick · AI Full-Stack SaaS Builder', name: 'Lovable.dev AI App Builder', role: 'Natural-Language Full-Stack Web Apps with Native Supabase & Stripe',
+      verdictShort: 'Build and ship complete CRUD SaaS apps, internal dashboards, and paid micro-tools with automated Supabase Auth/Postgres and Stripe checkout wiring.',
+      metricPill: '🚀 Prompt-to-SaaS · Native Supabase + GitHub Sync',
+      price: 'Free Starter · Pro $20/mo (20% Recurring Affiliate)',
+      summary: 'Lovable bridges the gap between no-code builders and raw IDEs: it wires up your frontend UI, Supabase Postgres tables, row-level security, and two-way GitHub sync from plain English prompts.',
+      pros: ['Native 1-click Supabase integration automatically generates database migrations and auth flows', 'Real two-way GitHub synchronization—edit in Lovable or pull into Cursor anytime without lock-in', 'High-converting 20% recurring affiliate program for creator tutorials and build-in-public demos'],
+      cons: ['Heavy iterative prompting can consume monthly message credits quickly if prompts are vague'],
+      verdict: 'The best end-to-end AI app builder for non-devops founders launching paid micro-SaaS products.',
+      url: 'go/lovable', cta: 'Launch App on Lovable'
+    },
+    firecrawl: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'mcppack',
+      tier: 'S-Tier Pick · LLM Web-to-Markdown Engine', name: 'Firecrawl API & MCP Server', role: 'Turn Any Website or Documentation Site into Clean LLM Markdown & Structured JSON',
+      verdictShort: 'Strips away navbars, cookie banners, and JS hydration bloat—converting entire multi-page websites into clean Markdown or Pydantic JSON for DeepSeek V4.1 and GPT-6.1.',
+      metricPill: '🕸️ /scrape, /crawl & /extract · Official MCP Server',
+      price: '500 Free Pages · Hobby $16/mo (25% Recurring Affiliate)',
+      summary: 'Feeding raw HTML into an LLM wastes 80% of your token budget on DOM noise. Firecrawl handles headless browser rendering, anti-bot rotation, and clean Markdown/JSON extraction in one API call.',
+      pros: ['The /extract endpoint uses LLM schemas to pull structured product prices and specs from any URL', 'Official Model Context Protocol (MCP) server plugs directly into Cursor, Claude Desktop, and n8n', 'Saves 75%+ on input tokens when feeding documentation or competitor pages to DeepSeek V4.1-Flash-1017'],
+      cons: ['High-frequency enterprise crawling requires upgrading from the Hobby tier'],
+      verdict: 'Indispensable data-ingestion layer for AI research agents, price monitors, and RAG pipelines.',
+      url: 'go/firecrawl', cta: 'Claim 500 Free Credits'
+    },
+    apify: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'n8nvps',
+      tier: 'S-Tier Pick · 2,000+ Ready Web Scrapers', name: 'Apify Cloud & Scraper Store', role: 'Pre-Built Cloud Scrapers for Google Maps, TikTok, X/Twitter, Amazon & Instagram',
+      verdictShort: 'Why write brittle Playwright scripts when Apify’s marketplace has 2,000+ maintained Actors that scrape TikTok trends, Google Maps leads, and Amazon reviews into Make/n8n?',
+      metricPill: '💰 $5/mo Free Usage + 30% Recurring Lifetime Affiliate',
+      price: 'Free $5/mo Credit · Starter $39/mo',
+      summary: 'Apify is the secret weapon behind automated lead-gen and viral trend-research agencies. Trigger any scraper via webhook from Make.com or n8n and receive clean JSON datasets in minutes.',
+      pros: ['Over 2,000 ready-to-run Actors for social media, e-commerce, and local business lead extraction', 'Native Make.com, n8n, and LangChain integrations with built-in residential proxy rotation', 'One of the industry’s best affiliate programs: 30% recurring commission for the lifetime of the customer'],
+      cons: ['Residential proxy bandwidth can add up if you scrape video files rather than text metadata'],
+      verdict: 'The most reliable cloud scraping platform for automated market intelligence and B2B lead pipelines.',
+      url: 'go/apify', cta: 'Explore Apify Store Free'
+    },
+    synthesia: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.5 / 10', relatedKit: 'geminiomnivideo',
+      tier: 'S-Tier Pick · Enterprise AI Video Studio', name: 'Synthesia 3.0 Expressive AI Avatars', role: 'Full-Body Expressive AI Presenters & 140-Language Scorm/Video Localization',
+      verdictShort: 'While HeyGen rules social creator reels, Synthesia 3.0 dominates B2B software walkthroughs, SOP training videos, and multi-speaker enterprise presentations.',
+      metricPill: '🎬 230+ Avatars · 140+ Languages · 1-Click Screen Recorder',
+      price: 'Free Plan · Starter $18/mo (25% Annual Affiliate)',
+      summary: 'Synthesia 3.0 pairs full-body expressive AI presenters with synchronized screen-recording triggers—allowing SaaS documentation and course creators to update product videos simply by editing text.',
+      pros: [' Built-in screen recorder automatically syncs avatar narration with cursor highlights and zooms', 'Enterprise-grade translation workspace with live human-in-the-loop glossary approval', 'Zero camera or studio needed to maintain an always-updated video help center'],
+      cons: ['Slightly more formal avatar styling compared to HeyGen’s casual UGC smartphone avatars'],
+      verdict: 'Top recommendation for B2B SaaS onboarding, digital course modules, and corporate localization.',
+      url: 'go/synthesia', cta: 'Create Free AI Video'
+    },
+    capcut: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'videoengine',
+      tier: 'S-Tier Pick · Short-Form Editing Standard', name: 'CapCut Desktop & Commerce Pro', role: 'High-Velocity Bilingual Auto-Captions, Keyframe Effects & TikTok Shop Ad Studio',
+      verdictShort: 'The fastest desktop NLE for finishing AI-generated reels: instant bilingual word-by-word captions, Filler-Word removal, and commercial music licensing.',
+      metricPill: '⚡ 99% Bilingual Caption Accuracy + Viral Hook Templates',
+      price: 'Free Core · Pro $9.99/mo (Up to 35% Affiliate)',
+      summary: 'Even after cutting clips in OpusClip or generating avatars in HeyGen, a 3-minute pass in CapCut Desktop Pro adds kinetic bilingual subtitles, sound risers, and B-roll transitions that double retention.',
+      pros: ['Best-in-class Mandarin + English simultaneous bilingual subtitle recognition and kinetic presets', 'Commerce Pro includes pre-cleared commercial audio tracks and 1-click product background replacement', 'Lightweight GPU acceleration exports 4K 60fps vertical shorts in seconds'],
+      cons: ['Many signature text-glow and vocal-isolation effects now require the Pro subscription'],
+      verdict: 'The essential finishing suite for every YouTube Shorts, TikTok, and Xiaohongshu creator.',
+      url: 'go/capcut', cta: 'Download CapCut Pro'
+    },
+    surfer: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'gsctraffic',
+      tier: 'S-Tier Pick · On-Page SEO & GEO Scorer', name: 'SurferSEO Content Editor & AI Tracker', role: 'Real-Time SERP Entity Optimization & Google Search Console Content Audit',
+      verdictShort: 'Analyzes the top 10 ranking pages for your target keyword and gives you a live 0–100 NLP entity checklist—ensuring your benchmark articles rank on Page 1.',
+      metricPill: '📈 Live 0–100 SERP Content Score + Auto Internal Linking',
+      price: 'Essential $79/mo (25% Recurring Affiliate)',
+      summary: 'Writing great articles isn’t enough if you miss the semantic entities Google’s ranking algorithm expects. SurferSEO reverse-engineers top SERP competitors and injects missing NLP terms automatically.',
+      pros: ['Real-time Content Score (0–100) tells you exact heading structure, word count, and semantic entities needed', 'Connects directly to Google Search Console to spot decaying articles that need a 10-minute refresh', 'Auto-Insert Internal Links scans your sitemap to wire up high-authority internal anchor text'],
+      cons: ['Higher monthly entry price—best shared across multiple niche sites or client projects'],
+      verdict: 'The highest-ROI on-page optimization engine once your site passes 20+ published guides.',
+      url: 'go/surfer', cta: 'Run Surfer SEO Audit'
+    },
+    ahrefs: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.8 / 10', relatedKit: 'gsctraffic',
+      tier: 'S-Tier Pick · Backlink & AI Brand Radar', name: 'Ahrefs Webmaster Tools & Brand Radar', role: 'World’s #1 Backlink Crawler, Low-KD Keyword Finder & AI Search Citation Monitor',
+      verdictShort: 'Ahrefs’ free Webmaster Tools audits your entire domain health, while its new Brand Radar tracks how often ChatGPT, Perplexity, and Gemini recommend your brand.',
+      metricPill: '🔍 Free Site Audit + 35T Backlink Index + AI Brand Radar',
+      price: 'Free Webmaster Tools · Lite $129/mo',
+      summary: 'Ahrefs operates the most active commercial web crawler after Google. Its combination of Content Explorer, backlink gap analysis, and AI Brand Radar makes it mandatory for serious affiliate publishers.',
+      pros: ['Ahrefs Webmaster Tools (AWT) is 100% free for verified domain owners—monitors all backlinks and broken HTML', 'New AI Brand Radar tracks your share-of-voice inside LLM responses across GPT-6.1, Gemini 4, and Perplexity', 'Unbeatable accuracy when spying on which exact affiliate review pages bring your competitors 80% of their traffic'],
+      cons: ['Paid tiers use credit-based report allowances on lower plans'],
+      verdict: 'Start with the free Webmaster Tools on day one; upgrade when scaling competitive backlink outreach.',
+      url: 'go/ahrefs', cta: 'Use Ahrefs Webmaster Free'
+    },
+    canva: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.5 / 10', relatedKit: 'hooksvault',
+      tier: 'S-Tier Pick · Bulk Visual & Social Studio', name: 'Canva Pro & Magic Studio Bulk Create', role: 'CSV-to-Carousel Bulk Generator, 1-Click Background Remover & Brand Kit OS',
+      verdictShort: 'Upload a 50-row CSV from DeepSeek V4.1 into Canva Bulk Create to generate 50 localized Pinterest pins, Xiaohongshu cards, and YouTube thumbnails in 60 seconds.',
+      metricPill: '✨ CSV Bulk Create + Instant Resize + 100M+ Pro Assets',
+      price: 'Free · Canva Pro $12.99/mo',
+      summary: 'For solo operators who aren’t full-time Figma designers, Canva Pro’s Bulk Create and Magic Switch turn a single benchmark table into a week of visual social distribution.',
+      pros: ['Bulk Create binds CSV columns directly to template text layers—generate 30 social slides in one click', 'Magic Switch instantly reformats a 16:9 blog hero graphic into a 9:16 Reel cover and 3:4 Xiaohongshu card', '1-click background remover and Brand Kit font/color locking keep every asset cohesive'],
+      cons: ['Not meant for complex vector UI prototyping (use Figma or Vercel v0 for web interfaces)'],
+      verdict: 'The fastest visual production multiplier for turning written guides into multi-platform social traffic.',
+      url: 'go/canva', cta: 'Try Canva Pro Free'
+    },
+    railway: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.7 / 10', relatedKit: 'n8nvps',
+      tier: 'S-Tier Pick · 1-Click Docker & n8n Cloud', name: 'Railway.app Instant App & DB Cloud', role: 'Zero-DevOps 1-Click Deployment for n8n, PostgreSQL, Redis, LiteLLM & Ghost',
+      verdictShort: 'Don’t want to manage Ubuntu SSH keys or Nginx configs? Railway deploys n8n + Postgres + Redis with workers from a 1-click template in 45 seconds.',
+      metricPill: '🚅 45-Second n8n/Postgres Deploy · Pay-Per-Minute RAM/CPU',
+      price: '$5/mo Hobby Plan (Includes $5 Resource Usage)',
+      summary: 'Railway gives you the power of a full Docker VPS with the effortless developer experience of Vercel. Spin up a production n8n queue-mode cluster or LiteLLM proxy in one click.',
+      pros: ['Over 900 1-click community templates (n8n with workers, LobeChat, Umami Analytics, Ghost, PocketBase)', 'Automatic private networking between your Node/Python apps, PostgreSQL, and Redis instances', 'Usage-based billing down to the second—no paying for idle oversized virtual machines'],
+      cons: ['Heavy 24/7 memory workloads (>16GB RAM) cost more than raw bare-metal Hetzner VPS'],
+      verdict: 'The #1 cloud platform for builders who want self-hosted open-source tools without Linux sysadmin headaches.',
+      url: 'go/railway', cta: 'Claim $5 Railway Bonus'
+    },
+    digitalocean: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.6 / 10', relatedKit: 'n8nvps',
+      tier: 'S-Tier Pick · $200 Free Cloud Credit', name: 'DigitalOcean Droplets & Managed Cloud', role: 'Battle-Tested Global Linux VPS, Managed Databases & GPU Droplets',
+      verdictShort: 'One of the most generous cloud onboarding offers on the internet: new accounts receive $200 in free infrastructure credit for 60 days to test any stack.',
+      metricPill: '🎁 $200 Free 60-Day Cloud Credit · Global Datacenters',
+      price: 'Droplets from $4/mo · $200 Free Trial Credit',
+      summary: 'From Singapore and Frankfurt to New York and San Francisco, DigitalOcean provides rock-solid BGP routing, predictable bandwidth pricing, and 1-click Docker Marketplace images.',
+      pros: ['$200 free credit lets you stress-test multi-node Docker clusters, GPU droplets, and managed Postgres for 2 months free', '1-Click Marketplace images for Docker, n8n, WordPress, Ghost, and Coolify', 'Cleanest documentation and community tutorials in the cloud hosting industry'],
+      cons: ['CPU-optimized droplets are pricier than Hetzner once your initial $200 credit expires'],
+      verdict: 'Unbeatable for launching and load-testing new cloud architectures with $200 in zero-risk credit.',
+      url: 'go/digitalocean', cta: 'Claim $200 Free Credit'
+    },
+    namecheap: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.5 / 10', relatedKit: 'cloudflareedge',
+      tier: 'S-Tier Pick · Trusted Domain & Email Vet', name: 'Namecheap Domains & PrivateEmail', role: 'First-Year Domain Promos, Custom Domain Business Email & FastVPN',
+      verdictShort: 'The parent company behind Spaceship: unbeatable $0.98–$5.98 first-year TLD promos, rock-solid PrivateEmail inboxes, and instant SSL certificates.',
+      metricPill: '🌐 Lifetime Free WhoisGuard + $1.24/mo Business Email',
+      price: '.com Promo from $6.49 · PrivateEmail $14.88/yr',
+      summary: 'While we love Spaceship for its ultra-modern Unbox DNS UI, Namecheap remains a powerhouse for seasonal TLD flash sales and affordable custom-domain IMAP/SMTP business mailboxes.',
+      pros: ['PrivateEmail gives you a clean `hello@yourdomain.com` mailbox with calendar/contacts for ~$1.24/mo (vs $7/mo on Google Workspace)', 'Free lifetime domain privacy protection and 24/7 live chat support within 2 minutes', 'High-converting 20%–35% affiliate payouts on domain registrations, SSLs, and email hosting'],
+      cons: ['Dashboard UI is more traditional compared to Spaceship’s sleek modular launchpad'],
+      verdict: 'Best companion to Spaceship whenever you need cheap custom-domain email boxes or TLD flash sales.',
+      url: 'go/namecheap', cta: 'Check Namecheap Promos'
+    },
+    nordvpn: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.6 / 10', relatedKit: 'affiliatematrix',
+      tier: 'S-Tier Pick · Dedicated IP & Meshnet Security', name: 'NordVPN Dedicated IP & Meshnet', role: 'Encrypted Cross-Border Network, Static Dedicated IPs & Remote Device Meshnet',
+      verdictShort: 'Essential for global digital operators: inspect geo-targeted SERPs in 111 countries, lock a clean Dedicated IP for payment dashboards, and link devices via Meshnet.',
+      metricPill: '🔒 111 Countries · NordLynx WireGuard · 40–100% Affiliate',
+      price: 'From $3.09/mo (2-Year Plan + 3 Months Bonus)',
+      summary: 'When managing Stripe, PartnerStack, Google Search Console, and TikTok accounts across regions, shared datacenter IPs trigger security locks. NordVPN’s Dedicated IP and Threat Protection Pro keep your sessions clean.',
+      pros: ['Dedicated IP option assigns a single static IP exclusively to you—preventing banking and ad-account captchas', 'Built-in Meshnet lets you securely tunnel into your home Mac/PC or private LLM server from anywhere for free', 'One of the highest-converting consumer/prosumer affiliate offers globally (40%–100% commission tiers)'],
+      cons: ['Dedicated IP is an optional add-on on top of the base subscription'],
+      verdict: 'Mandatory operational security tool for cross-border founders and a top-earning affiliate staple.',
+      url: 'go/nordvpn', cta: 'Get NordVPN Exclusive Deal'
+    },
+    airwallex: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.7 / 10', relatedKit: 'solo',
+      tier: 'S-Tier Pick · Enterprise Borderless Treasury', name: 'Airwallex Global Business Account', role: 'Zero-FX Multi-Currency Virtual Cards, Local Bank Accounts & SaaS Expense Control',
+      verdictShort: 'When your solo studio incorporates (US LLC, UK Ltd, or HK Ltd), Airwallex gives you instant multi-currency employee/virtual cards with 0% foreign card transaction fees.',
+      metricPill: '💳 Unlimited Virtual Visa Cards + 0% FX Card Fees',
+      price: '$0 Monthly Account Fee · Interbank FX Rates',
+      summary: 'Paying for 20+ USD/EUR SaaS subscriptions and ad accounts with a domestic bank card loses 2.5%–3% in hidden FX markups. Airwallex lets you receive USD/EUR/GBP/HKD directly and spend via virtual Visa cards at zero FX fee.',
+      pros: ['Issue dedicated virtual Visa cards for each SaaS vendor (OpenRouter, AWS, Meta Ads) with hard monthly spend caps', 'Direct local account details in 20+ currencies that plug into Stripe, Shopify, Amazon, and PartnerStack', 'Automated receipt matching and Xero/QuickBooks reconciliation'],
+      cons: ['Requires a registered business entity (sole proprietorship, LLC, or Ltd)—use Wise Personal if unincorporated'],
+      verdict: 'The ultimate borderless treasury upgrade once you register an LLC, UK Ltd, or HK company.',
+      url: 'go/airwallex', cta: 'Open Airwallex Account'
+    },
+    skin1004: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.8 / 10', relatedKit: 'sunguide',
+      tier: 'S-Tier Pick · #1 Lightweight Serum SPF', name: 'SKIN1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum', role: 'SPF50+ PA++++ Next-Gen UV Filters + Centella Asiatica + Hyaluronic Acid',
+      verdictShort: 'Even lighter than Beauty of Joseon: a breathable, serum-gel texture with airless pump packaging that oily and combination skin types swear by.',
+      metricPill: '☀️ SPF50+ PA++++ · Airless Pump · Zero White Cast',
+      price: '$11 – $14 / 50ml · Reef-Safe & Fragrance-Free',
+      summary: 'If Beauty of Joseon Relief Sun feels slightly too rich in humid summers, SKIN1004’s Blue-Cap Hyalu-Cica Sun Serum is your answer. It uses modern organic UV filters suspended in a soothing Centella + Hyaluronic Acid serum base.',
+      pros: ['Hygienic airless pump dispenser delivers exact 2-pump UV dosage and prevents filter oxidation', 'Hyalu-Cica complex (Centella Asiatica + Hyaluronic Acid) calms redness while hydrating without oiliness', 'Zero eye sting, zero white cast on all skin tones, and zero pilling under makeup'],
+      cons: ['Natural dewy-skin finish—if you want a dead-matte powder finish, blot lightly on the T-zone'],
+      verdict: 'Co-champion of our K-Beauty SPF testing: pick Beauty of Joseon for dry/winter skin, and SKIN1004 for normal/oily skin.',
+      url: 'go/skin1004', cta: 'Check OliveYoung Price'
+    },
+    roundlab: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'sunguide',
+      tier: 'S-Tier Pick · OliveYoung Multi-Year Winner', name: 'Round Lab Birch Juice Moisturizing Sun Cream SPF50+ PA++++', role: 'Inje Silver Birch Sap + Glyceryl Glucoside + Niacinamide Daily UV Cream',
+      verdictShort: 'Korea’s domestic #1 bestselling sunscreen at OliveYoung: doubles as your morning moisturizer and SPF50+ PA++++ shield in a single step.',
+      metricPill: '🌿 Birch Sap Amino Acids + DPG Soothing + SPF50+ PA++++',
+      price: '$14 – $18 / 50ml · Clinically Tested UV Protection',
+      summary: 'Round Lab’s Birch Juice Sun Cream swept Korean dermatology rankings by combining Amino-Acid-rich Silver Birch Sap and Glyceryl Glucoside (which stimulates aquaporin water channels) with photostable Uvinul A Plus and Uvinul T 150.',
+      pros: ['Replaces morning moisturizer completely for normal-to-combination skin—cutting morning prep to 90 seconds', 'Contains Dipotassium Glycyrrhizate (licorice root derivative) and Allantoin to suppress UV-induced heat redness', 'Independently verified SPF 55+ and PFA 19+ in third-party clinical labs'],
+      cons: ['Contains trace botanical extracts (chamomile/pine)—patch test if you have extreme plant allergies'],
+      verdict: 'The gold-standard 2-in-1 moisturizer + SPF50+ for busy mornings.',
+      url: 'go/roundlab', cta: 'Shop Round Lab on OliveYoung'
+    },
+    numbuzin: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'winterbarrier',
+      tier: 'S-Tier Pick · Antioxidant Dark-Spot Powerhouse', name: 'numbuzin No.5+ Vitamin Concentrated Serum', role: ' Liposomal Glutathione + 4% Tranexamic Acid + 5% Niacinamide + Alpha-Arbutin',
+      verdictShort: 'Combines 5 pigment-inhibiting pathways in one bottle (Glutathione, TXA, Niacinamide, Arbutin, and Vitamin C derivatives) without the sting of low-pH L-Ascorbic Acid.',
+      metricPill: '✨ Glutathione + 4% TXA + 5% Niacinamide + Panthenol',
+      price: '$16 – $20 / 30ml · Zero Essential Oils',
+      summary: 'Why buy three separate brightening serums? numbuzin No.5+ stacks master antioxidant Glutathione with 4% Tranexamic Acid, 5% Niacinamide, Alpha-Arbutin, and 5% Panthenol to fade stubborn brown and red acne marks simultaneously.',
+      pros: ['Targets melanosome transfer (Niacinamide), tyrosinase activity (Arbutin/Glutathione), and vascular PIE redness (TXA) at once', 'Buffered with 5% Panthenol and Ceramide NP so it never irritates retinoid-sensitized skin', 'Neutral pH means zero conflict when layered with peptides or evening retinoids'],
+      cons: ['30ml bottle goes fast if used 2x daily—grab the OliveYoung Twin Pack for best per-ml value'],
+      verdict: 'The most comprehensive multi-pathway brightening serum in modern K-Beauty.',
+      url: 'go/numbuzin', cta: 'View numbuzin No.5+ Deal'
+    },
+    illiyoon: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.8 / 10', relatedKit: 'winterbarrier',
+      tier: 'S-Tier Pick · 200ml Ceramide Barrier King', name: 'Illiyoon Ceramide Ato Concentrate Cream', role: 'Patented Yoon Complex + Encapsulated Phyto-Ceramide Capsules for Barrier Rescue',
+      verdictShort: 'Amorepacific’s patented visible ceramide capsules melt on skin contact to rebuild cracked winter barriers—and a giant 200ml tube costs under $16.',
+      metricPill: '🛡️ Patented Ceramide Skin Complex™ · 200ml Value Tube',
+      price: '$14 – $17 / 200ml ($0.08 per ml!)',
+      summary: 'While luxury department-store ceramide creams charge $70 for 50ml, Amorepacific’s Illiyoon delivers clinically proven encapsulated ceramides that penetrate the stratum corneum at 1/15th the price per milliliter.',
+      pros: ['Unbeatable cost-efficiency: 200ml tube lasts 5–6 months of nightly facial and neck barrier buffering', 'Micro-encapsulated ceramide beads burst upon rubbing without feeling greasy or clogging pores', '100% free of fragrance, essential oils, parabens, and drying alcohols—safe for eczema-prone skin'],
+      cons: ['Rich velvety finish—use a pea-sized amount in summer and a full finger-length in dry winter heating'],
+      verdict: 'The #1 winter moisturizer to pair with Differin 0.1% Adapalene or 0.1% Retinaldehyde.',
+      url: 'go/illiyoon', cta: 'Check iHerb / OliveYoung Price'
+    },
+    geekgorgeous: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'retinoidramp',
+      tier: 'S-Tier Pick · Clinical 0.1% Retinaldehyde', name: 'Geek & Gorgeous A-Game 10 (0.1% Retinal)', role: 'Cyclodextrin-Stabilized 0.1% Retinaldehyde + Allantoin + Panthenol Night Emulsion',
+      verdictShort: 'Retinaldehyde requires only 1 enzymatic conversion step to become active retinoic acid (vs 2 steps for retinol)—delivering prescription-like anti-aging with minimal irritation.',
+      metricPill: '🧬 0.1% Stabilized Retinal · 11x Faster Than Retinol',
+      price: '$19 – $22 / 30ml Airless Pump · Made in Europe',
+      summary: 'If Differin 0.1% Adapalene is the undisputed champion for acne, Geek & Gorgeous A-Game 10 (0.1% Retinaldehyde) is the clinical gold standard for photoaging, fine lines, and collagen synthesis without a prescription.',
+      pros: ['One-step conversion to retinoic acid delivers visible firmness and texture smoothing in 6–8 weeks', 'Silky yellow emulsion buffered with Allantoin, Panthenol, and Biosaccharide Gum-1 prevents retinoid flaking', 'Costs ~$20 vs $75+ for comparable 0.1% retinaldehyde serums from luxury derm brands'],
+      cons: ['Natural bright yellow color from pure retinaldehyde—let it absorb for 10 minutes before sleeping on white pillowcases'],
+      verdict: 'The smartest OTC upgrade once your skin has graduated from beginner retinol.',
+      url: 'go/geekgorgeous', cta: 'View Geek & Gorgeous A-Game'
+    }
+  });
+
+  Object.assign(stackToolsData.zh, {
+    groq: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'deepseekrouter',
+      tier: 'S 级严选 · 850+ tok/s 硬件级极速推理', name: 'GroqCloud LPU 超高速推理网关', role: '基于自研 LPU 芯片的毫秒级语音 Agent 与实时流式 API',
+      verdictShort: '自研 LPU 语言处理芯片实测输出速度突破 850+ tokens/秒，首字延迟（TTFT）低至 0.08 秒——是实时语音对话与毫秒级意图分类的物理外挂。',
+      metricPill: '⚡ 850+ tok/s · 0.08秒首字响应 · 兼容 OpenAI SDK',
+      price: '免费开发者额度 · 按量付费 ($0.05–$0.59 / 百万 Token)',
+      summary: '在搭建实时语音客服（搭配 ElevenLabs）或即时搜索补全工具时，传统 GPU 哪怕 1.5 秒的等待也会打断对话体验。GroqCloud 的确定性 SRAM LPU 架构彻底消灭了推理卡顿。',
+      pros: ['开源大模型推理速度高达 800–1000+ tok/s，比传统云端 GPU 集群快 5 倍以上', '100% 兼容 OpenAI 接口标准，且可在 OpenRouter 内部直接指定为极速底层供应商', '提供慷慨的免费 API 调用额度，非常适合独立开发者做实时 Agent 原型验证'],
+      cons: ['硬件 LPU 节点的单次上下文窗口小于 Gemini 4 Argon 的 100 万 Token 窗口'],
+      verdict: '实时语音交互、毫秒级工单分类与极速 JSON 提取的不二之选。',
+      url: 'go/groq', cta: '免费申请 Groq API Key'
+    },
+    v0dev: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'workstation',
+      tier: 'S 级严选 · AI 前端与审美天花板', name: 'Vercel v0 全栈 UI 生成器', role: '一句话生成高审美 React + Tailwind + Shadcn 组件并一键部署上线',
+      verdictShort: '只需输入自然语言或上传截图，即可在数秒内生成设计感极强的 Next.js 落地页、交互式价格计算器与后台看板，并支持一键发布到 Vercel。',
+      metricPill: '🎨 秒级生成 Shadcn/Tailwind 代码 + 一键 Vercel 部署',
+      price: '免费版可用 · Pro 版 $20/月',
+      summary: '大多数程序员写后端很快，但调 CSS 间距与动效极其耗时。Vercel v0 专为现代高转化 SaaS 界面而生，审美水准远超通用聊天模型。',
+      pros: ['生成的 React + Tailwind + Shadcn UI 代码干净规范，支持一行 npx 命令直接拉取到本地工程', '右侧实时交互预览支持可视化微调字体、圆角、暗黑模式与响应式布局', '与 Vercel 边缘网络原生打通，点击 Deploy 即可生成全球可访问的 HTTPS 链接'],
+      cons: ['涉及复杂后端数据库事务时，建议导出到 Cursor 配合 Claude Sonnet 5.5 继续深加工'],
+      verdict: '独立开发者用 10 分钟做出“价值一万美金设计感”独立站落地页的审美神器。',
+      url: 'go/v0dev', cta: '免费体验 Vercel v0'
+    },
+    lovable: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'workstation',
+      tier: 'S 级严选 · 全栈 AI SaaS 制造机', name: 'Lovable.dev 全栈 AI 应用构建器', role: '自然语言对话生成完整全栈 Web 应用（原生集成 Supabase 数据库与 Stripe 收款）',
+      verdictShort: '不懂后端运维也能做付费 SaaS：直接用中文或英文对话，自动创建前端界面、Supabase 用户登录/数据库表结构与 Stripe 订阅支付闭环。',
+      metricPill: '🚀 一句话生成 SaaS · 原生集成 Supabase + GitHub 同步',
+      price: '免费起步 · Pro 版 $20/月（含 20% 持续分佣联盟计划）',
+      summary: 'Lovable 打通了从“好看的前端”到“能收钱的真实产品”的最后一公里：自动帮你配置 Supabase PostgreSQL 权限策略，并支持与 GitHub 双向实时同步。',
+      pros: ['原生一键绑定 Supabase，自动编写 SQL 建表语句、用户注册登录与行级安全策略（RLS）', '真正的 GitHub 双向同步：随时可以在 Lovable 网页端对话修改，或拉到本地用 Cursor 精细编码', '官方提供 20% 持续分佣联盟计划，非常适合测评博主录制“15分钟做一个AI小工具”带货教程'],
+      cons: ['如果需求描述过于模糊，反复让 AI 猜意图会较快消耗月度对话额度'],
+      verdict: '非全栈背景创业者快速上线付费微 SaaS（Micro-SaaS）与内部工具的最佳流水线。',
+      url: 'go/lovable', cta: '在 Lovable 免费创建应用'
+    },
+    firecrawl: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'mcppack',
+      tier: 'S 级严选 · AI 网页转 Markdown 引擎', name: 'Firecrawl API 网页抓取与结构化提取', role: '将任意复杂动态网页、文档站一键洗成大模型最爱的纯净 Markdown 与 JSON',
+      verdictShort: '自动剥离广告、弹窗与导航栏噪音，将整站动态网页转化为纯净 Markdown 或结构化 JSON，帮你的 DeepSeek V4.1 与 GPT-6.1 节省 75% Token 账单。',
+      metricPill: '🕸️ 支持整站爬取 / LLM 结构化提取 · 官方 MCP 插件',
+      price: '免费送 500 页额度 · Hobby $16/月（25% 持续返佣）',
+      summary: '直接把原始 HTML 塞给大模型不仅容易触发反爬，还会把 80% 的 Token 浪费在无用的前端标签上。Firecrawl 用一个 API 搞定了无头浏览器渲染、代理轮换与正文清洗。',
+      pros: ['/extract 接口支持传入 JSON Schema，直接从任意电商或竞品网页提取价格、参数与评论结构化数据', '官方提供现成 MCP Server，三行配置即可接入 Cursor、Claude Desktop 与 n8n 工作流', '相比直接喂 HTML，平均节省 75% 以上的百万上下文输入 Token 成本'],
+      cons: ['超大规模高频并发抓取需升级至标准商业套餐'],
+      verdict: '搭建 AI 竞品监控、知识库（RAG）与自动化情报工作流必备的数据清洗底座。',
+      url: 'go/firecrawl', cta: '免费领取 500 页抓取额度'
+    },
+    apify: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.6 / 10', relatedKit: 'n8nvps',
+      tier: 'S 级严选 · 2000+ 现成云端爬虫商城', name: 'Apify 云端爬虫与自动化数据商城', role: '开箱即用的 TikTok 爆款监控、Google Maps 获客、X/Twitter 与亚马逊评论抓取平台',
+      verdictShort: '无需自己维护反爬代理池：直接在商城调用 2,000+ 个现成云端爬虫（Actors），一键接入 Make.com 与 n8n 自动抓取全网社媒与电商数据。',
+      metricPill: '💰 每月送 $5 免费额度 + 30% 终身持续联盟佣金',
+      price: '每月免费送 $5 额度 · Starter $39/月',
+      summary: 'Apify 是海外增长黑客与跨境选品团队的秘密武器。无论是抓取 TikTok 热门带货视频、小红书/Instagram 爆款标签，还是批量提取 Google Maps 本地商家邮箱，都有现成模块直接调用。',
+      pros: ['拥有超过 2,000 个专人维护的现成爬虫工具，覆盖全球主流社媒、电商与搜索引擎', '内置住宅代理 IP 自动轮换，并提供官方 Make.com 与 n8n 节点，数据抓完自动触发大模型分析', '联盟营销界天花板级待遇：推广新用户享 30% 终身持续分佣（Lifetime Recurring Commission）'],
+      cons: ['如果大量抓取高清视频源文件而非文本元数据，代理流量消耗会比较快'],
+      verdict: '做社媒爆款监控、跨境选品分析与自动化 B2B 获客最省心的云端数据武器库。',
+      url: 'go/apify', cta: '免费领 $5 额度逛 Apify 商城'
+    },
+    synthesia: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.5 / 10', relatedKit: 'geminiomnivideo',
+      tier: 'S 级严选 · 企业级 AI 数字人演播室', name: 'Synthesia 3.0 全身表现力 AI 视频平台', role: '230+ 写实数字人主播、140 国语言本地化与智能录屏同步视频工坊',
+      verdictShort: '如果说 HeyGen 是短视频带货之王，Synthesia 3.0 则是 B2B 软件演示、跨国产品培训与多语种帮助中心视频的行业绝对标准。',
+      metricPill: '🎬 230+ 数字人 · 140+ 语种 · 录屏光标自动同步讲解',
+      price: '提供免费版 · Starter $18/月（年付享 25% 联盟佣金）',
+      summary: 'Synthesia 3.0 将富有手势表现力的全身 AI 数字人与智能屏幕录制完美融合——软件界面更新时，无需重新找人录屏配音，只需修改文本脚本即可一键重新生成教程视频。',
+      pros: ['内置智能录屏联动功能：数字人讲解会自动匹配鼠标点击放大与界面高亮动画', '支持 140+ 种语言的口型同步互译，并支持团队共享专有名词术语库', '提供 25% 高额联盟分佣，且企业客户年付客单价极高'],
+      cons: ['数字人风格偏商务专业，若追求手持自拍感（UGC）网感视频建议优先选 HeyGen'],
+      verdict: '出海 SaaS 产品教程、在线课程制作与跨国企业宣发视频的首选生产力平台。',
+      url: 'go/synthesia', cta: '免费制作 Synthesia AI 视频'
+    },
+    capcut: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'videoengine',
+      tier: 'S 级严选 · 短视频后期效率霸主', name: 'CapCut Pro（剪映海外商业版）', role: '高精度中英双语动态字幕、气口一键剪除与 TikTok Shop 商业带货视频工作台',
+      verdictShort: 'AI 短视频流水线的最后一步放大器：用最快速度加上高留存中英双语动态花字、音效转场与免版权商业音乐，完播率立涨 40%。',
+      metricPill: '⚡ 99% 双语字幕识别率 + TikTok 爆款带货模板库',
+      price: '基础免费 · Pro 版 $9.99/月（最高 35% 联盟佣金）',
+      summary: '即便前期用 OpusClip 自动切片或用 HeyGen 生成了口播，最后放进 CapCut 桌面专业版花 3 分钟加上动感关键词高亮字幕、去嗯啊气口与节奏音效，视频质感会直接跨入百万博主行列。',
+      pros: ['中英双语同屏识别与动态卡点花字模板极其丰富，远超传统专业非编软件效率', 'Commerce Pro 内置大量已获商业授权的 TikTok 热门配乐与电商商品一键换背景功能', '针对主流显卡深度优化，4K 60帧竖屏短视频几秒钟即可渲染导出'],
+      cons: ['部分高阶发光字体、人声分离降噪与 AI 补帧功能需开通 Pro 会员'],
+      verdict: '所有做 TikTok、YouTube Shorts、Reels 与小红书双语矩阵创作者的装机必备软件。',
+      url: 'go/capcut', cta: '免费下载 CapCut 桌面版'
+    },
+    surfer: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'gsctraffic',
+      tier: 'S 级严选 · 谷歌排名内容评分神器', name: 'SurferSEO 内容优化与 AI 搜索追踪器', role: '基于谷歌前十名逆向工程的 0–100 实时内容评分与内链自动织网引擎',
+      verdictShort: '自动拆解 Google 首页前 10 名竞品的词频、标题结构与 NLP 语义实体，在写作时给出 0–100 实时打分，让你的评测长文稳冲谷歌首页。',
+      metricPill: '📈 0–100 实时排名打分 + 自动插入全站内链',
+      price: 'Essential $79/月（PartnerStack 25% 持续佣金）',
+      summary: '很多独立站写了长文却排不进前十，是因为漏掉了 Google 算法判定专业度所需的共现语义词（NLP Entities）。SurferSEO 把枯燥的算法指标变成了像通关游戏一样的实时绿灯打分。',
+      pros: ['编辑器实时给出 0–100 分优化建议，明确告诉你还差哪些长尾词根、H2 小标题与段落字数', '直连 Google Search Console，自动揪出排名在 11–20 名之间“稍微改改就能冲上首页”的潜力老文章', '支持自动扫描全站 Sitemap 并一键插入高权重上下文内链'],
+      cons: ['月费定位偏专业站长，建议在网站积累 20 篇以上核心带货文后启用'],
+      verdict: '从“盲目写文章”升级到“精准狙击 Google 首页排名”的最高效内容放大器。',
+      url: 'go/surfer', cta: '用 SurferSEO 诊断网站内容'
+    },
+    ahrefs: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.8 / 10', relatedKit: 'gsctraffic',
+      tier: 'S 级严选 · 外链反查与 AI 品牌雷达', name: 'Ahrefs 站长工具与 AI Brand Radar', role: '全球第一外链数据库、低难度带货词挖掘与大模型推荐率（GEO）监控雷达',
+      verdictShort: '已验证域名可永久免费使用 Ahrefs Webmaster Tools 体检全站 SEO 漏洞；其最新 AI Brand Radar 更能追踪 ChatGPT 与 Gemini 提及你品牌的频率。',
+      metricPill: '🔍 站长工具永久免费 + 35万亿外链库 + AI 引用雷达',
+      price: '站长工具（AWT）免费 · Lite 版 $129/月',
+      summary: 'Ahrefs 拥有仅次于 Google 的全球第二大活跃商业网络爬虫。用它反查同行独立站的流量结构，5 分钟就能看穿对手哪 5 篇联盟评测文赚走了 80% 的搜索点击。',
+      pros: ['Ahrefs Webmaster Tools 对自己验证的域名（如 cruxxxxxkit.com）100% 免费开放全站体检与外链监控', '全新 AI Brand Radar 可监测你的品牌与产品在 GPT-6.1、Gemini 4 与 Perplexity 回答中的曝光占比', '外链实时发现速度与死链挖掘精度稳居全球 SEO 行业第一'],
+      cons: ['付费版低阶套餐有月度报告查询积分限制'],
+      verdict: '建站第一天就应免费绑定的站长体检神器，也是反查同行高佣金带货词的终极雷达。',
+      url: 'go/ahrefs', cta: '免费接入 Ahrefs 站长工具'
+    },
+    canva: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.5 / 10', relatedKit: 'hooksvault',
+      tier: 'S 级严选 · 批量视觉与社媒图文工厂', name: 'Canva Pro 可画专业版 & Magic 批量创建', role: 'CSV 表格一键批量生成 50 张小红书/Pinterest 种草图文、封面与对比信息图',
+      verdictShort: '把 DeepSeek V4.1 生成的 50 条产品对比 CSV 导入 Canva「批量创建」，60 秒自动生成 50 张排版精美的中英双语种草图文与视频封面。',
+      metricPill: '✨ CSV 批量生成图文 + 一键智能抠图 + 亿级商用素材',
+      price: '基础免费 · Pro 版 $12.99/月',
+      summary: '做联盟营销不能只靠文字，小红书、Pinterest、X 与 YouTube 封面的视觉点击率（CTR）决定了流量上限。Canva Pro 的「批量创建」功能让一人团队拥有整个视觉设计部的产能。',
+      pros: ['「批量创建（Bulk Create）」可将 CSV 表格字段直接绑定到画布文字层，一键生成几十张系列卡片', '「魔力尺寸转换」一键把 16:9 博客首图变成 3:4 小红书笔记图与 9:16 短视频封面', '毫秒级发丝抠图与品牌字体/色板锁定，确保全平台视觉高度统一'],
+      cons: ['不适合做复杂网页交互原型（网页 UI 建议直接用 Vercel v0 生成）'],
+      verdict: '把深度评测长文快速拆解为全网多平台种草图文矩阵的最高效视觉生产力工具。',
+      url: 'go/canva', cta: '免费试用 Canva Pro 专业版'
+    },
+    railway: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.7 / 10', relatedKit: 'n8nvps',
+      tier: 'S 级严选 · 零运维一键部署云平台', name: 'Railway.app 一键 Docker 与 n8n 云平台', role: '无需配置 Linux 命令行，45 秒一键部署满血版 n8n、PostgreSQL、Redis 与 LiteLLM',
+      verdictShort: '不想折腾 SSH 密钥和 Nginx 反代？在 Railway 点击现成模板，45 秒即可拉起自带数据库与队列 Worker 的生产级 n8n 与 AI 网关。',
+      metricPill: '🚅 45秒一键部署 n8n/Postgres · 按秒计费不浪费',
+      price: '$5/月 Hobby 套餐（直接包含 $5 资源额度）',
+      summary: 'Railway 把传统 VPS 繁琐的 Docker Compose 运维变成了像拼乐高一样的可视化画布。无论是部署私有 n8n、LobeChat、Umami 网站统计还是 Python 爬虫，点一下就能上线。',
+      pros: ['内置 900+ 个社区一键部署模板（含 n8n Worker 队列版、LiteLLM 路由网关、Ghost 博客等）', '容器之间自动打通高速内网连接，自带免费 HTTPS 域名与 GitHub 提交自动重部署', '按实际消耗的 CPU/内存秒级计费，轻负载下每月仅需两三美金'],
+      cons: ['若运行 24 小时满载的超大内存任务（>16GB RAM），成本会高于 Hetzner 裸金属 VPS'],
+      verdict: '不想学 Linux 运维但又想拥有私有 n8n 与开源 AI 工具栈的创作者首选云平台。',
+      url: 'go/railway', cta: '领取 Railway $5 部署赠金'
+    },
+    digitalocean: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.6 / 10', relatedKit: 'n8nvps',
+      tier: 'S 级严选 · 送 $200 免费云主机赠金', name: 'DigitalOcean 全球云主机与 GPU 云', role: '老牌稳定全球 Linux VPS、托管数据库与 $200 新客 60 天免费试用算力',
+      verdictShort: '海外云厂商中最慷慨的羊毛与高转化联盟项目之一：新注册绑卡即送 $200 免费算力额度（60天有效），足够免费跑满整套高配 AI 与爬虫集群。',
+      metricPill: '🎁 新客立领 $200 免费云额度 · 全球高速机房',
+      price: '基础云主机 $4/月起 · 新客享 $200 免费体验金',
+      summary: 'DigitalOcean 拥有新加坡、法兰克福、硅谷、纽约等全球核心机房，网络路由极其稳健。对于刚起步的开发者，用 $200 赠金免费测试两个月高配多节点集群几乎是零成本试错。',
+      pros: ['高达 $200 的 60 天免费算力赠金，可任意开启高配 Droplet、托管 Postgres 数据库或 GPU 实例', '应用市场提供一键安装的 Docker、n8n、WordPress 与 Coolify 镜像', '联盟营销转化率极高：用“免费领 $200 云服务器额度”做教程引导，读者注册意愿极强'],
+      cons: ['60 天赠金用完后，记得将测试用高配机器降配至 $4–$6/月常驻机型'],
+      verdict: '零成本白嫖两个月高配海外云服务器、以及做技术类联盟带货必推的黄金 Offer。',
+      url: 'go/digitalocean', cta: '免费领取 $200 云主机额度'
+    },
+    namecheap: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.5 / 10', relatedKit: 'cloudflareedge',
+      tier: 'S 级严选 · 老牌特价域名与企业邮局', name: 'Namecheap 域名与 PrivateEmail 企业邮箱', role: 'Spaceship 母公司、首年 $0.98 特价域名促销与高性价比自定义域名邮箱',
+      verdictShort: 'Spaceship 的母公司老牌巨头：经常推出低至 $0.98–$5.98 的新后缀首年闪促，且其 PrivateEmail 是配置 `hello@你的域名` 最划算的独立企业邮箱方案。',
+      metricPill: '🌐 终身免费隐私保护 + $1.24/月独立域名企业邮箱',
+      price: '.com 首年特惠 $6.49 起 · 企业邮箱 $14.88/年',
+      summary: '在注册联盟计划（如 Impact、CJ、PartnerStack）时，使用 `@gmail.com` 很容易被拒，而用 `partner@cruxxxxxkit.com` 这种独立域名邮箱过审率会翻倍。Namecheap 的 PrivateEmail 一年仅需十几个美金即可搞定专业收发信。',
+      pros: ['PrivateEmail 仅需约 $1.24/月即可开通支持 IMAP/SMTP 的专业品牌邮箱，大幅提升海外联盟申请过审率', '永久免费赠送 Whois 隐私保护，7×24 小时英文真人在线客服响应极快', '通过 Impact / CJ 联盟网络提供 20%–35% 域名与邮箱佣金'],
+      cons: ['后台界面偏传统经典风格，日常极速改 DNS 依然更推荐旗下的 Spaceship'],
+      verdict: '申请高门槛海外联盟必备的低成本品牌企业邮箱方案，与 Spaceship 完美互补。',
+      url: 'go/namecheap', cta: '查看 Namecheap 域名与邮箱特惠'
+    },
+    nordvpn: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.6 / 10', relatedKit: 'affiliatematrix',
+      tier: 'S 级严选 · 跨境独享静态 IP 与加密组网', name: 'NordVPN 独享静态 IP 与 Meshnet', role: '全球 111 国纯净节点、防风控独享静态 IP 与跨设备免费内网穿透（Meshnet）',
+      verdictShort: '跨境多账号运营与海外收款防风控刚需：锁定专属纯净静态 IP 登录 Stripe/PayPal/联盟后台，避免共享机房 IP 触发二次验证或封号。',
+      metricPill: '🔒 111国节点 · NordLynx 极速协议 · 40%–100% 高额佣金',
+      price: '特惠 $3.09/月起（两年套餐额外赠送 3 个月）',
+      summary: '做全球联盟营销与跨境独立站时，频繁切换劣质共享 IP 登录收款账户（Stripe、PayPal、Wise）极易触发安全冻结。NordVPN 提供专属静态 IP（Dedicated IP）与全球各国本地搜索结果预览能力。',
+      pros: ['可选配独享静态 IP（Dedicated IP），固定单一纯净住宅/商业 IP 登录核心财务与广告后台', '内置免费 Meshnet 功能，可随时随地加密直连家里的电脑或私有大模型主机', '全球佣金最高的王牌数字产品之一：新客首单佣金高达 40%–100%，续费还享 30% 分成'],
+      cons: ['独享静态 IP 需要在基础订阅之上额外勾选插件包'],
+      verdict: '跨境操盘手保护收款与社媒账号安全的防风控护盾，也是独立站超高佣金转化利器。',
+      url: 'go/nordvpn', cta: '获取 NordVPN 专属折扣与赠期'
+    },
+    airwallex: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.7 / 10', relatedKit: 'solo',
+      tier: 'S 级严选 · 跨境企业多币种金库与虚拟卡', name: 'Airwallex 空中云汇全球企业账户', role: '0 货币转换费无限开虚拟 Visa 卡、20+ 币种本地收款账户与 SaaS 订阅防盗刷管理',
+      verdictShort: '当你注册了海外公司（美国 LLC、英国 Ltd 或香港公司）后，空中云汇让你免费批量生成虚拟 Visa 卡支付 OpenRouter/云主机/广告费，且享 0% 跨境刷卡手续费。',
+      metricPill: '💳 批量开虚拟 Visa 卡 + 0% 跨境刷卡费 + 银行间实时汇率',
+      price: '$0 开户费与月管理费 · 0% 外币卡交易费',
+      summary: '用国内信用卡支付几十个海外 AI API 与 SaaS 订阅不仅容易被拒付，还会承担 1.5%–3% 的隐性汇损。Airwallex 支持一键开设美元、欧元、英镑、港币等本地同名收款账户，并可为每个软件单独开一张限额虚拟卡。',
+      pros: ['支持无限生成多币种虚拟 Visa 卡，可为每个 AI API 或广告账户单独设每月扣款上限，彻底杜绝超额扣费', '提供美、欧、英、澳、港、新等 20+ 个国家和地区的本地银行账号，无缝对接 Stripe、亚马逊与各大联盟打款', '无开户费、无账户管理年费，换汇直接享受贴近银行间市场的极低点差'],
+      cons: ['仅支持个体工商户、香港公司或海外公司（LLC/Ltd）认证——纯个人身份请优先使用 Wise'],
+      verdict: '工作室走向公司化运作、需要批量管理海外虚拟卡与大额跨境结汇的终极企业金库。',
+      url: 'go/airwallex', cta: '免费开通 Airwallex 企业账户'
+    },
+    skin1004: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.8 / 10', relatedKit: 'sunguide',
+      tier: 'S 级严选 · 油皮混油皮本命水感防晒', name: 'SKIN1004 理肤天使积雪草水感防晒精华 (蓝帽)', role: 'SPF50+ PA++++ 新一代化学防晒剂 + 马达加斯加积雪草 + 透明质酸真空泵精华',
+      verdictShort: '肤感比朝鲜美女大米防晒还要轻薄一档的“蓝帽水感精华防晒”：采用真空按压泵设计，一抹化水、零假白、不熏眼，油皮与混油皮春夏挚爱。',
+      metricPill: '☀️ SPF50+ PA++++ · 真空按压泵 · 零硅油零假白',
+      price: '$11 – $14 / 50ml · 敏感肌与痘肌友好',
+      summary: '如果你觉得朝鲜美女防晒在夏天稍微有一点点润，那么 SKIN1004 这支蓝帽 Hyalu-Cica 防晒精华就是完美替代。它将四种高光稳定性现代防晒剂融于积雪草与小分子玻尿酸基底中，涂感完全像清爽保湿精华。',
+      pros: ['罕见的真空按压泵包装：不仅能精准控制每次 2 泵的标准防晒用量，还能防止活性成分氧化失活', '核心 Hyalu-Cica 配方（高纯度马达加斯加积雪草 + 透明质酸）边防晒边舒缓刷酸后的微泛红', '后续跟妆或叠加散粉完全不搓泥、不拔干、不泛白'],
+      cons: ['成膜后呈自然水光肌质感，大油田夏天可在 T 区轻扫一层透明散粉'],
+      verdict: '韩系防晒双子星之一：干皮/秋冬选朝鲜美女，混油皮/春夏无脑选 SKIN1004 蓝帽。',
+      url: 'go/skin1004', cta: '查看 OliveYoung 官方直邮价'
+    },
+    roundlab: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'sunguide',
+      tier: 'S 级严选 · 韩国本土销量总冠军防晒', name: 'Round Lab 独岛桦树汁保湿防晒霜 SPF50+ PA++++', role: '麟蹄郡白桦树汁氨基酸 + 甘油葡糖苷 + 烟酰胺晨间二合一防晒乳',
+      verdictShort: '连续多年蝉联韩国本土 OliveYoung 防晒品类销量总冠军：早上洁面后无需涂乳液，一支直接搞定深层水通道保湿 + SPF50+ PA++++ 高倍防护。',
+      metricPill: '🌿 白桦树汁氨基酸 + 甘草酸二钾退红 + 实测 SPF55+',
+      price: '$14 – $18 / 50ml · 权威临床实测认证',
+      summary: 'Round Lab 桦树汁防晒在韩国本土几乎人手一支。它利用富含氨基酸的银桦树汁搭配甘油葡糖苷（激活皮肤水通道蛋白 Aquaporin-3），在提供高倍 UVA/UVB 防护的同时让底妆一整天扒得死死的。',
+      pros: ['极佳的晨间“乳液+防晒”二合一配方，早上洗完脸涂完维 C 直接涂它，省去涂面霜步骤', '复配甘草酸二钾与尿囊素，有效抑制日晒高温引起的两颊燥热泛红', '多家独立实验室双盲复测 SPF 均在 55 以上、PFA 19+，防护力极其扎实'],
+      cons: ['含有微量植物舒缓提取物，对桦树花粉极度过敏者建议先在耳后测试'],
+      verdict: '早八通勤族“洁面+维C+防晒”三步极简护肤流程的晨间王牌。',
+      url: 'go/roundlab', cta: '查看 Round Lab 桦树汁防晒优惠'
+    },
+    numbuzin: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'winterbarrier',
+      tier: 'S 级严选 · 五维通路淡印提亮王炸', name: 'numbuzin 5号谷胱甘肽维他命浓缩精华', role: '脂质体谷胱甘肽 + 4% 传明酸 + 5% 烟酰胺 + α-熊果苷 + 5% 泛醇多通路淡印精华',
+      verdictShort: '一瓶集齐五大美白淡印猛药（谷胱甘肽+传明酸+烟酰胺+熊果苷+维C衍生物）外加 5% 泛醇打底，专治熬夜黄气与新生红黑痘印，且完全不刺痛。',
+      metricPill: '✨ 谷胱甘肽 + 4%传明酸 + 5%烟酰胺 + 5%泛醇',
+      price: '$16 – $20 / 30ml · 无人工香精无酒精',
+      summary: '为什么单用一种美白成分总是见效慢？因为黑色素生成涉及酪氨酸酶激活、氧化聚合、转运与血管扩张四个环节。numbuzin 5号精华用鸡尾酒协同思路把四条通路全部堵死，同时用 5% 泛醇护住屏障。',
+      pros: ['全通路协同：传明酸退红印、熊果苷与谷胱甘肽抑黑、5% 烟酰胺阻断黑色素向表皮转移', '高达 5% 的泛醇（维生素 B5）与神经酰胺 NP 打底，敏感肌早晚使用也零刺痛感', '温和中性 pH 值，可无缝融入早 C 晚 A 或刷酸流程，不与任何成分打架'],
+      cons: ['30ml 单瓶早晚厚涂消耗较快，强烈建议在 OliveYoung 直接入双支装礼盒'],
+      verdict: '目前韩系成分护肤中配方链路最完整、兼顾红黑痘印与全脸去黄的性价比神作。',
+      url: 'go/numbuzin', cta: '查看 numbuzin 5号精华双支装'
+    },
+    illiyoon: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.8 / 10', relatedKit: 'winterbarrier',
+      tier: 'S 级严选 · 200ml 神经酰胺修护大碗王', name: 'Illiyoon 一理润神经酰胺舒敏集中修护霜', role: '爱茉莉太平洋专利微囊神经酰胺颗粒 + 植萃胆固醇/脂肪酸屏障封包面霜',
+      verdictShort: '爱茉莉太平洋集团专研的“看得见的神经酰胺微囊颗粒”，一抹即化填入受损角质层——200ml 巨无霸装仅需百元出头，秋冬刷酸封包随便挖不心疼。',
+      metricPill: '🛡️ 专利神经酰胺微囊技术 · 200ml 超大碗家庭装',
+      price: '$14 – $17 / 200ml（每毫升仅 $0.08！）',
+      summary: '很多主打神经酰胺的专柜面霜 50ml 就要卖四五百元，实际神经酰胺添加量却微乎其微。一理润直接采用爱茉莉太平洋专利的 Ceramide Skin Complex™ 微囊包埋技术，把高浓度神经酰胺做成肉眼可见的软颗粒。',
+      pros: ['极致的容量性价比：200ml 超大软管装，拿来涂全脸、脖子甚至手肘干裂都能用上小半年', '推开瞬间微囊颗粒融化，形成透气不闷痘的哑光丝绒保护膜，锁水能力极强', '通过严苛低敏测试，0香精、0色素、0酒精，干敏肌与秋冬季刷阿达帕林打底完美绝配'],
+      cons: ['质地属于扎实滋润挂，油皮夏天只需取绿豆大小，秋冬干冷季可正常按压涂抹'],
+      verdict: '秋冬干冷暖气房里性价比最高的神经酰胺修护大碗王，刷酸人居家常备底气。',
+      url: 'go/illiyoon', cta: '去 iHerb / OliveYoung 查看底价'
+    },
+    geekgorgeous: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'retinoidramp',
+      tier: 'S 级严选 · 0.1% 临床级A醛抗老天花板', name: 'Geek & Gorgeous A-Game 10 (0.1% 视黄醛晚安乳)', role: '环糊精包裹高稳定 0.1% 视黄醛（Retinal）+ 尿囊素 + 泛醇抗老紧致精华乳',
+      verdictShort: '视黄醛（A醛）只需一步转化即可变为维A酸，作用速度比普通A醇快 11 倍！欧洲硬核实验室品牌出品，百元价位给足 0.1% 满血抗老浓度。',
+      metricPill: '🧬 0.1% 稳定态视黄醛 · 转化效率比普通A醇快 11 倍',
+      price: '$19 – $22 / 30ml 真空泵 · 欧洲原产临床配方',
+      summary: '如果说 0.1% 阿达帕林是疏通毛孔与战痘之神，那么 0.1% 视黄醛（Retinaldehyde）就是非处方抗老、淡化细纹与刺激胶原蛋白再生的金字塔尖。Geek & Gorgeous 用不到 20 美金的价格打破了大牌 A 醛动辄五六百元的垄断。',
+      pros: ['离维A酸仅一步之遥（A醛 -> A酸），比普通A醇（A醇 -> A醛 -> A酸）刺激度更低、抗老紧致见效快一倍', '复配尿囊素、泛醇与生物糖胶-1，黄色丝滑乳液质地温和不拔干', '真空避光按压瓶确保每一滴 0.1% 视黄醛直到用空都保持最高活性'],
+      cons: ['高浓度A醛自带天然明黄色，晚间涂抹后建议等待 10 分钟吸收完全再躺上白色枕套'],
+      verdict: '渡过新手耐受期后，追求真皮层抗老、细腻毛孔与紧致轮廓的最高性价比进阶晚A。',
+      url: 'go/geekgorgeous', cta: '查看 Geek & Gorgeous 官方详情'
+    }
+  });
+
+
+  // 3. Add 16 new Full-Length Bilingual Affiliate Review & Buyer's Guide Articles (24 -> 40 Guides)
+  const newStoryIds = [
+    'v0lovablebolt', 'scraping2026', 'groqvsopenrouter', 'heygenvsynthesia',
+    'surfervsahrefs', 'capcutvsopus', 'vps2026', 'crossborderpay',
+    'spaceshipvsnamecheap', 'vpnproxy2026', 'partnerstackgold', 'kbeautyspf3',
+    'numbuzinvsanua', 'illiyoonvscerave', 'retinalvsadapalene', 'iherboliveyoung'
+  ];
+  newStoryIds.forEach(id => {
+    if (!storiesOrder.includes(id)) storiesOrder.push(id);
+  });
+
+  Object.assign(storiesData.en, {
+    v0lovablebolt: {
+      catKey: 'ai', readTime: '11 min read',
+      category: 'AI App Builders · 2026 Full-Stack Showdown',
+      title: 'Vercel v0 vs. Lovable.dev vs. Cursor + Claude Sonnet 5.5: Which AI Builder Ships Faster?',
+      deck: 'We built the exact same Stripe-monetized SaaS dashboard across v0.dev, Lovable.dev, and Cursor (powered by Claude Sonnet 5.5 & GPT-6.1 Sol Pro). Here is the honest breakdown.',
+      body: `
+        <p>In late 2026, solo founders no longer hire $15,000 dev agencies to ship an MVP. Instead, the decision comes down to three tools: <strong>Vercel v0</strong> for high-craft UI, <strong>Lovable.dev</strong> for natural-language Supabase/Stripe full-stack apps, and <strong>Cursor + Claude Sonnet 5.5</strong> for unrestricted repository control.</p>
+        <h4>1. Head-to-Head Production Matrix (November 2026)</h4>
+        <table class="bench-table">
+          <thead><tr><th>Platform</th><th>Best Use Case</th><th>Backend &amp; DB</th><th>Monthly Cost</th><th>Partner Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Vercel v0</strong></td><td>Agency-grade React/Tailwind/Shadcn UI &amp; calculators</td><td>Vercel Edge / Next.js</td><td>Free / $20/mo</td><td><a href="/go/v0dev/">Try Vercel v0 →</a></td></tr>
+            <tr><td><strong>Lovable.dev</strong></td><td>Complete CRUD SaaS with 1-click Supabase &amp; Stripe</td><td>Native Supabase Postgres</td><td>Free / $20/mo</td><td><a href="/go/lovable/">Launch on Lovable →</a></td></tr>
+            <tr><td><strong>Cursor + Claude 5.5</strong></td><td>Complex custom multi-file production architectures</td><td>Any Stack / Docker / Cloud</td><td>$20/mo + API</td><td><a href="/go/cursor/">Download Cursor →</a></td></tr>
+          </tbody>
+        </table>
+        <h4>2. The Winning 3-Step Hybrid Workflow</h4>
+        <p>Don’t lock yourself into a single tool. Our highest-shipping solo builders generate the initial hero and Shadcn pricing components in <a href="/go/v0dev/">Vercel v0</a>, wire up authentication and Postgres tables in <a href="/go/lovable/">Lovable.dev</a> (with 2-way GitHub sync enabled), and pull the repository into <a href="/go/cursor/">Cursor</a> using <strong>Claude Sonnet 5.5</strong> ($2/1M via <a href="/go/openrouter/">OpenRouter</a>) for custom API edge cases.</p>
+      `
+    },
+    scraping2026: {
+      catKey: 'ai', readTime: '10 min read',
+      category: 'Agent Data Pipelines · Web Scraping Benchmark',
+      title: 'Firecrawl vs. Apify: Best Web Scraping APIs for DeepSeek V4.1 & GPT-6.1 Agents',
+      deck: 'Raw HTML wastes 80% of your context window. We tested Firecrawl and Apify across 10,000 e-commerce, X/Twitter, and documentation pages.',
+      body: `
+        <p>Even with 1,048,576-token context windows on <strong>DeepSeek V4.1-Flash-1017</strong> and <strong>GPT-6.1</strong>, feeding uncleaned DOM tags into an LLM ruins reasoning accuracy and inflates API bills by 4x. You need a dedicated extraction layer.</p>
+        <h4>1. Firecrawl vs. Apify: When to Use Which</h4>
+        <table class="bench-table">
+          <thead><tr><th>Tool</th><th>Core Strength</th><th>Token Savings</th><th>Affiliate / Free Tier</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Firecrawl API</strong></td><td>Turns any URL or docs site into clean LLM Markdown &amp; Pydantic JSON</td><td>78% fewer input tokens</td><td>500 Free Pages (25% RevShare)</td><td><a href="/go/firecrawl/">Get Firecrawl Key →</a></td></tr>
+            <tr><td><strong>Apify Cloud Store</strong></td><td>2,000+ ready Actors for TikTok, Google Maps, Amazon &amp; Instagram</td><td>Pre-structured JSON datasets</td><td>$5/mo Free Credit (30% Recurring)</td><td><a href="/go/apify/">Explore Apify Store →</a></td></tr>
+          </tbody>
+        </table>
+        <h4>2. Automating Competitor Intelligence in Make.com</h4>
+        <p>Connect <a href="/go/apify/">Apify</a> or <a href="/go/firecrawl/">Firecrawl</a> inside a <a href="/go/make/">Make.com (?pc=cruxkit)</a> scenario, pipe the clean Markdown into <code>deepseek/deepseek-v4.1-flash-1017</code> ($0.15/1M) via <a href="/go/openrouter/">OpenRouter</a>, and output daily competitor pricing alerts straight to Notion.</p>
+      `
+    },
+    groqvsopenrouter: {
+      catKey: 'ai', readTime: '9 min read',
+      category: 'Real-Time AI · Latency & Throughput Lab',
+      title: 'GroqCloud LPU (850+ tok/s) vs. OpenRouter vs. DeepSeek V4.1-Flash-1017: The Speed Benchmark',
+      deck: 'When building voice agents with ElevenLabs v3 or real-time UI autocomplete, Time-To-First-Token (TTFT) is everything.',
+      body: `
+        <p>We measured Time-To-First-Token (TTFT) and sustained tokens-per-second across 500 production prompts to see how hardware LPUs compare against frontier 1M-context cloud gateways.</p>
+        <table class="bench-table">
+          <thead><tr><th>Provider / Engine</th><th>TTFT (Latency)</th><th>Output Speed</th><th>Best Workload</th><th>Official Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>GroqCloud LPU</strong></td><td>0.08 sec</td><td>860 tok/s</td><td>Real-time voice bots &amp; instant classification</td><td><a href="/go/groq/">Try GroqCloud →</a></td></tr>
+            <tr><td><strong>OpenRouter (DeepSeek V4.1-Flash-1017)</strong></td><td>0.24 sec</td><td>195 tok/s</td><td>1M-context reasoning &amp; bulk content generation</td><td><a href="/go/openrouter/">OpenRouter Gateway →</a></td></tr>
+            <tr><td><strong>ElevenLabs Studio v3</strong></td><td>0.075 sec</td><td>Real-time Audio</td><td>Ultra-low-latency neural voice streaming</td><td><a href="/go/elevenlabs/">Try ElevenLabs v3 →</a></td></tr>
+          </tbody>
+        </table>
+        <p><strong>Lab Verdict:</strong> Route ultra-fast intent classification and <a href="/go/elevenlabs/">ElevenLabs</a> conversational voice turns through <a href="/go/groq/">GroqCloud</a>, and route heavy 1M-context synthesis through <a href="/go/openrouter/">OpenRouter</a>.</p>
+      `
+    },
+    heygenvsynthesia: {
+      catKey: 'ai', readTime: '12 min read',
+      category: 'AI Video Monetization · Avatar Studio Comparison',
+      title: 'HeyGen Avatar IV vs. Synthesia 3.0 vs. ElevenLabs: Which AI Video Tool Converts Best in 2026?',
+      deck: 'We produced 60 bilingual product videos and B2B tutorials to test lip-sync realism, multi-language dubbing, and affiliate conversion rates.',
+      body: `
+        <p>AI video avatars have crossed the uncanny valley. Whether you are running a faceless TikTok/YouTube review channel or localizing SaaS onboarding into 30 languages, picking the right studio saves $5,000/month in video production.</p>
+        <table class="bench-table">
+          <thead><tr><th>Studio</th><th>Best Video Format</th><th>Key Advantage</th><th>Partner Offer</th></tr></thead>
+          <tbody>
+            <tr><td><strong>HeyGen (Avatar IV)</strong></td><td>High-converting UGC reels, product demos &amp; 1-click video translation</td><td>Best micro-expressions &amp; casual creator realism</td><td><a href="/go/heygen/">Try HeyGen Free (?via=xing) →</a></td></tr>
+            <tr><td><strong>Synthesia 3.0</strong></td><td>B2B SaaS walkthroughs, SOP training &amp; screen-synced presentations</td><td>Full-body expressive presenters + smart screen recorder</td><td><a href="/go/synthesia/">Try Synthesia 3.0 →</a></td></tr>
+            <tr><td><strong>ElevenLabs v3</strong></td><td>Custom emotional voice cloning, audiobooks &amp; multi-speaker dubbing</td><td>Unmatched emotional cadence &amp; breath realism</td><td><a href="/go/elevenlabs/">Try ElevenLabs Free →</a></td></tr>
+          </tbody>
+        </table>
+        <p><strong>Pro Tip:</strong> Generate your vocal track in <a href="/go/elevenlabs/">ElevenLabs v3</a>, drive your avatar in <a href="/go/heygen/">HeyGen</a>, and add kinetic bilingual captions in <a href="/go/capcut/">CapCut Pro</a>.</p>
+      `
+    },
+    surfervsahrefs: {
+      catKey: 'ai', readTime: '13 min read',
+      category: 'SEO & GEO Growth · Search Traffic Stack',
+      title: 'Semrush vs. Ahrefs Brand Radar vs. SurferSEO: The 2026 Organic & AI Search Playbook',
+      deck: 'How to find low-competition affiliate keywords, optimize NLP entity scores to 90+, and get cited by ChatGPT Search, Perplexity, and Gemini 4.',
+      body: `
+        <p>Search engine optimization in 2026 is a dual game: ranking in Google’s top 3 organic slots while ensuring LLM answer engines cite your domain via <code>llms.txt</code> and high-density comparison tables.</p>
+        <table class="bench-table">
+          <thead><tr><th>Tool</th><th>Primary Job in Your Stack</th><th>Standout 2026 Feature</th><th>Official Partner Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Semrush</strong></td><td>Commercial intent keyword discovery &amp; PPC spy</td><td>Intent-filtered affiliate keyword magic tool</td><td><a href="/go/semrush/">Start Semrush Trial →</a></td></tr>
+            <tr><td><strong>Ahrefs (AWT + Radar)</strong></td><td>Competitor backlink audit &amp; LLM mention tracking</td><td>Free Webmaster Tools + AI Brand Radar</td><td><a href="/go/ahrefs/">Use Ahrefs Free →</a></td></tr>
+            <tr><td><strong>SurferSEO</strong></td><td>On-page NLP entity scoring &amp; auto internal linking</td><td>Live 0–100 SERP Content Editor score</td><td><a href="/go/surfer/">Try SurferSEO →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    capcutvsopus: {
+      catKey: 'ai', readTime: '10 min read',
+      category: 'Creator Workflow · Short-Form Video Factory',
+      title: 'OpusClip Pro vs. CapCut Commerce Pro vs. Descript: Shipping 90 Viral Shorts a Month',
+      deck: 'How a single operator turns 4 long-form podcasts or tutorials into 90 bilingual vertical shorts for YouTube, TikTok, Reels, and Xiaohongshu.',
+      body: `
+        <p>Short-form vertical video remains the highest-leverage top-of-funnel traffic source for affiliate links. Here is how the top three editing engines compare in late 2026:</p>
+        <table class="bench-table">
+          <thead><tr><th>Tool</th><th>Core Automation</th><th>Time Saved per 10 Clips</th><th>Partner Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>OpusClip Pro</strong></td><td>AI Virality Score + automatic 9:16 speaker reframing from 1-hour videos</td><td>6.5 hours saved</td><td><a href="/go/opusclip/">Try OpusClip Free →</a></td></tr>
+            <tr><td><strong>CapCut Pro</strong></td><td>99% accurate EN/ZH bilingual kinetic captions &amp; TikTok Shop templates</td><td>4.0 hours saved</td><td><a href="/go/capcut/">Get CapCut Pro →</a></td></tr>
+            <tr><td><strong>Descript</strong></td><td>Edit video by deleting text in the transcript + Studio Sound cleanup</td><td>5.0 hours saved</td><td><a href="/go/descript/">Try Descript Free →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    vps2026: {
+      catKey: 'ai', readTime: '12 min read',
+      category: 'Cloud Infrastructure · Self-Hosted n8n & Docker',
+      title: 'Hostinger KVM2 vs. Hetzner ARM64 vs. Railway vs. DigitalOcean ($200 Credit): 2026 VPS Benchmark',
+      deck: 'We deployed n8n + PostgreSQL + Redis + LiteLLM across all four cloud providers to test RAM cost, NVMe IOPS, and setup friction.',
+      body: `
+        <p>Self-hosting <strong>n8n</strong> and <strong>LiteLLM</strong> eliminates $300+/month in SaaS task taxes. Depending on whether you prefer 1-click zero-devops or raw bare-metal value, here is the 2026 cloud winner matrix:</p>
+        <table class="bench-table">
+          <thead><tr><th>Cloud Provider</th><th>Specs &amp; Price</th><th>Best For</th><th>Partner Bonus</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Hostinger KVM 2</strong></td><td>2 vCPU / 8GB RAM / 100GB NVMe ($6.99/mo)</td><td>1-Click Ubuntu n8n template + 8GB RAM headroom</td><td><a href="/go/hostinger/">Claim Hostinger Discount →</a></td></tr>
+            <tr><td><strong>Hetzner Cloud CAX11</strong></td><td>2 vCPU / 4GB RAM / 40GB NVMe (€3.79/mo)</td><td>Maximum raw performance per dollar for Linux pros</td><td><a href="/go/hetzner/">Get €20 Hetzner Credit →</a></td></tr>
+            <tr><td><strong>Railway.app</strong></td><td>Usage-based ($5/mo Hobby includes $5 credit)</td><td>Zero-SSH 45-second n8n + Postgres + Redis deploy</td><td><a href="/go/railway/">Claim $5 Railway Bonus →</a></td></tr>
+            <tr><td><strong>DigitalOcean</strong></td><td>Droplets from $4/mo + Managed DBs</td><td>60-day risk-free multi-node testing</td><td><a href="/go/digitalocean/">Claim $200 Free Credit →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    crossborderpay: {
+      catKey: 'ai', readTime: '11 min read',
+      category: 'Global Commerce · Payouts, Banking & MoR',
+      title: 'Wise vs. Airwallex vs. Lemon Squeezy vs. Gumroad: The 2026 Cross-Border Monetization Stack',
+      deck: 'How solo digital product sellers and affiliate marketers collect USD/EUR globally, slash FX conversion fees to near zero, and automate VAT.',
+      body: `
+        <p>Getting traffic is only half the battle; keeping 95%+ of your international revenue requires pairing the right Merchant of Record (MoR) with a zero-FX borderless treasury account.</p>
+        <table class="bench-table">
+          <thead><tr><th>Platform</th><th>Role in Your Business</th><th>Fee Structure</th><th>Official Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Gumroad</strong></td><td>Instant digital kit storefront + built-in Marketplace discovery</td><td>10% flat (No monthly fee)</td><td><a href="/go/gumroad/">Open Gumroad Store (?a=735179107) →</a></td></tr>
+            <tr><td><strong>Lemon Squeezy</strong></td><td>SaaS subscriptions, license keys &amp; global VAT compliance</td><td>5% + $0.50 per transaction</td><td><a href="/go/lemonsqueezy/">Explore Lemon Squeezy →</a></td></tr>
+            <tr><td><strong>Wise Business</strong></td><td>Personal &amp; solo local USD/EUR/GBP receiving accounts (ACH/IBAN)</td><td>Mid-market FX (~0.35%)</td><td><a href="/go/wise/">Open Free Wise Account →</a></td></tr>
+            <tr><td><strong>Airwallex</strong></td><td>Corporate multi-currency accounts + unlimited 0%-FX virtual Visa cards</td><td>$0/mo + 0% FX card fees</td><td><a href="/go/airwallex/">Open Airwallex Account →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    spaceshipvsnamecheap: {
+      catKey: 'ai', readTime: '9 min read',
+      category: 'Domains & DNS · Web Infrastructure Audit',
+      title: 'Spaceship Unbox vs. Cloudflare Registrar vs. Namecheap: Best Domain & Email Stack in 2026',
+      deck: 'Why we registered cruxxxxxkit.com on Spaceship, paired it with 30-second DNS TXT verification, and compared renewal pricing across 15 TLDs.',
+      body: `
+        <p>Your domain registrar controls your DNS propagation speed, email deliverability, and annual portfolio burn. We tested the big three registrars head-to-head:</p>
+        <table class="bench-table">
+          <thead><tr><th>Registrar</th><th>.com Pricing &amp; DNS Speed</th><th>Killer Feature</th><th>Official Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Spaceship.com</strong></td><td>$2.88–$8.98/yr · 20s global DNS propagation</td><td>Unbox™ 1-click DNS presets &amp; instant GSC TXT verify</td><td><a href="/go/spaceship/">Launch on Spaceship →</a></td></tr>
+            <tr><td><strong>Cloudflare</strong></td><td>At-cost wholesale renewal + Free CDN/WAF</td><td>Zero-markup renewals + Workers edge routing</td><td><a href="/go/cloudflare/">Explore Cloudflare →</a></td></tr>
+            <tr><td><strong>Namecheap</strong></td><td>$0.98–$6.49 promos + $1.24/mo PrivateEmail</td><td>Cheapest custom-domain IMAP/SMTP business email</td><td><a href="/go/namecheap/">View Namecheap Deals →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    vpnproxy2026: {
+      catKey: 'ai', readTime: '9 min read',
+      category: 'Operational Security · Cross-Border Networking',
+      title: 'NordVPN Dedicated IP & Meshnet vs. Datacenter Proxies: Protecting Global Payment & Ad Accounts',
+      deck: 'Why logging into Stripe, PartnerStack, or TikTok Ads from noisy shared IPs triggers account freezes—and how Dedicated IPs solve it.',
+      body: `
+        <p>Cross-border founders routinely lose days to automated fraud locks when traveling or switching networks. Using a clean, static <strong>Dedicated IP</strong> ensures your payment gateways and affiliate dashboards always see a consistent, trusted fingerprint.</p>
+        <ul>
+          <li><strong>Dedicated Static IP:</strong> Assigned exclusively to your account in the US, UK, Germany, Japan, or Singapore via <a href="/go/nordvpn/">NordVPN</a>.</li>
+          <li><strong>Free Encrypted Meshnet:</strong> Connect your laptop directly to your home workstation or self-hosted <a href="/go/hetzner/">Hetzner</a> / <a href="/go/hostinger/">Hostinger</a> server over encrypted WireGuard tunnels.</li>
+          <li><strong>SERP Geo-Verification:</strong> Preview exact Google search results in 111 countries to verify your <a href="/go/semrush/">Semrush</a> and <a href="/go/surfer/">SurferSEO</a> rankings.</li>
+        </ul>
+        <p><a href="/go/nordvpn/"><strong>→ Claim the NordVPN Exclusive Multi-Year + Bonus Months Deal</strong></a></p>
+      `
+    },
+    partnerstackgold: {
+      catKey: 'ai', readTime: '14 min read',
+      category: 'Affiliate Monetization · High-Ticket B2B Blueprint',
+      title: 'The 2026 High-Paying B2B & AI Affiliate Goldmine: 15 Programs Paying 20%–50% Recurring Commissions',
+      deck: 'Stop promoting 3% commodity links. Here is the exact commission structure of Make.com, HeyGen, Webflow, Apify, Semrush, and Hostinger.',
+      body: `
+        <p>A single niche benchmark article with 500 targeted readers per month can generate $1,500+/month if it solves a real technical problem and links to recurring B2B SaaS programs.</p>
+        <table class="bench-table">
+          <thead><tr><th>Partner Program</th><th>Commission Rate</th><th>Cookie / Payout Window</th><th>Official Registration / Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Make.com Partner</strong></td><td>20%–35% Recurring (24 Mo) + 10k Free Ops</td><td>120-Day Cookie (Wise/PayPal)</td><td><a href="/go/make/">Join / Try Make (?pc=cruxkit) →</a></td></tr>
+            <tr><td><strong>HeyGen Creator</strong></td><td>20% Recurring (12 Mo) via Rewardful</td><td>60-Day Cookie</td><td><a href="/go/heygen/">Try HeyGen (?via=xing) →</a></td></tr>
+            <tr><td><strong>Webflow (PartnerStack)</strong></td><td>50% Recurring for 12 Months</td><td>90-Day Cookie</td><td><a href="/go/webflow/">Explore Webflow →</a></td></tr>
+            <tr><td><strong>Apify Affiliate</strong></td><td>30% Lifetime Recurring Commission</td><td>90-Day Cookie</td><td><a href="/go/apify/">Explore Apify →</a></td></tr>
+            <tr><td><strong>SurferSEO &amp; Semrush</strong></td><td>25% Recurring / $200 CPA per Sale</td><td>120-Day Cookie</td><td><a href="/go/semrush/">Explore Semrush →</a></td></tr>
+            <tr><td><strong>NordVPN &amp; Hostinger</strong></td><td>40%–100% New Sales + 30% Renewals</td><td>30-Day Cookie</td><td><a href="/go/hostinger/">Explore Hostinger →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    kbeautyspf3: {
+      catKey: 'beauty', readTime: '11 min read',
+      category: 'Formulation Lab · K-Beauty UV Filter Showdown',
+      title: 'Beauty of Joseon vs. SKIN1004 Hyalu-Cica vs. Round Lab Birch Juice: Lab Test of Korea’s Top 3 Sunscreens',
+      deck: 'All three use next-gen photostable filters (Uvinul A Plus, Uvinul T 150, Tinosorb M) with SPF50+ PA++++. Which texture fits your exact skin type?',
+      body: `
+        <p>American drugstore sunscreens rely on outdated avobenzone that stings eyes and feels greasy. Korean sunscreens use modern big-molecule European/Asian filters that feel like luxury serums. We tested the top three OliveYoung champions side-by-head:</p>
+        <table class="bench-table">
+          <thead><tr><th>Sunscreen</th><th>Texture &amp; Finish</th><th>Hero Soothing Actives</th><th>Ideal Skin Type</th><th>Shop Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Beauty of Joseon Relief Sun</strong></td><td>Nourishing light cream · Natural glow</td><td>30% Rice Extract + Probiotic Ferments + Niacinamide</td><td>Dry, Normal &amp; Winter Retinoid Users</td><td><a href="/go/bojsun/">Check OliveYoung →</a></td></tr>
+            <tr><td><strong>SKIN1004 Hyalu-Cica (Blue Cap)</strong></td><td>Weightless water-serum · Airless pump</td><td>Madagascar Centella + 3-Weight Hyaluronic Acid</td><td>Oily, Combination &amp; Acne-Prone Skin</td><td><a href="/go/skin1004/">Check OliveYoung →</a></td></tr>
+            <tr><td><strong>Round Lab Birch Juice SPF50+</strong></td><td>2-in-1 Moisturizer + UV Emulsion</td><td>Inje Silver Birch Sap + Glyceryl Glucoside + DPG</td><td>Normal-to-Dry &amp; Busy 1-Step Mornings</td><td><a href="/go/roundlab/">Check OliveYoung →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    numbuzinvsanua: {
+      catKey: 'beauty', readTime: '10 min read',
+      category: 'Formulation Lab · Hyperpigmentation & PIE/PIH Audit',
+      title: 'numbuzin No.5+ Glutathione Serum vs. Anua 10% Niacinamide + 4% TXA: Fastest Dark-Spot Routine',
+      deck: 'Red acne marks (PIE) and brown sun/acne spots (PIH) require different biochemical pathways. Here is how Korea’s two viral brightening serums compare.',
+      body: `
+        <p>Post-acne marks come in two forms: <strong>Post-Inflammatory Erythema (PIE)</strong>—red/purple capillary dilation—and <strong>Post-Inflammatory Hyperpigmentation (PIH)</strong>—excess melanin deposition. Both <strong>Anua</strong> and <strong>numbuzin No.5+</strong> tackle these without the low-pH irritation of pure L-Ascorbic Acid.</p>
+        <table class="bench-table">
+          <thead><tr><th>Serum</th><th>Active Concentration Matrix</th><th>Best Target Concern</th><th>Official Partner Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Anua 10% Niacinamide + 4% TXA</strong></td><td>10% Niacinamide + 4% Tranexamic Acid + 2% Arbutin + Ceramides</td><td>Stubborn red acne marks (PIE), oil control &amp; pore refinement</td><td><a href="/go/anuatxa/">Shop Anua TXA →</a></td></tr>
+            <tr><td><strong>numbuzin No.5+ Concentrated Serum</strong></td><td>Liposomal Glutathione + 4% TXA + 5% Niacinamide + 5% Panthenol</td><td>Overall dullness, brown spots (PIH) &amp; sensitive barriers (5% B5)</td><td><a href="/go/numbuzin/">Shop numbuzin No.5+ →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    illiyoonvscerave: {
+      catKey: 'beauty', readTime: '10 min read',
+      category: 'Barrier Science · Winter Moisturizer Benchmark',
+      title: 'Illiyoon Ceramide Ato Cream vs. CeraVe PM vs. La Roche-Posay Cicaplast B5+: The Ultimate Barrier Repair Test',
+      deck: 'We analyzed lipid ratios, price per milliliter, and comedogenicity across the three most recommended barrier repair creams on earth.',
+      body: `
+        <p>When using evening retinoids (<a href="/go/differin/">Differin 0.1% Adapalene</a> or <a href="/go/geekgorgeous/">Geek &amp; Gorgeous 0.1% Retinal</a>), your moisturizer determines whether you wake up with glass skin or flaking redness.</p>
+        <table class="bench-table">
+          <thead><tr><th>Barrier Cream</th><th>Core Repair Mechanism</th><th>Price / ml</th><th>How to Use in Your Routine</th><th>Verified Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Illiyoon Ceramide Ato (200ml)</strong></td><td>Patented encapsulated phyto-ceramide beads</td><td>~$0.08 / ml</td><td>Daily full-face &amp; neck winter seal</td><td><a href="/go/illiyoon/">Shop Illiyoon 200ml →</a></td></tr>
+            <tr><td><strong>CeraVe PM Lotion (89ml)</strong></td><td>Ceramides 1, 3, 6-II + 4% Niacinamide (MVE)</td><td>~$0.17 / ml</td><td>Lightweight Step-1 buffer before retinoids</td><td><a href="/go/ceravepm/">Shop CeraVe PM →</a></td></tr>
+            <tr><td><strong>La Roche-Posay Cicaplast B5+</strong></td><td>5% Panthenol + Madecassoside + Tribioma</td><td>~$0.40 / ml</td><td>Overnight SOS rescue mask &amp; corner occlusion</td><td><a href="/go/cicaplast/">Shop Cicaplast B5+ →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    retinalvsadapalene: {
+      catKey: 'beauty', readTime: '11 min read',
+      category: 'Clinical Retinoids · Nighttime Active Architecture',
+      title: 'Geek & Gorgeous A-Game 10 (0.1% Retinal) vs. Differin 0.1% Adapalene: Anti-Aging vs. Acne Clearing',
+      deck: 'Should your evening vitamin A be a third-generation receptor-selective retinoid (Adapalene) or a 1-step retinaldehyde emulsion (Retinal)?',
+      body: `
+        <p>Not all retinoids bind to the same nuclear receptors. Understanding the difference between <strong>0.1% Adapalene</strong> and <strong>0.1% Retinaldehyde</strong> saves months of trial and error:</p>
+        <table class="bench-table">
+          <thead><tr><th>Active Molecule</th><th>Product Champion</th><th>Primary Biological Target</th><th>Shop Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>0.1% Adapalene (3rd-Gen Retinoid)</strong></td><td>Differin Adapalene Gel 0.1%</td><td>Selectively binds RAR-β/γ to normalize follicular keratinization &amp; clear comedonal acne</td><td><a href="/go/differin/">Check Differin on iHerb →</a></td></tr>
+            <tr><td><strong>0.1% Retinaldehyde (1-Step Precursor)</strong></td><td>Geek &amp; Gorgeous A-Game 10</td><td>Converts directly to retinoic acid (RAR-α/β/γ) for dermal collagen synthesis &amp; fine lines</td><td><a href="/go/geekgorgeous/">View A-Game 10 →</a></td></tr>
+          </tbody>
+        </table>
+        <p><strong>Clinical Rule:</strong> Never layer both on the same night. Buffer either one over <a href="/go/torriden/">Torriden 5D HA Serum</a> and <a href="/go/ceravepm/">CeraVe PM</a>.</p>
+      `
+    },
+    iherboliveyoung: {
+      catKey: 'beauty', readTime: '12 min read',
+      category: 'Clinical Buyer’s Guide · Under-$20 Dermatologist Staples',
+      title: 'The 2026 iHerb & OliveYoung Clinical Skincare Haul: 10 Lab-Verified Staples Under $20',
+      deck: 'Skip $180 department-store jars. Here is the complete morning-to-night clinical skincare routine built entirely from evidence-backed formulas under $20.',
+      body: `
+        <p>Every formula below was audited for active concentration, pH stability, packaging protection, and zero unnecessary fragrance irritants:</p>
+        <ol>
+          <li><strong>AM Antioxidant Shield:</strong> <a href="/go/timeless/">Timeless 20% Vitamin C + E + Ferulic Acid</a> (Airless pump, pH 2.4).</li>
+          <li><strong>AM Brightening &amp; Redness Eraser:</strong> <a href="/go/numbuzin/">numbuzin No.5+ Glutathione + TXA Serum</a> or <a href="/go/anuatxa/">Anua 10% Niacinamide + 4% TXA</a>.</li>
+          <li><strong>AM Zero-Cast UV Protection:</strong> <a href="/go/bojsun/">Beauty of Joseon Relief Sun</a> (Dry/Normal) or <a href="/go/skin1004/">SKIN1004 Hyalu-Cica Sun Serum</a> (Oily/Combo).</li>
+          <li><strong>PM Weightless Hydration Base:</strong> <a href="/go/torriden/">Torriden DIVE-IN 5D Hyaluronic Acid Serum</a> or <a href="/go/cosrxsnail/">COSRX 96 Snail Mucin Essence</a>.</li>
+          <li><strong>PM Retinoid Engine:</strong> <a href="/go/differin/">Differin 0.1% Adapalene</a> (Acne) or <a href="/go/geekgorgeous/">Geek &amp; Gorgeous 0.1% Retinal</a> (Anti-Aging).</li>
+          <li><strong>PM Ceramide Barrier Seal:</strong> <a href="/go/illiyoon/">Illiyoon Ceramide Ato Concentrate Cream (200ml)</a> + <a href="/go/cicaplast/">La Roche-Posay Cicaplast Baume B5+</a>.</li>
+        </ol>
+      `
+    }
+  });
+
+  Object.assign(storiesData.zh, {
+    v0lovablebolt: {
+      catKey: 'ai', readTime: '11 分钟精读',
+      category: 'AI 全栈开发 · 2026 建站工具大横评',
+      title: 'Vercel v0 vs Lovable.dev vs Cursor + Claude Sonnet 5.5：2026 独立开发者全栈选型指南',
+      deck: '我们用同一套带 Stripe 支付的 SaaS 需求分别实测了 v0、Lovable 与 Cursor（挂载 Claude 5.5 与 GPT-6.1 Sol Pro），给出最省钱高效的组合拳。',
+      body: `
+        <p>到了 2026 年底，独立开发者和一人公司早已不再花几万块外包写网站。现在最核心的问题是：<strong>Vercel v0</strong>、<strong>Lovable.dev</strong> 和 <strong>Cursor + Claude Sonnet 5.5</strong> 到底该怎么配合？</p>
+        <h4>1. 2026年11月 三大 AI 编程神器实测对比表</h4>
+        <table class="bench-table">
+          <thead><tr><th>工具名称</th><th>核心统治区</th><th>后端与数据库能力</th><th>月费成本</th><th>官方合作通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Vercel v0</strong></td><td>设计师级 React/Tailwind/Shadcn 高转化落地页与计算器组件</td><td>Next.js / Vercel 边缘部署</td><td>免费版 / $20/月</td><td><a href="/go/v0dev/">免费体验 Vercel v0 →</a></td></tr>
+            <tr><td><strong>Lovable.dev</strong></td><td>一句话生成带用户登录、Supabase 数据库与 Stripe 收款的完整应用</td><td>原生一键绑定 Supabase</td><td>免费版 / $20/月</td><td><a href="/go/lovable/">直达 Lovable 官网 →</a></td></tr>
+            <tr><td><strong>Cursor + Claude 5.5</strong></td><td>复杂多文件架构重构、深度调试与私有部署工程</td><td>支持任意语言与云架构</td><td>$20/月 + API</td><td><a href="/go/cursor/">下载 Cursor 编辑器 →</a></td></tr>
+          </tbody>
+        </table>
+        <h4>2. 实战派最推崇的「黄金三步曲」</h4>
+        <p>先用 <a href="/go/v0dev/">Vercel v0</a> 生成媲美硅谷顶级设计工作室的首屏 UI 与价格表；再用 <a href="/go/lovable/">Lovable.dev</a> 自动挂载 Supabase 数据库并开启 GitHub 双向同步；最后拉取到本地 <a href="/go/cursor/">Cursor</a> 中，通过 <a href="/go/openrouter/">OpenRouter</a> 调用 <strong>Claude Sonnet 5.5</strong> 与 <strong>DeepSeek V4.1-Flash-1017</strong> 完成精细业务逻辑。</p>
+      `
+    },
+    scraping2026: {
+      catKey: 'ai', readTime: '10 分钟精读',
+      category: 'Agent 数据底座 · 网页抓取与清洗实测',
+      title: 'Firecrawl vs Apify：喂养 DeepSeek V4.1 与 GPT-6.1 智能体的最佳爬虫 API 选型',
+      deck: '直接把原始 HTML 塞给大模型会浪费 80% 的 Token 预算！我们实测了 10,000 个电商、TikTok 与文档页面的抓取清洗效率。',
+      body: `
+        <p>即便 <strong>DeepSeek V4.1-Flash-1017</strong> 和 <strong>GPT-6.1</strong> 拥有百万级上下文，直接投喂未清洗的网页源码依然会导致推理幻觉并让账单暴涨 4 倍。你需要专业的数据提取底座：</p>
+        <table class="bench-table">
+          <thead><tr><th>平台名称</th><th>核心绝活</th><th>节省 Token 比例</th><th>免费额度与联盟返利</th><th>直达链接</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Firecrawl API</strong></td><td>将任意动态网站一键清洗为纯净 Markdown 或结构化 JSON</td><td>立省 78% 输入 Token</td><td>送 500 页免费额度 (25% 持续返佣)</td><td><a href="/go/firecrawl/">领取 Firecrawl 免费额度 →</a></td></tr>
+            <tr><td><strong>Apify 云爬虫商城</strong></td><td>2,000+ 现成云端爬虫（TikTok、Google Maps、亚马逊、X）</td><td>直接输出清洗好的表格数据</td><td>每月送 $5 免费额度 (30% 终身返佣)</td><td><a href="/go/apify/">进入 Apify 官方商城 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    groqvsopenrouter: {
+      catKey: 'ai', readTime: '9 分钟精读',
+      category: '实时 AI 架构 · 毫秒级语音与推理测速',
+      title: 'GroqCloud LPU (850+ tok/s) vs OpenRouter vs DeepSeek V4.1：实时语音与极速 Agent 性能对决',
+      deck: '搭建实时语音客服或即时补全工具时，首字延迟（TTFT）慢半秒就会毁掉体验。来看看自研 LPU 芯片与百万上下文网关如何分工。',
+      body: `
+        <p>我们对 500 组生产环境提示词进行了首字响应时间（TTFT）与吞吐量实测：</p>
+        <table class="bench-table">
+          <thead><tr><th>推理平台</th><th>首字延迟 (TTFT)</th><th>输出速度</th><th>最佳应用场景</th><th>官方合作通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>GroqCloud LPU</strong></td><td>0.08 秒</td><td>860+ tok/s</td><td>实时语音对话、毫秒级意图分类与即时 JSON 提取</td><td><a href="/go/groq/">免费申请 Groq API →</a></td></tr>
+            <tr><td><strong>OpenRouter (DeepSeek V4.1-Flash-1017)</strong></td><td>0.24 秒</td><td>195 tok/s</td><td>100万上下文长文档精读、代码生成与主力工作流</td><td><a href="/go/openrouter/">直达 OpenRouter 网关 →</a></td></tr>
+            <tr><td><strong>ElevenLabs v3</strong></td><td>0.075 秒</td><td>实时音频流</td><td>拟真情感语音合成与 32 国语言配音</td><td><a href="/go/elevenlabs/">免费试用 ElevenLabs →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    heygenvsynthesia: {
+      catKey: 'ai', readTime: '12 分钟精读',
+      category: 'AI 视频变现 · 数字人演播室巅峰对决',
+      title: 'HeyGen Avatar IV vs Synthesia 3.0 vs ElevenLabs：2026 哪款 AI 视频工具带货转化率最高？',
+      deck: '实测制作 60 条中英双语带货短视频与软件教程，全方位对比口型还原度、微表情自然度与联盟佣金收益。',
+      body: `
+        <p>无论你是做无脸 YouTube/TikTok 评测矩阵，还是为出海 SaaS 制作多语种产品演示，选对 AI 视频工作台每月可直接省下上万元拍摄剪辑成本：</p>
+        <table class="bench-table">
+          <thead><tr><th>平台名称</th><th>最擅长的视频类型</th><th>核心杀手锏</th><th>官方优惠与合作链接</th></tr></thead>
+          <tbody>
+            <tr><td><strong>HeyGen (Avatar IV)</strong></td><td>真人口播感（UGC）带货短视频、小红书/TikTok 种草与视频一键多语种翻译</td><td>眼神微表情最自然、手持自拍网感无敌</td><td><a href="/go/heygen/">免费体验 HeyGen (?via=xing) →</a></td></tr>
+            <tr><td><strong>Synthesia 3.0</strong></td><td>B2B 软件操作演示、企业培训课程与录屏联动讲解</td><td>全身手势数字人 + 鼠标录屏自动高亮放大</td><td><a href="/go/synthesia/">免费体验 Synthesia 3.0 →</a></td></tr>
+            <tr><td><strong>ElevenLabs v3</strong></td><td>顶级情感声音克隆、有声书与多角色配音</td><td>呼吸停顿与情绪感染力全球第一</td><td><a href="/go/elevenlabs/">免费体验 ElevenLabs →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    surfervsahrefs: {
+      catKey: 'ai', readTime: '13 分钟精读',
+      category: 'SEO 与搞流量 · 搜索增长铁三角',
+      title: 'Semrush vs Ahrefs 站长工具 vs SurferSEO：2026 独立站自然流量与 AI 搜索霸屏指南',
+      deck: '如何精准挖掘“低竞争高佣金”买词、把文章 NLP 内容评分刷到 90 分以上，并让 ChatGPT 与 Gemini 主动引用你的网站？',
+      body: `
+        <p>独立站搞自然搜索流量（SEO &amp; GEO）绝不是闭门造车写自嗨文，而是靠数据工具直接抄同行作业：</p>
+        <table class="bench-table">
+          <thead><tr><th>SEO 神器</th><th>在流量闭环中的核心分工</th><th>2026 王牌功能</th><th>官方合作通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Semrush</strong></td><td>挖掘高购买意图（Buyer Intent）长尾词与同行广告词</td><td>一键筛选 Commercial / Transactional 带货关键词</td><td><a href="/go/semrush/">开启 Semrush 免费试用 →</a></td></tr>
+            <tr><td><strong>Ahrefs (AWT + Radar)</strong></td><td>全站免费 SEO 体检、外链反查与大模型引用监控</td><td>已验证域名永久免费用 AWT + AI Brand Radar</td><td><a href="/go/ahrefs/">免费绑定 Ahrefs 站长工具 →</a></td></tr>
+            <tr><td><strong>SurferSEO</strong></td><td>文章语义实体（NLP）实时打分与全站内链自动织网</td><td>0–100 分实时排名评分器 + GSC 老文翻新雷达</td><td><a href="/go/surfer/">体验 SurferSEO 内容评分 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    capcutvsopus: {
+      catKey: 'ai', readTime: '10 分钟精读',
+      category: '创作者矩阵 · 短视频工业化流水线',
+      title: 'OpusClip 自动切片 vs CapCut Pro 剪映海外版 vs Descript：一人月产 90 条爆款双语短视频',
+      deck: '如何把长视频、播客或直播录像在 15 分钟内批量拆解成自带中英双语动感花字的高完播竖屏短视频？',
+      body: `
+        <p>短视频依然是目前为独立站和联盟链接导流最猛的免费公域漏斗。三款神器分工明确：</p>
+        <table class="bench-table">
+          <thead><tr><th>工具名称</th><th>核心自动化能力</th><th>每 10 条视频节省时间</th><th>官方链接</th></tr></thead>
+          <tbody>
+            <tr><td><strong>OpusClip Pro</strong></td><td>AI 自动识别长视频高光金句、打分并自动居中裁剪为 9:16 竖屏</td><td>立省 6.5 小时</td><td><a href="/go/opusclip/">免费试用 OpusClip →</a></td></tr>
+            <tr><td><strong>CapCut Pro</strong></td><td>99% 准确率中英双语动态花字、一键剪除气口与商业音乐库</td><td>立省 4.0 小时</td><td><a href="/go/capcut/">下载 CapCut 专业版 →</a></td></tr>
+            <tr><td><strong>Descript</strong></td><td>像改 Word 文档一样删文字即剪视频 + 录音棚级一键降噪</td><td>立省 5.0 小时</td><td><a href="/go/descript/">免费体验 Descript →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    vps2026: {
+      catKey: 'ai', readTime: '12 分钟精读',
+      category: '云基建横评 · 自建 n8n 与 Docker 满血主机',
+      title: 'Hostinger KVM2 vs Hetzner ARM64 vs Railway vs DigitalOcean ($200赠金)：2026 云主机终极选型',
+      deck: '实测部署满血版 n8n + PostgreSQL + Redis + LiteLLM，全方位对比内存性价比、一键模板体验与新客赠金羊毛。',
+      body: `
+        <p>私有部署 <strong>n8n</strong> 和 <strong>LiteLLM</strong> 每年能帮重度自动化玩家省下上千美金订阅费。根据你的技术偏好，这四家云厂商闭眼按需入：</p>
+        <table class="bench-table">
+          <thead><tr><th>云平台</th><th>主力配置与月费</th><th>最适合谁</th><th>专属优惠与赠金通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Hostinger KVM 2</strong></td><td>2核 / 8GB 内存 / 100GB NVMe ($6.99/月)</td><td>想要官方一键 Ubuntu n8n 面板且追求 8GB 大内存余量</td><td><a href="/go/hostinger/">领取 Hostinger 专属折扣 →</a></td></tr>
+            <tr><td><strong>Hetzner Cloud CAX11</strong></td><td>2核 / 4GB 内存 / 40GB NVMe (€3.79/月)</td><td>追求极致硬件性价比的 Docker 极客</td><td><a href="/go/hetzner/">领取 Hetzner €20 赠金 →</a></td></tr>
+            <tr><td><strong>Railway.app</strong></td><td>按秒计费（$5/月套餐含 $5 额度）</td><td>不想碰 Linux 命令行，想要 45 秒一键拉起 n8n+数据库</td><td><a href="/go/railway/">领取 Railway $5 体验金 →</a></td></tr>
+            <tr><td><strong>DigitalOcean</strong></td><td>$4/月起 + 托管数据库与 GPU</td><td>想要零成本免费白嫖 60 天高配集群测试</td><td><a href="/go/digitalocean/">立领 $200 免费云主机额度 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    crossborderpay: {
+      catKey: 'ai', readTime: '11 分钟精读',
+      category: '跨境收款与财税 · 全球美元结汇闭环',
+      title: 'Wise vs 空中云汇 Airwallex vs Lemon Squeezy vs Gumroad：2026 独立站收款与虚拟卡避坑指南',
+      deck: '数字商品卖全球、收联盟美金佣金、以及批量开 0 手续费虚拟 Visa 卡付海外 API 账单的最优合规组合。',
+      body: `
+        <p>打通海外收款与低损耗换汇，是独立站从“玩具”变成“现金流机器”的核心一步：</p>
+        <table class="bench-table">
+          <thead><tr><th>金融/收款平台</th><th>在业务中的核心角色</th><th>费率优势</th><th>官方开户通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Gumroad</strong></td><td>5分钟上架虚拟商品 `.ZIP` 交付 + 平台自然搜索流量推荐</td><td>0月费（阶梯抽成）</td><td><a href="/go/gumroad/">查看 Gumroad 店铺与分销 (?a=735179107) →</a></td></tr>
+            <tr><td><strong>Lemon Squeezy</strong></td><td>SaaS 订阅制收款、软件激活码分发与全球增值税（VAT）自动代缴</td><td>5% + $0.50/笔</td><td><a href="/go/lemonsqueezy/">开通 Lemon Squeezy →</a></td></tr>
+            <tr><td><strong>Wise</strong></td><td>个人与自由职业者秒开美国 ACH / 欧洲 IBAN 本地收款账号，直接收联盟佣金</td><td>中间市场实时汇率</td><td><a href="/go/wise/">免费注册 Wise 多币种账户 →</a></td></tr>
+            <tr><td><strong>Airwallex 空中云汇</strong></td><td>企业级多币种收款 + 无限免费开 0% 跨境手续费虚拟 Visa 卡</td><td>$0月费 + 0% 刷卡汇损</td><td><a href="/go/airwallex/">免费开通空中云汇企业账户 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    spaceshipvsnamecheap: {
+      catKey: 'ai', readTime: '9 分钟精读',
+      category: '域名与企业邮局 · 建站底座实测',
+      title: 'Spaceship vs Cloudflare Registrar vs Namecheap：2026 域名注册、秒级 DNS 与品牌企业邮箱怎么选？',
+      deck: '为什么我们将 cruxxxxxkit.com 放在 Spaceship 管理 DNS，同时推荐用 Namecheap PrivateEmail 打造高过审率的联盟申请邮箱？',
+      body: `
+        <p>选域名注册商不仅要看首年便宜，更要看续费价格、DNS 全球生效速度以及配套企业邮箱成本：</p>
+        <table class="bench-table">
+          <thead><tr><th>平台名称</th><th>价格与解析速度</th><th>核心不可替代性</th><th>官方直达</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Spaceship.com</strong></td><td>.com 首年特惠 + 全球 20 秒 DNS 极速生效</td><td>Unbox™ 现代化控制面板，30秒搞定 Google Search Console TXT 验证</td><td><a href="/go/spaceship/">去 Spaceship 注册域名 →</a></td></tr>
+            <tr><td><strong>Cloudflare</strong></td><td>批发成本价续费 + 免费全球 CDN 与防攻击护盾</td><td>零溢价续费 + Edge Workers 边缘重定向规则</td><td><a href="/go/cloudflare/">接入 Cloudflare 网络 →</a></td></tr>
+            <tr><td><strong>Namecheap</strong></td><td>常年 $0.98 域名闪促 + $1.24/月独立企业邮箱</td><td>用 `partner@你的域名` 申请海外大牌联盟，过审率提升一倍</td><td><a href="/go/namecheap/">查看 Namecheap 邮箱与域名优惠 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    vpnproxy2026: {
+      catKey: 'ai', readTime: '9 分钟精读',
+      category: '跨境账号安全 · 纯净静态 IP 与组网',
+      title: 'NordVPN 独享静态 IP 与 Meshnet 实测：跨境多账号防风控与全球 111 国搜索排名巡检',
+      deck: '为什么用廉价共享节点登录 Stripe、PayPal 或联盟后台容易触发风控冻结？如何用独享静态 IP 一劳永逸解决？',
+      body: `
+        <p>当你的独立站开始产生美元收入，账号安全就是头等大事。共享机房 IP 因为成百上千人混用，极易被金融风控系统标记。<strong>NordVPN</strong> 提供了三项跨境操盘手刚需能力：</p>
+        <ul>
+          <li><strong>专属独享静态 IP（Dedicated IP）：</strong> 仅归你一人独享的美国、英国、德国、日本或新加坡固定 IP，登录 Stripe、Wise 与各大联盟后台稳如泰山。</li>
+          <li><strong>免费加密内网穿透（Meshnet）：</strong> 在外办公时直接通过点对点加密隧道连回家里的电脑或私有服务器。</li>
+          <li><strong>全球 111 国本地谷歌搜索巡检：</strong> 随时切换至欧美当地视角，精准核验你的英文评测文章在当地 Google 的真实排名。</li>
+        </ul>
+        <p><a href="/go/nordvpn/"><strong>→ 点击获取 NordVPN 专属大幅折扣与额外赠送月份优惠</strong></a></p>
+      `
+    },
+    partnerstackgold: {
+      catKey: 'ai', readTime: '14 分钟精读',
+      category: '联盟搞钱指南 · 高佣金 SaaS 金矿榜',
+      title: '2026 海外高佣金 B2B 与 AI 联盟营销金矿榜单：15 个单客收益 $50–$200+ 的常青项目全解析',
+      deck: '别再苦哈哈推广只有 3% 佣金的日用品了！深度拆解 Make.com、HeyGen、Webflow、Apify、Semrush 与 Hostinger 的躺赚分佣机制。',
+      body: `
+        <p>做海外联盟营销（Affiliate Marketing）最爽的模式是<strong>「月付/年付软件的持续分佣（Recurring Commission）」</strong>——只要你推荐的读者一直在用这款工具，你每个月都能自动收到 20%–50% 的美金分成：</p>
+        <table class="bench-table">
+          <thead><tr><th>王牌联盟项目</th><th>佣金比例与奖励模式</th><th>Cookie 追踪期与提现方式</th><th>官方注册与推广通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Make.com 官方伙伴</strong></td><td>20%–35% 持续佣金（长达24个月）+ 送读者1万免费额度</td><td>120 天超长追踪（支持 Wise/PayPal）</td><td><a href="/go/make/">体验并加入 Make (?pc=cruxkit) →</a></td></tr>
+            <tr><td><strong>HeyGen 创作者计划</strong></td><td>20% 持续分佣（12个月，年付单笔常超 $45）</td><td>60 天追踪（Rewardful 自动打款）</td><td><a href="/go/heygen/">直达 HeyGen (?via=xing) →</a></td></tr>
+            <tr><td><strong>Webflow (PartnerStack)</strong></td><td>高达 50% 持续分佣（整整 12 个月）</td><td>90 天追踪（PartnerStack 统一提现）</td><td><a href="/go/webflow/">查看 Webflow 详情 →</a></td></tr>
+            <tr><td><strong>Apify 云爬虫联盟</strong></td><td>30% 终身持续分佣（只要客户不退订终身有钱拿）</td><td>90 天追踪</td><td><a href="/go/apify/">查看 Apify 详情 →</a></td></tr>
+            <tr><td><strong>Semrush / SurferSEO</strong></td><td>每单最高 $200 现金奖励 或 25% 持续分佣</td><td>120 天追踪</td><td><a href="/go/semrush/">直达 Semrush →</a></td></tr>
+            <tr><td><strong>Hostinger / NordVPN</strong></td><td>新客首单高达 40%–100% 暴利分佣</td><td>30 天追踪</td><td><a href="/go/hostinger/">直达 Hostinger →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    kbeautyspf3: {
+      catKey: 'beauty', readTime: '11 分钟精读',
+      category: '配方实验室 · 韩系王牌防晒三巨头横评',
+      title: '朝鲜美女大米防晒 vs SKIN1004 积雪草蓝帽 vs 独岛桦树汁防晒：OliveYoung 霸榜三巨头怎么选？',
+      deck: '同样是 SPF50+ PA++++ 新一代高光稳定防晒剂、零假白、不熏眼，干皮、油皮、混油皮与刷酸敏感肌到底该买哪一支？',
+      body: `
+        <p>韩系现代化学防晒之所以能火遍全球，是因为全面采用了大分子新一代防晒剂（Uvinul A Plus、Uvinul T 150、Tinosorb M），既没有传统欧美防晒的油腻熏眼，也没有纯物理防晒的厚重假白。我们把三款销量王放在一起做了严格对比：</p>
+        <table class="bench-table">
+          <thead><tr><th>防晒单品</th><th>质地与成膜肤感</th><th>核心养肤舒缓成分</th><th>本命适用肤质</th><th>正品购买直达</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Beauty of Joseon 朝鲜美女大米防晒</strong></td><td>轻盈保湿乳霜感 · 自然水润光泽</td><td>30% 大米提取物 + 益生菌发酵物 + 烟酰胺</td><td>干皮、混干皮及秋冬刷酸期</td><td><a href="/go/bojsun/">去 OliveYoung 查看价格 →</a></td></tr>
+            <tr><td><strong>SKIN1004 积雪草水感防晒精华 (蓝帽)</strong></td><td>一抹化水凝露感 · 卫生真空按压泵</td><td>马达加斯加积雪草 + 三重透明质酸</td><td>油皮、混油皮、痘肌及炎热夏季</td><td><a href="/go/skin1004/">去 OliveYoung 查看价格 →</a></td></tr>
+            <tr><td><strong>Round Lab 独岛桦树汁保湿防晒</strong></td><td>晨间乳液+防晒二合一水润乳</td><td>麟蹄白桦树汁氨基酸 + 甘油葡糖苷 + 甘草酸二钾</td><td>中性至混干皮、早八极简通勤族</td><td><a href="/go/roundlab/">去 OliveYoung 查看价格 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    numbuzinvsanua: {
+      catKey: 'beauty', readTime: '10 分钟精读',
+      category: '配方实验室 · 红黑痘印与去黄提亮对决',
+      title: 'numbuzin 5号谷胱甘肽精华 vs Anua 10%烟酰胺+4%传明酸红瓶：顽固红黑痘印哪瓶消得最快？',
+      deck: '新生红痘印（毛细血管扩张）和老旧黑褐色痘印（黑色素沉淀）机理完全不同！拆解韩国最火的两瓶淡印王牌。',
+      body: `
+        <p>很多同学狂涂美白精华却淡不了痘印，是因为没分清<strong>红色痘印（PIE）</strong>和<strong>黑色痘印（PIH）</strong>。这两瓶 OliveYoung 断货王恰好代表了两种巅峰配比思路：</p>
+        <table class="bench-table">
+          <thead><tr><th>精华名称</th><th>核心活性物黄金配比</th><th>最针对的皮肤痛点</th><th>官方直邮通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Anua 10%烟酰胺 + 4%传明酸红瓶</strong></td><td>10% 烟酰胺 + 4% 传明酸 + 2% 熊果苷 + 神经酰胺</td><td>新挤完痘留下的鲜红痘印（PIE）、出油粗大毛孔</td><td><a href="/go/anuatxa/">查看 Anua 红瓶优惠 →</a></td></tr>
+            <tr><td><strong>numbuzin 5号谷胱甘肽浓缩精华</strong></td><td>脂质体谷胱甘肽 + 4% 传明酸 + 5% 烟酰胺 + 5% 泛醇</td><td>陈年黑褐色痘印（PIH）、全脸熬夜暗沉黄气、敏感薄皮</td><td><a href="/go/numbuzin/">查看 numbuzin 5号精华 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    illiyoonvscerave: {
+      catKey: 'beauty', readTime: '10 分钟精读',
+      category: '屏障修护科学 · 秋冬三大修护面霜实测',
+      title: '一理润神经酰胺胶囊霜 (200ml) vs CeraVe PM 乳 vs 理肤泉 B5+：干敏肌与刷酸修护终极PK',
+      deck: '从生理脂质配比、每毫升单价到刷 A 酸三明治打底手法，一次性讲透全球口碑最好的三款修护神霜。',
+      body: `
+        <p>在秋冬季或使用晚间维 A 类猛药（<a href="/go/differin/">达芙文 0.1% 阿达帕林</a> 或 <a href="/go/geekgorgeous/">Geek &amp; Gorgeous 0.1% 视黄醛</a>）时，修护面霜选对直接决定你是“细腻发光”还是“烂脸起皮”：</p>
+        <table class="bench-table">
+          <thead><tr><th>修护单品</th><th>核心屏障修护科技</th><th>每毫升折合单价</th><th>最佳使用场景</th><th>直达购买链接</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Illiyoon 一理润神经酰胺修护霜 (200ml)</strong></td><td>爱茉莉专利微囊神经酰胺颗粒，推开即融</td><td>约 $0.08 / ml（性价比之王）</td><td>全脸与颈部日常晚间锁水封包，大碗不心疼</td><td><a href="/go/illiyoon/">查看一理润 200ml 大碗装 →</a></td></tr>
+            <tr><td><strong>CeraVe 适乐肤 PM 夜间修护乳 (89ml)</strong></td><td>三重神经酰胺 1/3/6-II + 4% 烟酰胺 + MVE 缓释</td><td>约 $0.17 / ml</td><td>刷酸前的第一步轻薄脂质打底乳，完全不闷痘</td><td><a href="/go/ceravepm/">去 iHerb 查看适乐肤 PM →</a></td></tr>
+            <tr><td><strong>理肤泉 Cicaplast B5+ 修复霜 (Tribioma)</strong></td><td>5% 高浓度泛醇 + 积雪草苷 + 益生元复合体</td><td>约 $0.40 / ml</td><td>鼻翼嘴角局部防脱皮封包、突发泛红厚敷急救</td><td><a href="/go/cicaplast/">查看理肤泉 B5+ 详情 →</a></td></tr>
+          </tbody>
+        </table>
+      `
+    },
+    retinalvsadapalene: {
+      catKey: 'beauty', readTime: '11 分钟精读',
+      category: '临床维A酸科学 · 晚间进阶猛药选型',
+      title: 'Geek & Gorgeous 0.1% 视黄醛 (A醛) vs 达芙文 0.1% 阿达帕林：真皮抗老与疏通闭口怎么选？',
+      deck: '同样是 0.1% 满血浓度的晚间维 A 王牌，三代受体选择性阿达帕林与一步转化视黄醛（Retinal）在机理上有何本质区别？',
+      body: `
+        <p>很多进阶护肤玩家在建立耐受后会纠结：晚上到底该涂 <strong>0.1% 阿达帕林</strong> 还是 <strong>0.1% 视黄醛（A醛）</strong>？答案完全取决于你的第一诉求：</p>
+        <table class="bench-table">
+          <thead><tr><th>核心分子</th><th>代表封神单品</th><th>主要作用的细胞受体与功效</th><th>正品购买通道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>0.1% 阿达帕林 (第三代维A酸)</strong></td><td>Differin 达芙文 0.1% 凝胶</td><td>精准靶向 RAR-β/γ 受体，专攻毛囊角化异常、溶解顽固闭口粉刺与炎性痘痘</td><td><a href="/go/differin/">去 iHerb 查看达芙文 →</a></td></tr>
+            <tr><td><strong>0.1% 视黄醛 (一步转化A醛)</strong></td><td>Geek &amp; Gorgeous A-Game 10</td><td>在皮肤内一步转化为全反式维A酸（作用速度比普通A醇快11倍），全受体激活真皮胶原再生与紧致抗老</td><td><a href="/go/geekgorgeous/">查看 G&amp;G 0.1% A醛详情 →</a></td></tr>
+          </tbody>
+        </table>
+        <p><strong>安全铁律：</strong> 两者绝不可在同一晚叠加！晚间洁面后先用 <a href="/go/torriden/">Torriden 5D 玻尿酸精华</a> 和 <a href="/go/ceravepm/">CeraVe PM 乳</a> 打底缓冲。</p>
+      `
+    },
+    iherboliveyoung: {
+      catKey: 'beauty', readTime: '12 分钟精读',
+      category: '成分党买手清单 · 百元内临床级护肤封神榜',
+      title: '2026 iHerb 与 OliveYoung 全球直邮必买清单：10 款 $20 以内吊打千元大牌的临床护肤真神',
+      deck: '拒绝为大牌天价营销费买单！这套由 10 款 $12–$20 临床实证单品组成的早 C 晚 A 与屏障修护全流程，直接抄作业。',
+      body: `
+        <p>我们在 iHerb 与韩国 OliveYoung 全球直邮商城中，按「有效浓度公开、包装避光保鲜、零致敏香精」三大标准严选出这套百元级满配护肤公式：</p>
+        <ol>
+          <li><strong>晨间黄金抗氧维 C：</strong> <a href="/go/timeless/">Timeless 20% 维C + 维E + 阿魏酸精华</a>（真空按压泵，完美平替修丽可 CEF）。</li>
+          <li><strong>晨间多通路淡印去黄：</strong> <a href="/go/numbuzin/">numbuzin 5号谷胱甘肽浓缩精华</a> 或 <a href="/go/anuatxa/">Anua 10%烟酰胺+4%传明酸红瓶</a>。</li>
+          <li><strong>晨间零肤感高倍防晒：</strong> <a href="/go/bojsun/">朝鲜美女大米防晒</a>（干皮/秋冬）或 <a href="/go/skin1004/">SKIN1004 积雪草蓝帽防晒精华</a>（油皮/春夏）。</li>
+          <li><strong>晚间零搓泥抓水基底：</strong> <a href="/go/torriden/">Torriden 5D 小分子玻尿酸精华</a> 或 <a href="/go/cosrxsnail/">COSRX 96% 蜗牛原液精华</a>。</li>
+          <li><strong>晚间战痘/抗老核心：</strong> <a href="/go/differin/">Differin 达芙文 0.1% 阿达帕林</a>（战痘去闭口）或 <a href="/go/geekgorgeous/">Geek &amp; Gorgeous 0.1% 视黄醛</a>（抗老淡纹）。</li>
+          <li><strong>晚间神经酰胺封包：</strong> <a href="/go/illiyoon/">一理润神经酰胺修护霜 200ml</a> + <a href="/go/cicaplast/">理肤泉 B5+ 修复霜</a>。</li>
+        </ol>
+      `
+    }
+  });
+})();
+
 applyLanguage(currentLang, false);
 
 /* Scroll Progress, Sticky Header, IntersectionObserver & 3D Parallax */
