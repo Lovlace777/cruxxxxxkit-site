@@ -41,17 +41,17 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       badgeZh: "全栈 AI 编程与 Agent 编辑器首选"
     },
     claude: {
-      name: "Claude Sonnet 4.5 / 5.5 & Claude Code",
+      name: "Claude Sonnet 5.5 & Opus 5.5 & Claude Code",
       url: "https://claude.ai/?ref=cruxkit",
       commission: "Anthropic Official Workspace",
       badgeEn: "Best Long-Context Writing & Coding",
       badgeZh: "长文写作与架构推理天花板"
     },
     deepseek: {
-      name: "DeepSeek V3.2 / V4 Flash & R1 Official API",
+      name: "DeepSeek V4.1-Flash-1017 & V4-Pro-0813 Official API",
       url: "https://platform.deepseek.com/?ref=cruxkit",
       commission: "Direct Token API",
-      badgeEn: "$0.07–$0.27/1M · 50% Off-Peak Reasoning King",
+      badgeEn: "$0.04–$0.15/1M (V4.1-Flash-1017) · 50% Off-Peak Reasoning King",
       badgeZh: "百万 Token 仅 ¥1 · 极致性价比推理"
     },
     reclaim: {
@@ -263,6 +263,34 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       badgeEn: "4% Tranexamic Acid + 10% Niacinamide + 2% Arbutin",
       badgeZh: "4% 传明酸 + 10% 烟酰胺 + 2% 熊果苷 · 多通路阻断痘印色沉"
     },
+    kimi: {
+      name: "Kimi K3.1 Pro & Moonshot 1M Context API",
+      url: "https://platform.moonshot.ai/?ref=cruxkit",
+      commission: "Official API Credits & Partner Referral",
+      badgeEn: "1M Context · $2/1M In · Bilingual Agent King",
+      badgeZh: "百万上下文 · 中英双语长文档与代码推理王牌"
+    },
+    webflow: {
+      name: "Webflow Visual CMS & Global Localization",
+      url: "https://webflow.com/?r=cruxkit",
+      commission: "50% Recurring (12 Mo via PartnerStack)",
+      badgeEn: "Enterprise Visual CMS · 50% PartnerStack Commission",
+      badgeZh: "视觉级高转化独立站 CMS · PartnerStack 50% 返佣"
+    },
+    hetzner: {
+      name: "Hetzner Cloud NVMe & ARM64 Ampere VPS",
+      url: "https://hetzner.cloud/?ref=cruxkit",
+      commission: "€20 Cloud Credit + €10–€30 Partner Bounty",
+      badgeEn: "€3.79/mo 4GB RAM ARM64 VPS · Docker & n8n Beast",
+      badgeZh: "€3.79/月 4GB 内存欧洲神机 · 自建 n8n 性价比天花板"
+    },
+    torriden: {
+      name: "Torriden DIVE-IN Low Molecular Hyaluronic Acid Serum",
+      url: "https://global.oliveyoung.com/?ref=cruxkit",
+      commission: "12%–15% OliveYoung / YesStyle / iHerb",
+      badgeEn: "5D Multi-Molecular Weight HA + D-Panthenol + Allantoin",
+      badgeZh: "5D 大小分子透明质酸 + 泛醇 · 刷酸打底零搓泥补水王"
+    },
     "cerave-pm": {
       name: "CeraVe PM Facial Moisturizing Lotion",
       url: "https://www.iherb.com/?rcode=CRUXKIT",
@@ -378,6 +406,34 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
       zhUrl: "deliverables/15_CruxKit_Cloudflare_Edge_Worker_Kit_v2026.zip",
       localSampleZip: "deliverables/15_CruxKit_Cloudflare_Edge_Worker_Kit_v2026.zip"
     },
+    "deepseek-router-kit": {
+      priceEn: "$24",
+      priceZh: "¥169",
+      enUrl: "deliverables/17_CruxKit_DeepSeek_V4_1_GPT6_Router_Pack_v2026.zip",
+      zhUrl: "deliverables/17_CruxKit_DeepSeek_V4_1_GPT6_Router_Pack_v2026.zip",
+      localSampleZip: "deliverables/17_CruxKit_DeepSeek_V4_1_GPT6_Router_Pack_v2026.zip"
+    },
+    "gemini-omni-video-kit": {
+      priceEn: "$29",
+      priceZh: "¥199",
+      enUrl: "deliverables/18_CruxKit_Gemini4_Omni1_2_Multimodal_Video_Kit_v2026.zip",
+      zhUrl: "deliverables/18_CruxKit_Gemini4_Omni1_2_Multimodal_Video_Kit_v2026.zip",
+      localSampleZip: "deliverables/18_CruxKit_Gemini4_Omni1_2_Multimodal_Video_Kit_v2026.zip"
+    },
+    "gsc-traffic-kit": {
+      priceEn: "$29",
+      priceZh: "¥199",
+      enUrl: "deliverables/19_CruxKit_GSC_IndexNow_GEO_Traffic_Engine_v2026.zip",
+      zhUrl: "deliverables/19_CruxKit_GSC_IndexNow_GEO_Traffic_Engine_v2026.zip",
+      localSampleZip: "deliverables/19_CruxKit_GSC_IndexNow_GEO_Traffic_Engine_v2026.zip"
+    },
+    "winter-barrier-kit": {
+      priceEn: "$19",
+      priceZh: "¥129",
+      enUrl: "deliverables/20_CruxKit_Winter_Barrier_TXA_Protocol_v2026.zip",
+      zhUrl: "deliverables/20_CruxKit_Winter_Barrier_TXA_Protocol_v2026.zip",
+      localSampleZip: "deliverables/20_CruxKit_Winter_Barrier_TXA_Protocol_v2026.zip"
+    },
     "retinoid-ramp-kit": {
       priceEn: "$15",
       priceZh: "¥99",
@@ -414,7 +470,11 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
     researchos: ["research-os-kit", 129],
     cloudflareedge: ["cloudflare-edge-kit", 169],
     affiliatematrix: ["affiliate-matrix-kit", 199],
-    retinoidramp: ["retinoid-ramp-kit", 99]
+    retinoidramp: ["retinoid-ramp-kit", 99],
+    deepseekrouter: ["deepseek-router-kit", 169],
+    geminiomnivideo: ["gemini-omni-video-kit", 199],
+    gsctraffic: ["gsc-traffic-kit", 199],
+    winterbarrier: ["winter-barrier-kit", 129]
   };
   Object.keys(map).forEach(function(shortKey) {
     var longKey = map[shortKey][0];

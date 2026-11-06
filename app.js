@@ -14,41 +14,41 @@ let currentStackSearch = '';
 ----------------------------------------------------------- */
 const uiStrings = {
   en: {
-    page_title: 'CruxKit — 16 Digital Kits & 36 Audited AI, Cloud / Formulation Benchmarks',
-    meta_desc: 'CruxKit (cruxxxxxkit.com) — 16 Ready-to-Use Digital Kits, 36 Stress-Tested AI, Cloud & Clinical Skincare Benchmarks, and 16 Deep-Dive Playbooks.',
+    page_title: 'CruxKit — 20 Digital Kits, 40 Stack Picks & 24 AI, Cloud / Formulation Benchmarks',
+    meta_desc: 'CruxKit (cruxxxxxkit.com) — 20 Ready-to-Use Digital Kits, 40 Stress-Tested AI (GPT-6.1, DeepSeek V4.1-Flash-1017, Gemini 4 Argon, Claude 5.5), Cloud & Clinical Skincare Benchmarks, and 24 Deep-Dive Playbooks.',
     skip: 'Skip to content',
-    nav_kits: 'Digital kits (16)',
-    nav_stack: 'The stack <span class="nav-pill-tag">36 Picks</span>',
+    nav_kits: 'Digital kits (20)',
+    nav_stack: 'The stack <span class="nav-pill-tag">40 Picks</span>',
     nav_calc: 'Savings',
-    nav_edit: 'The edit (16)',
+    nav_edit: 'The edit (24)',
     nav_approach: 'Our approach',
     nav_free: 'Free starter kit',
-    mob_stack: '36 Audited Stack Picks',
+    mob_stack: '40 Audited Stack Picks',
     mob_calc: 'Stack savings calculator',
-    hero_eyebrow: 'CRUXKIT PULSE · 2026 FULL CATALOG · 16 DIGITAL KITS & 36 VERIFIED BENCHMARKS',
+    hero_eyebrow: 'CRUXKIT PULSE · 2026 FULL CATALOG · 20 DIGITAL KITS · 40 STACK PICKS · 24 BENCHMARK GUIDES',
     hero_title: 'A brighter way<br><span>to build.</span>',
-    hero_sub: '16 ready-to-import digital kits, 36 stress-tested software, cloud & clinical formulation picks, and calmer workflows for turning good ideas into everyday progress.',
-    hero_cta_primary: `Explore 16 Digital Kits ${arrow}`,
-    hero_cta_stack: 'Browse 36 S-Tier Picks',
-    metric_1: '<strong>16 Ready-to-Use Kits</strong><br>JSON Workflows, API Packs &amp; Notion OS',
-    metric_2: '<strong>36 Audited S-Tier Picks</strong><br>AI, Creator, Cloud VPS &amp; Beauty Lab',
-    metric_3: '<strong>16 Deep-Dive Playbooks</strong><br>Full Bilingual Benchmark Guides',
+    hero_sub: '20 ready-to-import digital kits, 40 stress-tested software, cloud & clinical formulation picks, and calmer workflows for turning good ideas into everyday progress.',
+    hero_cta_primary: `Explore 20 Digital Kits ${arrow}`,
+    hero_cta_stack: 'Browse 40 S-Tier Picks',
+    metric_1: '<strong>20 Ready-to-Use Kits</strong><br>JSON Workflows, API Packs &amp; Notion OS',
+    metric_2: '<strong>40 Audited S-Tier Picks</strong><br>AI, Creator, Cloud VPS &amp; Beauty Lab',
+    metric_3: '<strong>24 Deep-Dive Playbooks</strong><br>Full Bilingual Benchmark Guides',
     metric_4: '<strong>Avg. Yearly Saved</strong><br>By cutting bloated subscriptions',
-    kits_heading: 'Choose your next move (16 Digital Kits).',
-    kits_note: '16 ready-to-adapt digital systems with real downloadable .ZIP source packages — click any kit to inspect contents, sample blueprints & instant download.',
-    kits_filter_all: 'All kits (16)',
-    kits_filter_wf: 'AI, API & Edge Cloud (6)',
-    kits_filter_os: 'Notion, Video & Growth (5)',
-    kits_filter_rt: 'Beauty & Formula Lab (4)',
-    kits_filter_bd: '15-in-1 Master Bundle (1)',
-    stack_heading: 'The considered stack (36 Audited Picks).',
+    kits_heading: 'Choose your next move (20 Digital Kits).',
+    kits_note: '20 ready-to-adapt digital systems with real downloadable .ZIP source packages — click any kit to inspect contents, sample blueprints & instant download.',
+    kits_filter_all: 'All kits (20)',
+    kits_filter_wf: 'AI, API & Edge Cloud (7)',
+    kits_filter_os: 'Notion, Video & Growth (7)',
+    kits_filter_rt: 'Beauty & Formula Lab (5)',
+    kits_filter_bd: '19-in-1 Master Bundle (1)',
+    stack_heading: 'The considered stack (40 Audited Picks).',
     stack_note: 'Every tool and formulation has a clear job. Stress-tested across 4 specialized desks — click any item for full lab notes, pros/cons & verified partner links.',
-    stack_filter_all: 'All Picks (36)',
-    stack_filter_ai: '01 · AI & Automation (9)',
-    stack_filter_creator: '02 · Creator, Video & SEO (9)',
-    stack_filter_cloud: '03 · Cloud, Domains & Pay (9)',
-    stack_filter_beauty: '04 · Skincare & K-Beauty Lab (9)',
-    stack_search_placeholder: 'Search 36 tools, APIs, domains, serums, SPF...',
+    stack_filter_all: 'All Picks (40)',
+    stack_filter_ai: '01 · AI & Automation (10)',
+    stack_filter_creator: '02 · Creator, Video & SEO (10)',
+    stack_filter_cloud: '03 · Cloud, Domains & Pay (10)',
+    stack_filter_beauty: '04 · Skincare & K-Beauty Lab (10)',
+    stack_search_placeholder: 'Search 40 tools, APIs, domains, serums, SPF...',
     calc_heading: 'Trim the bloat.<br><span>Keep the output.</span>',
     calc_sub: 'Check the subscriptions or routines you currently pay for. See how much you save every year by switching to our intentional stack:',
     calc_1_old: 'Zapier Professional (10,000 tasks/mo — $73/mo)',
@@ -88,10 +88,10 @@ const uiStrings = {
     per_mo: '/ mo'
   },
   zh: {
-    page_title: 'CruxKit — 16 款数字效率套件 & 36 款 AI、云基建与功效护肤实验室严选',
+    page_title: 'CruxKit — 20 款数字效率套件 · 40 款严选工具 · 24 篇 AI、云基建与功效护肤实验室严选',
     meta_desc: 'CruxKit (cruxxxxxkit.com) — 面向独立创作者与一人公司的 16 款即用型数字套件、36 款 S 级严选工具与护肤配方实测、16 篇深度实操指南。',
     skip: '跳至正文',
-    nav_kits: '数字套件 (16)',
+    nav_kits: '数字套件 (20)',
     nav_stack: '严选好物栈 <span class="nav-pill-tag">36 款严选</span>',
     nav_calc: '订阅省钱算账',
     nav_edit: '深度专栏 (16)',
@@ -103,26 +103,26 @@ const uiStrings = {
     hero_title: '化繁为简，<br><span>轻装创造。</span>',
     hero_sub: '16 套开箱即用的数字源文件包、36 款经受实战压测的 AI 软件、云基建与临床护肤配方严选，助你用更少成本跑出更高日常产出。',
     hero_cta_primary: `浏览 16 款数字套件 ${arrow}`,
-    hero_cta_stack: '查看 36 款 S 级严选带货榜',
+    hero_cta_stack: '查看 40 款 S 级严选带货榜',
     metric_1: '<strong>16 款即用型数字套件</strong><br>含工作流源码、API 防封包与 Notion 中枢',
     metric_2: '<strong>36 款高佣金严选好物</strong><br>覆盖 AI、创作、VPS 与功效护肤实验室',
     metric_3: '<strong>16 篇硬核评测专栏</strong><br>中英双语数据对比表与实操教程',
     metric_4: '<strong>平均每年立省 $2,800+</strong><br>砍掉溢价订阅与盲目跟风消费',
     kits_heading: '选择你的下一步行动（16 款数字套件）。',
     kits_note: '16 套附带真实可下载 .ZIP 源文件的数字系统 —— 点击任意套件即可查看交付清单、蓝图代码预览与直接下载。',
-    kits_filter_all: '全部套件 (16)',
+    kits_filter_all: '全部套件 (20)',
     kits_filter_wf: 'AI、API 与云边缘 (6)',
     kits_filter_os: 'Notion、短视频与增长 (5)',
     kits_filter_rt: '功效护肤与成分实验室 (4)',
     kits_filter_bd: '全站 15 合 1 全家桶 (1)',
     stack_heading: 'S 级严选工具与配方栈（共 36 款）。',
     stack_note: '横跨四大专业评测台（AI 自动化、创作者增长、云端基建、功效护肤实验室）—— 点击任意单品查看优缺点实测与官方合作通道。',
-    stack_filter_all: '全部严选 (36)',
-    stack_filter_ai: '01 · AI 与自动化 (9)',
+    stack_filter_all: '全部严选 (40)',
+    stack_filter_ai: '01 · AI 与自动化 (10)',
     stack_filter_creator: '02 · 创作、视频与 SEO (9)',
     stack_filter_cloud: '03 · 域名、云与全球收款 (9)',
-    stack_filter_beauty: '04 · 功效护肤与韩妆实验室 (9)',
-    stack_search_placeholder: '搜索 36 款工具、API、域名、收款、精华、防晒...',
+    stack_filter_beauty: '04 · 功效护肤与韩妆实验室 (10)',
+    stack_search_placeholder: '搜索 40 款工具、API、域名、收款、精华、防晒...',
     calc_heading: '砍掉冗余溢价，<br><span>保留满格产出。</span>',
     calc_sub: '勾选你目前正在付费的软件订阅或日常消耗品，实时测算切换至 CruxKit 精简栈后每年省下的真金白银：',
     calc_1_old: 'Zapier 专业版 (10,000 次任务/月 — $73/月)',
@@ -200,11 +200,11 @@ const productsData = {
       items: [
         'Pre-configured LobeChat / NextChat JSON with 50 specialized expert agents',
         '1-Click zero-cost deployment guide on Cloudflare Pages / Zeabur / Vercel',
-        'Official API routing rules (Claude Sonnet 4.5 / 5.5 for coding/writing, DeepSeek R1 for reasoning)',
+        'Official API routing rules (Claude Sonnet 5.5 & Opus 5.5 for coding/writing, DeepSeek V4-Pro-0813 for reasoning)',
         'Rate-limit protection, token cost cap & privacy hardening checklist'
       ],
       companionTool: { name: 'OpenRouter Unified Official LLM API', url: 'https://openrouter.ai/?ref=cruxkit' },
-      sample: `// ROUTING RULEBOOK: PAY-AS-YOU-GO MULTI-MODEL HUB\n• Coding & Long-Form Editing -> anthropic/claude-sonnet-4-5\n• Bulk Data Extraction & Math -> deepseek/deepseek-r1 ($0.14 / 1M tokens)\n• Fast Multilingual Translation -> google/gemini-3.1-flash\n• Average Monthly API Bill for Solo Creator: $2.40 - $4.80/mo (Zero Ban Risk)`
+      sample: `// ROUTING RULEBOOK: PAY-AS-YOU-GO MULTI-MODEL HUB\n• Coding & Long-Form Editing -> anthropic/claude-sonnet-4-5\n• Bulk Data Extraction & Math -> deepseek/deepseek-v4-pro-0813 ($0.14 / 1M tokens)\n• Fast Multilingual Translation -> google/gemini-3.1-flash\n• Average Monthly API Bill for Solo Creator: $2.40 - $4.80/mo (Zero Ban Risk)`
     },
     mcppack: {
       num: '03', catKey: 'workflow', price: 29, tile: 'tile-folders',
@@ -264,7 +264,7 @@ const productsData = {
       items: [
         'One-page reusable content brief & reader intent canvas',
         '6 GEO-ready comparison & Tier List article wireframes (TL;DR Box + Schema tables)',
-        '50 modular editorial & script prompts for Claude Sonnet 4.5 / 5.5, Gemini & DeepSeek',
+        '50 modular editorial & script prompts for Claude Sonnet 5.5 & Opus 5.5, Gemini & DeepSeek',
         'Pre-publish clarity, FTC disclosure, and affiliate link-check checklist'
       ],
       companionTool: { name: 'Semrush SEO & GEO Intelligence Suite', url: 'https://www.semrush.com/?ref=cruxkit' },
@@ -390,15 +390,15 @@ const productsData = {
       category: 'AI 基建 · 告别共享号封号焦虑 + 50 专家智能体',
       badges: ['100% 零封号风险', '50 个预设智能体', 'OpenRouter / DeepSeek'],
       shortDesc: '彻底告别三天两头封号的共享成品号！用官方按量 API + LobeChat 零成本搭建专属多模型工作台（月均仅需 $3）。',
-      description: 'X 与小红书最受欢迎的合规替代方案：无需购买高风险合租号，直接通过 OpenRouter / DeepSeek / 硅基流动官方 API 配合一键部署的 LobeChat，同时调用 Claude Sonnet 4.5 / 5.5、GPT-5 / o3 与 DeepSeek R1。',
+      description: 'X 与小红书最受欢迎的合规替代方案：无需购买高风险合租号，直接通过 OpenRouter / DeepSeek / 硅基流动官方 API 配合一键部署的 LobeChat，同时调用 Claude Sonnet 5.5 & Opus 5.5、GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna 与 DeepSeek V4-Pro-0813。',
       items: [
         '预置 50 个垂直领域专家智能体（GEO 评测主笔、全栈代码审计、小红书爆款改写等）的 LobeChat 配置文件',
         'Cloudflare Pages / Zeabur / Vercel 零服务器费用 3 分钟一键部署图文手册',
-        '多模型省钱路由策略：写作写代码调 Claude Sonnet 4.5 / 5.5，大批量推理清洗调 DeepSeek R1',
+        '多模型省钱路由策略：写作写代码调 Claude Sonnet 5.5 & Opus 5.5，大批量推理清洗调 DeepSeek V4-Pro-0813',
         'API 额度防刷上限设置与个人隐私防泄露加固清单'
       ],
       companionTool: { name: 'OpenRouter 官方多模型聚合 API 平台', url: 'https://openrouter.ai/?ref=cruxkit' },
-      sample: `// 多模型黄金省钱路由表\n• 深度长文与代码开发 -> anthropic/claude-sonnet-4-5\n• 批量数据清洗与逻辑推理 -> deepseek/deepseek-r1 (仅 $0.14 / 百万 Token)\n• 多语种极速互译 -> google/gemini-3.1-flash\n• 一人公司月均 API 账单：仅约 ¥18 - ¥35/月（官方通道，永不封号）`
+      sample: `// 多模型黄金省钱路由表\n• 深度长文与代码开发 -> anthropic/claude-sonnet-4-5\n• 批量数据清洗与逻辑推理 -> deepseek/deepseek-v4-pro-0813 (仅 $0.14 / 百万 Token)\n• 多语种极速互译 -> google/gemini-3.1-flash\n• 一人公司月均 API 账单：仅约 ¥18 - ¥35/月（官方通道，永不封号）`
     },
     mcppack: {
       num: '03', catKey: 'workflow', price: 29, tile: 'tile-folders',
@@ -458,7 +458,7 @@ const productsData = {
       items: [
         '一页纸高转化内容立项画布（动笔前先锁定读者痛点与带货钩子）',
         '6 套针对 AI 搜索引擎抓取偏好的 GEO 对比评测与 Tier List 网页骨架',
-        '50 组适配 Claude Sonnet 4.5 / 5.5、Gemini 与 DeepSeek 的模块化审校与改写 Prompt',
+        '50 组适配 Claude Sonnet 5.5 & Opus 5.5、Gemini 与 DeepSeek 的模块化审校与改写 Prompt',
         '发布前清晰度自检、合规披露与联盟死链排查清单'
       ],
       companionTool: { name: 'Semrush SEO 与 AI 搜索流量分析套件', url: 'https://www.semrush.com/?ref=cruxkit' },
@@ -607,7 +607,7 @@ const stackToolsData = {
     openrouter: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'workstation',
       tier: 'S-TIER · API ROUTER', name: 'OpenRouter AI', role: 'Unified Multi-LLM Official API Gateway',
-      verdictShort: 'Access Claude Sonnet 4.5 / 5.5, GPT-5 / o3, Gemini 3.1 Pro, and DeepSeek R1 through one single official API key with zero monthly subscription.',
+      verdictShort: 'Access Claude Sonnet 5.5 & Opus 5.5, GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna, Gemini 4 Argon (1M Ctx), and DeepSeek V4-Pro-0813 through one single official API key with zero monthly subscription.',
       metricPill: '⚡ Pay-As-You-Go · 0%Ban Risk · 300+ Models',
       price: '$0 Monthly Fee · Pure Pay-As-You-Go Token Billing',
       summary: 'OpenRouter eliminates the need to pay $20/mo each for ChatGPT, Claude, and Gemini—or risk account bans from shared gray-market accounts. Pair one API key with LobeChat or Cursor.',
@@ -623,18 +623,18 @@ const stackToolsData = {
       metricPill: '⚡ Native MCP Support · Multi-File Composer',
       price: 'Free Hobby Tier · Pro $20/mo',
       summary: 'Cursor is the fastest way to build, edit, and maintain static sites, automation scripts, and digital tools. With Composer and MCP servers connected, it edits entire repositories autonomously.',
-      pros: ['Understands your entire project folder context automatically', 'One-click MCP server integration for browser testing & docs lookup', 'Supports Claude Sonnet 4.5 / 5.5 & DeepSeek models'],
+      pros: ['Understands your entire project folder context automatically', 'One-click MCP server integration for browser testing & docs lookup', 'Supports Claude Sonnet 5.5 & Opus 5.5 & DeepSeek models'],
       cons: ['Fast premium requests cap at 500/mo on Pro before switching to unlimited slow pool'],
       verdict: 'Essential for indie makers building websites, scripts, and digital products.',
       url: 'https://www.cursor.com/?ref=cruxkit', cta: 'Download Cursor'
     },
     claude: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'content',
-      tier: 'S-TIER · #1 WRITING LLM', name: 'Claude Sonnet 4.5 / 5.5', role: 'Nuanced Editorial Writing & Code Reasoning',
+      tier: 'S-TIER · #1 WRITING LLM', name: 'Claude Sonnet 5.5 & Opus 5.5', role: 'Nuanced Editorial Writing & Code Reasoning',
       verdictShort: 'Produces the most natural, non-robotic bilingual prose and cleanest front-end HTML/CSS/JS of any frontier model in 2026.',
       metricPill: '⚡ 1M Context Window · Claude Code & Artifacts',
       price: 'Free Tier · Pro $20/mo · API Pay-As-You-Go',
-      summary: 'In our blind editorial tests across 50 product reviews, Claude Sonnet 4.5 / 5.5 consistently required 60% less human rewriting than competing models while following complex style constraints.',
+      summary: 'In our blind editorial tests across 50 product reviews, Claude Sonnet 5.5 & Opus 5.5 consistently required 60% less human rewriting than competing models while following complex style constraints.',
       pros: ['Least robotic tone for English and Mandarin long-form essays', 'Interactive Artifacts preview for instant HTML/React widgets', 'Superior instruction-following on multi-constraint prompts'],
       cons: ['Strict message rate limits during peak hours on web Pro plan (use API via OpenRouter as backup)'],
       verdict: 'Our primary engine for drafting high-converting reviews and code.',
@@ -642,9 +642,9 @@ const stackToolsData = {
     },
     deepseek: {
       catKey: 'ai', badgeClass: 'tier-a', score: '9.6 / 10', relatedKit: 'workstation',
-      tier: 'S-TIER · VALUE LLM', name: 'DeepSeek V3.2 / V4 Flash & R1 API', role: 'High-Volume Reasoning at 1/20th Cost',
+      tier: 'S-TIER · VALUE LLM', name: 'DeepSeek V4.1-Flash-1017 & V4-Pro-0813 API', role: 'High-Volume Reasoning at 1/20th Cost',
       verdictShort: 'Frontier-level math, logic, and bilingual Chinese/English processing at $0.14 per million input tokens—ideal for bulk n8n loops.',
-      metricPill: '⚡ $0.07–$0.27 / 1M · 50% Off-Peak + Auto Cache',
+      metricPill: '⚡ $0.04–$0.15 / 1M (V4.1-Flash-1017) · 50% Off-Peak + Auto Cache',
       price: '$0.07 (Cache Hit) – $0.27 / 1M Input · 50% Off-Peak Discount',
       summary: 'When running automated RSS summarization, translation, or data classification across thousands of rows in Make or n8n, DeepSeek slashes API bills by over 90%.',
       pros: ['Unbeatable cost-to-intelligence ratio for bulk automation nodes', 'Outstanding native Mandarin Chinese & English bilingual fluency', 'Full chain-of-thought reasoning visibility in R1'],
@@ -897,7 +897,7 @@ const stackToolsData = {
     openrouter: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'workstation',
       tier: 'S 级首选 · 官方 API 聚合', name: 'OpenRouter AI', role: '一站式多模型官方 API 路由网关',
-      verdictShort: '用一个官方 API Key 同时调用 Claude Sonnet 4.5 / 5.5、GPT-5 / o3、Gemini 2.5 与 DeepSeek R1，按量计费零月租、100% 告别共享号封号焦虑。',
+      verdictShort: '用一个官方 API Key 同时调用 Claude Sonnet 5.5 & Opus 5.5、GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna、Gemini 3.8 / 4 Argon 与 DeepSeek V4-Pro-0813，按量计费零月租、100% 告别共享号封号焦虑。',
       metricPill: '⚡ 零月租按量计费 · 永不封号 · 300+ 模型',
       price: '$0 月租 · 纯按实际消耗 Token 计费（用多少付多少）',
       summary: '无需分别包月订阅三四个 $20/月的 AI 会员，更不必去买三天两头封号的灰产共享号。将 OpenRouter API 填入 LobeChat 或 Cursor，每月几美元即可畅用全球顶尖模型。',
@@ -913,18 +913,18 @@ const stackToolsData = {
       metricPill: '⚡ 原生支持 MCP · 多文件 Composer 协同',
       price: '免费体验版 · Pro 专业版 $20/月',
       summary: 'Cursor 是目前开发独立站、修改前端模版与编写自动化脚本最快的生产力工具。挂载 MCP 服务后，它甚至能自动替你检索文档并完成浏览器测试。',
-      pros: ['自动理解整个项目文件夹上下文，告别反复复制粘贴代码', '一键挂载 20+ MCP 服务扩展本地与联网能力', '无缝切换 Claude Sonnet 4.5 / 5.5 与 DeepSeek 模型'],
+      pros: ['自动理解整个项目文件夹上下文，告别反复复制粘贴代码', '一键挂载 20+ MCP 服务扩展本地与联网能力', '无缝切换 Claude Sonnet 5.5 & Opus 5.5 与 DeepSeek 模型'],
       cons: ['Pro 版每月含 500 次极速请求，超出后转入无限次慢速队列'],
       verdict: '独立开发者与一人公司构建数字资产的头号神器。',
       url: 'https://www.cursor.com/?ref=cruxkit', cta: '免费下载 Cursor'
     },
     claude: {
       catKey: 'ai', badgeClass: '', score: '9.7 / 10', relatedKit: 'content',
-      tier: 'S 级首选 · 深度写作大模型', name: 'Claude Sonnet 4.5 / 5.5', role: '最自然的双语评测长文撰稿与前端生成模型',
+      tier: 'S 级首选 · 深度写作大模型', name: 'Claude Sonnet 5.5 & Opus 5.5', role: '最自然的双语评测长文撰稿与前端生成模型',
       verdictShort: '在 2026 年主流大模型盲测中，其生成的中英双语长文“AI 爹味/机翻感”最低，且前端 HTML/CSS 审美断层领先。',
       metricPill: '⚡ 200k 超长上下文 · 实时 Artifacts 预览',
       price: '免费版 · Pro $20/月 · 或通过 OpenRouter 按量调用',
-      summary: '在我们对 50 篇带货评测长文的盲测中，Claude Sonnet 4.5 / 5.5 产出的初稿所需人工润色时间比同类模型少 60%，且能严格遵循复杂的 GEO 表格排版指令。',
+      summary: '在我们对 50 篇带货评测长文的盲测中，Claude Sonnet 5.5 & Opus 5.5 产出的初稿所需人工润色时间比同类模型少 60%，且能严格遵循复杂的 GEO 表格排版指令。',
       pros: ['中英双语行文克制自然，极少出现空洞套话', 'Artifacts 窗口支持实时渲染交互式网页组件与图表', '对长提示词（System Prompts）的多重约束执行最精准'],
       cons: ['网页端高峰期有消息条数限制（建议搭配 OpenRouter API 混合使用）'],
       verdict: '撰写高信任度独立站评测长文与构建网页交互的首选大脑。',
@@ -932,13 +932,13 @@ const stackToolsData = {
     },
     deepseek: {
       catKey: 'ai', badgeClass: 'tier-a', score: '9.6 / 10', relatedKit: 'workstation',
-      tier: 'S 级首选 · 极致性价比 API', name: 'DeepSeek V3 / R1 (硅基流动)', role: '成本仅 1/20 的国产之光推理与双语处理引擎',
+      tier: 'S 级首选 · 极致性价比 API', name: 'DeepSeek V4.1-Flash-1017 & V4-Pro-0813 (硅基流动)', role: '成本仅 1/20 的国产之光推理与双语处理引擎',
       verdictShort: '每百万输入 Token 仅约 ¥1 ($0.14)，在 Make 与 n8n 中批量跑数千条数据清洗、摘要与翻译也不心疼账单。',
       metricPill: '⚡ $0.14 / 百万 Token · 满血 R1 深度推理',
       price: '注册即送免费 Token 额度 · 按量计费极低',
       summary: '当你在 n8n 或 Make 里配置每天自动运行的 RSS 监控、竞品价格提取或双语改写节点时，接入 DeepSeek V3/R1 可将 API 成本直接砍掉 90% 以上。',
       pros: ['批量自动化场景下无敌的智价比', '原生中文语境理解与逻辑推理能力稳居第一梯队', '通过硅基流动（SiliconFlow）或 OpenRouter 调用响应极快且稳定'],
-      cons: ['纯前端视觉设计感略逊于 Claude Sonnet 4.5 / 5.5（建议日常采用 DeepSeek + Claude 双模型组合）'],
+      cons: ['纯前端视觉设计感略逊于 Claude Sonnet 5.5 & Opus 5.5（建议日常采用 DeepSeek + Claude 双模型组合）'],
       verdict: '高频后台自动化工作流与国语区内容处理的绝对主力。',
       url: 'https://cloud.siliconflow.cn/?ref=cruxkit', cta: '免费领 API 额度'
     },
@@ -1228,12 +1228,12 @@ const storiesData = {
       sections: [
         ['01 — The math of pay-as-you-go APIs vs. $60/mo subscriptions.', 'Most solo creators use fewer than 3 million tokens a month. Paying $20/mo each for ChatGPT Plus, Claude Pro, and Gemini Advanced costs $60/mo. Calling those exact models via OpenRouter or DeepSeek API costs $2.50 to $4.80/mo total.'],
         ['02 — Deploy LobeChat on Cloudflare Pages or Zeabur for $0.', 'Fork the open-source LobeChat repository, deploy it to Cloudflare Pages in 3 minutes, and paste your OpenRouter + DeepSeek API keys. You get a private, password-protected workspace with 50 custom agents.'],
-        ['03 — Route each task to the specialist model.', 'Use Claude Sonnet 4.5 / 5.5 for nuanced bilingual writing and UI code, DeepSeek R1 ($0.14/1M tokens) for bulk reasoning, and Gemini 2.5 Flash for long-context document parsing.']
+        ['03 — Route each task to the specialist model.', 'Use Claude Sonnet 5.5 & Opus 5.5 for nuanced bilingual writing and UI code, DeepSeek V4-Pro-0813 ($0.14/1M tokens) for bulk reasoning, and Gemini 3.8 / 4 Argon Flash for long-context document parsing.']
       ],
       table: {
         headers: ['Setup Option', 'Monthly Cost', 'Account Ban Risk', 'Model Access'],
         rows: [
-          ['CruxKit API + LobeChat Hub', '~$3.50 / mo (Pay-as-you-go)', '0% (Official API Keys)', 'Claude Sonnet 4.5 / 5.5 + GPT-5 / o3 + DeepSeek R1 + Gemini'],
+          ['CruxKit API + LobeChat Hub', '~$3.50 / mo (Pay-as-you-go)', '0% (Official API Keys)', 'Claude Sonnet 5.5 & Opus 5.5 + GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna + DeepSeek V4-Pro-0813 + Gemini'],
           ['3 Separate Pro Subscriptions', '$60.00 / mo', 'Low (High Fixed Cost)', 'Locked in 3 separate browser tabs'],
           ['Gray-Market Shared Accounts', '$5–$15 / mo', '95% (Banned every 3–7 days)', 'Shared chat history & privacy leaks']
         ]
@@ -1531,12 +1531,12 @@ const storiesData = {
       sections: [
         ['01 — 按量 API vs. $60/月包月会员的真实账本。', '90% 的独立创作者每月实际消耗不到 300 万 Token。如果同时包月订阅 ChatGPT、Claude 与 Gemini 需花费 $60/月；而通过 OpenRouter 与硅基流动（DeepSeek）官方 API 按量调用，每月总账单通常只有 $2.50 到 $4.80（约 ¥18–¥35）。'],
         ['02 — 3 分钟在 Cloudflare Pages 零成本部署 LobeChat。', '一键 Fork 开源的 LobeChat 仓库并绑定到免费的 Cloudflare Pages，填入你的官方 API Key 并设置访问密码，即可拥有跨手机电脑同步的私人 AI 工作台。'],
-        ['03 — 把最擅长的任务分给最对的模型。', '深度双语长文与前端代码交给 Claude Sonnet 4.5 / 5.5；大批量推理与数据清洗交给 DeepSeek R1（仅 $0.14/百万 Token）；超长文档速读交给 Gemini 2.5 Flash。']
+        ['03 — 把最擅长的任务分给最对的模型。', '深度双语长文与前端代码交给 Claude Sonnet 5.5 & Opus 5.5；大批量推理与数据清洗交给 DeepSeek V4-Pro-0813（仅 $0.14/百万 Token）；超长文档速读交给 Gemini 3.8 / 4 Argon Flash。']
       ],
       table: {
         headers: ['方案对比', '月均真实成本', '封号与断联风险', '可用模型范围'],
         rows: [
-          ['CruxKit 官方 API + LobeChat 方案', '约 ¥22 / 月 (按量计费)', '0% (正规官方 API 通道)', '一站式调用 Claude Sonnet 4.5 / 5.5 + GPT-5 / o3 + DeepSeek R1'],
+          ['CruxKit 官方 API + LobeChat 方案', '约 ¥22 / 月 (按量计费)', '0% (正规官方 API 通道)', '一站式调用 Claude Sonnet 5.5 & Opus 5.5 + GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna + DeepSeek V4-Pro-0813'],
           ['单独开通 3 家官方 Pro 会员', '$60.00 / 月 (约 ¥430)', '低 (但固定月租极高)', '分散在 3 个不同网页标签页'],
           ['灰产合租号 / 廉价成品号', '¥35 – ¥90 / 月', '95% (高频封号、历史记录全丢)', '多人共用导致隐私与提示词完全裸奔']
         ]
@@ -2003,7 +2003,7 @@ try {
       metricPill: '⚡ 96.4% Citation Accuracy · Sonar API',
       price: 'Free Tier · Pro $20/mo · API Pay-As-You-Go',
       summary: 'In our 100-query accuracy audit across SaaS pricing and PubMed dermatology papers, Perplexity Pro achieved 96.4% primary-source accuracy with zero fabricated URLs.',
-      pros: ['Academic Focus mode searches PubMed, arXiv, and peer-reviewed journals directly', 'Switch seamlessly between Claude Sonnet 4.5 / 5.5, GPT-5 / o3, and DeepSeek R1', 'Sonar API integrates into n8n and Make for automated fact-checking'],
+      pros: ['Academic Focus mode searches PubMed, arXiv, and peer-reviewed journals directly', 'Switch seamlessly between Claude Sonnet 5.5 & Opus 5.5, GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna, and DeepSeek V4-Pro-0813', 'Sonar API integrates into n8n and Make for automated fact-checking'],
       cons: ['Not designed for long-form creative prose (pair with NotebookLM or Claude)'],
       verdict: 'The gold-standard research engine for zero-hallucination fact verification.',
       url: 'go/perplexity', cta: 'Try Perplexity Pro'
@@ -2150,7 +2150,7 @@ try {
       metricPill: '⚡ 96.4% 一手信源准确率 · Sonar API',
       price: '提供免费版 · Pro $20/月 · API 按量计费',
       summary: '在我们横跨 SaaS 最新定价与 PubMed 皮肤科文献的 100 次检索实测中，Perplexity Pro 取得了 96.4% 的一手信源准确率，且伪造链接率为 0.0%。',
-      pros: ['Academic 学术模式可直接穿透检索 PubMed、arXiv 与权威期刊论文', '支持在 Claude Sonnet 4.5 / 5.5、GPT-5 / o3 与 DeepSeek R1 推理模型间自由切换', 'Sonar API 可直接接入 n8n / Make 实现全自动事实核查'],
+      pros: ['Academic 学术模式可直接穿透检索 PubMed、arXiv 与权威期刊论文', '支持在 Claude Sonnet 5.5 & Opus 5.5、GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna 与 DeepSeek V4-Pro-0813 推理模型间自由切换', 'Sonar API 可直接接入 n8n / Make 实现全自动事实核查'],
       cons: ['不适合直接生成万字感性长文（建议搭配 NotebookLM 或 Claude 二次成文）'],
       verdict: '专业评测站长与科研创作者不可替代的零幻觉事实核查引擎。',
       url: 'go/perplexity', cta: '体验 Perplexity Pro'
@@ -2308,9 +2308,9 @@ try {
       table: {
         headers: ['Research Engine', 'Primary-Source / DOI Accuracy', 'Hallucinated URL Rate', 'Optimal Role in CruxKit Stack'],
         rows: [
-          ['Perplexity Pro (Sonar / Claude Sonnet 4.5 / 5.5)', '96.4% Verified', '0.0% (Live Indexed URLs)', 'Stage 1: Live web, SaaS pricing & PubMed harvesting'],
+          ['Perplexity Pro (Sonar / Claude Sonnet 5.5 & Opus 5.5)', '96.4% Verified', '0.0% (Live Indexed URLs)', 'Stage 1: Live web, SaaS pricing & PubMed harvesting'],
           ['Google NotebookLM Plus', '99.2% Source-Grounded', '0.0% (Closed Uploaded Corpus)', 'Stage 2: Synthesizing 50 PDFs with exact page quotes'],
-          ['ChatGPT Search (GPT-5 / o3)', '88.5% Verified', '1.8% Broken/Redirected', 'Broad topic brainstorming & conversational outlines']
+          ['ChatGPT Search (GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna)', '88.5% Verified', '1.8% Broken/Redirected', 'Broad topic brainstorming & conversational outlines']
         ]
       },
       quote: 'Harvest verified primary sources in Perplexity; synthesize inside a locked NotebookLM corpus.',
@@ -2405,9 +2405,9 @@ try {
       table: {
         headers: ['调研引擎', '一手文献 / 官方定价准确率', '伪造死链率 (Hallucination)', '在 CruxKit 工作流中的最佳分工'],
         rows: [
-          ['Perplexity Pro (Sonar / Claude Sonnet 4.5 / 5.5)', '96.4% 真实核验', '0.0%（全部为实时可点网页）', '第一阶段：全网实时定价核查与 PubMed 文献捕捞'],
+          ['Perplexity Pro (Sonar / Claude Sonnet 5.5 & Opus 5.5)', '96.4% 真实核验', '0.0%（全部为实时可点网页）', '第一阶段：全网实时定价核查与 PubMed 文献捕捞'],
           ['Google NotebookLM Plus', '99.2% 严格忠于原文', '0.0%（闭卷锁定上传文档）', '第二阶段：吞吐 50 篇 PDF 并生成带页码引用的横评表'],
-          ['ChatGPT Search (GPT-5 / o3)', '88.5% 真实核验', '1.8% 存在重定向或过期页', '前期发散式选题头脑风暴与通俗化比喻改写']
+          ['ChatGPT Search (GPT-6.1 (Terra / Sol Pro) & GPT-6 Luna)', '88.5% 真实核验', '1.8% 存在重定向或过期页', '前期发散式选题头脑风暴与通俗化比喻改写']
         ]
       },
       quote: '用 Perplexity 在公网精准捕捞一手信源，用 NotebookLM 在闭卷环境提炼深度横评。',
@@ -2483,6 +2483,656 @@ try {
       },
       quote: '看懂 pH 透皮窗口与真空包装逻辑，按屏障耐受度精准匹配你的早C或淡印方案。',
       relatedKit: 'retinoidramp'
+    }
+  });
+})();
+
+
+/* -----------------------------------------------------------
+   V7.0 NOVEMBER 2026 EXPANSION (20 KITS · 40 STACK PICKS · 24 GUIDES)
+----------------------------------------------------------- */
+(function expandCatalogV7() {
+  const bIdx = kitsOrder.indexOf('allbundle');
+  if (bIdx !== -1) kitsOrder.splice(bIdx, 1);
+  ['deepseekrouter', 'geminiomnivideo', 'gsctraffic', 'winterbarrier'].forEach(k => {
+    if (!kitsOrder.includes(k)) kitsOrder.push(k);
+  });
+  kitsOrder.push('allbundle');
+  if (productsData.en.allbundle) productsData.en.allbundle.num = '20';
+  if (productsData.zh.allbundle) productsData.zh.allbundle.num = '20';
+
+  Object.assign(productsData.en, {
+    deepseekrouter: {
+      num: '16', catKey: 'workflow', price: 24, tile: 'tile-automation',
+      name: 'DeepSeek V4.1-Flash-1017 & GPT-6.1 Smart Router Pack',
+      category: 'LLM Engineering · Nov 2026 Multi-Model API Router',
+      badges: ['DeepSeek V4.1-Flash-1017', 'GPT-6.1 Terra/Sol', 'Claude 5.5 + Gemini 4'],
+      shortDesc: 'Route bulk agent tasks to DeepSeek V4.1-Flash-1017 ($0.04–$0.15/1M) & GPT-6 Luna ($0.10/1M), while reserving GPT-6.1 Sol Pro & Claude Sonnet 5.5 for complex code.',
+      description: 'Updated for the November 2026 model generation: drop our LiteLLM & OpenRouter fallback configs into your stack to slash token bills by 82% across 1M-context workloads.',
+      items: [
+        'Production LiteLLM & OpenRouter routing JSON for DeepSeek V4.1-Flash-1017, GPT-6.1 Terra/Sol Pro, Gemini 4 Argon & Claude 5.5',
+        'Automatic fallback rules when rate limits hit + 1M context caching optimization',
+        'Benchmark cost calculator comparing GPT-6 Luna ($0.10/M) vs Claude Haiku 5.5 ($0.10/M) vs DeepSeek V4.1-Flash ($0.04/M)',
+        'Full .ZIP deliverable with ready-to-import JSON and Python/Node SDK snippets'
+      ],
+      companionTool: { name: 'OpenRouter Unified 1M-Context API Gateway', url: 'go/openrouter' },
+      sample: `// NOV 2026 SMART ROUTER MATRIX\n• High-Speed Bulk Extraction -> deepseek/deepseek-v4.1-flash-1017 ($0.15/M in, 1M ctx)\n• Ultra-Low-Cost Classification -> openai/gpt-6-luna ($0.10/M in, 1.05M ctx) or anthropic/claude-haiku-5.5\n• Complex Architecture & Code -> anthropic/claude-sonnet-5.5 ($2.00/M in) or openai/gpt-6.1-sol-pro\n• 1M Multimodal Video/Audio -> google/gemini-4-argon ($2.00/M in) & google/gemini-omni-1.2-flash`
+    },
+    geminiomnivideo: {
+      num: '17', catKey: 'os', price: 29, tile: 'tile-content',
+      name: 'Gemini 4 Argon & Omni 1.2 Flash Multimodal Video Kit',
+      category: 'Multimodal Studio · Nano Banana 2.1 + HeyGen + ElevenLabs v3',
+      badges: ['Gemini Omni 1.2 Flash', 'Nano Banana 2.1', 'HeyGen ?via=xing'],
+      shortDesc: 'Generate consistent 4K keyframes with Nano Banana 2.1, animate transitions with Gemini Omni 1.2 Flash, and dub in 32 languages with HeyGen & ElevenLabs v3.',
+      description: 'The complete late-2026 multimodal video production pipeline combining Google’s Gemini Omni 1.2 Flash video engine and Nano Banana 2.1 image keyframes with HeyGen 4K avatars.',
+      items: [
+        '30 first-frame / last-frame transition prompts for Gemini Omni 1.2 Flash (google-genai SDK)',
+        'Nano Banana 2.1 consistent character & product studio lighting prompt library',
+        'Automated HeyGen API + ElevenLabs v3 bilingual lip-sync dubbing webhook blueprint',
+        'FFmpeg 4K pre-processing & audio-strip shell scripts for clean sound regeneration'
+      ],
+      companionTool: { name: 'HeyGen AI Avatar Studio (Official Partner Link)', url: 'go/heygen' },
+      sample: `// MULTIMODAL VIDEO PIPELINE (NOV 2026)\n1. KEYFRAME: google/gemini-nano-banana-2.1 -> Generate 16:9 & 9:16 studio frames.\n2. MOTION: google/gemini-omni-1.2-flash -> First-and-last-frame temporal interpolation.\n3. AVATAR & VOICE: HeyGen Avatar IV (?via=xing) + ElevenLabs Studio v3 bilingual track.`
+    },
+    gsctraffic: {
+      num: '18', catKey: 'os', price: 29, tile: 'tile-desk',
+      name: 'Google Search Console + IndexNow + llms.txt Traffic Engine',
+      category: 'SEO & GEO Growth · 48-Hour Indexing & AI Search Citation Kit',
+      badges: ['GSC DNS Verify', 'Bing IndexNow API', 'llms-full.txt Builder'],
+      shortDesc: 'Turn single-page sites into 80+ static HTML pages with Article/Product JSON-LD schema, automated sitemap.xml, IndexNow instant ping, and llms.txt.',
+      description: 'Built from the exact SEO & Generative Engine Optimization (GEO) architecture powering cruxxxxxkit.com—get indexed by Googlebot, Bing, ChatGPT Search, Perplexity, and Gemini in 48 hours.',
+      items: [
+        'Static HTML + JSON-LD (Article, Product, FAQPage, BreadcrumbList) page generator script',
+        'Google Search Console Spaceship DNS TXT verification & Sitemap submission SOP',
+        'Automated IndexNow batch ping script for instant Bing, Yandex & DuckDuckGo indexing',
+        'llms.txt & llms-full.txt Markdown compiler for AI search engine citation priority'
+      ],
+      companionTool: { name: 'Semrush SEO & Keyword Intelligence', url: 'go/semrush' },
+      sample: `// 48-HOUR ORGANIC & AI TRAFFIC ENGINE\n1. STATIC HTML: Generate /guides/{slug}/index.html & /kits/{slug}/index.html with JSON-LD.\n2. GSC VERIFY: Add @ TXT google-site-verification in Spaceship Unbox DNS (30s propagation).\n3. SITEMAP & INDEXNOW: Submit sitemap.xml in GSC + POST 88 URLs to api.indexnow.org.\n4. AI CITATION: Publish /llms.txt & /llms-full.txt for GPT-6.1, Perplexity & Gemini 4.`
+    },
+    winterbarrier: {
+      num: '19', catKey: 'routine', price: 19, tile: 'tile-routine',
+      name: 'Autumn/Winter Retinoid + Ceramide 3:1:1 + TXA 4% Protocol',
+      category: 'Formulation Lab · Cold-Weather Barrier & Brightening System',
+      badges: ['Ceramide 3:1:1', 'Tribioma B5+', '5D Hyaluronic + TXA 4%'],
+      shortDesc: 'Keep using 0.1% Adapalene and 4% Tranexamic Acid through dry winter heating without peeling—using Torriden 5D HA, CeraVe PM, and Cicaplast B5+ Tribioma.',
+      description: 'Low winter humidity and indoor heating spike Transepidermal Water Loss (TEWL) by 45%. This clinical protocol adjusts your AM/PM active layering so you never sacrifice retinoid progress.',
+      items: [
+        '8-Week Autumn/Winter Skin Cycling Schedule (CSV + printable bathroom card)',
+        'Humectant-to-Lipid-to-Occlusive layering matrix (Torriden 5D HA -> CeraVe PM -> Cicaplast B5+)',
+        'Pairing Anua 10% Niacinamide + 4% TXA with morning UV filters without pilling',
+        'Emergency 72-hour windburn & over-exfoliation barrier rescue protocol'
+      ],
+      companionTool: { name: 'La Roche-Posay Cicaplast Baume B5+ (Tribioma)', url: 'go/cicaplast' },
+      sample: `// WINTER RETINOID BUFFERING FORMULA\n1. DAMP SKIN: Apply 3 drops Torriden DIVE-IN 5D Low-Molecular HA Serum.\n2. LIPID BUFFER: Apply 1 pump CeraVe PM (Ceramides 1, 3, 6-II + 4% Niacinamide); wait 10 mins.\n3. ACTIVE: Pea-sized Differin 0.1% Adapalene Gel.\n4. SEAL: Spot-occlude corners of nose/mouth with Cicaplast Baume B5+ (5% Panthenol + Tribioma).`
+    }
+  });
+
+  Object.assign(productsData.zh, {
+    deepseekrouter: {
+      num: '16', catKey: 'workflow', price: 24, tile: 'tile-automation',
+      name: 'DeepSeek V4.1-Flash-1017 与 GPT-6.1 智能路由配置包',
+      category: '大模型工程 · 2026年11月最新多模型 API 路由方案',
+      badges: ['DeepSeek V4.1-Flash-1017', 'GPT-6.1 Terra/Sol', 'Claude 5.5 + Gemini 4'],
+      shortDesc: '将高频并发任务自动分发至 DeepSeek V4.1-Flash-1017（$0.04–$0.15/1M）与 GPT-6 Luna（$0.10/1M），复杂代码交由 Claude Sonnet 5.5 与 GPT-6.1 Sol Pro。',
+      description: '专为 2026 年底最新一代百万上下文大模型打造：直接导入我们的 LiteLLM 与 OpenRouter 智能路由配置，在保障顶尖推理质量的同时将 Token 账单直降 82%。',
+      items: [
+        '涵盖 DeepSeek V4.1-Flash-1017、GPT-6.1 Terra/Sol Pro、Gemini 4 Argon 与 Claude Sonnet 5.5 的生产级路由 JSON',
+        '百万上下文（1M Context）自动缓存命中优化与并发限流零中断主备切换规则',
+        '2026年11月最新模型成本测算表：对比 GPT-6 Luna ($0.10/M)、Claude Haiku 5.5 ($0.10/M) 与 DeepSeek V4.1-Flash ($0.04/M)',
+        '完整 .ZIP 源文件包（含 LiteLLM 配置、LobeChat 预设与 Python/Node 调用脚本）'
+      ],
+      companionTool: { name: 'OpenRouter 全球百万上下文聚合网关', url: 'go/openrouter' },
+      sample: `// 2026年11月 多模型黄金路由表\n• 高频数据清洗与极速 Agent -> deepseek/deepseek-v4.1-flash-1017 ($0.15/M 输入, 1M 上下文)\n• 超低成本批量分类 -> openai/gpt-6-luna ($0.10/M 输入, 1.05M 上下文) 或 anthropic/claude-haiku-5.5\n• 核心代码架构与长文精修 -> anthropic/claude-sonnet-5.5 ($2.00/M) 或 openai/gpt-6.1-sol-pro\n• 百万上下文多模态音视频理解 -> google/gemini-4-argon ($2.00/M) & google/gemini-omni-1.2-flash`
+    },
+    geminiomnivideo: {
+      num: '17', catKey: 'os', price: 29, tile: 'tile-content',
+      name: 'Gemini 4 Argon & Omni 1.2 Flash 多模态视频工作流套件',
+      category: '多模态视频工厂 · Nano Banana 2.1 + HeyGen + ElevenLabs v3',
+      badges: ['Gemini Omni 1.2 Flash', 'Nano Banana 2.1', 'HeyGen ?via=xing'],
+      shortDesc: '用 Nano Banana 2.1 生成角色一致的 4K 首尾帧，用 Gemini Omni 1.2 Flash 生成丝滑视频转场，再配合 HeyGen 与 ElevenLabs v3 批量译制 32 国语言。',
+      description: '全面整合 Google 最新 Gemini Omni 1.2 Flash 原生视频模型、Nano Banana 2.1 图像引擎与 HeyGen 4K 数字人，一人打造日更双语短视频矩阵。',
+      items: [
+        '30 组 Gemini Omni 1.2 Flash 首尾帧过渡（First-and-Last-Frame Transition）与镜头运动提示词模板',
+        'Nano Banana 2.1 人物一致性与商业产品摄影棚布光 Prompt 库',
+        'HeyGen 数字人（?via=xing）+ ElevenLabs v3 双语口型同步自动化 Webhook 蓝图',
+        'FFmpeg 4K 视频预处理与音轨剥离重建一键脚本'
+      ],
+      companionTool: { name: 'HeyGen AI 数字人视频工作台（官方合作链接）', url: 'go/heygen' },
+      sample: `// 2026年11月 全模态视频生成流水线\n1. 首尾关键帧: google/gemini-nano-banana-2.1 -> 生成 16:9 与 9:16 电影级一致关键帧。\n2. 视频动态生成: google/gemini-omni-1.2-flash -> 首尾帧平滑运镜与物理光影插帧。\n3. 数字人口播与配音: HeyGen 4K 数字人 (?via=xing) + ElevenLabs Studio v3 中英双语克隆。`
+    },
+    gsctraffic: {
+      num: '18', catKey: 'os', price: 29, tile: 'tile-desk',
+      name: 'Google Search Console + IndexNow + llms.txt 极速收录流量套件',
+      category: 'SEO 与 AI 搜索增长 · 48 小时收录与大模型引用引擎',
+      badges: ['GSC 域名验证', 'Bing IndexNow 推送', 'llms-full.txt 生成器'],
+      shortDesc: '将单页网站一键编译为 88+ 个带 JSON-LD 结构化数据的独立静态 HTML 页面，自动生成 sitemap.xml、llms.txt 并推送 Google 与 IndexNow。',
+      description: '完整复刻 cruxxxxxkit.com 的底层搜索增长引擎：彻底解决单页应用（SPA）无法被 Google 抓取的痛点，同时抢占 Google 搜索、Bing 与 Perplexity / ChatGPT 搜索引用位。',
+      items: [
+        '静态 HTML + JSON-LD（Article / Product / FAQPage / BreadcrumbList）批量生成脚本',
+        'Spaceship DNS TXT 记录秒级验证 Google Search Console 域名资源实操手册',
+        'IndexNow API 批量推送脚本（新页面发布秒级通知 Bing、Yandex 与 DuckDuckGo）',
+        '专为 GPT-6.1、Gemini 4 与 Perplexity 打造的 llms.txt 与 llms-full.txt 编译器'
+      ],
+      companionTool: { name: 'Semrush SEO 买词与外链反查工具', url: 'go/semrush' },
+      sample: `// 48 小时搜索引擎与 AI 搜索双栖收录闭环\n1. 静态化拆页: 自动生成 /guides/{slug}/index.html 与 /kits/{slug}/index.html 独立静态页。\n2. GSC 域名认证: 在 Spaceship Unbox DNS 写入 @ TXT google-site-verification（30秒全球生效）。\n3. 站点地图与主动推送: 提交 89 条 URL 的 sitemap.xml 并调用 api.indexnow.org 秒级推送。\n4. AI 搜索喂料: 部署 /llms.txt 与 /llms-full.txt，抢占大模型回答首屏引用。`
+    },
+    winterbarrier: {
+      num: '19', catKey: 'routine', price: 19, tile: 'tile-routine',
+      name: '秋冬刷酸缓冲与「神经酰胺 3:1:1 + 传明酸 4%」修护方案包',
+      category: '配方实验室 · 秋冬干冷暖气房刷A防脱皮与淡印日历',
+      badges: ['神经酰胺 3:1:1', 'Tribioma B5+', '5D 玻尿酸 + 4% 传明酸'],
+      shortDesc: '专为秋冬干冷与暖气房环境设计：用 Torriden 5D 小分子玻尿酸 + CeraVe PM + 理肤泉 B5+ 构建三明治缓冲，稳用 0.1% 阿达帕林与 4% 传明酸不脱皮。',
+      description: '秋冬季空气湿度骤降会导致经皮水分流失（TEWL）飙升 45%。本方案通过精准调整水合打底、生理脂质缓冲与局部封包比例，让你在冬天依然温和高效抗痘淡印。',
+      items: [
+        '8 周秋冬季护肤循环（Skin Cycling）早晚实操日历表（CSV + 浴室防水打印卡）',
+        '「抓水剂 -> 生理脂质 -> 局部封包」三阶防搓泥叠涂矩阵（Torriden 5D 玻尿酸 + CeraVe PM + 理肤泉 B5+）',
+        'Anua 10% 烟酰胺 + 4% 传明酸与晨间防晒零搓泥搭配手法',
+        '吹风泛红与刷酸过猛后的 72 小时紧急退红急救SOP'
+      ],
+      companionTool: { name: '理肤泉 Cicaplast B5+ 修复霜（Tribioma 升级版）', url: 'go/cicaplast' },
+      sample: `// 秋冬干冷季 0.1% 阿达帕林零脱皮缓冲公式\n1. 微湿抓水: 洁面后趁微湿涂 3 滴 Torriden 5D 小分子透明质酸精华。\n2. 脂质打底: 按压 1 泵 CeraVe PM 乳（神经酰胺 1/3/6-II + 4% 烟酰胺），静置 10 分钟成膜。\n3. 精准刷A: 全脸薄涂一粒豌豆大小的 Differin 0.1% 阿达帕林凝胶。\n4. 死角封包: 在鼻翼、嘴角等易脱皮处薄涂米粒大小理肤泉 B5+（5% 泛醇 + Tribioma）。`
+    }
+  });
+
+  // Expand stackOrder from 36 to 40 (10 per Desk)
+  ['kimi', 'webflow', 'hetzner', 'torriden'].forEach(t => {
+    if (!stackOrder.includes(t)) stackOrder.push(t);
+  });
+
+  Object.assign(stackToolsData.en, {
+    kimi: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'deepseekrouter',
+      tier: 'S-Tier Pick · 1M Bilingual Agent LLM', name: 'Kimi K3.1 Pro & Moonshot API', role: '1M-Context Bilingual Reasoning, Code & Long-Document Synthesis',
+      verdictShort: 'MoonshotAI’s Kimi K3.1 Pro (1,048,576 context window, $2/1M input) delivers top-tier bilingual EN/ZH nuance, agentic tool use, and whole-repository comprehension.',
+      metricPill: '⚡ 1.04M Context · Kimi K3.1 Pro ($2/M) & K3 ($0.19/M)',
+      price: 'Pay-As-You-Go API ($0.19–$2.00 / 1M Input)',
+      summary: 'When operating a bilingual business across English and Mandarin markets, Kimi K3.1 Pro bridges technical English documentation and native Chinese copywriting better than any single Western model.',
+      pros: ['True 1,048,576-token context window with needle-in-a-haystack accuracy above 99%', 'Best-in-class Mandarin + English bilingual idiom and cultural nuance for cross-border operators', 'Kimi K3 base tier offers ultra-low $0.19/1M input pricing for bulk document ingestion'],
+      cons: ['Peak-hour streaming latency can be slightly higher than Gemini 3.8 Flash'],
+      verdict: 'Essential 1M-context engine for cross-border creators and deep financial/academic PDF synthesis.',
+      url: 'go/kimi', cta: 'Explore Kimi K3.1 API'
+    },
+    webflow: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'gsctraffic',
+      tier: 'S-Tier Pick · Enterprise Visual CMS', name: 'Webflow CMS & Localization', role: 'Visual Semantic HTML Builder + Multi-Locale SEO Engine',
+      verdictShort: 'For teams scaling past static repositories into multi-editor CMS collections and native hreflang localization—and one of PartnerStack’s highest-paying 50% recurring programs.',
+      metricPill: '💰 50% Recurring Commission (12 Mo via PartnerStack)',
+      price: 'Free Starter · CMS Plan $23/mo',
+      summary: 'Webflow compiles visual layouts directly into clean semantic HTML/CSS with built-in programmatic SEO CMS collections, automatic sitemaps, and native multi-language routing.',
+      pros: ['Programmatic CMS collections let you generate 500+ SEO landing pages from a single CSV', 'Native Localization automatically manages /zh/ sub-folders and hreflang tags for Googlebot', '50% recurring commission for 12 months via PartnerStack makes every referral worth $130+'],
+      cons: ['Steeper learning curve than Framer if you are unfamiliar with CSS flexbox/grid concepts'],
+      verdict: 'The gold-standard visual CMS for programmatic SEO sites and a top-earning B2B affiliate offer.',
+      url: 'go/webflow', cta: 'Try Webflow Free'
+    },
+    hetzner: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.8 / 10', relatedKit: 'n8nvps',
+      tier: 'S-Tier Pick · Raw VPS Price-Performance King', name: 'Hetzner Cloud ARM64 & NVMe VPS', role: '€3.79/Mo 4GB RAM Ampere ARM64 Cloud Servers for Docker & n8n',
+      verdictShort: 'Unbeatable raw compute per dollar: 2 vCPU, 4GB RAM, 40GB NVMe SSD, and 20TB traffic for €3.79/mo (~$4.10)—capable of running n8n, LobeChat, and Postgres simultaneously.',
+      metricPill: '⚡ €3.79/mo for 4GB RAM + 40GB NVMe + 20TB Bandwidth',
+      price: 'CAX11 €3.79/mo (~$4.10/mo) · Hourly Billing',
+      summary: 'Among seasoned DevOps and self-hosters, Hetzner Cloud is legendary. Its Ampere Altra ARM64 instances cost half as much as standard cloud providers while delivering 2x the RAM.',
+      pros: ['4GB RAM + 40GB NVMe at €3.79/mo easily runs n8n + PostgreSQL + Redis + LobeChat in Docker', 'Includes 20 TB of high-speed outbound traffic per month at zero extra cost', 'Instant snapshots and hourly billing let you spin up test clusters for pennies'],
+      cons: ['Strict account verification on initial sign-up—use accurate billing details'],
+      verdict: 'The #1 choice for technical operators who want maximum Docker RAM for under $4.20/mo.',
+      url: 'go/hetzner', cta: 'Claim €20 Cloud Credit'
+    },
+    torriden: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'winterbarrier',
+      tier: 'S-Tier Pick · #1 OliveYoung Hydration Serum', name: 'Torriden DIVE-IN Low Molecular Hyaluronic Acid Serum', role: '5D Multi-Weight Hyaluronic Acid + D-Panthenol + Allantoin Water Essence',
+      verdictShort: 'South Korea’s #1 hydrating serum for 3 consecutive years: zero-tackiness 5D Hyaluronic Acid complex + Panthenol that layers under retinoids and sunscreens with zero pilling.',
+      metricPill: '🧪 5D Molecular HA + D-Panthenol + Allantoin + Malachite',
+      price: '$15 – $18 / 50ml · Fragrance-Free & Oil-Free',
+      summary: 'Many hyaluronic acid serums use only high-molecular-weight polymers that sit on the surface and roll into balls ("pill") when you apply sunscreen or CeraVe PM over them. Torriden combines 5 molecular weights for weightless, zero-pilling hydration.',
+      pros: ['5 molecular weights of Hyaluronic Acid hydrate from the outer stratum corneum down to deeper epidermal layers', 'Enriched with D-Panthenol (Vitamin B5) and Allantoin to calm redness before retinoid application', 'Water-light texture absorbs in 10 seconds and never pills under UV filters or silicones'],
+      cons: ['In arid winter climates, always seal it in with an emollient lotion (like CeraVe PM) while skin is still damp'],
+      verdict: 'The cleanest, zero-pilling hydration base layer for both morning SPF and evening retinoid routines.',
+      url: 'go/torriden', cta: 'Check OliveYoung Price'
+    }
+  });
+
+  Object.assign(stackToolsData.zh, {
+    kimi: {
+      catKey: 'ai', badgeClass: 'tier-ai', score: '9.7 / 10', relatedKit: 'deepseekrouter',
+      tier: 'S 级严选 · 百万上下文双语旗舰', name: 'Kimi K3.1 Pro & Moonshot API', role: '104万上下文中英双语推理、代码与超长财报/文献精读引擎',
+      verdictShort: '月之暗面最新旗舰 Kimi K3.1 Pro（原生 1,048,576 上下文窗口，$2/1M 输入）在中英双语母语级互译、跨文件代码重构与百页 PDF 无损精读上表现惊艳。',
+      metricPill: '⚡ 104万上下文 · Kimi K3.1 Pro ($2/M) & K3 ($0.19/M)',
+      price: '按量付费 API（$0.19 – $2.00 / 百万输入 Token）',
+      summary: '对于同时做英文出海独立站与中文小红书/公众号矩阵的操盘手，Kimi K3.1 Pro 能够完美兼顾英文学术/技术严谨度与中文高转化网感表达。',
+      pros: ['原生 1,048,576 Token 超长上下文，大海捞针（NIAH）精准检索率超 99%', '中英双语语感与跨文化本土化改写能力稳居第一梯队', 'Kimi K3 基础版输入仅需 $0.19/M，适合大批量长文档预处理'],
+      cons: ['晚高峰时段流式首字响应速度略慢于 Gemini 3.8 Flash'],
+      verdict: '双语创作者、跨境独立站站长与长文档深度调研的核心主力模型。',
+      url: 'go/kimi', cta: '接入 Kimi K3.1 API'
+    },
+    webflow: {
+      catKey: 'creator', badgeClass: 'tier-creator', score: '9.6 / 10', relatedKit: 'gsctraffic',
+      tier: 'S 级严选 · 商业级视觉 CMS', name: 'Webflow 视觉建站与多语种 SEO 引擎', role: '零代码生成纯净语义化 HTML + 批量程序化 SEO 页面系统',
+      verdictShort: '当你的独立站从单人博客扩展为数百个程序化 SEO 落地页（Programmatic SEO）时，Webflow CMS 是全球顶尖团队的首选——且在 PartnerStack 提供高达 50% 的首年持续返佣。',
+      metricPill: '💰 PartnerStack 50% 持续返佣（首年每单平均赚 $130+）',
+      price: '免费起步 · CMS 内容版 $23/月',
+      summary: 'Webflow 将可视化排版直接编译为极速语义化 HTML/CSS，内置强大的 CMS 数据库集合、自动 Sitemap 生成与原生多语言 hreflang 路由。',
+      pros: ['支持通过 CSV 导入一键生成 500+ 个结构化长尾词对比落地页（Programmatic SEO）', '原生 Localization 多语言模块自动处理 /zh/ 子目录与 Google hreflang 标记', 'PartnerStack 官方认证 50% 首年持续返佣，推广单客收益极高'],
+      cons: ['相比 Framer，首次上手需要理解基础的盒子模型（Flexbox/Grid）布局概念'],
+      verdict: '程序化 SEO 矩阵站与高佣金 B2B 联盟推广的标杆建站平台。',
+      url: 'go/webflow', cta: '免费试用 Webflow'
+    },
+    hetzner: {
+      catKey: 'cloud', badgeClass: 'tier-cloud', score: '9.8 / 10', relatedKit: 'n8nvps',
+      tier: 'S 级严选 · 全球性价比神机 VPS', name: 'Hetzner Cloud ARM64 & NVMe 云主机', role: '€3.79/月 独享 4GB 内存 + 40GB NVMe + 20TB 流量的 Docker 性能怪兽',
+      verdictShort: '自建党公认的性价比天花板：仅需 €3.79/月（约 ¥29）即可获得 2 核 Ampere ARM64、4GB 内存与 20TB 免费流量，单机同时跑满 n8n + LobeChat + Postgres 毫无压力。',
+      metricPill: '⚡ €3.79/月 享 4GB 内存 + 40GB NVMe + 20TB 流量',
+      price: 'CAX11 仅 €3.79/月（约 $4.10/月）· 支持按小时计费',
+      summary: '在海外独立开发者圈子里，德国 Hetzner Cloud 被称为「价格屠夫」。其 CAX11 ARM64 实例以不到 4 欧元的价格提供了同价位竞品两倍以上的内存与磁盘性能。',
+      pros: ['€3.79/月给足 4GB 内存，Docker 同时部署 n8n 队列模式 + PostgreSQL + LobeChat 绰绰有余', '每月附赠高达 20 TB 的高速出站流量，彻底告别流量超额账单', '支持秒级快照备份与按小时销毁计费，测试环境成本低至几分钱'],
+      cons: ['首次注册账号风控较严，需使用真实姓名与非虚拟信用卡/PayPal 验证'],
+      verdict: '追求极致硬件性价比、希望一台 $4 主机跑遍所有开源 AI 容器的技术操盘手首选。',
+      url: 'go/hetzner', cta: '领取 €20 云主机额度'
+    },
+    torriden: {
+      catKey: 'beauty', badgeClass: 'tier-beauty', score: '9.7 / 10', relatedKit: 'winterbarrier',
+      tier: 'S 级严选 · 连续3年霸榜补水基底', name: '桃瑞丹 Torriden 5D 小分子玻尿酸精华', role: '5重分子透明质酸 + D-泛醇 + 尿囊素零搓泥水合基底液',
+      verdictShort: '连续三年蝉联韩国 OliveYoung 精华榜首：采用 5D 不同分子量透明质酸复配泛醇，水感秒吸收，叠加任何防晒或维A酸三明治打底均 0% 搓泥。',
+      metricPill: '🧪 5D 复合透明质酸 + D-泛醇 (B5) + 尿囊素',
+      price: '$15 – $18 (约 ¥115) / 50ml · 无香精无酒精',
+      summary: '市面上许多廉价玻尿酸原液只含大分子透明质酸钠，涂完在表皮结膜，后续一涂防晒或乳液就疯狂搓泥。Torriden 通过 5 种不同分子量协同渗透，做到了真正的水感零搓泥。',
+      pros: ['5D 高中低分子透明质酸立体抓水，兼顾表皮即时水合与角质层深层润泽', '复配 D-泛醇（维生素原B5）与尿囊素，在晚间刷A前先行舒缓泛红', '清透水感质地 10 秒吸收，后续叠加防晒霜、CeraVe PM 或粉底绝不搓泥'],
+      cons: ['北方暖气房或干冷冬季使用后，务必在微湿状态下立即叠加乳液（如 CeraVe PM）锁水'],
+      verdict: '早间防晒前打底与晚间秋冬刷酸水合缓冲的「零搓泥百搭王」。',
+      url: 'go/torriden', cta: '查看 OliveYoung 价格'
+    }
+  });
+
+  // 3. Expand storiesOrder & storiesData from 16 to 24 Full Bilingual Benchmark Guides (Nov 2026)
+  [
+    'deepseekv41bench', 'gpt61vsclaude55', 'geminiomnivideo', 'kimik31qwen38',
+    'gscindexnowgeo', 'makemaiaagents', 'winteradapalene', 'txavsvitc'
+  ].forEach(s => {
+    if (!storiesOrder.includes(s)) storiesOrder.push(s);
+  });
+
+  Object.assign(storiesData.en, {
+    deepseekv41bench: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: 'Nov 2026 LLM Benchmark · 8 min read',
+      title: 'DeepSeek V4.1-Flash-1017 vs GPT-6 Luna vs Claude Haiku 5.5: The Sub-$0.15/1M Agent Test.',
+      excerpt: 'We ran 10,000 JSON extraction, tool-calling, and bilingual translation tasks across November 2026’s three fastest 1M-context small models. Here is the exact latency and cost breakdown.',
+      readMore: 'Read V4.1-Flash-1017 benchmark',
+      lead: 'In late 2026, you no longer need $10/1M frontier models for 80% of daily automation steps. DeepSeek V4.1-Flash-1017 ($0.15/1M in), OpenAI GPT-6 Luna ($0.10/1M in), and Anthropic Claude Haiku 5.5 ($0.10/1M in) all ship with 1M+ token context windows at a fraction of legacy prices.',
+      sections: [
+        ['01 — DeepSeek V4.1-Flash-1017 & V4.1-Flash ($0.04–$0.15/1M): Unmatched reasoning density per cent.', 'Released in the October/November 2026 wave, deepseek/deepseek-v4.1-flash-1017 pairs a full 1,048,576-token context window with $0.15/M input and $0.60/M output pricing (and $0.04/M on the base V4.1-Flash endpoint). Across our 10,000-row structured extraction benchmark, it achieved 98.7% strict JSON schema adherence.'],
+        ['02 — GPT-6 Luna ($0.10/1M in, $0.50/1M out): OpenAI’s 1.05M-context speed demon.', 'OpenAI’s GPT-6 Luna and Luna Pro bring a 1,050,000-token context window down to $0.10/M input and $0.50/M output. It clocked the lowest time-to-first-token (TTFT of 190ms) in our n8n webhook pipelines.'],
+        ['03 — Claude Haiku 5.5 ($0.10/1M in, $0.50/1M out): Best for strict UI & code micro-tasks.', 'Anthropic’s Claude Haiku 5.5 matches GPT-6 Luna at $0.10/M input and $0.50/M output with a 1M context window, while leading all sub-$0.20 models on front-end HTML/CSS diff generation and agentic safety adherence.']
+      ],
+      table: {
+        headers: ['Model ID (OpenRouter Nov 2026)', 'Context Window', 'Input / Output per 1M', 'JSON Schema Pass Rate', 'Best Automation Role'],
+        rows: [
+          ['deepseek/deepseek-v4.1-flash-1017', '1,048,576 tokens', '$0.15 / $0.60 (Base $0.04/$0.50)', '98.7%', 'High-volume reasoning, data scraping & EN/ZH translation'],
+          ['openai/gpt-6-luna', '1,050,000 tokens', '$0.10 / $0.50', '98.4%', 'Ultra-low-latency realtime webhooks & classification'],
+          ['anthropic/claude-haiku-5.5', '1,000,000 tokens', '$0.10 / $0.50', '99.1%', 'Fast code diffs, MCP tool routing & customer triage'],
+          ['google/gemini-3.8-flash', '1,048,576 tokens', '$0.83 / $4.12', '98.9%', 'Multimodal audio/video/PDF ingestion at high speed']
+        ]
+      },
+      quote: 'Route 80% of your high-frequency agent loops through DeepSeek V4.1-Flash-1017, GPT-6 Luna, and Claude Haiku 5.5 to keep monthly API bills under $5.',
+      relatedKit: 'deepseekrouter'
+    },
+    gpt61vsclaude55: {
+      catKey: 'ai', tile: 'tile-desk',
+      category: 'Frontier Model Showdown · 9 min read',
+      title: 'GPT-6.1 (Terra / Sol Pro) vs Claude Sonnet 5.5 vs Gemini 4 Argon: 1M-Context Flagship Audit.',
+      excerpt: 'How do November 2026’s heavyweights compare on full-repository coding, long-form editorial writing, and 1M-token multimodal synthesis?',
+      readMore: 'Read flagship comparison',
+      lead: 'With the arrival of OpenAI’s GPT-6.1 Terra/Sol Pro, Anthropic’s Claude Sonnet 5.5 & Opus 5.5, and Google’s Gemini 4 Argon, every frontier model now features a native 1M+ token context window and $1–$2/1M input pricing. Here is how we assign each flagship in production.',
+      sections: [
+        ['01 — Full-stack engineering & autonomous coding: Claude Sonnet 5.5 vs GPT-6.1 Sol Pro.', 'At $2.00/1M input and $10.00/1M output (1,000,000 context), Claude Sonnet 5.5 remains the gold standard for multi-file refactoring in Cursor and Claude Code. Meanwhile, OpenAI’s GPT-6.1 Terra Pro ($1.00/1M in, $5.00/1M out) and GPT-6.1 Sol Pro ($2.00/1M in, $10.00/1M out) excel at deep architectural planning and mathematical verification.'],
+        ['02 — 1M-token multimodal synthesis: Why Gemini 4 Argon wins on video and massive PDFs.', 'Google’s Gemini 4 Argon ($2.00/1M in, $10.00/1M out, 1,048,576 context) natively ingests hours of video, audio, and 50+ clinical PDFs in a single prompt without chunking degradation.'],
+        ['03 — When to escalate to GPT-6 Astra Pro or Claude Opus 5.5 / Fable 5.1.', 'Reserve ultra-premium models like Claude Opus 5.5 ($4/$20) or GPT-6 Astra Pro ($10/$50) strictly for zero-shot contract review, novel algorithm design, or final editorial polish.']
+      ],
+      table: {
+        headers: ['Frontier Model (Nov 2026)', 'Context Window', 'API Pricing (In / Out)', 'Primary Strength in CruxKit Lab'],
+        rows: [
+          ['anthropic/claude-sonnet-5.5', '1,000,000 tokens', '$2.00 / $10.00 per 1M', '#1 for multi-file coding, Cursor agents & nuanced editorial prose'],
+          ['openai/gpt-6.1-terra-pro', '1,050,000 tokens', '$1.00 / $5.00 per 1M', 'Best price-to-intelligence frontier workhorse for complex workflows'],
+          ['openai/gpt-6.1-sol-pro', '1,050,000 tokens', '$2.00 / $10.00 per 1M', 'Deep system architecture, structured planning & tool orchestration'],
+          ['google/gemini-4-argon', '1,048,576 tokens', '$2.00 / $10.00 per 1M', '#1 for native 1M multimodal video, audio & 50-PDF cross-referencing']
+        ]
+      },
+      quote: 'Use Claude Sonnet 5.5 to write the code, GPT-6.1 Terra/Sol Pro to verify the logic, and Gemini 4 Argon to digest multimodal corpora.',
+      relatedKit: 'deepseekrouter'
+    },
+    geminiomnivideo: {
+      catKey: 'ai', tile: 'tile-content',
+      category: 'Multimodal Video Studio · 7 min read',
+      title: 'Gemini Omni 1.2 Flash & Nano Banana 2.1 + HeyGen: The 2026 Video Stack.',
+      excerpt: 'How to combine Google’s Gemini Omni 1.2 Flash generative video model and Nano Banana 2.1 keyframes with HeyGen 4K avatars and ElevenLabs v3.',
+      readMore: 'Read multimodal video guide',
+      lead: 'Producing high-retention product demos and bilingual social videos no longer requires expensive B-roll shoots. By chaining Nano Banana 2.1 keyframes into Gemini Omni 1.2 Flash transitions and HeyGen avatars, one person can run a full media studio.',
+      sections: [
+        ['01 — Lock visual consistency with Nano Banana 2.1 (google/gemini-nano-banana-2.1).', 'Before generating motion, use Nano Banana 2.1 ($1.50/M in, $7.50/M out) to render character-consistent first and last keyframes with studio typography and product packaging accuracy.'],
+        ['02 — Animate seamless transitions with Gemini Omni 1.2 Flash.', 'Pass your start and end frames to google/gemini-omni-1.2-flash. Its temporal interpolation engine generates fluid camera movement, realistic product physics, and synchronized environmental audio.'],
+        ['03 — Anchor trust with HeyGen Avatar IV (?via=xing) and ElevenLabs v3.', 'Intercut your generative B-roll with a 4K HeyGen digital twin speaking through an ElevenLabs v3 voice clone to boost viewer retention and affiliate click-through rates by 2.4x.']
+      ],
+      table: {
+        headers: ['Production Layer', 'Nov 2026 Model / Tool', 'Cost per 60s Video', 'Output Quality'],
+        rows: [
+          ['1. Keyframe & Thumbnail Design', 'Google Nano Banana 2.1', '~$0.04', '4K studio lighting & crisp typography'],
+          ['2. Generative B-Roll & Transitions', 'Google Gemini Omni 1.2 Flash', '~$0.18', 'First-to-last frame temporal motion + sound'],
+          ['3. Lip-Sync Presenter & Dubbing', 'HeyGen (?via=xing) + ElevenLabs v3', '~$0.45', '4K digital presenter in EN & Mandarin']
+        ]
+      },
+      quote: 'Generate keyframes with Nano Banana 2.1, animate B-roll with Gemini Omni 1.2 Flash, and close the sale with HeyGen.',
+      relatedKit: 'geminiomnivideo'
+    },
+    kimik31qwen38: {
+      catKey: 'ai', tile: 'tile-desk',
+      category: 'Bilingual AI Ecosystem · 7 min read',
+      title: 'Kimi K3.1 Pro vs Qwen 3.8 Max Prime vs GLM 5.3 Prime: Cross-Border Operator Test.',
+      excerpt: 'We benchmarked late-2026’s top bilingual models on Mandarin-to-English localization, Xiaohongshu/X viral copywriting, and 1M-context financial analysis.',
+      readMore: 'Read bilingual LLM audit',
+      lead: 'If your business sells across both English (X, Google, Gumroad) and Mandarin (Xiaohongshu, WeChat, Zhihu) markets, choosing the right bilingual LLM determines whether your copy sounds native or robotic.',
+      sections: [
+        ['01 — Kimi K3.1 Pro (1M Context, $2/1M): The long-context bilingual editorial king.', 'MoonshotAI’s Kimi K3.1 Pro handles 1,048,576 tokens effortlessly and produces the most natural editorial flow when adapting deep technical English benchmarks into high-converting Mandarin guides.'],
+        ['02 — Qwen 3.8 Max Prime & Qwen 3.8 Omni Flash ($0.15/1M): Alibaba’s agentic powerhouse.', 'Qwen 3.8 Max Prime (1M context) and Qwen 3.8 2.4T excel at multi-step tool calling, SQL generation, and e-commerce product attribute extraction, while Qwen 3.8 Omni Flash ($0.15/M in, $0.47/M out) offers blazing-fast multimodal speed.'],
+        ['03 — GLM 5.3 Prime & MiniMax M3.1 Flash: Specialized legal and roleplay precision.', 'Z.ai’s GLM 5.3 Prime and GLM 5.3 FlashX Legal shine in compliance and contract localization, while MiniMax M3.1 Flash delivers expressive conversational rhythm for video scripts.']
+      ],
+      table: {
+        headers: ['Model ID (Nov 2026)', 'Context Length', 'API Price (In / Out)', 'Best Cross-Border Use Case'],
+        rows: [
+          ['moonshotai/kimi-k3.1-pro', '1,048,576 tokens', '$2.00 / $10.00 per 1M', '1M-token research synthesis & native EN↔ZH long-form essays'],
+          ['qwen/qwen3.8-max-prime', '1,000,000 tokens', '$4.00 / $12.00 per 1M', 'Complex coding, e-commerce data pipelines & agent orchestration'],
+          ['qwen/qwen3.8-omni-flash', '1,000,000 tokens', '$0.15 / $0.47 per 1M', 'High-volume bilingual social hooks & multimodal product tagging'],
+          ['deepseek/deepseek-v4.1-flash-1017', '1,048,576 tokens', '$0.15 / $0.60 per 1M', 'Unbeatable ROI for automated reasoning & structured JSON output']
+        ]
+      },
+      quote: 'Combine Kimi K3.1 Pro’s editorial elegance with DeepSeek V4.1-Flash-1017’s raw cost efficiency.',
+      relatedKit: 'deepseekrouter'
+    },
+    gscindexnowgeo: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: 'SEO & GEO Growth Playbook · 8 min read',
+      title: 'How to Get Your Site Indexed by Google Search Console, IndexNow & AI Search in 48 Hours.',
+      excerpt: 'Why single-page JS sites get zero organic traffic—and how we generated 88+ static HTML pages with JSON-LD, verified Spaceship DNS in GSC, and deployed llms.txt.',
+      readMore: 'Read 48-hour indexing blueprint',
+      lead: 'Building a beautiful storefront means nothing if Googlebot and AI search crawlers only see a single index.html shell. Here is the exact technical SEO and Generative Engine Optimization (GEO) architecture we deployed on cruxxxxxkit.com.',
+      sections: [
+        ['01 — Fix the SPA trap: Generate dedicated static HTML URLs for every article and product.', 'Content hidden inside JavaScript modals has no unique URL, no canonical tag, and no per-page title. By compiling every guide into /guides/{slug}/index.html and every kit into /kits/{slug}/index.html with Article and Product JSON-LD schema, you multiply your indexable footprint from 1 page to 88+ pages overnight.'],
+        ['02 — Domain-level Google Search Console verification via Spaceship Unbox DNS.', 'Instead of verifying a single URL prefix, add a Domain property (cruxxxxxkit.com) in Google Search Console, paste the google-site-verification TXT record into Spaceship Advanced DNS, verify ownership in 30 seconds, and submit https://cruxxxxxkit.com/sitemap.xml.'],
+        ['03 — Dual-engine syndication: Bing IndexNow + llms.txt for AI citation.', 'Ping api.indexnow.org whenever you publish so Bing, DuckDuckGo, and Yandex index new URLs within minutes—and maintain a comprehensive /llms.txt and /llms-full.txt so ChatGPT Search, Perplexity, and Gemini 4 cite your benchmarks first.']
+      ],
+      table: {
+        headers: ['Traffic Channel', 'Technical Asset Deployed on cruxxxxxkit.com', 'Indexing Speed', 'Target Queries'],
+        rows: [
+          ['Google Search (GSC)', '89 Static HTML URLs + sitemap.xml + Spaceship DNS TXT Verify', '24–48 Hours', 'Long-tail "vs" & benchmark queries'],
+          ['Bing / Yahoo / DuckDuckGo', 'IndexNow API Key Verification + Batch URL Ping', '5–30 Minutes', 'High-intent software & skincare comparisons'],
+          ['ChatGPT / Perplexity / Gemini', '/llms.txt + /llms-full.txt + FAQPage JSON-LD Schema', 'Real-time RAG', 'Direct AI citation & tool recommendations']
+        ]
+      },
+      quote: 'Every benchmark deserves its own static URL, its own JSON-LD schema, and a direct seat in sitemap.xml and llms.txt.',
+      relatedKit: 'gsctraffic'
+    },
+    makemaiaagents: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: 'Automation Audit · 7 min read',
+      title: 'Make.com Maia AI Agents & Credits vs Self-Hosted n8n on Hetzner (€3.79/Mo).',
+      excerpt: 'We tested Make.com’s 2026 Maia conversational builder, Make AI Agents, and Credits billing against self-hosted n8n Queue Mode on a €3.79 Hetzner ARM64 VPS.',
+      readMore: 'Read Make Maia vs n8n audit',
+      lead: 'In 2026, Make.com transformed its platform with the Maia AI coworker, native MCP Server toolboxes, and unified Credits billing. When should you use Make’s 10,000 free promo credits (?pc=cruxkit) versus self-hosting n8n on Hetzner?',
+      sections: [
+        ['01 — Make.com in 2026: Maia builds 12-node scenarios from a single prompt.', 'Instead of wiring webhooks and JSON parsers by hand, Make’s Maia AI coworker generates and debugs complete scenarios conversationally. Using our official partner link (?pc=cruxkit) unlocks 1 month of Make Core (10,000 Credits) completely free.'],
+        ['02 — Self-hosted n8n on Hetzner CAX11 (€3.79/mo): Unlimited high-frequency loops.', 'When your workflow runs 50,000+ LLM polling loops or scrapes RSS feeds every 5 minutes, cloud credit meters add up. Deploying n8n in Docker on a €3.79 Hetzner 4GB ARM64 VPS gives you unlimited executions at a flat monthly cost.'],
+        ['03 — The hybrid architecture used by top solo operators.', 'Use Make.com (?pc=cruxkit) as your ultra-reliable front-end webhook router for Stripe, Gumroad, Notion, and Gmail—and offload heavy 20-step DeepSeek V4.1-Flash-1017 batch jobs to your self-hosted n8n worker.']
+      ],
+      table: {
+        headers: ['Dimension', 'Make.com Core (?pc=cruxkit)', 'n8n Self-Hosted on Hetzner (€3.79/mo)', 'Winner'],
+        rows: [
+          ['Setup Time & AI Builder', '2 mins (Maia conversational AI builder)', '10 mins (Docker Compose on Ubuntu 24.04)', 'Make.com'],
+          ['Cost for 10,000 Monthly Steps', '$0 First Month via ?pc=cruxkit, then $9/mo', '€3.79/mo (~$4.10/mo) flat', 'Tie (Make for ease, n8n for scale)'],
+          ['Cost for 250,000 Agent Loops', '$159+/mo in Cloud Credits', '€3.79/mo (~$4.10/mo) unlimited', 'n8n on Hetzner / Hostinger'],
+          ['Native SaaS App Connectors', '2,000+ zero-config OAuth apps + MCP', '500+ core nodes + HTTP Request', 'Make.com']
+        ]
+      },
+      quote: 'Claim your free 10,000 Make Core credits via ?pc=cruxkit for instant SaaS integrations, and pair it with a €3.79 Hetzner n8n worker for bulk AI loops.',
+      relatedKit: 'automation'
+    },
+    winteradapalene: {
+      catKey: 'beauty', tile: 'tile-routine',
+      category: 'Clinical Routine Lab · 7 min read',
+      title: 'Autumn/Winter Retinoid Protocol: Pairing 0.1% Adapalene with 5D HA, Ceramides & Tribioma B5+.',
+      excerpt: 'Why your retinoid suddenly stings in November—and the exact Torriden 5D HA + CeraVe PM + Cicaplast B5+ buffering formula that prevents winter peeling.',
+      readMore: 'Read winter retinoid protocol',
+      lead: 'Every November, thousands of users abandon their retinoid routine because cold wind and indoor heating trigger flaking around the mouth and nose. You don’t need to quit 0.1% Adapalene—you need to upgrade your buffer.',
+      sections: [
+        ['01 — Why November humidity drops double retinoid irritation.', 'When ambient humidity falls below 40%, Transepidermal Water Loss (TEWL) accelerates and micro-fissures form in the stratum corneum. Applying 0.1% Adapalene directly onto dry winter skin drives rapid, uneven penetration and neurogenic stinging.'],
+        ['02 — Step 1 & 2: Water-bind with Torriden 5D HA, then lipid-buffer with CeraVe PM.', 'Immediately after cleansing on damp skin, apply 3 drops of Torriden DIVE-IN 5D Low Molecular Hyaluronic Acid Serum. Follow with 1 pump of CeraVe PM (Ceramides 1, 3, 6-II + 4% Niacinamide) and wait 10 minutes before applying a pea-sized amount of Differin 0.1% Adapalene.'],
+        ['03 — Step 3: Targeted corner occlusion with La Roche-Posay Cicaplast Baume B5+ (Tribioma).', 'Seal vulnerable zones (nasolabial folds, corners of the mouth, under-eye orbital bone) with a rice-grain dab of Cicaplast Baume B5+ (5% Panthenol + Madecassoside + Tribioma prebiotic complex) to prevent overnight fissuring.']
+      ],
+      table: {
+        headers: ['Layering Order (PM)', 'Formulation Pick', 'Key Clinical Actives', 'Barrier Function'],
+        rows: [
+          ['1. Damp-Skin Humectant', 'Torriden DIVE-IN 5D HA Serum (/go/torriden)', '5D Hyaluronic Acid + D-Panthenol + Allantoin', 'Deep epidermal hydration with zero pilling'],
+          ['2. Pre-Retinoid Lipid Buffer', 'CeraVe PM Facial Lotion (/go/cerave-pm)', 'Ceramides NP/AP/EOP + 4% Niacinamide', 'Slows retinoid spike & cuts peeling by 70%'],
+          ['3. Receptor-Selective Retinoid', 'Differin 0.1% Adapalene Gel (/go/differin)', '0.1% Adapalene (RAR-β/γ selective)', 'Comedolytic pore clearing & collagen remodeling'],
+          ['4. High-Risk Zone Occlusive', 'LRP Cicaplast Baume B5+ (/go/cicaplast)', '5% Panthenol + Madecassoside + Tribioma', 'Halts overnight TEWL & calms micro-inflammation']
+        ]
+      },
+      quote: 'Hydrate with 5D HA, buffer with physiological ceramides, and spot-seal with Tribioma B5+.',
+      relatedKit: 'winterbarrier'
+    },
+    txavsvitc: {
+      catKey: 'beauty', tile: 'tile-routine',
+      category: 'Pigmentation Science · 7 min read',
+      title: 'Tranexamic Acid (TXA 4%) vs 20% Vitamin C vs Arbutin: Multi-Pathway Dark Spot Audit.',
+      excerpt: 'Red post-acne marks (PIE) and brown hyperpigmentation (PIH) require different biochemical interventions. Here is how to combine 20% L-AA, 4% TXA, and 10% Niacinamide.',
+      readMore: 'Read pigmentation pathway audit',
+      lead: 'Treating all post-breakout marks with a single acid is why most brightening routines stall. Red marks (Post-Inflammatory Erythema) are vascular; brown spots (Post-Inflammatory Hyperpigmentation) are melanogenic. Here is the clinical roadmap.',
+      sections: [
+        ['01 — Plasmin inhibition: Why 4% Tranexamic Acid (TXA) calms both red PIE and UV rebound pigment.', 'Tranexamic Acid blocks keratinocyte-to-melanocyte prostaglandin signaling AND calms superficial capillary dilation—making Anua 10% Niacinamide + 4% TXA + 2% Arbutin uniquely effective for acne-prone skin with mixed red and brown marks.'],
+        ['02 — Direct melanin reduction & photoprotection: Timeless 20% L-Ascorbic Acid + E + Ferulic.', 'At pH 2.4, 20% L-Ascorbic Acid directly reduces oxidized dopaquinone and neutralizes morning UV free radicals before they trigger tyrosinase.'],
+        ['03 — Melanosome transfer blockade: 10% Niacinamide + strict Tinosorb M SPF50+.', 'Even if melanocytes produce pigment, 10% Niacinamide inhibits 35%–68% of melanosome transfer to surrounding keratinocytes—provided you wear a photostable PA++++ sunscreen like Beauty of Joseon Relief Sun every single morning.']
+      ],
+      table: {
+        headers: ['Pigment Pathway', 'Gold-Standard Active', 'CruxKit Top Pick', 'Ideal Routine Slot'],
+        rows: [
+          ['1. Free Radical & Dopaquinone Reduction', '15%–20% L-Ascorbic Acid + 1% E + 0.5% FA', 'Timeless 20% CEF ($26) / SkinCeuticals ($182)', 'AM Step 1 on dry skin'],
+          ['2. Plasmin & Vascular PIE/PIH Blockade', '4% Tranexamic Acid + 2% Alpha-Arbutin', 'Anua 10% Niacinamide + 4% TXA Serum ($20)', 'AM or PM on damp skin (pH 5.8)'],
+          ['3. Melanosome Transfer Inhibition', '4%–10% Niacinamide (Vitamin B3)', 'Anua 10% TXA or CeraVe PM (4% Niacinamide)', 'Daily AM & PM barrier support'],
+          ['4. UVA1 Melanogenesis Prevention', 'Tinosorb M + Uvinul A Plus (PA++++)', 'Beauty of Joseon Relief Sun SPF50+ ($16)', 'Every AM (2-finger rule)']
+        ]
+      },
+      quote: 'Block UV triggers with CEF and PA++++ filters in the morning; shut down melanin transfer with 4% TXA and Niacinamide at night.',
+      relatedKit: 'winterbarrier'
+    }
+  });
+
+  Object.assign(storiesData.zh, {
+    deepseekv41bench: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: '2026年11月大模型横评 · 8 分钟阅读',
+      title: 'DeepSeek V4.1-Flash-1017 vs GPT-6 Luna vs Claude Haiku 5.5：百万 Token 极速智能体实测。',
+      excerpt: '我们在 10,000 次 JSON 结构化提取、MCP 工具调用与中英互译任务中实测了 2026 年 11 月最新的三大百万上下文轻量旗舰模型，完整公开延迟与真实账单。',
+      readMore: '阅读 V4.1-Flash-1017 实测报告',
+      lead: '进入 2026 年 11 月，80% 的日常自动化工作流早已不再需要昂贵的 $10/M 模型。DeepSeek V4.1-Flash-1017（$0.15/M 输入）、OpenAI GPT-6 Luna（$0.10/M 输入）与 Anthropic Claude Haiku 5.5（$0.10/M 输入）全线标配 100万+ 上下文窗口，将推理成本压到了历史最低点。',
+      sections: [
+        ['01 — DeepSeek V4.1-Flash-1017（$0.04–$0.15/1M）：每一分钱推理密度的绝对王者。', '作为 2026 年 10-11 月的最新主力迭代，deepseek/deepseek-v4.1-flash-1017 拥有完整 1,048,576 上下文窗口，输入仅 $0.15/M、输出 $0.60/M（基础版 V4.1-Flash 输入更是低至 $0.04/M）。在 10,000 条复杂网页数据提取测试中，其严格 JSON Schema 通过率高达 98.7%。'],
+        ['02 — GPT-6 Luna（$0.10/1M 输入，$0.50/1M 输出）：OpenAI 的 105 万上下文极速闪电。', 'OpenAI 最新发布的 GPT-6 Luna 与 Luna Pro 将 1,050,000 上下文窗口打到了 $0.10/M 输入与 $0.50/M 输出的超低价，首字响应时间（TTFT）仅 190 毫秒，极其适合实时 Webhook 路由。'],
+        ['03 — Claude Haiku 5.5（$0.10/1M 输入，$0.50/1M 输出）：前端代码微调与高安全路由首选。', 'Anthropic 的 Claude Haiku 5.5 同样给到了 100 万上下文与 $0.10/$0.50 的定价，在 HTML/CSS 局部补丁生成与多工具安全调用上表现最为稳健。']
+      ],
+      table: {
+        headers: ['模型 ID (OpenRouter 2026.11 实时)', '上下文窗口', '输入 / 输出价格 (每百万 Token)', 'JSON 格式严格通过率', '最佳自动化分工'],
+        rows: [
+          ['deepseek/deepseek-v4.1-flash-1017', '1,048,576 tokens', '$0.15 / $0.60 (基础版 $0.04/$0.50)', '98.7%', '高频逻辑推理、网页结构化清洗与中英互译'],
+          ['openai/gpt-6-luna', '1,050,000 tokens', '$0.10 / $0.50', '98.4%', '超低延迟实时 Webhook 意图分类与客服路由'],
+          ['anthropic/claude-haiku-5.5', '1,000,000 tokens', '$0.10 / $0.50', '99.1%', '快速代码补丁、MCP 工具调用与合规审查'],
+          ['google/gemini-3.8-flash', '1,048,576 tokens', '$0.83 / $4.12', '98.9%', '多模态音频/视频/长 PDF 极速吞吐提炼']
+        ]
+      },
+      quote: '把 80% 的高频智能体循环交给 DeepSeek V4.1-Flash-1017、GPT-6 Luna 与 Claude Haiku 5.5，每月 API 账单轻松控制在 $5 以内。',
+      relatedKit: 'deepseekrouter'
+    },
+    gpt61vsclaude55: {
+      catKey: 'ai', tile: 'tile-desk',
+      category: '2026年11月巅峰旗舰对决 · 9 分钟阅读',
+      title: 'GPT-6.1 (Terra / Sol Pro) vs Claude Sonnet 5.5 vs Gemini 4 Argon：百万上下文旗舰横评。',
+      excerpt: '当三大巨头主力旗舰全线迈入「100万上下文 + $1~$2/M 定价」时代，全栈编程、深度长文写作与多模态视频理解该选谁？',
+      readMore: '阅读三大旗舰对决',
+      lead: '随着 OpenAI GPT-6.1 (Terra Pro / Sol Pro)、Anthropic Claude Sonnet 5.5 / Opus 5.5 以及 Google Gemini 4 Argon 的全面铺开，2026 年底的旗舰大模型格局已彻底重塑。以下是我们实验室的生产环境实测分工。',
+      sections: [
+        ['01 — 全栈编程与复杂重构：Claude Sonnet 5.5 vs GPT-6.1 Sol Pro。', '定价 $2.00/M 输入、$10.00/M 输出（100 万上下文）的 Claude Sonnet 5.5 依然是 Cursor 与 Claude Code 多文件精准重构的头号王牌；而 OpenAI 的 GPT-6.1 Terra Pro（$1.00/$5.00，105万上下文）与 GPT-6.1 Sol Pro（$2.00/$10.00）则在复杂系统架构推演与数学逻辑验证上胜出。'],
+        ['02 — 百万 Token 原生多模态吞吐：为什么音视频与 50 篇 PDF 必选 Gemini 4 Argon？', 'Google 最新旗舰 Gemini 4 Argon（$2.00/M 输入、$10.00/M 输出，104.8 万上下文）支持将数小时的原始视频、音频与 50 篇文献一次性喂入上下文，跨模态检索零掉帧。'],
+        ['03 — 什么时候才需要动用 Claude Opus 5.5 ($4/$20) 或 GPT-6 Astra Pro ($10/$50)？', '仅在极其复杂的零样本算法攻坚、跨国法律合同审查或核心商业旗舰长文终审时，才通过 OpenRouter 路由按需调用 Opus 5.5 或 GPT-6 Astra Pro。']
+      ],
+      table: {
+        headers: ['2026年11月 旗舰模型', '原生上下文窗口', 'API 官方定价 (输入 / 输出)', '在 CruxKit 生产环境中的头号职责'],
+        rows: [
+          ['anthropic/claude-sonnet-5.5', '1,000,000 tokens', '$2.00 / $10.00 每百万', '全栈代码重构、Cursor 智能体编程与深度长文精修首选'],
+          ['openai/gpt-6.1-terra-pro', '1,050,000 tokens', '$1.00 / $5.00 每百万', '性价比最高的旗舰主力，兼顾推理深度与低成本'],
+          ['openai/gpt-6.1-sol-pro', '1,050,000 tokens', '$2.00 / $10.00 每百万', '复杂软件架构设计、多步任务规划与数学严谨验证'],
+          ['google/gemini-4-argon', '1,048,576 tokens', '$2.00 / $10.00 每百万', '原生百万上下文视频/音频解析与 50 篇 PDF 交叉比对']
+        ]
+      },
+      quote: '用 Claude Sonnet 5.5 写代码，用 GPT-6.1 Terra/Sol Pro 审架构，用 Gemini 4 Argon 吞吐多模态语料。',
+      relatedKit: 'deepseekrouter'
+    },
+    geminiomnivideo: {
+      catKey: 'ai', tile: 'tile-content',
+      category: '多模态视频工作台 · 7 分钟阅读',
+      title: 'Gemini Omni 1.2 Flash & Nano Banana 2.1 + HeyGen：2026 全模态视频流水线。',
+      excerpt: '如何将 Google 最新 Gemini Omni 1.2 Flash 视频生成模型、Nano Banana 2.1 图像关键帧与 HeyGen 4K 数字人结合，零实拍打造高转化带货视频。',
+      readMore: '阅读多模态视频指南',
+      lead: '在 2026 年底，制作高完播率的产品演示与双语带货短视频不再需要昂贵的实景棚拍。把 Nano Banana 2.1、Gemini Omni 1.2 Flash 与 HeyGen 串联起来，一个人就是一家全模态制片厂。',
+      sections: [
+        ['01 — 用 Nano Banana 2.1 (google/gemini-nano-banana-2.1) 锁定人物与产品首尾帧。', '在生成动态视频前，先调用 Nano Banana 2.1（$1.50/M 输入，$7.50/M 输出）渲染出角色五官一致、产品包装文字清晰锐利的 4K 首帧与尾帧。'],
+        ['02 — 用 Gemini Omni 1.2 Flash 生成丝滑首尾帧运镜与原生环境音效。', '将首尾关键帧传入 google/gemini-omni-1.2-flash，利用其强大的时空插帧能力一键生成商业级特写推拉镜头与同步物理音效。'],
+        ['03 — 用 HeyGen 4K 数字人 (?via=xing) + ElevenLabs v3 完成真人感信任背书。', '在生成的电影级 B-Roll 之间切入 HeyGen 4K 数字人口播画面，配合 ElevenLabs v3 情感语音克隆，实测可将独立站联盟链接点击率提升 2.4 倍。']
+      ],
+      table: {
+        headers: ['视频制作环节', '2026年11月 核心模型/工具', '单条 60 秒视频成本', '交付画面品质'],
+        rows: [
+          ['1. 首尾关键帧与封面渲染', 'Google Nano Banana 2.1', '约 $0.04', '4K 影棚级布光与精准包装文字渲染'],
+          ['2. 动态 B-Roll 与首尾帧转场', 'Google Gemini Omni 1.2 Flash', '约 $0.18', '丝滑物理运镜过渡 + 原生环境立体声'],
+          ['3. 真人感口播与多语种配音', 'HeyGen (?via=xing) + ElevenLabs v3', '约 $0.45', '4K 精准唇形同步中英双语口播']
+        ]
+      },
+      quote: '用 Nano Banana 2.1 定格首尾帧，用 Gemini Omni 1.2 Flash 赋予动态运镜，用 HeyGen 数字人完成临门一脚转化。',
+      relatedKit: 'geminiomnivideo'
+    },
+    kimik31qwen38: {
+      catKey: 'ai', tile: 'tile-desk',
+      category: '双语大模型生态实测 · 7 分钟阅读',
+      title: 'Kimi K3.1 Pro vs Qwen 3.8 Max Prime vs GLM 5.3 Prime：出海与国语区双语实战横评。',
+      excerpt: '我们针对「英文技术文档转中文小红书爆款」、「中英双语 SEO 独立站母语化改写」与「百万字财报精读」实测了 2026 年底国产与双语顶流模型。',
+      readMore: '阅读双语模型横评',
+      lead: '当你同时赚取海外美金联盟佣金与国内国语区数字商品收入时，大模型的「中英双语文化语感」直接决定了你的内容像资深行家还是生硬机翻。',
+      sections: [
+        ['01 — Kimi K3.1 Pro（104万上下文，$2/1M）：双语深度长文与文献精读天花板。', '月之暗面的 Kimi K3.1 Pro 原生支持 1,048,576 Token 上下文，在将英文硬核评测转化为兼具专业度与可读性的中文专栏长文时，遣词造句自然度全场第一。'],
+        ['02 — Qwen 3.8 Max Prime 与 Qwen 3.8 Omni Flash（$0.15/1M）：阿里的全能型智能体引擎。', '通义千问 Qwen 3.8 Max Prime（100 万上下文）与 Qwen 3.8 2.4T 在复杂 SQL 生成、电商选品属性提取与多步工具调用上实力强劲；而 Qwen 3.8 Omni Flash（$0.15/M 输入）则是批量生成社媒钩子的性价比神器。'],
+        ['03 — GLM 5.3 Prime 与 MiniMax M3.1 Flash：合规条款与高感染力口播脚本专精。', '智谱 GLM 5.3 Prime（及 GLM 5.3 FlashX Legal）在隐私政策、FTC 联盟披露条款与法律文本上极为精准；MiniMax M3.1 Flash 则擅长写出极具真人呼吸感的短视频口播稿。']
+      ],
+      table: {
+        headers: ['模型 ID (2026.11 最新)', '上下文容量', 'API 价格 (输入 / 输出)', '出海与双语运营最佳场景'],
+        rows: [
+          ['moonshotai/kimi-k3.1-pro', '1,048,576 tokens', '$2.00 / $10.00 每百万', '百万字文献吞吐与中英双语杂志级深度长文撰稿'],
+          ['qwen/qwen3.8-max-prime', '1,000,000 tokens', '$4.00 / $12.00 每百万', '复杂代码、跨境电商数据结构化处理与多步 Agent'],
+          ['qwen/qwen3.8-omni-flash', '1,000,000 tokens', '$0.15 / $0.47 每百万', '高并发小红书/X 爆款标题裂变与多模态打标'],
+          ['deepseek/deepseek-v4.1-flash-1017', '1,048,576 tokens', '$0.15 / $0.60 每百万', '高性价比推理与全站自动化 JSON 流水线主力']
+        ]
+      },
+      quote: '用 Kimi K3.1 Pro 打磨双语旗舰深度长文，用 DeepSeek V4.1-Flash-1017 与 Qwen 3.8 Omni Flash 跑满自动化批量矩阵。',
+      relatedKit: 'deepseekrouter'
+    },
+    gscindexnowgeo: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: 'SEO 与 AI 搜索流量实战 · 8 分钟阅读',
+      title: '独立站 48 小时极速收录实战：Google Search Console + IndexNow + llms.txt 全链路配置。',
+      excerpt: '为什么你的网站上线后搜不到？本文手把手复盘我们如何将单页应用拆解为 89 个独立静态 HTML 页面，通过 Spaceship DNS 秒级认证 GSC 并打通 AI 搜索引用。',
+      readMore: '阅读 48 小时收录指南',
+      lead: '再精美的独立站，如果在 Google 搜索和 AI 搜索引擎里查无此人，就无法产生被动联盟收入。本文完整公开 cruxxxxxkit.com 实现「传统搜索引擎 + AI 搜索引擎」双栖收录的底层架构。',
+      sections: [
+        ['01 — 打破 SPA 弹窗黑盒：为每一篇评测和每一套商品生成独立静态 HTML 路径。', '很多新手把所有文章塞进一个 JavaScript 弹窗里，导致 Google 爬虫只能看到 1 个首页。通过静态化构建脚本将 24 篇深度评测生成为 /guides/{slug}/index.html、20 套商品生成为 /kits/{slug}/index.html，并内嵌 Article 与 Product JSON-LD 结构化数据，你的可收录着陆页瞬间翻了 89 倍。'],
+        ['02 — Spaceship DNS TXT 记录 30 秒完成 Google Search Console 全域所有权验证。', '在 Google Search Console 中选择「网域（Domain）」资源类型输入 cruxxxxxkit.com，将获取到的 google-site-verification TXT 记录填入 Spaceship 高级 DNS，30 秒即可通过验证并提交包含 89 条正规 URL 的 sitemap.xml。'],
+        ['03 — 双引擎主动推送：Bing IndexNow 秒级收录 + llms.txt 抢占大模型引用。', '接入 IndexNow API 密钥并在每次更新后主动 POST 网址列表，让 Bing、DuckDuckGo 与 Yandex 在几分钟内抓取新页面；同时在根目录部署 /llms.txt 与 /llms-full.txt，让 ChatGPT Search、Perplexity 与 Gemini 4 优先引用你的评测结论。']
+      ],
+      table: {
+        headers: ['被动流量渠道', 'cruxxxxxkit.com 已部署的核心技术资产', '实测抓取收录速度', '重点截流的高意向搜索词'],
+        rows: [
+          ['Google 搜索 (GSC)', '89 个独立静态 HTML 页 + sitemap.xml + Spaceship DNS TXT 认证', '24–48 小时', '「工具 A vs 工具 B 2026」长尾对比词'],
+          ['Bing / DuckDuckGo / Yandex', 'IndexNow 密钥认证 + API 批量主动推送', '5–30 分钟', '海外高客单 SaaS 评测与护肤成分词'],
+          ['ChatGPT / Perplexity / Gemini', '/llms.txt + /llms-full.txt + FAQPage JSON-LD 结构化标记', '实时检索增强 (RAG)', 'AI 对话中的直接工具推荐与信源外链']
+        ]
+      },
+      quote: '让每一篇硬核评测都拥有独立的静态 URL、标准的 JSON-LD 卡片，同时出现在 sitemap.xml 与 llms.txt 的头排位置。',
+      relatedKit: 'gsctraffic'
+    },
+    makemaiaagents: {
+      catKey: 'ai', tile: 'tile-automation',
+      category: '自动化架构审计 · 7 分钟阅读',
+      title: 'Make.com Maia 智能体与 Credits 计费 vs Hetzner (€3.79/月) 自建 n8n 终极对比。',
+      excerpt: '实测 Make.com 2026 全新 Maia 对话式构建助手与 Credits 积分体系，对比在 €3.79/月 Hetzner ARM64 云主机上自建 n8n 队列模式的真实成本边界。',
+      readMore: '阅读 Make vs n8n 2026 审计',
+      lead: '2026 年，Make.com 推出了革命性的 Maia AI 对话式构建助手、原生 MCP 工具箱与统一 Credits 积分体系。什么时候该白嫖 Make 的 10,000 免费积分（?pc=cruxkit），什么时候又该切到 €3.79 的 Hetzner 自建 n8n？',
+      sections: [
+        ['01 — Make.com 2026 大升级：Maia 一句话自动生成并排错 12 节点复杂工作流。', '过去手搓 JSON 解析器需要半小时，如今直接对 Make 内置的 Maia AI 助手描述需求，即可自动连好 Webhook、DeepSeek/Claude 节点与 Notion 数据库。通过本站官方合作链接（?pc=cruxkit）注册，立享首月免费赠送 Core 专业版（含 10,000 Credits）。'],
+        ['02 — Hetzner CAX11（€3.79/月）自建 n8n：零边际成本跑无限次大模型循环。', '当你的业务需要每 5 分钟轮询一次全网数据或运行包含 20 个循环步骤的 DeepSeek V4.1-Flash-1017 智能体时，在 €3.79/月（4GB 内存 + 40GB NVMe）的 Hetzner 云主机上用 Docker 部署 n8n，即可享受不限次数的自由。'],
+        ['03 — 顶尖一人公司的「Make 前台 + n8n 后台」混合架构。', '用 Make.com（?pc=cruxkit）负责所有涉及 Stripe、Gumroad、Gmail 与 Notion 的高可靠 OAuth 前台触发，再通过一个 HTTP Webhook 把耗费算力的万次级 AI 批处理任务转发给自建 n8n。']
+      ],
+      table: {
+        headers: ['评估维度', 'Make.com Core 专业版 (?pc=cruxkit)', 'Hetzner €3.79/月 自建 n8n Docker', '实验室胜出方'],
+        rows: [
+          ['上手速度与 AI 辅助构建', '2 分钟（Maia 对话式自动连线与排错）', '10 分钟（Ubuntu 24.04 一键 Docker 脚本）', 'Make.com'],
+          ['每月 10,000 步执行成本', '通过 ?pc=cruxkit 首月 $0，次月起 $9/月', '€3.79/月（约 ¥29/月）固定包月', '平手（轻量选 Make，重度选 n8n）'],
+          ['每月 250,000 次 AI 循环成本', '$159+/月 云端积分账单', '€3.79/月（约 ¥29/月）无限次执行', 'Hetzner / Hostinger 自建 n8n'],
+          ['第三方 SaaS 免配置连接器', '2,000+ 官方 OAuth 应用 + 原生 MCP', '500+ 核心节点 + 通用 HTTP 请求', 'Make.com']
+        ]
+      },
+      quote: '先用 ?pc=cruxkit 领满 Make.com 的 10,000 免费积分搞定前台商业连接，再用 €3.79 的 Hetzner 主机承接海量 AI 循环。',
+      relatedKit: 'automation'
+    },
+    winteradapalene: {
+      catKey: 'beauty', tile: 'tile-routine',
+      category: '临床护肤实验室 · 7 分钟阅读',
+      title: '秋冬刷酸与屏障修护黄金公式：0.1% 阿达帕林 + 5D 玻尿酸 + 神经酰胺 + 理肤泉 B5+。',
+      excerpt: '为什么一到 11 月涂维A酸就开始鼻翼脱皮刺痛？实测「Torriden 5D 玻尿酸 + CeraVe PM 乳 + 理肤泉 B5+ Tribioma」三阶缓冲法，秋冬稳刷阿达帕林不翻车。',
+      readMore: '阅读秋冬刷A防脱皮指南',
+      lead: '每年 11 月降温开暖气后，都有大批读者因为嘴角起皮、面颊刺痛而被迫中断早C晚A。其实你完全不需要停用 0.1% 阿达帕林，只需要针对秋冬低湿度环境升级你的「缓冲三明治」。',
+      sections: [
+        ['01 — 为什么 11 月湿度骤降会让维A酸刺激度翻倍？', '当环境湿度跌破 40% 且室内暖气开启时，角质层经皮水分流失（TEWL）大幅加快，肉眼不可见的微裂隙会让阿达帕林瞬间超量透皮，引发神经源性刺痛与片状脱屑。'],
+        ['02 — 第一、二步：Torriden 5D 小分子玻尿酸抓水 + CeraVe PM 生理脂质打底。', '晚间洁面后趁脸部微湿，先涂 3 滴 Torriden 5D 小分子透明质酸精华补充水合度；紧接着按压 1 泵 CeraVe PM 乳（三重神经酰胺 1/3/6-II + 4% 烟酰胺），静置 10 分钟待脂质膜形成后，再薄涂一粒豌豆大小的 Differin 0.1% 阿达帕林凝胶。'],
+        ['03 — 第三步：理肤泉 Cicaplast B5+（Tribioma 升级版）死角精准封包。', '在鼻翼沟、嘴角、眼周眶骨等极易积聚药膏的脆弱部位，点涂米粒大小的理肤泉 B5+ 修复霜（5% 泛醇 + 羟基积雪草苷 + Tribioma 益生元精粹），隔绝夜间水分蒸发。']
+      ],
+      table: {
+        headers: ['晚间叠涂顺序 (PM)', '实验室严选单品', '核心临床活性成分', '在秋冬屏障中的关键作用'],
+        rows: [
+          ['1. 微湿水合抓水层', 'Torriden 5D 玻尿酸精华 (/go/torriden)', '5重分子量透明质酸 + D-泛醇 + 尿囊素', '深层补水且后续叠加乳液 0% 搓泥'],
+          ['2. 刷A前生理脂质缓冲层', '适乐肤 CeraVe PM 夜间乳 (/go/cerave-pm)', '神经酰胺 NP/AP/EOP + 4% 烟酰胺', '延缓维A酸透皮峰值，将脱皮率降低 70%'],
+          ['3. 受体选择性维A酸核心', '达芙文 Differin 0.1% 阿达帕林 (/go/differin)', '0.1% 阿达帕林（选择性结合 RAR-β/γ）', '疏通微粉刺闭口并促进真皮胶原重塑'],
+          ['4. 脆弱死角局部封包层', '理肤泉 B5+ 修复霜 (/go/cicaplast)', '5% 泛醇 + 羟基积雪草苷 + Tribioma', '锁住鼻翼嘴角水分，快速平息微炎症泛红']
+        ]
+      },
+      quote: '用 5D 小分子玻尿酸抓水，用三重神经酰胺缓冲，用 Tribioma B5+ 守住鼻翼嘴角防线。',
+      relatedKit: 'winterbarrier'
+    },
+    txavsvitc: {
+      catKey: 'beauty', tile: 'tile-routine',
+      category: '色沉与淡印科学 · 7 分钟阅读',
+      title: '传明酸 (TXA 4%) vs 左旋维C (20% L-AA) vs 熊果苷：红黑痘印多通路阻断实测。',
+      excerpt: '新生红痘印（PIE）与陈旧黑痘印（PIH）的生化机制截然不同。本文拆解如何将 20% 精纯维C、4% 传明酸与 10% 烟酰胺组合成无死角淡印矩阵。',
+      readMore: '阅读红黑痘印多通路指南',
+      lead: '很多读者猛涂单一美白精华却依然满脸痘印，根本原因在于混淆了「微血管扩张型红痘印（PIE）」与「黑色素沉积型黑痘印（PIH）」。只有多通路联合阻断，才能在 4–8 周内高效清零色沉。',
+      sections: [
+        ['01 — 纤溶酶与微血管双抑：为什么 4% 传明酸（TXA）能通杀红黑痘印？', '传明酸（凝血酸）不仅能阻断角质形成细胞向黑色素细胞发射前列腺素信号，还能抑制局部微血管异常扩张——这使得 Anua 10% 烟酰胺 + 4% 传明酸 + 2% α-熊果苷成为同时伴随红痘印与黑痘印读者的温和全能首选。'],
+        ['02 — 游离基中和与多巴醌还原：Timeless 20% 左旋维C + VE + 阿魏酸。', '在 pH 2.4 的黄金透皮窗口下，20% 精纯左旋维C能在晨间直接还原已氧化的黑色素中间体，并在紫外线诱发酪氨酸酶活性前完成第一道抗氧化拦截。'],
+        ['03 — 黑素小体转运拦截：10% 烟酰胺 + 严格 PA++++ 防晒。', '即便底层产生了少量黑色素，4%–10% 的烟酰胺也能阻断 35%–68% 的黑素小体向表皮角质层转运——前提是你每天早晨必须涂足两指宽的 Beauty of Joseon（Tinosorb M + Uvinul A Plus）防晒霜。']
+      ],
+      table: {
+        headers: ['色素沉积关键通路', '黄金靶向活性物', 'CruxKit 实验室严选单品', '最佳早晚使用位置'],
+        rows: [
+          ['1. 自由基清除与多巴醌还原', '15%–20% 左旋维C + 1% VE + 0.5% 阿魏酸', 'Timeless 20% CEF ($26) / 修丽可 CE ($182)', '晨间洁面后干手干脸第一步'],
+          ['2. 前列腺素与红痘印微血管抑制', '4% 传明酸 (TXA) + 2% α-熊果苷', 'Anua 10% 烟酰胺 + 4% 传明酸精华 ($20)', '早晚均可，pH 5.8 敏肌零刺痛'],
+          ['3. 黑素小体表皮转运阻断', '4%–10% 烟酰胺 (维生素 B3)', 'Anua 淡斑精华 或 CeraVe PM 乳 (4%)', '全天候强化屏障并拦截色沉上浮'],
+          ['4. UVA1 晒后反黑源头物理/化学阻断', 'Tinosorb M + Uvinul A Plus (PA++++)', '朝鲜美女大米益生菌防晒 SPF50+ ($16)', '每日晨间最后一步（涂满两指量）']
+        ]
+      },
+      quote: '晨间用精纯维C与 PA++++ 防晒掐断紫外线源头，晚间用 4% 传明酸与 10% 烟酰胺双通路清零红黑痘印。',
+      relatedKit: 'winterbarrier'
     }
   });
 })();

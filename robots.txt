@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cruxxxxxkit.com/sitemap.xml
+Host: https://cruxxxxxkit.com
