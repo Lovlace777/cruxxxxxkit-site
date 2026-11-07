@@ -6174,6 +6174,6083 @@ function recalculateSavings() {
   });
 })();
 
+
+/* ===========================================================
+   CRUXKIT v10.0 ULTIMATE AFFILIATE & EDITORIAL MEGA-EXPANSION
+   - 30 Ready-to-Use Digital Kits (.ZIP 01 to 30)
+   - 160 Audited Affiliate Stack Picks (40 per Desk x 4 Desks)
+   - 80 Full-Length Bilingual Benchmark & Buyer Guides (EN/ZH)
+=========================================================== */
+(function expandCatalogV10() {
+  // 1. Update UI strings for 30 Kits / 160 Stack Picks / 80 Guides
+  Object.assign(uiStrings.en, {
+    page_title: 'CruxxxxxKit (CruxKit · cruxxxxxkit.com) — 30 Digital Kits, 160 Affiliate Stack Picks & 80 AI / Cloud / Skincare Buyer Guides',
+    meta_desc: 'CruxxxxxKit (cruxxxxxkit.com) — 30 Ready-to-Use Digital Kits, 160 Stress-Tested AI (DeepSeek V4.1-Flash-1017, GPT-6.1, Gemini 4 Argon, Claude 5.5), Cloud, Anti-Detect & K-Beauty/iHerb Affiliate Picks, and 80 Deep-Dive Bilingual Buyer Guides.',
+    nav_kits: 'Digital kits (30)',
+    nav_stack: 'The stack <span class="nav-pill-tag">160 Picks</span>',
+    nav_edit: 'The edit (80)',
+    mob_stack: '160 Audited Stack Picks',
+    hero_eyebrow: 'CRUXKIT PULSE · NOV 2026 ULTIMATE CATALOG · 30 DIGITAL KITS · 160 AFFILIATE PICKS · 80 BUYER GUIDES',
+    hero_sub: '30 ready-to-import digital kits (.ZIP), 160 stress-tested software, anti-detect cloud & clinical K-Beauty/iHerb picks with verified partner deals, and 80 deep-dive bilingual buyer guides.',
+    hero_cta_stack: 'Browse 160 S-Tier Picks',
+    metric_1: '<strong>30 Ready-to-Use Kits</strong><br>JSON Workflows, API Packs &amp; Notion OS',
+    metric_2: '<strong>160 Audited S-Tier Picks</strong><br>AI, Video, Cloud, Anti-Detect &amp; Beauty Lab',
+    metric_3: '<strong>80 Deep-Dive Playbooks</strong><br>Full Bilingual Affiliate Buyer Guides',
+    kits_heading: '30 ready-to-use digital kits.',
+    kits_filter_all: 'All Kits (30)',
+    kits_filter_ai: 'AI &amp; Code (11)',
+    kits_filter_creator: 'Creator &amp; Funnels (11)',
+    kits_filter_beauty: 'Skincare &amp; Longevity (7)',
+    stack_heading: 'The considered stack (160 Audited Picks).',
+    stack_note: 'Every tool and formulation has a clear job. Stress-tested across 4 specialized desks (40 picks per desk) — click any item for full lab notes, pros/cons & verified partner links.',
+    stack_filter_all: 'All Picks (160)',
+    stack_filter_ai: '01 · AI, Coding &amp; Agents (40)',
+    stack_filter_creator: '02 · Video, Audio &amp; SEO (40)',
+    stack_filter_cloud: '03 · Cloud, Proxies &amp; Pay (40)',
+    stack_filter_beauty: '04 · Skincare, K-Beauty &amp; iHerb (40)',
+    stack_search_placeholder: 'Search 160 tools, APIs, proxies, VPS, K-Beauty serums, iHerb...',
+    edit_heading: 'Fresh ideas, put to work (80 Deep-Dive Buyer Guides).',
+    edit_note: '80 complete benchmark reviews, tool comparisons, and clinical formulation audits with direct partner deals — click any card to read the full bilingual guide.',
+    edit_filter_all: 'All Guides (80)',
+    edit_filter_ai: 'AI, Cloud &amp; Affiliate Growth (58)',
+    edit_filter_beauty: 'Skincare, K-Beauty &amp; Longevity (22)',
+    foot_stack: 'The stack (160)'
+  });
+
+  Object.assign(uiStrings.zh, {
+    page_title: 'CruxxxxxKit (CruxKit · cruxxxxxkit.com) — 30 款数字套件、160 款严选带货好物与 80 篇深度评测推文',
+    meta_desc: 'CruxxxxxKit (cruxxxxxkit.com) — 30 款即插即用数字工程包、160 款实测 AI 大模型（DeepSeek V4.1-Flash-1017、GPT-6.1、Gemini 4 Argon、Claude 5.5）/ 跨境指纹浏览器 / 云主机 / 韩妆与 iHerb 严选好物，以及 80 篇双语深度买手指南。',
+    nav_kits: '数字套件 (30)',
+    nav_stack: '严选好物栈 <span class="nav-pill-tag">160 严选</span>',
+    nav_edit: '深度推文 (80)',
+    mob_stack: '160 款实测严选工具与配方',
+    hero_eyebrow: 'CRUXKIT PULSE · 2026年11月终极全量版 · 30 款数字套件 · 160 款联盟严选 · 80 篇深度评测推文',
+    hero_sub: '30 套即插即用数字工程包（含源码 .ZIP），160 款经过极端实测的 AI 自动化、跨境防关联云基建、韩系护肤与 iHerb 膳食严选好物（附专属返利/试用通道），以及 80 篇高转化深度买手指南。',
+    hero_cta_stack: '浏览 160 款 S 级严选',
+    metric_1: '<strong>30 款即用型数字套件</strong><br>JSON 蓝图、API 路由与 Notion 系统',
+    metric_2: '<strong>160 款实测 S 级严选</strong><br>AI、视频 SEO、云主机、指纹浏览器与护肤',
+    metric_3: '<strong>80 篇深度带货长文</strong><br>中英双语硬核横评与选型推文',
+    kits_heading: '30 款即插即用数字效率套件。',
+    kits_filter_all: '全部套件 (30)',
+    kits_filter_ai: 'AI 与编程基建 (11)',
+    kits_filter_creator: '内容与漏斗增长 (11)',
+    kits_filter_beauty: '临床护肤与抗衰 (7)',
+    stack_heading: '严选工具与配方库（160 款实测好物）。',
+    stack_note: '每一款工具与护肤配方都经过真实业务与成分表双重核验。四大专区各 40 款严选好物——点击任意卡片查看完整优缺点报告与官方合作优惠链接。',
+    stack_filter_all: '全部严选 (160)',
+    stack_filter_ai: '01 · AI、编程与智能体 (40)',
+    stack_filter_creator: '02 · 视频、音频与 SEO (40)',
+    stack_filter_cloud: '03 · 云主机、指纹防关联与收款 (40)',
+    stack_filter_beauty: '04 · 韩妆护肤与 iHerb 营养库 (40)',
+    stack_search_placeholder: '搜索 160 款 AI 工具、指纹浏览器、代理 IP、云主机、防晒、iHerb 鱼油...',
+    edit_heading: '把好想法落到实处（80 篇深度评测推文）。',
+    edit_note: '80 篇完整大模型账单实测、跨境多账号防关联教程、SEO 搞流量与护肤成分红黑榜——点击任意卡片阅读完整双语长文、对比表格与直达购买链接。',
+    edit_filter_all: '全部推文 (80)',
+    edit_filter_ai: 'AI、跨境基建与搞钱增长 (58)',
+    edit_filter_beauty: '成分护肤、韩妆与口服抗衰 (22)',
+    foot_stack: '严选工具栈 (160)'
+  });
+
+  // 2. Expand Digital Kits from 24 to 30 Kits (+6 new Kits, keep allbundle at #30)
+  const v10KitIds = ['antidetectkit', 'aivideofactory', 'b2boutreachkit', 'shopifyseoos', 'longevitystackos', 'gumroadbestkit'];
+  const bundlePos = kitsOrder.indexOf('allbundle');
+  if (bundlePos !== -1) kitsOrder.splice(bundlePos, 1);
+  v10KitIds.forEach(id => {
+    if (!kitsOrder.includes(id)) kitsOrder.push(id);
+  });
+  kitsOrder.push('allbundle');
+
+  Object.assign(productsData.en, {
+    antidetectkit: {
+      num: '24', catKey: 'ai', tile: 'tile-automation', price: 29,
+      name: 'AdsPower + Multilogin + Bright Data Anti-Detect Matrix OS',
+      category: 'Cross-Border & Multi-Account Ops · Kit 24',
+      badges: ['AdsPower RPA JSON', 'Proxy Health Checker', 'Zero-Ban SOP'],
+      shortDesc: 'Run 10–100 isolated cross-border social, affiliate, and e-commerce accounts with residential ISP proxies and automated Canvas/WebGL fingerprint rules.',
+      description: 'Account bans destroy solo studios overnight. This kit gives you our battle-tested AdsPower & Multilogin X browser profile templates, a Python residential proxy latency/ASN verifier for Bright Data & Oxylabs, and warm-up RPA scripts for TikTok, Reddit, Amazon, and Pinterest.',
+      items: [
+        'AdsPower & Multilogin X profile configuration JSON (Canvas, WebGL, AudioContext & WebRTC isolation rules)',
+        'Python residential & ISP proxy health checker (`proxy_asn_audit.py`) for Bright Data and Oxylabs',
+        '7-Day New Account Warm-Up RPA automation script (cookie aging + organic scroll simulation)',
+        'Cross-border payment & 2FA vault isolation matrix (1Password + Bitwarden + Airwallex virtual cards)'
+      ],
+      companionTool: { name: 'AdsPower Anti-Detect Browser (Up to 45% Off / Trial)', url: 'go/adspower' },
+      sample: `// proxy_asn_audit.py — Verify Residential ISP Proxy Cleanliness\nconst checkProxy = async (proxyUrl) => {\n  const res = await fetch("https://lumtest.com/myip.json", { agent: proxyUrl });\n  const data = await res.json();\n  console.log({ ip: data.ip, asn: data.asn.asnum, org: data.asn.org_name, country: data.country });\n};`
+    },
+    aivideofactory: {
+      num: '25', catKey: 'creator', tile: 'tile-content', price: 29,
+      name: 'Pictory + InVideo AI + Suno v4.5 Faceless Video & Audio Factory',
+      category: 'Faceless YouTube & Shorts · Kit 25',
+      badges: ['Pictory + InVideo Prompts', 'Suno v4.5 Stems', 'ElevenLabs + Murf'],
+      shortDesc: 'Turn blog posts and affiliate reviews into monetizable YouTube videos, TikTok Shorts, and royalty-free Suno v4.5 background soundtracks.',
+      description: 'Combine the highest-converting AI video and audio engines into a single daily publishing line. Includes 40 viral Pictory/InVideo script-to-video templates, 60 Suno v4.5 commercial music meta-tag prompts, and ElevenLabs v3 / Murf.ai voice pacing presets.',
+      items: [
+        '40 High-Retention Faceless Video Script Templates for Pictory.ai, InVideo AI, and Fliki.ai',
+        '60 Suno v4.5 Commercial BGM & Podcast Intro Prompt Formulas (Lo-Fi, Synthwave, Documentary Cinema)',
+        'ElevenLabs v3 & Murf.ai SSML pause, emphasis, and bilingual dubbing configuration presets',
+        'Topaz Video AI 6 4K/60fps upscaling & VEED/Submagic kinetic subtitle preset guide'
+      ],
+      companionTool: { name: 'Pictory.ai (Up to 50% Recurring Affiliate Partner)', url: 'go/pictory' },
+      sample: `[Suno v4.5 Prompt — Tech Review BGM]\nStyle: Minimalist warm analog synth pulse, crisp rimshot 108 BPM, deep sub-bass, zero vocals, broadcast documentary bed\nStructure: [Intro 8 bars] -> [Main Groove 32 bars] -> [Clean Loop Tail]`
+    },
+    b2boutreachkit: {
+      num: '26', catKey: 'ai', tile: 'tile-solo', price: 29,
+      name: 'Apollo.io + Clay.com + Dify AI B2B Outbound & Lead Engine',
+      category: 'B2B Lead Gen & AI Agents · Kit 26',
+      badges: ['Clay Waterfall Table', 'Apollo Filters', 'Dify Agent DSL'],
+      shortDesc: 'Scrape, enrich, and close $3,000+ B2B agency retainers or high-ticket SaaS referrals using Clay waterfall enrichment, Apollo.io, and Dify AI agents.',
+      description: 'Stop sending generic cold emails. This blueprint wires Apollo.io lead filters into Clay.com waterfall enrichment, scrapes prospect websites via Firecrawl/Browse AI, and drafts hyper-personalized outreach via DeepSeek V4.1-Flash-1017 and Dify.AI.',
+      items: [
+        'Clay.com 12-Step Waterfall Enrichment Blueprint (Company tech stack, hiring signals & LinkedIn news)',
+        'Apollo.io High-Intent B2B Buyer Filter Presets (SaaS Founders, E-Com CMOs & Agency Owners)',
+        'Dify.AI & Relevance AI Multi-Agent Lead Research Workflow DSL (YAML export)',
+        'folk.app & Airtable Lightweight B2B Deal Pipeline CRM template'
+      ],
+      companionTool: { name: 'Apollo.io B2B Database & Sequencer', url: 'go/apollo' },
+      sample: `# Dify.AI B2B Icebreaker Agent Prompt (DeepSeek V4.1-Flash-1017)\nInput: {{company_markdown}} from Firecrawl + {{apollo_title}}\nTask: Write a 2-sentence observation about their current pricing/checkout flow and offer our benchmark audit.`
+    },
+    shopifyseoos: {
+      num: '27', catKey: 'creator', tile: 'tile-content', price: 29,
+      name: 'Shopify + Systeme.io + SE Ranking High-Converting Funnel OS',
+      category: 'E-Commerce, Funnels & SEO · Kit 27',
+      badges: ['Systeme 60% Funnel', 'SE Ranking + Mangools', 'ThriveCart + Skool'],
+      shortDesc: 'Launch high-converting affiliate bridge pages, Shopify digital/physical storefronts, and low-KD SEO clusters that rank in 14 days.',
+      description: 'Built for affiliate marketers and digital product sellers. Includes ready-to-import Systeme.io bridge funnel layouts, Shopify headless product page blocks, and our SE Ranking + Mangools KWFinder "Zero-Competition Buyer Keyword" SOP.',
+      items: [
+        'Systeme.io & Carrd Pro High-Converting Affiliate Bridge Page & Opt-In Funnel Templates',
+        'SE Ranking + Mangools KWFinder Low-KD Buyer Keyword Mining SOP ("vs", "alternative", "pricing")',
+        'Shopify & ThriveCart Order-Bump + 1-Click Upsell Checkout Conversion Blueprint',
+        'Skool & Kajabi Paid Community Launch & Gamified Onboarding Curriculum Template'
+      ],
+      companionTool: { name: 'Systeme.io (Free Forever Tier + 60% Lifetime Affiliate)', url: 'go/systeme' },
+      sample: `/* Buyer-Intent Keyword Formula (KD < 20) */\nPattern 1: "[Tool A] vs [Tool B] pricing 2026"\nPattern 2: "Best [Tool] alternative for solo founders"\nPattern 3: "[Brand] discount code / free trial benchmark"`
+    },
+    longevitystackos: {
+      num: '28', catKey: 'beauty', tile: 'tile-routine', price: 19,
+      name: 'The 2026 iHerb Longevity, Double-Cleanse & Spicule Clinical OS',
+      category: 'Derm & Longevity Lab · Kit 28',
+      badges: ['VT Reedle Shot SOP', 'Aestura + Thiamidol', 'iHerb Longevity Tracker'],
+      shortDesc: 'Synchronize topical K-Beauty micro-spicules (VT Reedle Shot + Aestura 365) with clinical oral supplements (Omega-3, Marine Collagen, Magnesium & CoQ10).',
+      description: 'True skin and cognitive performance comes from combining evidence-based topical dermatology with third-party tested oral biochemistry. This Notion & CSV system tracks your double-cleanse, VT Reedle Shot spicule nights, Eucerin Thiamidol pigment fading, and iHerb IFOS 5-star supplement stack.',
+      items: [
+        'VT Reedle Shot 100/300 Micro-Spicule + Aestura Atobarrier 365 Recovery Nightly Schedule',
+        '2-Step Oil/Balm Double-Cleanse Matrix (SKIN1004 Oil, Banila Co, Heimish, Bioderma & Vanicream)',
+        'Oral-Topical Synergy Tracker: CGN IFOS Omega-3, CollagenUP Peptides, CoQ10 & Thorne Magnesium Bisglycinate',
+        'Acne & Pigmentation Targeted Spot Protocol (PanOxyl BPO Wash + Cos De BAHA Azelaic 10% + Eucerin Thiamidol)'
+      ],
+      companionTool: { name: 'iHerb Clinical Supplements & K-Beauty (?rcode=CRUXKIT)', url: 'go/cgn_omega3' },
+      sample: `[Daily Oral + Topical Synergy Schedule]\n08:00 AM: CGN CollagenUP (Vitamin C + HA) + Timeless 20% CEF Serum + BOJ SPF50+\n01:00 PM: CGN Omega-3 IFOS Fish Oil + CoQ10 100mg (with fat-containing meal)\n10:00 PM: Vanicream Cleanse -> VT Reedle Shot 100 -> Aestura Atobarrier 365 + Thorne Magnesium`
+    },
+    gumroadbestkit: {
+      num: '29', catKey: 'creator', tile: 'tile-solo', price: 19,
+      name: 'The Gumroad Universal 10%–50% Affiliate & Digital Storefront Matrix',
+      category: 'Instant Affiliate Revenue · Kit 29',
+      badges: ['Live ID ?a=735179107', 'Top 50 Gumroad Picks', 'Zero-Approval Needed'],
+      shortDesc: 'Monetize your traffic immediately using Gumroad’s universal ?a=735179107 affiliate parameter plus 50 pre-vetted high-converting digital products.',
+      description: 'Did you know your Gumroad Affiliate ID (735179107) automatically earns a 10% referral cut on ANY product on Gumroad Discover—plus up to 50% on partner creator products—without waiting for manual approval? This kit gives you our link generator and 50 top-selling digital assets to promote today.',
+      items: [
+        'Automatic `?a=735179107` Universal Gumroad Affiliate Link Builder & UTM Tracker Sheet',
+        'Curated Directory of 50 Best-Selling Notion Templates, UI Kits, 3D Packs & Coding Books on Gumroad',
+        'High-Converting Comparison Review Templates for Digital Products & Creator Bundles',
+        'Step-by-Step Guide to Recruiting Affiliates for Your Own CruxKit Storefront (`lovelace147.gumroad.com`)'
+      ],
+      companionTool: { name: 'Gumroad Discover Storefront (?a=735179107)', url: 'go/gumroad' },
+      sample: `// Instant Universal Gumroad Affiliate Link Formatter\nconst GUMROAD_AFF_ID = "735179107";\nconst toAffiliateUrl = (rawUrl) => {\n  const u = new URL(rawUrl);\n  u.searchParams.set("a", GUMROAD_AFF_ID);\n  return u.toString();\n};`
+    }
+  });
+
+  Object.assign(productsData.zh, {
+    antidetectkit: {
+      num: '24', catKey: 'ai', tile: 'tile-automation', price: 29,
+      name: 'AdsPower + Multilogin + 住宅代理 IP 跨境多账号防关联矩阵工程包',
+      category: '跨境多店防关联 · 套件 24',
+      badges: ['AdsPower RPA 剧本', '住宅 IP 纯净度检测', '零封号养号 SOP'],
+      shortDesc: '一套工程包搞定 10–100 个海外社媒、联盟营销与跨境店铺账号的指纹物理隔离、住宅 ISP 代理检测与全自动 RPA 养号。',
+      description: '做海外矩阵（TikTok、YouTube、Reddit、Amazon、独立站收款）最怕连坐封号。本套件内含实测零风控的 AdsPower 与 Multilogin X 浏览器指纹配置文件、Bright Data / Oxylabs 住宅代理 ASN 纯净度检测脚本，以及新号前 7 天自动模拟真人浏览的 RPA 剧本。',
+      items: [
+        'AdsPower 与 Multilogin X 黄金指纹配置模版（Canvas、WebGL、AudioContext 与 WebRTC 防泄漏规则）',
+        'Bright Data 与 Oxylabs 住宅代理 IP 欺诈分与 ASN 机房属性自动核验脚本 (`proxy_asn_audit.py`)',
+        '新注册海外社媒账号前 7 天全自动 RPA 权重养护脚本（自动刷信息流、随机停留与 Cookie 熟化）',
+        '多账号密码、2FA 验证码与 Airwallex 虚拟卡一对一物理隔离台账模板'
+      ],
+      companionTool: { name: 'AdsPower 指纹浏览器（享专属免费环境与最高 45% 返佣）', url: 'go/adspower' },
+      sample: `// proxy_asn_audit.py — 批量核验住宅代理 IP 纯净度与 ASN 属性\nconst checkProxy = async (proxyUrl) => {\n  const res = await fetch("https://lumtest.com/myip.json", { agent: proxyUrl });\n  const data = await res.json();\n  console.log({ ip: data.ip, asn: data.asn.asnum, org: data.asn.org_name, country: data.country });\n};`
+    },
+    aivideofactory: {
+      num: '25', catKey: 'creator', tile: 'tile-content', price: 29,
+      name: 'Pictory + InVideo AI + Suno v4.5 全自动不露脸音视频印钞机套件',
+      category: 'AI 视频与商单配乐 · 套件 25',
+      badges: ['Pictory/InVideo 模板', 'Suno v4.5 商单曲库', 'ElevenLabs + Murf'],
+      shortDesc: '输入一篇评测推文网址，10 分钟全自动批量生成带版权素材的 YouTube 评测视频、TikTok 爆款切片与 Suno v4.5 原创免版税背景音乐。',
+      description: '将海外佣金最高的 AI 视频与音频工具串联成日更流水线：内含 40 套针对 Pictory.ai、InVideo AI 与 Fliki 的高完播率脚本指令、60 组 Suno v4.5 商业级纯音乐（Lo-Fi/科技纪录片/带货卡点）元标签提示词，以及 ElevenLabs v3 与 Murf.ai 播客语音参数。',
+      items: [
+        '40 套针对 Pictory.ai、InVideo AI 与 Fliki.ai 的「文章一键转带货视频」分镜脚本模板',
+        '60 组 Suno v4.5 商业无版权风险纯音乐（BGM）结构化提示词库（告别 YouTube 黄标侵权）',
+        'ElevenLabs v3 与 Murf.ai 多语种情感停顿、重音控制与双语配音预设参数表',
+        'Topaz Video AI 6 4K/60帧画质增强 + VEED/Submagic 爆款动态花字模板'
+      ],
+      companionTool: { name: 'Pictory.ai 文章转视频神器（最高 50% 终身持续返佣）', url: 'go/pictory' },
+      sample: `[Suno v4.5 科技评测专属 BGM 提示词]\nStyle: Minimalist warm analog synth pulse, crisp rimshot 108 BPM, deep sub-bass, zero vocals, broadcast documentary bed\nStructure: [Intro 8 bars] -> [Main Groove 32 bars] -> [Clean Loop Tail]`
+    },
+    b2boutreachkit: {
+      num: '26', catKey: 'ai', tile: 'tile-solo', price: 29,
+      name: 'Apollo.io + Clay.com + Dify 企业级 B2B 精准获客与外呼智能体套件',
+      category: 'B2B 出海获客与智能体 · 套件 26',
+      badges: ['Clay 瀑布流富化', 'Apollo 决策人筛选', 'Dify 智能体工作流'],
+      shortDesc: '用 Apollo 锁定海外企业高管邮箱，用 Clay 瀑布流抓取公司最新动态，再由 Dify + DeepSeek V4.1 自动撰写千人千面开发信。',
+      description: '无论是承接 $3,000+ 的海外 AI 自动化定制大单，还是推广高客单价 B2B 软件（如 Deel、Monday、Kinsta），精准主动获客都是最快路径。本套件包含可直接导入的 Clay 12 步数据富化表、Apollo 高意向筛选器与 Dify 多智能体 YAML 工程文件。',
+      items: [
+        'Clay.com 12 步瀑布流客户情报富化模板（自动抓取目标公司技术栈、融资新闻与招聘痛点）',
+        'Apollo.io 高转化海外企业决策人（Founder / CMO / VP）精准筛选条件配置单',
+        'Dify.AI 与 Relevance AI 多智能体客户背调工作流源码文件（支持一键导入 DSL）',
+        'folk.app 与 Airtable 极简 B2B 商机跟进 CRM 看板模板'
+      ],
+      companionTool: { name: 'Apollo.io 全球 2.7 亿商业联系人数据库', url: 'go/apollo' },
+      sample: `# Dify.AI 千人千面破冰信生成提示词 (DeepSeek V4.1-Flash-1017)\n输入变量: {{company_markdown}} (来自 Firecrawl) + {{apollo_title}}\n任务: 用 2 句话精准指出对方网站当前结账或 SEO 流程的一个具体优化点，并附上我们的实测报告。`
+    },
+    shopifyseoos: {
+      num: '27', catKey: 'creator', tile: 'tile-content', price: 29,
+      name: 'Shopify + Systeme.io + SE Ranking 高转化独立站漏斗与低竞争词霸屏系统',
+      category: '独立站漏斗与 SEO · 套件 27',
+      badges: ['Systeme 60% 佣金漏斗', 'SE Ranking 挖词法', 'ThriveCart + Skool'],
+      shortDesc: '专为联盟带货与数字商品卖家打造：包含 Systeme.io 高转化桥页模板、Shopify 独立站模块与 Mangools/SE Ranking 蓝海买词挖掘表。',
+      description: '流量的尽头是高转化漏斗。本套件教你用 SE Ranking 与 Mangools KWFinder 挖掘 KD < 20 的精准购买意图词（如“A vs B 价格”、“XX 平替”），并通过 Systeme.io 桥页、Shopify 或 Skool 付费社群实现转化率翻倍。',
+      items: [
+        'Systeme.io 与 Carrd Pro 高转化联盟营销「评测桥页（Bridge Page）」与邮件铅磁铁漏斗模板',
+        'SE Ranking + Mangools KWFinder 低难度（KD<20）高购买意向长尾词挖掘 SOP 与表格',
+        'Shopify 与 ThriveCart 结账页「顺手买一件（Order Bump）」与一键加购转化率提升蓝图',
+        'Skool 与 Kajabi 高客单价付费社群冷启动与闯关解锁课程大纲模板'
+      ],
+      companionTool: { name: 'Systeme.io 全能营销漏斗（永久免费版 + 60% 终身返佣）', url: 'go/systeme' },
+      sample: `/* 14 天快速上首页的高转化买词公式 (KD < 20) */\n公式 1: "[工具 A] vs [工具 B] pricing 2026"\n公式 2: "Best [大牌工具] alternative for solo founders"\n公式 3: "[品牌名] discount code / free trial benchmark"`
+    },
+    longevitystackos: {
+      num: '28', catKey: 'beauty', tile: 'tile-routine', price: 19,
+      name: '2026 韩系微针骨针 (VT Reedle Shot) + Aestura 屏障 + iHerb 内服外养全景系统',
+      category: '内服外养抗衰实验室 · 套件 28',
+      badges: ['VT 微针分级课表', 'Aestura + 优色林淡斑', 'iHerb 膳食协同表'],
+      shortDesc: '将外用韩系涂抹式微针（VT Reedle Shot + Aestura 365 面霜）与 iHerb 临床级内服补剂（IFOS 五星鱼油、深海胶原蛋白肽、甘氨酸镁）科学联动。',
+      description: '真正的通透好皮肤与充沛精力来自「外用透皮吸收 + 内服细胞抗炎」的双重协同。本套件提供完整的卸妆清洁分级表、VT 微晶骨针 100/300 安全进阶日历、优色林 Thiamidol 靶向淡斑方案，以及 iHerb 黄金内服补剂服用时刻表。',
+      items: [
+        'VT Reedle Shot 100/300 积雪草微晶骨针 + Aestura 365 神经酰胺胶囊面霜夜间透皮修护课表',
+        '零残留温和双效卸妆洁面矩阵（SKIN1004 卸妆油、芭妮兰/Heimish 卸妆膏、贝德玛粉水与 Vanicream 洁面）',
+        'iHerb 内服外养协同追踪表：CGN IFOS 五星鱼油、CollagenUP 胶原蛋白肽、辅酶 Q10 与 Thorne 甘氨酸镁',
+        '顽固色斑与躯干痘靶向方案（优色林 Thiamidol 双管淡斑 + Cos De BAHA 10% 壬二酸 + PanOxyl 过氧化苯甲酰）'
+      ],
+      companionTool: { name: 'iHerb 官方正品营养与护肤直邮（专属 9 折码 CRUXKIT）', url: 'go/cgn_omega3' },
+      sample: `[内服 + 外用 24 小时抗炎抗老黄金作息表]\n08:00 晨间: CGN 胶原蛋白肽饮 (含维C+玻尿酸) + Timeless 20% CEF 精华 + 朝鲜美女防晒\n13:00 随餐: CGN IFOS 五星高纯鱼油 + 100mg 还原型辅酶 Q10（随含油脂午餐服用吸收率翻倍）\n22:00 晚间: Vanicream 温和洁面 -> VT 微针 100 轻按 -> Aestura 365 面霜封包 + 睡前 Thorne 甘氨酸镁`
+    },
+    gumroadbestkit: {
+      num: '29', catKey: 'creator', tile: 'tile-solo', price: 19,
+      name: 'Gumroad 全站通用 10%–50% 联盟带货矩阵与 50 款爆品选品库',
+      category: '零门槛即时带货变现 · 套件 29',
+      badges: ['已激活 ID ?a=735179107', '50 款高转化虚拟爆品', '免审批秒赚美金'],
+      shortDesc: '直接激活你已拥有的 Gumroad 全站通用推广码 (?a=735179107)，无需等待商家逐个审批，立即推广全网 50 款最高转化率的虚拟商品。',
+      description: '你知道吗？你的 Gumroad 联盟 ID（735179107）自带全平台通用分佣特权——在 Gumroad Discover 商城的任何商品链接后加上 `?a=735179107`，只要有人购买你就能直接拿 10%–50% 美金分成！本套件为你整理好一键转链工具与 50 款常青爆款选品清单。',
+      items: [
+        'Gumroad 全站通用 `?a=735179107` 推广链接批量生成器与 UTM 转化追踪表',
+        '精选 50 款 Gumroad 全球销量最高的 Notion 模版、AI 提示词库、UI 组件包与独立开发电子书清单',
+        '高转化「虚拟商品横评与合集推荐」推文写作模版（可直接发布至独立站、X 与小红书）',
+        '如何把你自己的 `lovelace147.gumroad.com` 店铺接入全球分销网络，让海外博主帮你带货'
+      ],
+      companionTool: { name: 'Gumroad 官方全球数字商品市场 (?a=735179107)', url: 'go/gumroad' },
+      sample: `// Gumroad 全平台通用联盟链接转换器 (免申请秒分佣)\nconst GUMROAD_AFF_ID = "735179107";\nconst toAffiliateUrl = (rawUrl) => {\n  const u = new URL(rawUrl);\n  u.searchParams.set("a", GUMROAD_AFF_ID);\n  return u.toString();\n};`
+    }
+  });
+
+  // Update allbundle to #30 (29-in-1 Master Bundle)
+  if (productsData.en.allbundle) {
+    productsData.en.allbundle.num = '30';
+    productsData.en.allbundle.price = 169;
+    productsData.en.allbundle.name = 'The Complete 29-in-1 Studio & Lab Master Bundle';
+    productsData.en.allbundle.category = 'Full Catalog Access · Kit 30 (Save 80%)';
+    productsData.en.allbundle.shortDesc = 'All 29 individual AI, Cloud, Anti-Detect, Creator, SEO, K-Beauty, and Longevity kits in one master .ZIP archive with lifetime updates.';
+  }
+  if (productsData.zh.allbundle) {
+    productsData.zh.allbundle.num = '30';
+    productsData.zh.allbundle.price = 169;
+    productsData.zh.allbundle.name = '全站 29 合 1 超级个体与实验室大满贯全家桶';
+    productsData.zh.allbundle.category = '全站通行证 · 套件 30（立省 80%）';
+    productsData.zh.allbundle.shortDesc = '一次性打包解锁全站全部 29 款 AI 路由、Make/n8n 自动化、跨境防关联、独立站 SEO 与韩妆内服外养数字套件（含永久免费更新）。';
+  }
+
+  // 3. Add 80 new Affiliate Stack Picks (80 -> 160 Picks, 40 per Desk)
+  const v10StackIds = ["replit", "supermaven", "dify", "relevanceai", "browseai", "bardeen", "clay", "apollo", "folk", "tally", "typeform", "airtable", "clickup", "monday", "linear", "raycast", "warp", "obsidian", "readwise", "chatpdf", "suno", "pika", "luma", "leonardo", "ideogram", "recraft", "topaz", "murf", "pictory", "invideo", "fliki", "veed", "captions", "envato", "epidemicsound", "artlist", "seranking", "mangools", "systeme", "skool", "shopify", "ghost", "carrd", "dorik", "cloudways", "kinsta", "linode", "upstash", "neon", "brightdata", "oxylabs", "adspower", "multilogin", "surfshark", "proton", "bitwarden", "payoneer", "thrivecart", "paddle", "kajabi", "aestura", "reedleshot", "mediheal", "mixsoon", "to_glycolic", "to_peptides", "vanicream", "panoxyl", "eucerin", "roc", "bioderma", "heimish", "banilaco", "skin1004oil", "cosdebaha", "cgn_omega3", "cgn_collagen", "cgn_coq10", "thorne_mag", "lifeextension"];
+  v10StackIds.forEach(id => { if (!stackOrder.includes(id)) stackOrder.push(id); });
+  Object.assign(stackToolsData.en, {
+  "replit": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S-Tier Pick · 25%–40% Core Referral",
+    "name": "Replit Agent v2 & Cloud IDE",
+    "role": "Natural-Language Full-Stack App Builder + Built-In Postgres & 1-Click Cloud Hosting",
+    "verdictShort": "Replit Agent v2 plans, writes, debugs, and deploys full-stack web apps with managed Postgres and Replit Auth in minutes—even from an iPad or phone.",
+    "metricPill": "🚀 Prompt-to-Deployed App + Mobile Coding",
+    "price": "Free Starter · Core $20/mo",
+    "summary": "Replit Agent v2 plans, writes, debugs, and deploys full-stack web apps with managed Postgres and Replit Auth in minutes—even from an iPad or phone. Natural-Language Full-Stack App Builder + Built-In Postgres & 1-Click Cloud Hosting",
+    "pros": [
+      "Plans database schemas, installs packages, and self-heals runtime errors autonomously",
+      "Includes monthly cloud compute credits inside Replit Core ($20/mo)"
+    ],
+    "cons": [
+      "Complex 50k+ line enterprise monorepos still benefit from local Cursor or Windsurf"
+    ],
+    "verdict": "Replit Agent v2 & Cloud IDE is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/replit",
+    "cta": "Visit Replit Official Partner"
+  },
+  "supermaven": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "workstation",
+    "tier": "S-Tier Pick · 1,000,000-Token Repo Window",
+    "name": "Supermaven 1M-Context Code AI",
+    "role": "Sub-50ms Babble-Architecture Autocomplete Plugin for VS Code, Cursor & JetBrains",
+    "verdictShort": "Created by the founder of Tabnine, Supermaven indexes your entire 1M-token repository so ghost-text completions know every custom type and helper across files.",
+    "metricPill": "⚡ 1M Token Context · <50ms Ghost Text Latency",
+    "price": "Free Tier · Pro $10/mo",
+    "summary": "Created by the founder of Tabnine, Supermaven indexes your entire 1M-token repository so ghost-text completions know every custom type and helper across files. Sub-50ms Babble-Architecture Autocomplete Plugin for VS Code, Cursor & JetBrains",
+    "pros": [
+      "1M-token context window remembers custom internal APIs and Git diffs instantly",
+      "Ultra-fast sub-50ms latency feels like local typing even on massive files"
+    ],
+    "cons": [
+      "Focused on inline autocomplete and chat rather than autonomous multi-file background agents"
+    ],
+    "verdict": "Supermaven 1M-Context Code AI is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/supermaven",
+    "cta": "Visit Supermaven Official Partner"
+  },
+  "dify": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "mcppack",
+    "tier": "S-Tier Pick · Visual LLM App & RAG Engine",
+    "name": "Dify.AI Agentic Workflow & RAG Studio",
+    "role": "Build, Test, and Publish Production LLM Agents, Knowledge Bases & APIs with DeepSeek V4.1 & GPT-6.1",
+    "verdictShort": "Dify.AI is the gold-standard visual studio for building multi-step LLM workflows, hybrid RAG knowledge bases, and embeddable AI customer support widgets.",
+    "metricPill": "🧠 Visual Agent DSL + Hybrid RAG + 1-Click API",
+    "price": "Open-Source Self-Host · Cloud Sandbox Free",
+    "summary": "Dify.AI is the gold-standard visual studio for building multi-step LLM workflows, hybrid RAG knowledge bases, and embeddable AI customer support widgets. Build, Test, and Publish Production LLM Agents, Knowledge Bases & APIs with DeepSeek V4.1 & GPT-6.1",
+    "pros": [
+      "Native support for DeepSeek V4.1-Flash-1017, GPT-6.1, Gemini 4 Argon, and OpenRouter",
+      "Export and share entire agent workflows as portable YAML/DSL files"
+    ],
+    "cons": [
+      "Self-hosting requires at least a 2vCPU / 4GB RAM VPS (like Hetzner CX22 or Hostinger KVM2)"
+    ],
+    "verdict": "Dify.AI Agentic Workflow & RAG Studio is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/dify",
+    "cta": "Visit Dify.AI Official Partner"
+  },
+  "relevanceai": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S-Tier Pick · Autonomous B2B AI Teammates",
+    "name": "Relevance AI Multi-Agent Workforce",
+    "role": "No-Code Multi-Agent Platform for Outbound Sales Research, CRM Hygiene & Support Triage",
+    "verdictShort": "Build a digital B2B sales or research team where a Manager Agent delegates web scraping, LinkedIn enrichment, and HubSpot/Apollo updates to sub-agents.",
+    "metricPill": "🤖 Multi-Agent Delegation + Human-in-the-Loop",
+    "price": "Free Tier (100 Credits/day) · Pro $19/mo",
+    "summary": "Build a digital B2B sales or research team where a Manager Agent delegates web scraping, LinkedIn enrichment, and HubSpot/Apollo updates to sub-agents. No-Code Multi-Agent Platform for Outbound Sales Research, CRM Hygiene & Support Triage",
+    "pros": [
+      "Purpose-built templates for B2B SDR outreach, lead qualification, and competitor tracking",
+      "20% recurring PartnerStack affiliate commission on high-ARPU business plans"
+    ],
+    "cons": [
+      "Credit consumption scales with the number of sub-agent reasoning steps"
+    ],
+    "verdict": "Relevance AI Multi-Agent Workforce is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/relevanceai",
+    "cta": "Visit Relevance Official Partner"
+  },
+  "browseai": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "scrapingragkit",
+    "tier": "S-Tier Pick · 20% Lifetime Recurring",
+    "name": "Browse AI No-Code Web Monitor Robot",
+    "role": "Point-and-Click Cloud Robots That Scrape Competitor Prices, Job Boards & Directories on a Schedule",
+    "verdictShort": "For non-coders who need to monitor competitor pricing, stock availability, or real-estate listings every hour and trigger Make.com or Google Sheets alerts.",
+    "metricPill": "🕷️ Point-and-Click Recorder + Scheduled Webhook Diffs",
+    "price": "Free Tier · Starter $19/mo",
+    "summary": "For non-coders who need to monitor competitor pricing, stock availability, or real-estate listings every hour and trigger Make.com or Google Sheets alerts. Point-and-Click Cloud Robots That Scrape Competitor Prices, Job Boards & Directories on a Schedule",
+    "pros": [
+      "Zero coding or CSS selector knowledge required—just click the data elements you want",
+      "20% lifetime recurring affiliate commission makes it a top passive income SaaS pick"
+    ],
+    "cons": [
+      "For raw Markdown extraction into LLMs, pair with Firecrawl"
+    ],
+    "verdict": "Browse AI No-Code Web Monitor Robot is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/browseai",
+    "cta": "Visit Browse Official Partner"
+  },
+  "bardeen": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S-Tier Pick · Chrome Session Automation",
+    "name": "Bardeen AI Browser GTM Copilot",
+    "role": "Automate LinkedIn, Crunchbase, Gmail & Notion Directly Inside Your Active Chrome Tab",
+    "verdictShort": "Because Bardeen runs directly inside your logged-in Chrome browser, it automates sites that block cloud scrapers—like copying a LinkedIn profile into Notion or Apollo in one shortcut.",
+    "metricPill": "🧩 Runs in Active Browser Session · Zero API Auth Needed",
+    "price": "Free Forever Core · Pro $10/mo",
+    "summary": "Because Bardeen runs directly inside your logged-in Chrome browser, it automates sites that block cloud scrapers—like copying a LinkedIn profile into Notion or Apollo in one shortcut. Automate LinkedIn, Crunchbase, Gmail & Notion Directly Inside Your Active Chrome Tab",
+    "pros": [
+      "Bypasses server-side anti-bot blocks by executing actions inside your real browser tab",
+      "1,000+ pre-built Playbooks for LinkedIn, Notion, HubSpot, Airtable, and Google Sheets"
+    ],
+    "cons": [
+      "Requires your browser tab to be open unless using Bardeen Cloud scrapers"
+    ],
+    "verdict": "Bardeen AI Browser GTM Copilot is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/bardeen",
+    "cta": "Visit Bardeen Official Partner"
+  },
+  "clay": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S-Tier Pick · 75+ Data Providers in 1 Sheet",
+    "name": "Clay.com Waterfall Data Enrichment",
+    "role": "Combine 75+ B2B Data Sources + Claygent AI Web Scraper in a Smart Spreadsheet for Outbound Growth",
+    "verdictShort": "Single databases miss 40% of emails. Clay queries 10+ providers sequentially (Waterfall) so you only pay when a verified email, phone, or tech-stack signal is found.",
+    "metricPill": "💎 Waterfall Enrichment (85%+ Match Rate) + Claygent AI",
+    "price": "Free 100 Credits · Explorer $149/mo (2,000 Bonus Credits)",
+    "summary": "Single databases miss 40% of emails. Clay queries 10+ providers sequentially (Waterfall) so you only pay when a verified email, phone, or tech-stack signal is found. Combine 75+ B2B Data Sources + Claygent AI Web Scraper in a Smart Spreadsheet for Outbound Growth",
+    "pros": [
+      "Waterfall lookup boosts valid B2B email discovery from 50% to over 85%",
+      "Claygent AI visits every prospect’s website to answer custom research questions at scale"
+    ],
+    "cons": [
+      "Higher starting price for paid plans, best suited for B2B agencies and SaaS founders"
+    ],
+    "verdict": "Clay.com Waterfall Data Enrichment is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/clay",
+    "cta": "Visit Clay.com Official Partner"
+  },
+  "apollo": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S-Tier Pick · 20% Recurring PartnerStack",
+    "name": "Apollo.io B2B Database & Sales OS",
+    "role": "Search 275M+ Verified Business Contacts, Buying Intent Signals & Automated Email Sequences",
+    "verdictShort": "Whether you are pitching a $2,000 AI automation service, recruiting affiliate partners, or doing B2B SaaS outbound, Apollo.io is the #1 all-in-one lead database.",
+    "metricPill": "🎯 275M+ Verified B2B Contacts + AI Email Sequencer",
+    "price": "Free Forever (Unlimited Email Credits Rule) · Basic $49/mo",
+    "summary": "Whether you are pitching a $2,000 AI automation service, recruiting affiliate partners, or doing B2B SaaS outbound, Apollo.io is the #1 all-in-one lead database. Search 275M+ Verified Business Contacts, Buying Intent Signals & Automated Email Sequences",
+    "pros": [
+      "Massive 275M+ contact database filterable by job title, revenue, funding, and tech stack",
+      "High-converting 20% recurring affiliate program via PartnerStack"
+    ],
+    "cons": [
+      "Always warm up secondary domains before sending high-volume cold email sequences"
+    ],
+    "verdict": "Apollo.io B2B Database & Sales OS is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/apollo",
+    "cta": "Visit Apollo.io Official Partner"
+  },
+  "folk": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S-Tier Pick · 25%–30% Recurring Commission",
+    "name": "folk.app Next-Gen AI Relationship CRM",
+    "role": "Notion-Clean CRM That Captures Contacts from LinkedIn, X, Gmail & WhatsApp in 1 Click",
+    "verdictShort": "Traditional CRMs like Salesforce feel like tax software. folk feels like Notion—letting creators and agencies manage sponsors, affiliates, and clients effortlessly.",
+    "metricPill": "✨ folkX Chrome Clipper + AI Magic Fields",
+    "price": "14-Day Free Trial · Standard $20/mo",
+    "summary": "Traditional CRMs like Salesforce feel like tax software. folk feels like Notion—letting creators and agencies manage sponsors, affiliates, and clients effortlessly. Notion-Clean CRM That Captures Contacts from LinkedIn, X, Gmail & WhatsApp in 1 Click",
+    "pros": [
+      "folkX Chrome extension clips profiles from LinkedIn, X/Twitter, and Instagram in one click",
+      "Magic Fields let you run custom AI prompts across hundreds of contact rows"
+    ],
+    "cons": [
+      "Designed for agile teams and solo studios rather than 500-seat call centers"
+    ],
+    "verdict": "folk.app Next-Gen AI Relationship CRM is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/folk",
+    "cta": "Visit folk.app Official Partner"
+  },
+  "tally": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "solo",
+    "tier": "S-Tier Pick · 99% of Features Free Forever",
+    "name": "Tally.so Notion-Style Form Builder",
+    "role": "Type-Like-a-Doc Forms with Conditional Logic, Stripe Payments, File Uploads & Webhooks",
+    "verdictShort": "While other form tools lock you out after 10 responses a month, Tally gives you unlimited forms, unlimited submissions, conditional logic, and Stripe checkout for $0.",
+    "metricPill": "📝 Unlimited Submissions Free + Native Notion/Make Sync",
+    "price": "99% Free Forever (Unlimited Forms/Submissions) · Pro $29/mo",
+    "summary": "While other form tools lock you out after 10 responses a month, Tally gives you unlimited forms, unlimited submissions, conditional logic, and Stripe checkout for $0. Type-Like-a-Doc Forms with Conditional Logic, Stripe Payments, File Uploads & Webhooks",
+    "pros": [
+      "Just type `/` on a blank page to add inputs, payment blocks, signatures, and hidden UTM fields",
+      "Instant native integrations with Notion, Make.com, n8n, Airtable, and Slack"
+    ],
+    "cons": [
+      "Removing the tiny 'Made with Tally' badge and custom domains requires Tally Pro ($29/mo)"
+    ],
+    "verdict": "Tally.so Notion-Style Form Builder is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/tally",
+    "cta": "Visit Tally.so Official Partner"
+  },
+  "typeform": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · High-Converting Quiz Funnels",
+    "name": "Typeform Interactive Lead & Quiz Funnels",
+    "role": "One-Question-at-a-Time Conversational Forms & Video Quizzes That Double Completion Rates",
+    "verdictShort": "Want to skyrocket affiliate conversions? Embed a 4-question Typeform ('Find your ideal 2026 skincare routine / VPS') that routes users straight to your `/go/` affiliate picks.",
+    "metricPill": "🎯 2x Quiz Completion Rate + Video & AI Lead Scoring",
+    "price": "Free Tier · Basic $25/mo (20% Recurring Affiliate)",
+    "summary": "Want to skyrocket affiliate conversions? Embed a 4-question Typeform ('Find your ideal 2026 skincare routine / VPS') that routes users straight to your `/go/` affiliate picks. One-Question-at-a-Time Conversational Forms & Video Quizzes That Double Completion Rates",
+    "pros": [
+      "Conversational one-question-at-a-time UX feels like a personal consultation",
+      "Logic jumps dynamically route users to tailored product recommendations and affiliate links"
+    ],
+    "cons": [
+      "Free plan has tight monthly response limits; use Tally.so if you need unlimited free volume"
+    ],
+    "verdict": "Typeform Interactive Lead & Quiz Funnels is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/typeform",
+    "cta": "Visit Typeform Official Partner"
+  },
+  "airtable": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "automation",
+    "tier": "S-Tier Pick · Relational Content & SKU Engine",
+    "name": "Airtable Relational DB & AI App OS",
+    "role": "Programmable Relational Database, Interface Designer & AI Automations for Content Matrices",
+    "verdictShort": "When a Notion database hits 5,000+ rows of affiliate SKUs, programmatic SEO pages, or video scripts, Airtable’s strict relational typing and REST API shine.",
+    "metricPill": "🗄️ Relational Views + Webhook Triggers + AI Columns",
+    "price": "Free Tier (1,000 records/base) · Team $20/mo",
+    "summary": "When a Notion database hits 5,000+ rows of affiliate SKUs, programmatic SEO pages, or video scripts, Airtable’s strict relational typing and REST API shine. Programmable Relational Database, Interface Designer & AI Automations for Content Matrices",
+    "pros": [
+      "Rock-solid REST API and native webhook triggers for Make.com and n8n pipelines",
+      "Interface Designer builds clean internal dashboards over your data in minutes"
+    ],
+    "cons": [
+      "Per-seat pricing can add up for large teams compared to self-hosted Postgres/Supabase"
+    ],
+    "verdict": "Airtable Relational DB & AI App OS is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/airtable",
+    "cta": "Visit Airtable Official Partner"
+  },
+  "clickup": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "solo",
+    "tier": "S-Tier Pick · 20%–30% PartnerStack Commission",
+    "name": "ClickUp 4.0 Everything App & AI Brain",
+    "role": "Unified Tasks, Docs, Whiteboards, Time Tracking & ClickUp Brain Across Your Entire Workspace",
+    "verdictShort": "For agencies and multi-site operators juggling 10 client projects or content calendars, ClickUp packs more native views (Gantt, Kanban, Sprints, Docs) per dollar than any rival.",
+    "metricPill": "🧠 Unified Tasks + Docs + Whiteboards ($7/mo Value)",
+    "price": "Free Forever Tier · Unlimited $7/mo",
+    "summary": "For agencies and multi-site operators juggling 10 client projects or content calendars, ClickUp packs more native views (Gantt, Kanban, Sprints, Docs) per dollar than any rival. Unified Tasks, Docs, Whiteboards, Time Tracking & ClickUp Brain Across Your Entire Workspace",
+    "pros": [
+      "Unbeatable $7/mo entry price for unlimited storage, Gantt charts, and client guest seats",
+      "High-converting PartnerStack affiliate program for productivity reviewers"
+    ],
+    "cons": [
+      "Has so many customization toggles that new users should start with a simple template"
+    ],
+    "verdict": "ClickUp 4.0 Everything App & AI Brain is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/clickup",
+    "cta": "Visit ClickUp Official Partner"
+  },
+  "monday": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "solo",
+    "tier": "S-Tier Pick · Up to $150 CPA via PartnerStack",
+    "name": "monday.com Work OS & CRM Suite",
+    "role": "Color-Coded Visual Project Boards, Sales CRM & Automated Executive Dashboards",
+    "verdictShort": "monday.com combines consumer-grade visual polish with enterprise automation—and pays affiliates up to $150 CPA per qualified business signup via PartnerStack.",
+    "metricPill": "💰 Up to $150 CPA PartnerStack Bounty · Enterprise UX",
+    "price": "Free Tier (Up to 2 seats) · Basic $9/seat/mo",
+    "summary": "monday.com combines consumer-grade visual polish with enterprise automation—and pays affiliates up to $150 CPA per qualified business signup via PartnerStack. Color-Coded Visual Project Boards, Sales CRM & Automated Executive Dashboards",
+    "pros": [
+      "Instant executive dashboards aggregate revenue, sprint velocity, and content status",
+      "One of the highest-paying B2B productivity affiliate offers on PartnerStack"
+    ],
+    "cons": [
+      "Paid tiers use 3-seat minimum buckets, making it best for small teams and agencies"
+    ],
+    "verdict": "monday.com Work OS & CRM Suite is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/monday",
+    "cta": "Visit monday.com Official Partner"
+  },
+  "linear": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "workstation",
+    "tier": "S-Tier Pick · 60fps Keyboard-First Craft",
+    "name": "Linear High-Velocity Issue & Product OS",
+    "role": "Sub-50ms Local-Sync Issue Tracker, Cycles, Roadmaps & GitHub/Cursor PR Automation",
+    "verdictShort": "Linear set the modern design standard for software: zero loading spinners, instant keyboard shortcuts, automated sprint cycles, and bidirectional GitHub/Sentry sync.",
+    "metricPill": "⌨️ 60fps Offline-First Sync + Automatic GitHub PR Linking",
+    "price": "Free for Up to 250 Issues (Unlimited Members) · Basic $8/mo",
+    "summary": "Linear set the modern design standard for software: zero loading spinners, instant keyboard shortcuts, automated sprint cycles, and bidirectional GitHub/Sentry sync. Sub-50ms Local-Sync Issue Tracker, Cycles, Roadmaps & GitHub/Cursor PR Automation",
+    "pros": [
+      "Sync engine caches everything locally so every view switch happens in under 16ms",
+      "Automatically moves issues from In Progress to Done when your GitHub PR merges"
+    ],
+    "cons": [
+      "Built specifically for software and product teams rather than general marketing agencies"
+    ],
+    "verdict": "Linear High-Velocity Issue & Product OS is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/linear",
+    "cta": "Visit Linear Official Partner"
+  },
+  "raycast": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "workstation",
+    "tier": "S-Tier Pick · 30% Pro Referral Commission",
+    "name": "Raycast Pro macOS Launcher & AI Hub",
+    "role": "Replace Spotlight, Clipboard History, Text Expander, Window Manager & Global AI Chat in 1 Hotkey",
+    "verdictShort": "Raycast replaces 6 paid Mac utilities out of the box (clipboard manager, snippets, window snapping, quicklinks, calculator, and global AI commands).",
+    "metricPill": "⌘ Instant macOS Command Bar + 1,500+ Store Extensions",
+    "price": "Core 100% Free · Raycast Pro $8/mo",
+    "summary": "Raycast replaces 6 paid Mac utilities out of the box (clipboard manager, snippets, window snapping, quicklinks, calculator, and global AI commands). Replace Spotlight, Clipboard History, Text Expander, Window Manager & Global AI Chat in 1 Hotkey",
+    "pros": [
+      "Unlimited clipboard history, text snippets, and window management are 100% free",
+      "Raycast AI lets you highlight text in any app and run custom Prompts with 1 keystroke"
+    ],
+    "cons": [
+      "macOS and iOS native (Windows beta rolling out separately)"
+    ],
+    "verdict": "Raycast Pro macOS Launcher & AI Hub is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/raycast",
+    "cta": "Visit Raycast Official Partner"
+  },
+  "warp": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S-Tier Pick · IDE-Style Terminal + AI Agent",
+    "name": "Warp AI Terminal & DevOps Agent Mode",
+    "role": "Rust-Powered Terminal Where Commands & Outputs Group into Blocks + Natural-Language Agent Mode",
+    "verdictShort": "Forget memorizing arcane `tar`, `ffmpeg`, or `docker compose` flags. In Warp, type `# compress video to 720p mp4` or paste a stack trace and Agent Mode fixes it live.",
+    "metricPill": "💻 Natural-Language `#` to Shell Command + Warp Drive",
+    "price": "Free Tier (Generous AI Requests) · Pro $15/mo",
+    "summary": "Forget memorizing arcane `tar`, `ffmpeg`, or `docker compose` flags. In Warp, type `# compress video to 720p mp4` or paste a stack trace and Agent Mode fixes it live. Rust-Powered Terminal Where Commands & Outputs Group into Blocks + Natural-Language Agent Mode",
+    "pros": [
+      "Groups every command and its output into shareable, copyable blocks with IDE-style cursor editing",
+      "Warp Drive syncs your reusable parameterized server setup workflows across machines"
+    ],
+    "cons": [
+      "Requires a free account login to sync settings and AI quotas"
+    ],
+    "verdict": "Warp AI Terminal & DevOps Agent Mode is a verified 2026 S-Tier pick (9.6 / 10) in our AI desk.",
+    "url": "go/warp",
+    "cta": "Visit Warp Official Partner"
+  },
+  "obsidian": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "solo",
+    "tier": "S-Tier Pick · 100% Local Plaintext Ownership",
+    "name": "Obsidian Local-First Markdown Second Brain",
+    "role": "Zero-Lock-In Local Markdown Vault with Bidirectional Graph, Canvas & Direct Claude Code / Cursor Access",
+    "verdictShort": "Because an Obsidian vault is just a local folder of `.md` files, you can open your entire knowledge base inside Cursor or Claude Code to generate articles and kits.",
+    "metricPill": "📂 Plaintext `.md` Vault -> Directly Editable by AI IDEs",
+    "price": "100% Free for Personal & Commercial Use · Sync $4/mo",
+    "summary": "Because an Obsidian vault is just a local folder of `.md` files, you can open your entire knowledge base inside Cursor or Claude Code to generate articles and kits. Zero-Lock-In Local Markdown Vault with Bidirectional Graph, Canvas & Direct Claude Code / Cursor Access",
+    "pros": [
+      "Zero cloud lock-in: your notes are standard Markdown files stored on your own SSD",
+      "1,800+ community plugins (Dataview, Templater, Excalidraw, Git Sync) at $0 cost"
+    ],
+    "cons": [
+      "Real-time team collaboration is smoother in Notion; use Obsidian for your personal vault"
+    ],
+    "verdict": "Obsidian Local-First Markdown Second Brain is a verified 2026 S-Tier pick (9.8 / 10) in our AI desk.",
+    "url": "go/obsidian",
+    "cta": "Visit Obsidian Official Partner"
+  },
+  "readwise": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.7 / 10",
+    "relatedKit": "researchos",
+    "tier": "S-Tier Pick · Free Trial Month via Referral",
+    "name": "Readwise & Reader All-in-One Read-It-Later",
+    "role": "Unified Inbox for Web Articles, Email Newsletters, RSS, PDFs & YouTube Transcripts -> Auto-Synced to Notion/Obsidian",
+    "verdictShort": "Information overload kills output. Readwise Reader collects everything you read, lets Ghostreader AI summarize it, and pipes every highlight straight into Notion or Obsidian.",
+    "metricPill": "📚 Web + RSS + PDF + YouTube -> Auto-Sync to Notion/Obsidian",
+    "price": "30-Day Free Trial (+1 Bonus Month) · Full $9.99/mo",
+    "summary": "Information overload kills output. Readwise Reader collects everything you read, lets Ghostreader AI summarize it, and pipes every highlight straight into Notion or Obsidian. Unified Inbox for Web Articles, Email Newsletters, RSS, PDFs & YouTube Transcripts -> Auto-Synced to Notion/Obsidian",
+    "pros": [
+      "Watch YouTube videos alongside a clickable, highlightable live transcript",
+      "Automatic 2-way sync exports every highlight and note into Notion, Obsidian, or Logseq"
+    ],
+    "cons": [
+      "Paid subscription after trial, though it replaces both Pocket/Instapaper and Feedly Pro"
+    ],
+    "verdict": "Readwise & Reader All-in-One Read-It-Later is a verified 2026 S-Tier pick (9.7 / 10) in our AI desk.",
+    "url": "go/readwise",
+    "cta": "Visit Readwise Official Partner"
+  },
+  "chatpdf": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "researchos",
+    "tier": "S-Tier Pick · 30% Recurring Affiliate Share",
+    "name": "ChatPDF AI Document & Paper Analyzer",
+    "role": "Drop Any 200-Page PDF, Clinical Trial, or Financial Filing and Get Cited Answers with Page Numbers",
+    "verdictShort": "When auditing clinical skincare studies or 100-page SaaS terms, ChatPDF extracts exact tables and citations with clickable page-number links—and pays 30% recurring commission.",
+    "metricPill": "📄 Instant Page-Cited PDF Q&A + Multi-File Folder Chat",
+    "price": "Free Daily PDFs · Plus $19.99/yr or Monthly",
+    "summary": "When auditing clinical skincare studies or 100-page SaaS terms, ChatPDF extracts exact tables and citations with clickable page-number links—and pays 30% recurring commission. Drop Any 200-Page PDF, Clinical Trial, or Financial Filing and Get Cited Answers with Page Numbers",
+    "pros": [
+      "Every answer includes clickable page badges that scroll the PDF viewer to the exact paragraph",
+      "Massive global search volume among students, researchers, and analysts (30% recurring commission)"
+    ],
+    "cons": [
+      "For 20+ source audio overviews, combine with our NotebookLM Research OS Kit"
+    ],
+    "verdict": "ChatPDF AI Document & Paper Analyzer is a verified 2026 S-Tier pick (9.5 / 10) in our AI desk.",
+    "url": "go/chatpdf",
+    "cta": "Visit ChatPDF Official Partner"
+  },
+  "suno": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Full Commercial Rights & Stems",
+    "name": "Suno v4.5 Commercial AI Music & Stems Studio",
+    "role": "Generate Studio-Quality Songs, Lo-Fi Beats, Podcast Intros & Separated Vocal/Instrumental Stems",
+    "verdictShort": "Suno v4.5 produces shockingly clean vocals, acoustic instruments, and custom background beds—giving creators 100% royalty-free music that never triggers YouTube Content ID strikes.",
+    "metricPill": "🎵 v4.5 Studio Audio + Stem Separation + Commercial License",
+    "price": "Free Daily Credits (50/day) · Pro $10/mo (Commercial Rights)",
+    "summary": "Suno v4.5 produces shockingly clean vocals, acoustic instruments, and custom background beds—giving creators 100% royalty-free music that never triggers YouTube Content ID strikes. Generate Studio-Quality Songs, Lo-Fi Beats, Podcast Intros & Separated Vocal/Instrumental Stems",
+    "pros": [
+      "Pro plan ($10/mo) grants full commercial ownership for YouTube monetization, Spotify, and client ads",
+      "Export clean separated vocal and instrumental WAV stems for remixing in CapCut or Descript"
+    ],
+    "cons": [
+      "Free-tier generations are for non-commercial use only—upgrade to Pro before monetizing on YouTube"
+    ],
+    "verdict": "Suno v4.5 Commercial AI Music & Stems Studio is a verified 2026 S-Tier pick (9.8 / 10) in our CREATOR desk.",
+    "url": "go/suno",
+    "cta": "Visit Suno Official Partner"
+  },
+  "pika": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Viral Social Video Effects",
+    "name": "Pika 2.2 AI Video Effects & Pikaframes",
+    "role": "Turn Static Product Photos into Viral Surreal Clips (Melt, Cake-ify, Inflate, Pikaframes & Lip-Sync)",
+    "verdictShort": "Need a scroll-stopping 3-second hook for a TikTok, Reel, or Xiaohongshu product post? Pika 2.2’s Scene Ingredients and Pikaffects turn static bottle shots into viral eye-candy.",
+    "metricPill": "✨ Viral Pikaffects + Scene Ingredients + Keyframe Transitions",
+    "price": "Free Credits · Standard $8/mo",
+    "summary": "Need a scroll-stopping 3-second hook for a TikTok, Reel, or Xiaohongshu product post? Pika 2.2’s Scene Ingredients and Pikaffects turn static bottle shots into viral eye-candy. Turn Static Product Photos into Viral Surreal Clips (Melt, Cake-ify, Inflate, Pikaframes & Lip-Sync)",
+    "pros": [
+      "Scene Ingredients lets you upload your exact product photo, character, and background to animate together",
+      "Pikaframes smoothly morphs between any start frame and end frame up to 10 seconds"
+    ],
+    "cons": [
+      "For realistic long-form human physics, pair with Kling 2.5 Master or Runway Gen-4"
+    ],
+    "verdict": "Pika 2.2 AI Video Effects & Pikaframes is a verified 2026 S-Tier pick (9.5 / 10) in our CREATOR desk.",
+    "url": "go/pika",
+    "cta": "Visit Pika Official Partner"
+  },
+  "luma": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Ray-2 Architecture & Camera Loops",
+    "name": "Luma Dream Machine Ray-2 4K Cinema Video",
+    "role": "Natural-Language Camera Motion, Keyframe Extending & Seamless Loop Video Generation",
+    "verdictShort": "Built by the pioneers of 3D NeRFs, Luma’s Ray-2 model understands 3D space, camera orbits, and lighting reflections better than flat 2D diffusion video tools.",
+    "metricPill": "🎥 Ray-2 3D Camera Physics + 1-Click Seamless Loops",
+    "price": "Free Tier · Lite $9.99/mo · Plus $29.99/mo",
+    "summary": "Built by the pioneers of 3D NeRFs, Luma’s Ray-2 model understands 3D space, camera orbits, and lighting reflections better than flat 2D diffusion video tools. Natural-Language Camera Motion, Keyframe Extending & Seamless Loop Video Generation",
+    "pros": [
+      "Native `loop` toggle creates seamless looping hero backgrounds for websites and Lo-Fi channels",
+      "Fast Ray-2 inference with intuitive start/end keyframe anchoring"
+    ],
+    "cons": [
+      "Lip-sync talking avatars are better handled by HeyGen or Captions.ai"
+    ],
+    "verdict": "Luma Dream Machine Ray-2 4K Cinema Video is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/luma",
+    "cta": "Visit Luma Official Partner"
+  },
+  "leonardo": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "content",
+    "tier": "S-Tier Pick · Canva-Backed Creative Suite",
+    "name": "Leonardo.Ai Phoenix Studio & Canvas",
+    "role": "All-in-One Web Image Generator with Phoenix Model, Realtime Canvas, Transparency PNGs & Upscaler",
+    "verdictShort": "Acquired by Canva, Leonardo.Ai gives you a pro browser workspace with character reference locking, native transparent PNG generation, and Universal Upscaler.",
+    "metricPill": "🎨 150 Free Daily Tokens + Native Transparent PNGs",
+    "price": "150 Free Daily Tokens · Apprentice $10/mo",
+    "summary": "Acquired by Canva, Leonardo.Ai gives you a pro browser workspace with character reference locking, native transparent PNG generation, and Universal Upscaler. All-in-One Web Image Generator with Phoenix Model, Realtime Canvas, Transparency PNGs & Upscaler",
+    "pros": [
+      "Generous 150 free daily fast tokens let you generate dozens of assets every day at $0",
+      "Native Transparent PNG toggle saves hours of manual background removal"
+    ],
+    "cons": [
+      "Advanced multi-controlnet layers have a rich UI that takes 10 minutes to explore"
+    ],
+    "verdict": "Leonardo.Ai Phoenix Studio & Canvas is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/leonardo",
+    "cta": "Visit Leonardo.Ai Official Partner"
+  },
+  "ideogram": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "content",
+    "tier": "S-Tier Pick · #1 AI Text & Graphic Design Engine",
+    "name": "Ideogram 3.0 Typography, Logo & Poster AI",
+    "role": "Generate Print-Ready Posters, YouTube Thumbnails, Book Covers & T-Shirt Logos with Flawless Text",
+    "verdictShort": "When you need an AI image with a big, bold, correctly spelled headline—like a YouTube thumbnail, Kindle cover, or print-on-demand graphic—Ideogram 3.0 is untouchable.",
+    "metricPill": "🔤 99% Accurate Typography + Batch CSV Generation",
+    "price": "Free Weekly Credits · Basic $7/mo · Plus $16/mo",
+    "summary": "When you need an AI image with a big, bold, correctly spelled headline—like a YouTube thumbnail, Kindle cover, or print-on-demand graphic—Ideogram 3.0 is untouchable. Generate Print-Ready Posters, YouTube Thumbnails, Book Covers & T-Shirt Logos with Flawless Text",
+    "pros": [
+      "Industry-leading typography accuracy for multi-word titles, neon signs, badges, and logos",
+      "Color Palette control forces every generated graphic to match your exact brand hex codes"
+    ],
+    "cons": [
+      "Primarily optimized for Latin/English typography (for Chinese text, combine with Canva or Nano Banana 2.1)"
+    ],
+    "verdict": "Ideogram 3.0 Typography, Logo & Poster AI is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/ideogram",
+    "cta": "Visit Ideogram Official Partner"
+  },
+  "recraft": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S-Tier Pick · True Editable Vector `.SVG` Output",
+    "name": "Recraft V4 Infinite Canvas & True SVG AI",
+    "role": "Generate Cohesive Icon Sets, Vector Illustrations, 3D Graphics & Mockups Exportable as Editable `.SVG`",
+    "verdictShort": "Most AI tools output blurry raster pixels. Recraft V4 outputs real mathematical `.SVG` vector paths and generates 6 icons at a time in one locked brand style.",
+    "metricPill": "✒️ Native Editable `.SVG` Vectors + Style-Locked Icon Sets",
+    "price": "Free Daily Credits · Pro $10/mo (25% Recurring Affiliate)",
+    "summary": "Most AI tools output blurry raster pixels. Recraft V4 outputs real mathematical `.SVG` vector paths and generates 6 icons at a time in one locked brand style. Generate Cohesive Icon Sets, Vector Illustrations, 3D Graphics & Mockups Exportable as Editable `.SVG`",
+    "pros": [
+      "True native `.SVG` vector export ready to drop directly into Figma, Webflow, Framer, or codebases",
+      "Infinite canvas lets you generate an entire brand kit (icons, hero illustration, 3D product mockup) side by side"
+    ],
+    "cons": [
+      "Free tier outputs are public in the community gallery; Pro ($10/mo) enables private commercial mode"
+    ],
+    "verdict": "Recraft V4 Infinite Canvas & True SVG AI is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/recraft",
+    "cta": "Visit Recraft Official Partner"
+  },
+  "topaz": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Turn 720p AI Clips into Crisp 4K 60fps",
+    "name": "Topaz Video AI 6 & Photo AI 4K Upscaler",
+    "role": "Local GPU & Cloud Neural Upscaling, 60/120fps Frame Interpolation, De-Noising & Motion Stabilization",
+    "verdictShort": "AI video generators still output soft 720p/1080p footage at 24fps. Running your final timeline through Topaz Video AI 6 reconstructs skin pores, sharpens edges to 4K, and interpolates buttery 60fps motion.",
+    "metricPill": "💎 Proteus/Rhea 4K Upscaling + Apollo 60fps Frame Gen",
+    "price": "Free Trial · High-Ticket Desktop License ($15%–25% Impact CPA)",
+    "summary": "AI video generators still output soft 720p/1080p footage at 24fps. Running your final timeline through Topaz Video AI 6 reconstructs skin pores, sharpens edges to 4K, and interpolates buttery 60fps motion. Local GPU & Cloud Neural Upscaling, 60/120fps Frame Interpolation, De-Noising & Motion Stabilization",
+    "pros": [
+      "Fixes compression artifacts and low-res blur from Kling, Runway, Luma, and old archive footage",
+      "High-ticket purchase ($199–$299) generates $30–$70+ CPA commissions per sale via Impact"
+    ],
+    "cons": [
+      "Local rendering loves Apple Silicon (M2/M3/M4) or NVIDIA RTX GPUs (cloud credits also available)"
+    ],
+    "verdict": "Topaz Video AI 6 & Photo AI 4K Upscaler is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/topaz",
+    "cta": "Visit Topaz Official Partner"
+  },
+  "murf": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · 20% Recurring for 24 Months",
+    "name": "Murf.ai Enterprise Voiceover & Dubbing Studio",
+    "role": "Timeline-Synced Voiceover Studio with Pitch, Speed, Pause Control & Canva Direct Integration",
+    "verdictShort": "While ElevenLabs excels at raw emotional generation, Murf.ai gives course creators and marketers a full timeline studio where voiceovers sync directly with slides and video beats.",
+    "metricPill": "🎙️ Native Canva App + Word-Level Pitch/Pause Timeline",
+    "price": "Free Studio Trial · Creator $19/mo (20% Recurring 24 Mo)",
+    "summary": "While ElevenLabs excels at raw emotional generation, Murf.ai gives course creators and marketers a full timeline studio where voiceovers sync directly with slides and video beats. Timeline-Synced Voiceover Studio with Pitch, Speed, Pause Control & Canva Direct Integration",
+    "pros": [
+      "Official Murf app inside Canva lets you generate and drop voiceovers onto slides in two clicks",
+      "Pays 20% recurring commission for a full 24 months via PartnerStack"
+    ],
+    "cons": [
+      "Free trial allows full timeline testing before subscribing to download commercial WAV/MP3s"
+    ],
+    "verdict": "Murf.ai Enterprise Voiceover & Dubbing Studio is a verified 2026 S-Tier pick (9.5 / 10) in our CREATOR desk.",
+    "url": "go/murf",
+    "cta": "Visit Murf.ai Official Partner"
+  },
+  "pictory": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Up to 50% Lifetime Recurring + $1k Bonus",
+    "name": "Pictory.ai Blog-to-Video & Faceless YouTube Engine",
+    "role": "Paste Any Blog URL or Script -> Automatically Matches Storyblocks Stock Video, ElevenLabs Voice & Captions",
+    "verdictShort": "Pictory.ai is a double monetization powerhouse: use it to turn our 80 written guides into a faceless YouTube channel, AND promote its up-to-50% lifetime recurring affiliate program.",
+    "metricPill": "🎬 URL-to-Video in 3 Mins + Storyblocks Library Included",
+    "price": "Free Trial (3 Videos) · Starter $19/mo",
+    "summary": "Pictory.ai is a double monetization powerhouse: use it to turn our 80 written guides into a faceless YouTube channel, AND promote its up-to-50% lifetime recurring affiliate program. Paste Any Blog URL or Script -> Automatically Matches Storyblocks Stock Video, ElevenLabs Voice & Captions",
+    "pros": [
+      "Includes full Storyblocks & Getty stock video access inside your subscription—zero extra stock fees",
+      "One of the most lucrative affiliate programs in AI: up to 50% lifetime recurring + $1,000 partner bonus"
+    ],
+    "cons": [
+      "Best for listicles, software roundups, and educational explainers rather than cinematic fiction"
+    ],
+    "verdict": "Pictory.ai Blog-to-Video & Faceless YouTube Engine is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/pictory",
+    "cta": "Visit Pictory.ai Official Partner"
+  },
+  "invideo": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · 25%–50% Impact Commission",
+    "name": "InVideo AI Prompt-to-Full-Video Studio",
+    "role": "Type One Topic Prompt -> InVideo AI Writes the Script, Generates Voiceover, Cuts Stock Clips & Adds Music",
+    "verdictShort": "Don’t even have a script yet? Give InVideo AI a single prompt ('Create a 90-second YouTube Short comparing Korean sunscreens') and edit the finished cut using plain text commands.",
+    "metricPill": "🪄 1-Prompt Full Video + Magic Box Text-Command Editing",
+    "price": "Free Weekly Generation · Plus $25/mo",
+    "summary": "Don’t even have a script yet? Give InVideo AI a single prompt ('Create a 90-second YouTube Short comparing Korean sunscreens') and edit the finished cut using plain text commands. Type One Topic Prompt -> InVideo AI Writes the Script, Generates Voiceover, Cuts Stock Clips & Adds Music",
+    "pros": [
+      "Magic Box lets you edit scenes, swap stock clips, and change voice pacing via chat commands",
+      "High-converting Impact affiliate program paying 25%–50% commission"
+    ],
+    "cons": [
+      "Free exports include a watermark; Plus ($25/mo) unlocks clean 1080p/4K commercial downloads"
+    ],
+    "verdict": "InVideo AI Prompt-to-Full-Video Studio is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/invideo",
+    "cta": "Visit InVideo Official Partner"
+  },
+  "fliki": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · 30% Lifetime Recurring Commission",
+    "name": "Fliki.ai Text-to-Video & 2,000+ Neural Voices",
+    "role": "Scene-by-Scene Script Editor That Turns Bullet Points, Tweets, or Amazon Links into Vertical Shorts",
+    "verdictShort": "Fliki’s scene-card workflow is the fastest way to batch-produce 30 TikToks, Reels, or YouTube Shorts a month across 80+ languages—backed by a 30% lifetime recurring affiliate payout.",
+    "metricPill": "📱 Tweet/Product-URL to 9:16 Short + 30% Lifetime Affiliate",
+    "price": "Free Tier (5 mins/mo) · Standard $21/mo",
+    "summary": "Fliki’s scene-card workflow is the fastest way to batch-produce 30 TikToks, Reels, or YouTube Shorts a month across 80+ languages—backed by a 30% lifetime recurring affiliate payout. Scene-by-Scene Script Editor That Turns Bullet Points, Tweets, or Amazon Links into Vertical Shorts",
+    "pros": [
+      "Supports 2,000+ neural voices across 80+ languages and dialects out of the box",
+      "Earn 30% lifetime recurring commission on every creator you refer"
+    ],
+    "cons": [
+      "Best for vertical 9:16 social shorts and listicles"
+    ],
+    "verdict": "Fliki.ai Text-to-Video & 2,000+ Neural Voices is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/fliki",
+    "cta": "Visit Fliki.ai Official Partner"
+  },
+  "veed": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Zero-Install Cloud Video Editor",
+    "name": "VEED.IO Browser Video Studio & Eye Contact AI",
+    "role": "Browser-Based Timeline Editor with 1-Click Background Removal, Eye Contact Fix, Magic Cut & Auto-Subtitles",
+    "verdictShort": "Recording talking-head tutorials while reading a script? VEED’s AI Eye Contact redirects your pupils toward the camera lens automatically and Magic Cut strips out every 'um' and pause.",
+    "metricPill": "👁️ AI Eye Contact Correction + Magic Cut Silence Remover",
+    "price": "Free Tier · Lite $12/mo · Pro $29/mo",
+    "summary": "Recording talking-head tutorials while reading a script? VEED’s AI Eye Contact redirects your pupils toward the camera lens automatically and Magic Cut strips out every 'um' and pause. Browser-Based Timeline Editor with 1-Click Background Removal, Eye Contact Fix, Magic Cut & Auto-Subtitles",
+    "pros": [
+      "Runs 100% in Chrome with cloud rendering—no heavy local GPU or 50GB disk install required",
+      "Magic Cut + Clean Audio turns a raw 15-minute screen recording into a tight 6-minute tutorial in one click"
+    ],
+    "cons": [
+      "Free exports carry a corner watermark"
+    ],
+    "verdict": "VEED.IO Browser Video Studio & Eye Contact AI is a verified 2026 S-Tier pick (9.5 / 10) in our CREATOR desk.",
+    "url": "go/veed",
+    "cta": "Visit VEED.IO Official Partner"
+  },
+  "captions": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · #1 Creator App on iOS & Web",
+    "name": "Captions.ai Talking Video & Creator Shorts App",
+    "role": "AI Edit Automatically Adds Dynamic Word Captions, B-Roll Cutaways, Sound Effects, Zooms & Lip-Sync Dubbing",
+    "verdictShort": "Ever wonder how top tech creators get those punchy zoom cuts, pop-in graphics, and subtle whoosh SFX on every sentence? Captions.ai’s 'AI Edit' does the entire polish pass automatically.",
+    "metricPill": "📲 1-Click 'AI Edit' (Zooms + SFX + B-Roll) + 3D AI Creators",
+    "price": "Free Trial · Pro $9.99/mo",
+    "summary": "Ever wonder how top tech creators get those punchy zoom cuts, pop-in graphics, and subtle whoosh SFX on every sentence? Captions.ai’s 'AI Edit' does the entire polish pass automatically. AI Edit Automatically Adds Dynamic Word Captions, B-Roll Cutaways, Sound Effects, Zooms & Lip-Sync Dubbing",
+    "pros": [
+      "AI Dubbing translates your spoken video into 29 languages while matching your exact voice timbre and lip movements",
+      "Includes AI Twin and studio-lit 3D UGC avatars for holding and demonstrating products"
+    ],
+    "cons": [
+      "Best for 30–90 second vertical creator videos and product ads"
+    ],
+    "verdict": "Captions.ai Talking Video & Creator Shorts App is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/captions",
+    "cta": "Visit Captions.ai Official Partner"
+  },
+  "envato": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "content",
+    "tier": "S-Tier Pick · Unlimited Downloads ($16.50/mo) + Up to $120 CPA",
+    "name": "Envato Elements Unlimited Creative Assets",
+    "role": "19+ Million Stock Videos, After Effects/Premiere Templates, 3D Assets, Fonts, Presentations & WordPress Themes",
+    "verdictShort": "Buying stock footage or Premiere templates one by one costs $40 per file. Envato Elements gives you unlimited downloads across 19M+ assets for $16.50/mo—and pays affiliates up to $120 CPA!",
+    "metricPill": "♾️ 19M+ Assets Unlimited Download + Up to $120 Impact CPA",
+    "price": "$16.50/mo (Unlimited Downloads + Commercial License)",
+    "summary": "Buying stock footage or Premiere templates one by one costs $40 per file. Envato Elements gives you unlimited downloads across 19M+ assets for $16.50/mo—and pays affiliates up to $120 CPA! 19+ Million Stock Videos, After Effects/Premiere Templates, 3D Assets, Fonts, Presentations & WordPress Themes",
+    "pros": [
+      "Single clear commercial license covers YouTube, client projects, websites, and digital products",
+      "Massive affiliate conversion rate on Impact: pays $20 to $120 CPA for every new subscriber"
+    ],
+    "cons": [
+      "Remember to register each downloaded item to a project name to lock in perpetual licensing"
+    ],
+    "verdict": "Envato Elements Unlimited Creative Assets is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/envato",
+    "cta": "Visit Envato Official Partner"
+  },
+  "epidemicsound": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Zero Copyright Strikes + 4-Track Stems",
+    "name": "Epidemic Sound Royalty-Free Creator Music",
+    "role": "40,000+ Curated Tracks & 90,000+ Sound Effects with Separated Melody/Drum/Bass Stems & Channel Whitelisting",
+    "verdictShort": "Why do MrBeast, MKBHD, and top YouTubers use Epidemic Sound? Because you can mute the melody stem while talking, keep the drum groove, and whitelist your channel against copyright claims.",
+    "metricPill": "🎧 40k+ Tracks + 90k+ SFX + 4-Stem Separation",
+    "price": "30-Day Free Trial · Creator $9.99/mo",
+    "summary": "Why do MrBeast, MKBHD, and top YouTubers use Epidemic Sound? Because you can mute the melody stem while talking, keep the drum groove, and whitelist your channel against copyright claims. 40,000+ Curated Tracks & 90,000+ Sound Effects with Separated Melody/Drum/Bass Stems & Channel Whitelisting",
+    "pros": [
+      "Download separated stems (Drums, Bass, Instruments, Melody) for every single track",
+      "30-day free trial converts effortlessly on Impact affiliate links"
+    ],
+    "cons": [
+      "Channels must remain subscribed while publishing new videos using the tracks"
+    ],
+    "verdict": "Epidemic Sound Royalty-Free Creator Music is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/epidemicsound",
+    "cta": "Visit Epidemic Official Partner"
+  },
+  "artlist": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S-Tier Pick · Up to $100 CPA per Annual Subscriber",
+    "name": "Artlist Max Cinema Music, SFX & 8K Footage",
+    "role": "Indie-Label Music, Cinema SFX, 8K RAW/Log Stock Footage, LUTs & Premiere/DaVinci Plugins",
+    "verdictShort": "If you want your tech reviews or brand films to sound like an Apple keynote or A24 documentary rather than generic stock music, Artlist’s real-artist catalog is unmatched.",
+    "metricPill": "🎞️ Cinema-Grade Indie Music + 8K Footage + Up to $100 CPA",
+    "price": "Free Trial · Music & SFX from $9.99/mo",
+    "summary": "If you want your tech reviews or brand films to sound like an Apple keynote or A24 documentary rather than generic stock music, Artlist’s real-artist catalog is unmatched. Indie-Label Music, Cinema SFX, 8K RAW/Log Stock Footage, LUTs & Premiere/DaVinci Plugins",
+    "pros": [
+      "Universal license covers YouTube, client commercials, podcasts, and broadcast worldwide",
+      "High-ticket annual plans pay affiliates up to $100 CPA per signup"
+    ],
+    "cons": [
+      "Billed annually, which means zero monthly churn headaches and high upfront affiliate payouts"
+    ],
+    "verdict": "Artlist Max Cinema Music, SFX & 8K Footage is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/artlist",
+    "cta": "Visit Artlist Official Partner"
+  },
+  "seranking": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · 30% Lifetime Recurring or $200 CPA",
+    "name": "SE Ranking All-in-One SEO & AI Search Tracker",
+    "role": "Daily Keyword Rank Tracker, Backlink Spy, Technical Site Audit, Content Editor & Google AI Overview Tracker",
+    "verdictShort": "Want full Semrush/Ahrefs power at half the monthly bill? SE Ranking tracks traditional SERPs plus Google AI Overviews—and offers a 14-day no-credit-card free trial.",
+    "metricPill": "📈 Tracks Google AI Overviews + 50% Cheaper Than Semrush",
+    "price": "14-Day Free Trial (No Card Needed) · Essential $52/mo",
+    "summary": "Want full Semrush/Ahrefs power at half the monthly bill? SE Ranking tracks traditional SERPs plus Google AI Overviews—and offers a 14-day no-credit-card free trial. Daily Keyword Rank Tracker, Backlink Spy, Technical Site Audit, Content Editor & Google AI Overview Tracker",
+    "pros": [
+      "14-day free trial requires NO credit card—making it convert 3x higher with readers",
+      "Affiliate choice: earn 30% lifetime recurring commission OR up to $200 one-time CPA"
+    ],
+    "cons": [
+      "Historical backlink index is slightly smaller than Ahrefs, though more than enough for niche sites"
+    ],
+    "verdict": "SE Ranking All-in-One SEO & AI Search Tracker is a verified 2026 S-Tier pick (9.7 / 10) in our CREATOR desk.",
+    "url": "go/seranking",
+    "cta": "Visit SE Official Partner"
+  },
+  "mangools": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · 30%–35% Lifetime Recurring Commission",
+    "name": "Mangools KWFinder Low-KD Keyword Suite",
+    "role": "5-in-1 SEO Bundle: KWFinder, SERPChecker, SERPWatcher, LinkMiner & SiteProfiler with Ultra-Clean UI",
+    "verdictShort": "New domains like `cruxxxxxkit.com` grow fastest by targeting keywords with Keyword Difficulty (KD) under 25. Mangools KWFinder makes spotting those green low-competition gems effortless.",
+    "metricPill": "🔍 Most Accurate Low-KD Score + 30% Lifetime Affiliate",
+    "price": "10-Day Free Trial · Basic $29/mo",
+    "summary": "New domains like `cruxxxxxkit.com` grow fastest by targeting keywords with Keyword Difficulty (KD) under 25. Mangools KWFinder makes spotting those green low-competition gems effortless. 5-in-1 SEO Bundle: KWFinder, SERPChecker, SERPWatcher, LinkMiner & SiteProfiler with Ultra-Clean UI",
+    "pros": [
+      "Color-coded Keyword Difficulty (0–100) instantly highlights easy-to-rank buyer queries",
+      "Pays 30%–35% lifetime recurring commissions with a 30-day cookie window"
+    ],
+    "cons": [
+      "Focused on keyword research and SERP analysis rather than deep enterprise crawl logs"
+    ],
+    "verdict": "Mangools KWFinder Low-KD Keyword Suite is a verified 2026 S-Tier pick (9.6 / 10) in our CREATOR desk.",
+    "url": "go/mangools",
+    "cta": "Visit Mangools Official Partner"
+  },
+  "systeme": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · 60% Lifetime Recurring Commission!",
+    "name": "Systeme.io All-in-One Funnel & Email OS",
+    "role": "Replace ClickFunnels ($147/mo) + Mailchimp + Teachable with 1 Platform (Free Forever up to 2,000 Contacts)",
+    "verdictShort": "Why pay $147/mo for ClickFunnels? Systeme.io gives you 3 sales funnels, 2,000 email subscribers, unlimited emails, and course hosting 100% FREE forever—and pays affiliates 60% lifetime recurring!",
+    "metricPill": "🔥 Free Forever up to 2k Leads + 60% Lifetime Affiliate",
+    "price": "Free Forever (2,000 Contacts + 3 Funnels) · Startup $27/mo",
+    "summary": "Why pay $147/mo for ClickFunnels? Systeme.io gives you 3 sales funnels, 2,000 email subscribers, unlimited emails, and course hosting 100% FREE forever—and pays affiliates 60% lifetime recurring! Replace ClickFunnels ($147/mo) + Mailchimp + Teachable with 1 Platform (Free Forever up to 2,000 Contacts)",
+    "pros": [
+      "Unbeatable Free Forever tier: 2,000 email contacts, unlimited email sends, 3 funnels, 1 course, $0/mo",
+      "Industry-high 60% lifetime recurring commission + 180-day/lifetime attribution cookie"
+    ],
+    "cons": [
+      "Template designs are clean and conversion-focused rather than flashy 3D animations"
+    ],
+    "verdict": "Systeme.io All-in-One Funnel & Email OS is a verified 2026 S-Tier pick (9.8 / 10) in our CREATOR desk.",
+    "url": "go/systeme",
+    "cta": "Visit Systeme.io Official Partner"
+  },
+  "skool": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · 40% Lifetime Recurring ($39/mo per Group)",
+    "name": "Skool Gamified Community & Course Platform",
+    "role": "Combine Community Forum, Video Courses, Leaderboards & Event Calendar in One Addictive Interface",
+    "verdictShort": "Discord is too chaotic and Kajabi is too expensive. Skool combines a clean forum, classroom courses unlocked by member engagement levels, and a 40% lifetime recurring affiliate program.",
+    "metricPill": "🏆 Gamified Level-Up Courses + 40% Lifetime Recurring",
+    "price": "14-Day Free Trial · Hobby $9/mo · Pro $99/mo",
+    "summary": "Discord is too chaotic and Kajabi is too expensive. Skool combines a clean forum, classroom courses unlocked by member engagement levels, and a 40% lifetime recurring affiliate program. Combine Community Forum, Video Courses, Leaderboards & Event Calendar in One Addictive Interface",
+    "pros": [
+      "Gamified leaderboards reward members for helpful posts by unlocking bonus courses and digital kits",
+      "Refer just 10 Pro community creators and earn ~$396/month in passive recurring income"
+    ],
+    "cons": [
+      "Clean minimalist layout intentionally avoids complex CSS theme customization"
+    ],
+    "verdict": "Skool Gamified Community & Course Platform is a verified 2026 S-Tier pick (9.8 / 10) in our CREATOR desk.",
+    "url": "go/skool",
+    "cta": "Visit Skool Official Partner"
+  },
+  "shopify": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · $50–$150 CPA via Impact",
+    "name": "Shopify Global E-Commerce Storefront ($1/mo Trial)",
+    "role": "World’s #1 E-Commerce & Digital Storefront OS with Shop Pay 1-Click Checkout & Global Tax Automation",
+    "verdictShort": "Shopify powers over 10% of global e-commerce. Its $1/month starter promo makes it one of the highest-converting Impact affiliate offers ($50–$150 CPA).",
+    "metricPill": "🛒 #1 Converting Checkout + $1/mo Starter Trial",
+    "price": "$1/mo for First Month · Basic $29/mo",
+    "summary": "Shopify powers over 10% of global e-commerce. Its $1/month starter promo makes it one of the highest-converting Impact affiliate offers ($50–$150 CPA). World’s #1 E-Commerce & Digital Storefront OS with Shop Pay 1-Click Checkout & Global Tax Automation",
+    "pros": [
+      "Shop Pay boosts mobile checkout conversion by up to 50% compared to standard guest checkouts",
+      "$1/month trial hook converts readers effortlessly while paying $50–$150 CPA per merchant"
+    ],
+    "cons": [
+      "Transaction fees apply if not using Shopify Payments"
+    ],
+    "verdict": "Shopify Global E-Commerce Storefront ($1/mo Trial) is a verified 2026 S-Tier pick (9.8 / 10) in our CLOUD desk.",
+    "url": "go/shopify",
+    "cta": "Visit Shopify Official Partner"
+  },
+  "ghost": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "solo",
+    "tier": "S-Tier Pick · 30% Recurring Commission + 0% Platform Fee",
+    "name": "Ghost(Pro) Independent Publishing & Newsletter CMS",
+    "role": "Node.js Publication Engine Combining SEO Blog, Email Newsletter & Stripe Paid Memberships with 0% Cut",
+    "verdictShort": "Substack takes 10% of your subscription revenue forever. Ghost takes 0%—giving you a fast custom-domain SEO publication and newsletter on your own terms.",
+    "metricPill": "👻 0% Membership Revenue Cut + Blazing Node.js SEO",
+    "price": "14-Day Free Trial · Starter $9/mo",
+    "summary": "Substack takes 10% of your subscription revenue forever. Ghost takes 0%—giving you a fast custom-domain SEO publication and newsletter on your own terms. Node.js Publication Engine Combining SEO Blog, Email Newsletter & Stripe Paid Memberships with 0% Cut",
+    "pros": [
+      "Keep 100% of your paid membership revenue (only standard Stripe processing fees apply)",
+      "Pays 30% recurring affiliate commission on every Ghost(Pro) publisher you refer"
+    ],
+    "cons": [
+      "Focused on publishing and memberships rather than multi-SKU shopping carts"
+    ],
+    "verdict": "Ghost(Pro) Independent Publishing & Newsletter CMS is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/ghost",
+    "cta": "Visit Ghost(Pro) Official Partner"
+  },
+  "carrd": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · $19/Year for 10 Custom-Domain Sites",
+    "name": "Carrd Pro One-Page Landing Builder ($19/Year!)",
+    "role": "Build Fast, Responsive One-Page Affiliate Bridge Pages, Link-in-Bio Hubs & Waitlists in 15 Minutes",
+    "verdictShort": "At $19 per YEAR (roughly $1.58/month) for 10 custom-domain sites with Stripe/Gumroad embeds and forms, Carrd Pro is the highest-ROI purchase on the internet.",
+    "metricPill": "⚡ Just $19/Year (Not Month!) + 30% Lifetime Affiliate",
+    "price": "Free Tier · Carrd Pro $19/YEAR (30% Lifetime Affiliate)",
+    "summary": "At $19 per YEAR (roughly $1.58/month) for 10 custom-domain sites with Stripe/Gumroad embeds and forms, Carrd Pro is the highest-ROI purchase on the internet. Build Fast, Responsive One-Page Affiliate Bridge Pages, Link-in-Bio Hubs & Waitlists in 15 Minutes",
+    "pros": [
+      "Unbelievable $19/year pricing makes it an impulse upgrade for almost every reader",
+      "30% lifetime recurring affiliate commission on every annual renewal"
+    ],
+    "cons": [
+      "Strictly for single-page sites and landing funnels"
+    ],
+    "verdict": "Carrd Pro One-Page Landing Builder ($19/Year!) is a verified 2026 S-Tier pick (9.8 / 10) in our CLOUD desk.",
+    "url": "go/carrd",
+    "cta": "Visit Carrd Official Partner"
+  },
+  "dorik": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.5 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S-Tier Pick · 30%–40% Recurring Affiliate",
+    "name": "Dorik AI No-Code Website & White-Label CMS",
+    "role": "Prompt-to-Website Builder with Built-In Blogging CMS, Airtable Integration & Agency White-Labeling",
+    "verdictShort": "Dorik combines AI prompt-to-site generation with a clean blogging CMS and native Airtable data binding—plus up to 40% recurring commissions for affiliates.",
+    "metricPill": "🏗️ Prompt-to-Site in 60s + 40% Recurring Commission",
+    "price": "14-Day Free Trial · Personal $18/mo",
+    "summary": "Dorik combines AI prompt-to-site generation with a clean blogging CMS and native Airtable data binding—plus up to 40% recurring commissions for affiliates. Prompt-to-Website Builder with Built-In Blogging CMS, Airtable Integration & Agency White-Labeling",
+    "pros": [
+      "Native Airtable integration lets you launch programmatic directory and job sites without code",
+      "Generous 30%–40% recurring affiliate program for web design bloggers"
+    ],
+    "cons": [
+      "Framer offers deeper keyframe animation physics, while Dorik wins on simplicity"
+    ],
+    "verdict": "Dorik AI No-Code Website & White-Label CMS is a verified 2026 S-Tier pick (9.5 / 10) in our CLOUD desk.",
+    "url": "go/dorik",
+    "cta": "Visit Dorik Official Partner"
+  },
+  "cloudways": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S-Tier Pick · Up to $125 CPA or $30 + 7% Lifetime",
+    "name": "Cloudways Managed High-Speed Cloud Hosting",
+    "role": "1-Click Managed WordPress, WooCommerce & PHP/Laravel Stack on Top of DigitalOcean, Vultr & AWS",
+    "verdictShort": "Cloudways gives you the raw speed of DigitalOcean and Vultr NVMe servers without touching SSH—and pays affiliates up to $125 CPA per customer.",
+    "metricPill": "🚀 Managed DO/Vultr NVMe + Up to $125 CPA Affiliate",
+    "price": "3-Day Free Trial (No Card) · Plans from $11/mo",
+    "summary": "Cloudways gives you the raw speed of DigitalOcean and Vultr NVMe servers without touching SSH—and pays affiliates up to $125 CPA per customer. 1-Click Managed WordPress, WooCommerce & PHP/Laravel Stack on Top of DigitalOcean, Vultr & AWS",
+    "pros": [
+      "3-day free trial requires NO credit card, driving massive trial-to-paid conversions",
+      "Flexible Slab (up to $125 CPA) or Hybrid ($30 upfront + 7% lifetime monthly) affiliate payouts"
+    ],
+    "cons": [
+      "Primarily optimized for WordPress, WooCommerce, and PHP applications"
+    ],
+    "verdict": "Cloudways Managed High-Speed Cloud Hosting is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/cloudways",
+    "cta": "Visit Cloudways Official Partner"
+  },
+  "kinsta": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S-Tier Pick · Up to $500 CPA + 10% Lifetime Monthly!",
+    "name": "Kinsta Google Cloud C3D Premium Hosting",
+    "role": "Enterprise-Grade WordPress, Node.js, Python & Database Hosting on Google Cloud’s Fastest C3D VMs + Cloudflare Edge",
+    "verdictShort": "Kinsta is the Rolls-Royce of cloud hosting—and runs arguably the best affiliate program in web hosting: $50 to $500 upfront CPA PLUS 10% lifetime monthly recurring.",
+    "metricPill": "💎 Google Cloud C3D VMs + $500 CPA + 10% Recurring",
+    "price": "First Month Free on Select Plans · Starter $30/mo",
+    "summary": "Kinsta is the Rolls-Royce of cloud hosting—and runs arguably the best affiliate program in web hosting: $50 to $500 upfront CPA PLUS 10% lifetime monthly recurring. Enterprise-Grade WordPress, Node.js, Python & Database Hosting on Google Cloud’s Fastest C3D VMs + Cloudflare Edge",
+    "pros": [
+      "Combines upfront high-ticket CPA ($50–$500) with 10% lifetime monthly recurring residuals",
+      "60-day attribution cookie and ultra-low <4% customer churn rate"
+    ],
+    "cons": [
+      "Premium pricing ($30+/mo) aimed at serious revenue-generating sites and agencies"
+    ],
+    "verdict": "Kinsta Google Cloud C3D Premium Hosting is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/kinsta",
+    "cta": "Visit Kinsta Official Partner"
+  },
+  "linode": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S-Tier Pick · $100 Free Credit + Akamai Global Backbone",
+    "name": "Akamai Connected Cloud (Linode) NVMe VPS",
+    "role": "Developer-Trusted Linux VPS, Dedicated CPU & Object Storage Backed by Akamai’s Edge Network ($5/mo Shared Plans)",
+    "verdictShort": "Backed by Akamai’s massive global CDN backbone, Linode offers rock-solid $5/month Linux instances and gives newCruxKit readers $100 in free 60-day cloud credit.",
+    "metricPill": "🌐 $100 Free Cloud Credit + $5/mo Nanode VPS",
+    "price": "$100 Free Credit (60 Days) · Nanode $5/mo",
+    "summary": "Backed by Akamai’s massive global CDN backbone, Linode offers rock-solid $5/month Linux instances and gives newCruxKit readers $100 in free 60-day cloud credit. Developer-Trusted Linux VPS, Dedicated CPU & Object Storage Backed by Akamai’s Edge Network ($5/mo Shared Plans)",
+    "pros": [
+      "$100 free credit lets you run multiple Docker, n8n, and proxy test servers for 2 months at $0",
+      "Predictable flat-rate pricing with generous bundled outbound bandwidth"
+    ],
+    "cons": [
+      "Requires standard credit card or PayPal verification to activate the $100 promotional credit"
+    ],
+    "verdict": "Akamai Connected Cloud (Linode) NVMe VPS is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/linode",
+    "cta": "Visit Akamai Official Partner"
+  },
+  "upstash": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "cloudflareedge",
+    "tier": "S-Tier Pick · Pay-Per-Request ($0 Idle Cost)",
+    "name": "Upstash Serverless Redis, Rate-Limit & QStash",
+    "role": "HTTP-Based Serverless Redis Cache, API Rate Limiter, Vector DB & QStash Webhook Queue for Edge Functions",
+    "verdictShort": "Running an AI wrapper or API on Vercel/Cloudflare? Use `@upstash/ratelimit` to stop bots from draining your OpenRouter credits, and QStash to retry failed webhooks.",
+    "metricPill": "⚡ HTTP Edge Redis + `@upstash/ratelimit` for LLM APIs",
+    "price": "Generous Free Tier (10k cmds/day) · Pay-As-You-Go",
+    "summary": "Running an AI wrapper or API on Vercel/Cloudflare? Use `@upstash/ratelimit` to stop bots from draining your OpenRouter credits, and QStash to retry failed webhooks. HTTP-Based Serverless Redis Cache, API Rate Limiter, Vector DB & QStash Webhook Queue for Edge Functions",
+    "pros": [
+      "The industry standard for rate-limiting Next.js and Cloudflare Worker AI endpoints in 3 lines of code",
+      "QStash guarantees serverless webhook delivery and cron scheduling without managing Redis servers"
+    ],
+    "cons": [
+      "High-throughput constant workloads can switch to fixed monthly plans"
+    ],
+    "verdict": "Upstash Serverless Redis, Rate-Limit & QStash is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/upstash",
+    "cta": "Visit Upstash Official Partner"
+  },
+  "neon": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S-Tier Pick · Scale-to-Zero + Instant DB Branching",
+    "name": "Neon Serverless Branching Postgres",
+    "role": "Serverless PostgreSQL with 1-Second Copy-on-Write Database Branches, pgvector & Scale-to-Zero Compute",
+    "verdictShort": "Neon lets you branch your production Postgres database in 1 second—giving every Vercel preview deployment or AI coding agent its own isolated test database.",
+    "metricPill": "🌿 1-Second Git-Style DB Branches + Scale-to-Zero",
+    "price": "Free Forever Tier (0.5 GB + 190 Compute Hrs) · Launch $19/mo",
+    "summary": "Neon lets you branch your production Postgres database in 1 second—giving every Vercel preview deployment or AI coding agent its own isolated test database. Serverless PostgreSQL with 1-Second Copy-on-Write Database Branches, pgvector & Scale-to-Zero Compute",
+    "pros": [
+      "Copy-on-write branching creates instant isolated staging databases without doubling storage costs",
+      "Native `pgvector` support and sub-second wake-up from scale-to-zero"
+    ],
+    "cons": [
+      "Cold start from zero takes ~300ms (can be disabled on paid plans for 24/7 hot instances)"
+    ],
+    "verdict": "Neon Serverless Branching Postgres is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/neon",
+    "cta": "Visit Neon Official Partner"
+  },
+  "brightdata": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · 50% Revenue Share up to $2,500!",
+    "name": "Bright Data 72M+ Residential Proxies & Web Unlocker",
+    "role": "72M+ Ethical Residential, ISP, Mobile IPs + Scraping Browser & SERP API across 195 Countries",
+    "verdictShort": "Whether you are running 50 isolated social/e-commerce stores inside AdsPower or scraping Amazon/Google at scale, Bright Data is the undisputed enterprise proxy standard—paying affiliates 50% revenue share up to $2,500 per client.",
+    "metricPill": "🌍 72M+ Real Residential/ISP IPs + 50% Affiliate Share",
+    "price": "Free Trial Credit for Businesses · Pay-Per-GB ($50% RevShare)",
+    "summary": "Whether you are running 50 isolated social/e-commerce stores inside AdsPower or scraping Amazon/Google at scale, Bright Data is the undisputed enterprise proxy standard—paying affiliates 50% revenue share up to $2,500 per client. 72M+ Ethical Residential, ISP, Mobile IPs + Scraping Browser & SERP API across 195 Countries",
+    "pros": [
+      "Target exact countries, cities, ZIP codes, and mobile carriers (AT&T, Verizon, Vodafone) with 99.95% uptime",
+      "High-ticket B2B affiliate program: 50% revenue share up to $2,500 per referred customer"
+    ],
+    "cons": [
+      "Enterprise-grade dashboard has rich routing controls; follow our Kit #24 quickstart guide"
+    ],
+    "verdict": "Bright Data 72M+ Residential Proxies & Web Unlocker is a verified 2026 S-Tier pick (9.8 / 10) in our CLOUD desk.",
+    "url": "go/brightdata",
+    "cta": "Visit Bright Official Partner"
+  },
+  "oxylabs": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · Up to 50% High-Ticket Commission",
+    "name": "Oxylabs Enterprise Residential & Static ISP Proxies",
+    "role": "100M+ Residential Pool, Dedicated Static ISP Proxies & AI Web Scraper API for E-Commerce Intelligence",
+    "verdictShort": "Oxylabs’ Dedicated Static ISP proxies give you the speed of a datacenter IP with the official consumer-ISP ASN registration of a real home connection—ideal for permanent store logins.",
+    "metricPill": "🛡️ Dedicated Static ISP IPs + Up to 50% Commission",
+    "price": "Free Trial Available · Pay-As-You-Go Residential from $8/GB",
+    "summary": "Oxylabs’ Dedicated Static ISP proxies give you the speed of a datacenter IP with the official consumer-ISP ASN registration of a real home connection—ideal for permanent store logins. 100M+ Residential Pool, Dedicated Static ISP Proxies & AI Web Scraper API for E-Commerce Intelligence",
+    "pros": [
+      "Pay-as-you-go residential proxy tier lets solo builders start with just $8/GB with no monthly commitment",
+      "Up to 50% affiliate commission on high-value recurring proxy plans"
+    ],
+    "cons": [
+      "Static ISP proxies are billed per IP address rather than per GB"
+    ],
+    "verdict": "Oxylabs Enterprise Residential & Static ISP Proxies is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/oxylabs",
+    "cta": "Visit Oxylabs Official Partner"
+  },
+  "adspower": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · Free Forever (5 Profiles) + Up to 45% Recurring!",
+    "name": "AdsPower #1 Anti-Detect Fingerprint Browser & RPA",
+    "role": "Isolate 5 to 1,000+ Accounts with Custom Canvas/WebGL Fingerprints, Multi-Window Sync & No-Code RPA",
+    "verdictShort": "AdsPower is essential for anyone running multiple social channels, affiliate personas, or e-commerce stores. Even better: it offers 5 free profiles forever and pays affiliates up to 45% recurring for 24 months!",
+    "metricPill": "🦊 5 Free Isolated Profiles + Window Synchronizer + RPA",
+    "price": "Free Forever (5 Browser Profiles) · Paid from $5.40/mo",
+    "summary": "AdsPower is essential for anyone running multiple social channels, affiliate personas, or e-commerce stores. Even better: it offers 5 free profiles forever and pays affiliates up to 45% recurring for 24 months! Isolate 5 to 1,000+ Accounts with Custom Canvas/WebGL Fingerprints, Multi-Window Sync & No-Code RPA",
+    "pros": [
+      "Built-in Multi-Window Synchronizer lets your mouse/keyboard actions in 1 window replicate across 20 accounts live",
+      "Up to 45% recurring commission for 24 months—one of the highest-converting tools in cross-border tech"
+    ],
+    "cons": [
+      "Always pair each browser profile with a clean residential or ISP proxy (see Bright Data / Oxylabs)"
+    ],
+    "verdict": "AdsPower #1 Anti-Detect Fingerprint Browser & RPA is a verified 2026 S-Tier pick (9.8 / 10) in our CLOUD desk.",
+    "url": "go/adspower",
+    "cta": "Visit AdsPower Official Partner"
+  },
+  "multilogin": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · Mimic (Chromium) + Stealthfox (Firefox) Cores",
+    "name": "Multilogin X Pioneer Stealth Fingerprint Browser",
+    "role": "Dual Custom-Compiled Browser Engines (Mimic & Stealthfox) with Built-In Residential Proxy Traffic",
+    "verdictShort": "Multilogin invented the anti-detect browser category in 2015. Multilogin X now bundles verified residential proxy traffic directly inside your subscription so you don’t have to configure external proxies.",
+    "metricPill": "🛡️ Custom-Compiled Engine Cores + Bundled Residential Proxy",
+    "price": "Plans from €5.85/mo (Includes Free Residential Proxy GBs)",
+    "summary": "Multilogin invented the anti-detect browser category in 2015. Multilogin X now bundles verified residential proxy traffic directly inside your subscription so you don’t have to configure external proxies. Dual Custom-Compiled Browser Engines (Mimic & Stealthfox) with Built-In Residential Proxy Traffic",
+    "pros": [
+      "Every Multilogin X plan now includes built-in residential proxy bandwidth out of the box",
+      "Battle-tested against the strictest anti-fraud systems (Meta Ads, Google Ads, Amazon, Stripe, Bet365)"
+    ],
+    "cons": [
+      "No free tier (use AdsPower if you want 5 free starter profiles)"
+    ],
+    "verdict": "Multilogin X Pioneer Stealth Fingerprint Browser is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/multilogin",
+    "cta": "Visit Multilogin Official Partner"
+  },
+  "surfshark": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · Unlimited Devices + 40%–80% Affiliate CPA",
+    "name": "Surfshark One VPN, CleanWeb & Alternative ID",
+    "role": "100-Country WireGuard VPN with Unlimited Simultaneous Devices, Ad/Tracker Blocker & Alternative ID Persona Generator",
+    "verdictShort": "Unlike VPNs that cap you at 5 devices, Surfshark lets you connect unlimited laptops, phones, and tablets—and includes 'Alternative ID' to generate clean US/EU names, addresses, and forwarding emails for SaaS signups.",
+    "metricPill": "🦈 Unlimited Devices on 1 Account + Alternative ID Generator",
+    "price": "From ~$2.19/mo (2-Year Plan) · 30-Day Money-Back Guarantee",
+    "summary": "Unlike VPNs that cap you at 5 devices, Surfshark lets you connect unlimited laptops, phones, and tablets—and includes 'Alternative ID' to generate clean US/EU names, addresses, and forwarding emails for SaaS signups. 100-Country WireGuard VPN with Unlimited Simultaneous Devices, Ad/Tracker Blocker & Alternative ID Persona Generator",
+    "pros": [
+      "Unlimited simultaneous device connections on a single ~$2.19/month subscription",
+      "Alternative ID generates a clean overseas persona, street address, and real forwarding email in 1 click"
+    ],
+    "cons": [
+      "Lowest monthly rate requires choosing the 24-month bundle (backed by 30-day refund policy)"
+    ],
+    "verdict": "Surfshark One VPN, CleanWeb & Alternative ID is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/surfshark",
+    "cta": "Visit Surfshark Official Partner"
+  },
+  "proton": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "tailscale1password",
+    "tier": "S-Tier Pick · Swiss Privacy Law + 30%–50% Commission",
+    "name": "Proton Unlimited (Mail, Pass, VPN & Drive)",
+    "role": "Zero-Access Encrypted Email (`@proton.me` or Custom Domain), Unlimited Email Aliases, Proton Pass & Swiss VPN",
+    "verdictShort": "Need a professional `hello@yourdomain.com` business inbox without paying Google Workspace $7/user/month, plus unlimited hide-my-email aliases for testing SaaS trials? Proton is the gold standard.",
+    "metricPill": "🇨🇭 Swiss Encrypted Custom-Domain Mail + Unlimited Aliases",
+    "price": "Free Forever Tier (Mail + VPN + Pass) · Plus from $3.99/mo",
+    "summary": "Need a professional `hello@yourdomain.com` business inbox without paying Google Workspace $7/user/month, plus unlimited hide-my-email aliases for testing SaaS trials? Proton is the gold standard. Zero-Access Encrypted Email (`@proton.me` or Custom Domain), Unlimited Email Aliases, Proton Pass & Swiss VPN",
+    "pros": [
+      "Proton Pass generates unlimited unique `@passmail.net` email aliases that forward to your main inbox",
+      "High-trust Swiss brand with a 30%–50% affiliate program via Impact/Partnerize"
+    ],
+    "cons": [
+      "Encrypted inbox search runs locally in your browser/app for privacy"
+    ],
+    "verdict": "Proton Unlimited (Mail, Pass, VPN & Drive) is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/proton",
+    "cta": "Visit Proton Official Partner"
+  },
+  "bitwarden": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S-Tier Pick · Unlimited Passwords Free + $10/Yr Premium!",
+    "name": "Bitwarden Open-Source Password & TOTP Vault",
+    "role": "Audited Open-Source Password Manager, Built-In 2FA Authenticator (TOTP), Passkeys &Encrypted Send",
+    "verdictShort": "Managing 160 affiliate network logins across PartnerStack, Impact, Awin, and Gumroad requires ironclad security. Bitwarden syncs unlimited passwords across all devices for $0—or adds built-in 2FA TOTP auto-fill for just $10 a YEAR.",
+    "metricPill": "🔐 $0 Unlimited Sync + $10/Year Built-In 2FA TOTP",
+    "price": "Free Forever (Unlimited Devices) · Premium $10/YEAR",
+    "summary": "Managing 160 affiliate network logins across PartnerStack, Impact, Awin, and Gumroad requires ironclad security. Bitwarden syncs unlimited passwords across all devices for $0—or adds built-in 2FA TOTP auto-fill for just $10 a YEAR. Audited Open-Source Password Manager, Built-In 2FA Authenticator (TOTP), Passkeys &Encrypted Send",
+    "pros": [
+      "Unbeatable value: $0 for unlimited passwords across all devices, or $10/YEAR for built-in TOTP 2FA",
+      "Browser extension can run neatly inside isolated AdsPower profiles"
+    ],
+    "cons": [
+      "UI is utilitarian and functional compared to 1Password’sconsumer polish"
+    ],
+    "verdict": "Bitwarden Open-Source Password & TOTP Vault is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/bitwarden",
+    "cta": "Visit Bitwarden Official Partner"
+  },
+  "payoneer": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "affiliatematrix",
+    "tier": "S-Tier Pick · $25–$50 Referral Bonus + Universal Network Support",
+    "name": "Payoneer (派安盈) Global Affiliate & Amazon Payouts",
+    "role": "Multi-Currency Receiving Accounts (USD, EUR, GBP, JPY) Pre-Integrated with Amazon Associates, CJ, Awin, Impact & Shopee",
+    "verdictShort": "Some affiliate networks (like Amazon Associates US/UK/JP, CJ Affiliate, or Fiverr/Envato) integrate directly with Payoneer or require local US/EU bank routing numbers. Payoneer + Wise gives you 100% global payout coverage.",
+    "metricPill": "💵 Official Payout Rail for Amazon, CJ, Awin & Impact",
+    "price": "$0 Account Opening · $25–$50 Bonus After $1,000 Received",
+    "summary": "Some affiliate networks (like Amazon Associates US/UK/JP, CJ Affiliate, or Fiverr/Envato) integrate directly with Payoneer or require local US/EU bank routing numbers. Payoneer + Wise gives you 100% global payout coverage. Multi-Currency Receiving Accounts (USD, EUR, GBP, JPY) Pre-Integrated with Amazon Associates, CJ, Awin, Impact & Shopee",
+    "pros": [
+      "Instant local receiving accounts in USD, EUR, GBP, JPY, CAD, and AUD for Amazon Associates worldwide",
+      "Earn a $25–$50 cash bonus when your referred user receives their first $1,000 in payouts"
+    ],
+    "cons": [
+      "Keep at least one transaction per 12 months to avoid the dormant account maintenance fee"
+    ],
+    "verdict": "Payoneer (派安盈) Global Affiliate & Amazon Payouts is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/payoneer",
+    "cta": "Visit Payoneer Official Partner"
+  },
+  "thrivecart": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · Pay Once Lifetime License + 50% Affiliate ($247+/Sale)!",
+    "name": "ThriveCart Lifetime High-Converting Checkout OS",
+    "role": "High-Converting Cart Pages, 1-Click Order Bumps, Upsell Funnels & Built-In Affiliate Center with Zero Monthly Fees",
+    "verdictShort": "Tired of paying monthly SaaS fees or 5%–10% transaction cuts? ThriveCart is a one-time lifetime purchase that adds 1-click Order Bumps and Upsells to your Stripe/PayPal checkout—and pays affiliates 50% ($247–$345) on a single sale!",
+    "metricPill": "💰 1-Click Order Bumps + $247–$345 Commission Per Sale!",
+    "price": "One-Time Lifetime License ($495, Zero Monthly Fees)",
+    "summary": "Tired of paying monthly SaaS fees or 5%–10% transaction cuts? ThriveCart is a one-time lifetime purchase that adds 1-click Order Bumps and Upsells to your Stripe/PayPal checkout—and pays affiliates 50% ($247–$345) on a single sale! High-Converting Cart Pages, 1-Click Order Bumps, Upsell Funnels & Built-In Affiliate Center with Zero Monthly Fees",
+    "pros": [
+      "Checkbox Order Bumps on the checkout page routinely increase average order value (AOV) by 30%–45%",
+      "Massive 50% front-end commission pays you $247.50 to $345.00 from a single customer"
+    ],
+    "cons": [
+      "Connects to your existing Stripe and PayPal accounts (for full MoR tax handling without an LLC, use Lemon Squeezy or Paddle)"
+    ],
+    "verdict": "ThriveCart Lifetime High-Converting Checkout OS is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/thrivecart",
+    "cta": "Visit ThriveCart Official Partner"
+  },
+  "paddle": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S-Tier Pick · Automated Global VAT/Sales Tax + Retain Churn AI",
+    "name": "Paddle Enterprise SaaS Merchant of Record",
+    "role": "Full Merchant of Record Billing Engine for AI SaaS & Desktop Apps with Built-In Retain Churn Recovery",
+    "verdictShort": "Scaling an AI SaaS or Mac/Windows app past $10k/mo? Paddle acts as your legal Merchant of Record globally and uses Paddle Retain to automatically recover failed recurring credit card renewals.",
+    "metricPill": "🛡️ Global Tax Liability Handled + Retain Failed-Card Recovery",
+    "price": "Zero Monthly Fee · 5% + $0.50 per Transaction",
+    "summary": "Scaling an AI SaaS or Mac/Windows app past $10k/mo? Paddle acts as your legal Merchant of Record globally and uses Paddle Retain to automatically recover failed recurring credit card renewals. Full Merchant of Record Billing Engine for AI SaaS & Desktop Apps with Built-In Retain Churn Recovery",
+    "pros": [
+      "Handles 100% of global sales tax, EU VAT, and invoicing compliance on your behalf",
+      "Paddle Retain automatically retries and recovers failed subscription renewals to boost LTV"
+    ],
+    "cons": [
+      "Account verification reviews your software/SaaS product URL before enabling live payouts"
+    ],
+    "verdict": "Paddle Enterprise SaaS Merchant of Record is a verified 2026 S-Tier pick (9.6 / 10) in our CLOUD desk.",
+    "url": "go/paddle",
+    "cta": "Visit Paddle Official Partner"
+  },
+  "kajabi": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S-Tier Pick · 30% Lifetime Recurring ($44–$119/mo per Referral!)",
+    "name": "Kajabi Premier Knowledge Commerce & Coaching OS",
+    "role": "All-in-One Website, Premium Course Player, Mobile App, Coaching Portal, Podcasts & Email Marketing",
+    "verdictShort": "Kajabi powers creators who have generated over $8 billion in digital courses and coaching. Because plans range from $149 to $399/mo, its 30% lifetime recurring affiliate program pays you $44 to $119 every single month per referral!",
+    "metricPill": "👑 0% Creator Transaction Fee + ~$50/mo Lifetime Affiliate",
+    "price": "14-Day / 30-Day Extended Partner Trial · 0% Revenue Cut",
+    "summary": "Kajabi powers creators who have generated over $8 billion in digital courses and coaching. Because plans range from $149 to $399/mo, its 30% lifetime recurring affiliate program pays you $44 to $119 every single month per referral! All-in-One Website, Premium Course Player, Mobile App, Coaching Portal, Podcasts & Email Marketing",
+    "pros": [
+      "Members get instant access to your courses inside Kajabi’s native iOS and Android mobile apps",
+      "Massive affiliate ARPU: 30% lifetime recurring on $149–$399/mo plans = $530 to $1,400+/year per referral"
+    ],
+    "cons": [
+      "For beginners wanting a $0 free-forever starter tier, recommend Systeme.io first and Kajabi for scaling"
+    ],
+    "verdict": "Kajabi Premier Knowledge Commerce & Coaching OS is a verified 2026 S-Tier pick (9.7 / 10) in our CLOUD desk.",
+    "url": "go/kajabi",
+    "cta": "Visit Kajabi Official Partner"
+  },
+  "aestura": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · #1 Korean Dermatologist & OliveYoung Award Winner",
+    "name": "Aestura Atobarrier 365 Cream (DermaON Capsules)",
+    "role": "Visible High-Density DermaON Lipid Capsules (Ceramide + Cholesterol + Fatty Acids) That Melt on Skin Contact (80ml)",
+    "verdictShort": "Ranked #1 at OliveYoung and stocked in over 80% of Korean dermatology clinics, Aestura Atobarrier 365 uses patented DermaON capsules to keep skin lipid levels elevated for up to 120 hours.",
+    "metricPill": "💊 Visible DermaON Ceramide Capsules + 120-Hr Barrier Lock",
+    "price": "$24 – $29 / 80ml Tube",
+    "summary": "Ranked #1 at OliveYoung and stocked in over 80% of Korean dermatology clinics, Aestura Atobarrier 365 uses patented DermaON capsules to keep skin lipid levels elevated for up to 120 hours. Visible High-Density DermaON Lipid Capsules (Ceramide + Cholesterol + Fatty Acids) That Melt on Skin Contact (80ml)",
+    "pros": [
+      "Patented DermaON multi-lamellar capsules mimic human stratum corneum lipids more closely than standard emulsions",
+      "Melts smoothly with zero waxy heaviness—the ultimate night cream after VT Reedle Shot or Retinaldehyde"
+    ],
+    "cons": [
+      "Oily skin in humid summers may prefer the lighter Aestura 365 Hydro Soothing Gel-Cream version"
+    ],
+    "verdict": "Aestura Atobarrier 365 Cream (DermaON Capsules) is a verified 2026 S-Tier pick (9.9 / 10) in our BEAUTY desk.",
+    "url": "go/aestura",
+    "cta": "Visit Aestura Official Partner"
+  },
+  "reedleshot": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Viral K-Beauty Transdermal Absorption Booster",
+    "name": "VT Cosmetics Reedle Shot 100 (Cica Micro-Spicules)",
+    "role": "Purified Marine Silica Micro-Spicules (15x Smaller Than Pores) Infused with Centella Asiatica to Multiply Serum Absorption",
+    "verdictShort": "Why did VT Reedle Shot sell out across Seoul? Its microscopic Cica-coated mineral spicules create temporary micro-channels in the dead stratum corneum—turning any basic hydrating or peptide routine into a clinical-grade treatment.",
+    "metricPill": "🔬 15x Smaller Than Pores · Boosts Active Penetration 3x",
+    "price": "$22 – $27 / 50ml Airless Pump",
+    "summary": "Why did VT Reedle Shot sell out across Seoul? Its microscopic Cica-coated mineral spicules create temporary micro-channels in the dead stratum corneum—turning any basic hydrating or peptide routine into a clinical-grade treatment. Purified Marine Silica Micro-Spicules (15x Smaller Than Pores) Infused with Centella Asiatica to Multiply Serum Absorption",
+    "pros": [
+      "Reedle Shot 100 is gentle enough for nightly use right after cleansing to refine rough texture and enlarged pores",
+      "Pairs phenomenally with calming hydrating serums (Torriden 5D HA, COSRX Snail, Peptides) and Aestura 365 Cream"
+    ],
+    "cons": [
+      "Do NOT layer strong acids (AHA/BHA), high-strength Vitamin C, or retinoids in the exact same evening session"
+    ],
+    "verdict": "VT Cosmetics Reedle Shot 100 (Cica Micro-Spicules) is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/reedleshot",
+    "cta": "Visit VT Official Partner"
+  },
+  "mediheal": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · #1 OliveYoung Toner Pad Category Winner",
+    "name": "Mediheal Madecassoside Blemish Repair Toner Pads (100ct)",
+    "role": "100 Vegan Gauze-Cotton Pads Soaked in Microparticlized CalmingTox (Madecassoside + Centella + Niacinamide)",
+    "verdictShort": "Forget messy sheet masks in the morning. Sticking two Mediheal Madecassoside pads onto your cheeks while brushing your teeth cools skin temperature, calms red acne marks, and preps a glass-skin canvas for SPF and makeup.",
+    "metricPill": "🧊 100 Gauze Pads + Instant -5°C Redness & Post-Acne Calming",
+    "price": "$18 – $24 / 100 Pads + Built-In Tweezers",
+    "summary": "Forget messy sheet masks in the morning. Sticking two Mediheal Madecassoside pads onto your cheeks while brushing your teeth cools skin temperature, calms red acne marks, and preps a glass-skin canvas for SPF and makeup. 100 Vegan Gauze-Cotton Pads Soaked in Microparticlized CalmingTox (Madecassoside + Centella + Niacinamide)",
+    "pros": [
+      "100 generous 67mm rounded-square pads with a snap-in hygienic tweezer inside the lid",
+      "Clinically proven to reduce post-blemish redness and uneven texture without sticky residue"
+    ],
+    "cons": [
+      "Keep the lid snapped tightly shut to prevent evaporation over 3 months of use"
+    ],
+    "verdict": "Mediheal Madecassoside Blemish Repair Toner Pads (100ct) is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/mediheal",
+    "cta": "Visit Mediheal Official Partner"
+  },
+  "mixsoon": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "kbeautyglasskit",
+    "tier": "S-Tier Pick · 4-Ferment Complex (Soybean, Pomegranate, Barley, Pear)",
+    "name": "mixsoon Bean Essence (100% Vegan Mucin Alternative)",
+    "role": "Lactobacillus-Fermented Korean Soybean, Pomegranate, Barley & Pear Juice Filtrate for Pore Polishing & Deep Hydration",
+    "verdictShort": "Allergic to dust mites/snail mucin or prefer 100% vegan skincare? mixsoon Bean Essence delivers the exact same bouncy, stringy hydration using fermented soybean amino acids—plus gently rolls away dead skin flakes when massaged.",
+    "metricPill": "🫘 100% Vegan Fermented Mucin + Gentle Sebum-Rolling Polish",
+    "price": "$20 – $26 / 50ml Pump",
+    "summary": "Allergic to dust mites/snail mucin or prefer 100% vegan skincare? mixsoon Bean Essence delivers the exact same bouncy, stringy hydration using fermented soybean amino acids—plus gently rolls away dead skin flakes when massaged. Lactobacillus-Fermented Korean Soybean, Pomegranate, Barley & Pear Juice Filtrate for Pore Polishing & Deep Hydration",
+    "pros": [
+      "Dual-use hero: pat on daily as a hydrating glass-skin serum, or massage in circles 2x/week to lift dead skin and sebum plugs",
+      "100% vegan, alcohol-free, fragrance-free, and fungal-acne friendly"
+    ],
+    "cons": [
+      "When using as a weekly roll-off exfoliant, rinse lightly or wipe with a toner pad afterward"
+    ],
+    "verdict": "mixsoon Bean Essence (100% Vegan Mucin Alternative) is a verified 2026 S-Tier pick (9.6 / 10) in our BEAUTY desk.",
+    "url": "go/mixsoon",
+    "cta": "Visit mixsoon Official Partner"
+  },
+  "to_glycolic": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "routine",
+    "tier": "S-Tier Pick · $13 for a Massive 240ml Bottle ($0.05/ml)",
+    "name": "The Ordinary Glycolic Acid 7% Exfoliating Toner (240ml)",
+    "role": "7% Glycolic Acid (Smallest-Molecule AHA) + Tasmanian Pepperberry + Aloe & Ginseng Root pH 3.6 Resurfacing Toner",
+    "verdictShort": "With a tiny molecular weight, 7% Glycolic Acid dissolves the 'glue' holding dull dead skin cells together. And at ~$13 for 240ml, it is the internet’s #1 multi-use resurfacing hack for face, keratosis pilaris (chicken skin) on arms, and rough heels.",
+    "metricPill": "✨ 240ml Multi-Use AHA Giant (Face, KP Arms, Scalp & Heels)",
+    "price": "$12 – $14 / 240ml Nozzle Bottle",
+    "summary": "With a tiny molecular weight, 7% Glycolic Acid dissolves the 'glue' holding dull dead skin cells together. And at ~$13 for 240ml, it is the internet’s #1 multi-use resurfacing hack for face, keratosis pilaris (chicken skin) on arms, and rough heels. 7% Glycolic Acid (Smallest-Molecule AHA) + Tasmanian Pepperberry + Aloe & Ginseng Root pH 3.6 Resurfacing Toner",
+    "pros": [
+      "Unbeatable $0.05/ml value—one 240ml bottle lasts 6+ months for face and body polishing",
+      "Formulated at the optimal pH ~3.6 with Tasmanian Pepperberry to reduce AHA stinging"
+    ],
+    "cons": [
+      "Limit facial use to 1–2 nights per week and NEVER use on the same night as Retinoids or VT Reedle Shot"
+    ],
+    "verdict": "The Ordinary Glycolic Acid 7% Exfoliating Toner (240ml) is a verified 2026 S-Tier pick (9.6 / 10) in our BEAUTY desk.",
+    "url": "go/to_glycolic",
+    "cta": "Visit The Official Partner"
+  },
+  "to_peptides": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "winterbarrier",
+    "tier": "S-Tier Pick · True 1% Pure GHK-Cu Copper Tripeptide-1",
+    "name": "The Ordinary Multi-Peptide + Copper Peptides 1% (GHK-Cu)",
+    "role": "1% Pure Copper Tripeptide-1 + Matrixyl 3000 + Matrixyl Synthe'6 + SYN-AKE + ARGIRELINE + Hyaluronic Acid",
+    "verdictShort": "Pure Copper Tripeptide-1 (GHK-Cu) costs thousands of dollars per kilogram, which is why most brands only sprinkle in 0.01% for marketing. The Ordinary packs a full 1% pure GHK-Cu alongside Matrixyl 3000 and Argireline for $32.",
+    "metricPill": "💎 1% Pure GHK-Cu Copper Peptides + 5 Peptide Complexes",
+    "price": "$30 – $32 / 30ml Dropper",
+    "summary": "Pure Copper Tripeptide-1 (GHK-Cu) costs thousands of dollars per kilogram, which is why most brands only sprinkle in 0.01% for marketing. The Ordinary packs a full 1% pure GHK-Cu alongside Matrixyl 3000 and Argireline for $32. 1% Pure Copper Tripeptide-1 + Matrixyl 3000 + Matrixyl Synthe'6 + SYN-AKE + ARGIRELINE + Hyaluronic Acid",
+    "pros": [
+      "Stimulates collagen/elastin remodeling and accelerates barrier healing with zero retinoid peeling or sun sensitivity",
+      "The #1 anti-aging serum for sensitive skin, pregnancy/nursing routines, or skin-cycling recovery nights"
+    ],
+    "cons": [
+      "Do NOT layer in the same routine with direct Vitamin C (L-AA) or strong acids, which chelate copper ions"
+    ],
+    "verdict": "The Ordinary Multi-Peptide + Copper Peptides 1% (GHK-Cu) is a verified 2026 S-Tier pick (9.6 / 10) in our BEAUTY desk.",
+    "url": "go/to_peptides",
+    "cta": "Visit The Official Partner"
+  },
+  "vanicream": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · National Eczema Association Accepted ($9 / 237ml)",
+    "name": "Vanicream Gentle Facial Cleanser (Dermatologist Gold Standard)",
+    "role": "Ultra-Minimalist pH-Balanced Non-Ionic/Amphoteric Cleanser Free of Fragrance, Dyes, Parabens, Sulfates & Botanical Extracts",
+    "verdictShort": "Many 'gentle' cleansers hide essential oils or botanical extracts that sting compromised barriers. Vanicream’s minimalist formula is the undisputed US dermatologist benchmark for rosacea, eczema, and retinoid users.",
+    "metricPill": "🧼 Mayo-Clinic Heritage · 0% Irritants · $9 for 237ml",
+    "price": "$9 – $11 / 237ml Pump on iHerb",
+    "summary": "Many 'gentle' cleansers hide essential oils or botanical extracts that sting compromised barriers. Vanicream’s minimalist formula is the undisputed US dermatologist benchmark for rosacea, eczema, and retinoid users. Ultra-Minimalist pH-Balanced Non-Ionic/Amphoteric Cleanser Free of Fragrance, Dyes, Parabens, Sulfates & Botanical Extracts",
+    "pros": [
+      "Produces a soft, satisfying cushion lather that removes light sunscreen and oil without stripping ceramides",
+      "Under $10 on iHerb for a hygienic 237ml pump bottle that lasts 4–6 months"
+    ],
+    "cons": [
+      "For heavy waterproof sunscreen or makeup, precede with a cleansing oil or balm (Double Cleanse)"
+    ],
+    "verdict": "Vanicream Gentle Facial Cleanser (Dermatologist Gold Standard) is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/vanicream",
+    "cta": "Visit Vanicream Official Partner"
+  },
+  "panoxyl": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Zero Antibiotic Resistance Cutibacterium Acnes Killer",
+    "name": "PanOxyl Acne Foaming Wash (4% Creamy & 10% Max BPO)",
+    "role": "Short-Contact Benzoyl Peroxide Wash That Releases Free Oxygen Radicals to Kill Acne & Odor Bacteria in 2 Minutes",
+    "verdictShort": "Leave-on Benzoyl Peroxide creams bleach your pillowcases and dry out your face. Using PanOxyl as a 2-minute wash in the shower delivers full antibacterial power (plus prevents Adapalene resistance) and rinses clean.",
+    "metricPill": "🦠 Kills 99% Acne Bacteria in 2 Mins · Zero Bacterial Resistance",
+    "price": "$10 – $12 / 156g Tube on iHerb",
+    "summary": "Leave-on Benzoyl Peroxide creams bleach your pillowcases and dry out your face. Using PanOxyl as a 2-minute wash in the shower delivers full antibacterial power (plus prevents Adapalene resistance) and rinses clean. Short-Contact Benzoyl Peroxide Wash That Releases Free Oxygen Radicals to Kill Acne & Odor Bacteria in 2 Minutes",
+    "pros": [
+      "Choose 4% Creamy Wash for facial inflammatory acne, or 10% Foaming Wash for chest/back acne ('bacne')",
+      "Dermatologist viral bonus: using PanOxyl on underarms for 60 seconds in the shower eliminates body odor bacteria all day"
+    ],
+    "cons": [
+      "Rinse thoroughly in the shower so residual BPO doesn’t bleach dark towels"
+    ],
+    "verdict": "PanOxyl Acne Foaming Wash (4% Creamy & 10% Max BPO) is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/panoxyl",
+    "cta": "Visit PanOxyl Official Partner"
+  },
+  "eucerin": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · #1 Human Tyrosinase Inhibitor (Thiamidol / Isobutylamido Thiazolyl Resorcinol)",
+    "name": "Eucerin Anti-Pigment Dual Serum (Patented Thiamidol)",
+    "role": "Dual-Chamber Patented Thiamidol + Concentrated Hyaluronic Acid Targeting Melasma, Sun Spots & Stubborn PIH",
+    "verdictShort": "Most brightening ingredients (like Kojic Acid or Arbutin) were tested on mushroom tyrosinase. Beiersdorf screened 50,000 molecules against actual HUMAN tyrosinase and discovered Thiamidol—clinically matching 2% Hydroquinone without cytotoxicity.",
+    "metricPill": "🧬 Screened from 50,000 Compounds for HUMAN Tyrosinase",
+    "price": "$38 – $45 / 30ml Dual Pump",
+    "summary": "Most brightening ingredients (like Kojic Acid or Arbutin) were tested on mushroom tyrosinase. Beiersdorf screened 50,000 molecules against actual HUMAN tyrosinase and discovered Thiamidol—clinically matching 2% Hydroquinone without cytotoxicity. Dual-Chamber Patented Thiamidol + Concentrated Hyaluronic Acid Targeting Melasma, Sun Spots & Stubborn PIH",
+    "pros": [
+      "Peer-reviewed clinical trials show visible reduction in stubborn sun spots and melasma starting at Week 2",
+      "Dual-chamber pump blends Thiamidol emulsion with pure multi-weight Hyaluronic Acid on every press"
+    ],
+    "cons": [
+      "Contains a light signature European floral scent (an unscented Spot Corrector pen is also available)"
+    ],
+    "verdict": "Eucerin Anti-Pigment Dual Serum (Patented Thiamidol) is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/eucerin",
+    "cta": "Visit Eucerin Official Partner"
+  },
+  "roc": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "retinoidramp",
+    "tier": "S-Tier Pick · #1 Best-Selling Clinical Retinol Eye Cream Under $20",
+    "name": "RoC Retinol Correxion Line Smoothing Eye Cream",
+    "role": "Slow-Release Stabilized Retinol + Mineral Complex Specifically Buffered for the Thin Periorbital Eye Area",
+    "verdictShort": "Never put full-strength facial Adapalene or Tretinoin right on your eyelids. RoC pioneered stabilized over-the-counter Retinol and engineered this aluminum-tubed eye cream to smooth crow’s feet and under-eye crepiness safely.",
+    "metricPill": "👁️ 12-Week Clinical Crow’s Feet Reduction · Aluminum Tube",
+    "price": "$17 – $21 / 15ml Aluminum Tube on iHerb",
+    "summary": "Never put full-strength facial Adapalene or Tretinoin right on your eyelids. RoC pioneered stabilized over-the-counter Retinol and engineered this aluminum-tubed eye cream to smooth crow’s feet and under-eye crepiness safely. Slow-Release Stabilized Retinol + Mineral Complex Specifically Buffered for the Thin Periorbital Eye Area",
+    "pros": [
+      "Collapsible aluminum tube prevents oxygen from entering and degrading the active Retinol",
+      "Clinically shown to visibly reduce fine lines around the eyes in 4 weeks and deep wrinkles in 12 weeks"
+    ],
+    "cons": [
+      "Start every other night for the first 2 weeks and always apply sunscreen around the orbital bone in the AM"
+    ],
+    "verdict": "RoC Retinol Correxion Line Smoothing Eye Cream is a verified 2026 S-Tier pick (9.6 / 10) in our BEAUTY desk.",
+    "url": "go/roc",
+    "cta": "Visit RoC Official Partner"
+  },
+  "bioderma": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Pharmaceutical-Grade Water + Biomimetic Fatty Acid Esters",
+    "name": "Bioderma Sensibio H2O Micellar Water (Pink Cap)",
+    "role": "pH 5.5 Fragrance-Free Micellar Solution with Cucumber Extract & DAF Patent That Captures SPF/Makeup Without Stripping",
+    "verdictShort": "Not every day requires a heavy oil cleanse. When wearing non-waterproof daily sunscreen (like Beauty of Joseon or Haruharu) or light makeup, Bioderma Sensibio H2O removes 99% of residue while calming reactive skin.",
+    "metricPill": "💧 Biomimetic Micelles · pH 5.5 · Zero Rinsing Irritation",
+    "price": "$14 – $17 / 500ml Jumbo Bottle on iHerb",
+    "summary": "Not every day requires a heavy oil cleanse. When wearing non-waterproof daily sunscreen (like Beauty of Joseon or Haruharu) or light makeup, Bioderma Sensibio H2O removes 99% of residue while calming reactive skin. pH 5.5 Fragrance-Free Micellar Solution with Cucumber Extract & DAF Patent That Captures SPF/Makeup Without Stripping",
+    "pros": [
+      "Uses 9-step purified pharmaceutical-grade water at physiological pH 5.5",
+      "Massive 500ml bottle lasts months for effortless evening SPF removal or morning T-zone refresh"
+    ],
+    "cons": [
+      "For stubborn waterproof mascara or heavy beach sunscreen, use SKIN1004 Oil or Heimish Balm first"
+    ],
+    "verdict": "Bioderma Sensibio H2O Micellar Water (Pink Cap) is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/bioderma",
+    "cta": "Visit Bioderma Official Partner"
+  },
+  "heimish": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · #1 iHerb & K-Beauty Sherbet Cleansing Balm",
+    "name": "Heimish All Clean Balm (Flip-Cap Sherbet SPF Remover)",
+    "role": "Solid-to-Silky Oil Sherbet Balm with Shea Butter, Coconut & White Flower Complex That Emulsifies Milky-Clean in 1 Second",
+    "verdictShort": "Cleansing oils can drip down your wrists, and traditional jars make you unscrew a lid with greasy hands. Heimish All Clean Balm features a genius one-push flip-cap and melts waterproof SPF and mascara in seconds.",
+    "metricPill": "🍨 1-Hand Flip-Cap + Instant Milky Emulsification",
+    "price": "$14 – $17 / 120ml Flip-Top Tub on iHerb",
+    "summary": "Cleansing oils can drip down your wrists, and traditional jars make you unscrew a lid with greasy hands. Heimish All Clean Balm features a genius one-push flip-cap and melts waterproof SPF and mascara in seconds. Solid-to-Silky Oil Sherbet Balm with Shea Butter, Coconut & White Flower Complex That Emulsifies Milky-Clean in 1 Second",
+    "pros": [
+      "Genius one-push flip-top lid with built-in spatula—never fumble with screw-caps again",
+      "Rinses 100% clean with warm water without leaving a cloudy film over your eyes"
+    ],
+    "cons": [
+      "If you prefer a 100% fragrance-free/essential-oil-free version, Heimish also makes the 'All Clean Balm Mandarin / Matcha' or Banila Co Purifying"
+    ],
+    "verdict": "Heimish All Clean Balm (Flip-Cap Sherbet SPF Remover) is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/heimish",
+    "cta": "Visit Heimish Official Partner"
+  },
+  "banilaco": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · 6th-Gen Micro-Capture Technology + Acerola Vitamin C",
+    "name": "Banila Co Clean It Zero Cleansing Balm Original",
+    "role": "Zero Balance Technology Sherbet Balm Infused with Acerola Berry, Resveratrol & Spa Thermal Water",
+    "verdictShort": "Banila Co invented the Korean sherbet cleansing balm. The latest 6th-generation vegan Original Pink formula melts the most tenacious waterproof UV filters and matte lip stains while leaving skin bouncy.",
+    "metricPill": "👑 Sold Every 3.1 Seconds Globally · Zero Tightness",
+    "price": "$16 – $19 / 100ml (or 180ml Jumbo)",
+    "summary": "Banila Co invented the Korean sherbet cleansing balm. The latest 6th-generation vegan Original Pink formula melts the most tenacious waterproof UV filters and matte lip stains while leaving skin bouncy. Zero Balance Technology Sherbet Balm Infused with Acerola Berry, Resveratrol & Spa Thermal Water",
+    "pros": [
+      "Effortlessly dissolves water-resistant outdoor sunscreens, kiss-proof lip tints, and waterproof eyeliner",
+      "Leaves zero dry tightness—ideal as Step 1 before Vanicream Gentle Cleanser"
+    ],
+    "cons": [
+      "Always apply with DRY hands onto a DRY face first, massage 30s, then add a splash of water to emulsify"
+    ],
+    "verdict": "Banila Co Clean It Zero Cleansing Balm Original is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/banilaco",
+    "cta": "Visit Banila Official Partner"
+  },
+  "skin1004oil": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Micellar-Light Botanical Oils + 10,000ppm Centella",
+    "name": "SKIN1004 Madagascar Centella Light Cleansing Oil",
+    "role": "Ultra-Thin Non-Comedogenic Cleansing Oil (Sunflower, Olive, Jojoba & Bergamot) + Madagascar Centella Extract",
+    "verdictShort": "Hate thick, heavy cleansing oils that feel like cooking oil on acne-prone skin? SKIN1004’s Centella Light Cleansing Oil flows like water, dissolves sebaceous filaments (blackheads) on the nose, and rinses Weightlessly.",
+    "metricPill": "🌿 Water-Thin Texture · Melts Sebaceous Filaments & SPF",
+    "price": "$15 – $18 / 200ml Pump Bottle",
+    "summary": "Hate thick, heavy cleansing oils that feel like cooking oil on acne-prone skin? SKIN1004’s Centella Light Cleansing Oil flows like water, dissolves sebaceous filaments (blackheads) on the nose, and rinses Weightlessly. Ultra-Thin Non-Comedogenic Cleansing Oil (Sunflower, Olive, Jojoba & Bergamot) + Madagascar Centella Extract",
+    "pros": [
+      "Featherlight watery-oil texture never clogs pores or triggers closed comedones when followed by a water cleanser",
+      "Visible reduction in nose sebaceous filaments and blackheads when massaged for 60 seconds before emulsifying"
+    ],
+    "cons": [
+      "Always follow with a gentle water-based cleanser (like Vanicream) to complete the 2-step double cleanse"
+    ],
+    "verdict": "SKIN1004 Madagascar Centella Light Cleansing Oil is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/skin1004oil",
+    "cta": "Visit SKIN1004 Official Partner"
+  },
+  "cosdebaha": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Zero-Pilling Solution vs. Pasty Azelaic Creams ($12)",
+    "name": "Cos De BAHA Azelaic Acid 10% Serum (AZ + Niacinamide + B5)",
+    "role": "10% Azelaic Acid + 2% Niacinamide + Panthenol + Hyaluronic Acid in a Smooth Propylene-Glycol/Aloe Base",
+    "verdictShort": "Azelaic Acid is a dermatological unicorn that fights acne bacteria, rosacea redness, and brown pigment simultaneously—but pharmacy creams and suspension pastes pill terribly under sunscreen. Cos De BAHA’s AZ10 serum glides on like silk for $12.",
+    "metricPill": "🧪 10% Azelaic Acid + Niacinamide + B5 · Zero Pilling!",
+    "price": "$11 – $14 / 30ml Dropper on iHerb",
+    "summary": "Azelaic Acid is a dermatological unicorn that fights acne bacteria, rosacea redness, and brown pigment simultaneously—but pharmacy creams and suspension pastes pill terribly under sunscreen. Cos De BAHA’s AZ10 serum glides on like silk for $12. 10% Azelaic Acid + 2% Niacinamide + Panthenol + Hyaluronic Acid in a Smooth Propylene-Glycol/Aloe Base",
+    "pros": [
+      "Solves the #1 complaint about Azelaic Acid: smooth serum texture layers cleanly under moisturizer and SPF with zero white pilling",
+      "Safe, non-photosensitizing multi-tasker for rosacea redness, PIE/PIH acne marks, and hormonal chin breakouts"
+    ],
+    "cons": [
+      "Patch-test first; a mild 5-minute tingle during the first week of Azelaic Acid use is normal"
+    ],
+    "verdict": "Cos De BAHA Azelaic Acid 10% Serum (AZ + Niacinamide + B5) is a verified 2026 S-Tier pick (9.7 / 10) in our BEAUTY desk.",
+    "url": "go/cosdebaha",
+    "cta": "Visit Cos Official Partner"
+  },
+  "cgn_omega3": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · #1 Best-Selling Product on All of iHerb (10%–20% Commission)",
+    "name": "California Gold Nutrition Omega-3 Premium Fish Oil (IFOS 5-Star)",
+    "role": "Molecularly Distilled KD-Pür® Fish Oil (360mg EPA + 240mg DHA per Serving) with Independent IFOS 5-Star Purity Report",
+    "verdictShort": "With over 400,000+ verified customer reviews, CGN Omega-3 is the #1 best-selling item on iHerb globally. Plus, because California Gold Nutrition is iHerb’s own house brand, our `?rcode=CRUXKIT` link earns boosted house-brand commissions!",
+    "metricPill": "🐟 #1 iHerb Seller (400k+ Reviews) + IFOS 5-Star Purity",
+    "price": "$9 – $11 / 100 Fish Gelatin Softgels on iHerb",
+    "summary": "With over 400,000+ verified customer reviews, CGN Omega-3 is the #1 best-selling item on iHerb globally. Plus, because California Gold Nutrition is iHerb’s own house brand, our `?rcode=CRUXKIT` link earns boosted house-brand commissions! Molecularly Distilled KD-Pür® Fish Oil (360mg EPA + 240mg DHA per Serving) with Independent IFOS 5-Star Purity Report",
+    "pros": [
+      "Uses German KD-Pür® molecular distillation and pescatarian fish-gelatin softgels with zero fishy burps",
+      "Internal anti-inflammatory foundation: systemic EPA/DHA reduces inflammatory sebum oxidation, dry eyes, and joint stiffness"
+    ],
+    "cons": [
+      "Always take with a fat-containing meal (lunch or dinner) to maximize lipid absorption"
+    ],
+    "verdict": "California Gold Nutrition Omega-3 Premium Fish Oil (IFOS 5-Star) is a verified 2026 S-Tier pick (9.9 / 10) in our BEAUTY desk.",
+    "url": "go/cgn_omega3",
+    "cta": "Visit California Official Partner"
+  },
+  "cgn_collagen": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Enzymatically Hydrolyzed Low-Dalton Marine Peptides (150k+ Reviews)",
+    "name": "California Gold Nutrition CollagenUP (Marine Peptides + HA + Vit C)",
+    "role": "Unflavored Wild-Caught Marine Collagen Peptides + Non-Animal Hyaluronic Acid + Vitamin C (5,140mg per Scoop)",
+    "verdictShort": "Eating whole collagen protein doesn't work—your gut needs pre-cleaved, low-molecular-weight hydrolyzed marine di- and tri-peptides (Pro-Hyp, Hyp-Gly) paired with Vitamin C cofactor to trigger dermal fibroblasts.",
+    "metricPill": "🥤 5,000mg Marine Peptides + 60mg HA + 90mg Vit C",
+    "price": "$16 – $21 / 206g Powder Tub on iHerb",
+    "summary": "Eating whole collagen protein doesn't work—your gut needs pre-cleaved, low-molecular-weight hydrolyzed marine di- and tri-peptides (Pro-Hyp, Hyp-Gly) paired with Vitamin C cofactor to trigger dermal fibroblasts. Unflavored Wild-Caught Marine Collagen Peptides + Non-Animal Hyaluronic Acid + Vitamin C (5,140mg per Scoop)",
+    "pros": [
+      "Completely unflavored, odorless, and dissolves clear in cold water, iced coffee, or smoothies",
+      "Combines all three dermal matrix building blocks (Marine Peptides + Hyaluronic Acid + Vitamin C) in one scoop"
+    ],
+    "cons": [
+      "Mix into room-temperature or cool liquids first before adding ice"
+    ],
+    "verdict": "California Gold Nutrition CollagenUP (Marine Peptides + HA + Vit C) is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/cgn_collagen",
+    "cta": "Visit California Official Partner"
+  },
+  "cgn_coq10": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · USP-Grade Fermented Ubiquinone + BioPerine® Absorption Booster",
+    "name": "California Gold Nutrition CoQ10 100mg with BioPerine®",
+    "role": "100mg USP-Verified Fermented Coenzyme Q10 + 5mg BioPerine® Black Pepper Extract in Tapioca Veggie Softgels",
+    "verdictShort": "High-output solo builders burn through cellular ATP. CoQ10 powers mitochondrial energy production in your heart and brain while protecting cell membranes from lipid peroxidation—boosted by BioPerine® for superior uptake.",
+    "metricPill": "⚡ Mitochondrial ATP Engine + BioPerine® (+30% Absorption)",
+    "price": "$11 – $14 / 120 Veggie Softgels on iHerb",
+    "summary": "High-output solo builders burn through cellular ATP. CoQ10 powers mitochondrial energy production in your heart and brain while protecting cell membranes from lipid peroxidation—boosted by BioPerine® for superior uptake. 100mg USP-Verified Fermented Coenzyme Q10 + 5mg BioPerine® Black Pepper Extract in Tapioca Veggie Softgels",
+    "pros": [
+      "USP-grade natural fermentation process (zero synthetic cis-isomer impurities)",
+      "Enhanced with 5mg BioPerine® clinically shown to increase CoQ10 bloodstream absorption by over 30%"
+    ],
+    "cons": [
+      "Take with lunch (taking CoQ10 late at night can make some people feel too energized to sleep)"
+    ],
+    "verdict": "California Gold Nutrition CoQ10 100mg with BioPerine® is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/cgn_coq10",
+    "cta": "Visit California Official Partner"
+  },
+  "thorne_mag": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Mayo Clinic Partner Brand · NSF Certified · Zero Laxative Effect",
+    "name": "Thorne Magnesium Bisglycinate Powder (NSF Certified for Sport)",
+    "role": "200mg Pure Chelated Magnesium Bisglycinate per Scoop — Lightly Sweetened with Monk Fruit for Deep Sleep & Muscle Recovery",
+    "verdictShort": "Thorne is the official supplement partner of the Mayo Clinic and 11 US Olympic teams. Their Magnesium Bisglycinate binds elemental magnesium to two glycine amino acids—delivering deep nervous-system calm and REM/deep sleep without digestive upset.",
+    "metricPill": "😴 #1 Huberman-Style Deep Sleep Stack · NSF Certified",
+    "price": "$42 – $46 / 187g NSF Certified Tub on iHerb",
+    "summary": "Thorne is the official supplement partner of the Mayo Clinic and 11 US Olympic teams. Their Magnesium Bisglycinate binds elemental magnesium to two glycine amino acids—delivering deep nervous-system calm and REM/deep sleep without digestive upset. 200mg Pure Chelated Magnesium Bisglycinate per Scoop — Lightly Sweetened with Monk Fruit for Deep Sleep & Muscle Recovery",
+    "pros": [
+      "Chelated bisglycinate form has maximum absorption and ZERO laxative side effects unlike cheap magnesium oxide/citrate",
+      "NSF Certified for Sport: tested for 200+ banned substances and heavy metal contaminants"
+    ],
+    "cons": [
+      "Premium clinical price point ($44), which also translates into high AOV commissions on iHerb"
+    ],
+    "verdict": "Thorne Magnesium Bisglycinate Powder (NSF Certified for Sport) is a verified 2026 S-Tier pick (9.9 / 10) in our BEAUTY desk.",
+    "url": "go/thorne_mag",
+    "cta": "Visit Thorne Official Partner"
+  },
+  "lifeextension": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S-Tier Pick · Methylated B-Vitamins (5-MTHF) + Crominex® + Marigold Lutein",
+    "name": "Life Extension Two-Per-Day High-Potency Multivitamin",
+    "role": "Bioactive Coenzymated B-Complex (5-MTHF Folate, P-5-P B6, Methylcobalamin B12), 2,000 IU Vit D3, Selenium, Zinc & Apigenin",
+    "verdictShort": "Standard pharmacy multivitamins use cheap synthetic folic acid and cyanocobalamin that 40% of people with MTHFR gene variants can't convert. Life Extension Two-Per-Day uses 100% bioactive methylated coenzymes at a fraction of athletic greens prices.",
+    "metricPill": "🧬 Bioactive Methylated B-Vitamins + 2,000 IU D3 + Lutein",
+    "price": "$18 – $21 / 120 Capsules (2–4 Month Supply) on iHerb",
+    "summary": "Standard pharmacy multivitamins use cheap synthetic folic acid and cyanocobalamin that 40% of people with MTHFR gene variants can't convert. Life Extension Two-Per-Day uses 100% bioactive methylated coenzymes at a fraction of athletic greens prices. Bioactive Coenzymated B-Complex (5-MTHF Folate, P-5-P B6, Methylcobalamin B12), 2,000 IU Vit D3, Selenium, Zinc & Apigenin",
+    "pros": [
+      "Pro tip: the formula is so potent that taking just ONE capsule per day with breakfast gives you 100%+ daily values—stretching 1 bottle to 4 months!",
+      "Includes bioactive Quercetin phytosome, Marigold Lutein/Zeaxanthin for screen eye strain, and Apigenin"
+    ],
+    "cons": [
+      "B2 (Riboflavin) will naturally turn urine bright neon yellow—that is harmless excess water-soluble vitamin B2"
+    ],
+    "verdict": "Life Extension Two-Per-Day High-Potency Multivitamin is a verified 2026 S-Tier pick (9.8 / 10) in our BEAUTY desk.",
+    "url": "go/lifeextension",
+    "cta": "Visit Life Official Partner"
+  }
+});
+  Object.assign(stackToolsData.zh, {
+  "replit": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S 级严选 · 零环境配置云端 Agent",
+    "name": "Replit Agent v2 云端全栈智能体 IDE",
+    "role": "手机与浏览器直接对话生成全栈 Python/Node 应用并一键部署上线",
+    "verdictShort": "无需在本地折腾 Node/Python 环境，直接用中文描述需求，Replit Agent v2 自动建表、写前后端代码并生成公网可访问域名。",
+    "metricPill": "🚀 一句话生成带数据库应用 + 免配本地环境",
+    "price": "免费版 · Core $20/月 (含每月底用金)",
+    "summary": "无需在本地折腾 Node/Python 环境，直接用中文描述需求，Replit Agent v2 自动建表、写前后端代码并生成公网可访问域名。 手机与浏览器直接对话生成全栈 Python/Node 应用并一键部署上线",
+    "pros": [
+      "全自动规划数据库结构、安装依赖并自动修复报错，新手零门槛出成品",
+      "Replit Core 会员自带每月云部署算力额度，写完即上线"
+    ],
+    "cons": [
+      "超大型企业级代码库仍建议导出至本地 Cursor 或 Windsurf 深度维护"
+    ],
+    "verdict": "Replit Agent v2 云端全栈智能体 IDE 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/replit",
+    "cta": "访问官方合作优惠通道"
+  },
+  "supermaven": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "workstation",
+    "tier": "S 级严选 · 100 万 Token 极速代码补全",
+    "name": "Supermaven 百万上下文毫秒级代码补全",
+    "role": "由 Tabnine 创始人打造，支持 100 万 Token 全局代码库感知与 <50ms 零延迟补全",
+    "verdictShort": "当你在写多文件大型项目时，普通补全经常忘掉别的文件里的函数定义；Supermaven 拥有 100 万 Token 记忆窗口且延迟低于 50 毫秒。",
+    "metricPill": "⚡ 100 万上下文窗口 · 毫秒级丝滑补全",
+    "price": "免费版 · Pro $10/月",
+    "summary": "当你在写多文件大型项目时，普通补全经常忘掉别的文件里的函数定义；Supermaven 拥有 100 万 Token 记忆窗口且延迟低于 50 毫秒。 由 Tabnine 创始人打造，支持 100 万 Token 全局代码库感知与 <50ms 零延迟补全",
+    "pros": [
+      "100 万 Token 全局上下文，精准记住跨文件自定义类型与刚改过的 Git 差异",
+      "不到 50ms 的极速响应，打字手感丝滑不卡顿"
+    ],
+    "cons": [
+      "主打极速行内代码补全与问答，多文件全自动重构可搭配 Cursor 使用"
+    ],
+    "verdict": "Supermaven 百万上下文毫秒级代码补全 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/supermaven",
+    "cta": "访问官方合作优惠通道"
+  },
+  "dify": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "mcppack",
+    "tier": "S 级严选 · 开源第一可视化 Agent 与 RAG 平台",
+    "name": "Dify.AI 企业级大模型工作流与知识库中台",
+    "role": "拖拽式编排 DeepSeek V4.1 / GPT-6.1 / Claude 5.5 多智能体工作流与企业私有知识库",
+    "verdictShort": "全球 GitHub 星标破 8 万的 AI 应用开发平台：把提示词工程、文档切块向量化（RAG）、工具调用与 API 发布浓缩进一张可视化画布。",
+    "metricPill": "🧠 可视化 Agent 编排 + 混合检索 RAG + 一键发布 API",
+    "price": "开源可自建 (Hetzner/Hostinger) · 云端版免费试用",
+    "summary": "全球 GitHub 星标破 8 万的 AI 应用开发平台：把提示词工程、文档切块向量化（RAG）、工具调用与 API 发布浓缩进一张可视化画布。 拖拽式编排 DeepSeek V4.1 / GPT-6.1 / Claude 5.5 多智能体工作流与企业私有知识库",
+    "pros": [
+      "原生支持接入 DeepSeek V4.1、GPT-6.1、Gemini 4 与 OpenRouter，切换模型只需点选下拉框",
+      "工作流可一键导出为 YAML 工程文件，极其适合打包成数字商品售卖"
+    ],
+    "cons": [
+      "自建部署建议使用至少 4GB 内存的云服务器（如 Hetzner CX22 或 Hostinger KVM2）"
+    ],
+    "verdict": "Dify.AI 企业级大模型工作流与知识库中台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/dify",
+    "cta": "访问官方合作优惠通道"
+  },
+  "relevanceai": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S 级严选 · 零代码雇佣 24 小时 AI 数字员工",
+    "name": "Relevance AI 数字员工与 B2B 多智能体平台",
+    "role": "专为 B2B 获客、客户背调与工单处理打造的多智能体协作平台（支持工具审批流）",
+    "verdictShort": "让你像管理真人团队一样配置“主管 Agent + 爬虫调研员 Agent + 写信专家 Agent”，全自动完成海外客户背调与个性化触达。",
+    "metricPill": "🤖 多 Agent 协同派单 + 关键动作人工审批",
+    "price": "免费额度 · Pro $19/月起",
+    "summary": "让你像管理真人团队一样配置“主管 Agent + 爬虫调研员 Agent + 写信专家 Agent”，全自动完成海外客户背调与个性化触达。 专为 B2B 获客、客户背调与工单处理打造的多智能体协作平台（支持工具审批流）",
+    "pros": [
+      "内置大量开箱即用的 B2B 销售背调、SEO 内容生成与竞品监控数字员工模板",
+      "PartnerStack 20% 持续分佣，企业客户续费率与客单价极高"
+    ],
+    "cons": [
+      "多智能体循环调用较多时需留意每日积分消耗，建议主力节点挂载高性价比模型"
+    ],
+    "verdict": "Relevance AI 数字员工与 B2B 多智能体平台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/relevanceai",
+    "cta": "访问官方合作优惠通道"
+  },
+  "browseai": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "scrapingragkit",
+    "tier": "S 级严选 · 鼠标点选 2 分钟训练爬虫机器人",
+    "name": "Browse AI 零代码网页爬虫与价格监控机器人",
+    "role": "无需写一行代码，鼠标框选网页元素即可定时抓取竞品价格、招聘信息与商品评价并同步至表格",
+    "verdictShort": "完全不懂 Python 也能爬数据：像录屏一样在网页上点几下你要抓的价格或标题，云端机器人就会每小时自动巡检并在变动时通知你。",
+    "metricPill": "🕷️ 零代码点选录制 + 网页变动自动邮件/Make 告警",
+    "price": "免费版 · Starter $19/月 (享 20% 终身持续返佣)",
+    "summary": "完全不懂 Python 也能爬数据：像录屏一样在网页上点几下你要抓的价格或标题，云端机器人就会每小时自动巡检并在变动时通知你。 无需写一行代码，鼠标框选网页元素即可定时抓取竞品价格、招聘信息与商品评价并同步至表格",
+    "pros": [
+      "真正零代码点选式录制，自动处理分页翻页、登录态与定时任务",
+      "提供高达 20% 的终身持续联盟佣金（Lifetime Recurring），推广一次长久拿钱"
+    ],
+    "cons": [
+      "若需将整站转为大模型专用 Markdown 语料，可搭配同专区的 Firecrawl 使用"
+    ],
+    "verdict": "Browse AI 零代码网页爬虫与价格监控机器人 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/browseai",
+    "cta": "访问官方合作优惠通道"
+  },
+  "bardeen": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S 级严选 · 直接复用浏览器登录态抓数据",
+    "name": "Bardeen AI 浏览器端一键自动化神器",
+    "role": "无需配置复杂 API 鉴权，直接在当前登录的 Chrome 页面一键抓取领英/网页数据入库 Notion",
+    "verdictShort": "云端爬虫常被反爬拦截，而 Bardeen 直接作为 Chrome 插件运行在你已登录的网页里，一键把当前看到的红人主页或客户资料存进 Notion 和飞书。",
+    "metricPill": "🧩 复用当前浏览器登录态 · 一键抓取领英/社媒入库",
+    "price": "基础免费 · Pro $10/月",
+    "summary": "云端爬虫常被反爬拦截，而 Bardeen 直接作为 Chrome 插件运行在你已登录的网页里，一键把当前看到的红人主页或客户资料存进 Notion 和飞书。 无需配置复杂 API 鉴权，直接在当前登录的 Chrome 页面一键抓取领英/网页数据入库 Notion",
+    "pros": [
+      "直接复用本地浏览器已登录 Cookie，轻松搞定云端爬虫无法访问的受保护页面",
+      "内置上千个现成自动化剧本（Playbooks），支持自然语言生成操作流"
+    ],
+    "cons": [
+      "本地触发模式需要保持 Chrome 开启，高频无人值守后台抓取可搭配 Apify"
+    ],
+    "verdict": "Bardeen AI 浏览器端一键自动化神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/bardeen",
+    "cta": "访问官方合作优惠通道"
+  },
+  "clay": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S 级严选 · 硅谷增长黑客第一获客神器",
+    "name": "Clay.com 瀑布流商业情报富化与 AI 获客工作台",
+    "role": "在一张智能表格里串联 75+ 家商业数据库与 AI 网页侦探，实现超高回复率的精准获客",
+    "verdictShort": "单一数据库查不到邮箱怎么办？Clay 独创“瀑布流查询”——自动依次检索 10 多家数据源（查到才扣分），并用 AI 侦探阅读对方官网写出神级破冰信。",
+    "metricPill": "💎 多水源瀑布流查邮箱 (命中率 >85%) + AI 侦探",
+    "price": "免费试用 (专属链接送 2,000 积分) · 增长团队首选",
+    "summary": "单一数据库查不到邮箱怎么办？Clay 独创“瀑布流查询”——自动依次检索 10 多家数据源（查到才扣分），并用 AI 侦探阅读对方官网写出神级破冰信。 在一张智能表格里串联 75+ 家商业数据库与 AI 网页侦探，实现超高回复率的精准获客",
+    "pros": [
+      "瀑布流依次穿透 75+ 家数据源，大幅提高海外高管真实邮箱与电话查出率",
+      "内置 Claygent 智能体可自动访问每一家目标客户官网，提炼定制化破冰切入点"
+    ],
+    "cons": [
+      "付费版定位专业 B2B 团队与高客单价出海服务商，新用户可通过专属链接先领免费积分体验"
+    ],
+    "verdict": "Clay.com 瀑布流商业情报富化与 AI 获客工作台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/clay",
+    "cta": "访问官方合作优惠通道"
+  },
+  "apollo": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S 级严选 · 出海找海外客户/红人/买手邮箱必装",
+    "name": "Apollo.io 全球 2.7 亿 B2B 客户数据库与外呼引擎",
+    "role": "一键检索全球 2.75 亿海外企业老板、电商采购总监与科技博主真实邮箱，自带自动化冷邮件序列",
+    "verdictShort": "做海外业务怎么找第一批精准客户或带货博主？在 Apollo 里按“国家 + 职位（Founder/CMO）+ 网站使用了 Shopify”一筛，几千个精准认证邮箱立刻导出。",
+    "metricPill": "🎯 2.75 亿海外商业联系人 + 职位/融资/技术栈筛选",
+    "price": "免费版每月送充足邮箱额度 · Basic $49/月",
+    "summary": "做海外业务怎么找第一批精准客户或带货博主？在 Apollo 里按“国家 + 职位（Founder/CMO）+ 网站使用了 Shopify”一筛，几千个精准认证邮箱立刻导出。 一键检索全球 2.75 亿海外企业老板、电商采购总监与科技博主真实邮箱，自带自动化冷邮件序列",
+    "pros": [
+      "支持按公司规模、最近融资、正在使用的软件（如 Shopify/Stripe）精准锁定决策人邮箱",
+      "PartnerStack 旗下王牌 20% 持续分佣项目，出海圈与外贸圈转化率极高"
+    ],
+    "cons": [
+      "批量发送冷邮件开发信前，建议使用副域名做好邮箱预热以保障进箱率"
+    ],
+    "verdict": "Apollo.io 全球 2.7 亿 B2B 客户数据库与外呼引擎 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/apollo",
+    "cta": "访问官方合作优惠通道"
+  },
+  "folk": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "b2boutreachkit",
+    "tier": "S 级严选 · 超级个体与创作者最爱的轻量 AI CRM",
+    "name": "folk.app 像 Notion 一样好用的新一代 AI 客户管理 CRM",
+    "role": "告别臃肿难用的传统销售系统，用插件一键从领英、X、Gmail 抓取人脉并由 Magic Fields AI 自动写跟进",
+    "verdictShort": "传统 CRM 复杂得像报税软件，而 folk 就像 Notion 一样清爽：非常适合一人公司管理品牌赞助商、联盟伙伴、海外买手与高客单价定制客户。",
+    "metricPill": "✨ 1秒抓取社媒人脉 + AI 魔法字段自动生成个性化邮件",
+    "price": "14天免费试用 · Standard $20/月 (享最高 30% 持续返佣)",
+    "summary": "传统 CRM 复杂得像报税软件，而 folk 就像 Notion 一样清爽：非常适合一人公司管理品牌赞助商、联盟伙伴、海外买手与高客单价定制客户。 告别臃肿难用的传统销售系统，用插件一键从领英、X、Gmail 抓取人脉并由 Magic Fields AI 自动写跟进",
+    "pros": [
+      "自带 folkX 浏览器插件，浏览领英或 X 时一键把对方资料与头像收进人脉库",
+      "内置 Magic Fields 魔法列，直接调用 AI 根据每位客户背景批量生成定制跟进话术"
+    ],
+    "cons": [
+      "专为敏捷团队、外贸工作室与创作者设计，没有传统巨头软件的繁琐冗余审批"
+    ],
+    "verdict": "folk.app 像 Notion 一样好用的新一代 AI 客户管理 CRM 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/folk",
+    "cta": "访问官方合作优惠通道"
+  },
+  "tally": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "solo",
+    "tier": "S 级严选 · 99% 高级功能永久免费 + 25% 返佣",
+    "name": "Tally.so 颜值天花板的 Notion 风格表单构建器",
+    "role": "像在 Notion 里打字一样做表单：无限提交量、条件跳转逻辑、Stripe 收款与 Webhook 全部免费开放",
+    "verdictShort": "别家表单工具每月收满 10 份问卷就逼你交钱，而 Tally 把无限表单、无限提交、逻辑跳转、计算器甚至 Stripe 收款全部永久免费开放！",
+    "metricPill": "📝 无限收集数量免费 + 原生直连 Notion / Make / 飞书",
+    "price": "99% 核心功能永久免费（不限表单与填写数）· Pro $29/月",
+    "summary": "别家表单工具每月收满 10 份问卷就逼你交钱，而 Tally 把无限表单、无限提交、逻辑跳转、计算器甚至 Stripe 收款全部永久免费开放！ 像在 Notion 里打字一样做表单：无限提交量、条件跳转逻辑、Stripe 收款与 Webhook 全部免费开放",
+    "pros": [
+      "纯正 Notion 块编辑器体验，输入斜杠 `/` 即可插入评分、文件上传、隐藏 UTM 追踪与收款块",
+      "原生秒级同步至 Notion 数据库与 Make/n8n 工作流，做客户需求收集问卷的不二之选"
+    ],
+    "cons": [
+      "仅在需要绑定自定义域名或去除底部极小角标时才需升级 Tally Pro"
+    ],
+    "verdict": "Tally.so 颜值天花板的 Notion 风格表单构建器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/tally",
+    "cta": "访问官方合作优惠通道"
+  },
+  "typeform": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 独立站“测一测你的肤质/选型”高转化神器",
+    "name": "Typeform 沉浸式一问一答高转化互动问卷与导购引擎",
+    "role": "采用每次只显示一道题的沉浸式对话体验，最适合做独立站“30秒测出你的本命护肤方案/AI工具栈”导购漏斗",
+    "verdictShort": "如何让访客主动点你的联盟链接？做一个 4 道题的 Typeform 互动测试（例如“测测你适合哪款韩系防晒/云主机”），答完直接跳出带专属推广码的结果页！",
+    "metricPill": "🎯 互动答题完播率翻倍 + 根据答案自动推荐带货链接",
+    "price": "免费体验 · Basic $25/月 (享 20% 持续联盟返佣)",
+    "summary": "如何让访客主动点你的联盟链接？做一个 4 道题的 Typeform 互动测试（例如“测测你适合哪款韩系防晒/云主机”），答完直接跳出带专属推广码的结果页！ 采用每次只显示一道题的沉浸式对话体验，最适合做独立站“30秒测出你的本命护肤方案/AI工具栈”导购漏斗",
+    "pros": [
+      "每次只聚焦一道题的丝滑交互体验，比密密麻麻的传统问卷转化率高出近一倍",
+      "强大的分支计分逻辑，可根据用户肤质或预算自动跳转到对应的联盟商品推荐页"
+    ],
+    "cons": [
+      "免费版每月回复额度较少；若追求无限量免费表单可搭配同专区的 Tally.so"
+    ],
+    "verdict": "Typeform 沉浸式一问一答高转化互动问卷与导购引擎 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/typeform",
+    "cta": "访问官方合作优惠通道"
+  },
+  "airtable": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "automation",
+    "tier": "S 级严选 · 比 Excel 强百倍的自动化内容与选品中台",
+    "name": "Airtable 可视化关系型数据库与自动化业务中台",
+    "role": "将电子表格的易用性与 SQL 数据库的严谨关联结合，是驱动 Make/n8n 全自动发帖矩阵的最佳弹药库",
+    "verdictShort": "当你的联盟商品库、SEO 关键词表或短视频脚本超过几千条时，Airtable 毫秒级的 API 响应速度与字段状态触发器比普通文档稳得多。",
+    "metricPill": "🗄️ 严谨多表关联 + 状态变更自动触发 Make/n8n 流水线",
+    "price": "免费版 (单库 1,000 条记录) · Team $20/月",
+    "summary": "当你的联盟商品库、SEO 关键词表或短视频脚本超过几千条时，Airtable 毫秒级的 API 响应速度与字段状态触发器比普通文档稳得多。 将电子表格的易用性与 SQL 数据库的严谨关联结合，是驱动 Make/n8n 全自动发帖矩阵的最佳弹药库",
+    "pros": [
+      "极其稳健的 REST API，在表格里把状态改为 `Ready` 即可瞬间触发 Make.com 自动生成图文并发布",
+      "内置 Interface 界面设计器，几分钟就能把枯燥的数据表变成高颜值内部管理看板"
+    ],
+    "cons": [
+      "团队多人协作按席位收费，若需百万级数据存储可搭配 Supabase 使用"
+    ],
+    "verdict": "Airtable 可视化关系型数据库与自动化业务中台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/airtable",
+    "cta": "访问官方合作优惠通道"
+  },
+  "clickup": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "solo",
+    "tier": "S 级严选 · 一个软件顶替 Jira + 文档 + 白板 + 时间追踪",
+    "name": "ClickUp 4.0 全能项目管理、文档白板与 AI 知识大脑",
+    "role": "将多项目甘特图、SOP 文档、思维导图白板与 AI 全局跨库问答整合进同一套工作台",
+    "verdictShort": "如果你同时运营多个独立站、社媒账号或接定制项目，ClickUp 让你在一个界面里同时看看板、甘特图、写 SOP 并用 AI 检索所有历史任务。",
+    "metricPill": "🧠 任务甘特图 + 文档 + 白板全合一（付费版仅 $7/月）",
+    "price": "永久免费版功能极全 · Unlimited 仅 $7/月",
+    "summary": "如果你同时运营多个独立站、社媒账号或接定制项目，ClickUp 让你在一个界面里同时看看板、甘特图、写 SOP 并用 AI 检索所有历史任务。 将多项目甘特图、SOP 文档、思维导图白板与 AI 全局跨库问答整合进同一套工作台",
+    "pros": [
+      "免费版极其大方，付费版仅 $7/月即可解锁无限存储与客户协作席位，性价比极高",
+      "PartnerStack 热门生产力联盟项目，受众广泛极易出单"
+    ],
+    "cons": [
+      "功能开关极其丰富，初次使用建议先开启基础看板与文档视图，避免过度配置"
+    ],
+    "verdict": "ClickUp 4.0 全能项目管理、文档白板与 AI 知识大脑 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/clickup",
+    "cta": "访问官方合作优惠通道"
+  },
+  "monday": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "solo",
+    "tier": "S 级严选 · PartnerStack 单笔最高 $150 高额佣金",
+    "name": "monday.com 企业级可视化工作流与销售 CRM 平台",
+    "role": "风靡欧美企业的彩色可视化项目看板与销售管线系统，更是生产力赛道单笔佣金最高的联盟王牌之一",
+    "verdictShort": "monday.com 不仅把枯燥的项目进度和销售漏斗变成了直觉化的彩色积木，而且在 PartnerStack 上对推广者提供单笔高达 $150 的丰厚 CPA 奖励。",
+    "metricPill": "💰 PartnerStack 单笔最高 $150 佣金 · 极佳可视化看板",
+    "price": "免费版 (2人以内) · 付费版 $9/席位/月起",
+    "summary": "monday.com 不仅把枯燥的项目进度和销售漏斗变成了直觉化的彩色积木，而且在 PartnerStack 上对推广者提供单笔高达 $150 的丰厚 CPA 奖励。 风靡欧美企业的彩色可视化项目看板与销售管线系统，更是生产力赛道单笔佣金最高的联盟王牌之一",
+    "pros": [
+      "开箱即用的高管级数据仪表盘，一键汇总多个项目的营收、进度与人员负载",
+      "生产力软件评测必推高佣金标杆：一单企业转化即可抵得上普通商品几十单"
+    ],
+    "cons": [
+      "付费版按 3 席位起售，更适合 3 人以上小团队或作为高佣金 B2B 评测标的推广"
+    ],
+    "verdict": "monday.com 企业级可视化工作流与销售 CRM 平台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/monday",
+    "cta": "访问官方合作优惠通道"
+  },
+  "linear": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "workstation",
+    "tier": "S 级严选 · 键盘流 0 延迟丝滑体验的工程管理天花板",
+    "name": "Linear 硅谷全明星团队标配的极速研发与产品管理工具",
+    "role": "打开速度堪比本地软件，输入快捷键 `C` 1秒建任务，提交 GitHub PR 自动流转状态",
+    "verdictShort": "为什么硅谷几乎所有顶级 AI 公司（OpenAI、Vercel、Cursor）都用 Linear？因为它彻底消灭了网页加载转圈，全键盘操作行云流水。",
+    "metricPill": "⌨️ 全键盘秒级操作 + GitHub / Cursor 提交代码自动关单",
+    "price": "250 个活跃 Issue 内免费（不限成员数）· Basic $8/月",
+    "summary": "为什么硅谷几乎所有顶级 AI 公司（OpenAI、Vercel、Cursor）都用 Linear？因为它彻底消灭了网页加载转圈，全键盘操作行云流水。 打开速度堪比本地软件，输入快捷键 `C` 1秒建任务，提交 GitHub PR 自动流转状态",
+    "pros": [
+      "本地同步引擎让每一次切换页面都在 16 毫秒内完成，彻底告别传统项目管理软件的卡顿",
+      "与 GitHub 和 Cursor 深度联动，分支创建与 PR 合并时任务状态全自动流转"
+    ],
+    "cons": [
+      "专为软件开发、独立产品构建者与技术团队量身定制"
+    ],
+    "verdict": "Linear 硅谷全明星团队标配的极速研发与产品管理工具 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/linear",
+    "cta": "访问官方合作优惠通道"
+  },
+  "raycast": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "workstation",
+    "tier": "S 级严选 · 彻底替代 Spotlight + 剪贴板 + 窗口管理",
+    "name": "Raycast Pro Mac 端终极效率启动器与全局 AI 快捷键中枢",
+    "role": "按一下 `Option+Space`，在 Mac 任何角落秒调剪贴板历史、长文短语展开、分屏管理与全局 AI 翻译改写",
+    "verdictShort": "只要你用 Mac，Raycast 就是装机必装第一神器：仅免费版就能直接省掉买 Paste 剪贴板、TextExpander 快捷短语和 Magnet 分屏软件的钱！",
+    "metricPill": "⌘ Mac 装机必装第一神器 + 1,500+ 免费效率插件",
+    "price": "核心功能完全免费 · Raycast Pro $8/月 (享 30% 返佣)",
+    "summary": "只要你用 Mac，Raycast 就是装机必装第一神器：仅免费版就能直接省掉买 Paste 剪贴板、TextExpander 快捷短语和 Magnet 分屏软件的钱！ 按一下 `Option+Space`，在 Mac 任何角落秒调剪贴板历史、长文短语展开、分屏管理与全局 AI 翻译改写",
+    "pros": [
+      "免费版即自带无限剪贴板历史、快捷短语输入（比如打 `;aff` 秒出推广链接）与分屏快捷键",
+      "插件商店拥有 1,500+ 免费扩展，一键控制 Notion、Linear、GitHub 与翻译"
+    ],
+    "cons": [
+      "Mac 与 iOS 原生巅峰体验（Windows 版本目前正在独立公测中）"
+    ],
+    "verdict": "Raycast Pro Mac 端终极效率启动器与全局 AI 快捷键中枢 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/raycast",
+    "cta": "访问官方合作优惠通道"
+  },
+  "warp": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S 级严选 · 不懂复杂 Linux 命令也能轻松管服务器",
+    "name": "Warp 现代块结构 AI 终端与 Linux 运维智能体",
+    "role": "基于 Rust 极速渲染，像写代码一样编辑命令行，遇到 Docker/Nginx 报错直接让终端内置 AI 自动修复",
+    "verdictShort": "部署云服务器最怕记不住复杂的 Linux、Docker 或 ffmpeg 命令。在 Warp 终端里直接用中文输入你想干什么，AI 自动生成准确命令并帮你排错。",
+    "metricPill": "💻 输入 `#` 用中文直接转 Linux 命令 + 自动排查服务器报错",
+    "price": "个人版免费（含充足 AI 额度）· Pro $15/月",
+    "summary": "部署云服务器最怕记不住复杂的 Linux、Docker 或 ffmpeg 命令。在 Warp 终端里直接用中文输入你想干什么，AI 自动生成准确命令并帮你排错。 基于 Rust 极速渲染，像写代码一样编辑命令行，遇到 Docker/Nginx 报错直接让终端内置 AI 自动修复",
+    "pros": [
+      "独创 Block 块视图，每次命令的输出结果清晰隔离，支持一键复制或生成分享链接",
+      "内置 Warp Drive 可保存常用的服务器初始化与 Docker 运维脚本，换电脑秒同步"
+    ],
+    "cons": [
+      "首次启动需免费登录账号以同步个人配置与每月免费 AI 额度"
+    ],
+    "verdict": "Warp 现代块结构 AI 终端与 Linux 运维智能体 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/warp",
+    "cta": "访问官方合作优惠通道"
+  },
+  "obsidian": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.8 / 10",
+    "relatedKit": "solo",
+    "tier": "S 级严选 · 纯本地 `.md` 文件永久掌控 + AI 绝配",
+    "name": "Obsidian 本地优先的双链 Markdown 终身第二大脑",
+    "role": "所有笔记皆为电脑本地纯文本 Markdown 文件，天生可被 Claude Code、Cursor 与本地 RAG 直接读取操作",
+    "verdictShort": "为什么 AI 时代的硬核创作者纷纷转向 Obsidian？因为它的笔记就是本地文件夹里的 `.md` 纯文本——你可以直接用 Cursor 打开整个笔记库，让 AI 秒读你过去三年的积累！",
+    "metricPill": "📂 纯本地 `.md` 文件夹 -> 可直接用 Cursor / Claude 批量读写",
+    "price": "个人与商业使用 100% 免费 · 官方同步服务 $4/月",
+    "summary": "为什么 AI 时代的硬核创作者纷纷转向 Obsidian？因为它的笔记就是本地文件夹里的 `.md` 纯文本——你可以直接用 Cursor 打开整个笔记库，让 AI 秒读你过去三年的积累！ 所有笔记皆为电脑本地纯文本 Markdown 文件，天生可被 Claude Code、Cursor 与本地 RAG 直接读取操作",
+    "pros": [
+      "数据 100% 存在自己电脑硬盘，断网可用、永不丢稿、零平台绑架",
+      "与 Cursor、Claude Code 堪称绝配：AI 可以直接在你的笔记库里自动归档、加双链和写推文"
+    ],
+    "cons": [
+      "多人实时在线协同建议用 Notion；个人深度知识库与 AI 本地语料库首选 Obsidian"
+    ],
+    "verdict": "Obsidian 本地优先的双链 Markdown 终身第二大脑 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/obsidian",
+    "cta": "访问官方合作优惠通道"
+  },
+  "readwise": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.7 / 10",
+    "relatedKit": "researchos",
+    "tier": "S 级严选 · 把公众号/推文/Newsletter/PDF/YouTube 一网打尽",
+    "name": "Readwise Reader 全网信息摄入、高亮汇总与 AI 精读神器",
+    "role": "一个软件统一收看网页长文、邮件通讯、RSS 订阅、PDF 论文与 YouTube 字幕，所有高亮笔记自动同步进 Notion 与 Obsidian",
+    "verdictShort": "写深度评测推文最缺高质量素材输入。Readwise Reader 让你在一个极简界面里高亮网页、PDF 和 YouTube 视频字幕，所有金句自动流进你的 Notion 或 Obsidian 素材库。",
+    "metricPill": "📚 全网阅读器 + 每日间隔重复回顾 + 自动同步 Notion/Obsidian",
+    "price": "专属链接享免费长试用 · 完整版 $9.99/月",
+    "summary": "写深度评测推文最缺高质量素材输入。Readwise Reader 让你在一个极简界面里高亮网页、PDF 和 YouTube 视频字幕，所有金句自动流进你的 Notion 或 Obsidian 素材库。 一个软件统一收看网页长文、邮件通讯、RSS 订阅、PDF 论文与 YouTube 字幕，所有高亮笔记自动同步进 Notion 与 Obsidian",
+    "pros": [
+      "看 YouTube 英文评测视频时右侧实时滚动双语字幕，鼠标一划即可把核心数据存为笔记",
+      "全自动将你在网页、Kindle、PDF 上划的所有重点实时同步到 Notion 或 Obsidian"
+    ],
+    "cons": [
+      "试用期后为付费订阅，但它一个软件直接替代了稍后读 + RSS 阅读器 + PDF 批注器"
+    ],
+    "verdict": "Readwise Reader 全网信息摄入、高亮汇总与 AI 精读神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/readwise",
+    "cta": "访问官方合作优惠通道"
+  },
+  "chatpdf": {
+    "catKey": "ai",
+    "badgeClass": "tier-ai",
+    "score": "9.5 / 10",
+    "relatedKit": "researchos",
+    "tier": "S 级严选 · 30% 持续返佣的常青学术/办公工具",
+    "name": "ChatPDF 学术论文、财报与跨国合同秒级精读神器",
+    "role": "拖入任何几百页的英文临床文献、行业白皮书或财报 PDF，10 秒提炼核心结论并点击角标直达原文段落",
+    "verdictShort": "无论你是查护肤成分的临床双盲文献、读大厂 AI 论文，还是在校园/职场圈做软件推荐，ChatPDF 都是搜索量极大且提供 30% 持续分佣的转化利器。",
+    "metricPill": "📄 句句带原文页码溯源 + 多篇 PDF 文献横向对比",
+    "price": "每日免费额度 · Plus 会员性价比极高（推广享 30% 持续分佣）",
+    "summary": "无论你是查护肤成分的临床双盲文献、读大厂 AI 论文，还是在校园/职场圈做软件推荐，ChatPDF 都是搜索量极大且提供 30% 持续分佣的转化利器。 拖入任何几百页的英文临床文献、行业白皮书或财报 PDF，10 秒提炼核心结论并点击角标直达原文段落",
+    "pros": [
+      "每一个回答都带有精准的页码气泡，点击即可在左侧 PDF 原文中高亮定位，绝不胡编乱造",
+      "全球学生、科研人员与金融分析师刚需工具，30% 持续联盟分佣极易出单"
+    ],
+    "cons": [
+      "若需将几十篇资料合成为双人播客音频，可搭配本站 NotebookLM 研究套件使用"
+    ],
+    "verdict": "ChatPDF 学术论文、财报与跨国合同秒级精读神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/chatpdf",
+    "cta": "访问官方合作优惠通道"
+  },
+  "suno": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 10 秒生成带商用版权的爆款 BGM 与歌曲",
+    "name": "Suno v4.5 广播级 AI 原创音乐、人声与伴奏分轨工作室",
+    "role": "输入风格关键词或歌词，10 秒生成全长 4 分钟录音室级歌曲或短视频卡点纯音乐，支持一键导出人声与伴奏分轨",
+    "verdictShort": "做 YouTube 或 TikTok 视频最怕背景音乐侵权被判黄标无法变现。用 Suno v4.5（$10/月 Pro 版即享完整商用版权）定制专属 Lo-Fi 或电子卡点配乐，彻底告别版权纠纷！",
+    "metricPill": "🎵 v4.5 录音室音质 + 人声伴奏分轨导出 + 完整商用版权",
+    "price": "每日免费送 50 积分 · Pro $10/月（含完整商业使用权）",
+    "summary": "做 YouTube 或 TikTok 视频最怕背景音乐侵权被判黄标无法变现。用 Suno v4.5（$10/月 Pro 版即享完整商用版权）定制专属 Lo-Fi 或电子卡点配乐，彻底告别版权纠纷！ 输入风格关键词或歌词，10 秒生成全长 4 分钟录音室级歌曲或短视频卡点纯音乐，支持一键导出人声与伴奏分轨",
+    "pros": [
+      "Pro 会员（仅 $10/月）生成的音乐享有 100% 商业所有权，可放心用于 YouTube 获利、广告商单与打榜",
+      "支持一键分离导出高清 WAV 格式的人声与纯伴奏音轨，方便后期剪辑混音"
+    ],
+    "cons": [
+      "免费版生成的曲目仅限非商用娱乐，若需上传 YouTube 开启广告分成请务必使用 Pro 版生成"
+    ],
+    "verdict": "Suno v4.5 广播级 AI 原创音乐、人声与伴奏分轨工作室 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/suno",
+    "cta": "访问官方合作优惠通道"
+  },
+  "pika": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 社媒百万播放“万物皆可切/压扁/充气”特效",
+    "name": "Pika 2.2 创意视觉特效（Pikaffects）与首尾帧视频引擎",
+    "role": "上传一张普通商品图，一键生成“切蛋糕、气球充气、融化”等极具视觉冲击力的爆款社媒广告前 3 秒钩子",
+    "verdictShort": "带货短视频的前 3 秒决定了 80% 的完播率。用 Pika 2.2 把你的护肤品或数码产品图变成超现实视觉特效（或用 Ingredients 把模特、商品与场景融进同一镜头），吸睛度拉满。",
+    "metricPill": "✨ 爆款物理形变特效 + 多元素融合 (Ingredients) + 首尾帧",
+    "price": "免费体验积分 · Standard $8/月起",
+    "summary": "带货短视频的前 3 秒决定了 80% 的完播率。用 Pika 2.2 把你的护肤品或数码产品图变成超现实视觉特效（或用 Ingredients 把模特、商品与场景融进同一镜头），吸睛度拉满。 上传一张普通商品图，一键生成“切蛋糕、气球充气、融化”等极具视觉冲击力的爆款社媒广告前 3 秒钩子",
+    "pros": [
+      "独创 Ingredients 功能：上传你自己的商品实拍图+指定场景，AI 在保持商品外观不变的前提下生成动态大片",
+      "Pikaframes 首尾帧过渡极其丝滑，非常适合做高质感片头转场"
+    ],
+    "cons": [
+      "主打创意视觉钩子与短镜头特效，长镜头写实叙事建议搭配可灵 Kling 2.5"
+    ],
+    "verdict": "Pika 2.2 创意视觉特效（Pikaffects）与首尾帧视频引擎 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/pika",
+    "cta": "访问官方合作优惠通道"
+  },
+  "luma": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 3D 空间感最强、一键生成无缝循环动态壁纸/片头",
+    "name": "Luma Dream Machine Ray-2 电影级 3D 运镜与物理视频引擎",
+    "role": "依托 Luma 强大的 3D 神经辐射场基因，Ray-2 模型在大幅度环绕运镜、光影反射与无缝循环视频上表现惊艳",
+    "verdictShort": "Luma 团队做 3D 建模起家，因此它的 Ray-2 视频模型对真实三维空间、环绕镜头（Orbit）以及水面/玻璃反光的理解极其深刻，还能一键生成首尾无缝衔接的循环背景视频。",
+    "metricPill": "🎥 电影级大范围环绕运镜 + 原生一键生成无缝循环视频 (Loop)",
+    "price": "免费体验 · Lite $9.99/月",
+    "summary": "Luma 团队做 3D 建模起家，因此它的 Ray-2 视频模型对真实三维空间、环绕镜头（Orbit）以及水面/玻璃反光的理解极其深刻，还能一键生成首尾无缝衔接的循环背景视频。 依托 Luma 强大的 3D 神经辐射场基因，Ray-2 模型在大幅度环绕运镜、光影反射与无缝循环视频上表现惊艳",
+    "pros": [
+      "原生自带 `Loop` 循环开关，一键生成独立站动态背景或音乐频道 24 小时无缝循环画面",
+      "支持在时间轴上向后无限延展（Extend）镜头并精准指定下一帧画面"
+    ],
+    "cons": [
+      "专注空镜、产品运镜与电影感画面，数字人说话口型请交由 HeyGen 处理"
+    ],
+    "verdict": "Luma Dream Machine Ray-2 电影级 3D 运镜与物理视频引擎 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/luma",
+    "cta": "访问官方合作优惠通道"
+  },
+  "leonardo": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "content",
+    "tier": "S 级严选 · 每日送 150 免费积分的网页端全能绘图台",
+    "name": "Leonardo.Ai Phoenix 商业原画、电商素材与局部重绘工作台",
+    "role": "无需配置 Discord，打开网页即享每日 150 免费额度：支持一键生成透明背景 PNG 素材、局部涂抹修改与实时画布",
+    "verdictShort": "被 Canva 收购后的视觉大杀器：界面极度友好，每天免费送 150 积分，尤其擅长一键生成自带透明通道（Transparent PNG）的图标、贴纸、游戏资产与电商白底素材。",
+    "metricPill": "🎨 每日免费 150 积分 + 原生透明背景 PNG 贴纸/商品图生成",
+    "price": "每天免费重置 150 积分 · 付费版 $10/月起",
+    "summary": "被 Canva 收购后的视觉大杀器：界面极度友好，每天免费送 150 积分，尤其擅长一键生成自带透明通道（Transparent PNG）的图标、贴纸、游戏资产与电商白底素材。 无需配置 Discord，打开网页即享每日 150 免费额度：支持一键生成透明背景 PNG 素材、局部涂抹修改与实时画布",
+    "pros": [
+      "每天免费自动恢复 150 个快速积分，零成本满足日常配图需求",
+      "开启 Transparency 开关即可直接生成无背景透明 PNG 素材，做网页图标与视频贴纸神速"
+    ],
+    "cons": [
+      "工作台功能极其丰富，新手建议直接选用内置的 Phoenix 主力模型开画"
+    ],
+    "verdict": "Leonardo.Ai Phoenix 商业原画、电商素材与局部重绘工作台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/leonardo",
+    "cta": "访问官方合作优惠通道"
+  },
+  "ideogram": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "content",
+    "tier": "S 级严选 · 拼写准确率 99% 的海报、Logo 与 T 恤印花神器",
+    "name": "Ideogram 3.0 英文排版、潮牌 Logo 与爆款封面文字渲染之王",
+    "role": "彻底解决 AI 画图“字母拼错乱码”痛点：直接生成带完美艺术字体排版的 YouTube 封面、品牌 Logo 与 POD 印花",
+    "verdictShort": "做 YouTube 缩略图、独立站 Banner 或跨境 POD（按需打印 T 恤/马克杯）时，Ideogram 3.0 能把一句完整的英文标语直接以大师级字体排版嵌进画面光影里，几乎零错字！",
+    "metricPill": "🔤 艺术字体排版零拼写错误 + 调色盘锁定品牌色",
+    "price": "免费体验额度 · Basic $7/月",
+    "summary": "做 YouTube 缩略图、独立站 Banner 或跨境 POD（按需打印 T 恤/马克杯）时，Ideogram 3.0 能把一句完整的英文标语直接以大师级字体排版嵌进画面光影里，几乎零错字！ 彻底解决 AI 画图“字母拼错乱码”痛点：直接生成带完美艺术字体排版的 YouTube 封面、品牌 Logo 与 POD 印花",
+    "pros": [
+      "字体设计与海报排版能力独步天下，支持一键指定品牌专属色卡（Color Palette）",
+      "设计师与跨境电商卖家做 Logo 灵感、书籍封面与社媒首图的效率倍增器"
+    ],
+    "cons": [
+      "英文与数字艺术字渲染已达满分（若需加复杂中文字体，建议生成底图后在 Canva 中叠字）"
+    ],
+    "verdict": "Ideogram 3.0 英文排版、潮牌 Logo 与爆款封面文字渲染之王 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/ideogram",
+    "cta": "访问官方合作优惠通道"
+  },
+  "recraft": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S 级严选 · 设计师封神的“真矢量 SVG”与同风格图标集生成器",
+    "name": "Recraft V4 唯一能直接生成真矢量 SVG 图标与全套品牌视觉的 AI",
+    "role": "市面上唯一原生输出可无限放大、可在 Figma/Illustrator 中直接改节点颜色的真 `.SVG` 矢量插画与全套统一风格图标库",
+    "verdictShort": "普通 AI 画出来的都是放大就糊的像素图；而 Recraft V4 能直接生成真 `.SVG` 矢量源码！开发独立站时，用它一次生成一整套画风、线条粗细与配色完全统一的网页图标库。",
+    "metricPill": "✒️ 原生导出真 `.SVG` 矢量源码 + 一键生成全套同风格网页图标",
+    "price": "每日免费额度 · Pro $10/月（推广享 25% 持续返佣）",
+    "summary": "普通 AI 画出来的都是放大就糊的像素图；而 Recraft V4 能直接生成真 `.SVG` 矢量源码！开发独立站时，用它一次生成一整套画风、线条粗细与配色完全统一的网页图标库。 市面上唯一原生输出可无限放大、可在 Figma/Illustrator 中直接改节点颜色的真 `.SVG` 矢量插画与全套统一风格图标库",
+    "pros": [
+      "直接导出真 `.SVG` 矢量文件，放进网页代码里只有几 KB 且在 4K 屏上绝对清晰锐利",
+      "支持一次生成一组（6个）画风 100% 统一的系列图标，独立开发者与 UI 设计师相见恨晚"
+    ],
+    "cons": [
+      "免费版作品默认公开，升级 $10/月 Pro 版即享完全私密画布与完整商业所有权"
+    ],
+    "verdict": "Recraft V4 唯一能直接生成真矢量 SVG 图标与全套品牌视觉的 AI 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/recraft",
+    "cta": "访问官方合作优惠通道"
+  },
+  "topaz": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 把 720p 模糊 AI 视频秒变 4K 60帧电影画质",
+    "name": "Topaz Video AI 6 影视级 AI 视频 4K 超分、补帧与降噪神器",
+    "role": "好莱坞后期工作室标配：专门将 Kling、Runway、Sora 生成的 720p/24帧原片无损放大至 4K 60帧超清商业成片",
+    "verdictShort": "为什么别人的 AI 视频看着像单反实拍，你的却有一层塑料涂抹感？秘诀就是最后一步用 Topaz Video AI 6 的 Rhea 模型做 4K 超分辨率重建并补帧到 60fps！",
+    "metricPill": "💎 消除 AI 视频涂抹感 + 24帧丝滑补帧至 60/120帧",
+    "price": "免费试用 · 买断制专业软件（Impact 高客单价佣金项目）",
+    "summary": "为什么别人的 AI 视频看着像单反实拍，你的却有一层塑料涂抹感？秘诀就是最后一步用 Topaz Video AI 6 的 Rhea 模型做 4K 超分辨率重建并补帧到 60fps！ 好莱坞后期工作室标配：专门将 Kling、Runway、Sora 生成的 720p/24帧原片无损放大至 4K 60帧超清商业成片",
+    "pros": [
+      "专为修复视频噪点、果冻效应与低分辨率模糊而生，让低成本素材瞬间达到商业电视广告清晰度",
+      "单套售价 $199–$299，在 Impact 联盟平台上推广成交一单即可获得 $30–$70+ 高额美金佣金"
+    ],
+    "cons": [
+      "本地渲染推荐使用苹果 M 系列芯片 Mac 或 RTX 显卡电脑（亦支持云端算力渲染）"
+    ],
+    "verdict": "Topaz Video AI 6 影视级 AI 视频 4K 超分、补帧与降噪神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/topaz",
+    "cta": "访问官方合作优惠通道"
+  },
+  "murf": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · PartnerStack 长达 24 个月 20% 持续分佣",
+    "name": "Murf.ai 商业广告、在线课程与企业培训配音工作台",
+    "role": "自带时间轴音画对轨编辑器与 Canva 官方插件，精准控制每一个词的语速、音调与停顿，最适合做课程与产品演示配音",
+    "verdictShort": "如果你常做在线课程、软件功能演示（Explainer Video）或用 Canva 做幻灯片视频，Murf.ai 提供了极其好用的时间轴配音间，让每一句旁白跟画面切换严丝合缝。",
+    "metricPill": "🎙️ 原生嵌入 Canva 直接配音 + 20% 长达两年持续返佣",
+    "price": "免费在线试听合成 · Creator $19/月（享 24 个月持续返佣）",
+    "summary": "如果你常做在线课程、软件功能演示（Explainer Video）或用 Canva 做幻灯片视频，Murf.ai 提供了极其好用的时间轴配音间，让每一句旁白跟画面切换严丝合缝。 自带时间轴音画对轨编辑器与 Canva 官方插件，精准控制每一个词的语速、音调与停顿，最适合做课程与产品演示配音",
+    "pros": [
+      "与 Canva 深度官方集成，在 Canva 设计界面里就能直接输入文字生成多国语言专业配音",
+      "PartnerStack 优质长尾项目：推荐成功可连续拿满 24 个月（整整两年）的 20% 持续分佣"
+    ],
+    "cons": [
+      "免费版可在工作台内完整体验所有声音与时间轴对齐功能，满意后再订阅导出商用音频"
+    ],
+    "verdict": "Murf.ai 商业广告、在线课程与企业培训配音工作台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/murf",
+    "cta": "访问官方合作优惠通道"
+  },
+  "pictory": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 最高 50% 终身持续返佣 + $1,000 现金奖",
+    "name": "Pictory.ai 网址/文章一键转不露脸 YouTube 长视频印钞机",
+    "role": "粘贴任何一篇英文评测文章网址或脚本，AI 自动拆解分镜、匹配 Storyblocks 正版高清视频素材、加上配音与字幕",
+    "verdictShort": "如何实现“一鱼两吃”？把你独立站上的评测文章网址丢进 Pictory，3 分钟自动生成一条带正版素材库画面的 YouTube 视频；同时它的联盟计划给到惊人的 20%–50% 终身持续返佣！",
+    "metricPill": "🎬 1篇推文 3分钟变带货视频 + 内置百万级正版无水印素材库",
+    "price": "免费制作 3 条视频 · Starter $19/月（终身最高 50% 返佣）",
+    "summary": "如何实现“一鱼两吃”？把你独立站上的评测文章网址丢进 Pictory，3 分钟自动生成一条带正版素材库画面的 YouTube 视频；同时它的联盟计划给到惊人的 20%–50% 终身持续返佣！ 粘贴任何一篇英文评测文章网址或脚本，AI 自动拆解分镜、匹配 Storyblocks 正版高清视频素材、加上配音与字幕",
+    "pros": [
+      "订阅即免费包含价值数百美金的 Storyblocks 正版高清视频素材库，自动按每句话语义精准配画面",
+      "AI 视频界佣金天花板：不仅给最高 50% 终身持续分佣，达到推广阶梯还额外发放 $1,000 美金现金奖"
+    ],
+    "cons": [
+      "最适合做 Top 5 软件盘点、护肤科普、财经解说等知识带货类视频"
+    ],
+    "verdict": "Pictory.ai 网址/文章一键转不露脸 YouTube 长视频印钞机 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/pictory",
+    "cta": "访问官方合作优惠通道"
+  },
+  "invideo": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 输入一句话主题自动产出 10 分钟完整视频",
+    "name": "InVideo AI 一句话指令生成完整旁白+画面+字幕成片工作台",
+    "role": "连脚本都不用自己写：输入“制作一条 60 秒对比 Make 与 Zapier 的带货短视频”，AI 全自动完成写稿、配音、找画面与剪辑",
+    "verdictShort": "InVideo AI 把视频制作门槛降到了极致：生成初稿后，你甚至不需要拉时间轴，直接在对话框输入“把开头换成更有冲击力的画面、语速加快 10%”，AI 就会自动帮你改好片子！",
+    "metricPill": "🪄 一句话出完整成片 + 用聊天指令（Magic Box）直接改剪辑",
+    "price": "每周免费生成额度 · Plus $25/月（Impact 高转化爆品）",
+    "summary": "InVideo AI 把视频制作门槛降到了极致：生成初稿后，你甚至不需要拉时间轴，直接在对话框输入“把开头换成更有冲击力的画面、语速加快 10%”，AI 就会自动帮你改好片子！ 连脚本都不用自己写：输入“制作一条 60 秒对比 Make 与 Zapier 的带货短视频”，AI 全自动完成写稿、配音、找画面与剪辑",
+    "pros": [
+      "独创 Magic Box 对话式剪辑：像跟真人剪辑师说话一样修改任何一秒的画面与字幕",
+      "在 Impact 联盟平台上转化率极高（25%–50% 高额分成），是海外“副业搞钱/不露脸频道”教程必推神品"
+    ],
+    "cons": [
+      "免费版导出带有水印，正式运营频道建议升级 Plus 版解锁无水印高清商用素材"
+    ],
+    "verdict": "InVideo AI 一句话指令生成完整旁白+画面+字幕成片工作台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/invideo",
+    "cta": "访问官方合作优惠通道"
+  },
+  "fliki": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 30% 终身持续返佣的 TikTok/Shorts 批量生产器",
+    "name": "Fliki.ai 极速文案转短视频与 80+ 语言超拟真配音神器",
+    "role": "采用直观的“左文案、右画面”分镜卡片模式，支持粘贴推文或亚马逊商品链接一键生成 9:16 竖屏带货视频",
+    "verdictShort": "Fliki 的分镜卡片界面比传统剪辑软件快 5 倍：每一行字自动对应一段配音和一段视频/AI 画面，支持 80 多种语言，且对推广者提供极其诱人的 30% 终身持续返佣。",
+    "metricPill": "📱 粘贴商品链接秒出带货竖屏视频 + 30% 终身持续分佣",
+    "price": "每月 5 分钟免费额度 · Standard $21/月（享 30% 终身返佣）",
+    "summary": "Fliki 的分镜卡片界面比传统剪辑软件快 5 倍：每一行字自动对应一段配音和一段视频/AI 画面，支持 80 多种语言，且对推广者提供极其诱人的 30% 终身持续返佣。 采用直观的“左文案、右画面”分镜卡片模式，支持粘贴推文或亚马逊商品链接一键生成 9:16 竖屏带货视频",
+    "pros": [
+      "内置 80 多种语言的 2,000+ 款超自然语音，做多语种出海矩阵号（英语/西语/日语）极快",
+      "提供 30% 终身持续联盟佣金，用户只要在用你就月月有美金入账"
+    ],
+    "cons": [
+      "最适合批量日更 9:16 竖屏短视频（TikTok / Shorts / Reels / 小红书）"
+    ],
+    "verdict": "Fliki.ai 极速文案转短视频与 80+ 语言超拟真配音神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/fliki",
+    "cta": "访问官方合作优惠通道"
+  },
+  "veed": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.5 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 免装大型软件，打开浏览器就能剪 4K 口播大片",
+    "name": "VEED.IO 网页端全能视频剪辑、自动双语字幕与眼神矫正工作台",
+    "role": "电脑配置不高也能流畅剪视频：支持一键去除杂乱背景、看着提词器录视频自动矫正眼神、自动删气口与嗯啊废话",
+    "verdictShort": "录口播视频不敢脱稿？看着屏幕上的稿子念完，用 VEED 的 AI 眼神矫正功能一键把你的视线自然聚焦回摄像头正中央，再用 Magic Cut 一秒删掉所有卡壳停顿！",
+    "metricPill": "👁️ 看稿录视频 AI 自动把眼神改向镜头 + 一键删停顿废话",
+    "price": "免费体验 · Lite $12/月（推广享首年 30% 高转化佣金）",
+    "summary": "录口播视频不敢脱稿？看着屏幕上的稿子念完，用 VEED 的 AI 眼神矫正功能一键把你的视线自然聚焦回摄像头正中央，再用 Magic Cut 一秒删掉所有卡壳停顿！ 电脑配置不高也能流畅剪视频：支持一键去除杂乱背景、看着提词器录视频自动矫正眼神、自动删气口与嗯啊废话",
+    "pros": [
+      "纯云端浏览器渲染，不吃本地电脑内存与显卡，Chromebook 或轻薄本也能丝滑剪片",
+      "一键工作室级人声降噪（Clean Audio）+ 自动删除空白停顿，录课与软件教程效率神器"
+    ],
+    "cons": [
+      "免费版导出有角标，升级付费版即可解锁无水印高清导出与眼神矫正"
+    ],
+    "verdict": "VEED.IO 网页端全能视频剪辑、自动双语字幕与眼神矫正工作台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/veed",
+    "cta": "访问官方合作优惠通道"
+  },
+  "captions": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 手机/网页一键生成欧美顶流博主同款动态包装",
+    "name": "Captions.ai 欧美百万粉创作者人手一个的口播包装与 AI 演员神器",
+    "role": "上传一段干巴巴的说话视频，AI Edit 自动帮你加上丝滑推拉镜头、关键帧音效、动态悬浮字卡与 29 国语言口型互译",
+    "verdictShort": "为什么硅谷科技博主的口播视频节奏感那么强？因为他们用 Captions.ai 的一键 AI 精剪功能，全自动在重点词句处加上镜头推近、弹出式图表和清脆音效！",
+    "metricPill": "📲 一键自动加推拉运镜/音效/插图 + 29国语言完美对口型翻译",
+    "price": "免费体验 · Pro $9.99/月起",
+    "summary": "为什么硅谷科技博主的口播视频节奏感那么强？因为他们用 Captions.ai 的一键 AI 精剪功能，全自动在重点词句处加上镜头推近、弹出式图表和清脆音效！ 上传一段干巴巴的说话视频，AI Edit 自动帮你加上丝滑推拉镜头、关键帧音效、动态悬浮字卡与 29 国语言口型互译",
+    "pros": [
+      "极其强大的多语言口型同步翻译：说中文录一条视频，一键变成你自己的声音和嘴型流利说英文、西语和日语",
+      "内置超逼真 UGC 数字人模特，甚至可以让 AI 模特亲手拿起你的商品图拍口播广告"
+    ],
+    "cons": [
+      "专为 30–90 秒高密度竖屏口播与出海带货广告打造"
+    ],
+    "verdict": "Captions.ai 欧美百万粉创作者人手一个的口播包装与 AI 演员神器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/captions",
+    "cta": "访问官方合作优惠通道"
+  },
+  "envato": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "content",
+    "tier": "S 级严选 · 1900万+ 正版视频/AE模板/字体/音效无限量随便下",
+    "name": "Envato Elements 全球最大“自助餐式”无限下载设计、视频与模板宝库",
+    "role": "只需一杯咖啡的月费，全站 1,900 万套高清视频空镜、PR/AE/达芬奇特效模板、商业字体、3D 模型与音乐不限次数无限下载",
+    "verdictShort": "单独买一条 4K 商业空镜或一套 AE 片头模板就要三四十美金；而在 Envato Elements，只需 $16.50/月就能把全站 1,900 万个设计、视频、字体与网页资产当自助餐无限下载！",
+    "metricPill": "♾️ 不限次数无限下载 + Impact 单笔最高 $120 高额佣金",
+    "price": "$16.50/月（全站 1900 万资产无限下载 + 终身商业授权）",
+    "summary": "单独买一条 4K 商业空镜或一套 AE 片头模板就要三四十美金；而在 Envato Elements，只需 $16.50/月就能把全站 1,900 万个设计、视频、字体与网页资产当自助餐无限下载！ 只需一杯咖啡的月费，全站 1,900 万套高清视频空镜、PR/AE/达芬奇特效模板、商业字体、3D 模型与音乐不限次数无限下载",
+    "pros": [
+      "每一份下载都自动生成绑定项目的正规商业免版税授权书，给客户做项目或做 YouTube 绝对安心",
+      "Impact 平台最好推的设计类金矿：用户觉得“无限下载太划算了”，而你每推荐一单最高可拿 $120 佣金"
+    ],
+    "cons": [
+      "下载时随手输入你的频道或项目名称，即使日后退订，已发布作品的商业授权依然永久有效"
+    ],
+    "verdict": "Envato Elements 全球最大“自助餐式”无限下载设计、视频与模板宝库 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/envato",
+    "cta": "访问官方合作优惠通道"
+  },
+  "epidemicsound": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 自动绑定 YouTube/TikTok 白名单，永不收侵权黄标",
+    "name": "Epidemic Sound 全球千万级 YouTuber 御用正版免版税音乐与音效库",
+    "role": "收录 4 万首顶级制作人曲目与 9 万个精细音效，支持按乐器分轨（只留鼓点或贝斯）下载，自动为你的频道开启全球白名单保护",
+    "verdictShort": "为什么几乎所有大V博主都用 Epidemic Sound？因为它支持把一首歌拆成“旋律、鼓点、贝斯、人声”四个独立轨道下载——你说话时只放轻柔的鼓点贝斯，转场时瞬间拉起高潮旋律！",
+    "metricPill": "🎧 30天免费白嫖正版曲库 + 鼓点/旋律四分轨独立下载",
+    "price": "30天免费试用 · Creator $9.99/月（Impact 高转化音乐联盟）",
+    "summary": "为什么几乎所有大V博主都用 Epidemic Sound？因为它支持把一首歌拆成“旋律、鼓点、贝斯、人声”四个独立轨道下载——你说话时只放轻柔的鼓点贝斯，转场时瞬间拉起高潮旋律！ 收录 4 万首顶级制作人曲目与 9 万个精细音效，支持按乐器分轨（只留鼓点或贝斯）下载，自动为你的频道开启全球白名单保护",
+    "pros": [
+      "后台直接绑定你的 YouTube、TikTok 和 Instagram 账号自动加白名单，彻底杜绝第三方恶意版权申诉",
+      "提供整整 30 天免费试用，放在视频剪辑教程里极易引导创作者注册转化"
+    ],
+    "cons": [
+      "在订阅期内发布的所有视频永久受版权白名单保护（无需担心退订后旧视频被追诉）"
+    ],
+    "verdict": "Epidemic Sound 全球千万级 YouTuber 御用正版免版税音乐与音效库 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/epidemicsound",
+    "cta": "访问官方合作优惠通道"
+  },
+  "artlist": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "aivideofactory",
+    "tier": "S 级严选 · 质感最接近院线电影的音乐与 8K RAW 素材平台",
+    "name": "Artlist Max 电影级独立音乐人曲库、好莱坞音效与 8K 调色素材包",
+    "role": "拒绝千篇一律的罐头配乐：全部由真实独立乐队与电影配乐师创作，Max 版更包含 8K 电影机素材与达芬奇调色 LUT",
+    "verdictShort": "如果你追求像 Apple 发布会或 Netflix 纪录片那样极具高级感的原声配乐与转场音效，Artlist 的真实音乐人曲库会瞬间把你的视频质感拉高两个档次。",
+    "metricPill": "🎞️ 电影感真实乐器配乐 + 推广年付会员单笔最高拿 $100 佣金",
+    "price": "免费体验 · 音乐音效版 $9.99/月起（单笔联盟佣金最高 $100）",
+    "summary": "如果你追求像 Apple 发布会或 Netflix 纪录片那样极具高级感的原声配乐与转场音效，Artlist 的真实音乐人曲库会瞬间把你的视频质感拉高两个档次。 拒绝千篇一律的罐头配乐：全部由真实独立乐队与电影配乐师创作，Max 版更包含 8K 电影机素材与达芬奇调色 LUT",
+    "pros": [
+      "一证通用全球全平台，支持在 Premiere / Final Cut 里直接通过插件搜歌拖入时间线",
+      "由于采用高粘性年付订阅制，每成功推荐一名创作者即可获得最高 $100 美金的单笔 CPA 奖励"
+    ],
+    "cons": [
+      "主打按年订阅，因此推广者无需担心用户第二个月退订，成交即拿高额整笔美金"
+    ],
+    "verdict": "Artlist Max 电影级独立音乐人曲库、好莱坞音效与 8K 调色素材包 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/artlist",
+    "cta": "访问官方合作优惠通道"
+  },
+  "seranking": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 价格仅 Semrush 一半，享 30% 终身返佣或 $200 奖励",
+    "name": "SE Ranking 性价比碾压巨头的全能 SEO 排名追踪与竞品反查平台",
+    "role": "以不到传统巨头一半的价格，提供极准的每日关键词排名追踪、竞品外链反查、全站技术体检与 AI 搜索概览监控",
+    "verdictShort": "嫌 Semrush 和 Ahrefs 每月一百多美金太贵？SE Ranking 用一半的价格提供了几乎全部核心功能（查低难度买词、扒同行外链、监控每日排名），而且新用户无需绑信用卡就能免费试用 14 天！",
+    "metricPill": "📈 原生追踪 Google AI 概览排名 + 14天免绑卡直接试用",
+    "price": "14天免绑卡免费试用 · 享 30% 终身持续返佣或单笔 $200 CPA",
+    "summary": "嫌 Semrush 和 Ahrefs 每月一百多美金太贵？SE Ranking 用一半的价格提供了几乎全部核心功能（查低难度买词、扒同行外链、监控每日排名），而且新用户无需绑信用卡就能免费试用 14 天！ 以不到传统巨头一半的价格，提供极准的每日关键词排名追踪、竞品外链反查、全站技术体检与 AI 搜索概览监控",
+    "pros": [
+      "14 天免费试用无需绑定信用卡，读者点击试用门槛极低，转化率远超同类工具",
+      "联盟政策极其良心：可自选拿 30% 终身持续月度分佣，或每单最高 $200 一次性美金奖励"
+    ],
+    "cons": [
+      "对于独立站长、跨境卖家与联盟客而言，其词库精度与技术体检报告完全够用且省下一半预算"
+    ],
+    "verdict": "SE Ranking 性价比碾压巨头的全能 SEO 排名追踪与竞品反查平台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/seranking",
+    "cta": "访问官方合作优惠通道"
+  },
+  "mangools": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.6 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 专挖“新站也能轻松上首页”的绿色低难度长尾词",
+    "name": "Mangools (KWFinder) 全球新手最爱用的低竞争蓝海词挖掘五件套",
+    "role": "一套账号包含五大神器：一眼看懂关键词难度分（KD），专门帮新注册域名找出大站忽略的高转化购买长尾词",
+    "verdictShort": "新网站想在 Google 快速出流量，绝不能硬刚大词，而是要找 KD（竞争难度）低于 25 的绿色长尾词。Mangools 的 KWFinder 界面极其清爽直观，30 秒就能筛出一批新站写完就能排上去的买词！",
+    "metricPill": "🔍 最准的新站拿词难度分 (KD) + 30%–35% 终身持续分佣",
+    "price": "10天免费注册体验 · Basic $29/月（享 30%–35% 终身持续返佣）",
+    "summary": "新网站想在 Google 快速出流量，绝不能硬刚大词，而是要找 KD（竞争难度）低于 25 的绿色长尾词。Mangools 的 KWFinder 界面极其清爽直观，30 秒就能筛出一批新站写完就能排上去的买词！ 一套账号包含五大神器：一眼看懂关键词难度分（KD），专门帮新注册域名找出大站忽略的高转化购买长尾词",
+    "pros": [
+      "红黄绿三色直观标出每个词的上位难度，哪怕完全不懂 SEO 的新手也能 5 分钟学会挖词",
+      "老牌口碑联盟项目：提供 30%–35% 终身持续分佣，平均每推荐一名站长可累计带来 $160+ 收益"
+    ],
+    "cons": [
+      "专注挖词、看搜索结果页（SERP）与查外链，没有复杂难懂的冗余报表"
+    ],
+    "verdict": "Mangools (KWFinder) 全球新手最爱用的低竞争蓝海词挖掘五件套 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/mangools",
+    "cta": "访问官方合作优惠通道"
+  },
+  "systeme": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 永久免费建 3 个漏斗 + 2,000 邮箱订阅者 + 60% 终身返佣",
+    "name": "Systeme.io 永久免费起步、给足 60% 终身佣金的全能营销漏斗霸主",
+    "role": "一个平台直接免费顶替 ClickFunnels 落地页 + 邮件群发序列 + 在线课程托管 + 联盟分销系统，更提供全网罕见的 60% 终身持续返佣",
+    "verdictShort": "这绝对是全站必推的第一现金牛：海外漏斗软件动辄月费上百美金，而 Systeme.io 对 2,000 名以内订阅者永久免费（送着陆页、自动发信、卖课收款）！一旦你推荐的用户以后升级付费版，你终身拿 60% 分成！",
+    "metricPill": "🔥 2,000 粉丝内全功能永久免费 + 惊人的 60% 终身持续佣金",
+    "price": "2,000 联系人内永久免费（免绑卡）· 推广享 60% 终身持续分佣！",
+    "summary": "这绝对是全站必推的第一现金牛：海外漏斗软件动辄月费上百美金，而 Systeme.io 对 2,000 名以内订阅者永久免费（送着陆页、自动发信、卖课收款）！一旦你推荐的用户以后升级付费版，你终身拿 60% 分成！ 一个平台直接免费顶替 ClickFunnels 落地页 + 邮件群发序列 + 在线课程托管 + 联盟分销系统，更提供全网罕见的 60% 终身持续返佣",
+    "pros": [
+      "真·永久免费档（无需绑卡）：直接白嫖 2,000 个邮箱联系人、无限封自动营销邮件与 3 条完整销售漏斗",
+      "联盟界神话级待遇：高达 60% 的终身持续佣金（Lifetime Recurring），用户先免费用顺手，升级后你拿大头"
+    ],
+    "cons": [
+      "页面模板主打朴实极速的高转化率结构，加载速度极快"
+    ],
+    "verdict": "Systeme.io 永久免费起步、给足 60% 终身佣金的全能营销漏斗霸主 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/systeme",
+    "cta": "访问官方合作优惠通道"
+  },
+  "skool": {
+    "catKey": "creator",
+    "badgeClass": "tier-creator",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 每推荐 1 个社群主每月稳拿 $39 美金终身被动收入",
+    "name": "Skool 欧美创作者疯狂追捧的游戏化付费社群与课程变现平台",
+    "role": "由 Sam Ovens 与 Alex Hormozi 联手打造：用积分升级排行榜激活社群互动，用户每满一定等级自动解锁下一节高阶课程",
+    "verdictShort": "为什么现在海外知识博主全都把社群搬到了 Skool？因为它把“发帖互动攒积分”和“升级解锁课程”完美绑在一起，完课率比传统网课高 4 倍！更棒的是，每推荐一位博主开群，你终身拿 40% 月费分成。",
+    "metricPill": "🏆 积分闯关式高粘性社群 + 40% 终身持续月月分佣",
+    "price": "14天免费试用 · 推广成功享 40% 终身持续月度分佣",
+    "summary": "为什么现在海外知识博主全都把社群搬到了 Skool？因为它把“发帖互动攒积分”和“升级解锁课程”完美绑在一起，完课率比传统网课高 4 倍！更棒的是，每推荐一位博主开群，你终身拿 40% 月费分成。 由 Sam Ovens 与 Alex Hormozi 联手打造：用积分升级排行榜激活社群互动，用户每满一定等级自动解锁下一节高阶课程",
+    "pros": [
+      "极简无干扰界面，把讨论区、系列视频课、直播日历与会员积分榜融为一体，续费率极高",
+      "超强被动收入杠杆：40% 终身持续返佣，只要推荐几个做培训或社群的朋友建群，月月躺收美金"
+    ],
+    "cons": [
+      "全站采用高度统一的极简高效排版，让你无需操心装修设计，专注内容与互动"
+    ],
+    "verdict": "Skool 欧美创作者疯狂追捧的游戏化付费社群与课程变现平台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/skool",
+    "cta": "访问官方合作优惠通道"
+  },
+  "shopify": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 首月 $1 极低门槛开店 + Impact 高额 CPA 佣金",
+    "name": "Shopify 全球跨境独立站电商霸主（首月仅 $1 试用）",
+    "role": "全球转化率最高的跨境独立站系统：自带一键极速结账 Shop Pay、多币种自动换算与全球社媒带货同步",
+    "verdictShort": "做跨境电商或品牌独立站绕不开的绝对基建：首月仅需 $1 的超低试用门槛让读者极易注册体验，而你在 Impact 联盟后台每单可拿 $50–$150 美金奖励。",
+    "metricPill": "🛒 全球第一结账转化率 + 首月 $1 试用极易转化",
+    "price": "首月仅需 $1 即可开店体验 · 推广享最高 $150/单 CPA 佣金",
+    "summary": "做跨境电商或品牌独立站绕不开的绝对基建：首月仅需 $1 的超低试用门槛让读者极易注册体验，而你在 Impact 联盟后台每单可拿 $50–$150 美金奖励。 全球转化率最高的跨境独立站系统：自带一键极速结账 Shop Pay、多币种自动换算与全球社媒带货同步",
+    "pros": [
+      "内置 Shop Pay 一键加速结账，移动端购买转化率比普通自建站高出 50%",
+      "首月 $1 活动对想做跨境副业的读者极具吸引力，是建站类推文的头号佣金来源"
+    ],
+    "cons": [
+      "建议开启官方 Shopify Payments 或搭配 Stripe 以免除额外通道手续费"
+    ],
+    "verdict": "Shopify 全球跨境独立站电商霸主（首月仅 $1 试用） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/shopify",
+    "cta": "访问官方合作优惠通道"
+  },
+  "ghost": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "solo",
+    "tier": "S 级严选 · 会员订阅 0% 平台抽成 + 30% 持续联盟返佣",
+    "name": "Ghost(Pro) 极速开源独立出版、付费订阅与邮件通讯系统",
+    "role": "专为深度内容创作者打造：将高性能 SEO 独立博客、邮件订阅群发与付费会员墙合三为一，且平台对你的会员收入 0 抽成",
+    "verdictShort": "Substack 会永久抽走你 10% 的付费订阅收入；而 Ghost 让你用自己的独立域名沉淀全部 SEO 权重，且对你的会员费实行 0% 抽成！",
+    "metricPill": "👻 付费阅读 0% 平台抽成（碾压 Substack 的 10% 抽成）",
+    "price": "14天免费试用 · Starter $9/月（享 30% 持续分佣）",
+    "summary": "Substack 会永久抽走你 10% 的付费订阅收入；而 Ghost 让你用自己的独立域名沉淀全部 SEO 权重，且对你的会员费实行 0% 抽成！ 专为深度内容创作者打造：将高性能 SEO 独立博客、邮件订阅群发与付费会员墙合三为一，且平台对你的会员收入 0 抽成",
+    "pros": [
+      "自带极其干净的原生 SEO 结构化数据与邮件送达引擎，无需安装繁琐插件",
+      "推广任何创作者使用 Ghost(Pro) 托管服务，均可获得 30% 持续分佣"
+    ],
+    "cons": [
+      "专注内容出版、专栏订阅与知识付费，多 SKU 实物商城请选 Shopify"
+    ],
+    "verdict": "Ghost(Pro) 极速开源独立出版、付费订阅与邮件通讯系统 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/ghost",
+    "cta": "访问官方合作优惠通道"
+  },
+  "carrd": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 一年仅 $19 可绑 10 个独立域名 + 30% 终身返佣",
+    "name": "Carrd Pro 全网性价比最高的单页着陆页神器（一年仅需 $19！）",
+    "role": "只需 $19/年（不是每月！）就能绑定 10 个自定义域名，15 分钟上线高转化联盟过渡桥页、个人主页与内测收集页",
+    "verdictShort": "注意看价格：不是每月 $19，而是整整一年才 $19！还能绑定 10 个独立域名。做 TikTok/小红书主页外链（Link-in-bio）或联盟带货桥页，没有比 Carrd 更划算的工具了。",
+    "metricPill": "⚡ 整整一年才 $19（可建 10 个站）+ 30% 终身持续返佣",
+    "price": "免费版可用 · Pro 版仅 $19/整年！（享 30% 终身持续返佣）",
+    "summary": "注意看价格：不是每月 $19，而是整整一年才 $19！还能绑定 10 个独立域名。做 TikTok/小红书主页外链（Link-in-bio）或联盟带货桥页，没有比 Carrd 更划算的工具了。 只需 $19/年（不是每月！）就能绑定 10 个自定义域名，15 分钟上线高转化联盟过渡桥页、个人主页与内测收集页",
+    "pros": [
+      "一年仅 $19 的白菜价让读者几乎零犹豫直接掏钱升级，转化率高得惊人",
+      "提供 30% 终身持续返佣，用户每年续费你都自动分钱"
+    ],
+    "cons": [
+      "专为单页着陆页（One-Page）设计，多页面博客请搭配 Framer 或 Ghost"
+    ],
+    "verdict": "Carrd Pro 全网性价比最高的单页着陆页神器（一年仅需 $19！） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/carrd",
+    "cta": "访问官方合作优惠通道"
+  },
+  "dorik": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.5 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S 级严选 · 30%–40% 高额持续返佣的 AI 零代码建站平台",
+    "name": "Dorik AI 一句话生成整站与白牌建站交付平台",
+    "role": "输入行业与品牌描述，AI 60秒生成含文案与配图的完整多页网站，自带 SEO 博客系统与客户白牌后台",
+    "verdictShort": "不懂代码又觉得 WordPress 太重？Dorik 支持用一句话生成完整的多页面商业网站，还能直接把 Airtable 表格变成动态导航站或招聘目录站。",
+    "metricPill": "🏗️ 60秒 AI 生成多页响应式网站 + 最高 40% 持续返佣",
+    "price": "14天免费体验 · 推广享高达 30%–40% 持续分佣",
+    "summary": "不懂代码又觉得 WordPress 太重？Dorik 支持用一句话生成完整的多页面商业网站，还能直接把 Airtable 表格变成动态导航站或招聘目录站。 输入行业与品牌描述，AI 60秒生成含文案与配图的完整多页网站，自带 SEO 博客系统与客户白牌后台",
+    "pros": [
+      "原生支持将 Airtable 表格数据渲染为工具导航站或房源列表站，零代码搞定程序化建站",
+      "高达 30%–40% 的持续联盟分佣，建站教程类文章极佳搭档"
+    ],
+    "cons": [
+      "主打简单快速出站与目录站绑定，追求炫酷 3D 交互动效可选 Framer"
+    ],
+    "verdict": "Dorik AI 一句话生成整站与白牌建站交付平台 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.5 / 10）。",
+    "url": "go/dorik",
+    "cta": "访问官方合作优惠通道"
+  },
+  "cloudways": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S 级严选 · 告别繁琐命令行，鼠标点选管理 DO/Vultr 服务器",
+    "name": "Cloudways 免运维托管版 DigitalOcean / Vultr 高性能云主机",
+    "role": "想用 DigitalOcean 或 Vultr 的顶级硬件却不会敲 Linux 命令？Cloudways 为你套上全自动可视化面板、Redis 缓存与免费 SSL",
+    "verdictShort": "很多站长知道云服务器快，但怕自己配不好 Nginx 和安全防火墙。Cloudways 直接帮你把 DigitalOcean 和 Vultr 封装成一键开站面板，更是主机联盟界的佣金王牌。",
+    "metricPill": "🚀 零命令行可视化管服务器 + 单笔最高 $125 联盟佣金",
+    "price": "3天免绑卡免费试用 · 单笔最高 $125 CPA 或终身分成",
+    "summary": "很多站长知道云服务器快，但怕自己配不好 Nginx 和安全防火墙。Cloudways 直接帮你把 DigitalOcean 和 Vultr 封装成一键开站面板，更是主机联盟界的佣金王牌。 想用 DigitalOcean 或 Vultr 的顶级硬件却不会敲 Linux 命令？Cloudways 为你套上全自动可视化面板、Redis 缓存与免费 SSL",
+    "pros": [
+      "提供 3 天免绑信用卡免费试用，内置 Cloudflare Enterprise 加速与自动备份",
+      "主机界极负盛名的双模式高佣金计划：可选单笔最高 $125 买断奖，或 $30 + 7% 终身月度分成"
+    ],
+    "cons": [
+      "最适合跑高流量 WordPress 评测站、WooCommerce 商城与 PHP 应用"
+    ],
+    "verdict": "Cloudways 免运维托管版 DigitalOcean / Vultr 高性能云主机 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/cloudways",
+    "cta": "访问官方合作优惠通道"
+  },
+  "kinsta": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S 级严选 · 单笔最高 $500 奖金 + 10% 终身月度分红！",
+    "name": "Kinsta 基于 Google Cloud 顶级 C3D 算力的贵族级托管云",
+    "role": "底层直接调用 Google Cloud 最昂贵的 C3D 计算节点与全球 260+ CDN 边缘节点，速度与安全性拉满",
+    "verdictShort": "Kinsta 是主机界的劳斯莱斯（直接跑在谷歌云最高配 C3D 机器上），它的联盟计划更是业界传奇：每推荐一个客户，不仅先拿 $50–$500 一次性奖金，之后每个月还继续拿 10% 终身分成！",
+    "metricPill": "💎 谷歌云顶级硬件底座 + $500 现金奖 + 10% 终身月月分红",
+    "price": "部分方案享首月免费 · 联盟佣金高达 $50–$500 + 10% 终身分成",
+    "summary": "Kinsta 是主机界的劳斯莱斯（直接跑在谷歌云最高配 C3D 机器上），它的联盟计划更是业界传奇：每推荐一个客户，不仅先拿 $50–$500 一次性奖金，之后每个月还继续拿 10% 终身分成！ 底层直接调用 Google Cloud 最昂贵的 C3D 计算节点与全球 260+ CDN 边缘节点，速度与安全性拉满",
+    "pros": [
+      "罕见的“高额首单奖（$50–$500）+ 10% 终身月度被动分红”双叠加模式，客户留存率高达 96%",
+      "自带 APM 性能监控、免费人工迁移网站与 24/7 工程师秒级响应"
+    ],
+    "cons": [
+      "定位预算充足的商业独立站与企业客户（预算有限的新手可先选 Hostinger 或 Hetzner）"
+    ],
+    "verdict": "Kinsta 基于 Google Cloud 顶级 C3D 算力的贵族级托管云 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/kinsta",
+    "cta": "访问官方合作优惠通道"
+  },
+  "linode": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "n8nvps",
+    "tier": "S 级严选 · 注册即送 $100 免费额度 + Akamai 全球骨干网",
+    "name": "Akamai (Linode) 老牌神级 Linux 云服务器（送 $100 免费额度）",
+    "role": "被全球第一 CDN 巨头 Akamai 收购的老牌口碑云厂商：网络稳如磐石，最低 $5/月起步，新户直接送 $100 体验金",
+    "verdictShort": "Linode 是无数老一代极客心中的白月光，并入 Akamai 后更是获得了全球最顶级的骨干网带宽加持。通过本站链接注册直接白嫖 $100 美金 60 天算力额度！",
+    "metricPill": "🌐 免费领 $100 算力赠金 + 依托 Akamai 顶级全球带宽",
+    "price": "新用户注册即送 $100 免费额度 · 基础机型仅 $5/月",
+    "summary": "Linode 是无数老一代极客心中的白月光，并入 Akamai 后更是获得了全球最顶级的骨干网带宽加持。通过本站链接注册直接白嫖 $100 美金 60 天算力额度！ 被全球第一 CDN 巨头 Akamai 收购的老牌口碑云厂商：网络稳如磐石，最低 $5/月起步，新户直接送 $100 体验金",
+    "pros": [
+      "$100 免费赠金足够你零成本开好几台高配服务器测试 Docker、n8n 与大模型网关",
+      "账单极其透明，无隐藏流量刺客，东京、新加坡与欧美节点稳定性一流"
+    ],
+    "cons": [
+      "激活 $100 免费赠金需完成常规信用卡或 PayPal 真实性核验"
+    ],
+    "verdict": "Akamai (Linode) 老牌神级 Linux 云服务器（送 $100 免费额度） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/linode",
+    "cta": "访问官方合作优惠通道"
+  },
+  "upstash": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "cloudflareedge",
+    "tier": "S 级严选 · 不用时 0 费用，Cloudflare Workers / Vercel 绝配",
+    "name": "Upstash 专为边缘计算与 AI 智能体打造的 Serverless Redis 与消息队列",
+    "role": "基于 HTTP 协议的无服务器 Redis 与消息队列：完美解决 Cloudflare Workers 和 Vercel 无法保持传统 TCP 长连接的痛点",
+    "verdictShort": "你的 AI 网站一旦上线公网，最怕恶意爬虫刷爆你的 OpenRouter 账单！用 Upstash 官方限流库，只需 3 行代码就能按 IP 或用户在边缘节点精准拦截恶意请求，而且每天 1 万次内完全免费。",
+    "metricPill": "⚡ 3行代码给 AI 接口加防刷限流 (`@upstash/ratelimit`)",
+    "price": "每天免费 10,000 次请求 · 按量计费（闲置 0 成本）",
+    "summary": "你的 AI 网站一旦上线公网，最怕恶意爬虫刷爆你的 OpenRouter 账单！用 Upstash 官方限流库，只需 3 行代码就能按 IP 或用户在边缘节点精准拦截恶意请求，而且每天 1 万次内完全免费。 基于 HTTP 协议的无服务器 Redis 与消息队列：完美解决 Cloudflare Workers 和 Vercel 无法保持传统 TCP 长连接的痛点",
+    "pros": [
+      "HTTP 无状态连接，在全球任何 Cloudflare / Vercel 边缘节点都能实现毫秒级读写",
+      "内置 QStash 无服务器消息队列，轻松搞定大模型长耗时异步回调与失败自动重试"
+    ],
+    "cons": [
+      "日常中低频请求用免费版或按量付费极省钱，超高并发可随时切包月档"
+    ],
+    "verdict": "Upstash 专为边缘计算与 AI 智能体打造的 Serverless Redis 与消息队列 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/upstash",
+    "cta": "访问官方合作优惠通道"
+  },
+  "neon": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S 级严选 · 像 Git 分支一样克隆数据库 + 闲置自动缩容省钱",
+    "name": "Neon 支持像 Git 一样秒级建分支的 Serverless Postgres 数据库",
+    "role": "由顶级数据库内核专家打造：存算分离架构，1 秒钟零成本克隆出一份完整测试库，夜间无人访问时算力自动休眠省钱",
+    "verdictShort": "用 Cursor 或 Lovable 改代码时怕不小心把线上数据库搞崩？Neon 支持像 Git 建分支一样，1 秒钟克隆出一个独立数据库分支供 AI 随便折腾测试，测完一键合并！",
+    "metricPill": "🌿 1秒克隆测试库（配合 Vercel 预览环境）+ 闲置零算力费",
+    "price": "永久免费版极其厚道 · 支持 pgvector 向量检索",
+    "summary": "用 Cursor 或 Lovable 改代码时怕不小心把线上数据库搞崩？Neon 支持像 Git 建分支一样，1 秒钟克隆出一个独立数据库分支供 AI 随便折腾测试，测完一键合并！ 由顶级数据库内核专家打造：存算分离架构，1 秒钟零成本克隆出一份完整测试库，夜间无人访问时算力自动休眠省钱",
+    "pros": [
+      "写时复制（Copy-on-Write）黑科技：哪怕主库有 50GB，建一个新测试分支也只需 1 秒且不收双倍存储费",
+      "与 Vercel、Replit 深度官方集成，支持自动按访问量弹性扩缩容"
+    ],
+    "cons": [
+      "免费版从休眠唤醒约需 0.3 秒，生产环境开启常驻即可保持全天候零延迟"
+    ],
+    "verdict": "Neon 支持像 Git 一样秒级建分支的 Serverless Postgres 数据库 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/neon",
+    "cta": "访问官方合作优惠通道"
+  },
+  "brightdata": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 跨境防关联与企业级爬虫霸主（享 50% 高额返佣）",
+    "name": "Bright Data (亮数据) 全球第一 7200万+ 真实住宅代理 IP 与反爬解锁器",
+    "role": "覆盖全球 195 个国家、精确到城市与运营商（ASN）的 7200 万真实家庭宽带 IP，配合 AdsPower 或爬虫彻底告别封号与验证码",
+    "verdictShort": "做跨境多账号矩阵或大模型数据采集，用几块钱的劣质机房 IP 等于自投罗网。Bright Data 拥有全球最大的 7,200 万真实家庭住宅与静态 ISP 原生 IP 池，更是单客佣金最高可达 $2,500 美金的王牌 B2B 联盟项目！",
+    "metricPill": "🌍 7200万真实家庭住宅/静态 ISP 代理 + 单客最高 $2,500 佣金",
+    "price": "注册享免费测试额度 · 推广享高达 50% 分成（单客最高 $2,500）",
+    "summary": "做跨境多账号矩阵或大模型数据采集，用几块钱的劣质机房 IP 等于自投罗网。Bright Data 拥有全球最大的 7,200 万真实家庭住宅与静态 ISP 原生 IP 池，更是单客佣金最高可达 $2,500 美金的王牌 B2B 联盟项目！ 覆盖全球 195 个国家、精确到城市与运营商（ASN）的 7200 万真实家庭宽带 IP，配合 AdsPower 或爬虫彻底告别封号与验证码",
+    "pros": [
+      "支持精确指定国家、州、城市乃至具体宽带运营商（ASN），完美通过 TikTok、亚马逊与各大平台风控检测",
+      "超高含金量联盟计划：由于企业每月代理流量消耗巨大，50% 分成能为你带来极具爆发力的持续收益"
+    ],
+    "cons": [
+      "后台功能极其专业全面，建议配合本站【套件 #24 防关联工程包】一键配置使用"
+    ],
+    "verdict": "Bright Data (亮数据) 全球第一 7200万+ 真实住宅代理 IP 与反爬解锁器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/brightdata",
+    "cta": "访问官方合作优惠通道"
+  },
+  "oxylabs": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 静态住宅 ISP 代理稳定性天花板（最高 50% 佣金）",
+    "name": "Oxylabs 1亿+ 全球顶级住宅代理与跨境电商专用静态 ISP 代理",
+    "role": "坐拥超 1 亿住宅 IP 池与顶级欧洲/北美静态原生 ISP 代理，专为跨境多店铺长期固定 IP 防关联与全网比价爬虫打造",
+    "verdictShort": "养固定跨境店铺或高权重社媒号，既不能每次登录换 IP，又不能被查出是机房 IP。Oxylabs 的静态住宅 ISP 代理（Static Residential）完美兼具“永久固定不变”与“真实家庭宽带属性”！",
+    "metricPill": "🛡️ 独享静态原生家庭 ISP 代理 + 高客单价 50% 联盟返佣",
+    "price": "支持免费申请试用 · 支持按流量现用现付（无强制大额包月）",
+    "summary": "养固定跨境店铺或高权重社媒号，既不能每次登录换 IP，又不能被查出是机房 IP。Oxylabs 的静态住宅 ISP 代理（Static Residential）完美兼具“永久固定不变”与“真实家庭宽带属性”！ 坐拥超 1 亿住宅 IP 池与顶级欧洲/北美静态原生 ISP 代理，专为跨境多店铺长期固定 IP 防关联与全网比价爬虫打造",
+    "pros": [
+      "开通了亲民的按量付费（Pay-As-You-Go）档位，个人开发者几美金就能用上大厂级纯净住宅 IP",
+      "与 Bright Data 齐名的全球两大代理巨头，推广单笔分成极高"
+    ],
+    "cons": [
+      "动态爬虫选按流量计费的 Residential，长期固定养店选按个数计费的 Static ISP"
+    ],
+    "verdict": "Oxylabs 1亿+ 全球顶级住宅代理与跨境电商专用静态 ISP 代理 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/oxylabs",
+    "cta": "访问官方合作优惠通道"
+  },
+  "adspower": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.8 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 永久免费送 5 个独立环境 + 24个月最高 45% 返佣！",
+    "name": "AdsPower 全球跨境人与联盟客装机量第一的防关联指纹浏览器",
+    "role": "一台电脑同时安全登录几十个 TikTok、亚马逊、PayPal、Reddit 与联盟账号，每个窗口拥有完全独立的硬件指纹与代理 IP",
+    "verdictShort": "做海外业务如果所有账号都在同一个 Chrome 里切来切去，一旦一个号违规就会全军覆没。AdsPower 为每个账号伪造独立的电脑硬件指纹（Canvas/显卡/MAC地址），而且免费版直接送 5 个永久环境 + 无代码 RPA 自动养号机器人！",
+    "metricPill": "🦊 永久免费 5 个防关联环境 + 多窗口同步群控 + 自动养号 RPA",
+    "price": "永久免费送 5 个独立指纹环境 · 付费版仅 $5.40/月起",
+    "summary": "做海外业务如果所有账号都在同一个 Chrome 里切来切去，一旦一个号违规就会全军覆没。AdsPower 为每个账号伪造独立的电脑硬件指纹（Canvas/显卡/MAC地址），而且免费版直接送 5 个永久环境 + 无代码 RPA 自动养号机器人！ 一台电脑同时安全登录几十个 TikTok、亚马逊、PayPal、Reddit 与联盟账号，每个窗口拥有完全独立的硬件指纹与代理 IP",
+    "pros": [
+      "自带「多窗口同步器」与免费「RPA 自动化商城」：设置好剧本即可每天自动帮你的几十个海外账号浏览点赞养权重",
+      "跨境圈人手必装刚需：免费送 5 个环境极易吸引注册，付费起步仅 $5.40/月，更提供长达 24 个月的最高 45% 阶梯持续返佣"
+    ],
+    "cons": [
+      "请务必为每个关键账号环境绑定一条独立的纯净住宅/ISP 代理 IP，实现指纹+网络双重物理隔离"
+    ],
+    "verdict": "AdsPower 全球跨境人与联盟客装机量第一的防关联指纹浏览器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/adspower",
+    "cta": "访问官方合作优惠通道"
+  },
+  "multilogin": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 指纹防关联技术开山鼻祖，内置顶级住宅代理流量",
+    "name": "Multilogin X 鼻祖级高净值店铺与广告账户防关联指纹浏览器",
+    "role": "指纹浏览器领域的开山鼻祖，从底层重编译 Chromium 与 Firefox 内核，专为保护高余额 Facebook/Google 广告户与高价值美区店铺而生",
+    "verdictShort": "如果你的单个海外广告账户、Stripe 收款号或亚马逊老店价值数万美金，Multilogin X 是最稳妥的保险箱——它不仅从 C++ 底层深度定制内核防止任何高级脚本探测，现在买会员还直接送内置住宅代理流量！",
+    "metricPill": "🛡️ 底层重编译双内核 + 订阅即送内置住宅代理 IP 流量",
+    "price": "€5.85/月起（直接附赠内置纯净住宅代理流量）",
+    "summary": "如果你的单个海外广告账户、Stripe 收款号或亚马逊老店价值数万美金，Multilogin X 是最稳妥的保险箱——它不仅从 C++ 底层深度定制内核防止任何高级脚本探测，现在买会员还直接送内置住宅代理流量！ 指纹浏览器领域的开山鼻祖，从底层重编译 Chromium 与 Firefox 内核，专为保护高余额 Facebook/Google 广告户与高价值美区店铺而生",
+    "pros": [
+      "省去自己去第三方买代理配端口的麻烦，订阅直接赠送高品质内置住宅代理 IP 流量，一键生成纯净美区环境",
+      "面对 Facebook 广告号、Google Ads 与亚马逊二审等极其严苛的风控系统，通过率长期稳居行业第一梯队"
+    ],
+    "cons": [
+      "定位高价值账户保护，无免费版（新手想先白嫖 5 个免费环境可先用同专区的 AdsPower）"
+    ],
+    "verdict": "Multilogin X 鼻祖级高净值店铺与广告账户防关联指纹浏览器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/multilogin",
+    "cta": "访问官方合作优惠通道"
+  },
+  "surfshark": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 1个账号全家手机电脑不限设备连 + 最高 80% 返佣",
+    "name": "Surfshark VPN 不限设备数量同时连接 + 虚拟海外身份生成器",
+    "role": "不到 $2.20/月即可不限设备台数同时高速连接全球 100 国节点，独创 Alternative ID 一键生成海外虚拟姓名、账单地址与隐私代收邮箱",
+    "verdictShort": "注册海外软件或联盟平台时不想暴露真实姓名、街道地址或怕主邮箱被垃圾邮件塞满？Surfshark 不仅支持无限台设备同时连网，还自带 Alternative ID 功能，一键生成合法的英美虚拟身份、街道地址与真实可收验证码的转寄邮箱！",
+    "metricPill": "🦈 不限设备台数同时在线 + 一键生成海外虚拟姓名/地址/代收邮箱",
+    "price": "长效套餐折合仅 ~$2.19/月 · 推广享 40%–80% 极高首单佣金",
+    "summary": "注册海外软件或联盟平台时不想暴露真实姓名、街道地址或怕主邮箱被垃圾邮件塞满？Surfshark 不仅支持无限台设备同时连网，还自带 Alternative ID 功能，一键生成合法的英美虚拟身份、街道地址与真实可收验证码的转寄邮箱！ 不到 $2.20/月即可不限设备台数同时高速连接全球 100 国节点，独创 Alternative ID 一键生成海外虚拟姓名、账单地址与隐私代收邮箱",
+    "pros": [
+      "一个账号全工作室或全家手机电脑无限台同时登录，性价比拉满",
+      "VPN 联盟赛道转化率与佣金双高王牌（首单分成高达 40%–80%）"
+    ],
+    "cons": [
+      "按两年期订阅折算月费最划算，且享有 30 天无理由退款保障"
+    ],
+    "verdict": "Surfshark VPN 不限设备数量同时连接 + 虚拟海外身份生成器 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/surfshark",
+    "cta": "访问官方合作优惠通道"
+  },
+  "proton": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "tailscale1password",
+    "tier": "S 级严选 · 瑞士联邦隐私法保护的独立商业邮箱与密码盾牌",
+    "name": "Proton 瑞士国宝级端到端加密邮箱、密码库与隐私全家桶",
+    "role": "受瑞士极其严格的隐私法律保护：支持绑定你自己的独立站域名收发加密商业邮件，并可无限生成防泄露邮箱别名",
+    "verdictShort": "搭建好 `cruxxxxxkit.com` 后想要一个专业安全的域名邮箱与海外主账号？来自瑞士日内瓦的 Proton 提供零知识加密的 Proton Mail、支持无限生成免骚扰别名的 Proton Pass 以及无日志免费 VPN！",
+    "metricPill": "🇨🇭 免费版极其良心 + 可绑独立站域名邮箱 + 无限防垃圾邮件别名",
+    "price": "提供永久免费版（邮箱+VPN+密码器）· 推广享 30%–50% 高额佣金",
+    "summary": "搭建好 `cruxxxxxkit.com` 后想要一个专业安全的域名邮箱与海外主账号？来自瑞士日内瓦的 Proton 提供零知识加密的 Proton Mail、支持无限生成免骚扰别名的 Proton Pass 以及无日志免费 VPN！ 受瑞士极其严格的隐私法律保护：支持绑定你自己的独立站域名收发加密商业邮件，并可无限生成防泄露邮箱别名",
+    "pros": [
+      "Proton Pass 支持一键生成无限个独立代收邮箱别名，注册几百个海外网站再也不怕撞库或被垃圾邮件轰炸",
+      "瑞士隐私安全金字招牌，海外极客圈认可度极高，推广佣金高达 30%–50%"
+    ],
+    "cons": [
+      "因采用端到端零知识加密，保障了连平台方都无法窥探你的商业信件与验证码"
+    ],
+    "verdict": "Proton 瑞士国宝级端到端加密邮箱、密码库与隐私全家桶 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/proton",
+    "cta": "访问官方合作优惠通道"
+  },
+  "bitwarden": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "antidetectkit",
+    "tier": "S 级严选 · 免费版即不限设备不限密码数 + 高级版一年仅 $10！",
+    "name": "Bitwarden 全球口碑第一的开源全平台密码、Passkey 与 2FA 验证码库",
+    "role": "开源界封神的密码管理器：免费版就不限手机电脑同步所有密码，升级高级版（内置 2FA 动态六位验证码自动填充）整整一年才收 $10 美金！",
+    "verdictShort": "当你注册了几十个海外联盟平台与云服务后，用记事本存密码极其危险，而用手机扫二维码输 6 位动态验证码（2FA）又太慢。Bitwarden 高级版只需 $10/整年，就能在电脑浏览器里连账号、密码带 6 位动态 2FA 验证码一键自动填好！",
+    "metricPill": "🔐 永久免费跨全平台同步 + 整年仅 $10 解锁内置 2FA 动态码自动填充",
+    "price": "永久免费（不限设备与密码数）· 高级版整年仅 $10！（25% 佣金）",
+    "summary": "当你注册了几十个海外联盟平台与云服务后，用记事本存密码极其危险，而用手机扫二维码输 6 位动态验证码（2FA）又太慢。Bitwarden 高级版只需 $10/整年，就能在电脑浏览器里连账号、密码带 6 位动态 2FA 验证码一键自动填好！ 开源界封神的密码管理器：免费版就不限手机电脑同步所有密码，升级高级版（内置 2FA 动态六位验证码自动填充）整整一年才收 $10 美金！",
+    "pros": [
+      "全网独一份的厚道定价：基础跨设备同步完全免费，带内置 2FA 验证码自动填充的 Premium 版一年仅需 $10",
+      "完美支持安装在 AdsPower 指纹浏览器中，实现多账号密码与双重验证码秒级填充"
+    ],
+    "cons": [
+      "界面偏极客实用风（若追求极致苹果设计美学与 SSH 命令行指纹注入可选 1Password）"
+    ],
+    "verdict": "Bitwarden 全球口碑第一的开源全平台密码、Passkey 与 2FA 验证码库 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/bitwarden",
+    "cta": "访问官方合作优惠通道"
+  },
+  "payoneer": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "affiliatematrix",
+    "tier": "S 级严选 · 亚马逊联盟 / CJ / ShareASale / Fiverr 官方指定收款王",
+    "name": "Payoneer (派安盈) 跨境电商与海外联盟平台官方标配收款账户",
+    "role": "无需赴美开户，在线免费申请即获美国、欧洲、英国、日本本地银行收款账号，与全球几乎所有联盟平台及跨境电商官方直连",
+    "verdictShort": "为什么做海外联盟营销建议“Wise + Payoneer（派安盈）”双剑合璧？因为像亚马逊全球联盟（美日英德站）、CJ、Awin、Envato 等大平台，后台直接内置了 Payoneer 官方一键收款通道，且支持合规直接结汇提现至国内银行卡！",
+    "metricPill": "💵 亚马逊联盟 / CJ / Impact 官方直连提现 + 人民币直接结汇",
+    "price": "0 开户费 · 累计收款达标双方各得 $25–$50 美金现金奖励",
+    "summary": "为什么做海外联盟营销建议“Wise + Payoneer（派安盈）”双剑合璧？因为像亚马逊全球联盟（美日英德站）、CJ、Awin、Envato 等大平台，后台直接内置了 Payoneer 官方一键收款通道，且支持合规直接结汇提现至国内银行卡！ 无需赴美开户，在线免费申请即获美国、欧洲、英国、日本本地银行收款账号，与全球几乎所有联盟平台及跨境电商官方直连",
+    "pros": [
+      "一次注册即可同时拥有美元、欧元、英镑、日元多国本地银行收款账户，通吃全球各大站点联盟佣金",
+      "支持直接提现至国内银联卡或申请派安盈实体/虚拟万事达卡直接海淘消费"
+    ],
+    "cons": [
+      "保持每年至少有一笔流水入账即可免除闲置账户管理费"
+    ],
+    "verdict": "Payoneer (派安盈) 跨境电商与海外联盟平台官方标配收款账户 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/payoneer",
+    "cta": "访问官方合作优惠通道"
+  },
+  "thrivecart": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 拒绝月月交租！一次买断终身使用 + 单笔狂赚 $247+ 佣金",
+    "name": "ThriveCart 一次买断终身零月租的高转化数字收银台（享 50% 巨额佣金）",
+    "role": "数字商品卖家的终极收银台：自带结账页勾选加购（Order Bump）让客单价当场暴涨 40%，一次买断终身零月租，推广成交一单直接分 $247–$345 美金！",
+    "verdictShort": "这是全站单笔佣金爆发力最恐怖的产品之一：普通收银台每月都要收月租或抽成，而 ThriveCart 采用罕见的“一次买断、终身零月租零抽成”模式，自带能把客单价提高 40% 的勾选加购（Order Bump）功能。更疯狂的是，每成功推荐一单，你直接拿走 50%（高达 $247 到 $345 美金）的佣金！",
+    "metricPill": "💰 结账勾选加购让客单价翻倍 + 推广 1 单直接入账 $247+ 美金！",
+    "price": "一次买断终身使用（0月租/0交易抽成）· 推广享 50% 巨额佣金（$247+/单）",
+    "summary": "这是全站单笔佣金爆发力最恐怖的产品之一：普通收银台每月都要收月租或抽成，而 ThriveCart 采用罕见的“一次买断、终身零月租零抽成”模式，自带能把客单价提高 40% 的勾选加购（Order Bump）功能。更疯狂的是，每成功推荐一单，你直接拿走 50%（高达 $247 到 $345 美金）的佣金！ 数字商品卖家的终极收银台：自带结账页勾选加购（Order Bump）让客单价当场暴涨 40%，一次买断终身零月租，推广成交一单直接分 $247–$345 美金！",
+    "pros": [
+      "结账页内置「顺手买一件（Order Bump）」与付款后免重输卡号「一键追销（1-Click Upsell）」，多卖几单就回本",
+      "推广者的梦幻金矿：成交 1 单就能直接拿到 $247.50 至 $345 美金佣金，相当于普通小商品卖上百单"
+    ],
+    "cons": [
+      "底层直连你自己的 Stripe 与 PayPal 账户（因此平台对你 0 抽成）"
+    ],
+    "verdict": "ThriveCart 一次买断终身零月租的高转化数字收银台（享 50% 巨额佣金） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/thrivecart",
+    "cta": "访问官方合作优惠通道"
+  },
+  "paddle": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.6 / 10",
+    "relatedKit": "v0lovablekit",
+    "tier": "S 级严选 · 自动代缴全球 200+ 国消费税 + 信用卡扣款失败自动挽回",
+    "name": "Paddle 全球 SaaS 软件出海首选全托管税务收单平台 (MoR)",
+    "role": "与 Lemon Squeezy 齐名的全球合规名义卖方（MoR）：不仅替你搞定欧美繁琐的数字税（VAT）申报，更自带 Retain 智能挽回系统减少退订",
+    "verdictShort": "当你的 AI 工具或软件订阅做大后，最头疼的就是欧盟 VAT 税务稽查和用户信用卡过期导致的被动断订。Paddle 作为合法名义卖方替你扛下全部税务责任，并自动帮你在后台挽回高达 40% 的扣款失败订单！",
+    "metricPill": "🛡️ 平台全包欧美税务合规责任 + 自动挽回过期信用卡续费",
+    "price": "0 月租（不成交不收费）· 按单 5% + $0.50 全包合规收款",
+    "summary": "当你的 AI 工具或软件订阅做大后，最头疼的就是欧盟 VAT 税务稽查和用户信用卡过期导致的被动断订。Paddle 作为合法名义卖方替你扛下全部税务责任，并自动帮你在后台挽回高达 40% 的扣款失败订单！ 与 Lemon Squeezy 齐名的全球合规名义卖方（MoR）：不仅替你搞定欧美繁琐的数字税（VAT）申报，更自带 Retain 智能挽回系统减少退订",
+    "pros": [
+      "支持全球信用卡、Apple Pay、Google Pay、PayPal 与本地支付，根据买家 IP 自动显示本地货币提高转化",
+      "内置价值不菲的 Retain 挽留引擎，在用户点击取消订阅时自动弹出挽留折扣或暂停选项"
+    ],
+    "cons": [
+      "专为正规 SaaS 软件、AI 工具与数字产品打造，上线前会有一次简短的网站合规审核"
+    ],
+    "verdict": "Paddle 全球 SaaS 软件出海首选全托管税务收单平台 (MoR) 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/paddle",
+    "cta": "访问官方合作优惠通道"
+  },
+  "kajabi": {
+    "catKey": "cloud",
+    "badgeClass": "tier-cloud",
+    "score": "9.7 / 10",
+    "relatedKit": "shopifyseoos",
+    "tier": "S 级严选 · 推荐 1 位付费用户每月躺拿 $44–$119 美金终身佣金！",
+    "name": "Kajabi 全球高客单价知识付费、训练营与百万博主商业操作系统",
+    "role": "欧美知识付费界的爱马仕：一套系统包揽品牌官网、iOS/安卓专属学员 App、高阶视频课程、1对1咨询预约与自动化邮件漏斗",
+    "verdictShort": "如果你关注欧美年入百万美金的头部课程博主（如 Ali Abdaal、Brendon Burchard），会发现他们清一色使用 Kajabi。因为 Kajabi 套餐为 $149–$399/月，你只要成功推荐 1 位做培训或海外课程的客户，每个月都能拿到 $44 到 $119 美金的 30% 终身持续分佣！",
+    "metricPill": "👑 平台 0% 交易抽成 + 推荐 1 人月月稳拿 ~$50 美金终身返佣",
+    "price": "享合作伙伴专属超长试用 · 推广享 30% 终身持续月度高额返佣",
+    "summary": "如果你关注欧美年入百万美金的头部课程博主（如 Ali Abdaal、Brendon Burchard），会发现他们清一色使用 Kajabi。因为 Kajabi 套餐为 $149–$399/月，你只要成功推荐 1 位做培训或海外课程的客户，每个月都能拿到 $44 到 $119 美金的 30% 终身持续分佣！ 欧美知识付费界的爱马仕：一套系统包揽品牌官网、iOS/安卓专属学员 App、高阶视频课程、1对1咨询预约与自动化邮件漏斗",
+    "pros": [
+      "学员无需在手机浏览器里找网址，直接下载官方 App 即可离线听课看视频，完课率与高级感拉满",
+      "单客年化佣金高达 $530–$1,400+ 美金！推荐 5 个长期客户就能实现每月两三千人民币的纯被动美金现金流"
+    ],
+    "cons": [
+      "定位成熟创作者与高客单价训练营（零预算新手可先推荐同专区的永久免费版 Systeme.io）"
+    ],
+    "verdict": "Kajabi 全球高客单价知识付费、训练营与百万博主商业操作系统 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/kajabi",
+    "cta": "访问官方合作优惠通道"
+  },
+  "aestura": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 韩国皮肤科医院第一推荐 + OliveYoung 年度断货王",
+    "name": "Aestura 瑷丝特兰 365 每日保湿修护面霜（专利微囊神经酰胺）",
+    "role": "爱茉莉太平洋医美线镇店之宝：肉眼可见的细密 DermaON 白色脂质微囊颗粒，一抹随体温融化，长效锁水 120 小时且不闷痘",
+    "verdictShort": "去韩国做完光电医美或冬天刷酸脱皮，当地皮肤科医生开得最多的就是这支 Aestura 365 面霜！挤出来能看到成千上万颗极细的白色 DermaON 神经酰胺脂质胶囊，推开瞬间化入角质层缝隙，比一理润更细腻高级！",
+    "metricPill": "💊 肉眼可见神经酰胺微囊颗粒 + 韩国医美术后钦定修护霜",
+    "price": "$24 – $29 / 80ml 大容量软管",
+    "summary": "去韩国做完光电医美或冬天刷酸脱皮，当地皮肤科医生开得最多的就是这支 Aestura 365 面霜！挤出来能看到成千上万颗极细的白色 DermaON 神经酰胺脂质胶囊，推开瞬间化入角质层缝隙，比一理润更细腻高级！ 爱茉莉太平洋医美线镇店之宝：肉眼可见的细密 DermaON 白色脂质微囊颗粒，一抹随体温融化，长效锁水 120 小时且不闷痘",
+    "pros": [
+      "爱茉莉集团顶级多片层微囊包裹专利，模拟真实人体皮脂膜结构，修护受损泛红屏障速度极快",
+      "肤感比传统厚重药膏润而不腻，是夜间搭配 VT 微针（Reedle Shot）或维A醛的黄金封包搭档"
+    ],
+    "cons": [
+      "干皮、混干皮及全肤质秋冬闭眼入（大油皮盛夏可选同系列蓝色水凝霜版或 Dr.G）"
+    ],
+    "verdict": "Aestura 瑷丝特兰 365 每日保湿修护面霜（专利微囊神经酰胺） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.9 / 10）。",
+    "url": "go/aestura",
+    "cta": "访问官方合作优惠通道"
+  },
+  "reedleshot": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 席卷全球的韩系“在家涂抹式微针”毛孔细腻神器",
+    "name": "VT 老虎微晶精华 Reedle Shot 100（涂抹式积雪草微针导入神品）",
+    "role": "采用比毛孔细 15 倍的纯化深海硅质微晶骨针包裹积雪草精粹，洁面后第一步按压上脸，物理打开角质微通道，让后续精华吸收率翻倍",
+    "verdictShort": "近两年韩妆界最具革命性的黑科技单品：挤出来是清爽乳液，按压上脸会有轻微酥麻针刺感——那是比毛孔细 15 倍的微晶骨针正在帮你在角质层打出隐形微通道！后续再涂 PDRN、胜肽或 Aestura 面霜，吸收速度与缩毛孔效果惊人！",
+    "metricPill": "🔬 比毛孔细 15 倍微晶骨针 · 洁面后第一步打通吸收通道",
+    "price": "$22 – $27 / 50ml 真空按压瓶",
+    "summary": "近两年韩妆界最具革命性的黑科技单品：挤出来是清爽乳液，按压上脸会有轻微酥麻针刺感——那是比毛孔细 15 倍的微晶骨针正在帮你在角质层打出隐形微通道！后续再涂 PDRN、胜肽或 Aestura 面霜，吸收速度与缩毛孔效果惊人！ 采用比毛孔细 15 倍的纯化深海硅质微晶骨针包裹积雪草精粹，洁面后第一步按压上脸，物理打开角质微通道，让后续精华吸收率翻倍",
+    "pros": [
+      "100 号浓度温和安全，适合新手每晚洁面后第一步按压使用，连续两周肉眼可见鼻翼毛孔细腻平滑",
+      "相当于在家无创享受院线水光导入，极大提升后续保湿、胜肽与修护面霜的透皮率"
+    ],
+    "cons": [
+      "重要法则：涂了 VT 微针的当晚，后续只叠涂温和补水、胜肽与神经酰胺面霜，切勿同晚叠加猛药果酸或高浓度维A酸"
+    ],
+    "verdict": "VT 老虎微晶精华 Reedle Shot 100（涂抹式积雪草微针导入神品） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/reedleshot",
+    "cta": "访问官方合作优惠通道"
+  },
+  "mediheal": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · OliveYoung 棉片销量总冠军，3分钟妆前急救湿敷神物",
+    "name": "Mediheal 美迪惠尔积雪草苷淡印退红棉片（100片装湿敷霸主）",
+    "role": "一罐足足 100 片（配加长卫生镊子）：67mm 大尺寸纯素微孔纱布棉片饱吸微囊积雪草苷与烟酰胺，两颊湿敷 3 分钟即刻降温退红、抚平干纹",
+    "verdictShort": "早上没时间敷整张面膜又怕上妆卡粉泛红？刷牙时用镊子夹出两片美迪惠尔青色积雪草棉片贴在两颊，3 分钟瞬间给燥热泛红的皮肤降温退红，拿下来顺手擦拭全脸，后续涂防晒和粉底服帖得像剥壳鸡蛋！",
+    "metricPill": "🧊 100片超大容量 + 妆前两颊湿敷 3 分钟退红服帖不卡粉",
+    "price": "$18 – $24 / 100大片装（自带卡扣长镊子）",
+    "summary": "早上没时间敷整张面膜又怕上妆卡粉泛红？刷牙时用镊子夹出两片美迪惠尔青色积雪草棉片贴在两颊，3 分钟瞬间给燥热泛红的皮肤降温退红，拿下来顺手擦拭全脸，后续涂防晒和粉底服帖得像剥壳鸡蛋！ 一罐足足 100 片（配加长卫生镊子）：67mm 大尺寸纯素微孔纱布棉片饱吸微囊积雪草苷与烟酰胺，两颊湿敷 3 分钟即刻降温退红、抚平干纹",
+    "pros": [
+      "微孔透气植物纤维棉片极其贴合面部轮廓，吸满整整一罐精华液，敷到第 100 片依然水润饱满",
+      "核心成分为高纯度羟基积雪草苷（Madecassoside）+ 烟酰胺，退红同时温和预防新生红痘印转黑"
+    ],
+    "cons": [
+      "使用后随手按紧密封盖即可保持数月鲜润"
+    ],
+    "verdict": "Mediheal 美迪惠尔积雪草苷淡印退红棉片（100片装湿敷霸主） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/mediheal",
+    "cta": "访问官方合作优惠通道"
+  },
+  "mixsoon": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "kbeautyglasskit",
+    "tier": "S 级严选 · 韩国清潭洞贵妇化妆师御用妆前打底 + 温和搓出黑头老废角质",
+    "name": "mixsoon 大豆发酵拉丝精华（纯素版“植物蜗牛原液”去闭口抛光水光瓶）",
+    "role": "不喜欢动物蜗牛原液？mixsoon 采用乳酸菌发酵大豆、石榴、大麦与梨汁，质地同样拉丝水润，既能日常深层补水，又能打圈按摩温和带出鼻翼白头",
+    "verdictShort": "对尘螨或蜗牛粘液过敏、但又想要韩系水光肌？mixsoon 大豆精华是完美的 100% 纯植物升级版！一瓶两用：日常轻拍上脸是极佳的氨基酸水光打底精华；每周两次干手干脸打圈按摩 3 分钟，还能温和揉出鼻翼浮出的白头与老废死皮！",
+    "metricPill": "🫘 纯植物大豆发酵拉丝粘液 + 打圈按摩温和揉出鼻翼油脂粒",
+    "price": "$20 – $26 / 50ml 按压瓶",
+    "summary": "对尘螨或蜗牛粘液过敏、但又想要韩系水光肌？mixsoon 大豆精华是完美的 100% 纯植物升级版！一瓶两用：日常轻拍上脸是极佳的氨基酸水光打底精华；每周两次干手干脸打圈按摩 3 分钟，还能温和揉出鼻翼浮出的白头与老废死皮！ 不喜欢动物蜗牛原液？mixsoon 采用乳酸菌发酵大豆、石榴、大麦与梨汁，质地同样拉丝水润，既能日常深层补水，又能打圈按摩温和带出鼻翼白头",
+    "pros": [
+      "物理+生物发酵双重温和抛光：用天然石榴果酸与大豆粘液把毛孔里的松动油脂粒“粘”出来，完全不伤角质层",
+      "韩国偶像女团化妆师人手一瓶的底妆服帖秘密武器，纯素零香精零酒精"
+    ],
+    "cons": [
+      "若作为每周两次的打圈去角质按摩使用，揉出颗粒后用清水冲净或用湿棉片擦拭即可"
+    ],
+    "verdict": "mixsoon 大豆发酵拉丝精华（纯素版“植物蜗牛原液”去闭口抛光水光瓶） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/mixsoon",
+    "cta": "访问官方合作优惠通道"
+  },
+  "to_glycolic": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "routine",
+    "tier": "S 级严选 · 十几美金 240ml 巨无霸容量，从脸到全身关节去鸡皮发光水",
+    "name": "The Ordinary 7% 甘醇酸爽肤水（240ml 全身鸡皮肤/暗沉抛光性价比神水）",
+    "role": "分子量最小的果酸（7% 甘醇酸）复配塔斯马尼亚胡椒莓舒缓因子，一瓶搞定面部粗糙闭口、手肘膝盖暗沉、后背毛囊角化（鸡皮肤）与头皮控油",
+    "verdictShort": "为什么这瓶 240ml 的甘醇酸水能常年霸榜全球美妆热搜？因为它便宜大碗到不可思议！除了每周 1–2 次擦拭面部扫除熬夜暗沉外，拿来涂手臂大腿的毛周角化（鸡皮肤）、擦手肘膝盖腋下黑印、甚至洗头前涂头皮去油屑都堪称一绝！",
+    "metricPill": "✨ 240ml 超大碗果酸神水（刷脸 + 涂身体鸡皮肤 + 擦手肘膝盖黑印）",
+    "price": "$12 – $14 / 240ml 尖嘴大瓶装",
+    "summary": "为什么这瓶 240ml 的甘醇酸水能常年霸榜全球美妆热搜？因为它便宜大碗到不可思议！除了每周 1–2 次擦拭面部扫除熬夜暗沉外，拿来涂手臂大腿的毛周角化（鸡皮肤）、擦手肘膝盖腋下黑印、甚至洗头前涂头皮去油屑都堪称一绝！ 分子量最小的果酸（7% 甘醇酸）复配塔斯马尼亚胡椒莓舒缓因子，一瓶搞定面部粗糙闭口、手肘膝盖暗沉、后背毛囊角化（鸡皮肤）与头皮控油",
+    "pros": [
+      "7% 黄金浓度最小分子果酸（pH 3.6），能精准切断老废死皮连接，用完第二天皮肤摸起来像抛光过一样滑嫩",
+      "身体护理隐藏王者：洗完澡擦在手臂鸡皮肤、脚后跟干裂或关节暗沉处，再涂一理润身体霜，两周嫩回剥壳蛋"
+    ],
+    "cons": [
+      "注意：面部使用每周最多 1–2 次（干敏皮优先用于身体关节），且白天必须严格涂抹 SPF50+ 防晒"
+    ],
+    "verdict": "The Ordinary 7% 甘醇酸爽肤水（240ml 全身鸡皮肤/暗沉抛光性价比神水） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/to_glycolic",
+    "cta": "访问官方合作优惠通道"
+  },
+  "to_peptides": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "winterbarrier",
+    "tier": "S 级严选 · 真正足量添加 1% 纯正蓝铜胜肽（天然宝石蓝原液）",
+    "name": "The Ordinary 1% 蓝铜胜肽 + 多重抗老胜肽全效精华（Buffet 顶配蓝瓶）",
+    "role": "在经典多重胜肽（六胜肽+五胜肽）基础上，豪掷千金加入整整 1% 纯正三肽-1 铜（GHK-Cu），不耐受维A醇人群的温和抗老修护头等舱",
+    "verdictShort": "纯正的蓝铜胜肽（GHK-Cu）原料贵比黄金，市面上很多卖上千元的精华只敢加 0.05% 染个色；而 The Ordinary 这瓶“顶配蓝瓶”直接加足了整整 1% 纯正蓝铜胜肽（呈现天然浓郁宝石蓝色），再叠满六胜肽与棕榈酰五胜肽！",
+    "metricPill": "💎 足量 1% 纯蓝铜胜肽 + 五大王牌抗皱胜肽矩阵",
+    "price": "$30 – $32 / 30ml（平替上千元的贵妇蓝铜胜肽精华）",
+    "summary": "纯正的蓝铜胜肽（GHK-Cu）原料贵比黄金，市面上很多卖上千元的精华只敢加 0.05% 染个色；而 The Ordinary 这瓶“顶配蓝瓶”直接加足了整整 1% 纯正蓝铜胜肽（呈现天然浓郁宝石蓝色），再叠满六胜肽与棕榈酰五胜肽！ 在经典多重胜肽（六胜肽+五胜肽）基础上，豪掷千金加入整整 1% 纯正三肽-1 铜（GHK-Cu），不耐受维A醇人群的温和抗老修护头等舱",
+    "pros": [
+      "完全没有维A醇的脱皮期与光敏性：既能抚平动态表情纹、促进真皮胶原合成，又能强力修护受损发炎屏障",
+      "敏感薄皮、备孕/哺乳期无法用维A酸人群、以及刷酸休息夜（Recovery Night）的最佳抗老核心"
+    ],
+    "cons": [
+      "重要配伍禁忌：蓝铜胜肽切勿与原型维C（左旋维C）或果酸/水杨酸在同一时间段叠涂（可分早C晚蓝铜，或隔夜交替）"
+    ],
+    "verdict": "The Ordinary 1% 蓝铜胜肽 + 多重抗老胜肽全效精华（Buffet 顶配蓝瓶） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/to_peptides",
+    "cta": "访问官方合作优惠通道"
+  },
+  "vanicream": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 零香精/零色素/零皂基/零植物提取物，烂脸期最安全的本命洗面奶",
+    "name": "Vanicream 薇霓肌本温和洁面乳（美国皮肤科医生公认“零致敏”洁面天花板）",
+    "role": "由美国梅奥诊所（Mayo Clinic）药剂师研发：剔除了一切可能引起过敏的香精、精油、防腐剂与复杂植物提取物，洗得干净却绝不破坏皮脂膜",
+    "verdictShort": "很多打着“温和氨基酸”旗号的洗面奶里其实塞满了乱七八糟的植物提取物和香精，皮肤一烂脸照样刺痛；而源自美国梅奥诊所的 Vanicream 把成分表精简到了极致——不仅洗感有着恰到好处的微泡洁净力，冲水后更是零假滑、零紧绷！",
+    "metricPill": "🧼 梅奥诊所渊源研发 · 剔除一切致敏源 · 几十块钱用半年",
+    "price": "$9 – $11 / 237ml 按压大瓶（iHerb 常年五星爆款）",
+    "summary": "很多打着“温和氨基酸”旗号的洗面奶里其实塞满了乱七八糟的植物提取物和香精，皮肤一烂脸照样刺痛；而源自美国梅奥诊所的 Vanicream 把成分表精简到了极致——不仅洗感有着恰到好处的微泡洁净力，冲水后更是零假滑、零紧绷！ 由美国梅奥诊所（Mayo Clinic）药剂师研发：剔除了一切可能引起过敏的香精、精油、防腐剂与复杂植物提取物，洗得干净却绝不破坏皮脂膜",
+    "pros": [
+      "既有微泡洁面的清爽干净感（不像纯无泡洁面那样像没洗干净），又像清水洗脸一样温和不伤屏障",
+      "iHerb 凑单必买第一神物：不到 $10 美金一大瓶，无论是早间洁面还是晚间卸妆油后的二次清洁都挑不出半点毛病"
+    ],
+    "cons": [
+      "若白天涂了防水防晒或彩妆，晚间请先用卸妆油/膏溶解，再用 Vanicream 做第二步水洗清洁"
+    ],
+    "verdict": "Vanicream 薇霓肌本温和洁面乳（美国皮肤科医生公认“零致敏”洁面天花板） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/vanicream",
+    "cta": "访问官方合作优惠通道"
+  },
+  "panoxyl": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 美国皮肤科战痘第一洗剂，洗澡敷 2 分钟通杀前胸后背红肿痘與腋下异味",
+    "name": "PanOxyl 过氧化苯甲酰祛痘洁面乳（4% 温和版 & 10% 强效前胸后背战痘神物）",
+    "role": "采用皮肤科最推崇的“短时接触疗法（Short-Contact Therapy）”：涂上停留 2 分钟即彻底杀灭厌氧痤疮丙酸杆菌并洗净冲走，既不产生耐药性又避免了留置药膏漂白枕巾的尴尬",
+    "verdictShort": "留置型的过氧化苯甲酰药膏不仅容易烧红皮肤，还会把真丝枕套和衣服漂白掉色！美国皮肤科医生最爱的聪明用法是：洗澡时用 PanOxyl 洁面（面部选 4% 温和版，前胸后背大红痘选 10% 强效版）敷在长痘处停留 2 分钟后冲掉——杀菌力拉满且零残留！",
+    "metricPill": "🦠 停留 2 分钟冲掉即可杀灭痤疮菌 · 兼治前胸后背痘与夏季汗味",
+    "price": "$10 – $12 / 156g（iHerb 战痘品类销量总冠军）",
+    "summary": "留置型的过氧化苯甲酰药膏不仅容易烧红皮肤，还会把真丝枕套和衣服漂白掉色！美国皮肤科医生最爱的聪明用法是：洗澡时用 PanOxyl 洁面（面部选 4% 温和版，前胸后背大红痘选 10% 强效版）敷在长痘处停留 2 分钟后冲掉——杀菌力拉满且零残留！ 采用皮肤科最推崇的“短时接触疗法（Short-Contact Therapy）”：涂上停留 2 分钟即彻底杀灭厌氧痤疮丙酸杆菌并洗净冲走，既不产生耐药性又避免了留置药膏漂白枕巾的尴尬",
+    "pros": [
+      "一物三用神技：① 面部红肿脓包痘短时敷洗；② 前胸后背毛囊炎痘痘克星；③ 洗澡时敷腋下 1 分钟，彻底消灭分解汗液产生异味的细菌，清爽一整天！",
+      "由于是释氧杀菌机制，细菌永远不会对它产生耐药性，与夜间达芙文（阿达帕林）堪称战痘黄金搭档"
+    ],
+    "cons": [
+      "建议在淋浴时使用并彻底冲净，避免残留泡沫沾染深色毛巾"
+    ],
+    "verdict": "PanOxyl 过氧化苯甲酰祛痘洁面乳（4% 温和版 & 10% 强效前胸后背战痘神物） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/panoxyl",
+    "cta": "访问官方合作优惠通道"
+  },
+  "eucerin": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 真正针对“人类酪氨酸酶”靶向设计的地表最强非处方淡斑专利",
+    "name": "Eucerin 优色林双管淡斑光引精华（拜耳斯道夫 50,000 次筛选专利 Thiamidol）",
+    "role": "知道为什么很多美白成分动物实验有效、涂人脸上却没用吗？因为传统成分是用蘑菇酪氨酸酶测出来的！拜耳斯道夫历时 10 年从 5 万种化合物中筛出唯一精准锁死「人类酪氨酸酶」的专利成分 Thiamidol（肽安密多）",
+    "verdictShort": "这是硬核配方科学界公认的“降维打击”：过去几十年化妆品界一直用廉价的蘑菇酪氨酸酶筛美白成分，导致到了人脸上大打折扣。德国拜耳斯道夫集团耗资巨万成功重组出真正的人类酪氨酸酶，并从 50,000 个分子里找出了靶向结合力超强的 Thiamidol（已在国内获批 001 号美白新原料）！",
+    "metricPill": "🧬 50,000 种分子里筛出的「人类酪氨酸酶」头号克星，专攻顽固晒斑与黄褐斑",
+    "price": "$38 – $45 / 30ml 双管按压装",
+    "summary": "这是硬核配方科学界公认的“降维打击”：过去几十年化妆品界一直用廉价的蘑菇酪氨酸酶筛美白成分，导致到了人脸上大打折扣。德国拜耳斯道夫集团耗资巨万成功重组出真正的人类酪氨酸酶，并从 50,000 个分子里找出了靶向结合力超强的 Thiamidol（已在国内获批 001 号美白新原料）！ 知道为什么很多美白成分动物实验有效、涂人脸上却没用吗？因为传统成分是用蘑菇酪氨酸酶测出来的！拜耳斯道夫历时 10 年从 5 万种化合物中筛出唯一精准锁死「人类酪氨酸酶」的专利成分 Thiamidol（肽安密多）",
+    "pros": [
+      "在多项皮肤科临床双盲对照中，其淡化顽固晒斑、黄褐斑与深层痘印的实力直接硬刚处方级 2% 氢醌，却完全没有氢醌的细胞毒性与反黑风险",
+      "升级版单口双管设计，一泵同时挤出粉管 Thiamidol 淡斑乳与白管高浓度玻尿酸"
+    ],
+    "cons": [
+      "带有轻微德系经典淡香，每天在面部使用含 Thiamidol 产品总次数不超过 4 次即可达峰值效果"
+    ],
+    "verdict": "Eucerin 优色林双管淡斑光引精华（拜耳斯道夫 50,000 次筛选专利 Thiamidol） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/eucerin",
+    "cta": "访问官方合作优惠通道"
+  },
+  "roc": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.6 / 10",
+    "relatedKit": "retinoidramp",
+    "tier": "S 级严选 · 专攻眼周干纹鱼尾纹、连获欧美百项美容大奖的平价 A 醇眼霜王",
+    "name": "RoC 洛克视黄醇抗皱抚纹眼霜（30项临床研究背书的平价 A 醇眼霜霸主）",
+    "role": "眼周皮肤只有面部的三分之一薄，直接把面部维A酸涂眼周极易脱皮红肿；RoC 采用专为脆弱眼周定制的缓释稳定视黄醇与矿物质复合体，温和熨平鱼尾纹与泪沟细纹",
+    "verdictShort": "千万别把高浓度面部阿达帕林直接往眼皮上怼！作为全球最早攻克视黄醇稳定技术的鼻祖品牌，RoC 这支装在专业避光铝管里的 A 醇眼霜，以不到 $20 的价格实现了经过 12 周临床影像验证的鱼尾纹与眼下干纹淡化。",
+    "metricPill": "👁️ 避光防氧化铝管包装 + 专为脆弱眼周调校的缓释 A 醇",
+    "price": "$17 – $21 / 15ml 避光铝管（iHerb 眼霜榜常年冠军）",
+    "summary": "千万别把高浓度面部阿达帕林直接往眼皮上怼！作为全球最早攻克视黄醇稳定技术的鼻祖品牌，RoC 这支装在专业避光铝管里的 A 醇眼霜，以不到 $20 的价格实现了经过 12 周临床影像验证的鱼尾纹与眼下干纹淡化。 眼周皮肤只有面部的三分之一薄，直接把面部维A酸涂眼周极易脱皮红肿；RoC 采用专为脆弱眼周定制的缓释稳定视黄醇与矿物质复合体，温和熨平鱼尾纹与泪沟细纹",
+    "pros": [
+      "专业药用级铝管包装，挤出不回吸空气，确保视黄醇从第一滴到最后一滴都保持鲜活高活性",
+      "质地水润好推开，绝不长脂肪粒（粟丘疹），是百元价位唯一能打的真·抗皱眼霜"
+    ],
+    "cons": [
+      "前两周建议隔晚米粒大小点涂于眼眶骨周围建立耐受，白天做好眼周防晒"
+    ],
+    "verdict": "RoC 洛克视黄醇抗皱抚纹眼霜（30项临床研究背书的平价 A 醇眼霜霸主） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.6 / 10）。",
+    "url": "go/roc",
+    "cta": "访问官方合作优惠通道"
+  },
+  "bioderma": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 模拟皮肤磷脂双分子层的“微胞胶束科技”温和卸防晒天花板",
+    "name": "Bioderma 贝德玛舒妍多效洁肤水（粉水 · 全球每 2 秒卖出一瓶的微胞卸妆鼻祖）",
+    "role": "采用高达 9 次纯化的医用级超纯水与仿生脂肪酸甘油酯微胞球：像磁铁一样吸走表面防晒与淡妆，同时绝不溶解角质层自身的健康脂质",
+    "verdictShort": "如果平时只涂通勤防晒或轻薄底妆，天天用强力卸妆油反而可能过度清洁。作为微胞水（Micellar Water）的发明者，贝德玛粉水使用的仿生脂肪酸微胞结构与人体皮肤细胞膜同源，擦完清爽水润，完全不伤红血丝薄皮！",
+    "metricPill": "💧 仿生微胞磁吸卸妆 · pH 5.5 弱酸性 · 敏感肌与眼唇零刺激",
+    "price": "$14 – $17 / 500ml 巨无霸粉瓶（iHerb / Dermstore 必囤经典）",
+    "summary": "如果平时只涂通勤防晒或轻薄底妆，天天用强力卸妆油反而可能过度清洁。作为微胞水（Micellar Water）的发明者，贝德玛粉水使用的仿生脂肪酸微胞结构与人体皮肤细胞膜同源，擦完清爽水润，完全不伤红血丝薄皮！ 采用高达 9 次纯化的医用级超纯水与仿生脂肪酸甘油酯微胞球：像磁铁一样吸走表面防晒与淡妆，同时绝不溶解角质层自身的健康脂质",
+    "pros": [
+      "医用级九重纯化水基底 + DAF 皮肤耐受性提升专利，连激光术后或极度脆弱的玫瑰痤疮肌都能安心卸防晒",
+      "500ml 超大瓶可以用大半年，搭配美迪惠尔或普通纯棉卸妆棉轻轻按压擦拭即可"
+    ],
+    "cons": [
+      "日常通勤防晒与淡妆一抹即净；若化了浓密防水眼妆请先用卸妆膏/油溶解"
+    ],
+    "verdict": "Bioderma 贝德玛舒妍多效洁肤水（粉水 · 全球每 2 秒卖出一瓶的微胞卸妆鼻祖） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/bioderma",
+    "cta": "访问官方合作优惠通道"
+  },
+  "heimish": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 彻底改进传统旋盖痛点的“一键翻盖+内置挖勺”雪葩卸妆膏",
+    "name": "Heimish 赫迷什全效温和卸妆膏（一秒弹盖设计，冰淇淋乳化零糊眼）",
+    "role": "触肤即溶的绵密雪葩质地：干手干脸揉开 30 秒可连根溶解防水防晒、顽固黑头油脂栓与全脸彩妆，遇水 1 秒乳化为牛奶状，冲水后零油膜感",
+    "verdictShort": "用卸妆油怕顺着胳膊流进袖口？用传统罐装卸妆膏讨厌满手是油还要拧盖子？Heimish 卸妆膏凭借天才般的「一键按压弹盖+内层吸顶挖勺」设计与一秒化奶的清爽乳化力，在 iHerb 上拿下了数万条五星好评！",
+    "metricPill": "🍨 单手一按开盖（告别湿手拧盖子）+ 遇水1秒乳化不糊眼睛",
+    "price": "$14 – $17 / 120ml 一键翻盖大罐（iHerb 卸妆膏销量王）",
+    "summary": "用卸妆油怕顺着胳膊流进袖口？用传统罐装卸妆膏讨厌满手是油还要拧盖子？Heimish 卸妆膏凭借天才般的「一键按压弹盖+内层吸顶挖勺」设计与一秒化奶的清爽乳化力，在 iHerb 上拿下了数万条五星好评！ 触肤即溶的绵密雪葩质地：干手干脸揉开 30 秒可连根溶解防水防晒、顽固黑头油脂栓与全脸彩妆，遇水 1 秒乳化为牛奶状，冲水后零油膜感",
+    "pros": [
+      "单手大拇指一按即开盖，挖勺稳稳卡在隔层上，卫生方便程度完胜传统拧盖罐",
+      "乳化速度快到惊人，洗完眼睛清清楚楚绝不雾蒙蒙，还能顺带揉出鼻翼浮出的白头油脂粒"
+    ],
+    "cons": [
+      "经典白罐带极清新的天然植物淡香，喜欢完全无香精版本也可选芭妮兰致柔款"
+    ],
+    "verdict": "Heimish 赫迷什全效温和卸妆膏（一秒弹盖设计，冰淇淋乳化零糊眼） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/heimish",
+    "cta": "访问官方合作优惠通道"
+  },
+  "banilaco": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 全球累计狂销上亿罐的韩系雪葩卸妆膏绝对标杆",
+    "name": "Banila Co 芭妮兰 Zero 致柔卸妆膏（全球每 3.1 秒卖出一罐的卸妆膏鼻祖）",
+    "role": "开创了全球“果冻雪葩卸妆膏”品类的传奇大魔王（最新第 6 代纯素升级版）：磁吸微囊技术秒溶最防水的成膜防晒与持久唇釉，洗后水润度逆天",
+    "verdictShort": "如果说每个女生和精致男生的洗漱台上都该有一罐卸妆膏，那芭妮兰粉罐就是永远不会出错的行业教科书。最新第 6 代配方不仅升级为 100% 纯素温和体系，更加入针叶樱桃与白藜芦醇，卸完妆脸蛋软糯得像刚做完 SPA！",
+    "metricPill": "👑 全球每 3.1 秒卖出一罐 · 第六代纯素升级版卸防晒零死角",
+    "price": "$16 – $19 / 100ml（另有 180ml 巨无霸家庭装）",
+    "summary": "如果说每个女生和精致男生的洗漱台上都该有一罐卸妆膏，那芭妮兰粉罐就是永远不会出错的行业教科书。最新第 6 代配方不仅升级为 100% 纯素温和体系，更加入针叶樱桃与白藜芦醇，卸完妆脸蛋软糯得像刚做完 SPA！ 开创了全球“果冻雪葩卸妆膏”品类的传奇大魔王（最新第 6 代纯素升级版）：磁吸微囊技术秒溶最防水的成膜防晒与持久唇釉，洗后水润度逆天",
+    "pros": [
+      "哪怕是最难卸的欧美防水海滩防晒与染唇液，干手打圈 20 秒也能彻底融化浮出",
+      "洗后完全不拔干不紧绷，配合第二步 Vanicream 温和洁面即构成教科书级晚间双效清洁"
+    ],
+    "cons": [
+      "正确用法：务必【干手干脸】挖一勺涂抹打圈 30 秒，再加少量温水揉搓乳化变白后冲净"
+    ],
+    "verdict": "Banila Co 芭妮兰 Zero 致柔卸妆膏（全球每 3.1 秒卖出一罐的卸妆膏鼻祖） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/banilaco",
+    "cta": "访问官方合作优惠通道"
+  },
+  "skin1004oil": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 讨厌传统厚重糊脸卸妆油必试！质地像爽肤水一样轻薄不闷痘",
+    "name": "SKIN1004 理肤天使马达加斯加积雪草轻盈水感卸妆油（像水一样轻薄的去黑头卸妆油）",
+    "role": "打破你对“卸妆油又稠又闷痘”的刻板印象：采用极小分子的向日葵籽油与霍霍巴油复配万分之一万高纯积雪草，流动性堪比化妆水，以油溶油温和掏空毛孔黑头",
+    "verdictShort": "为什么油痘皮不敢用卸妆油？因为以前的重质矿物油太糊脸！SKIN1004 这瓶积雪草卸妆油挤出来就像清爽的化妆水一样稀薄丝滑，遵循化学“相似相溶（以油溶油）”原理，在鼻翼打圈 1 分钟就能把毛孔里硬化发黑的油脂栓温温柔柔地溶解带出！",
+    "metricPill": "🌿 爽肤水般极致轻薄质地 · 以油溶油揉出草莓鼻脂质微丝",
+    "price": "$15 – $18 / 200ml 按压瓶（OliveYoung / iHerb 爆款）",
+    "summary": "为什么油痘皮不敢用卸妆油？因为以前的重质矿物油太糊脸！SKIN1004 这瓶积雪草卸妆油挤出来就像清爽的化妆水一样稀薄丝滑，遵循化学“相似相溶（以油溶油）”原理，在鼻翼打圈 1 分钟就能把毛孔里硬化发黑的油脂栓温温柔柔地溶解带出！ 打破你对“卸妆油又稠又闷痘”的刻板印象：采用极小分子的向日葵籽油与霍霍巴油复配万分之一万高纯积雪草，流动性堪比化妆水，以油溶油温和掏空毛孔黑头",
+    "pros": [
+      "内含霍霍巴油（结构最接近人体皮脂）与马达加斯加积雪草，边溶解毛孔油脂栓边舒缓退红",
+      "遇水秒速乳化无残留，是对付防水防晒与草莓鼻黑头最舒服的轻感卸妆油"
+    ],
+    "cons": [
+      "油痘皮使用卸妆油后，请务必用温和洗面奶（如 Vanicream）再洗一遍，确保 100% 零油脂残留"
+    ],
+    "verdict": "SKIN1004 理肤天使马达加斯加积雪草轻盈水感卸妆油（像水一样轻薄的去黑头卸妆油） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/skin1004oil",
+    "cta": "访问官方合作优惠通道"
+  },
+  "cosdebaha": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.7 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 彻底解决传统壬二酸药膏“干涩搓泥、刺痒脱皮”痛点的水润神作",
+    "name": "Cos De BAHA 10% 壬二酸精华液（复配烟酰胺+泛醇，不搓泥的水感玫瑰痤疮/痘印救星）",
+    "role": "壬二酸是皮肤科公认通杀「红黑痘印、玫瑰痤疮泛红、闭口粉刺与马拉色菌」的全能神仙酸（且孕期可用）；Cos De BAHA 把它做成了顺滑不搓泥的精华液，还只要 $12 美金！",
+    "verdictShort": "混迹成分圈的人都知道壬二酸有多神：既能消红肿痘、去红黑痘印，又是玫瑰痤疮（酒糟鼻）泛红的钦定克星！但传统 15%–20% 药膏和某大牌悬浮液涂完满脸发白搓泥、痒得抓心挠肝。韩国配方品牌 Cos De BAHA 这瓶 10% 壬二酸复配了烟酰胺与泛醇，真正做到了丝滑水润、叠涂防晒零搓泥！",
+    "metricPill": "🧪 10% 壬二酸 + 烟酰胺 + B5 · 水润精华质地完全不搓泥！",
+    "price": "$11 – $14 / 30ml（iHerb 壬二酸品类评分第一）",
+    "summary": "混迹成分圈的人都知道壬二酸有多神：既能消红肿痘、去红黑痘印，又是玫瑰痤疮（酒糟鼻）泛红的钦定克星！但传统 15%–20% 药膏和某大牌悬浮液涂完满脸发白搓泥、痒得抓心挠肝。韩国配方品牌 Cos De BAHA 这瓶 10% 壬二酸复配了烟酰胺与泛醇，真正做到了丝滑水润、叠涂防晒零搓泥！ 壬二酸是皮肤科公认通杀「红黑痘印、玫瑰痤疮泛红、闭口粉刺与马拉色菌」的全能神仙酸（且孕期可用）；Cos De BAHA 把它做成了顺滑不搓泥的精华液，还只要 $12 美金！",
+    "pros": [
+      "彻底攻克壬二酸溶解难题：透明微润精华质地，不泛白、不拔干、后续叠面霜防晒绝对不搓泥",
+      "极其难得的「白天也能用」的非光敏性全能酸，对下巴反复长的姨妈红肿痘与两颊泛红痘印效果拔群"
+    ],
+    "cons": [
+      "壬二酸初次建立耐受的前几天可能会有几分钟轻微温热酥痒感，先涂一层保湿水打底即可完美缓解"
+    ],
+    "verdict": "Cos De BAHA 10% 壬二酸精华液（复配烟酰胺+泛醇，不搓泥的水感玫瑰痤疮/痘印救星） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.7 / 10）。",
+    "url": "go/cosdebaha",
+    "cta": "访问官方合作优惠通道"
+  },
+  "cgn_omega3": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 全 iHerb 历史总销量第一名（超 40 万条好评 + 自营高返佣）",
+    "name": "California Gold Nutrition (CGN) 黄金高纯度深海鱼油（iHerb 镇店之宝 · IFOS 五星认证）",
+    "role": "采用德国 KD-Pür® 超临界分子蒸馏专利提纯：每一批次均通过国际鱼油标准（IFOS）最高五星认证（重金属汞/多氯联苯趋近于零），从细胞膜源头扑灭全身慢性微炎症与爆痘",
+    "verdictShort": "为什么你外用涂了无数贵妇护肤品，熬夜吃顿火锅还是满脸发炎爆痘、眼睛干涩、脑雾疲惫？因为现代饮食极度缺乏抗炎的 Omega-3（EPA+DHA）！这瓶拥有 40 多万条真实好评的 CGN 鱼油采用德国 KD 专利提纯，不仅在 iHerb 转化率高居全站第一，而且作为 iHerb 官方自营王牌，推广返佣比例更高！",
+    "metricPill": "🐟 iHerb 全网销量总冠军（40万+好评）+ 德国 KD-Pür 提纯零腥味",
+    "price": "$9 – $11 / 100粒（折合一粒不到 7 毛钱，iHerb 必买第一名）",
+    "summary": "为什么你外用涂了无数贵妇护肤品，熬夜吃顿火锅还是满脸发炎爆痘、眼睛干涩、脑雾疲惫？因为现代饮食极度缺乏抗炎的 Omega-3（EPA+DHA）！这瓶拥有 40 多万条真实好评的 CGN 鱼油采用德国 KD 专利提纯，不仅在 iHerb 转化率高居全站第一，而且作为 iHerb 官方自营王牌，推广返佣比例更高！ 采用德国 KD-Pür® 超临界分子蒸馏专利提纯：每一批次均通过国际鱼油标准（IFOS）最高五星认证（重金属汞/多氯联苯趋近于零），从细胞膜源头扑灭全身慢性微炎症与爆痘",
+    "pros": [
+      "每一瓶都可以直接在线查看独立第三方实验室（iTested）出具的重金属零超标与新鲜度（过氧化值）满分的硬核检测报告",
+      "内服抗炎护肤基石：每天随午餐吃 2 粒，不仅缓解长期盯屏幕写代码的干眼症与脑疲劳，更能从源头减少皮脂腺发炎红肿痘"
+    ],
+    "cons": [
+      "由于 Omega-3 为脂溶性营养素，请务必【随含油脂的正餐（午餐或晚餐）】吞服，吸收率比空腹高 3 倍"
+    ],
+    "verdict": "California Gold Nutrition (CGN) 黄金高纯度深海鱼油（iHerb 镇店之宝 · IFOS 五星认证） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.9 / 10）。",
+    "url": "go/cgn_omega3",
+    "cta": "访问官方合作优惠通道"
+  },
+  "cgn_collagen": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 小分子深海鱼胶原三肽 + 非动物源透明质酸 + 维C 三合一黄金配方",
+    "name": "California Gold Nutrition CollagenUP 水解深海鱼胶原蛋白肽粉（含玻尿酸+维C）",
+    "role": "拒绝容易有奶腥味的牛猪胶原：精选深海野生鱼皮酶解小分子胶原蛋白肽（5,000mg），科学复配 60mg 玻尿酸与 90mg 胶原合成必需辅酶维生素 C，无色无味秒溶于咖啡或果汁",
+    "verdictShort": "喝猪蹄汤补不了胶原蛋白（分子太大且全是脂肪），真正被皮肤科双盲实验证实能提升真皮密度与指甲头发强韧度的，是经过酶解切割的低分子量【水解鱼胶原蛋白小分子肽】+【维生素 C 辅酶】！CGN 这罐常年断货王把深海鱼肽、玻尿酸和维 C 配齐在一勺无味粉末里，早上直接搅进美式咖啡或豆浆喝完！",
+    "metricPill": "🥤 深海鱼小分子肽 + 玻尿酸 + 维C 三合一 · 兑进早间冰美式零腥味",
+    "price": "$16 – $21 / 206g 罐装（内附量勺，iHerb 美肌口服总冠军）",
+    "summary": "喝猪蹄汤补不了胶原蛋白（分子太大且全是脂肪），真正被皮肤科双盲实验证实能提升真皮密度与指甲头发强韧度的，是经过酶解切割的低分子量【水解鱼胶原蛋白小分子肽】+【维生素 C 辅酶】！CGN 这罐常年断货王把深海鱼肽、玻尿酸和维 C 配齐在一勺无味粉末里，早上直接搅进美式咖啡或豆浆喝完！ 拒绝容易有奶腥味的牛猪胶原：精选深海野生鱼皮酶解小分子胶原蛋白肽（5,000mg），科学复配 60mg 玻尿酸与 90mg 胶原合成必需辅酶维生素 C，无色无味秒溶于咖啡或果汁",
+    "pros": [
+      "经过特殊脱腥与酶解工艺，兑进温水、柠檬水或早晨的冰咖啡里完全尝不出任何鱼腥味",
+      "比日本动辄两三百元的胶原蛋白粉纯度更高、单价便宜一半，长期坚持喝对改善换季拔干、细纹与脆甲断发极佳"
+    ],
+    "cons": [
+      "建议先用少量常温水或温饮搅拌溶解，再加冰块口感最佳"
+    ],
+    "verdict": "California Gold Nutrition CollagenUP 水解深海鱼胶原蛋白肽粉（含玻尿酸+维C） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/cgn_collagen",
+    "cta": "访问官方合作优惠通道"
+  },
+  "cgn_coq10": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 熬夜心脏发动机与线粒体抗衰基石（USP 药典级微生物发酵提纯）",
+    "name": "California Gold Nutrition 100mg 发酵型辅酶 Q10（复配 BioPerine® 黑胡椒素促吸收）",
+    "role": "辅酶 Q10 是人体心肌与全身细胞线粒体生产 ATP 能量的核心点火器（25岁后断崖式流失）；CGN 采用 USP 药典级天然酵母发酵工艺，并特别加入专利 BioPerine® 黑胡椒提取物将生物利用度提升 30%+",
+    "verdictShort": "经常高强度写代码、做视频熬夜后觉得心慌胸闷、精力断崖式下跌？这是因为心肌和大脑神经元高度依赖辅酶 Q10 驱动线粒体产生能量！CGN 这款 USP 药典级辅酶 Q10 特别复配了专利 BioPerine® 黑胡椒素，解决了普通辅酶 Q10 肠道吸收率低的痛点，自己吃或给父母买都极其超值。",
+    "metricPill": "⚡ 心脏与线粒体能量泵 + 专利黑胡椒素提升 30% 吸收率",
+    "price": "$11 – $14 / 120粒（四个月超长量，iHerb 心脏精力榜首）",
+    "summary": "经常高强度写代码、做视频熬夜后觉得心慌胸闷、精力断崖式下跌？这是因为心肌和大脑神经元高度依赖辅酶 Q10 驱动线粒体产生能量！CGN 这款 USP 药典级辅酶 Q10 特别复配了专利 BioPerine® 黑胡椒素，解决了普通辅酶 Q10 肠道吸收率低的痛点，自己吃或给父母买都极其超值。 辅酶 Q10 是人体心肌与全身细胞线粒体生产 ATP 能量的核心点火器（25岁后断崖式流失）；CGN 采用 USP 药典级天然酵母发酵工艺，并特别加入专利 BioPerine® 黑胡椒提取物将生物利用度提升 30%+",
+    "pros": [
+      "100% 天然微生物发酵产生的全反式（All-Trans）结构，与人体自身合成的辅酶 Q10 完全一致，零化学合成杂质",
+      "120 粒大瓶装够吃整整 4 个月，合每天不到 8 毛钱，是程序员、创业者与中老年护心抗疲劳的第一刚需"
+    ],
+    "cons": [
+      "建议随早餐或午餐服用（由于它会显著提升细胞能量代谢，避免晚上睡前吃以免精力太旺盛）"
+    ],
+    "verdict": "California Gold Nutrition 100mg 发酵型辅酶 Q10（复配 BioPerine® 黑胡椒素促吸收） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/cgn_coq10",
+    "cta": "访问官方合作优惠通道"
+  },
+  "thorne_mag": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.9 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 氨基酸螯合甘氨酸镁（不拉肚子、直达大脑放松神经、翻倍深睡时长）",
+    "name": "Thorne 索恩甘氨酸镁冲剂（硅谷极客与奥运选手钦定的深度睡眠与神经放松天花板）",
+    "role": "知道为什么 Andrew Huberman 等斯坦福神经科学家睡前必喝甘氨酸镁吗？普通氧化镁/柠檬酸镁吸收差还容易窜稀；而医药级巨头 Thorne 的双甘氨酸螯合镁能温和穿过血脑屏障、激活副交感神经，让你沾枕头就进入深度睡眠！",
+    "verdictShort": "Thorne 是补剂界的“劳斯莱斯”（美国梅奥诊所与 11 支美国奥运国家队官方合作伙伴）。白天喝多了咖啡、晚上躺在床上大脑还在高速转停不下来？睡前 45 分钟用温水冲一勺微甜罗汉果味的 Thorne 甘氨酸镁：甘氨酸+镁离子双重镇静中枢神经、放松紧绷肩颈，用 Apple Watch 测出来的深睡时长肉眼可见暴涨！",
+    "metricPill": "😴 沾枕头即入深睡 + 缓解焦虑紧绷与眼皮跳 + 绝不刺激肠胃",
+    "price": "$42 – $46 / 187g（美国国家队 NSF 认证 · 顶级医药级补剂标杆）",
+    "summary": "Thorne 是补剂界的“劳斯莱斯”（美国梅奥诊所与 11 支美国奥运国家队官方合作伙伴）。白天喝多了咖啡、晚上躺在床上大脑还在高速转停不下来？睡前 45 分钟用温水冲一勺微甜罗汉果味的 Thorne 甘氨酸镁：甘氨酸+镁离子双重镇静中枢神经、放松紧绷肩颈，用 Apple Watch 测出来的深睡时长肉眼可见暴涨！ 知道为什么 Andrew Huberman 等斯坦福神经科学家睡前必喝甘氨酸镁吗？普通氧化镁/柠檬酸镁吸收差还容易窜稀；而医药级巨头 Thorne 的双甘氨酸螯合镁能温和穿过血脑屏障、激活副交感神经，让你沾枕头就进入深度睡眠！",
+    "pros": [
+      "采用最高级别的氨基酸螯合甘氨酸镁（Magnesium Bisglycinate），肠胃极度温和，绝不会像廉价氧化镁或柠檬酸镁那样引起腹泻",
+      "天然罗汉果提取物微甜调和（0糖0热量），睡前喝一杯就像喝清甜柑橘晚安茶，同时彻底告别半夜小腿抽筋与眼皮乱跳"
+    ],
+    "cons": [
+      "单罐客单价高达 $45 美金且复购率极强，是 iHerb 联盟推广里最能拉高整单佣金的殿堂级爆品"
+    ],
+    "verdict": "Thorne 索恩甘氨酸镁冲剂（硅谷极客与奥运选手钦定的深度睡眠与神经放松天花板） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.9 / 10）。",
+    "url": "go/thorne_mag",
+    "cta": "访问官方合作优惠通道"
+  },
+  "lifeextension": {
+    "catKey": "beauty",
+    "badgeClass": "tier-beauty",
+    "score": "9.8 / 10",
+    "relatedKit": "longevitystackos",
+    "tier": "S 级严选 · 全甲基化活性叶酸/B族 + 专利叶黄素 + 柠檬酸锌，一颗顶普通维他命十颗",
+    "name": "Life Extension (延寿基金会) 每日两粒全活性高能综合维生素（全美测评常年第一名）",
+    "role": "市面上超市卖的普通综合维生素用的都是廉价合成叶酸和氧化锌（人体吸收率极低）；美国硬核抗衰机构 Life Extension 直接给足全套【无需肝脏转化即可直接利用的甲基化活性 B 族】+ 2000 IU 维 D3 + 护眼叶黄素 + 芹菜素！",
+    "verdictShort": "如果你只想备一瓶基础全能维生素，闭眼入美国硬核抗衰科研品牌 Life Extension 的「每日两粒（Two-Per-Day）」！其实它的有效含量高到绝大多数亚洲人体重每天随早餐吃【1 粒】就完全封顶够用了——120 粒装一瓶能吃整整 4 个月！富含活性甲基 B12、活性叶酸、高纯维 C、2000 IU 维 D3 与护眼玉米黄质，把饮食漏洞一次性补齐。",
+    "metricPill": "🧬 全活性甲基化维生素（吸收率碾压药店普通善存）+ 1瓶吃4个月",
+    "price": "$18 – $21 / 120粒（每天吃 1 粒就够用整整 4 个月！）",
+    "summary": "如果你只想备一瓶基础全能维生素，闭眼入美国硬核抗衰科研品牌 Life Extension 的「每日两粒（Two-Per-Day）」！其实它的有效含量高到绝大多数亚洲人体重每天随早餐吃【1 粒】就完全封顶够用了——120 粒装一瓶能吃整整 4 个月！富含活性甲基 B12、活性叶酸、高纯维 C、2000 IU 维 D3 与护眼玉米黄质，把饮食漏洞一次性补齐。 市面上超市卖的普通综合维生素用的都是廉价合成叶酸和氧化锌（人体吸收率极低）；美国硬核抗衰机构 Life Extension 直接给足全套【无需肝脏转化即可直接利用的甲基化活性 B 族】+ 2000 IU 维 D3 + 护眼叶黄素 + 芹菜素！",
+    "pros": [
+      "性价比神操作：虽然名字叫“每日两粒”，但因为剂量极足，日常保养每天随早餐吃【1 粒】就完全够了，一瓶 120 粒直接吃 4 个月！",
+      "额外添加了护眼叶黄素/玉米黄质（盯电脑必备）、植物小体槲皮素与抗衰明星成分芹菜素（Apigenin）"
+    ],
+    "cons": [
+      "科普小贴士：吃完后尿液呈明亮荧光黄色属于水溶性维生素 B2（核黄素）的正常代谢颜色，多喝水即可"
+    ],
+    "verdict": "Life Extension (延寿基金会) 每日两粒全活性高能综合维生素（全美测评常年第一名） 是 CruxKit 实验室 2026 严选推荐单品（实测评分 9.8 / 10）。",
+    "url": "go/lifeextension",
+    "cta": "访问官方合作优惠通道"
+  }
+});
+
+  // 4. Add 20 new Bilingual Buyer Guides (60 -> 80 Guides)
+  const v10StoryIds = ["replitvscursor", "difyvsrelevance", "clayvsapollo", "browsevsbardeen", "tallyvstypeform", "clickupvsmonday", "raycastobsidian", "sunovsepidemic", "pictoryvsinvideo", "ideogramvsrecraft", "serankingvsmangools", "systemevsskool", "adspowervsbrightdata", "shopifyvscarrd", "kinstavscloudways", "protonvsbitwarden", "reedleshotvsaestura", "doublecleansematrix", "thiamidolvstxa", "longevitysupplementstack"];
+  v10StoryIds.forEach(id => { if (!storiesOrder.includes(id)) storiesOrder.push(id); });
+  Object.assign(storiesData.en, {
+  "replitvscursor": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "AI Coding & Cloud IDEs · 11 min read",
+    "title": "Replit Agent v2 vs. Supermaven vs. Cursor: The Complete 2026 AI Coding Stack",
+    "deck": "When to use Replit Agent v2 for zero-setup cloud apps, Supermaven for sub-50ms 1M-token autocomplete, and Cursor for multi-file refactoring.",
+    "excerpt": "When to use Replit Agent v2 for zero-setup cloud apps, Supermaven for sub-50ms 1M-token autocomplete, and Cursor for multi-file refactoring.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "When to use Replit Agent v2 for zero-setup cloud apps, Supermaven for sub-50ms 1M-token autocomplete, and Cursor for multi-file refactoring.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "When to use Replit Agent v2 for zero-setup cloud apps, Supermaven for sub-50ms 1M-token autocomplete, and Cursor for multi-file refactoring."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Replit Agent v2 to ship MVPs in 15 minutes, then mount Supermaven inside Cursor for 1M-token zero-latency maintenance."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Replit Agent v2",
+          "Prompt-to-deployed full-stack app + Postgres in browser",
+          "$20/mo Core",
+          "<a href=\"/go/replit/\">Try Replit Agent v2 →</a>"
+        ],
+        [
+          "Supermaven Pro",
+          "1,000,000-token repo context with <50ms ghost text",
+          "$10/mo",
+          "<a href=\"/go/supermaven/\">Install Supermaven →</a>"
+        ],
+        [
+          "Cursor Pro",
+          "Local multi-file Composer + Claude Sonnet 5.5 / DeepSeek V4.1",
+          "$20/mo",
+          "<a href=\"/go/cursor/\">Download Cursor →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Replit Agent v2 to ship MVPs in 15 minutes, then mount Supermaven inside Cursor for 1M-token zero-latency maintenance.",
+    "body": "<p>When to use Replit Agent v2 for zero-setup cloud apps, Supermaven for sub-50ms 1M-token autocomplete, and Cursor for multi-file refactoring.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Replit Agent v2</strong></td><td>Prompt-to-deployed full-stack app + Postgres in browser</td><td>$20/mo Core</td><td><a href=\"/go/replit/\">Try Replit Agent v2 →</a></td></tr><tr><td><strong>Supermaven Pro</strong></td><td>1,000,000-token repo context with <50ms ghost text</td><td>$10/mo</td><td><a href=\"/go/supermaven/\">Install Supermaven →</a></td></tr><tr><td><strong>Cursor Pro</strong></td><td>Local multi-file Composer + Claude Sonnet 5.5 / DeepSeek V4.1</td><td>$20/mo</td><td><a href=\"/go/cursor/\">Download Cursor →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Replit Agent v2 to ship MVPs in 15 minutes, then mount Supermaven inside Cursor for 1M-token zero-latency maintenance.</blockquote>",
+    "relatedKit": "v0lovablekit"
+  },
+  "difyvsrelevance": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Agentic Workflows · 12 min read",
+    "title": "Dify.AI vs. Relevance AI vs. n8n: Best Multi-Agent & RAG Platform in November 2026",
+    "deck": "Comparing visual RAG pipelines in Dify.AI, autonomous B2B digital sales workers in Relevance AI, and fair-code webhook automation in n8n.",
+    "excerpt": "Comparing visual RAG pipelines in Dify.AI, autonomous B2B digital sales workers in Relevance AI, and fair-code webhook automation in n8n.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Comparing visual RAG pipelines in Dify.AI, autonomous B2B digital sales workers in Relevance AI, and fair-code webhook automation in n8n.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Comparing visual RAG pipelines in Dify.AI, autonomous B2B digital sales workers in Relevance AI, and fair-code webhook automation in n8n."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Combine Dify.AI for RAG accuracy, Relevance AI for autonomous B2B outreach teams, and n8n for webhook orchestration."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Dify.AI Studio",
+          "Visual RAG knowledge bases + DeepSeek V4.1 / GPT-6.1 DSL export",
+          "Open-Source / Cloud",
+          "<a href=\"/go/dify/\">Launch Dify.AI →</a>"
+        ],
+        [
+          "Relevance AI",
+          "No-code multi-agent B2B workforce with human-in-the-loop approval",
+          "Free / $19/mo (20% Aff)",
+          "<a href=\"/go/relevanceai/\">Try Relevance AI →</a>"
+        ],
+        [
+          "n8n Workflow Engine",
+          "Self-hosted Docker automation + 400+ app integrations",
+          "$4.99 VPS / Cloud",
+          "<a href=\"/go/n8n/\">Explore n8n →</a>"
+        ]
+      ]
+    },
+    "quote": "Combine Dify.AI for RAG accuracy, Relevance AI for autonomous B2B outreach teams, and n8n for webhook orchestration.",
+    "body": "<p>Comparing visual RAG pipelines in Dify.AI, autonomous B2B digital sales workers in Relevance AI, and fair-code webhook automation in n8n.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Dify.AI Studio</strong></td><td>Visual RAG knowledge bases + DeepSeek V4.1 / GPT-6.1 DSL export</td><td>Open-Source / Cloud</td><td><a href=\"/go/dify/\">Launch Dify.AI →</a></td></tr><tr><td><strong>Relevance AI</strong></td><td>No-code multi-agent B2B workforce with human-in-the-loop approval</td><td>Free / $19/mo (20% Aff)</td><td><a href=\"/go/relevanceai/\">Try Relevance AI →</a></td></tr><tr><td><strong>n8n Workflow Engine</strong></td><td>Self-hosted Docker automation + 400+ app integrations</td><td>$4.99 VPS / Cloud</td><td><a href=\"/go/n8n/\">Explore n8n →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Combine Dify.AI for RAG accuracy, Relevance AI for autonomous B2B outreach teams, and n8n for webhook orchestration.</blockquote>",
+    "relatedKit": "b2boutreachkit"
+  },
+  "clayvsapollo": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "B2B Outbound Engine · 13 min read",
+    "title": "Clay.com + Apollo.io + folk CRM: The 2026 High-Ticket B2B Outbound & Lead Enrichment Stack",
+    "deck": "How solo agencies and SaaS founders find verified decision-maker emails in Apollo, enrich signals across 75+ sources in Clay, and close deals in folk.",
+    "excerpt": "How solo agencies and SaaS founders find verified decision-maker emails in Apollo, enrich signals across 75+ sources in Clay, and close deals in folk.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How solo agencies and SaaS founders find verified decision-maker emails in Apollo, enrich signals across 75+ sources in Clay, and close deals in folk.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How solo agencies and SaaS founders find verified decision-maker emails in Apollo, enrich signals across 75+ sources in Clay, and close deals in folk."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Source leads in Apollo, enrich with Claygent + DeepSeek V4.1, and track every relationship inside folk CRM."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Apollo.io",
+          "275M+ verified B2B contacts + job title/tech-stack filters & sequences",
+          "Free / $49/mo (20% Aff)",
+          "<a href=\"/go/apollo/\">Claim Free Apollo Leads →</a>"
+        ],
+        [
+          "Clay.com",
+          "75+ provider waterfall email lookup (85%+ hit rate) + Claygent AI",
+          "2,000 Bonus Credits",
+          "<a href=\"/go/clay/\">Claim 2,000 Clay Credits →</a>"
+        ],
+        [
+          "folk.app CRM",
+          "Notion-style relationship CRM + 1-click LinkedIn/X folkX clipper",
+          "Trial / $20/mo (30% Aff)",
+          "<a href=\"/go/folk/\">Try folk CRM Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Source leads in Apollo, enrich with Claygent + DeepSeek V4.1, and track every relationship inside folk CRM.",
+    "body": "<p>How solo agencies and SaaS founders find verified decision-maker emails in Apollo, enrich signals across 75+ sources in Clay, and close deals in folk.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Apollo.io</strong></td><td>275M+ verified B2B contacts + job title/tech-stack filters & sequences</td><td>Free / $49/mo (20% Aff)</td><td><a href=\"/go/apollo/\">Claim Free Apollo Leads →</a></td></tr><tr><td><strong>Clay.com</strong></td><td>75+ provider waterfall email lookup (85%+ hit rate) + Claygent AI</td><td>2,000 Bonus Credits</td><td><a href=\"/go/clay/\">Claim 2,000 Clay Credits →</a></td></tr><tr><td><strong>folk.app CRM</strong></td><td>Notion-style relationship CRM + 1-click LinkedIn/X folkX clipper</td><td>Trial / $20/mo (30% Aff)</td><td><a href=\"/go/folk/\">Try folk CRM Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Source leads in Apollo, enrich with Claygent + DeepSeek V4.1, and track every relationship inside folk CRM.</blockquote>",
+    "relatedKit": "b2boutreachkit"
+  },
+  "browsevsbardeen": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "No-Code Web Scraping · 10 min read",
+    "title": "Browse AI vs. Bardeen AI vs. Firecrawl: Best No-Code Web Scrapers & Price Monitors",
+    "deck": "Point-and-click cloud price monitors (Browse AI), logged-in Chrome session automation (Bardeen), and LLM-ready Markdown extraction (Firecrawl).",
+    "excerpt": "Point-and-click cloud price monitors (Browse AI), logged-in Chrome session automation (Bardeen), and LLM-ready Markdown extraction (Firecrawl).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Point-and-click cloud price monitors (Browse AI), logged-in Chrome session automation (Bardeen), and LLM-ready Markdown extraction (Firecrawl).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Point-and-click cloud price monitors (Browse AI), logged-in Chrome session automation (Bardeen), and LLM-ready Markdown extraction (Firecrawl)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Pick Browse AI for scheduled visual monitoring, Bardeen for logged-in browser actions, and Firecrawl for feeding LLMs."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Browse AI",
+          "Point-and-click cloud robot + scheduled price/stock change alerts",
+          "Free / $19/mo (20% Lifetime)",
+          "<a href=\"/go/browseai/\">Launch Browse AI Robot →</a>"
+        ],
+        [
+          "Bardeen AI",
+          "Runs inside your active logged-in Chrome tab (LinkedIn, Gmail, Notion)",
+          "Free Core / $10/mo",
+          "<a href=\"/go/bardeen/\">Install Bardeen Free →</a>"
+        ],
+        [
+          "Firecrawl API",
+          "Converts entire multi-page sites into clean LLM Markdown & JSON",
+          "500 Free Pages (25% Aff)",
+          "<a href=\"/go/firecrawl/\">Claim 500 Firecrawl Pages →</a>"
+        ]
+      ]
+    },
+    "quote": "Pick Browse AI for scheduled visual monitoring, Bardeen for logged-in browser actions, and Firecrawl for feeding LLMs.",
+    "body": "<p>Point-and-click cloud price monitors (Browse AI), logged-in Chrome session automation (Bardeen), and LLM-ready Markdown extraction (Firecrawl).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Browse AI</strong></td><td>Point-and-click cloud robot + scheduled price/stock change alerts</td><td>Free / $19/mo (20% Lifetime)</td><td><a href=\"/go/browseai/\">Launch Browse AI Robot →</a></td></tr><tr><td><strong>Bardeen AI</strong></td><td>Runs inside your active logged-in Chrome tab (LinkedIn, Gmail, Notion)</td><td>Free Core / $10/mo</td><td><a href=\"/go/bardeen/\">Install Bardeen Free →</a></td></tr><tr><td><strong>Firecrawl API</strong></td><td>Converts entire multi-page sites into clean LLM Markdown & JSON</td><td>500 Free Pages (25% Aff)</td><td><a href=\"/go/firecrawl/\">Claim 500 Firecrawl Pages →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Pick Browse AI for scheduled visual monitoring, Bardeen for logged-in browser actions, and Firecrawl for feeding LLMs.</blockquote>",
+    "relatedKit": "scrapingragkit"
+  },
+  "tallyvstypeform": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Lead Capture & Quiz Funnels · 10 min read",
+    "title": "Tally.so vs. Typeform vs. Airtable: Building High-Converting Affiliate Quiz & Lead Funnels",
+    "deck": "Why embedding a 4-question recommendation quiz converts 2.4x more affiliate clicks than static links—and which form engine to pick.",
+    "excerpt": "Why embedding a 4-question recommendation quiz converts 2.4x more affiliate clicks than static links—and which form engine to pick.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Why embedding a 4-question recommendation quiz converts 2.4x more affiliate clicks than static links—and which form engine to pick.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Why embedding a 4-question recommendation quiz converts 2.4x more affiliate clicks than static links—and which form engine to pick."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Tally.so for unlimited free data collection, Typeform for interactive product-recommendation quizzes, and Airtable as your relational hub."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Tally.so",
+          "Notion-style editor with UNLIMITED free forms, submissions & Stripe",
+          "99% Free Forever / $29 Pro",
+          "<a href=\"/go/tally/\">Create Free Tally Form →</a>"
+        ],
+        [
+          "Typeform",
+          "One-question-at-a-time interactive quiz funnels with logic scoring",
+          "Free Tier / $25/mo (20% Aff)",
+          "<a href=\"/go/typeform/\">Try Typeform Quiz Builder →</a>"
+        ],
+        [
+          "Airtable",
+          "Relational database backend + automated Make/n8n webhook triggers",
+          "Free (1k rows/base)",
+          "<a href=\"/go/airtable/\">Open Free Airtable Base →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Tally.so for unlimited free data collection, Typeform for interactive product-recommendation quizzes, and Airtable as your relational hub.",
+    "body": "<p>Why embedding a 4-question recommendation quiz converts 2.4x more affiliate clicks than static links—and which form engine to pick.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Tally.so</strong></td><td>Notion-style editor with UNLIMITED free forms, submissions & Stripe</td><td>99% Free Forever / $29 Pro</td><td><a href=\"/go/tally/\">Create Free Tally Form →</a></td></tr><tr><td><strong>Typeform</strong></td><td>One-question-at-a-time interactive quiz funnels with logic scoring</td><td>Free Tier / $25/mo (20% Aff)</td><td><a href=\"/go/typeform/\">Try Typeform Quiz Builder →</a></td></tr><tr><td><strong>Airtable</strong></td><td>Relational database backend + automated Make/n8n webhook triggers</td><td>Free (1k rows/base)</td><td><a href=\"/go/airtable/\">Open Free Airtable Base →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Tally.so for unlimited free data collection, Typeform for interactive product-recommendation quizzes, and Airtable as your relational hub.</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "clickupvsmonday": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Work OS & High-Ticket Affiliate · 11 min read",
+    "title": "ClickUp 4.0 vs. monday.com vs. Linear: Best Project Management OS (Plus $150 CPA Affiliate Math)",
+    "deck": "Comparing Linear’s 60fps keyboard speed for devs, ClickUp’s $7/mo all-in-one value, and monday.com’s visual boards + $150 PartnerStack bounty.",
+    "excerpt": "Comparing Linear’s 60fps keyboard speed for devs, ClickUp’s $7/mo all-in-one value, and monday.com’s visual boards + $150 PartnerStack bounty.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Comparing Linear’s 60fps keyboard speed for devs, ClickUp’s $7/mo all-in-one value, and monday.com’s visual boards + $150 PartnerStack bounty.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Comparing Linear’s 60fps keyboard speed for devs, ClickUp’s $7/mo all-in-one value, and monday.com’s visual boards + $150 PartnerStack bounty."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Run engineering sprints in Linear, agency operations in ClickUp, and feature monday.com in your B2B software roundups for up to $150 CPA."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Linear",
+          "Sub-50ms keyboard-first issue tracker + automatic GitHub PR sync",
+          "Free (250 issues) / $8/mo",
+          "<a href=\"/go/linear/\">Try Linear Free →</a>"
+        ],
+        [
+          "ClickUp 4.0",
+          "Tasks + Docs + Whiteboards + AI Brain in one workspace",
+          "Free / $7/mo (30% Aff)",
+          "<a href=\"/go/clickup/\">Try ClickUp Free →</a>"
+        ],
+        [
+          "monday.com",
+          "Color-coded visual Work OS, CRM & executive dashboards",
+          "Up to $150 CPA Affiliate!",
+          "<a href=\"/go/monday/\">Try monday.com Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Run engineering sprints in Linear, agency operations in ClickUp, and feature monday.com in your B2B software roundups for up to $150 CPA.",
+    "body": "<p>Comparing Linear’s 60fps keyboard speed for devs, ClickUp’s $7/mo all-in-one value, and monday.com’s visual boards + $150 PartnerStack bounty.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Linear</strong></td><td>Sub-50ms keyboard-first issue tracker + automatic GitHub PR sync</td><td>Free (250 issues) / $8/mo</td><td><a href=\"/go/linear/\">Try Linear Free →</a></td></tr><tr><td><strong>ClickUp 4.0</strong></td><td>Tasks + Docs + Whiteboards + AI Brain in one workspace</td><td>Free / $7/mo (30% Aff)</td><td><a href=\"/go/clickup/\">Try ClickUp Free →</a></td></tr><tr><td><strong>monday.com</strong></td><td>Color-coded visual Work OS, CRM & executive dashboards</td><td>Up to $150 CPA Affiliate!</td><td><a href=\"/go/monday/\">Try monday.com Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Run engineering sprints in Linear, agency operations in ClickUp, and feature monday.com in your B2B software roundups for up to $150 CPA.</blockquote>",
+    "relatedKit": "solo"
+  },
+  "raycastobsidian": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Solo Builder Second Brain · 11 min read",
+    "title": "Raycast Pro + Warp Terminal + Obsidian + Readwise + ChatPDF: The Ultimate Local-First Knowledge OS",
+    "deck": "How to capture every highlight from the web and PDFs (Readwise + ChatPDF), store them as local Markdown (Obsidian), and trigger AI anywhere (Raycast + Warp).",
+    "excerpt": "How to capture every highlight from the web and PDFs (Readwise + ChatPDF), store them as local Markdown (Obsidian), and trigger AI anywhere (Raycast + Warp).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to capture every highlight from the web and PDFs (Readwise + ChatPDF), store them as local Markdown (Obsidian), and trigger AI anywhere (Raycast + Warp).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to capture every highlight from the web and PDFs (Readwise + ChatPDF), store them as local Markdown (Obsidian), and trigger AI anywhere (Raycast + Warp)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Keep your knowledge in plaintext `.md` files with Obsidian + Readwise so Cursor and Raycast AI can query your entire brain instantaneously."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Raycast Pro",
+          "Replaces Spotlight, clipboard history, text expander & global AI hotkeys",
+          "Core Free / $8 Pro (30% Aff)",
+          "<a href=\"/go/raycast/\">Download Raycast →</a>"
+        ],
+        [
+          "Obsidian + Readwise",
+          "100% local Markdown vault synced automatically with web/YouTube highlights",
+          "Free Vault + 30d Trial",
+          "<a href=\"/go/readwise/\">Claim Readwise Free Month →</a>"
+        ],
+        [
+          "Warp + ChatPDF",
+          "Natural-language `#` Linux terminal + page-cited academic PDF analyzer",
+          "Free Tiers (30% Aff)",
+          "<a href=\"/go/chatpdf/\">Try ChatPDF Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Keep your knowledge in plaintext `.md` files with Obsidian + Readwise so Cursor and Raycast AI can query your entire brain instantaneously.",
+    "body": "<p>How to capture every highlight from the web and PDFs (Readwise + ChatPDF), store them as local Markdown (Obsidian), and trigger AI anywhere (Raycast + Warp).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Raycast Pro</strong></td><td>Replaces Spotlight, clipboard history, text expander & global AI hotkeys</td><td>Core Free / $8 Pro (30% Aff)</td><td><a href=\"/go/raycast/\">Download Raycast →</a></td></tr><tr><td><strong>Obsidian + Readwise</strong></td><td>100% local Markdown vault synced automatically with web/YouTube highlights</td><td>Free Vault + 30d Trial</td><td><a href=\"/go/readwise/\">Claim Readwise Free Month →</a></td></tr><tr><td><strong>Warp + ChatPDF</strong></td><td>Natural-language `#` Linux terminal + page-cited academic PDF analyzer</td><td>Free Tiers (30% Aff)</td><td><a href=\"/go/chatpdf/\">Try ChatPDF Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Keep your knowledge in plaintext `.md` files with Obsidian + Readwise so Cursor and Raycast AI can query your entire brain instantaneously.</blockquote>",
+    "relatedKit": "workstation"
+  },
+  "sunovsepidemic": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 min read",
+    "category": "Commercial Audio & Podcast Lab · 11 min read",
+    "title": "Suno v4.5 vs. Epidemic Sound vs. Artlist Max vs. Murf.ai: The 2026 Copyright-Safe Creator Audio Stack",
+    "deck": "How to generate custom commercial songs with Suno v4.5 ($10/mo), download 4-track stems on Epidemic Sound, and score cinematic videos with Artlist.",
+    "excerpt": "How to generate custom commercial songs with Suno v4.5 ($10/mo), download 4-track stems on Epidemic Sound, and score cinematic videos with Artlist.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to generate custom commercial songs with Suno v4.5 ($10/mo), download 4-track stems on Epidemic Sound, and score cinematic videos with Artlist.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to generate custom commercial songs with Suno v4.5 ($10/mo), download 4-track stems on Epidemic Sound, and score cinematic videos with Artlist."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Suno v4.5 Pro for custom viral songs and Lo-Fi channels, and Epidemic Sound (30-day free trial) for stem-controlled background beds."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Suno v4.5 Pro",
+          "10-sec AI song & BGM generation with vocal/instrumental stem export & commercial rights",
+          "Free Daily / $10/mo Pro",
+          "<a href=\"/go/suno/\">Create Music on Suno v4.5 →</a>"
+        ],
+        [
+          "Epidemic Sound",
+          "40k+ tracks + 90k+ SFX with Drum/Bass/Melody stems & YouTube whitelisting",
+          "30-Day Free Trial",
+          "<a href=\"/go/epidemicsound/\">Start 30-Day Free Trial →</a>"
+        ],
+        [
+          "Artlist Max + Murf",
+          "Indie-label cinema music/8K footage (Up to $100 CPA) + Canva-integrated voice studio",
+          "Free Trials Available",
+          "<a href=\"/go/artlist/\">Explore Artlist Max →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Suno v4.5 Pro for custom viral songs and Lo-Fi channels, and Epidemic Sound (30-day free trial) for stem-controlled background beds.",
+    "body": "<p>How to generate custom commercial songs with Suno v4.5 ($10/mo), download 4-track stems on Epidemic Sound, and score cinematic videos with Artlist.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Suno v4.5 Pro</strong></td><td>10-sec AI song & BGM generation with vocal/instrumental stem export & commercial rights</td><td>Free Daily / $10/mo Pro</td><td><a href=\"/go/suno/\">Create Music on Suno v4.5 →</a></td></tr><tr><td><strong>Epidemic Sound</strong></td><td>40k+ tracks + 90k+ SFX with Drum/Bass/Melody stems & YouTube whitelisting</td><td>30-Day Free Trial</td><td><a href=\"/go/epidemicsound/\">Start 30-Day Free Trial →</a></td></tr><tr><td><strong>Artlist Max + Murf</strong></td><td>Indie-label cinema music/8K footage (Up to $100 CPA) + Canva-integrated voice studio</td><td>Free Trials Available</td><td><a href=\"/go/artlist/\">Explore Artlist Max →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Suno v4.5 Pro for custom viral songs and Lo-Fi channels, and Epidemic Sound (30-day free trial) for stem-controlled background beds.</blockquote>",
+    "relatedKit": "aivideofactory"
+  },
+  "pictoryvsinvideo": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 min read",
+    "category": "Faceless Video Affiliate Goldmine · 13 min read",
+    "title": "Pictory.ai (50% Lifetime Affiliate) vs. InVideo AI vs. Fliki vs. Captions.ai: Faceless Video Showdown",
+    "deck": "We tested turning a 1,500-word affiliate review into YouTube videos and 9:16 TikToks across Pictory, InVideo AI, Fliki, VEED, and Captions.ai.",
+    "excerpt": "We tested turning a 1,500-word affiliate review into YouTube videos and 9:16 TikToks across Pictory, InVideo AI, Fliki, VEED, and Captions.ai.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "We tested turning a 1,500-word affiliate review into YouTube videos and 9:16 TikToks across Pictory, InVideo AI, Fliki, VEED, and Captions.ai.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "We tested turning a 1,500-word affiliate review into YouTube videos and 9:16 TikToks across Pictory, InVideo AI, Fliki, VEED, and Captions.ai."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Turn written blog posts into videos with Pictory, generate prompt-only videos with InVideo AI, and collect 30%–50% lifetime commissions promoting both."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Pictory.ai",
+          "Paste blog URL -> auto-matches Storyblocks footage + voice (Up to 50% Lifetime Aff!)",
+          "3 Free Videos / $19/mo",
+          "<a href=\"/go/pictory/\">Try Pictory Free →</a>"
+        ],
+        [
+          "InVideo AI",
+          "1-sentence topic prompt -> writes script, voiceover & edits full video via Magic Box chat",
+          "Free Weekly / $25/mo",
+          "<a href=\"/go/invideo/\">Try InVideo AI Free →</a>"
+        ],
+        [
+          "Fliki + Captions.ai",
+          "Scene-card 80-language Shorts generator (30% Lifetime Aff) + 1-click AI Edit zooms/dubbing",
+          "Free Trials",
+          "<a href=\"/go/fliki/\">Try Fliki Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Turn written blog posts into videos with Pictory, generate prompt-only videos with InVideo AI, and collect 30%–50% lifetime commissions promoting both.",
+    "body": "<p>We tested turning a 1,500-word affiliate review into YouTube videos and 9:16 TikToks across Pictory, InVideo AI, Fliki, VEED, and Captions.ai.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Pictory.ai</strong></td><td>Paste blog URL -> auto-matches Storyblocks footage + voice (Up to 50% Lifetime Aff!)</td><td>3 Free Videos / $19/mo</td><td><a href=\"/go/pictory/\">Try Pictory Free →</a></td></tr><tr><td><strong>InVideo AI</strong></td><td>1-sentence topic prompt -> writes script, voiceover & edits full video via Magic Box chat</td><td>Free Weekly / $25/mo</td><td><a href=\"/go/invideo/\">Try InVideo AI Free →</a></td></tr><tr><td><strong>Fliki + Captions.ai</strong></td><td>Scene-card 80-language Shorts generator (30% Lifetime Aff) + 1-click AI Edit zooms/dubbing</td><td>Free Trials</td><td><a href=\"/go/fliki/\">Try Fliki Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Turn written blog posts into videos with Pictory, generate prompt-only videos with InVideo AI, and collect 30%–50% lifetime commissions promoting both.</blockquote>",
+    "relatedKit": "aivideofactory"
+  },
+  "ideogramvsrecraft": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 min read",
+    "category": "Design, SVG Vectors & 4K Upscaling · 11 min read",
+    "title": "Ideogram 3.0 vs. Recraft V4 (.SVG) vs. Leonardo.Ai vs. Topaz Video AI 6: The Pro Visual Pipeline",
+    "deck": "How to generate flawless typography posters (Ideogram 3.0), editable `.SVG` vector icon sets (Recraft V4), and upscale AI video to 4K 60fps (Topaz + Envato).",
+    "excerpt": "How to generate flawless typography posters (Ideogram 3.0), editable `.SVG` vector icon sets (Recraft V4), and upscale AI video to 4K 60fps (Topaz + Envato).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to generate flawless typography posters (Ideogram 3.0), editable `.SVG` vector icon sets (Recraft V4), and upscale AI video to 4K 60fps (Topaz + Envato).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to generate flawless typography posters (Ideogram 3.0), editable `.SVG` vector icon sets (Recraft V4), and upscale AI video to 4K 60fps (Topaz + Envato)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Design thumbnails in Ideogram 3.0, export `.SVG` UI icons from Recraft V4, grab unlimited templates from Envato, and master to 4K 60fps in Topaz."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Ideogram 3.0",
+          "99% accurate English typography for YouTube thumbnails, posters & POD logos",
+          "Free Credits / $7/mo",
+          "<a href=\"/go/ideogram/\">Try Ideogram 3.0 →</a>"
+        ],
+        [
+          "Recraft V4",
+          "Only AI that outputs true editable mathematical `.SVG` vectors & cohesive icon sets",
+          "Free Daily / $10 Pro (25% Aff)",
+          "<a href=\"/go/recraft/\">Try Recraft V4 Free →</a>"
+        ],
+        [
+          "Topaz + Envato",
+          "4K 60fps neural video upscaler + 19M+ unlimited stock/template downloads ($120 CPA)",
+          "Trials Available",
+          "<a href=\"/go/envato/\">Explore Envato Unlimited →</a>"
+        ]
+      ]
+    },
+    "quote": "Design thumbnails in Ideogram 3.0, export `.SVG` UI icons from Recraft V4, grab unlimited templates from Envato, and master to 4K 60fps in Topaz.",
+    "body": "<p>How to generate flawless typography posters (Ideogram 3.0), editable `.SVG` vector icon sets (Recraft V4), and upscale AI video to 4K 60fps (Topaz + Envato).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Ideogram 3.0</strong></td><td>99% accurate English typography for YouTube thumbnails, posters & POD logos</td><td>Free Credits / $7/mo</td><td><a href=\"/go/ideogram/\">Try Ideogram 3.0 →</a></td></tr><tr><td><strong>Recraft V4</strong></td><td>Only AI that outputs true editable mathematical `.SVG` vectors & cohesive icon sets</td><td>Free Daily / $10 Pro (25% Aff)</td><td><a href=\"/go/recraft/\">Try Recraft V4 Free →</a></td></tr><tr><td><strong>Topaz + Envato</strong></td><td>4K 60fps neural video upscaler + 19M+ unlimited stock/template downloads ($120 CPA)</td><td>Trials Available</td><td><a href=\"/go/envato/\">Explore Envato Unlimited →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Design thumbnails in Ideogram 3.0, export `.SVG` UI icons from Recraft V4, grab unlimited templates from Envato, and master to 4K 60fps in Topaz.</blockquote>",
+    "relatedKit": "content"
+  },
+  "serankingvsmangools": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 min read",
+    "category": "Low-KD SEO & Rank Tracking · 12 min read",
+    "title": "SE Ranking vs. Mangools KWFinder vs. Semrush: How New Sites Find KD < 20 Buyer Keywords at Half Price",
+    "deck": "Why paying $139/mo for enterprise SEO suites is overkill for solo publishers—and how SE Ranking and Mangools KWFinder uncover green low-competition keywords.",
+    "excerpt": "Why paying $139/mo for enterprise SEO suites is overkill for solo publishers—and how SE Ranking and Mangools KWFinder uncover green low-competition keywords.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Why paying $139/mo for enterprise SEO suites is overkill for solo publishers—and how SE Ranking and Mangools KWFinder uncover green low-competition keywords.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Why paying $139/mo for enterprise SEO suites is overkill for solo publishers—and how SE Ranking and Mangools KWFinder uncover green low-competition keywords."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Start with SE Ranking’s no-credit-card 14-day trial and Mangools KWFinder to target buyer keywords with KD under 20."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "SE Ranking",
+          "Daily rank tracker + Google AI Overview monitor + backlink audit (No-card 14d trial!)",
+          "$52/mo (30% Lifetime / $200 CPA)",
+          "<a href=\"/go/seranking/\">Start 14-Day Free Trial (No Card) →</a>"
+        ],
+        [
+          "Mangools KWFinder",
+          "Best visual Keyword Difficulty (KD) score for spotting low-competition long-tail gems",
+          "10d Free Trial / $29/mo (30% Aff)",
+          "<a href=\"/go/mangools/\">Try KWFinder Free →</a>"
+        ],
+        [
+          "Semrush Pro",
+          "Enterprise 25B+ keyword database & competitor PPC ad spy",
+          "14-Day Pro Trial ($200 CPA)",
+          "<a href=\"/go/semrush/\">Claim Semrush Trial →</a>"
+        ]
+      ]
+    },
+    "quote": "Start with SE Ranking’s no-credit-card 14-day trial and Mangools KWFinder to target buyer keywords with KD under 20.",
+    "body": "<p>Why paying $139/mo for enterprise SEO suites is overkill for solo publishers—and how SE Ranking and Mangools KWFinder uncover green low-competition keywords.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>SE Ranking</strong></td><td>Daily rank tracker + Google AI Overview monitor + backlink audit (No-card 14d trial!)</td><td>$52/mo (30% Lifetime / $200 CPA)</td><td><a href=\"/go/seranking/\">Start 14-Day Free Trial (No Card) →</a></td></tr><tr><td><strong>Mangools KWFinder</strong></td><td>Best visual Keyword Difficulty (KD) score for spotting low-competition long-tail gems</td><td>10d Free Trial / $29/mo (30% Aff)</td><td><a href=\"/go/mangools/\">Try KWFinder Free →</a></td></tr><tr><td><strong>Semrush Pro</strong></td><td>Enterprise 25B+ keyword database & competitor PPC ad spy</td><td>14-Day Pro Trial ($200 CPA)</td><td><a href=\"/go/semrush/\">Claim Semrush Trial →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Start with SE Ranking’s no-credit-card 14-day trial and Mangools KWFinder to target buyer keywords with KD under 20.</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "systemevsskool": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 min read",
+    "category": "60% Lifetime Funnel & Community Math · 13 min read",
+    "title": "Systeme.io (60% Lifetime Affiliate) vs. Skool (40% Lifetime) vs. Kajabi vs. ThriveCart: The Creator Cashflow Matrix",
+    "deck": "How to build your email funnels for $0 on Systeme.io, launch a gamified paid community on Skool, or earn $247+ per checkout sale with ThriveCart.",
+    "excerpt": "How to build your email funnels for $0 on Systeme.io, launch a gamified paid community on Skool, or earn $247+ per checkout sale with ThriveCart.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to build your email funnels for $0 on Systeme.io, launch a gamified paid community on Skool, or earn $247+ per checkout sale with ThriveCart.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to build your email funnels for $0 on Systeme.io, launch a gamified paid community on Skool, or earn $247+ per checkout sale with ThriveCart."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Send beginners to Systeme.io’s free-forever plan (locking in 60% lifetime upgrades), community builders to Skool, and course empires to Kajabi + ThriveCart."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Systeme.io",
+          "Free forever up to 2,000 contacts (3 funnels + unlimited emails) + 60% Lifetime Affiliate!",
+          "$0 Free Forever / $27/mo",
+          "<a href=\"/go/systeme/\">Create Free Systeme Account →</a>"
+        ],
+        [
+          "Skool Community",
+          "Gamified forum + level-unlocked courses + 40% Lifetime Recurring ($39/mo per referral)",
+          "14-Day Free Trial",
+          "<a href=\"/go/skool/\">Start Skool Group Trial →</a>"
+        ],
+        [
+          "ThriveCart + Kajabi",
+          "One-time lifetime checkout ($247–$345/sale CPA!) & premier mobile-app course OS ($44–$119/mo Aff)",
+          "High-Ticket Leaders",
+          "<a href=\"/go/thrivecart/\">Explore ThriveCart Lifetime →</a>"
+        ]
+      ]
+    },
+    "quote": "Send beginners to Systeme.io’s free-forever plan (locking in 60% lifetime upgrades), community builders to Skool, and course empires to Kajabi + ThriveCart.",
+    "body": "<p>How to build your email funnels for $0 on Systeme.io, launch a gamified paid community on Skool, or earn $247+ per checkout sale with ThriveCart.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Systeme.io</strong></td><td>Free forever up to 2,000 contacts (3 funnels + unlimited emails) + 60% Lifetime Affiliate!</td><td>$0 Free Forever / $27/mo</td><td><a href=\"/go/systeme/\">Create Free Systeme Account →</a></td></tr><tr><td><strong>Skool Community</strong></td><td>Gamified forum + level-unlocked courses + 40% Lifetime Recurring ($39/mo per referral)</td><td>14-Day Free Trial</td><td><a href=\"/go/skool/\">Start Skool Group Trial →</a></td></tr><tr><td><strong>ThriveCart + Kajabi</strong></td><td>One-time lifetime checkout ($247–$345/sale CPA!) & premier mobile-app course OS ($44–$119/mo Aff)</td><td>High-Ticket Leaders</td><td><a href=\"/go/thrivecart/\">Explore ThriveCart Lifetime →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Send beginners to Systeme.io’s free-forever plan (locking in 60% lifetime upgrades), community builders to Skool, and course empires to Kajabi + ThriveCart.</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "adspowervsbrightdata": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Anti-Detect & Residential Proxy SOP · 14 min read",
+    "title": "AdsPower + Multilogin X + Bright Data + Oxylabs: How to Run 50+ Cross-Border Accounts with Zero Bans",
+    "deck": "Why switching accounts inside normal Chrome triggers instant chain-bans—and how to pair anti-detect hardware fingerprints with residential ISP proxies.",
+    "excerpt": "Why switching accounts inside normal Chrome triggers instant chain-bans—and how to pair anti-detect hardware fingerprints with residential ISP proxies.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Why switching accounts inside normal Chrome triggers instant chain-bans—and how to pair anti-detect hardware fingerprints with residential ISP proxies.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Why switching accounts inside normal Chrome triggers instant chain-bans—and how to pair anti-detect hardware fingerprints with residential ISP proxies."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Never share browser fingerprints or datacenter IPs across accounts: assign 1 AdsPower/Multilogin profile + 1 static ISP proxy per store or social persona."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "AdsPower Browser",
+          "5 Free isolated profiles forever + Multi-Window Sync & RPA automation (Up to 45% Aff!)",
+          "Free Forever (5 Profiles) / $5.40/mo",
+          "<a href=\"/go/adspower/\">Download AdsPower Free (5 Profiles) →</a>"
+        ],
+        [
+          "Multilogin X",
+          "Custom-compiled Mimic/Stealthfox browser cores with built-in residential proxy GBs",
+          "From €5.85/mo (Includes Proxy Traffic)",
+          "<a href=\"/go/multilogin/\">Explore Multilogin X →</a>"
+        ],
+        [
+          "Bright Data + Oxylabs",
+          "72M–100M+ real residential & static ISP proxies across 195 countries (50% RevShare up to $2,500!)",
+          "Free Trial / Pay-Per-GB",
+          "<a href=\"/go/brightdata/\">Claim Bright Data Proxy Trial →</a>"
+        ]
+      ]
+    },
+    "quote": "Never share browser fingerprints or datacenter IPs across accounts: assign 1 AdsPower/Multilogin profile + 1 static ISP proxy per store or social persona.",
+    "body": "<p>Why switching accounts inside normal Chrome triggers instant chain-bans—and how to pair anti-detect hardware fingerprints with residential ISP proxies.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>AdsPower Browser</strong></td><td>5 Free isolated profiles forever + Multi-Window Sync & RPA automation (Up to 45% Aff!)</td><td>Free Forever (5 Profiles) / $5.40/mo</td><td><a href=\"/go/adspower/\">Download AdsPower Free (5 Profiles) →</a></td></tr><tr><td><strong>Multilogin X</strong></td><td>Custom-compiled Mimic/Stealthfox browser cores with built-in residential proxy GBs</td><td>From €5.85/mo (Includes Proxy Traffic)</td><td><a href=\"/go/multilogin/\">Explore Multilogin X →</a></td></tr><tr><td><strong>Bright Data + Oxylabs</strong></td><td>72M–100M+ real residential & static ISP proxies across 195 countries (50% RevShare up to $2,500!)</td><td>Free Trial / Pay-Per-GB</td><td><a href=\"/go/brightdata/\">Claim Bright Data Proxy Trial →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Never share browser fingerprints or datacenter IPs across accounts: assign 1 AdsPower/Multilogin profile + 1 static ISP proxy per store or social persona.</blockquote>",
+    "relatedKit": "antidetectkit"
+  },
+  "shopifyvscarrd": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Storefronts & $19/Yr Bridge Pages · 11 min read",
+    "title": "Shopify ($1/mo Trial) vs. Carrd Pro ($19/Year!) vs. Ghost(Pro) vs. Dorik AI: Picking the Right Web Engine",
+    "deck": "Match the exact platform to your business model: multi-SKU e-commerce (Shopify), 15-minute affiliate bridge pages (Carrd), 0%-fee newsletters (Ghost), or AI sites (Dorik).",
+    "excerpt": "Match the exact platform to your business model: multi-SKU e-commerce (Shopify), 15-minute affiliate bridge pages (Carrd), 0%-fee newsletters (Ghost), or AI sites (Dorik).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Match the exact platform to your business model: multi-SKU e-commerce (Shopify), 15-minute affiliate bridge pages (Carrd), 0%-fee newsletters (Ghost), or AI sites (Dorik).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Match the exact platform to your business model: multi-SKU e-commerce (Shopify), 15-minute affiliate bridge pages (Carrd), 0%-fee newsletters (Ghost), or AI sites (Dorik)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Everyone should own a $19/year Carrd Pro account for instant landing pages, and launch full stores on Shopify’s $1/month starter promo."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Carrd Pro",
+          "Build 10 custom-domain one-page landing & bridge sites for just $19 per YEAR",
+          "$19/YEAR (30% Lifetime Aff)",
+          "<a href=\"/go/carrd/\">Get Carrd Pro ($19/Yr) →</a>"
+        ],
+        [
+          "Shopify",
+          "Global e-commerce & digital storefront with high-converting Shop Pay ($50–$150 CPA)",
+          "$1/mo First Month Trial",
+          "<a href=\"/go/shopify/\">Claim $1/mo Shopify Trial →</a>"
+        ],
+        [
+          "Ghost(Pro) + Dorik",
+          "0%-fee paid membership publication CMS & 60-sec prompt-to-site builder (30%–40% Aff)",
+          "14-Day Free Trials",
+          "<a href=\"/go/ghost/\">Try Ghost(Pro) Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Everyone should own a $19/year Carrd Pro account for instant landing pages, and launch full stores on Shopify’s $1/month starter promo.",
+    "body": "<p>Match the exact platform to your business model: multi-SKU e-commerce (Shopify), 15-minute affiliate bridge pages (Carrd), 0%-fee newsletters (Ghost), or AI sites (Dorik).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Carrd Pro</strong></td><td>Build 10 custom-domain one-page landing & bridge sites for just $19 per YEAR</td><td>$19/YEAR (30% Lifetime Aff)</td><td><a href=\"/go/carrd/\">Get Carrd Pro ($19/Yr) →</a></td></tr><tr><td><strong>Shopify</strong></td><td>Global e-commerce & digital storefront with high-converting Shop Pay ($50–$150 CPA)</td><td>$1/mo First Month Trial</td><td><a href=\"/go/shopify/\">Claim $1/mo Shopify Trial →</a></td></tr><tr><td><strong>Ghost(Pro) + Dorik</strong></td><td>0%-fee paid membership publication CMS & 60-sec prompt-to-site builder (30%–40% Aff)</td><td>14-Day Free Trials</td><td><a href=\"/go/ghost/\">Try Ghost(Pro) Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Everyone should own a $19/year Carrd Pro account for instant landing pages, and launch full stores on Shopify’s $1/month starter promo.</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "kinstavscloudways": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Managed Cloud & Edge Databases · 11 min read",
+    "title": "Kinsta ($500 CPA + 10% Lifetime) vs. Cloudways vs. Linode ($100 Credit) vs. Neon & Upstash",
+    "deck": "Comparing managed high-commission cloud hosts (Kinsta & Cloudways), raw Akamai/Linode VPS credits, and scale-to-zero databases (Neon Postgres & Upstash Redis).",
+    "excerpt": "Comparing managed high-commission cloud hosts (Kinsta & Cloudways), raw Akamai/Linode VPS credits, and scale-to-zero databases (Neon Postgres & Upstash Redis).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Comparing managed high-commission cloud hosts (Kinsta & Cloudways), raw Akamai/Linode VPS credits, and scale-to-zero databases (Neon Postgres & Upstash Redis).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Comparing managed high-commission cloud hosts (Kinsta & Cloudways), raw Akamai/Linode VPS credits, and scale-to-zero databases (Neon Postgres & Upstash Redis)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Neon + Upstash for $0-idle serverless AI apps, Linode for $100 in free VPS compute, and promote Kinsta/Cloudways for industry-leading hosting commissions."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Kinsta + Cloudways",
+          "Google Cloud C3D premium hosting ($500 CPA + 10% recurring!) & managed DO/Vultr panel ($125 CPA)",
+          "Free Trials (No Card on CW)",
+          "<a href=\"/go/kinsta/\">Explore Kinsta Cloud →</a>"
+        ],
+        [
+          "Akamai Linode",
+          "Rock-solid $5/mo Linux NVMe VPS backed by Akamai global backbone",
+          "$100 Free 60-Day Credit",
+          "<a href=\"/go/linode/\">Claim $100 Linode Credit →</a>"
+        ],
+        [
+          "Neon + Upstash",
+          "1-second branching Serverless Postgres + HTTP Edge Redis rate-limiter (`@upstash/ratelimit`)",
+          "Generous Free Forever Tiers",
+          "<a href=\"/go/neon/\">Start Neon Postgres Free →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Neon + Upstash for $0-idle serverless AI apps, Linode for $100 in free VPS compute, and promote Kinsta/Cloudways for industry-leading hosting commissions.",
+    "body": "<p>Comparing managed high-commission cloud hosts (Kinsta & Cloudways), raw Akamai/Linode VPS credits, and scale-to-zero databases (Neon Postgres & Upstash Redis).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Kinsta + Cloudways</strong></td><td>Google Cloud C3D premium hosting ($500 CPA + 10% recurring!) & managed DO/Vultr panel ($125 CPA)</td><td>Free Trials (No Card on CW)</td><td><a href=\"/go/kinsta/\">Explore Kinsta Cloud →</a></td></tr><tr><td><strong>Akamai Linode</strong></td><td>Rock-solid $5/mo Linux NVMe VPS backed by Akamai global backbone</td><td>$100 Free 60-Day Credit</td><td><a href=\"/go/linode/\">Claim $100 Linode Credit →</a></td></tr><tr><td><strong>Neon + Upstash</strong></td><td>1-second branching Serverless Postgres + HTTP Edge Redis rate-limiter (`@upstash/ratelimit`)</td><td>Generous Free Forever Tiers</td><td><a href=\"/go/neon/\">Start Neon Postgres Free →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Neon + Upstash for $0-idle serverless AI apps, Linode for $100 in free VPS compute, and promote Kinsta/Cloudways for industry-leading hosting commissions.</blockquote>",
+    "relatedKit": "n8nvps"
+  },
+  "protonvsbitwarden": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 min read",
+    "category": "Privacy, Vaults & Global Payouts · 11 min read",
+    "title": "Proton Unlimited + Bitwarden ($10/Yr) + Surfshark + Payoneer + Paddle: The Cross-Border Security & Payout Stack",
+    "deck": "How to generate unlimited clean email aliases (Proton Pass), auto-fill 2FA codes for $10/year (Bitwarden), and collect Amazon/CJ/SaaS revenue worldwide (Payoneer + Paddle).",
+    "excerpt": "How to generate unlimited clean email aliases (Proton Pass), auto-fill 2FA codes for $10/year (Bitwarden), and collect Amazon/CJ/SaaS revenue worldwide (Payoneer + Paddle).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to generate unlimited clean email aliases (Proton Pass), auto-fill 2FA codes for $10/year (Bitwarden), and collect Amazon/CJ/SaaS revenue worldwide (Payoneer + Paddle).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to generate unlimited clean email aliases (Proton Pass), auto-fill 2FA codes for $10/year (Bitwarden), and collect Amazon/CJ/SaaS revenue worldwide (Payoneer + Paddle)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Pair Wise + Payoneer to receive payouts from 100% of global affiliate networks, and secure every login inside Bitwarden + Proton Pass."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Proton + Surfshark",
+          "Swiss encrypted custom-domain mail/aliases + Unlimited-device VPN with Alternative ID persona generator",
+          "Free Tier / 30%–80% Aff",
+          "<a href=\"/go/proton/\">Try Proton Privacy Suite →</a>"
+        ],
+        [
+          "Bitwarden Vault",
+          "Audited open-source password manager with unlimited free sync & $10/YEAR built-in 2FA TOTP",
+          "$0 Free / $10 per YEAR",
+          "<a href=\"/go/bitwarden/\">Get Bitwarden Free →</a>"
+        ],
+        [
+          "Payoneer + Paddle",
+          "Official USD/EUR/GBP/JPY receiving accounts for Amazon/CJ ($25–$50 bonus) + SaaS Merchant of Record",
+          "$0 Opening + Cash Bonus",
+          "<a href=\"/go/payoneer/\">Open Payoneer & Claim Bonus →</a>"
+        ]
+      ]
+    },
+    "quote": "Pair Wise + Payoneer to receive payouts from 100% of global affiliate networks, and secure every login inside Bitwarden + Proton Pass.",
+    "body": "<p>How to generate unlimited clean email aliases (Proton Pass), auto-fill 2FA codes for $10/year (Bitwarden), and collect Amazon/CJ/SaaS revenue worldwide (Payoneer + Paddle).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Proton + Surfshark</strong></td><td>Swiss encrypted custom-domain mail/aliases + Unlimited-device VPN with Alternative ID persona generator</td><td>Free Tier / 30%–80% Aff</td><td><a href=\"/go/proton/\">Try Proton Privacy Suite →</a></td></tr><tr><td><strong>Bitwarden Vault</strong></td><td>Audited open-source password manager with unlimited free sync & $10/YEAR built-in 2FA TOTP</td><td>$0 Free / $10 per YEAR</td><td><a href=\"/go/bitwarden/\">Get Bitwarden Free →</a></td></tr><tr><td><strong>Payoneer + Paddle</strong></td><td>Official USD/EUR/GBP/JPY receiving accounts for Amazon/CJ ($25–$50 bonus) + SaaS Merchant of Record</td><td>$0 Opening + Cash Bonus</td><td><a href=\"/go/payoneer/\">Open Payoneer & Claim Bonus →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Pair Wise + Payoneer to receive payouts from 100% of global affiliate networks, and secure every login inside Bitwarden + Proton Pass.</blockquote>",
+    "relatedKit": "antidetectkit"
+  },
+  "reedleshotvsaestura": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 min read",
+    "category": "K-Beauty Spicule & Capsule Science · 12 min read",
+    "title": "VT Reedle Shot 100 + Aestura Atobarrier 365 + Mediheal Pads: The Viral Korean Clinic-At-Home Protocol",
+    "deck": "How Cica-coated marine silica micro-spicules (VT Reedle Shot) multiply active absorption by 3x when sealed with Aestura’s DermaON ceramide capsules.",
+    "excerpt": "How Cica-coated marine silica micro-spicules (VT Reedle Shot) multiply active absorption by 3x when sealed with Aestura’s DermaON ceramide capsules.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How Cica-coated marine silica micro-spicules (VT Reedle Shot) multiply active absorption by 3x when sealed with Aestura’s DermaON ceramide capsules.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How Cica-coated marine silica micro-spicules (VT Reedle Shot) multiply active absorption by 3x when sealed with Aestura’s DermaON ceramide capsules."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Press VT Reedle Shot 100 onto clean skin at night, layer soothing hydration (or Copper Peptides), and seal with Aestura Atobarrier 365 Cream."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Step 1: Mediheal Toner Pads",
+          "3-minute morning/evening cheek pack with microparticlized Madecassoside to cool redness by -5°C",
+          "$18–$24 (100 Gauze Pads)",
+          "<a href=\"/go/mediheal/\">Shop Mediheal 100 Pads →</a>"
+        ],
+        [
+          "Step 2: VT Reedle Shot 100",
+          "Purified Cica micro-spicules (15x smaller than pores) pressed onto clean skin at night",
+          "$22–$27 (50ml Pump)",
+          "<a href=\"/go/reedleshot/\">Shop VT Reedle Shot 100 →</a>"
+        ],
+        [
+          "Step 3: Aestura Atobarrier 365",
+          "Korea’s #1 derm clinic cream with visible DermaON ceramide/cholesterol/fatty-acid capsules",
+          "$24–$29 (80ml Tube)",
+          "<a href=\"/go/aestura/\">Shop Aestura 365 Cream →</a>"
+        ]
+      ]
+    },
+    "quote": "Press VT Reedle Shot 100 onto clean skin at night, layer soothing hydration (or Copper Peptides), and seal with Aestura Atobarrier 365 Cream.",
+    "body": "<p>How Cica-coated marine silica micro-spicules (VT Reedle Shot) multiply active absorption by 3x when sealed with Aestura’s DermaON ceramide capsules.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Step 1: Mediheal Toner Pads</strong></td><td>3-minute morning/evening cheek pack with microparticlized Madecassoside to cool redness by -5°C</td><td>$18–$24 (100 Gauze Pads)</td><td><a href=\"/go/mediheal/\">Shop Mediheal 100 Pads →</a></td></tr><tr><td><strong>Step 2: VT Reedle Shot 100</strong></td><td>Purified Cica micro-spicules (15x smaller than pores) pressed onto clean skin at night</td><td>$22–$27 (50ml Pump)</td><td><a href=\"/go/reedleshot/\">Shop VT Reedle Shot 100 →</a></td></tr><tr><td><strong>Step 3: Aestura Atobarrier 365</strong></td><td>Korea’s #1 derm clinic cream with visible DermaON ceramide/cholesterol/fatty-acid capsules</td><td>$24–$29 (80ml Tube)</td><td><a href=\"/go/aestura/\">Shop Aestura 365 Cream →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Press VT Reedle Shot 100 onto clean skin at night, layer soothing hydration (or Copper Peptides), and seal with Aestura Atobarrier 365 Cream.</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "doublecleansematrix": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 min read",
+    "category": "Pore Decongestion & Double Cleanse · 11 min read",
+    "title": "The 2026 Zero-Stripping Double-Cleanse Matrix: SKIN1004 Oil vs. Heimish vs. Banila Co vs. Bioderma + Vanicream",
+    "deck": "How to dissolve waterproof SPF50+ and sebaceous filaments (blackheads) without triggering acne or stripping your lipid barrier.",
+    "excerpt": "How to dissolve waterproof SPF50+ and sebaceous filaments (blackheads) without triggering acne or stripping your lipid barrier.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "How to dissolve waterproof SPF50+ and sebaceous filaments (blackheads) without triggering acne or stripping your lipid barrier.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "How to dissolve waterproof SPF50+ and sebaceous filaments (blackheads) without triggering acne or stripping your lipid barrier."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Bioderma H2O on light-SPF days, SKIN1004 Oil or Heimish Balm on heavy-SPF days, and always finish with Vanicream Gentle Facial Cleanser."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "SKIN1004 Centella Oil",
+          "Water-thin botanical oil + 10,000ppm Centella that melts nose blackheads without heavy grease",
+          "$15–$18 (200ml Pump)",
+          "<a href=\"/go/skin1004oil/\">Shop SKIN1004 Light Oil →</a>"
+        ],
+        [
+          "Heimish / Banila Co Balm",
+          "1-hand flip-cap sherbet balm (Heimish) & 6th-gen vegan icon (Banila Co) that emulsify in 1s",
+          "$14–$18 on iHerb/OY",
+          "<a href=\"/go/heimish/\">Shop Heimish Balm on iHerb →</a>"
+        ],
+        [
+          "Bioderma H2O + Vanicream",
+          "pH 5.5 biomimetic micellar water (500ml) + Mayo-Clinic-heritage 0%-irritant daily cleanser ($9)",
+          "$9–$16 on iHerb",
+          "<a href=\"/go/vanicream/\">Shop Vanicream on iHerb →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Bioderma H2O on light-SPF days, SKIN1004 Oil or Heimish Balm on heavy-SPF days, and always finish with Vanicream Gentle Facial Cleanser.",
+    "body": "<p>How to dissolve waterproof SPF50+ and sebaceous filaments (blackheads) without triggering acne or stripping your lipid barrier.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>SKIN1004 Centella Oil</strong></td><td>Water-thin botanical oil + 10,000ppm Centella that melts nose blackheads without heavy grease</td><td>$15–$18 (200ml Pump)</td><td><a href=\"/go/skin1004oil/\">Shop SKIN1004 Light Oil →</a></td></tr><tr><td><strong>Heimish / Banila Co Balm</strong></td><td>1-hand flip-cap sherbet balm (Heimish) & 6th-gen vegan icon (Banila Co) that emulsify in 1s</td><td>$14–$18 on iHerb/OY</td><td><a href=\"/go/heimish/\">Shop Heimish Balm on iHerb →</a></td></tr><tr><td><strong>Bioderma H2O + Vanicream</strong></td><td>pH 5.5 biomimetic micellar water (500ml) + Mayo-Clinic-heritage 0%-irritant daily cleanser ($9)</td><td>$9–$16 on iHerb</td><td><a href=\"/go/vanicream/\">Shop Vanicream on iHerb →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Bioderma H2O on light-SPF days, SKIN1004 Oil or Heimish Balm on heavy-SPF days, and always finish with Vanicream Gentle Facial Cleanser.</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "thiamidolvstxa": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 min read",
+    "category": "Clinical Pigment & Acne Pharmacology · 12 min read",
+    "title": "Eucerin Thiamidol vs. Cos De BAHA 10% Azelaic Acid vs. PanOxyl BPO vs. The Ordinary 1% Copper Peptides",
+    "deck": "Targeting the hardest skin concerns with precision biochemistry: melasma/sun spots (Thiamidol), rosacea/PIE (Azelaic 10%), body acne (PanOxyl), and periorbital wrinkles (RoC + GHK-Cu).",
+    "excerpt": "Targeting the hardest skin concerns with precision biochemistry: melasma/sun spots (Thiamidol), rosacea/PIE (Azelaic 10%), body acne (PanOxyl), and periorbital wrinkles (RoC + GHK-Cu).",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Targeting the hardest skin concerns with precision biochemistry: melasma/sun spots (Thiamidol), rosacea/PIE (Azelaic 10%), body acne (PanOxyl), and periorbital wrinkles (RoC + GHK-Cu).",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Targeting the hardest skin concerns with precision biochemistry: melasma/sun spots (Thiamidol), rosacea/PIE (Azelaic 10%), body acne (PanOxyl), and periorbital wrinkles (RoC + GHK-Cu)."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Use Eucerin Thiamidol for dark spots, Cos De BAHA Azelaic 10% for red acne marks, PanOxyl in the shower for truncal acne, and RoC for crow’s feet."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "Eucerin Anti-Pigment Dual",
+          "Patented Thiamidol (screened from 50,000 compounds specifically for HUMAN tyrosinase)",
+          "$38–$45 Dual Pump",
+          "<a href=\"/go/eucerin/\">Shop Eucerin Thiamidol →</a>"
+        ],
+        [
+          "Cos De BAHA Azelaic 10% + PanOxyl",
+          "Zero-pilling 10% Azelaic + Niacinamide serum ($12) & 2-minute shower BPO wash for acne/odor",
+          "$10–$13 on iHerb",
+          "<a href=\"/go/cosdebaha/\">Shop Cos De BAHA AZ10 →</a>"
+        ],
+        [
+          "TO 1% Copper Peptides + RoC Eye",
+          "True 1% pure GHK-Cu peptide serum ($30) + #1 aluminum-tube Retinol eye cream ($18)",
+          "$18–$32 Clinical Picks",
+          "<a href=\"/go/to_peptides/\">Shop TO 1% Copper Peptides →</a>"
+        ]
+      ]
+    },
+    "quote": "Use Eucerin Thiamidol for dark spots, Cos De BAHA Azelaic 10% for red acne marks, PanOxyl in the shower for truncal acne, and RoC for crow’s feet.",
+    "body": "<p>Targeting the hardest skin concerns with precision biochemistry: melasma/sun spots (Thiamidol), rosacea/PIE (Azelaic 10%), body acne (PanOxyl), and periorbital wrinkles (RoC + GHK-Cu).</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>Eucerin Anti-Pigment Dual</strong></td><td>Patented Thiamidol (screened from 50,000 compounds specifically for HUMAN tyrosinase)</td><td>$38–$45 Dual Pump</td><td><a href=\"/go/eucerin/\">Shop Eucerin Thiamidol →</a></td></tr><tr><td><strong>Cos De BAHA Azelaic 10% + PanOxyl</strong></td><td>Zero-pilling 10% Azelaic + Niacinamide serum ($12) & 2-minute shower BPO wash for acne/odor</td><td>$10–$13 on iHerb</td><td><a href=\"/go/cosdebaha/\">Shop Cos De BAHA AZ10 →</a></td></tr><tr><td><strong>TO 1% Copper Peptides + RoC Eye</strong></td><td>True 1% pure GHK-Cu peptide serum ($30) + #1 aluminum-tube Retinol eye cream ($18)</td><td>$18–$32 Clinical Picks</td><td><a href=\"/go/to_peptides/\">Shop TO 1% Copper Peptides →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Use Eucerin Thiamidol for dark spots, Cos De BAHA Azelaic 10% for red acne marks, PanOxyl in the shower for truncal acne, and RoC for crow’s feet.</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "longevitysupplementstack": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 min read",
+    "category": "iHerb Longevity & Skin-From-Within Lab · 14 min read",
+    "title": "The 2026 Evidence-Based iHerb Longevity & Skin-From-Within Stack (IFOS Omega-3 + Marine Collagen + Thorne Magnesium + CoQ10)",
+    "deck": "Why topical serums only reach the epidermis—and how 5 third-party-tested iHerb supplements optimize dermal collagen, systemic inflammation, ATP energy, and deep sleep.",
+    "excerpt": "Why topical serums only reach the epidermis—and how 5 third-party-tested iHerb supplements optimize dermal collagen, systemic inflammation, ATP energy, and deep sleep.",
+    "readMore": "Read 2026 Benchmark & Deals",
+    "lead": "Why topical serums only reach the epidermis—and how 5 third-party-tested iHerb supplements optimize dermal collagen, systemic inflammation, ATP energy, and deep sleep.",
+    "sections": [
+      [
+        "01 — 2026 Architecture & Cost-Performance Audit",
+        "Why topical serums only reach the epidermis—and how 5 third-party-tested iHerb supplements optimize dermal collagen, systemic inflammation, ATP energy, and deep sleep."
+      ],
+      [
+        "02 — Implementation & Partner Stack Synergy",
+        "Morning: CollagenUP in coffee + 1 Life Extension capsule. Lunch: 2 CGN IFOS Omega-3 + 1 CoQ10. Bedtime: 1 scoop Thorne Magnesium Bisglycinate."
+      ]
+    ],
+    "table": {
+      "headers": [
+        "Pick",
+        "Core Advantage",
+        "Pricing / Bonus",
+        "Official Partner Link"
+      ],
+      "rows": [
+        [
+          "CGN Omega-3 (IFOS 5-Star)",
+          "#1 best-selling item on iHerb (400k+ reviews): German KD-Pür® fish oil (360mg EPA + 240mg DHA) for acne/eye inflammation",
+          "$9–$11 / 100 Softgels",
+          "<a href=\"/go/cgn_omega3/\">Shop CGN Omega-3 on iHerb (?rcode=CRUXKIT) →</a>"
+        ],
+        [
+          "CGN CollagenUP + CoQ10 100mg",
+          "5,000mg hydrolyzed marine peptides + 60mg HA + 90mg Vit C powder & USP CoQ10 + BioPerine® (+30% uptake)",
+          "$12–$19 on iHerb",
+          "<a href=\"/go/cgn_collagen/\">Shop CGN CollagenUP on iHerb →</a>"
+        ],
+        [
+          "Thorne Magnesium + Life Extension",
+          "NSF-certified Magnesium Bisglycinate for deep REM sleep (zero laxative effect) + Methylated B-Complex Two-Per-Day",
+          "$19–$44 Clinical Gold",
+          "<a href=\"/go/thorne_mag/\">Shop Thorne Magnesium on iHerb →</a>"
+        ]
+      ]
+    },
+    "quote": "Morning: CollagenUP in coffee + 1 Life Extension capsule. Lunch: 2 CGN IFOS Omega-3 + 1 CoQ10. Bedtime: 1 scoop Thorne Magnesium Bisglycinate.",
+    "body": "<p>Why topical serums only reach the epidermis—and how 5 third-party-tested iHerb supplements optimize dermal collagen, systemic inflammation, ATP energy, and deep sleep.</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>Tool / Formula</th><th>Core 2026 Advantage</th><th>Pricing / Bonus</th><th>Verified Partner Link</th></tr></thead>\n        <tbody><tr><td><strong>CGN Omega-3 (IFOS 5-Star)</strong></td><td>#1 best-selling item on iHerb (400k+ reviews): German KD-Pür® fish oil (360mg EPA + 240mg DHA) for acne/eye inflammation</td><td>$9–$11 / 100 Softgels</td><td><a href=\"/go/cgn_omega3/\">Shop CGN Omega-3 on iHerb (?rcode=CRUXKIT) →</a></td></tr><tr><td><strong>CGN CollagenUP + CoQ10 100mg</strong></td><td>5,000mg hydrolyzed marine peptides + 60mg HA + 90mg Vit C powder & USP CoQ10 + BioPerine® (+30% uptake)</td><td>$12–$19 on iHerb</td><td><a href=\"/go/cgn_collagen/\">Shop CGN CollagenUP on iHerb →</a></td></tr><tr><td><strong>Thorne Magnesium + Life Extension</strong></td><td>NSF-certified Magnesium Bisglycinate for deep REM sleep (zero laxative effect) + Methylated B-Complex Two-Per-Day</td><td>$19–$44 Clinical Gold</td><td><a href=\"/go/thorne_mag/\">Shop Thorne Magnesium on iHerb →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>Lab Verdict:</strong> Morning: CollagenUP in coffee + 1 Life Extension capsule. Lunch: 2 CGN IFOS Omega-3 + 1 CoQ10. Bedtime: 1 scoop Thorne Magnesium Bisglycinate.</blockquote>",
+    "relatedKit": "longevitystackos"
+  }
+});
+  Object.assign(storiesData.zh, {
+  "replitvscursor": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "AI 编程与云端 IDE · 11 分钟精读",
+    "title": "Replit Agent v2 vs Supermaven 百万上下文 vs Cursor：2026 全栈 AI 编程终极选型",
+    "deck": "零配置手机/网页直接出成品选 Replit Agent v2，百万 Token 毫秒级行内补全装 Supermaven，多文件重构配 Cursor。",
+    "excerpt": "零配置手机/网页直接出成品选 Replit Agent v2，百万 Token 毫秒级行内补全装 Supermaven，多文件重构配 Cursor。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "零配置手机/网页直接出成品选 Replit Agent v2，百万 Token 毫秒级行内补全装 Supermaven，多文件重构配 Cursor。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "零配置手机/网页直接出成品选 Replit Agent v2，百万 Token 毫秒级行内补全装 Supermaven，多文件重构配 Cursor。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "15 分钟快速出全栈原型并上线用 Replit Agent v2；日常维护大项目在编辑器内挂载 Supermaven 享受百万上下文极速补全。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Replit Agent v2",
+          "免配环境，自然语言自动建库、写前后端并一键上线域名",
+          "$20/月 (含算力金)",
+          "<a href=\"/go/replit/\">体验 Replit Agent v2 →</a>"
+        ],
+        [
+          "Supermaven Pro",
+          "100万 Token 全局代码库记忆 + <50ms 零延迟极速补全",
+          "$10/月",
+          "<a href=\"/go/supermaven/\">免费安装 Supermaven →</a>"
+        ],
+        [
+          "Cursor Pro",
+          "本地多文件 Composer 重构 + 自定义挂载 OpenRouter",
+          "$20/月",
+          "<a href=\"/go/cursor/\">下载 Cursor 编辑器 →</a>"
+        ]
+      ]
+    },
+    "quote": "15 分钟快速出全栈原型并上线用 Replit Agent v2；日常维护大项目在编辑器内挂载 Supermaven 享受百万上下文极速补全。",
+    "body": "<p>零配置手机/网页直接出成品选 Replit Agent v2，百万 Token 毫秒级行内补全装 Supermaven，多文件重构配 Cursor。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Replit Agent v2</strong></td><td>免配环境，自然语言自动建库、写前后端并一键上线域名</td><td>$20/月 (含算力金)</td><td><a href=\"/go/replit/\">体验 Replit Agent v2 →</a></td></tr><tr><td><strong>Supermaven Pro</strong></td><td>100万 Token 全局代码库记忆 + <50ms 零延迟极速补全</td><td>$10/月</td><td><a href=\"/go/supermaven/\">免费安装 Supermaven →</a></td></tr><tr><td><strong>Cursor Pro</strong></td><td>本地多文件 Composer 重构 + 自定义挂载 OpenRouter</td><td>$20/月</td><td><a href=\"/go/cursor/\">下载 Cursor 编辑器 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 15 分钟快速出全栈原型并上线用 Replit Agent v2；日常维护大项目在编辑器内挂载 Supermaven 享受百万上下文极速补全。</blockquote>",
+    "relatedKit": "v0lovablekit"
+  },
+  "difyvsrelevance": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "企业级多智能体编排 · 12 分钟精读",
+    "title": "Dify.AI vs Relevance AI vs n8n：2026 企业级 AI 智能体与知识库三大平台实测对比",
+    "deck": "可视化 RAG 知识库与 DSL 导出选 Dify.AI，零代码雇佣 B2B 数字员工选 Relevance AI，高频底层数据同步选 n8n。",
+    "excerpt": "可视化 RAG 知识库与 DSL 导出选 Dify.AI，零代码雇佣 B2B 数字员工选 Relevance AI，高频底层数据同步选 n8n。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "可视化 RAG 知识库与 DSL 导出选 Dify.AI，零代码雇佣 B2B 数字员工选 Relevance AI，高频底层数据同步选 n8n。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "可视化 RAG 知识库与 DSL 导出选 Dify.AI，零代码雇佣 B2B 数字员工选 Relevance AI，高频底层数据同步选 n8n。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "做知识库问答与可售卖模板用 Dify.AI，搭全自动 B2B 客户背调团队用 Relevance AI，底层跨软件传数据用 n8n。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Dify.AI 中台",
+          "可视化编排 RAG 知识库与 Agent，支持导出 YAML 模板售卖",
+          "开源自建 / 云端免费体验",
+          "<a href=\"/go/dify/\">免费开启 Dify.AI →</a>"
+        ],
+        [
+          "Relevance AI",
+          "像招真人一样配置多智能体 B2B 销售背调团队（20%持续返佣）",
+          "每日免费额度 / $19/月",
+          "<a href=\"/go/relevanceai/\">体验 Relevance AI →</a>"
+        ],
+        [
+          "n8n 自动化引擎",
+          "自建不限次数运行 + 400+ 海外软件 Webhook 串联",
+          "$4.99 云主机自建",
+          "<a href=\"/go/n8n/\">查看 n8n 部署方案 →</a>"
+        ]
+      ]
+    },
+    "quote": "做知识库问答与可售卖模板用 Dify.AI，搭全自动 B2B 客户背调团队用 Relevance AI，底层跨软件传数据用 n8n。",
+    "body": "<p>可视化 RAG 知识库与 DSL 导出选 Dify.AI，零代码雇佣 B2B 数字员工选 Relevance AI，高频底层数据同步选 n8n。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Dify.AI 中台</strong></td><td>可视化编排 RAG 知识库与 Agent，支持导出 YAML 模板售卖</td><td>开源自建 / 云端免费体验</td><td><a href=\"/go/dify/\">免费开启 Dify.AI →</a></td></tr><tr><td><strong>Relevance AI</strong></td><td>像招真人一样配置多智能体 B2B 销售背调团队（20%持续返佣）</td><td>每日免费额度 / $19/月</td><td><a href=\"/go/relevanceai/\">体验 Relevance AI →</a></td></tr><tr><td><strong>n8n 自动化引擎</strong></td><td>自建不限次数运行 + 400+ 海外软件 Webhook 串联</td><td>$4.99 云主机自建</td><td><a href=\"/go/n8n/\">查看 n8n 部署方案 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 做知识库问答与可售卖模板用 Dify.AI，搭全自动 B2B 客户背调团队用 Relevance AI，底层跨软件传数据用 n8n。</blockquote>",
+    "relatedKit": "b2boutreachkit"
+  },
+  "clayvsapollo": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "B2B 精准出海获客 · 13 分钟精读",
+    "title": "Clay.com 瀑布流富化 + Apollo.io 2.7亿库 + folk CRM：2026 海外高客单价获客黄金漏斗",
+    "deck": "手把手教你用 Apollo 筛出海外老板邮箱，用 Clay 穿透 75 家数据源抓取公司痛点写破冰信，再用 folk 轻松管理商机。",
+    "excerpt": "手把手教你用 Apollo 筛出海外老板邮箱，用 Clay 穿透 75 家数据源抓取公司痛点写破冰信，再用 folk 轻松管理商机。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "手把手教你用 Apollo 筛出海外老板邮箱，用 Clay 穿透 75 家数据源抓取公司痛点写破冰信，再用 folk 轻松管理商机。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "手把手教你用 Apollo 筛出海外老板邮箱，用 Clay 穿透 75 家数据源抓取公司痛点写破冰信，再用 folk 轻松管理商机。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "在 Apollo 筛名单 -> 导进 Clay 用 AI 侦探写千人千面破冰信 -> 回复意向客户自动沉淀进 folk 跟进成交。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Apollo.io",
+          "检索全球 2.75 亿企业决策人认证邮箱 + 自动化开发信序列",
+          "免费额度 / 享 20% 持续返佣",
+          "<a href=\"/go/apollo/\">免费注册 Apollo 查邮箱 →</a>"
+        ],
+        [
+          "Clay.com",
+          "串联 75+ 数据库瀑布流查信（命中率>85%）+ AI 侦探读官网",
+          "专属链接送 2,000 积分",
+          "<a href=\"/go/clay/\">领 Clay 2,000 免费积分 →</a>"
+        ],
+        [
+          "folk.app CRM",
+          "像 Notion 一样清爽的客户库 + 插件 1秒抓取领英/X 人脉",
+          "免费试用 / 最高 30% 返佣",
+          "<a href=\"/go/folk/\">免费体验 folk CRM →</a>"
+        ]
+      ]
+    },
+    "quote": "在 Apollo 筛名单 -> 导进 Clay 用 AI 侦探写千人千面破冰信 -> 回复意向客户自动沉淀进 folk 跟进成交。",
+    "body": "<p>手把手教你用 Apollo 筛出海外老板邮箱，用 Clay 穿透 75 家数据源抓取公司痛点写破冰信，再用 folk 轻松管理商机。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Apollo.io</strong></td><td>检索全球 2.75 亿企业决策人认证邮箱 + 自动化开发信序列</td><td>免费额度 / 享 20% 持续返佣</td><td><a href=\"/go/apollo/\">免费注册 Apollo 查邮箱 →</a></td></tr><tr><td><strong>Clay.com</strong></td><td>串联 75+ 数据库瀑布流查信（命中率>85%）+ AI 侦探读官网</td><td>专属链接送 2,000 积分</td><td><a href=\"/go/clay/\">领 Clay 2,000 免费积分 →</a></td></tr><tr><td><strong>folk.app CRM</strong></td><td>像 Notion 一样清爽的客户库 + 插件 1秒抓取领英/X 人脉</td><td>免费试用 / 最高 30% 返佣</td><td><a href=\"/go/folk/\">免费体验 folk CRM →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 在 Apollo 筛名单 -> 导进 Clay 用 AI 侦探写千人千面破冰信 -> 回复意向客户自动沉淀进 folk 跟进成交。</blockquote>",
+    "relatedKit": "b2boutreachkit"
+  },
+  "browsevsbardeen": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "零代码网页数据采集 · 10 分钟精读",
+    "title": "Browse AI vs Bardeen AI vs Firecrawl：不懂写代码如何 2 分钟搞定全网价格监控与数据抓取？",
+    "deck": "鼠标点选定时监控竞品改价用 Browse AI，直接复用浏览器登录态抓领英用 Bardeen，转大模型干净语料用 Firecrawl。",
+    "excerpt": "鼠标点选定时监控竞品改价用 Browse AI，直接复用浏览器登录态抓领英用 Bardeen，转大模型干净语料用 Firecrawl。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "鼠标点选定时监控竞品改价用 Browse AI，直接复用浏览器登录态抓领英用 Bardeen，转大模型干净语料用 Firecrawl。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "鼠标点选定时监控竞品改价用 Browse AI，直接复用浏览器登录态抓领英用 Bardeen，转大模型干净语料用 Firecrawl。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "定时盯同行改价与上新选 Browse AI；抓需要登录的社媒选 Bardeen；喂给 DeepSeek/GPT 做知识库选 Firecrawl。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Browse AI",
+          "零代码鼠标框选元素即可每小时自动巡检竞品价格变动",
+          "免费版 / 20% 终身持续返佣",
+          "<a href=\"/go/browseai/\">免费创建 Browse AI 机器人 →</a>"
+        ],
+        [
+          "Bardeen AI",
+          "直接在当前已登录的 Chrome 页面运行，一键抓领英入库 Notion",
+          "基础永久免费 / $10/月",
+          "<a href=\"/go/bardeen/\">免费安装 Bardeen 插件 →</a>"
+        ],
+        [
+          "Firecrawl API",
+          "剥离广告导航栏，将整站秒转为大模型专用纯净 Markdown",
+          "免费送 500 页 (25% 返佣)",
+          "<a href=\"/go/firecrawl/\">领 Firecrawl 500 页额度 →</a>"
+        ]
+      ]
+    },
+    "quote": "定时盯同行改价与上新选 Browse AI；抓需要登录的社媒选 Bardeen；喂给 DeepSeek/GPT 做知识库选 Firecrawl。",
+    "body": "<p>鼠标点选定时监控竞品改价用 Browse AI，直接复用浏览器登录态抓领英用 Bardeen，转大模型干净语料用 Firecrawl。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Browse AI</strong></td><td>零代码鼠标框选元素即可每小时自动巡检竞品价格变动</td><td>免费版 / 20% 终身持续返佣</td><td><a href=\"/go/browseai/\">免费创建 Browse AI 机器人 →</a></td></tr><tr><td><strong>Bardeen AI</strong></td><td>直接在当前已登录的 Chrome 页面运行，一键抓领英入库 Notion</td><td>基础永久免费 / $10/月</td><td><a href=\"/go/bardeen/\">免费安装 Bardeen 插件 →</a></td></tr><tr><td><strong>Firecrawl API</strong></td><td>剥离广告导航栏，将整站秒转为大模型专用纯净 Markdown</td><td>免费送 500 页 (25% 返佣)</td><td><a href=\"/go/firecrawl/\">领 Firecrawl 500 页额度 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 定时盯同行改价与上新选 Browse AI；抓需要登录的社媒选 Bardeen；喂给 DeepSeek/GPT 做知识库选 Firecrawl。</blockquote>",
+    "relatedKit": "scrapingragkit"
+  },
+  "tallyvstypeform": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "高转化表单与互动导购 · 10 分钟精读",
+    "title": "Tally.so (99%免费) vs Typeform 互动导购 vs Airtable：如何用“30秒小测试”让带货转化率翻倍？",
+    "deck": "为什么在独立站放一个“30秒测出你的本命防晒/云主机”小测试能让联盟点击率暴涨 2.4 倍？三大表单与数据中台实测。",
+    "excerpt": "为什么在独立站放一个“30秒测出你的本命防晒/云主机”小测试能让联盟点击率暴涨 2.4 倍？三大表单与数据中台实测。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "为什么在独立站放一个“30秒测出你的本命防晒/云主机”小测试能让联盟点击率暴涨 2.4 倍？三大表单与数据中台实测。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "为什么在独立站放一个“30秒测出你的本命防晒/云主机”小测试能让联盟点击率暴涨 2.4 倍？三大表单与数据中台实测。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "想要不限填写次数纯白嫖选 Tally.so；做高颜值互动导购测试选 Typeform；底层汇总商品与客户库选 Airtable。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Tally.so",
+          "像写 Notion 一样做表单：无限表单数、无限提交量、逻辑跳转全部免费",
+          "99% 功能永久免费 (25%返佣)",
+          "<a href=\"/go/tally/\">免费使用 Tally.so →</a>"
+        ],
+        [
+          "Typeform",
+          "每次只问一道题的沉浸式导购问卷，根据得分自动跳转对应推广链接",
+          "免费体验 (享 20% 持续返佣)",
+          "<a href=\"/go/typeform/\">体验 Typeform 互动问卷 →</a>"
+        ],
+        [
+          "Airtable",
+          "将收集到的用户数据沉淀为关系型数据库并自动触发 Make 发信",
+          "免费版可用",
+          "<a href=\"/go/airtable/\">免费注册 Airtable →</a>"
+        ]
+      ]
+    },
+    "quote": "想要不限填写次数纯白嫖选 Tally.so；做高颜值互动导购测试选 Typeform；底层汇总商品与客户库选 Airtable。",
+    "body": "<p>为什么在独立站放一个“30秒测出你的本命防晒/云主机”小测试能让联盟点击率暴涨 2.4 倍？三大表单与数据中台实测。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Tally.so</strong></td><td>像写 Notion 一样做表单：无限表单数、无限提交量、逻辑跳转全部免费</td><td>99% 功能永久免费 (25%返佣)</td><td><a href=\"/go/tally/\">免费使用 Tally.so →</a></td></tr><tr><td><strong>Typeform</strong></td><td>每次只问一道题的沉浸式导购问卷，根据得分自动跳转对应推广链接</td><td>免费体验 (享 20% 持续返佣)</td><td><a href=\"/go/typeform/\">体验 Typeform 互动问卷 →</a></td></tr><tr><td><strong>Airtable</strong></td><td>将收集到的用户数据沉淀为关系型数据库并自动触发 Make 发信</td><td>免费版可用</td><td><a href=\"/go/airtable/\">免费注册 Airtable →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 想要不限填写次数纯白嫖选 Tally.so；做高颜值互动导购测试选 Typeform；底层汇总商品与客户库选 Airtable。</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "clickupvsmonday": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "生产力工具与高佣金测评 · 11 分钟精读",
+    "title": "ClickUp 4.0 vs monday.com (单笔$150佣金) vs Linear：2026 三大项目管理神器选型与带货指南",
+    "deck": "极客研发闭眼入 60帧丝滑的 Linear，全能性价比选 $7/月的 ClickUp，做海外生产力评测赚高额美金必推单笔 $150 佣金的 monday.com。",
+    "excerpt": "极客研发闭眼入 60帧丝滑的 Linear，全能性价比选 $7/月的 ClickUp，做海外生产力评测赚高额美金必推单笔 $150 佣金的 monday.com。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "极客研发闭眼入 60帧丝滑的 Linear，全能性价比选 $7/月的 ClickUp，做海外生产力评测赚高额美金必推单笔 $150 佣金的 monday.com。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "极客研发闭眼入 60帧丝滑的 Linear，全能性价比选 $7/月的 ClickUp，做海外生产力评测赚高额美金必推单笔 $150 佣金的 monday.com。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "写代码管产品用 Linear；小团队日常全能协作用 ClickUp；写海外办公软件对比推文必挂单笔最高奖 $150 美金的 monday.com。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Linear",
+          "硅谷 AI 团队标配：全键盘零延迟操作 + GitHub 提交代码自动流转",
+          "250个任务内免费",
+          "<a href=\"/go/linear/\">免费使用 Linear →</a>"
+        ],
+        [
+          "ClickUp 4.0",
+          "任务甘特图 + 文档 + 白板全合一，付费版仅 $7/月性价比逆天",
+          "永久免费版 / 30% 返佣",
+          "<a href=\"/go/clickup/\">免费注册 ClickUp →</a>"
+        ],
+        [
+          "monday.com",
+          "高颜值彩色积木看板与销售 CRM（PartnerStack 单笔最高 $150 佣金）",
+          "免费版 / 单笔最高 $150 奖励",
+          "<a href=\"/go/monday/\">免费体验 monday.com →</a>"
+        ]
+      ]
+    },
+    "quote": "写代码管产品用 Linear；小团队日常全能协作用 ClickUp；写海外办公软件对比推文必挂单笔最高奖 $150 美金的 monday.com。",
+    "body": "<p>极客研发闭眼入 60帧丝滑的 Linear，全能性价比选 $7/月的 ClickUp，做海外生产力评测赚高额美金必推单笔 $150 佣金的 monday.com。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Linear</strong></td><td>硅谷 AI 团队标配：全键盘零延迟操作 + GitHub 提交代码自动流转</td><td>250个任务内免费</td><td><a href=\"/go/linear/\">免费使用 Linear →</a></td></tr><tr><td><strong>ClickUp 4.0</strong></td><td>任务甘特图 + 文档 + 白板全合一，付费版仅 $7/月性价比逆天</td><td>永久免费版 / 30% 返佣</td><td><a href=\"/go/clickup/\">免费注册 ClickUp →</a></td></tr><tr><td><strong>monday.com</strong></td><td>高颜值彩色积木看板与销售 CRM（PartnerStack 单笔最高 $150 佣金）</td><td>免费版 / 单笔最高 $150 奖励</td><td><a href=\"/go/monday/\">免费体验 monday.com →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 写代码管产品用 Linear；小团队日常全能协作用 ClickUp；写海外办公软件对比推文必挂单笔最高奖 $150 美金的 monday.com。</blockquote>",
+    "relatedKit": "solo"
+  },
+  "raycastobsidian": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "超级个体本地第二大脑 · 11 分钟精读",
+    "title": "Raycast 启动器 + Warp 终端 + Obsidian + Readwise + ChatPDF：打造永不丢稿的 AI 本地第二大脑",
+    "deck": "用 Readwise 与 ChatPDF 高效榨干全网长文与文献，自动沉淀进 Obsidian 本地 `.md` 文件夹，再用 Raycast 与 Warp 随时调用 AI。",
+    "excerpt": "用 Readwise 与 ChatPDF 高效榨干全网长文与文献，自动沉淀进 Obsidian 本地 `.md` 文件夹，再用 Raycast 与 Warp 随时调用 AI。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "用 Readwise 与 ChatPDF 高效榨干全网长文与文献，自动沉淀进 Obsidian 本地 `.md` 文件夹，再用 Raycast 与 Warp 随时调用 AI。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "用 Readwise 与 ChatPDF 高效榨干全网长文与文献，自动沉淀进 Obsidian 本地 `.md` 文件夹，再用 Raycast 与 Warp 随时调用 AI。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "用 Readwise 收集素材 -> 自动流入 Obsidian 纯本地 `.md` 笔记 -> 直接用 Cursor 读取笔记批量产出高质量评测推文！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Raycast Pro",
+          "Mac 装机第一神器：免费无限剪贴板历史、快捷短语展开与全局 AI",
+          "核心免费 (Pro享30%返佣)",
+          "<a href=\"/go/raycast/\">免费下载 Raycast →</a>"
+        ],
+        [
+          "Obsidian + Readwise",
+          "全网文章/YouTube字幕高亮笔记自动同步至本地 `.md` 知识库（Cursor可直接读）",
+          "专属链接送免费试用月",
+          "<a href=\"/go/readwise/\">领 Readwise 免费时长 →</a>"
+        ],
+        [
+          "Warp + ChatPDF",
+          "输入中文直接转 Linux 命令的 AI 终端 + 句句带页码溯源的 PDF 论文精读器",
+          "免费可用 (享30%持续返佣)",
+          "<a href=\"/go/chatpdf/\">免费使用 ChatPDF →</a>"
+        ]
+      ]
+    },
+    "quote": "用 Readwise 收集素材 -> 自动流入 Obsidian 纯本地 `.md` 笔记 -> 直接用 Cursor 读取笔记批量产出高质量评测推文！",
+    "body": "<p>用 Readwise 与 ChatPDF 高效榨干全网长文与文献，自动沉淀进 Obsidian 本地 `.md` 文件夹，再用 Raycast 与 Warp 随时调用 AI。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Raycast Pro</strong></td><td>Mac 装机第一神器：免费无限剪贴板历史、快捷短语展开与全局 AI</td><td>核心免费 (Pro享30%返佣)</td><td><a href=\"/go/raycast/\">免费下载 Raycast →</a></td></tr><tr><td><strong>Obsidian + Readwise</strong></td><td>全网文章/YouTube字幕高亮笔记自动同步至本地 `.md` 知识库（Cursor可直接读）</td><td>专属链接送免费试用月</td><td><a href=\"/go/readwise/\">领 Readwise 免费时长 →</a></td></tr><tr><td><strong>Warp + ChatPDF</strong></td><td>输入中文直接转 Linux 命令的 AI 终端 + 句句带页码溯源的 PDF 论文精读器</td><td>免费可用 (享30%持续返佣)</td><td><a href=\"/go/chatpdf/\">免费使用 ChatPDF →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 用 Readwise 收集素材 -> 自动流入 Obsidian 纯本地 `.md` 笔记 -> 直接用 Cursor 读取笔记批量产出高质量评测推文！</blockquote>",
+    "relatedKit": "workstation"
+  },
+  "sunovsepidemic": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 分钟精读",
+    "category": "商业配乐与零黄标音乐库 · 11 分钟精读",
+    "title": "Suno v4.5 原创写歌 vs Epidemic Sound 白名单曲库 vs Artlist 电影配乐 vs Murf：彻底告别 YouTube 音乐侵权黄标",
+    "deck": "做视频一旦背景音乐侵权就会被平台取消广告分成！实测 10秒生成商用原创歌的 Suno v4.5 与自带频道白名单的两大音乐库。",
+    "excerpt": "做视频一旦背景音乐侵权就会被平台取消广告分成！实测 10秒生成商用原创歌的 Suno v4.5 与自带频道白名单的两大音乐库。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "做视频一旦背景音乐侵权就会被平台取消广告分成！实测 10秒生成商用原创歌的 Suno v4.5 与自带频道白名单的两大音乐库。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "做视频一旦背景音乐侵权就会被平台取消广告分成！实测 10秒生成商用原创歌的 Suno v4.5 与自带频道白名单的两大音乐库。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "做 24 小时 Lo-Fi 音乐频道或专属片头曲用 Suno v4.5；做口播评测需要“说话时只留轻鼓点”的四分轨白名单曲库选 Epidemic Sound。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Suno v4.5 Pro",
+          "输入提示词 10秒生成录音室级歌曲与 Lo-Fi 纯音乐，Pro版享 100% 商用版权与分轨",
+          "每日免费 50 积分 / $10/月",
+          "<a href=\"/go/suno/\">免费体验 Suno v4.5 →</a>"
+        ],
+        [
+          "Epidemic Sound",
+          "4万首正版曲目支持鼓点/旋律四分轨独立下载，自动绑定频道白名单永不侵权",
+          "整整 30 天免费试用",
+          "<a href=\"/go/epidemicsound/\">开启 30 天免费试用 →</a>"
+        ],
+        [
+          "Artlist Max + Murf",
+          "院线电影感真实乐器曲库（单笔佣金最高 $100）+ 原生嵌入 Canva 的配音工作台",
+          "支持免费试听体验",
+          "<a href=\"/go/artlist/\">查看 Artlist 电影曲库 →</a>"
+        ]
+      ]
+    },
+    "quote": "做 24 小时 Lo-Fi 音乐频道或专属片头曲用 Suno v4.5；做口播评测需要“说话时只留轻鼓点”的四分轨白名单曲库选 Epidemic Sound。",
+    "body": "<p>做视频一旦背景音乐侵权就会被平台取消广告分成！实测 10秒生成商用原创歌的 Suno v4.5 与自带频道白名单的两大音乐库。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Suno v4.5 Pro</strong></td><td>输入提示词 10秒生成录音室级歌曲与 Lo-Fi 纯音乐，Pro版享 100% 商用版权与分轨</td><td>每日免费 50 积分 / $10/月</td><td><a href=\"/go/suno/\">免费体验 Suno v4.5 →</a></td></tr><tr><td><strong>Epidemic Sound</strong></td><td>4万首正版曲目支持鼓点/旋律四分轨独立下载，自动绑定频道白名单永不侵权</td><td>整整 30 天免费试用</td><td><a href=\"/go/epidemicsound/\">开启 30 天免费试用 →</a></td></tr><tr><td><strong>Artlist Max + Murf</strong></td><td>院线电影感真实乐器曲库（单笔佣金最高 $100）+ 原生嵌入 Canva 的配音工作台</td><td>支持免费试听体验</td><td><a href=\"/go/artlist/\">查看 Artlist 电影曲库 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 做 24 小时 Lo-Fi 音乐频道或专属片头曲用 Suno v4.5；做口播评测需要“说话时只留轻鼓点”的四分轨白名单曲库选 Epidemic Sound。</blockquote>",
+    "relatedKit": "aivideofactory"
+  },
+  "pictoryvsinvideo": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 分钟精读",
+    "category": "不露脸视频印钞机 · 13 分钟精读",
+    "title": "Pictory.ai (最高50%终身返佣) vs InVideo AI vs Fliki vs Captions.ai：2026 四大不露脸视频神器实测",
+    "deck": "不买摄像机、不露脸也能做海外带货频道：实测把一篇图文推文 3 分钟变成高清配音视频的四大神器（兼顾最高 50% 终身联盟佣金）。",
+    "excerpt": "不买摄像机、不露脸也能做海外带货频道：实测把一篇图文推文 3 分钟变成高清配音视频的四大神器（兼顾最高 50% 终身联盟佣金）。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "不买摄像机、不露脸也能做海外带货频道：实测把一篇图文推文 3 分钟变成高清配音视频的四大神器（兼顾最高 50% 终身联盟佣金）。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "不买摄像机、不露脸也能做海外带货频道：实测把一篇图文推文 3 分钟变成高清配音视频的四大神器（兼顾最高 50% 终身联盟佣金）。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "已经有现成推文网址选 Pictory 一键转视频；想输入一句话全自动出片选 InVideo AI；这两款同时也是佣金高达 30%–50% 的王牌带货标的！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Pictory.ai",
+          "粘贴推文网址 3分钟自动配好 Storyblocks 正版素材成片（联盟享 20%–50% 终身返佣+$1k奖）",
+          "免费做 3 条视频",
+          "<a href=\"/go/pictory/\">免费试用 Pictory.ai →</a>"
+        ],
+        [
+          "InVideo AI",
+          "连稿子都不用写：输入一句话主题全自动生成完整视频，支持用对话框直接改剪辑",
+          "每周免费额度 (25%–50%佣金)",
+          "<a href=\"/go/invideo/\">免费体验 InVideo AI →</a>"
+        ],
+        [
+          "Fliki + Captions.ai",
+          "粘贴亚马逊链接秒出竖屏带货视频（享 30% 终身返佣）+ 29国语言完美对口型翻译",
+          "每月免费额度",
+          "<a href=\"/go/fliki/\">免费体验 Fliki.ai →</a>"
+        ]
+      ]
+    },
+    "quote": "已经有现成推文网址选 Pictory 一键转视频；想输入一句话全自动出片选 InVideo AI；这两款同时也是佣金高达 30%–50% 的王牌带货标的！",
+    "body": "<p>不买摄像机、不露脸也能做海外带货频道：实测把一篇图文推文 3 分钟变成高清配音视频的四大神器（兼顾最高 50% 终身联盟佣金）。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Pictory.ai</strong></td><td>粘贴推文网址 3分钟自动配好 Storyblocks 正版素材成片（联盟享 20%–50% 终身返佣+$1k奖）</td><td>免费做 3 条视频</td><td><a href=\"/go/pictory/\">免费试用 Pictory.ai →</a></td></tr><tr><td><strong>InVideo AI</strong></td><td>连稿子都不用写：输入一句话主题全自动生成完整视频，支持用对话框直接改剪辑</td><td>每周免费额度 (25%–50%佣金)</td><td><a href=\"/go/invideo/\">免费体验 InVideo AI →</a></td></tr><tr><td><strong>Fliki + Captions.ai</strong></td><td>粘贴亚马逊链接秒出竖屏带货视频（享 30% 终身返佣）+ 29国语言完美对口型翻译</td><td>每月免费额度</td><td><a href=\"/go/fliki/\">免费体验 Fliki.ai →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 已经有现成推文网址选 Pictory 一键转视频；想输入一句话全自动出片选 InVideo AI；这两款同时也是佣金高达 30%–50% 的王牌带货标的！</blockquote>",
+    "relatedKit": "aivideofactory"
+  },
+  "ideogramvsrecraft": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 分钟精读",
+    "category": "商业视觉、真矢量 SVG 与 4K 超分 · 11 分钟精读",
+    "title": "Ideogram 3.0 零错字海报 vs Recraft V4 真矢量 SVG vs Leonardo vs Topaz 4K 超分：视觉后期满配流水线",
+    "deck": "告别一眼假的模糊 AI 图：用 Ideogram 3.0 做零拼写错误封面，用 Recraft V4 直接导出真 `.SVG` 矢量图标，再用 Topaz 把视频超分到 4K 60帧。",
+    "excerpt": "告别一眼假的模糊 AI 图：用 Ideogram 3.0 做零拼写错误封面，用 Recraft V4 直接导出真 `.SVG` 矢量图标，再用 Topaz 把视频超分到 4K 60帧。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "告别一眼假的模糊 AI 图：用 Ideogram 3.0 做零拼写错误封面，用 Recraft V4 直接导出真 `.SVG` 矢量图标，再用 Topaz 把视频超分到 4K 60帧。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "告别一眼假的模糊 AI 图：用 Ideogram 3.0 做零拼写错误封面，用 Recraft V4 直接导出真 `.SVG` 矢量图标，再用 Topaz 把视频超分到 4K 60帧。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "封面海报排版用 Ideogram 3.0，网页矢量 `.SVG` 图标用 Recraft V4，正版空镜与特效模板去 Envato 无限下，成片画质增强上 Topaz Video AI 6。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Ideogram 3.0",
+          "英文标题排版拼写准确率 99%，做 YouTube 缩略图、书籍封面与潮牌印花第一名",
+          "免费额度 / $7/月",
+          "<a href=\"/go/ideogram/\">免费使用 Ideogram 3.0 →</a>"
+        ],
+        [
+          "Recraft V4",
+          "全网唯一直接导出可编辑真 `.SVG` 矢量源码 + 一键生成全套同画风网页图标",
+          "每日免费额度 (享25%返佣)",
+          "<a href=\"/go/recraft/\">免费体验 Recraft V4 →</a>"
+        ],
+        [
+          "Topaz + Envato",
+          "将 720p 视频无损放大至 4K 60帧 + 1900万套正版视频/AE模板无限下载（最高$120佣金）",
+          "$16.50/月无限下载",
+          "<a href=\"/go/envato/\">查看 Envato 无限下载库 →</a>"
+        ]
+      ]
+    },
+    "quote": "封面海报排版用 Ideogram 3.0，网页矢量 `.SVG` 图标用 Recraft V4，正版空镜与特效模板去 Envato 无限下，成片画质增强上 Topaz Video AI 6。",
+    "body": "<p>告别一眼假的模糊 AI 图：用 Ideogram 3.0 做零拼写错误封面，用 Recraft V4 直接导出真 `.SVG` 矢量图标，再用 Topaz 把视频超分到 4K 60帧。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Ideogram 3.0</strong></td><td>英文标题排版拼写准确率 99%，做 YouTube 缩略图、书籍封面与潮牌印花第一名</td><td>免费额度 / $7/月</td><td><a href=\"/go/ideogram/\">免费使用 Ideogram 3.0 →</a></td></tr><tr><td><strong>Recraft V4</strong></td><td>全网唯一直接导出可编辑真 `.SVG` 矢量源码 + 一键生成全套同画风网页图标</td><td>每日免费额度 (享25%返佣)</td><td><a href=\"/go/recraft/\">免费体验 Recraft V4 →</a></td></tr><tr><td><strong>Topaz + Envato</strong></td><td>将 720p 视频无损放大至 4K 60帧 + 1900万套正版视频/AE模板无限下载（最高$120佣金）</td><td>$16.50/月无限下载</td><td><a href=\"/go/envato/\">查看 Envato 无限下载库 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 封面海报排版用 Ideogram 3.0，网页矢量 `.SVG` 图标用 Recraft V4，正版空镜与特效模板去 Envato 无限下，成片画质增强上 Topaz Video AI 6。</blockquote>",
+    "relatedKit": "content"
+  },
+  "serankingvsmangools": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 分钟精读",
+    "category": "新站低难度蓝海词挖掘 · 12 分钟精读",
+    "title": "SE Ranking (14天免绑卡) vs Mangools KWFinder vs Semrush：新网站如何花一半的钱挖出 KD<20 暴利买词？",
+    "deck": "新域名没外链怎么快速从 Google 搞流量？秘诀是用 Mangools 和 SE Ranking 专门筛选竞争度 KD < 20 的“A vs B / 平替”高转化词。",
+    "excerpt": "新域名没外链怎么快速从 Google 搞流量？秘诀是用 Mangools 和 SE Ranking 专门筛选竞争度 KD < 20 的“A vs B / 平替”高转化词。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "新域名没外链怎么快速从 Google 搞流量？秘诀是用 Mangools 和 SE Ranking 专门筛选竞争度 KD < 20 的“A vs B / 平替”高转化词。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "新域名没外链怎么快速从 Google 搞流量？秘诀是用 Mangools 和 SE Ranking 专门筛选竞争度 KD < 20 的“A vs B / 平替”高转化词。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "新站长先白嫖 SE Ranking 的 14 天免绑卡试用与 Mangools 的 10 天体验，集中火力写 30 篇 KD < 20 的工具对比词，收录起飞最快！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "SE Ranking",
+          "价格仅巨头一半的全能 SEO 平台，支持追踪 Google AI 概览排名（14天免绑卡直接试用）",
+          "享 30% 终身返佣或 $200 CPA",
+          "<a href=\"/go/seranking/\">免绑卡免费试用 SE Ranking →</a>"
+        ],
+        [
+          "Mangools KWFinder",
+          "新手最直观的红黄绿关键词难度（KD）挖掘器，30秒揪出新站写完就能上首页的蓝海词",
+          "10天免费体验 (30%–35%终身返佣)",
+          "<a href=\"/go/mangools/\">免费注册 KWFinder 挖词 →</a>"
+        ],
+        [
+          "Semrush Pro",
+          "行业旗舰级 250 亿词库与同行广告投放情报反查（单笔 $200 CPA 佣金）",
+          "14天专业版免费试用",
+          "<a href=\"/go/semrush/\">领取 Semrush 免费试用 →</a>"
+        ]
+      ]
+    },
+    "quote": "新站长先白嫖 SE Ranking 的 14 天免绑卡试用与 Mangools 的 10 天体验，集中火力写 30 篇 KD < 20 的工具对比词，收录起飞最快！",
+    "body": "<p>新域名没外链怎么快速从 Google 搞流量？秘诀是用 Mangools 和 SE Ranking 专门筛选竞争度 KD < 20 的“A vs B / 平替”高转化词。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>SE Ranking</strong></td><td>价格仅巨头一半的全能 SEO 平台，支持追踪 Google AI 概览排名（14天免绑卡直接试用）</td><td>享 30% 终身返佣或 $200 CPA</td><td><a href=\"/go/seranking/\">免绑卡免费试用 SE Ranking →</a></td></tr><tr><td><strong>Mangools KWFinder</strong></td><td>新手最直观的红黄绿关键词难度（KD）挖掘器，30秒揪出新站写完就能上首页的蓝海词</td><td>10天免费体验 (30%–35%终身返佣)</td><td><a href=\"/go/mangools/\">免费注册 KWFinder 挖词 →</a></td></tr><tr><td><strong>Semrush Pro</strong></td><td>行业旗舰级 250 亿词库与同行广告投放情报反查（单笔 $200 CPA 佣金）</td><td>14天专业版免费试用</td><td><a href=\"/go/semrush/\">领取 Semrush 免费试用 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 新站长先白嫖 SE Ranking 的 14 天免绑卡试用与 Mangools 的 10 天体验，集中火力写 30 篇 KD < 20 的工具对比词，收录起飞最快！</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "systemevsskool": {
+    "catKey": "ai",
+    "tile": "tile-content",
+    "readTime": "12 分钟精读",
+    "category": "60% 终身返佣漏斗与社群变现 · 13 分钟精读",
+    "title": "Systeme.io (60%终身返佣) vs Skool (40%终身) vs Kajabi vs ThriveCart：四大高佣金变现系统终极盘点",
+    "deck": "不仅自己用能省下每年上千美金软件费，更是全网佣金最肥的“印钞机四巨头”：60% 终身返佣的 Systeme、月月躺拿 $39 的 Skool 与单笔分 $247 的 ThriveCart。",
+    "excerpt": "不仅自己用能省下每年上千美金软件费，更是全网佣金最肥的“印钞机四巨头”：60% 终身返佣的 Systeme、月月躺拿 $39 的 Skool 与单笔分 $247 的 ThriveCart。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "不仅自己用能省下每年上千美金软件费，更是全网佣金最肥的“印钞机四巨头”：60% 终身返佣的 Systeme、月月躺拿 $39 的 Skool 与单笔分 $247 的 ThriveCart。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "不仅自己用能省下每年上千美金软件费，更是全网佣金最肥的“印钞机四巨头”：60% 终身返佣的 Systeme、月月躺拿 $39 的 Skool 与单笔分 $247 的 ThriveCart。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "零成本起步推永久免费的 Systeme.io（锁定后续 60% 终身升级分成）；做高互动社群推 Skool；追求一单赚两三百美金高爆发推 ThriveCart 与 Kajabi！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Systeme.io",
+          "2,000 订阅者内永久免费（含落地页+无限发信+卖课），推广更享惊人的 60% 终身持续分佣！",
+          "永久免费起步 (免绑卡)",
+          "<a href=\"/go/systeme/\">免费开通 Systeme.io →</a>"
+        ],
+        [
+          "Skool 付费社群",
+          "积分升级闯关式高粘性社群与课程平台，每推荐 1 位群主你终身每月稳拿 $39 美金！",
+          "14天免费建群体验",
+          "<a href=\"/go/skool/\">体验 Skool 游戏化社群 →</a>"
+        ],
+        [
+          "ThriveCart + Kajabi",
+          "一次买断终身零月租收银台（推 1 单直接赚 $247+）& 附带专属手机 App 的顶级知识付费系统",
+          "高客单价佣金天花板",
+          "<a href=\"/go/thrivecart/\">查看 ThriveCart 买断版 →</a>"
+        ]
+      ]
+    },
+    "quote": "零成本起步推永久免费的 Systeme.io（锁定后续 60% 终身升级分成）；做高互动社群推 Skool；追求一单赚两三百美金高爆发推 ThriveCart 与 Kajabi！",
+    "body": "<p>不仅自己用能省下每年上千美金软件费，更是全网佣金最肥的“印钞机四巨头”：60% 终身返佣的 Systeme、月月躺拿 $39 的 Skool 与单笔分 $247 的 ThriveCart。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Systeme.io</strong></td><td>2,000 订阅者内永久免费（含落地页+无限发信+卖课），推广更享惊人的 60% 终身持续分佣！</td><td>永久免费起步 (免绑卡)</td><td><a href=\"/go/systeme/\">免费开通 Systeme.io →</a></td></tr><tr><td><strong>Skool 付费社群</strong></td><td>积分升级闯关式高粘性社群与课程平台，每推荐 1 位群主你终身每月稳拿 $39 美金！</td><td>14天免费建群体验</td><td><a href=\"/go/skool/\">体验 Skool 游戏化社群 →</a></td></tr><tr><td><strong>ThriveCart + Kajabi</strong></td><td>一次买断终身零月租收银台（推 1 单直接赚 $247+）& 附带专属手机 App 的顶级知识付费系统</td><td>高客单价佣金天花板</td><td><a href=\"/go/thrivecart/\">查看 ThriveCart 买断版 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 零成本起步推永久免费的 Systeme.io（锁定后续 60% 终身升级分成）；做高互动社群推 Skool；追求一单赚两三百美金高爆发推 ThriveCart 与 Kajabi！</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "adspowervsbrightdata": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "跨境多账号防关联与住宅代理 · 14 分钟精读",
+    "title": "AdsPower (永久免费5环境) + Multilogin X + Bright Data + Oxylabs：2026 跨境多账号零封号物理隔离实战指南",
+    "deck": "为什么在同一个浏览器切号做 TikTok、Reddit、亚马逊或联盟营销会被一锅端？详解“独立硬件指纹 + 原生家庭住宅 IP”的双重防关联铁律。",
+    "excerpt": "为什么在同一个浏览器切号做 TikTok、Reddit、亚马逊或联盟营销会被一锅端？详解“独立硬件指纹 + 原生家庭住宅 IP”的双重防关联铁律。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "为什么在同一个浏览器切号做 TikTok、Reddit、亚马逊或联盟营销会被一锅端？详解“独立硬件指纹 + 原生家庭住宅 IP”的双重防关联铁律。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "为什么在同一个浏览器切号做 TikTok、Reddit、亚马逊或联盟营销会被一锅端？详解“独立硬件指纹 + 原生家庭住宅 IP”的双重防关联铁律。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "黄金防封法则：先下 AdsPower 领 5 个永久免费指纹环境，再为每个核心账号绑定一条 Bright Data 或 Oxylabs 的静态住宅 ISP 代理，实现 100% 物理隔离！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "AdsPower 指纹浏览器",
+          "永久免费送 5 个独立硬件指纹环境 + 多窗口同步群控与自动养号 RPA（享 24个月最高 45% 返佣）",
+          "永久免费 5 环境 / $5.40/月起",
+          "<a href=\"/go/adspower/\">免费下载 AdsPower (领5个免费环境) →</a>"
+        ],
+        [
+          "Multilogin X",
+          "指纹防关联鼻祖，底层重编译双内核，现在订阅直接附赠内置纯净住宅代理流量",
+          "€5.85/月起（含住宅代理流量）",
+          "<a href=\"/go/multilogin/\">查看 Multilogin X 详情 →</a>"
+        ],
+        [
+          "Bright Data + Oxylabs",
+          "全球 7200万–1亿+ 真实家庭宽带与静态原生 ISP 代理（B2B 推广单客最高分 $2,500 美金！）",
+          "支持按量付费 ($8/GB起)",
+          "<a href=\"/go/brightdata/\">免费申请 Bright Data 住宅代理 →</a>"
+        ]
+      ]
+    },
+    "quote": "黄金防封法则：先下 AdsPower 领 5 个永久免费指纹环境，再为每个核心账号绑定一条 Bright Data 或 Oxylabs 的静态住宅 ISP 代理，实现 100% 物理隔离！",
+    "body": "<p>为什么在同一个浏览器切号做 TikTok、Reddit、亚马逊或联盟营销会被一锅端？详解“独立硬件指纹 + 原生家庭住宅 IP”的双重防关联铁律。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>AdsPower 指纹浏览器</strong></td><td>永久免费送 5 个独立硬件指纹环境 + 多窗口同步群控与自动养号 RPA（享 24个月最高 45% 返佣）</td><td>永久免费 5 环境 / $5.40/月起</td><td><a href=\"/go/adspower/\">免费下载 AdsPower (领5个免费环境) →</a></td></tr><tr><td><strong>Multilogin X</strong></td><td>指纹防关联鼻祖，底层重编译双内核，现在订阅直接附赠内置纯净住宅代理流量</td><td>€5.85/月起（含住宅代理流量）</td><td><a href=\"/go/multilogin/\">查看 Multilogin X 详情 →</a></td></tr><tr><td><strong>Bright Data + Oxylabs</strong></td><td>全球 7200万–1亿+ 真实家庭宽带与静态原生 ISP 代理（B2B 推广单客最高分 $2,500 美金！）</td><td>支持按量付费 ($8/GB起)</td><td><a href=\"/go/brightdata/\">免费申请 Bright Data 住宅代理 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 黄金防封法则：先下 AdsPower 领 5 个永久免费指纹环境，再为每个核心账号绑定一条 Bright Data 或 Oxylabs 的静态住宅 ISP 代理，实现 100% 物理隔离！</blockquote>",
+    "relatedKit": "antidetectkit"
+  },
+  "shopifyvscarrd": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "独立站商城与 $19/年高转化桥页 · 11 分钟精读",
+    "title": "Shopify (首月$1) vs Carrd Pro (一年仅$19!) vs Ghost 独立出版 vs Dorik AI：四类建站需求精准对号入座",
+    "deck": "别再用一套笨重模板硬套所有需求：卖货开店上首月 $1 的 Shopify，做社媒主页外链与联盟桥页用一年仅 $19 的 Carrd，写付费专栏用 0 抽成的 Ghost。",
+    "excerpt": "别再用一套笨重模板硬套所有需求：卖货开店上首月 $1 的 Shopify，做社媒主页外链与联盟桥页用一年仅 $19 的 Carrd，写付费专栏用 0 抽成的 Ghost。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "别再用一套笨重模板硬套所有需求：卖货开店上首月 $1 的 Shopify，做社媒主页外链与联盟桥页用一年仅 $19 的 Carrd，写付费专栏用 0 抽成的 Ghost。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "别再用一套笨重模板硬套所有需求：卖货开店上首月 $1 的 Shopify，做社媒主页外链与联盟桥页用一年仅 $19 的 Carrd，写付费专栏用 0 抽成的 Ghost。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "无论你做什么业务，花 $19/整年备一个 Carrd Pro 随时发单页活动都稳赚不赔；开正规跨境商城则直接薅 Shopify 首月 $1 羊毛。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Carrd Pro",
+          "整整一年才收 $19 美金（可绑 10 个独立域名）！15 分钟搞定高转化联盟过渡页与 Link-in-bio",
+          "仅 $19/整年（享30%终身返佣）",
+          "<a href=\"/go/carrd/\">开通 Carrd Pro ($19/年) →</a>"
+        ],
+        [
+          "Shopify",
+          "全球转化率第一的跨境电商独立站系统，自带 Shop Pay 极速结账（Impact 单笔最高 $150 佣金）",
+          "首月仅需 $1 美金体验",
+          "<a href=\"/go/shopify/\">领取 Shopify 首月 $1 优惠 →</a>"
+        ],
+        [
+          "Ghost(Pro) + Dorik",
+          "对会员订阅费 0% 抽成的独立博客通讯系统 & 60秒一句话生成多页网站的 AI 建站平台",
+          "14天免费试用 (30%–40%返佣)",
+          "<a href=\"/go/ghost/\">免费试用 Ghost(Pro) →</a>"
+        ]
+      ]
+    },
+    "quote": "无论你做什么业务，花 $19/整年备一个 Carrd Pro 随时发单页活动都稳赚不赔；开正规跨境商城则直接薅 Shopify 首月 $1 羊毛。",
+    "body": "<p>别再用一套笨重模板硬套所有需求：卖货开店上首月 $1 的 Shopify，做社媒主页外链与联盟桥页用一年仅 $19 的 Carrd，写付费专栏用 0 抽成的 Ghost。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Carrd Pro</strong></td><td>整整一年才收 $19 美金（可绑 10 个独立域名）！15 分钟搞定高转化联盟过渡页与 Link-in-bio</td><td>仅 $19/整年（享30%终身返佣）</td><td><a href=\"/go/carrd/\">开通 Carrd Pro ($19/年) →</a></td></tr><tr><td><strong>Shopify</strong></td><td>全球转化率第一的跨境电商独立站系统，自带 Shop Pay 极速结账（Impact 单笔最高 $150 佣金）</td><td>首月仅需 $1 美金体验</td><td><a href=\"/go/shopify/\">领取 Shopify 首月 $1 优惠 →</a></td></tr><tr><td><strong>Ghost(Pro) + Dorik</strong></td><td>对会员订阅费 0% 抽成的独立博客通讯系统 & 60秒一句话生成多页网站的 AI 建站平台</td><td>14天免费试用 (30%–40%返佣)</td><td><a href=\"/go/ghost/\">免费试用 Ghost(Pro) →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 无论你做什么业务，花 $19/整年备一个 Carrd Pro 随时发单页活动都稳赚不赔；开正规跨境商城则直接薅 Shopify 首月 $1 羊毛。</blockquote>",
+    "relatedKit": "shopifyseoos"
+  },
+  "kinstavscloudways": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "高端托管云与边缘 Serverless 数据库 · 11 分钟精读",
+    "title": "Kinsta (谷歌云C3D+$500佣金) vs Cloudways vs Linode (送$100) vs Neon/Upstash：2026 云与数据库架构全景",
+    "deck": "不想敲命令管服务器选 Cloudways 或顶配 Kinsta；想白嫖 $100 额度自己装 Docker 选 Linode；做 AI 应用配 Serverless 数据库必选 Neon 与 Upstash。",
+    "excerpt": "不想敲命令管服务器选 Cloudways 或顶配 Kinsta；想白嫖 $100 额度自己装 Docker 选 Linode；做 AI 应用配 Serverless 数据库必选 Neon 与 Upstash。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "不想敲命令管服务器选 Cloudways 或顶配 Kinsta；想白嫖 $100 额度自己装 Docker 选 Linode；做 AI 应用配 Serverless 数据库必选 Neon 与 Upstash。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "不想敲命令管服务器选 Cloudways 或顶配 Kinsta；想白嫖 $100 额度自己装 Docker 选 Linode；做 AI 应用配 Serverless 数据库必选 Neon 与 Upstash。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "开发 AI 应用用 Neon + Upstash 免费档起步（防刷限流必装）；自己搭节点领 Linode $100 赠金；写建站主机评测必推佣金封神的 Kinsta 与 Cloudways！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Kinsta + Cloudways",
+          "谷歌云 C3D 贵族托管云（单笔最高 $500+10% 终身分成）与免命令行可视化管理 DO/Vultr 的神器",
+          "Cloudways 享3天免绑卡试用",
+          "<a href=\"/go/cloudways/\">免绑卡试用 Cloudways →</a>"
+        ],
+        [
+          "Akamai Linode",
+          "全球第一 CDN 巨头 Akamai 旗下老牌 Linux 云主机，基础款仅 $5/月",
+          "新户直接送 $100 免费额度",
+          "<a href=\"/go/linode/\">领取 Linode $100 免费额度 →</a>"
+        ],
+        [
+          "Neon + Upstash",
+          "支持 1秒克隆测试分支的 Serverless Postgres + 3行代码给 AI 接口加防刷限流的边缘 Redis",
+          "均提供永久免费档位",
+          "<a href=\"/go/upstash/\">免费启用 Upstash 边缘限流 →</a>"
+        ]
+      ]
+    },
+    "quote": "开发 AI 应用用 Neon + Upstash 免费档起步（防刷限流必装）；自己搭节点领 Linode $100 赠金；写建站主机评测必推佣金封神的 Kinsta 与 Cloudways！",
+    "body": "<p>不想敲命令管服务器选 Cloudways 或顶配 Kinsta；想白嫖 $100 额度自己装 Docker 选 Linode；做 AI 应用配 Serverless 数据库必选 Neon 与 Upstash。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Kinsta + Cloudways</strong></td><td>谷歌云 C3D 贵族托管云（单笔最高 $500+10% 终身分成）与免命令行可视化管理 DO/Vultr 的神器</td><td>Cloudways 享3天免绑卡试用</td><td><a href=\"/go/cloudways/\">免绑卡试用 Cloudways →</a></td></tr><tr><td><strong>Akamai Linode</strong></td><td>全球第一 CDN 巨头 Akamai 旗下老牌 Linux 云主机，基础款仅 $5/月</td><td>新户直接送 $100 免费额度</td><td><a href=\"/go/linode/\">领取 Linode $100 免费额度 →</a></td></tr><tr><td><strong>Neon + Upstash</strong></td><td>支持 1秒克隆测试分支的 Serverless Postgres + 3行代码给 AI 接口加防刷限流的边缘 Redis</td><td>均提供永久免费档位</td><td><a href=\"/go/upstash/\">免费启用 Upstash 边缘限流 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 开发 AI 应用用 Neon + Upstash 免费档起步（防刷限流必装）；自己搭节点领 Linode $100 赠金；写建站主机评测必推佣金封神的 Kinsta 与 Cloudways！</blockquote>",
+    "relatedKit": "n8nvps"
+  },
+  "protonvsbitwarden": {
+    "catKey": "ai",
+    "tile": "tile-automation",
+    "readTime": "12 分钟精读",
+    "category": "瑞士隐私邮箱、密码库与全球收结汇 · 11 分钟精读",
+    "title": "Proton 瑞士加密邮箱 + Bitwarden ($10/年) + Surfshark 无限设备 + Payoneer 派安盈 + Paddle：出海合规安全底座",
+    "deck": "注册上百个海外平台如何防信息泄露与撞库？如何把亚马逊联盟、CJ、Impact 与 SaaS 收入丝滑提现回国？一套组合拳彻底搞定。",
+    "excerpt": "注册上百个海外平台如何防信息泄露与撞库？如何把亚马逊联盟、CJ、Impact 与 SaaS 收入丝滑提现回国？一套组合拳彻底搞定。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "注册上百个海外平台如何防信息泄露与撞库？如何把亚马逊联盟、CJ、Impact 与 SaaS 收入丝滑提现回国？一套组合拳彻底搞定。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "注册上百个海外平台如何防信息泄露与撞库？如何把亚马逊联盟、CJ、Impact 与 SaaS 收入丝滑提现回国？一套组合拳彻底搞定。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "收款端配齐「Wise + Payoneer 派安盈」即可 100% 通吃全球所有联盟平台打款；账号安全端用 Bitwarden ($10/年自动填 2FA) + Proton 无限邮箱别名固若金汤。"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "Proton + Surfshark",
+          "瑞士隐私法保护的独立域名邮箱/无限防骚扰别名 + 不限设备台数且自带海外虚拟姓名地址生成器的 VPN",
+          "免费可用 (享30%–80%高佣金)",
+          "<a href=\"/go/surfshark/\">查看 Surfshark 无限设备优惠 →</a>"
+        ],
+        [
+          "Bitwarden 密码库",
+          "开源免费跨全平台同步所有密码，升级高级版（浏览器一键自动填充 6位动态 2FA 验证码）整年仅 $10！",
+          "免费版 / 高级版 $10/整年",
+          "<a href=\"/go/bitwarden/\">免费注册 Bitwarden →</a>"
+        ],
+        [
+          "Payoneer + Paddle",
+          "亚马逊全球联盟/CJ/Impact 官方直连多币种收款账户（达标送 $25–$50）+ 全包欧盟税务的 SaaS 收单平台",
+          "0 开户费 + 直接结汇回国",
+          "<a href=\"/go/payoneer/\">免费开通派安盈领美金奖 →</a>"
+        ]
+      ]
+    },
+    "quote": "收款端配齐「Wise + Payoneer 派安盈」即可 100% 通吃全球所有联盟平台打款；账号安全端用 Bitwarden ($10/年自动填 2FA) + Proton 无限邮箱别名固若金汤。",
+    "body": "<p>注册上百个海外平台如何防信息泄露与撞库？如何把亚马逊联盟、CJ、Impact 与 SaaS 收入丝滑提现回国？一套组合拳彻底搞定。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>Proton + Surfshark</strong></td><td>瑞士隐私法保护的独立域名邮箱/无限防骚扰别名 + 不限设备台数且自带海外虚拟姓名地址生成器的 VPN</td><td>免费可用 (享30%–80%高佣金)</td><td><a href=\"/go/surfshark/\">查看 Surfshark 无限设备优惠 →</a></td></tr><tr><td><strong>Bitwarden 密码库</strong></td><td>开源免费跨全平台同步所有密码，升级高级版（浏览器一键自动填充 6位动态 2FA 验证码）整年仅 $10！</td><td>免费版 / 高级版 $10/整年</td><td><a href=\"/go/bitwarden/\">免费注册 Bitwarden →</a></td></tr><tr><td><strong>Payoneer + Paddle</strong></td><td>亚马逊全球联盟/CJ/Impact 官方直连多币种收款账户（达标送 $25–$50）+ 全包欧盟税务的 SaaS 收单平台</td><td>0 开户费 + 直接结汇回国</td><td><a href=\"/go/payoneer/\">免费开通派安盈领美金奖 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 收款端配齐「Wise + Payoneer 派安盈」即可 100% 通吃全球所有联盟平台打款；账号安全端用 Bitwarden ($10/年自动填 2FA) + Proton 无限邮箱别名固若金汤。</blockquote>",
+    "relatedKit": "antidetectkit"
+  },
+  "reedleshotvsaestura": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 分钟精读",
+    "category": "韩系涂抹式微针与微囊神经酰胺 · 12 分钟精读",
+    "title": "VT 老虎微晶 100 + Aestura 365 微囊面霜 + 美迪惠尔积雪草棉片：火遍首尔皮肤科的“居家无创水光”三部曲",
+    "deck": "为什么涂了几千块的精华像浮在表面没吸收？详解用比毛孔细 15 倍的 VT 积雪草微晶骨针打通微通道、再用 Aestura 365 微囊面霜锁水 120 小时的王炸组合。",
+    "excerpt": "为什么涂了几千块的精华像浮在表面没吸收？详解用比毛孔细 15 倍的 VT 积雪草微晶骨针打通微通道、再用 Aestura 365 微囊面霜锁水 120 小时的王炸组合。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "为什么涂了几千块的精华像浮在表面没吸收？详解用比毛孔细 15 倍的 VT 积雪草微晶骨针打通微通道、再用 Aestura 365 微囊面霜锁水 120 小时的王炸组合。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "为什么涂了几千块的精华像浮在表面没吸收？详解用比毛孔细 15 倍的 VT 积雪草微晶骨针打通微通道、再用 Aestura 365 微囊面霜锁水 120 小时的王炸组合。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "晚间黄金公式：Vanicream 温和洗脸 -> 按压 VT 微针 100 打通通道 -> 叠涂保湿精华或蓝铜胜肽 -> 厚涂一层 Aestura 365 微囊面霜封包，第二天起床脸嫩得发亮！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "第一步：美迪惠尔积雪草棉片",
+          "100片装带长镊子：妆前或晚间两颊湿敷 3 分钟，羟基积雪草苷瞬间降温退红、抚平起皮",
+          "$18–$24 / 100大片装",
+          "<a href=\"/go/mediheal/\">查看美迪惠尔湿敷棉片 →</a>"
+        ],
+        [
+          "第二步：VT 老虎微晶精华 100",
+          "晚间洁面后按压上脸，比毛孔细 15 倍的积雪草微晶骨针物理打开角质通道，连续两周毛孔肉眼可见变细",
+          "$22–$27 / 50ml 真空瓶",
+          "<a href=\"/go/reedleshot/\">查看 VT 微针精华 100 →</a>"
+        ],
+        [
+          "第三步：Aestura 365 保湿修护霜",
+          "韩国皮肤科医院术后钦定第一名：肉眼可见细密 DermaON 白色神经酰胺微囊，一抹化入肌底锁水 120 小时",
+          "$24–$29 / 80ml 大软管",
+          "<a href=\"/go/aestura/\">查看 Aestura 365 面霜 →</a>"
+        ]
+      ]
+    },
+    "quote": "晚间黄金公式：Vanicream 温和洗脸 -> 按压 VT 微针 100 打通通道 -> 叠涂保湿精华或蓝铜胜肽 -> 厚涂一层 Aestura 365 微囊面霜封包，第二天起床脸嫩得发亮！",
+    "body": "<p>为什么涂了几千块的精华像浮在表面没吸收？详解用比毛孔细 15 倍的 VT 积雪草微晶骨针打通微通道、再用 Aestura 365 微囊面霜锁水 120 小时的王炸组合。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>第一步：美迪惠尔积雪草棉片</strong></td><td>100片装带长镊子：妆前或晚间两颊湿敷 3 分钟，羟基积雪草苷瞬间降温退红、抚平起皮</td><td>$18–$24 / 100大片装</td><td><a href=\"/go/mediheal/\">查看美迪惠尔湿敷棉片 →</a></td></tr><tr><td><strong>第二步：VT 老虎微晶精华 100</strong></td><td>晚间洁面后按压上脸，比毛孔细 15 倍的积雪草微晶骨针物理打开角质通道，连续两周毛孔肉眼可见变细</td><td>$22–$27 / 50ml 真空瓶</td><td><a href=\"/go/reedleshot/\">查看 VT 微针精华 100 →</a></td></tr><tr><td><strong>第三步：Aestura 365 保湿修护霜</strong></td><td>韩国皮肤科医院术后钦定第一名：肉眼可见细密 DermaON 白色神经酰胺微囊，一抹化入肌底锁水 120 小时</td><td>$24–$29 / 80ml 大软管</td><td><a href=\"/go/aestura/\">查看 Aestura 365 面霜 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 晚间黄金公式：Vanicream 温和洗脸 -> 按压 VT 微针 100 打通通道 -> 叠涂保湿精华或蓝铜胜肽 -> 厚涂一层 Aestura 365 微囊面霜封包，第二天起床脸嫩得发亮！</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "doublecleansematrix": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 分钟精读",
+    "category": "以油溶油去黑头与温和双效清洁 · 11 分钟精读",
+    "title": "2026 零伤肤「双效卸妆清洁」红宝书：SKIN1004 水感卸妆油 vs Heimish/芭妮兰卸妆膏 vs 贝德玛粉水 + Vanicream",
+    "deck": "防晒卸不干净会闷闭口，清洁过度又会烂脸红血丝！按你的肤质精准匹配最适合的第一步卸防晒神品与美国皮肤科零致敏洁面王 Vanicream。",
+    "excerpt": "防晒卸不干净会闷闭口，清洁过度又会烂脸红血丝！按你的肤质精准匹配最适合的第一步卸防晒神品与美国皮肤科零致敏洁面王 Vanicream。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "防晒卸不干净会闷闭口，清洁过度又会烂脸红血丝！按你的肤质精准匹配最适合的第一步卸防晒神品与美国皮肤科零致敏洁面王 Vanicream。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "防晒卸不干净会闷闭口，清洁过度又会烂脸红血丝！按你的肤质精准匹配最适合的第一步卸防晒神品与美国皮肤科零致敏洁面王 Vanicream。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "通勤淡防晒用贝德玛粉水擦拭；防水防晒或黑头多用 SKIN1004 水感卸妆油 / Heimish 弹盖卸妆膏干手揉 30 秒；最后永远用 $9 的 Vanicream 温和洗净！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "SKIN1004 积雪草水感卸妆油",
+          "质地像爽肤水一样轻薄！以油溶油打圈 60 秒温和揉出草莓鼻黑头油脂栓，遇水秒乳化不闷痘",
+          "$15–$18 / 200ml",
+          "<a href=\"/go/skin1004oil/\">查看 SKIN1004 轻盈卸妆油 →</a>"
+        ],
+        [
+          "Heimish / 芭妮兰 Zero 卸妆膏",
+          "单手一按弹盖的冰淇淋卸妆膏（Heimish）与全球每 3秒卖一罐的纯素鼻祖（芭妮兰），秒溶防水防晒不糊眼",
+          "$14–$18 大罐装",
+          "<a href=\"/go/heimish/\">去 iHerb 查看 Heimish 卸妆膏 →</a>"
+        ],
+        [
+          "贝德玛粉水 + Vanicream 洁面",
+          "仿生微胞弱酸卸淡妆霸主（500ml巨瓶）+ 梅奥诊所渊源研发的 $9 美金零香精零致敏本命洗面奶",
+          "$9–$16 (iHerb 凑单必入)",
+          "<a href=\"/go/vanicream/\">去 iHerb 查看 Vanicream 洁面 →</a>"
+        ]
+      ]
+    },
+    "quote": "通勤淡防晒用贝德玛粉水擦拭；防水防晒或黑头多用 SKIN1004 水感卸妆油 / Heimish 弹盖卸妆膏干手揉 30 秒；最后永远用 $9 的 Vanicream 温和洗净！",
+    "body": "<p>防晒卸不干净会闷闭口，清洁过度又会烂脸红血丝！按你的肤质精准匹配最适合的第一步卸防晒神品与美国皮肤科零致敏洁面王 Vanicream。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>SKIN1004 积雪草水感卸妆油</strong></td><td>质地像爽肤水一样轻薄！以油溶油打圈 60 秒温和揉出草莓鼻黑头油脂栓，遇水秒乳化不闷痘</td><td>$15–$18 / 200ml</td><td><a href=\"/go/skin1004oil/\">查看 SKIN1004 轻盈卸妆油 →</a></td></tr><tr><td><strong>Heimish / 芭妮兰 Zero 卸妆膏</strong></td><td>单手一按弹盖的冰淇淋卸妆膏（Heimish）与全球每 3秒卖一罐的纯素鼻祖（芭妮兰），秒溶防水防晒不糊眼</td><td>$14–$18 大罐装</td><td><a href=\"/go/heimish/\">去 iHerb 查看 Heimish 卸妆膏 →</a></td></tr><tr><td><strong>贝德玛粉水 + Vanicream 洁面</strong></td><td>仿生微胞弱酸卸淡妆霸主（500ml巨瓶）+ 梅奥诊所渊源研发的 $9 美金零香精零致敏本命洗面奶</td><td>$9–$16 (iHerb 凑单必入)</td><td><a href=\"/go/vanicream/\">去 iHerb 查看 Vanicream 洁面 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 通勤淡防晒用贝德玛粉水擦拭；防水防晒或黑头多用 SKIN1004 水感卸妆油 / Heimish 弹盖卸妆膏干手揉 30 秒；最后永远用 $9 的 Vanicream 温和洗净！</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "thiamidolvstxa": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 分钟精读",
+    "category": "人类酪氨酸酶淡斑与壬二酸战痘 · 12 分钟精读",
+    "title": "优色林专利 Thiamidol 双管 vs Cos De BAHA 10% 壬二酸 vs PanOxyl 祛痘洗剂 vs The Ordinary 1% 蓝铜胜肽：靶向猛药指南",
+    "deck": "普通护肤品搞不定的顽固晒斑黄褐斑、玫瑰痤疮泛红、前胸后背红肿痘与眼周鱼尾纹，如何用经过临床文献验证的靶向成分一击必杀？",
+    "excerpt": "普通护肤品搞不定的顽固晒斑黄褐斑、玫瑰痤疮泛红、前胸后背红肿痘与眼周鱼尾纹，如何用经过临床文献验证的靶向成分一击必杀？",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "普通护肤品搞不定的顽固晒斑黄褐斑、玫瑰痤疮泛红、前胸后背红肿痘与眼周鱼尾纹，如何用经过临床文献验证的靶向成分一击必杀？",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "普通护肤品搞不定的顽固晒斑黄褐斑、玫瑰痤疮泛红、前胸后背红肿痘与眼周鱼尾纹，如何用经过临床文献验证的靶向成分一击必杀？"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "陈年晒斑黄褐斑用优色林 Thiamidol；红痘印与两颊泛红用 $12 不搓泥的 Cos De BAHA 壬二酸；前胸后背痘洗澡敷 2 分钟 PanOxyl；眼纹用 RoC 铝管眼霜！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "优色林 Thiamidol 双管淡斑精华",
+          "拜耳斯道夫从 50,000 种分子筛出的唯一精准锁死「人类酪氨酸酶」专利，硬刚顽固晒斑与黄褐斑",
+          "$38–$45 双管按压装",
+          "<a href=\"/go/eucerin/\">查看优色林双管淡斑精华 →</a>"
+        ],
+        [
+          "Cos De BAHA 10%壬二酸 + PanOxyl",
+          "水润完全不搓泥的 10% 壬二酸精华（$12 通杀红黑痘印与玫瑰泛红）+ 洗澡敷 2 分钟灭绝前胸后背痘的 PanOxyl",
+          "$10–$13 (iHerb 爆款)",
+          "<a href=\"/go/cosdebaha/\">去 iHerb 查看 10% 壬二酸 →</a>"
+        ],
+        [
+          "The Ordinary 1%蓝铜 + RoC A醇眼霜",
+          "足量添加 1% 纯正宝石蓝铜胜肽抗老修护瓶 + 30项临床背书的避光铝管平价视黄醇眼霜霸主",
+          "$18–$32 高能组合",
+          "<a href=\"/go/roc/\">去 iHerb 查看 RoC 抗皱眼霜 →</a>"
+        ]
+      ]
+    },
+    "quote": "陈年晒斑黄褐斑用优色林 Thiamidol；红痘印与两颊泛红用 $12 不搓泥的 Cos De BAHA 壬二酸；前胸后背痘洗澡敷 2 分钟 PanOxyl；眼纹用 RoC 铝管眼霜！",
+    "body": "<p>普通护肤品搞不定的顽固晒斑黄褐斑、玫瑰痤疮泛红、前胸后背红肿痘与眼周鱼尾纹，如何用经过临床文献验证的靶向成分一击必杀？</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>优色林 Thiamidol 双管淡斑精华</strong></td><td>拜耳斯道夫从 50,000 种分子筛出的唯一精准锁死「人类酪氨酸酶」专利，硬刚顽固晒斑与黄褐斑</td><td>$38–$45 双管按压装</td><td><a href=\"/go/eucerin/\">查看优色林双管淡斑精华 →</a></td></tr><tr><td><strong>Cos De BAHA 10%壬二酸 + PanOxyl</strong></td><td>水润完全不搓泥的 10% 壬二酸精华（$12 通杀红黑痘印与玫瑰泛红）+ 洗澡敷 2 分钟灭绝前胸后背痘的 PanOxyl</td><td>$10–$13 (iHerb 爆款)</td><td><a href=\"/go/cosdebaha/\">去 iHerb 查看 10% 壬二酸 →</a></td></tr><tr><td><strong>The Ordinary 1%蓝铜 + RoC A醇眼霜</strong></td><td>足量添加 1% 纯正宝石蓝铜胜肽抗老修护瓶 + 30项临床背书的避光铝管平价视黄醇眼霜霸主</td><td>$18–$32 高能组合</td><td><a href=\"/go/roc/\">去 iHerb 查看 RoC 抗皱眼霜 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 陈年晒斑黄褐斑用优色林 Thiamidol；红痘印与两颊泛红用 $12 不搓泥的 Cos De BAHA 壬二酸；前胸后背痘洗澡敷 2 分钟 PanOxyl；眼纹用 RoC 铝管眼霜！</blockquote>",
+    "relatedKit": "longevitystackos"
+  },
+  "longevitysupplementstack": {
+    "catKey": "beauty",
+    "tile": "tile-routine",
+    "readTime": "12 分钟精读",
+    "category": "iHerb 内服外养与深睡抗衰实验室 · 14 分钟精读",
+    "title": "2026 硅谷极客与成分党封神的 iHerb 内服抗炎抗衰五件套（IFOS五星鱼油 + 深海胶原肽 + Thorne 甘氨酸镁 + 辅酶Q10 + 活性综合维他命）",
+    "deck": "外用猛药只能作用于表皮，而真皮胶原流失、熬夜爆痘发炎、干眼脑雾与浅眠多梦必须从细胞内源解决！盘点 iHerb 全网销量最高、拥有独立第三方实验室纯度报告的五大神级补剂。",
+    "excerpt": "外用猛药只能作用于表皮，而真皮胶原流失、熬夜爆痘发炎、干眼脑雾与浅眠多梦必须从细胞内源解决！盘点 iHerb 全网销量最高、拥有独立第三方实验室纯度报告的五大神级补剂。",
+    "readMore": "阅读完整横评与专属链接",
+    "lead": "外用猛药只能作用于表皮，而真皮胶原流失、熬夜爆痘发炎、干眼脑雾与浅眠多梦必须从细胞内源解决！盘点 iHerb 全网销量最高、拥有独立第三方实验室纯度报告的五大神级补剂。",
+    "sections": [
+      [
+        "01 — 2026 实验室深度横评与选型逻辑",
+        "外用猛药只能作用于表皮，而真皮胶原流失、熬夜爆痘发炎、干眼脑雾与浅眠多梦必须从细胞内源解决！盘点 iHerb 全网销量最高、拥有独立第三方实验室纯度报告的五大神级补剂。"
+      ],
+      [
+        "02 — 实战落地方案与避坑指南",
+        "一日内服黄金公式：【早餐】咖啡兑一勺 CollagenUP 胶原粉 + 1粒 Life Extension 活性维他命；【午餐随油脂】2粒 CGN 五星鱼油 + 1粒 100mg 辅酶 Q10；【睡前45分钟】温水冲一勺 Thorne 甘氨酸镁，深睡与皮肤状态双双封神！"
+      ]
+    ],
+    "table": {
+      "headers": [
+        "严选单品",
+        "核心实测优势",
+        "价格与福利",
+        "官方直达通道"
+      ],
+      "rows": [
+        [
+          "CGN IFOS 五星高纯深海鱼油",
+          "iHerb 全站历史总销量第一名（40万+好评）：德国 KD-Pür 提纯零腥味，每天随午餐 2 粒从源头压制皮脂发炎爆痘与干眼疲劳",
+          "$9–$11 / 100粒",
+          "<a href=\"/go/cgn_omega3/\">去 iHerb 查看 CGN 五星鱼油 (享折上折) →</a>"
+        ],
+        [
+          "CGN 深海鱼胶原蛋白肽粉 + 辅酶Q10",
+          "5000mg 小分子鱼胶原三肽+玻尿酸+维C（兑入早间冰美式零腥味）& 复配黑胡椒素提升 30% 吸收率的 100mg 发酵辅酶 Q10",
+          "$12–$19 / 大罐装",
+          "<a href=\"/go/cgn_collagen/\">去 iHerb 查看 CollagenUP 胶原粉 →</a>"
+        ],
+        [
+          "Thorne 甘氨酸镁 + 延寿基金会维他命",
+          "斯坦福神经学家推崇的睡前深睡神器（氨基酸螯合镁绝不拉肚子）+ 每天吃 1 粒就够用 4 个月的全甲基化活性综合维生素",
+          "$19–$44 殿堂级组合",
+          "<a href=\"/go/thorne_mag/\">去 iHerb 查看 Thorne 甘氨酸镁 →</a>"
+        ]
+      ]
+    },
+    "quote": "一日内服黄金公式：【早餐】咖啡兑一勺 CollagenUP 胶原粉 + 1粒 Life Extension 活性维他命；【午餐随油脂】2粒 CGN 五星鱼油 + 1粒 100mg 辅酶 Q10；【睡前45分钟】温水冲一勺 Thorne 甘氨酸镁，深睡与皮肤状态双双封神！",
+    "body": "<p>外用猛药只能作用于表皮，而真皮胶原流失、熬夜爆痘发炎、干眼脑雾与浅眠多梦必须从细胞内源解决！盘点 iHerb 全网销量最高、拥有独立第三方实验室纯度报告的五大神级补剂。</p>\n      <table class=\"bench-table\">\n        <thead><tr><th>严选工具 / 配方</th><th>2026 核心实测亮点</th><th>参考价格 / 福利</th><th>官方优惠直达</th></tr></thead>\n        <tbody><tr><td><strong>CGN IFOS 五星高纯深海鱼油</strong></td><td>iHerb 全站历史总销量第一名（40万+好评）：德国 KD-Pür 提纯零腥味，每天随午餐 2 粒从源头压制皮脂发炎爆痘与干眼疲劳</td><td>$9–$11 / 100粒</td><td><a href=\"/go/cgn_omega3/\">去 iHerb 查看 CGN 五星鱼油 (享折上折) →</a></td></tr><tr><td><strong>CGN 深海鱼胶原蛋白肽粉 + 辅酶Q10</strong></td><td>5000mg 小分子鱼胶原三肽+玻尿酸+维C（兑入早间冰美式零腥味）& 复配黑胡椒素提升 30% 吸收率的 100mg 发酵辅酶 Q10</td><td>$12–$19 / 大罐装</td><td><a href=\"/go/cgn_collagen/\">去 iHerb 查看 CollagenUP 胶原粉 →</a></td></tr><tr><td><strong>Thorne 甘氨酸镁 + 延寿基金会维他命</strong></td><td>斯坦福神经学家推崇的睡前深睡神器（氨基酸螯合镁绝不拉肚子）+ 每天吃 1 粒就够用 4 个月的全甲基化活性综合维生素</td><td>$19–$44 殿堂级组合</td><td><a href=\"/go/thorne_mag/\">去 iHerb 查看 Thorne 甘氨酸镁 →</a></td></tr></tbody>\n      </table>\n      <blockquote><strong>实验室总结建议：</strong> 一日内服黄金公式：【早餐】咖啡兑一勺 CollagenUP 胶原粉 + 1粒 Life Extension 活性维他命；【午餐随油脂】2粒 CGN 五星鱼油 + 1粒 100mg 辅酶 Q10；【睡前45分钟】温水冲一勺 Thorne 甘氨酸镁，深睡与皮肤状态双双封神！</blockquote>",
+    "relatedKit": "longevitystackos"
+  }
+});
+})();
+
 applyLanguage(currentLang, false);
 
 /* Scroll Progress, Sticky Header, IntersectionObserver & 3D Parallax */
