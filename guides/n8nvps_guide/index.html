@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#2848f5">
   <meta name="google-site-verification" content="35G3WfUBrWDtldOhJrxoGxkl9eQMhUaJAJ6Lgk_3QpA">
-  <meta name="description" content="CruxxxxxKit (cruxxxxxkit.com) — Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
+  <meta name="description" content="Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <title>Unlimited AI agent loops on a $4.99 Docker VPS. | 月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。 — CruxxxxxKit (CruxKit) 2026 Benchmark</title>
+  <title>Unlimited AI agent loops on a $4.99 Docker VPS. (Nov 2026 Audit) | CruxKit</title>
   <link rel="canonical" href="https://cruxxxxxkit.com/guides/n8nvps_guide/">
   <link rel="alternate" hreflang="en" href="https://cruxxxxxkit.com/guides/n8nvps_guide/">
   <link rel="alternate" hreflang="zh" href="https://cruxxxxxkit.com/guides/n8nvps_guide/?lang=zh">
   <link rel="alternate" hreflang="x-default" href="https://cruxxxxxkit.com/guides/n8nvps_guide/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="CruxKit Studio">
-  <meta property="og:title" content="Unlimited AI agent loops on a $4.99 Docker VPS. | 月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。 — CruxxxxxKit (CruxKit) 2026 Benchmark">
-  <meta property="og:description" content="CruxxxxxKit (cruxxxxxkit.com) — Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
+  <meta property="og:title" content="Unlimited AI agent loops on a $4.99 Docker VPS. (Nov 2026 Audit) | CruxKit">
+  <meta property="og:description" content="Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
   <meta property="og:url" content="https://cruxxxxxkit.com/guides/n8nvps_guide/">
   <meta property="og:image" content="https://cruxxxxxkit.com/assets/pulse.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Unlimited AI agent loops on a $4.99 Docker VPS. | 月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。 — CruxxxxxKit (CruxKit) 2026 Benchmark">
-  <meta name="twitter:description" content="CruxxxxxKit (cruxxxxxkit.com) — Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
+  <meta name="twitter:title" content="Unlimited AI agent loops on a $4.99 Docker VPS. (Nov 2026 Audit) | CruxKit">
+  <meta name="twitter:description" content="Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. | 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -61,9 +61,19 @@
   .seo-link-card:hover { border-color: #2848f5; transform: translateY(-2px); }
   .seo-link-card h4 { margin: 8px 0; font-size: 17px; color: #0f1115; line-height: 1.35; }
   .seo-link-card p { margin: 0; font-size: 13.5px; color: #525866; line-height: 1.55; }
+  .seo-faq-box { background: #f8f9fc; border: 1px solid rgba(15,17,21,0.08); border-radius: 22px; padding: 32px; margin-top: 32px; }
+  .seo-faq-box h2 { margin: 0 0 18px; font-size: 22px; color: #0f1115; }
+  .seo-faq-list details { background: #ffffff; border: 1px solid rgba(15,17,21,0.08); border-radius: 14px; padding: 16px 20px; margin-bottom: 12px; }
+  .seo-faq-list summary { font-weight: 700; font-size: 15.5px; color: #0f1115; cursor: pointer; }
+  .seo-faq-list p { margin: 10px 0 0; font-size: 14.5px; line-height: 1.65; color: #3f4654; }
+  .seo-share-strip { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; background: #eef2ff; border-radius: 16px; padding: 16px 22px; margin-top: 28px; font-size: 14px; font-weight: 600; color: #1c2026; }
+  .seo-share-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .seo-share-btn { display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; background: #ffffff; border: 1px solid rgba(40,72,245,0.28); color: #2848f5; font-size: 13px; font-weight: 700; text-decoration: none; cursor: pointer; }
+  .seo-share-btn:hover { background: #2848f5; color: #ffffff; }
 </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Unlimited AI agent loops on a $4.99 Docker VPS. | 月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。","description":"Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。","datePublished":"2026-10-20","dateModified":"2026-11-07","author":{"@type":"Organization","name":"CruxKit Studio Benchmark Desk","url":"https://cruxxxxxkit.com/"},"publisher":{"@type":"Organization","name":"CruxKit Studio","url":"https://cruxxxxxkit.com/"},"mainEntityOfPage":"https://cruxxxxxkit.com/guides/n8nvps_guide/","inLanguage":["en","zh-CN"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Unlimited AI agent loops on a $4.99 Docker VPS. | 月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。","description":"Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. 从 Hostinger 4GB 内存一键镜像到 Caddy 自动 HTTPS 与 Cloudflare R2 每日备份的完整防崩架构。","image":["https://cruxxxxxkit.com/assets/pulse.webp","https://cruxxxxxkit.com/favicon-512x512.png"],"datePublished":"2026-10-20","dateModified":"2026-11-20","author":{"@type":"Organization","name":"CruxKit Studio Benchmark Desk","url":"https://cruxxxxxkit.com/"},"publisher":{"@type":"Organization","name":"CruxKit Studio","url":"https://cruxxxxxkit.com/"},"mainEntityOfPage":"https://cruxxxxxkit.com/guides/n8nvps_guide/","inLanguage":["en","zh-CN"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CruxKit Home","item":"https://cruxxxxxkit.com/"},{"@type":"ListItem","position":2,"name":"Benchmark Guides (80)","item":"https://cruxxxxxkit.com/guides/"},{"@type":"ListItem","position":3,"name":"Unlimited AI agent loops on a $4.99 Docker VPS.","item":"https://cruxxxxxkit.com/guides/n8nvps_guide/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the main takeaway from \"Unlimited AI agent loops on a $4.99 Docker VPS.\" in November 2026?","acceptedAnswer":{"@type":"Answer","text":"Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. Own your execution engine and never count internal workflow steps again. (中文核心结论：把执行引擎部署在自己的轻量云主机上，从此再也不用数工作流里有几个节点。)"}},{"@type":"Question","name":"Which companion Digital Kit implements this workflow fastest?","acceptedAnswer":{"@type":"Answer","text":"Pairs directly with n8n $4/Mo VPS Docker Self-Host Boilerplate ($18 — n8n $4/月 VPS Docker 私有化无限运行包), which includes downloadable blueprints and step-by-step SOP templates at n8nvps."}},{"@type":"Question","name":"Are pricing, API rates, and formulations independently audited?","acceptedAnswer":{"@type":"Answer","text":"Yes. All benchmarks on CruxxxxxKit (cruxxxxxkit.com) reflect November 2026 live telemetry, INCI concentration checks, and real-world API cost tables."}}]}</script>
 </head>
 <body class="round-five pulse">
   <div class="v5-header-bar" id="header-bar">
@@ -72,11 +82,12 @@
       <nav class="v5-nav" aria-label="Main navigation">
         <a href="/kits/">Digital kits (30)</a>
         <a href="/stack/">The stack <span class="nav-pill-tag">160 Picks</span></a>
-        <a href="/#calculator">Savings</a>
+        <a href="/best/">Best 2026</a>
+        <a href="/vs/">VS Audits (25)</a>
         <a href="/guides/">The edit (80)</a>
       </nav>
       <div class="header-right-group">
-        <a class="v5-button header-kit" href="/#kits">Explore Catalog</a>
+        <a class="v5-button header-kit" href="/#recommender">60s Stack Finder</a>
       </div>
     </header>
   </div>
@@ -85,6 +96,7 @@
     <nav class="seo-breadcrumb" aria-label="Breadcrumb">
       <a href="/">CruxKit Home</a> <span>/</span>
       <a href="/guides/">Benchmark Guides (80)</a> <span>/</span>
+      <a href="/best/ai-coding-and-llm-apis/">Best 2026 Hub</a> <span>/</span>
       <span>Cloud &amp; DevOps · 5 min read</span>
     </nav>
 
@@ -93,7 +105,7 @@
         <div class="seo-eyebrow-row">
           <span class="seo-pill citron">Cloud &amp; DevOps · 5 min read</span>
           <span class="seo-pill">云端与容器 · 5 分钟阅读</span>
-          <span class="seo-pill">8 min read · Updated 2026-11-07</span>
+          <span class="seo-pill">8 min read · Updated 2026-11-20</span>
         </div>
         <h1 class="seo-h1">Unlimited AI agent loops on a $4.99 Docker VPS.</h1>
         <h2 class="seo-h2-zh">月费 $4.99 跑无限次 AI 循环：n8n Docker 私有化部署全指南。</h2>
@@ -113,118 +125,165 @@
 
       <div class="seo-cta-box">
         <div>
-          <h3>Deploy this exact workflow today · 立即部署同款实战套件与官方优惠</h3>
-          <p>Download our ready-to-import JSON blueprints, API routing templates, and Notion systems or claim verified partner deals.</p>
+          <h3>Deploy this workflow: n8n $4/Mo VPS Docker Self-Host Boilerplate ($18)</h3>
+          <p>n8n $4/月 VPS Docker 私有化无限运行包 — Includes downloadable .ZIP blueprints, configuration templates &amp; audit sheets.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <a class="seo-btn" href="/kits/">Browse 30 Digital Kits →</a>
-          <a class="seo-btn blue" href="/stack/">Explore 160 Affiliate Picks →</a>
+          <a class="seo-btn" href="/kits/n8nvps/">Inspect Companion Kit →</a>
+          <a class="seo-btn blue" href="/vs/">Compare 25 VS Matchups →</a>
         </div>
       </div>
 
+      
+    <div class="seo-share-strip">
+      <span>Bookmark &amp; Share this November 2026 Audit · 收藏或分享本实测页：</span>
+      <div class="seo-share-actions">
+        <a class="seo-share-btn" href="https://twitter.com/intent/tweet?text=Unlimited%20AI%20agent%20loops%20on%20a%20%244.99%20Docker%20VPS.&amp;url=https%3A%2F%2Fcruxxxxxkit.com%2Fguides%2Fn8nvps_guide%2F" target="_blank" rel="noopener">Share on X ↗</a>
+        <button type="button" class="seo-share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://cruxxxxxkit.com/guides/n8nvps_guide/').then(()=>{this.textContent='✓ Link Copied';})">Copy Canonical URL</button>
+      </div>
+    </div>
+  
+
       <section style="margin-top:40px;">
-        <h3>Verified Partner Deals &amp; S-Tier Affiliate Picks · 严选工具与配方官方优惠直达</h3>
+        <h3>Audited Tools &amp; Partner Links Mentioned · 实测相关严选工具与官方优惠直达</h3>
         <div class="seo-grid-links">
           
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.8/10 · S-TIER · #1 AUTOMATION</span>
-                <h4><a href="/go/make/" style="color:inherit;text-decoration:none;">Make.com / Make.com</a></h4>
-                <p>Make.com is our top overall automation engine for independent creators. Its visual router canvas handles complex branching, raw JSON arrays, and AI API calls at roughly 15% of Zapier’s cost.</p>
+                <span class="seo-pill citron">9.7/10 · S-Tier Pick · Open-Source LLM Observability</span>
+                <h4><a href="/go/langfuse/" style="color:inherit;text-decoration:none;">Langfuse LLM Tracing &amp; Cost Analytics / Langfuse LLM 可观测性与提示词管理</a></h4>
+                <p>Once your AI app or Make/n8n agent goes live, you need to know which prompts are hallucinating and which users are burning your OpenRouter credits. Langfuse gives you crystal-clear traces in 2 lines of code.</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://www.make.com/en/register?pc=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Try Make Free ↗</a>
-                <a href="/go/make/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://langfuse.com/?utm_source=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Try Langfuse Cloud Free ↗</a>
+                <a href="/go/langfuse/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.7/10 · S-TIER · SELF-HOST AI</span>
-                <h4><a href="/go/n8n/" style="color:inherit;text-decoration:none;">n8n Workflow Engine / n8n 工作流引擎</a></h4>
-                <p>Unlike traditional automation tools that bill per internal step, n8n bills per full workflow execution—and can be self-hosted for free on a $4.99 VPS.</p>
+                <span class="seo-pill citron">9.4/10 · S-Tier Pick · 7,000+ Enterprise Connectors</span>
+                <h4><a href="/go/zapier/" style="color:inherit;text-decoration:none;">Zapier Central &amp; AI Automation / Zapier Central 企业级连接器</a></h4>
+                <p>We use Make.com (`?pc=cruxkit`) for 90% of our heavy data pipelines, but keep a lightweight Zapier account for niche SaaS apps that only publish official Zapier integrations.</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://n8n.partnerlinks.io/cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Explore n8n ↗</a>
-                <a href="/go/n8n/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://zapier.com/?utm_source=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Explore Zapier Connectors ↗</a>
+                <a href="/go/zapier/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.7/10 · S-TIER · API ROUTER</span>
-                <h4><a href="/go/openrouter/" style="color:inherit;text-decoration:none;">OpenRouter AI / OpenRouter AI</a></h4>
-                <p>OpenRouter eliminates the need to pay $20/mo each for ChatGPT, Claude, and Gemini—or risk account bans from shared gray-market accounts. Pair one API key with LobeChat or Cursor.</p>
+                <span class="seo-pill citron">9.6/10 · S-Tier Pick · 25%–40% Core Referral</span>
+                <h4><a href="/go/replit/" style="color:inherit;text-decoration:none;">Replit Agent v2 &amp; Cloud IDE / Replit Agent v2 云端全栈智能体 IDE</a></h4>
+                <p>Replit Agent v2 plans, writes, debugs, and deploys full-stack web apps with managed Postgres and Replit Auth in minutes—even from an iPad or phone. Natural-Language Full-Stack App Builder + Built-In Postgres &amp; 1-Click Cloud Hosting</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://openrouter.ai/?ref=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Get API Key ↗</a>
-                <a href="/go/openrouter/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://replit.com/?utm_source=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Visit Replit Official Partner ↗</a>
+                <a href="/go/replit/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.8/10 · S-TIER · #1 AI IDE</span>
-                <h4><a href="/go/cursor/" style="color:inherit;text-decoration:none;">Cursor AI Editor / Cursor AI 编辑器</a></h4>
-                <p>Cursor is the fastest way to build, edit, and maintain static sites, automation scripts, and digital tools. With Composer and MCP servers connected, it edits entire repositories autonomously.</p>
+                <span class="seo-pill citron">9.6/10 · S-Tier Pick · 1,000,000-Token Repo Window</span>
+                <h4><a href="/go/supermaven/" style="color:inherit;text-decoration:none;">Supermaven 1M-Context Code AI / Supermaven 百万上下文毫秒级代码补全</a></h4>
+                <p>Created by the founder of Tabnine, Supermaven indexes your entire 1M-token repository so ghost-text completions know every custom type and helper across files. Sub-50ms Babble-Architecture Autocomplete Plugin for VS Code, Cursor &amp; JetBrains</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://www.cursor.com/?ref=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Download Cursor ↗</a>
-                <a href="/go/cursor/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://supermaven.com/?utm_source=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Visit Supermaven Official Partner ↗</a>
+                <a href="/go/supermaven/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.7/10 · S-TIER · #1 WRITING LLM</span>
-                <h4><a href="/go/claude/" style="color:inherit;text-decoration:none;">Claude Sonnet 5.5 &amp; Opus 5.5 / Claude Sonnet 5.5 &amp; Opus 5.5</a></h4>
-                <p>In our blind editorial tests across 50 product reviews, Claude Sonnet 5.5 &amp; Opus 5.5 consistently required 60% less human rewriting than competing models while following complex style constraints.</p>
+                <span class="seo-pill citron">9.8/10 · S-Tier Pick · Visual LLM App &amp; RAG Engine</span>
+                <h4><a href="/go/dify/" style="color:inherit;text-decoration:none;">Dify.AI Agentic Workflow &amp; RAG Studio / Dify.AI 企业级大模型工作流与知识库中台</a></h4>
+                <p>Dify.AI is the gold-standard visual studio for building multi-step LLM workflows, hybrid RAG knowledge bases, and embeddable AI customer support widgets. Build, Test, and Publish Production LLM Agents, Knowledge Bases &amp; APIs with DeepSeek V4.1 &amp; GPT-6.1</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://claude.ai/?ref=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Try Claude ↗</a>
-                <a href="/go/claude/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://dify.ai/?utm_source=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Visit Dify.AI Official Partner ↗</a>
+                <a href="/go/dify/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
             <div class="seo-link-card">
               <div>
-                <span class="seo-pill citron">9.6/10 · S-TIER · VALUE LLM</span>
-                <h4><a href="/go/deepseek/" style="color:inherit;text-decoration:none;">DeepSeek V4.1-Flash-1017 &amp; V4-Pro-0813 API / DeepSeek V4.1-Flash-1017 &amp; V4-Pro-0813 (硅基流动)</a></h4>
-                <p>When running automated RSS summarization, translation, or data classification across thousands of rows in Make or n8n, DeepSeek slashes API bills by over 90%.</p>
+                <span class="seo-pill citron">9.6/10 · S-Tier Pick · Autonomous B2B AI Teammates</span>
+                <h4><a href="/go/relevanceai/" style="color:inherit;text-decoration:none;">Relevance AI Multi-Agent Workforce / Relevance AI 数字员工与 B2B 多智能体平台</a></h4>
+                <p>Build a digital B2B sales or research team where a Manager Agent delegates web scraping, LinkedIn enrichment, and HubSpot/Apollo updates to sub-agents. No-Code Multi-Agent Platform for Outbound Sales Research, CRM Hygiene &amp; Support Triage</p>
               </div>
               <div style="display:flex;gap:12px;margin-top:14px;font-size:13px;font-weight:700;">
-                <a href="https://platform.deepseek.com/?ref=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Get API Access ↗</a>
-                <a href="/go/deepseek/" style="color:#525866;">Full Lab Audit →</a>
+                <a href="https://relevanceai.com/?via=cruxkit" target="_blank" rel="noopener sponsored" style="color:#2848f5;">Visit Relevance Official Partner ↗</a>
+                <a href="/go/relevanceai/" style="color:#525866;">Full Lab Audit →</a>
               </div>
             </div>
         </div>
       </section>
 
       <section style="margin-top:40px;">
-        <h3>Related Ready-to-Use Digital Kits · 配套虚拟数字商品套件</h3>
+        <h3>Related Buyer Guides &amp; Head-to-Head Comparisons · 延伸深度横评阅读</h3>
         <div class="seo-grid-links">
           
-            <a class="seo-link-card" href="/kits/automation/">
+            <a class="seo-link-card" href="/guides/geoseo/">
               <div>
-                <span class="seo-pill">Workflows · Make &amp; n8n Blueprints · $24</span>
-                <h4>The Automation Kit / The Automation Kit · 自动化蓝图包</h4>
-                <p>Set up practical automations for content capture, AI routing, and filing that give you back 6+ hours a week.</p>
+                <span class="seo-pill">Search Strategy · 4 min read</span>
+                <h4>GEO Playbook: Writing reviews that AI search engines cite.</h4>
+                <p>GEO 实战手册：如何写出被 ChatGPT、Perplexity 与秘塔优先引用的评测文？</p>
               </div>
-              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Read Benchmark →</span>
+            </a>
+            <a class="seo-link-card" href="/guides/reset/">
+              <div>
+                <span class="seo-pill">Solo operations · 3 min read</span>
+                <h4>The 20-minute Friday reset.</h4>
+                <p>每周五下午的 20 分钟重启仪式。</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Read Benchmark →</span>
+            </a>
+            <a class="seo-link-card" href="/guides/perplexityresearch/">
+              <div>
+                <span class="seo-pill">AI Research Benchmark · 7 min read</span>
+                <h4>Perplexity Pro vs ChatGPT Search vs NotebookLM: 100-Query Citation Audit.</h4>
+                <p>Perplexity Pro vs ChatGPT Search vs NotebookLM：100 次检索信源准确率实测。</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Read Benchmark →</span>
+            </a>
+            <a class="seo-link-card" href="/guides/opusclipshorts/">
+              <div>
+                <span class="seo-pill">Video Growth Engine · 6 min read</span>
+                <h4>OpusClip + Descript + ElevenLabs: Shipping 30 Viral Shorts a Week.</h4>
+                <p>OpusClip + Descript + ElevenLabs：一个人每周量产 30 条双语爆款短视频。</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Read Benchmark →</span>
             </a>
           
-            <a class="seo-link-card" href="/kits/workstation/">
+            <a class="seo-link-card" href="/vs/airwallex-vs-deel-vs-wise/">
               <div>
-                <span class="seo-pill">AI Infrastructure · Official API Router + 50 Agents · $19</span>
-                <h4>Private AI Workstation &amp; Anti-Ban API Pack / 私人 AI 工作台 &amp; 官方 API 防封部署包</h4>
-                <p>Stop buying fragile shared accounts. Deploy your own multi-LLM private workstation using official APIs at $2/mo pay-as-you-go.</p>
+                <span class="seo-pill citron">HEAD-TO-HEAD VS</span>
+                <h4>Airwallex vs Deel vs Wise (2026): Fees, FX &amp; Global Payouts Audit</h4>
+                <p>Airwallex 空中云汇 vs Deel vs Wise (2026)：跨境美金收款、汇损与虚拟卡对比</p>
               </div>
-              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">View Side-by-Side Table →</span>
             </a>
-          
-            <a class="seo-link-card" href="/kits/mcppack/">
+            <a class="seo-link-card" href="/vs/bolt-vs-lovable-vs-v0/">
               <div>
-                <span class="seo-pill">Agent Engineering · 20 Claude &amp; Cursor MCP Configs · $29</span>
-                <h4>MCP Super-Agent Server Pack / MCP 超级智能体配置全家桶 (20 合 1)</h4>
-                <p>Turn Claude Desktop and Cursor into autonomous local operators with 20 pre-configured Model Context Protocol (MCP) server bundles.</p>
+                <span class="seo-pill citron">HEAD-TO-HEAD VS</span>
+                <h4>Bolt.new vs Lovable.dev vs Vercel v0 (2026): Full-Stack AI Builder Test</h4>
+                <p>Bolt.new vs Lovable.dev vs Vercel v0 (2026)：三大自然语言全栈 AI 建站神器横评</p>
               </div>
-              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">View Side-by-Side Table →</span>
             </a>
+            <a class="seo-link-card" href="/vs/semrush-vs-ahrefs-vs-surfer/">
+              <div>
+                <span class="seo-pill citron">HEAD-TO-HEAD VS</span>
+                <h4>Semrush vs Ahrefs vs SurferSEO (2026): AI SEO Toolkit &amp; Keyword Audit</h4>
+                <p>Semrush vs Ahrefs vs SurferSEO (2026)：独立站买词挖掘与 AI SEO 排名工具对比</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">View Side-by-Side Table →</span>
+            </a>
+        </div>
+      </section>
+
+      <section style="margin-top:40px;">
+        <h3>Related Ready-to-Use Digital Kits · 配套虚拟数字商品套件</h3>
+        <div class="seo-grid-links">
           
             <a class="seo-link-card" href="/kits/n8nvps/">
               <div>
@@ -234,9 +293,56 @@
               </div>
               <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
             </a>
-          
+            <a class="seo-link-card" href="/kits/deepseekrouter/">
+              <div>
+                <span class="seo-pill">LLM Engineering · Nov 2026 Multi-Model API Router · $24</span>
+                <h4>DeepSeek V4.1-Flash-1017 &amp; GPT-6.1 Smart Router Pack / DeepSeek V4.1-Flash-1017 与 GPT-6.1 智能路由配置包</h4>
+                <p>Route bulk agent tasks to DeepSeek V4.1-Flash-1017 ($0.04–$0.15/1M) &amp; GPT-6 Luna ($0.10/1M), while reserving GPT-6.1 Sol Pro &amp; Claude Sonnet 5.5 for complex code.</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+            </a>
+            <a class="seo-link-card" href="/kits/v0lovablekit/">
+              <div>
+                <span class="seo-pill">AI Full-Stack · Prompt-to-SaaS &amp; Stripe Blueprint · $29</span>
+                <h4>Vercel v0 + Lovable.dev + Supabase SaaS Launchpad / Vercel v0 + Lovable.dev + Supabase 全栈 SaaS 极速上线包</h4>
+                <p>Ship a monetized micro-SaaS in a weekend using our 25 Vercel v0 UI prompts, Lovable.dev Supabase RLS SQL schemas, and Stripe checkout handlers.</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+            </a>
+            <a class="seo-link-card" href="/kits/scrapingragkit/">
+              <div>
+                <span class="seo-pill">Agent Intelligence · Automated Web Scraping &amp; RAG · $29</span>
+                <h4>Firecrawl + Apify + DeepSeek V4.1 Competitor Spy Pack / Firecrawl + Apify + DeepSeek V4.1 竞品监控与爬虫套件</h4>
+                <p>Scrape competitor pricing, TikTok viral hooks, and Google Maps leads automatically via Firecrawl and Apify—cleaned and summarized by DeepSeek V4.1.</p>
+              </div>
+              <span style="margin-top:14px;font-weight:700;color:#2848f5;font-size:13px;">Inspect Kit &amp; .ZIP Package →</span>
+            </a>
         </div>
       </section>
+
+      
+    <section class="seo-faq-box">
+      <h2>Frequently Asked Questions · 常见实操与选购问答</h2>
+      <div class="seo-faq-list">
+        
+          <details open>
+            <summary>What is the main takeaway from &quot;Unlimited AI agent loops on a $4.99 Docker VPS.&quot; in November 2026?</summary>
+            <p>Step-by-step architecture for self-hosting n8n with PostgreSQL, Caddy auto-SSL, and Cloudflare R2 daily backups. Own your execution engine and never count internal workflow steps again. (中文核心结论：把执行引擎部署在自己的轻量云主机上，从此再也不用数工作流里有几个节点。)</p>
+          </details>
+        
+          <details open>
+            <summary>Which companion Digital Kit implements this workflow fastest?</summary>
+            <p>Pairs directly with n8n $4/Mo VPS Docker Self-Host Boilerplate ($18 — n8n $4/月 VPS Docker 私有化无限运行包), which includes downloadable blueprints and step-by-step SOP templates at n8nvps.</p>
+          </details>
+        
+          <details open>
+            <summary>Are pricing, API rates, and formulations independently audited?</summary>
+            <p>Yes. All benchmarks on CruxxxxxKit (cruxxxxxkit.com) reflect November 2026 live telemetry, INCI concentration checks, and real-world API cost tables.</p>
+          </details>
+        
+      </div>
+    </section>
+  
     </article>
   
   </main>
@@ -246,6 +352,8 @@
       <nav aria-label="Footer navigation">
         <a href="/kits/">Digital Kits (30)</a>
         <a href="/stack/">The Stack (160)</a>
+        <a href="/best/">Best-Of Hubs (5)</a>
+        <a href="/vs/">VS Matchups (25)</a>
         <a href="/guides/">Benchmark Guides (80)</a>
         <a href="/sitemap.xml">Sitemap</a>
         <a href="/llms.txt">LLMs.txt</a>

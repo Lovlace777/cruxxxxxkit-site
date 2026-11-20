@@ -588,6 +588,7 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
   // 2. Register all v8, v9 & v10 Affiliate Stack Tools in AFFILIATE_LINKS (Total 160 Tools)
   Object.assign(c.AFFILIATE_LINKS, {
     // v8 & v9 tools
+    groq: { name: "GroqCloud LPU Ultra-Fast Inference", url: "https://console.groq.com/?utm_source=cruxkit", commission: "Developer LPU API Gateway" },
     v0dev: { name: "Vercel v0 Generative Shadcn UI", url: "https://v0.dev/?utm_source=cruxkit", commission: "Vercel Partner Referral" },
     lovable: { name: "Lovable.dev Full-Stack AI App Builder", url: "https://lovable.dev/?via=cruxkit", commission: "20%–30% Recurring Commission" },
     firecrawl: { name: "Firecrawl Web-to-Markdown API for LLM Agents", url: "https://www.firecrawl.dev/?ref=cruxkit", commission: "25% Recurring API Commission" },
@@ -722,7 +723,10 @@ window.CRUXKIT_AFFILIATE_CONFIG = {
     c.AFFILIATE_LINKS[k].targetUrl = c.AFFILIATE_LINKS[k].url;
   });
 
-  // Expose aliases for generate_static_seo_pages.mjs
+  // Expose aliases for generate_static_seo_pages.mjs and stackToolsData slugs
+  if (c.AFFILIATE_LINKS.surferseo && !c.AFFILIATE_LINKS.surfer) {
+    c.AFFILIATE_LINKS.surfer = Object.assign({}, c.AFFILIATE_LINKS.surferseo);
+  }
   c.affiliateTools = c.AFFILIATE_LINKS;
   c.digitalKits = c.CHECKOUT_LINKS;
   window.CRUXKIT_CONFIG = c;

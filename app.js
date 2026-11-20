@@ -3137,17 +3137,27 @@ try {
   });
 })();
 
+const KIT_CAT_MAP = {
+  workflow: 'ai',
+  ai: 'ai',
+  os: 'creator',
+  creator: 'creator',
+  routine: 'beauty',
+  beauty: 'beauty',
+  bundle: 'bundle'
+};
+
 function renderKitsList() {
   const container = document.getElementById('kits-list-container');
   if (!container) return;
   const dict = productsData[currentLang];
   const html = kitsOrder
-    .filter(id => currentKitFilter === 'all' || dict[id].catKey === currentKitFilter)
+    .filter(id => currentKitFilter === 'all' || (KIT_CAT_MAP[dict[id].catKey] || dict[id].catKey) === currentKitFilter)
     .map(id => {
       const k = dict[id];
       const highlightClass = k.isBundle ? 'bundle-highlight' : '';
       return `
-        <button data-product="${id}" data-kit-cat="${k.catKey}" class="${highlightClass}">
+        <button data-product="${id}" data-kit-cat="${KIT_CAT_MAP[k.catKey] || k.catKey}" class="${highlightClass}">
           <span class="p5-number">${k.num}</span>
           <span class="p5-thumb"><span class="sprite ${k.tile}" aria-hidden="true"></span></span>
           <div class="p5-title-col">
@@ -3274,6 +3284,7 @@ function applyLanguage(lang, persist = false) {
   renderStackGrid();
   renderEditGrid();
   recalculateSavings();
+  if (typeof renderRecommender === 'function') renderRecommender();
 
   if (dialog && dialog.open && activeModalState) {
     const { type, id } = activeModalState;
@@ -3511,7 +3522,7 @@ function showFree() {
           ${isZh ? '下载实操清单 (.TXT)' : 'Download Checklist (.TXT)'} ${arrow}
         </button>
         <button class="button button-ghost" data-product="allbundle">
-          ${isZh ? '查看全站 15 合 1 全家桶 ($69)' : 'Explore 15-in-1 Master Bundle ($69)'}
+          ${isZh ? `查看全站 29 合 1 全家桶 ($${(productsData.zh.allbundle && productsData.zh.allbundle.price) || 169})` : `Explore 29-in-1 Master Bundle ($${(productsData.en.allbundle && productsData.en.allbundle.price) || 169})`}
         </button>
       </div>
       <p class="small-note">${isZh ? '永久免费归你所有。浏览器本地即时生成下载 —— 无需填写邮箱。' : 'Yours to keep forever. Instant local download — no email gate required.'}</p>
@@ -6192,15 +6203,18 @@ function recalculateSavings() {
     mob_stack: '160 Audited Stack Picks',
     hero_eyebrow: 'CRUXKIT PULSE · NOV 2026 ULTIMATE CATALOG · 30 DIGITAL KITS · 160 AFFILIATE PICKS · 80 BUYER GUIDES',
     hero_sub: '30 ready-to-import digital kits (.ZIP), 160 stress-tested software, anti-detect cloud & clinical K-Beauty/iHerb picks with verified partner deals, and 80 deep-dive bilingual buyer guides.',
+    hero_cta_primary: `Explore 30 Digital Kits ${arrow}`,
     hero_cta_stack: 'Browse 160 S-Tier Picks',
     metric_1: '<strong>30 Ready-to-Use Kits</strong><br>JSON Workflows, API Packs &amp; Notion OS',
     metric_2: '<strong>160 Audited S-Tier Picks</strong><br>AI, Video, Cloud, Anti-Detect &amp; Beauty Lab',
     metric_3: '<strong>80 Deep-Dive Playbooks</strong><br>Full Bilingual Affiliate Buyer Guides',
     kits_heading: '30 ready-to-use digital kits.',
+    kits_note: '30 ready-to-adapt digital systems with real downloadable <code>.ZIP</code> source packages — click any kit to inspect contents, sample blueprints &amp; instant download.',
     kits_filter_all: 'All Kits (30)',
     kits_filter_ai: 'AI &amp; Code (11)',
     kits_filter_creator: 'Creator &amp; Funnels (11)',
     kits_filter_beauty: 'Skincare &amp; Longevity (7)',
+    kits_filter_bundle: '29-in-1 Master Bundle (1)',
     stack_heading: 'The considered stack (160 Audited Picks).',
     stack_note: 'Every tool and formulation has a clear job. Stress-tested across 4 specialized desks (40 picks per desk) — click any item for full lab notes, pros/cons & verified partner links.',
     stack_filter_all: 'All Picks (160)',
@@ -6212,9 +6226,18 @@ function recalculateSavings() {
     edit_heading: 'Fresh ideas, put to work (80 Deep-Dive Buyer Guides).',
     edit_note: '80 complete benchmark reviews, tool comparisons, and clinical formulation audits with direct partner deals — click any card to read the full bilingual guide.',
     edit_filter_all: 'All Guides (80)',
-    edit_filter_ai: 'AI, Cloud &amp; Affiliate Growth (58)',
-    edit_filter_beauty: 'Skincare, K-Beauty &amp; Longevity (22)',
-    foot_stack: 'The stack (160)'
+    edit_filter_ai: 'AI, Cloud &amp; Affiliate Growth (59)',
+    edit_filter_beauty: 'Skincare, K-Beauty &amp; Longevity (21)',
+    foot_stack: 'The stack (160)',
+    rec_heading: '60-Second Stack<br><span>Finder &amp; Blueprint.</span>',
+    rec_sub: 'Pick your current goal to generate your optimal 4-item audited stack, head-to-head comparison, and starter .ZIP kit.',
+    rec_copy_btn: 'Copy Shareable Stack',
+    rec_goal_ai: 'AI Agents &amp; Coding ($0–$20/mo)',
+    rec_goal_creator: 'Faceless Video &amp; SEO Traffic',
+    rec_goal_cloud: 'Cross-Border Infra, VPS &amp; Payouts',
+    rec_goal_beauty: 'Clinical Barrier &amp; Anti-Aging Routine',
+    rec_best_link: 'Explore Best-Of 2026 Hubs →',
+    rec_vs_link: 'Compare 25 Head-to-Head Matchups →'
   });
 
   Object.assign(uiStrings.zh, {
@@ -6226,15 +6249,18 @@ function recalculateSavings() {
     mob_stack: '160 款实测严选工具与配方',
     hero_eyebrow: 'CRUXKIT PULSE · 2026年11月终极全量版 · 30 款数字套件 · 160 款联盟严选 · 80 篇深度评测推文',
     hero_sub: '30 套即插即用数字工程包（含源码 .ZIP），160 款经过极端实测的 AI 自动化、跨境防关联云基建、韩系护肤与 iHerb 膳食严选好物（附专属返利/试用通道），以及 80 篇高转化深度买手指南。',
+    hero_cta_primary: `浏览 30 款数字套件 ${arrow}`,
     hero_cta_stack: '浏览 160 款 S 级严选',
     metric_1: '<strong>30 款即用型数字套件</strong><br>JSON 蓝图、API 路由与 Notion 系统',
     metric_2: '<strong>160 款实测 S 级严选</strong><br>AI、视频 SEO、云主机、指纹浏览器与护肤',
     metric_3: '<strong>80 篇深度带货长文</strong><br>中英双语硬核横评与选型推文',
     kits_heading: '30 款即插即用数字效率套件。',
+    kits_note: '30 套可直接导入的生产力工程包（均含真实可下载 <code>.ZIP</code> 源文件）——点击任意卡片查看完整交付清单、蓝图代码预览与直达下载。',
     kits_filter_all: '全部套件 (30)',
     kits_filter_ai: 'AI 与编程基建 (11)',
     kits_filter_creator: '内容与漏斗增长 (11)',
     kits_filter_beauty: '临床护肤与抗衰 (7)',
+    kits_filter_bundle: '29合1 全家桶买断 (1)',
     stack_heading: '严选工具与配方库（160 款实测好物）。',
     stack_note: '每一款工具与护肤配方都经过真实业务与成分表双重核验。四大专区各 40 款严选好物——点击任意卡片查看完整优缺点报告与官方合作优惠链接。',
     stack_filter_all: '全部严选 (160)',
@@ -6246,9 +6272,18 @@ function recalculateSavings() {
     edit_heading: '把好想法落到实处（80 篇深度评测推文）。',
     edit_note: '80 篇完整大模型账单实测、跨境多账号防关联教程、SEO 搞流量与护肤成分红黑榜——点击任意卡片阅读完整双语长文、对比表格与直达购买链接。',
     edit_filter_all: '全部推文 (80)',
-    edit_filter_ai: 'AI、跨境基建与搞钱增长 (58)',
-    edit_filter_beauty: '成分护肤、韩妆与口服抗衰 (22)',
-    foot_stack: '严选工具栈 (160)'
+    edit_filter_ai: 'AI、跨境基建与搞钱增长 (59)',
+    edit_filter_beauty: '成分护肤、韩妆与口服抗衰 (21)',
+    foot_stack: '严选工具栈 (160)',
+    rec_heading: '60 秒专属技术栈与<br><span>护肤极简方案生成器</span>',
+    rec_sub: '点击你当前最想解决的场景，立即为你匹配 4 款实测工具/单品、对应横评页与即用型 .ZIP 套件：',
+    rec_copy_btn: '复制我的方案链接分享',
+    rec_goal_ai: 'AI 智能体与极速编程 ($0–$20/月)',
+    rec_goal_creator: '不露脸短视频与 SEO 搞流量',
+    rec_goal_cloud: '跨境多账号、VPS 云与全球收款',
+    rec_goal_beauty: '早C晚A屏障修护与韩妆抗衰',
+    rec_best_link: '浏览 2026 四大垂直 Best-Of 榜单 →',
+    rec_vs_link: '查看 25 组热门工具红黑横评 →'
   });
 
   // 2. Expand Digital Kits from 24 to 30 Kits (+6 new Kits, keep allbundle at #30)
@@ -12250,6 +12285,118 @@ function recalculateSavings() {
   }
 });
 })();
+
+/* 60-Second Personalized Stack & Routine Recommender (#recommender) */
+const REC_PROFILES = {
+  ai: {
+    tools: ['deepseek', 'cursor', 'make', 'openrouter'],
+    vs: 'deepseek-v41-vs-gpt61-vs-claude55',
+    kit: 'deepseekrouter',
+    best: 'ai-coding-and-llm-apis',
+    noteEn: 'Estimated stack cost: $24/mo (cuts GPT/Zapier SaaS burn by 80%+). Ideal for solo builders shipping AI agents.',
+    noteZh: '整套实测月费约 $24（比常规买满各家会员立省 80%+），最适合一人开发、AI 智能体与自动化路由。'
+  },
+  creator: {
+    tools: ['heygen', 'elevenlabs', 'opusclip', 'seranking'],
+    vs: 'heygen-vs-synthesia-vs-elevenlabs',
+    kit: 'facelessvideokit',
+    best: 'faceless-video-audio-and-seo',
+    noteEn: 'Publish 30–90 bilingual shorts & SEO buyer guides/month with zero camera setup and high recurring affiliate leverage.',
+    noteZh: '免出镜每月稳定日更中英双语短视频与高转化买词评测文，兼顾广告流量与 20%–50% 订阅返佣。'
+  },
+  cloud: {
+    tools: ['hetzner', 'spaceship', 'wise', 'adspower'],
+    vs: 'airwallex-vs-deel-vs-wise',
+    kit: 'antidetectkit',
+    best: 'cloud-vps-antidetect-and-payments',
+    noteEn: 'Zero-ban cross-border infrastructure + $8.88 domains + €3.79 n8n VPS + 0% FX global payout collection.',
+    noteZh: '打造高隔离不关联的出海账号矩阵 + 超低价 VPS 私有化节点 + 全球美金/欧元低损结汇全栈底座。'
+  },
+  beauty: {
+    tools: ['timeless', 'bojsun', 'aestura', 'cgn_omega3'],
+    vs: 'beauty-of-joseon-vs-skin1004-vs-roundlab',
+    kit: 'longevitystackos',
+    best: 'k-beauty-sunscreens-and-iherb-skincare',
+    noteEn: 'Evidence-based AM Vitamin C + Tinosorb M SPF50+ + 3:1:1 barrier lipids + IFOS 5-Star internal anti-inflammation under $85 total.',
+    noteZh: '总价不到 $85 的循证实验室公式：晨间 20% VC + 新一代防晒 + 夜间微针/神经酰胺屏障 + 内服五星鱼油抗炎。'
+  }
+};
+
+let currentRecGoal = (() => {
+  try {
+    const q = new URLSearchParams(window.location.search).get('rec');
+    if (q && REC_PROFILES[q]) return q;
+  } catch {}
+  return 'ai';
+})();
+
+function renderRecommender() {
+  const grid = document.getElementById('rec-output-grid');
+  if (!grid) return;
+  const isZh = currentLang === 'zh';
+  const prof = REC_PROFILES[currentRecGoal] || REC_PROFILES.ai;
+  const toolsDict = stackToolsData[currentLang] || stackToolsData.en;
+  const affLinks = (window.CRUXKIT_CONFIG && window.CRUXKIT_CONFIG.AFFILIATE_LINKS) || {};
+
+  document.querySelectorAll('[data-rec-goal]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.recGoal === currentRecGoal);
+  });
+
+  grid.innerHTML = prof.tools.map((id, idx) => {
+    const t = toolsDict[id];
+    if (!t) return '';
+    const extUrl = (affLinks[id] && affLinks[id].url) || t.url || `/go/${id}/`;
+    return `
+      <div class="rec-card">
+        <div>
+          <span class="rec-card-badge">0${idx + 1} · ${t.score || '9.7 / 10'}</span>
+          <h4 style="margin-top:6px;">${t.name}</h4>
+          <p style="margin-top:6px;">${t.verdictShort || t.summary || ''}</p>
+        </div>
+        <div class="rec-card-links">
+          <a href="/go/${id}/">${isZh ? '查看实测页 →' : 'Read Audit →'}</a>
+          <a href="${extUrl}" target="_blank" rel="noopener sponsored">${isZh ? '官方合作通道 ↗' : 'Partner Deal ↗'}</a>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const kitObj = productsData[currentLang][prof.kit] || productsData[currentLang].allbundle;
+  const noteEl = document.getElementById('rec-summary-note');
+  if (noteEl && kitObj) {
+    noteEl.innerHTML = `<strong>${isZh ? '推荐组合结论：' : 'Verdict:'}</strong> ${isZh ? prof.noteZh : prof.noteEn} · <a href="/kits/${prof.kit}/" style="color:var(--lime);text-decoration:underline;">${isZh ? '配套套件：' : 'Companion Kit:'} ${kitObj.name} ($${kitObj.price})</a> · <a href="/vs/${prof.vs}/" style="color:#fff;text-decoration:underline;">${isZh ? '查看核心横评对比 →' : 'Head-to-Head VS →'}</a>`;
+  }
+
+  const bestA = document.querySelector('[data-i18n="rec_best_link"]');
+  const vsA = document.querySelector('[data-i18n="rec_vs_link"]');
+  if (bestA) bestA.href = `/best/${prof.best}/`;
+  if (vsA) vsA.href = `/vs/${prof.vs}/`;
+}
+
+document.addEventListener('click', event => {
+  const goalBtn = event.target.closest('[data-rec-goal]');
+  if (goalBtn && REC_PROFILES[goalBtn.dataset.recGoal]) {
+    currentRecGoal = goalBtn.dataset.recGoal;
+    renderRecommender();
+    return;
+  }
+  const copyBtn = event.target.closest('#rec-copy-btn');
+  if (copyBtn) {
+    const isZh = currentLang === 'zh';
+    const prof = REC_PROFILES[currentRecGoal] || REC_PROFILES.ai;
+    const shareUrl = `https://cruxxxxxkit.com/?rec=${currentRecGoal}${isZh ? '&lang=zh' : ''}#recommender`;
+    const names = prof.tools.map(id => stackToolsData[currentLang]?.[id]?.name || id).join(' + ');
+    const shareText = isZh
+      ? `我刚在 CruxKit 生成了 2026 专属极简方案（${names}）：${shareUrl}`
+      : `My 2026 Lean Stack from CruxKit (${names}): ${shareUrl}`;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(shareText).catch(() => {});
+    }
+    const prev = copyBtn.textContent;
+    copyBtn.textContent = isZh ? '✓ 已复制方案与链接' : '✓ Copied Stack & Link';
+    setTimeout(() => { copyBtn.textContent = uiStrings[currentLang].rec_copy_btn || prev; }, 2200);
+  }
+});
 
 applyLanguage(currentLang, false);
 
